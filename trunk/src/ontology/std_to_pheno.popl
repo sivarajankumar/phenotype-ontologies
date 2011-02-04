@@ -1,0 +1,182 @@
+% ----------------------------------------
+% OPTIONS
+% ----------------------------------------
+
+% we use labels rather than IRIs in this file
+% (make sure all ontologies are loaded, including RO!)
+option(translate(labels)).
+
+% we use this for testing if classes are processes
+option(reasoner(graph_reasoner)).
+
+% this option is not necessary but is useful for optimization -
+% only bother to replace equivalence axioms
+option(filter(equivalentClasses(_))).
+
+
+% ----------------------------------------
+% QUALIFIERS
+% ----------------------------------------
+
+% remove superfluous 'abnormal' qualifier
+R some abnormal and tail(Rest) ===> intersectionOf(Rest).
+
+% remove other qualifiers for now
+Q and qualifier some M ===> 'phenotype of' some ('has part' some (('has quality' some Q) and ('has quality' some M))).
+Q and qualifier some M and tail(Rest) ===> Q and insert(Rest).
+
+% ----------------------------------------
+% BASIC EQs
+% ----------------------------------------
+
+Q and 'inheres in' some E ===>
+  'phenotype of' some ('has part' some (E and 'bearer of' some Q)).
+
+% note that has part is a reflexive relation
+Q and 'inheres in part of' some E ===>
+  'phenotype of' some ('has part' some (E and 'has part' some ('bearer of' some Q))).
+
+Q and 'inheres in part of' some W and 'inheres in' some P ===>
+  'phenotype of' some ('has part' some (W and 'has part' some (P and 'bearer of' some Q))).
+
+% generic translation rule for inheres_in_part_of. Strictly speaking this is not required, as the current
+% definition with a property chain should be sufficient. There may be some advantages to choosing
+% one over the other
+'inheres in part of' some E and tail(Rest) ===> 'inheres in' some (E or 'part of' some E) and insert(Rest).
+
+% ----------------------------------------
+% MULTI-PHENOTYPES
+% ----------------------------------------
+% these are currently represented as: quality AND has_part SOME P1 and has_part SOME P2 ... AND has_part SOME Pn.
+% these are translated to intersections of P1 ... Pn
+
+% combined phenotypes -- e.g. 
+quality and 'has part' some P1 and 'has part' some P2 ===>
+  P1X and P2X
+  where (anon_to_expr(P1,P1X), anon_to_expr(P2,P2X)).
+
+quality and 'has part' some P1 and 'has part' some P2 and 'has part' some P3 ===>
+  P1X and P2X and P3X
+  where (anon_to_expr(P1,P1X), anon_to_expr(P2,P2X), anon_to_expr(P3,P3X)).
+
+% SUPPORT RULES:
+anon_to_expr(A,B) :- sub_atom(A,_,_,_,'__'),equivalent_to(A,B),!.
+anon_to_expr(A,A) :- true.
+
+
+% ----------------------------------------
+% RELATIONAL EQs
+% ----------------------------------------
+
+% ----------------------------------------
+% RELATIVE CARDINALITY
+% ----------------------------------------
+% see paper by cjm on google docs
+
+% for LACKS, we can translate this unambiguously to DL using a cardinality restriction,
+% because this is an ABSOLUTE cardinality restriction
+'lacks all physical parts of type' and 'inheres in' some E and towards some D ===>
+  'phenotype of' some ('has part' some E and 'has part' only not(D)).
+
+'lacks all physical parts of type' and towards some D ===>
+  'phenotype of' some ('has part' only not(D)).
+
+% however, for RELATIVE cardinality restrictions, there is no direct correlated in DL.
+% here we get around this using 'populations'.
+
+% relative cardinality: < (but above 0)
+'has fewer parts of type' and 'inheres in' some E and towards some D ===>
+  'phenotype of' some ('has part' some E and 'has part' some (population and 'has granular part' only D and 'bearer of' some 'decreased size')).
+
+% relative cardinality: >
+'has extra parts of type' and 'inheres in' some E and towards some D ===>
+  'phenotype of' some ('has part' some E and 'has part' some (population and 'has granular part' only D and 'bearer of' some 'increased size')).
+
+% relative cardinality: < OR 0
+'lacks parts or has fewer parts of type' and 'inheres in' some E and towards some D ===>
+  'phenotype of' some ('has part' some E and ('has part' some (population and 'has granular part' only D and 'bearer of' some 'decreased size')
+                                             or 'has part' only not(D))).
+
+% --
+% REPEATED, but with no E specified:
+% --
+
+% relative cardinality: < (but above 0) [implicit E]
+'has fewer parts of type' and towards some D  ===>
+  'phenotype of' some ('has part' some (population and 'has granular part' only D and 'bearer of' some 'decreased size')).
+
+% relative cardinality: >  [implicit E]
+'has extra parts of type' and towards some D ===>
+  'phenotype of' some ('has part' some (population and 'has granular part' only D and 'bearer of' some 'increased size')).
+
+% relative cardinality: < OR 0
+'lacks parts or has fewer parts of type' and towards some D ===>
+  'phenotype of' some ('has part' some (population and 'has granular part' only D and 'bearer of' some 'decreased size')
+                      or 'has part' only not(D)).
+
+
+% ----------------------------------------
+% PROCESSUAL PHENOTYPES
+% ----------------------------------------
+
+
+
+% ----------------------------------------
+% RELATIVE CARDINALITY FOR PROCESSES
+% ----------------------------------------
+
+% for LACKS, we can translate this unambiguously to DL using a cardinality restriction,
+% because this is an ABSOLUTE cardinality restriction.
+% The typical pattern used is E=physical entity towards=process.
+'lacks all processual parts of type' and 'inheres in' some E and towards some D ===>
+  'phenotype of' some ('has part' some (E and 'has participant' only not(D))).
+
+
+% as above, implicit E
+'lacks all processual parts of type' and towards some D ===>
+  'phenotype of' some ('has part' some ('has participant' only not(D))).
+
+% ----------------------------------------
+% OTHER RELATIONAL QUALITIES
+% ----------------------------------------
+
+% if none of the above match, and we still have a towards/'depends on' relation, keep it
+Q and 'inheres in' some E and towards some D ===>
+  'phenotype of' some ('has part' some E and 'bearer of' some (Q and towards some D)).
+
+% translate equivalence axioms specifically
+Ph == Q and towards some D ===>
+  Ph == 'phenotype of' some ('has part' some 'bearer of' some (Q and towards some D)).
+
+% ----------------------------------------
+% FIX ALL REMAINING ONES
+% ----------------------------------------
+
+% even after the application of all the above patterns we may end up with some in the old style.
+% for example, see some of the 'ratio' classes in TO. For now we will just make these semantically
+% safe by rewriting (Q and inheres_in some E and ..) to (phenotype of some (has part some E and bearer of some ..))
+Q and 'inheres in' some E and tail(Rest) ===>
+  'phenotype of' some ('has part' some (E and 'bearer of' some (Q and insert(Rest))))
+  where atom(Q).
+
+% ----------------------------------------
+% REWRITE PROCESS PHENOTYPES
+% ----------------------------------------
+
+% the rules above assume that E is a physical entity. here we rewrite expressions that reference a process to
+% instead reference has_participant
+'phenotype of' some ('has part' some Part) ===> 'phenotype of' some ('has part' some ('has participant' some Part))
+ where (is_a_process(Part)).
+
+%%is_a_process(Part) :- atom(Part),sub_atom(Part,'GO_').
+is_a_process(intersectionOf(L)) :- member(X,L),is_a_process(X).
+is_a_process(Part) :- reasoner_ask(subClassOf(Part,'http://purl.obolibrary.org/obo/BFO_0000007')).
+is_a_process(Part) :- reasoner_ask(subClassOf(Part,'http://purl.obolibrary.org/obo/MPATH_596')).
+is_a_process(Part) :- reasoner_ask(subClassOf(Part,'http://purl.obolibrary.org/obo/GO_0003674')).
+is_a_process(Part) :- reasoner_ask(subClassOf(Part,'http://purl.obolibrary.org/obo/GO_0008150')).
+
+
+
+
+
+
