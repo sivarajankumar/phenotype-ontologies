@@ -36,6 +36,9 @@ mp.obo:
 hp.obo:
 	cp external/hpo/human-phenotype-ontology.obo $@
 
+pato.obo:
+	cp $(HOME)/cvs/obo/ontology/phenotype/quality.obo $@
+
 # todo - syntactic check
 mp/mp-equivalence-axioms.obo: edit/mp-equivalence-axioms.obo
 	cp $< $@
@@ -49,6 +52,8 @@ hp/hp-equivalence-axioms.obo: external/hpo/human-phenotype-ontology_xp.obo
 
 hp/hp-ext-merged.owl: hp.owl hp/hp-equivalence-axioms.owl
 	owltools file:$< --merge file:hp/hp-equivalence-axioms.owl -o file://`pwd`/$@
+mp/mp-ext-merged.owl: mp.owl mp/mp-equivalence-axioms.owl
+	owltools file:$< --merge file:mp/mp-equivalence-axioms.owl -o file://`pwd`/$@
 
 $(ONT)/%-ext-merged.owl: %.owl $(ONT)/%-equivalence-axioms.owl
 	owltools file:$< --merge file:$(ONT)/$*-equivalence-axioms.owl -o file://`pwd`/$@
@@ -66,7 +71,8 @@ $(ONT)/%-ext-merged-tr.owl: %.owl $(ONT)/%-equivalence-axioms-tr.owl
 # ----------------------------------------
 
 MP_HP_U = external/uberon/uberon-with-isa-for-FMA-MA-ZFA.owl quality.owl mp/mp-ext-merged.owl hp/hp-ext-merged.owl hp-mp/mp_hp-align-equiv.owl
-mp-hp-ext-merged-uberon.owl: $(MP_HP_U)
+# too large for svn?
+hp-mp/mp-hp-ext-merged-uberon.owl: $(MP_HP_U)
 	owltools $(patsubst %,file:%,$(MP_HP_U)) --merge-support-ontologies -o file://`pwd`/$@
 
 phenotype-annotations.owl: external/annotations/MGI/genotype_phenotype.owl external/annotations/Human/disorder_phenotype.owl
