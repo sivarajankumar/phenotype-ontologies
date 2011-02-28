@@ -1,0 +1,36 @@
+upheno_maker
+------------
+
+This tool is for generating the uberpheno ontology. It is designed to
+be executed from inside the phenotype-ontologies project.
+
+Pre-Requisites
+--------------
+
+The current main pre-requisite is Thea, which itself depends on SWI-Prolog.
+
+SWI-Prolog can be downloaded from:
+
+  http://swi-prolog.org
+
+The latest debian version should be fine, but be sure to include the
+jpl extension.
+
+(For OS-X users, installation via the dmg file is easy)
+
+Thea can be downloaded from github. You will need to switch to the pkb branch:
+
+  git clone git://github.com/vangelisv/thea.git
+  git co pkb
+
+Then add thea to your path:
+
+  export PATH=$HOME/thea/bin
+
+(assuming you cloned in your top-level)
+
+Running
+-------
+
+Use the makefile in ../../src/ontology/uberpheno/
+
