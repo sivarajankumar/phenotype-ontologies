@@ -94,7 +94,7 @@ slurp_all_phenotype_classes(O) :-
               Cs),
         debug(upheno,'Merging phenotype classes into upheno',[]),
         forall(member(C,Cs),
-               slurp_class_into(C,O)),
+               slurp_class_into(C)),
         debug(upheno,'Slurpd all classes into: ~w',[O]),
         add_property_axioms(O).
 
@@ -114,11 +114,11 @@ axiom_about_property(A) :- A=annotationAssertion(_,P,_),objectProperty(P),A.
 % slurp:
 %  * if the class is an an equivalence then ignore non-representative member
 %  * otherwise slurp class into upheno
-slurp_class_into(C,_) :-
+slurp_class_into(C) :-
         has_representative(C,C2),
         print_message(informational,owlfmt('Ignore: ~w (will instead use ~w as representative)',[C,C2])),
         !.
-slurp_class_into(C,O) :-
+slurp_class_into(C) :-
         % map class IRI and make a declaration
         rewrite_as_upheno_uri(C,CX),
         print_message(informational,owlfmt('Slurping: ~w as ~w',[C,CX])),
@@ -133,10 +133,10 @@ slurp_class_into(C,O) :-
         % bring in all axioms, after merging
         debug(upheno,' Merging axioms (direct):',[]),
         forall(class_has_slurpable_axiom(C,A),
-               slurp_axiom(A,CX,O)),
+               slurp_axiom(A)),
         debug(upheno,' Merging axioms (for equivs):',[]),
         forall((member(EC,ECs),class_has_slurpable_axiom(EC,A)),
-               slurp_axiom(A,CX,O)).
+               slurp_axiom(A)).
 
 % we only slurp a simple subset of axioms into upheno
 class_has_slurpable_axiom(C,A) :- A=subClassOf(C,_),A.
@@ -144,13 +144,11 @@ class_has_slurpable_axiom(C,equivalentClasses([C,D])) :- equivalent_to(C,D).
 class_has_slurpable_axiom(C,A) :- A=annotationAssertion(_,C,_),A.
 class_has_slurpable_axiom(C,A) :- A=propertyAssertion(_,C,_),A.
 
-slurp_axiom(A,_RefC,O) :-
-        ontologyAxiom(O,A), % already have
-        !.
-slurp_axiom(A,_RefC,O) :-
-        %print_message(informational,owlfmt('   Slurping axiom: ~w',[A])),
+%slurp_axiom(A,_RefC,O) :-
+%        ontologyAxiom(O,A), % already have
+%        !.
+slurp_axiom(A) :-
         map_IRIs( replace_entity_with_generic, A, A2),
-        %print_message(informational,owlfmt('      Rewritten as: ~w',[A2])),
         cache_axiom(A2).
 
 

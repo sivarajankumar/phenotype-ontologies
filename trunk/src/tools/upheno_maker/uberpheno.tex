@@ -1,0 +1,43 @@
+
+\subsection{Background}
+
+\section{Methods}
+
+\subsection{Ontologies Used}
+
+\begin{enumerate}
+\item mp
+\item hp
+\item mp-hp-equivs
+\item mp-equivalence-axioms
+\item hp-equivalence-axioms
+\item fma
+\item zfa
+\item ma
+\item uberon
+\item uberon-bridge-fma
+\item uberon-bridge-zma
+\item uberon-bridge-ma
+\end{enumerate}
+
+These are all combined into a single ontology called mp-hp-ext-merged-uberon. This is done using OWLTools, with the following command
+
+\begin{verbatim}
+owltools ONT1.owl ONT2.owl ... --merge-support-ontologies -o file://`pwd`/mp-hp-ext-merged-uberon.owl
+\end{verbatim}
+
+\subsection{Generation of MP-HP equivalencies}
+
+An equivalence pair $$(C1,C2)$$ is generated if there exists two
+synonyms S1 and S2, such that S1 is a synonym of C1 and S2 is a
+synonym of C2, and stem(S1)=stem(S2). We use the SWI-Prolog porter
+stem library.
+
+Each equivalence pair is represented as an OWL equivalence axioms:
+
+\begin{verbatim}
+EquivalentClasses(C1 C2)
+\end{verbatim}
+
+\subsection{Generation of ZFIN phenotype ontology}
+

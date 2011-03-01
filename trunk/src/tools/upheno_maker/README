@@ -16,11 +16,13 @@ SWI-Prolog can be downloaded from:
 The latest debian version should be fine, but be sure to include the
 jpl extension.
 
-(For OS-X users, installation via the dmg file is easy)
+(For OS-X users, installation via the dmg file on the SWI site is
+painless and reliable)
 
 Thea can be downloaded from github. You will need to switch to the pkb branch:
 
   git clone git://github.com/vangelisv/thea.git
+  cd thea
   git co pkb
 
 Then add thea to your path:
@@ -33,4 +35,16 @@ Running
 -------
 
 Use the makefile in ../../src/ontology/uberpheno/
+
+  cd src/
+  svn update
+  cd ontology/uberpheno/
+  make
+
+Nothing more should be required
+
+More Info
+---------
+
+uberpheno.tex
 
