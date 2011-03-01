@@ -11,6 +11,7 @@
 
 conf(ontology,'http://purl.obolibrary.org/obo/upheno').
 conf(asserted_file,'upheno-asserted.owl').
+conf(asserted_file_full,'upheno-asserted-full.owl').
 conf(inferred_file,'upheno-inferred.owl').
 
 
@@ -24,8 +25,11 @@ make_upheno :-
         conf(ontology,O),
         conf(inferred_file,IF),
         conf(asserted_file,AF),
+        conf(asserted_file_full,AFF),
         slurp_all_phenotype_classes(O),
-        save_axioms(AF,owl,[ontology(O)]),
+        %save_axioms(AF,owl,[ontology(O)]),
+        mireot(O),
+        save_axioms(AFF,owl,[ontology(O)]),
         add_direct_inferred_links(O),
         save_axioms(IF,owl,[ontology(O)]).
 
@@ -43,11 +47,15 @@ slurp_all_phenotype_classes(O) :-
         debug(upheno,'Slurpd all classes into: ~w',[O]),
         add_property_axioms(O).
 
-
 add_property_axioms(O) :-
         findall(A,propertyAxiom(A),As),
+        length(As,NumAs),
+        print_message(informational,tagval('number of property axioms',NumAs)),
         forall(member(A,As),
-               assert_axiom(A,O)).
+               assert_axiom(A,O)),
+        findall(P,objectProperty(P),Ps),
+        forall(member(P,Ps),
+               assert_axiom(objectProperty(P),O)).
 
 % ----------------------------------------
 % SLURPING
@@ -127,12 +135,52 @@ in_uberon(X) :- atom(X),atom_concat('http://purl.obolibrary.org/obo/UBERON_',_,X
 is_phenotype_class(X) :- atom(X),atom_concat('http://purl.obolibrary.org/obo/HP_',_,X).
 is_phenotype_class(X) :- atom(X),atom_concat('http://purl.obolibrary.org/obo/MP_',_,X).
 is_phenotype_class(X) :- atom(X),atom_concat('http://purl.obolibrary.org/obo/_ZPHEN',_,X).
+is_phenotype_class(X) :- atom(X),atom_concat('http://purl.obolibrary.org/obo/UPHENO_',_,X).
 
 rewrite_as_upheno_uri(X,NewURI) :-
         atom(X),
         atom_concat('http://purl.obolibrary.org/obo/',ID,X),
         atomic_list_concat(Toks,'_',ID), % Typically: [Prefix,Num]
         atomic_list_concat(['http://purl.obolibrary.org/obo/UPHENO_'|Toks],NewURI).
+
+% ----------------------------------------
+% MIREOT
+% ----------------------------------------
+
+mireot(O) :-
+        setof(X,A^(ontologyAxiom(O,A),paxiom_refs(A,X),\+is_phenotype_class(X)),Xs),
+        length(Xs,NumXs),
+        debug(upheno,'num referenced classes: ~w',[NumXs]),
+        mireot_axioms(Xs,[],[],Axioms),
+        length(Axioms,NumAxioms),
+        debug(upheno,'num imported axioms: ~w',[NumAxioms]),
+        forall(member(A,Axioms),
+               assert_axiom(A,O)).
+
+mireot_axioms([],_,Axs,Axs).
+mireot_axioms([X|Xs],Vs,Axs,FinalAxs) :-
+        member(X,Vs),
+        !,
+        mireot_axioms(Xs,Vs,Axs,FinalAxs).
+mireot_axioms([X|Xs],Vs,Axs,FinalAxs) :-
+        debug(upheno,'   X: ~w',[X]),
+        findall(A-Y,(mireot_axiom(_,A,Y),A),AYs),
+        findall(A,member(A-_,AYs),NewAxs),
+        findall(Y,(member(_-Y,AYs),\+is_phenotype_class(Y),\+member(Y,Vs)),NewXs),
+        append(Xs,NewXs,AllXs),
+        append(Axs,NewAxs,AllAxs),
+        mireot_axioms(AllXs,[V|Vs],AllAxs,FinalAxs).
+
+mireot_axiom(X,subClassOf(X,Y),Y).
+mireot_axiom(X,subClassOf(X,someValuesFrom(_,Y)),Y).
+
+paxiom_refs(equivalentClasses(ECL),Y) :-
+        member(intersectionOf(L),ECL),
+        member(Y,L).
+
+pclass_references(X,Y) :- equivalent_to(X,intersectionOf(L)),member(Y,L).
+
+%partOf('http://purl.obolibrary.org/obo/BFO_0000050'). % '0
 
 % ----------------------------------------
 % REASONING
@@ -179,3 +227,6 @@ handle_equiv_pair(X-Y) :-
 
 :- multifile prolog:message//1.
 prolog:message(tagval(T,V)) --> [T,':',V].
+
+
+
