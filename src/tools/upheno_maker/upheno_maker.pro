@@ -89,9 +89,7 @@ slurp_all_phenotype_classes :-
 slurp_all_phenotype_classes(O) :-
         assert(ontology(O)),
         debug(upheno,'Getting phenotype classes',[]),
-        setof(C,(class(C),
-                is_phenotype_class(C)),
-              Cs),
+        setof(C,phenotype_class(C),Cs),
         debug(upheno,'Merging phenotype classes into upheno',[]),
         forall(member(C,Cs),
                slurp_class_into(C)),
@@ -163,7 +161,7 @@ nc_equivalent_to(A,B) :- atom(A),equivalent_to(B,A),atom(B).
 % B is a representative class for A if:
 % * A and B are equivalent AND
 % * B is alphabetically greater (arbitrary criterion, favours MP over HP)
-has_representative(A,B) :- nc_equivalent_to(A,B),A@<B.
+has_representative(A,B) :- nc_equivalent_to(A,B),A@<B,\+((nc_equivalent_to(B,C),B@<C)).
 
 
 % map to uberon OR to canonical member of equivalence set.
@@ -180,6 +178,8 @@ ubermap(X,Y) :-
 
 in_uberon(X) :- atom(X),atom_concat('http://purl.obolibrary.org/obo/UBERON_',_,X).
 
+phenotype_class(C) :- class(C),is_phenotype_class(C).
+phenotype_class(C) :- equivalent_to(C,_),\+class(C),is_phenotype_class(C). % HACK to make up for bug in ZFIN OWL
 is_phenotype_class(X) :- atom(X),atom_concat('http://purl.obolibrary.org/obo/HP_',_,X).
 is_phenotype_class(X) :- atom(X),atom_concat('http://purl.obolibrary.org/obo/MP_',_,X).
 is_phenotype_class(X) :- atom(X),atom_concat('http://purl.obolibrary.org/obo/_ZPHEN',_,X).

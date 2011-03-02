@@ -50,6 +50,9 @@ hp/hp-equivalence-axioms.obo: external/hpo/human-phenotype-ontology_xp.obo
 %.owl: %.obo
 	obolib-obo2owl --allow-dangling --default-ontology $*  $< -o file://`pwd`/$@
 
+%.owl.owlpl: %.owl
+	thea --to owlpl $< > $@
+
 hp/hp-ext-merged.owl: hp.owl hp/hp-equivalence-axioms.owl
 	owltools file:$< --merge file:hp/hp-equivalence-axioms.owl -o file://`pwd`/$@
 mp/mp-ext-merged.owl: mp.owl mp/mp-equivalence-axioms.owl

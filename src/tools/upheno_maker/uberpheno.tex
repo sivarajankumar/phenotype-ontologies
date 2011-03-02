@@ -28,7 +28,7 @@ owltools ONT1.owl ONT2.owl ... --merge-support-ontologies -o file://`pwd`/mp-hp-
 
 \subsection{Generation of MP-HP equivalencies}
 
-An equivalence pair $$(C1,C2)$$ is generated if there exists two
+An equivalence pair $(C1,C2)$ is generated if there exists two
 synonyms S1 and S2, such that S1 is a synonym of C1 and S2 is a
 synonym of C2, and stem(S1)=stem(S2). We use the SWI-Prolog porter
 stem library.
@@ -39,5 +39,154 @@ Each equivalence pair is represented as an OWL equivalence axioms:
 EquivalentClasses(C1 C2)
 \end{verbatim}
 
+[note: currently the code to do this is in the old cvs. todo - move to googlecode]
+
 \subsection{Generation of ZFIN phenotype ontology}
+
+We downloaded pheno_obo from ZFIN. Annotations include 3 columns: E, Q
+and E2. Currently the semantics of the E2 column are mixed - they
+either represent the dependent entity (towards), or the entity to
+which E is part of. We treat them all as being partOf.
+
+The translation follows \cite{MungallPheno2009}, i.e.
+
+\begin{verbatim}
+E Q ==> Q and BFO_0000052 some E
+E Q E2 ==> Q and BFO_0000052 some (E and BFO_0000050 some E2)
+\end{verbatim}
+
+\subsection{Uberpheno Construction}
+
+\subsubsection{Ontology Merging}
+
+The ontology merge process takes a collection of input phenotype
+ontologies $P$ (by default: \{mp, hp, zpheno\}) together with their
+associated equivalence axioms, and produces a new ontology $O$
+(i.e. uberpheno).
+
+\textbf{initialize}. First of all, we initialize $O$ to be an empty
+ontology with no axioms or declarations.
+
+\textbf{representative members of equivalence sets}. We take all
+EquivalentClasses axioms connecting two named classes in $P$, and
+build a table of class pairs (recall from the above that this is
+derived by text matching). For each equivalence set, we designate one
+member as the \emph{representative}, and the others as
+\emph{secondary}. The criteria is arbitrary, based on alphabetic
+ordering of the IRI. $A$ has representative $B$ if A is equivalent
+to B, and the IRI for A alphabetically precedes B, and there is no
+equivalent of B such that B precedes this class.
+
+\textbf{mapping phenotype IRIs}. We define a mapping function $u$
+between named classes in $P$ and named classes in $O$
+(i.e. between species-centric phenotype classes and species-generic
+phenotype classes). The mapping function takes the IRI of a phenotype
+class in $P$ (e.g. obo:HP_0000001) and rewrites it as a uberpheno
+IRI (e.g. obo:UPHENO_HP0000001). Specifically, we tokenize on the
+underscore character and then append the resulting tokens onto the
+prefix obo:UPHENO_ base.
+
+
+\textbf{merging}. We then iterate through all classes in $P$. We
+merge each phenotype class $C$ in $P$ into $O$, as follows.
+
+First we create a class declaration for $u(C)$ in $O$.
+
+Then we move selected axioms across from $C$ to $u(C)$:
+
+\begin{description}
+\item all $SubClassOf$ axioms, where the first argument is $C$
+\item all $EquivalentClasses$ axioms, where any argument is $C$
+\item all $AnnotationAssertion$ or $PropertyAssertion$ axioms, where the second argument is $C$
+\end{description}
+
+We then repeat this for every $C'$ where $C'$ is equivalent to $C$.
+
+For each axiom, we recursively traverse all class expressions, replace
+IRIs $X$ in $P$ with $u(X)$. If $X$ has an uberon mapping,
+then we replace $X$ with the corresponding uberon class. Finally,
+if $X$ has a representative equivalent, then we replace with this.
+
+For example,
+
+\begin{verbatim}
+subClassOf(MP_0000001 MP_0000002)
+\end{verbatim}
+
+becomes
+
+\begin{verbatim}
+subClassOf(UPHENO_MP0000001 UPHENO_MP0000002)
+\end{verbatim}
+
+At this point we save $O$ as uberpheno-asserted.owl
+
+This ontology can be manually inspected on Protege4, or in OE after
+conversion to obo. Browsing in P4 is recommended, as the equivalence
+axioms are displayed more prominently.
+
+Reasoning will likely produce limited results, due to the lack of
+axioms from support ontologies.
+
+\subsubsection{MIREOT}
+
+We apply a MIREOT-like procedure to bring in a minimal set of axioms
+required for supporting inferences on $O$.
+
+We define a connectivity predicate $c$ as:
+
+$$
+c(x,y) \larr SubClassOf(x y)
+$$
+
+$$
+c(x,y) \larr EquivalentClasses(x y)
+$$
+
+$$
+c(y AND ...,y)
+$$
+
+$$
+c(x SOME R y,y) \larr MireotProperty(p)
+$$
+
+Then set of properties is configurable, but by default is part of, inheres in, inheres in part of, and qualifier.
+
+We calculate the closure of $c$ using depth first search. For each
+object visisted in the search, we import all SubClassOf,
+EquivalentClasses and AnnotationAssertion axioms.
+
+We save $O$ as uberpheno-asserted-full. This can be viewed in an
+ontology editor. Reasoning can be done in P4 or OE, the latter using
+the Rule Based Reasoner. Use of P4 is recommended.
+
+\subsubsection{Reasoning}
+
+We feed the results of $$O$$ into pellet and initialize reasoning. We
+expect that $$O$$ will fall into the EL class, but apply a procedure
+filtering all non-EL axioms in order to guarantee that the more
+scalable EL algorithm is selected.
+
+The resulting subclass and equivalence axioms are added to $O$.
+
+We save $O$ as uberpheno-inferred.
+
+We manually check uberpheno-inferred for incorrect inferences - for
+any we find, we load uberpheno-asserted-full into P4, run the
+reasoner, and use explanation capabilities
+
+\subsubsection{Optional extras}
+
+The above uses very conservative transformations to avoid producing
+weird inferences associated with uberpheno0.0
+
+We will gradually introduce additional axioms here (for example,
+creating new LCSs). TODO
+
+
+
+
+
+
 
