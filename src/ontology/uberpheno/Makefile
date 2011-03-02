@@ -2,7 +2,7 @@ all: uberpheno
 
 # uses the upheno_maker.pro script to build uberpheno (requires Thea)
 uberpheno: mp-hp-ext-merged-uberon.owlpl zpheno.owl
-	 thea-jpl --debug upheno $< zpheno.owl  --consult ../../tools/upheno_maker/upheno_maker.pro --goal make_upheno >& $@.LOG
+	 thea-jpl --jvm-opt -Xmx4G --debug upheno $< zpheno.owl  --consult ../../tools/upheno_maker/upheno_maker.pro --goal make_upheno >& $@.LOG
 
 #uberpheno: 
 #	 thea-jpl --debug upheno --format rdf_direct file:../hp-mp/mp-hp-ext-merged-uberon.owl  --consult ../../tools/upheno_maker/upheno_maker.pro --goal make_upheno >& $@.LOG
