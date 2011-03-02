@@ -3,6 +3,7 @@
 :- use_module(library(thea2/owl2_util)).
 :- use_module(library(thea2/owl2_reasoner)).
 :- use_module(library(thea2/owl2_io)).
+:- use_module(library(thea2/owl2_profiles)).
 :- use_module(library(thea2/owl2_text_display)).
 :- use_module(library(thea2/util/memoization)).
 
@@ -97,7 +98,7 @@ slurp_all_phenotype_classes(O) :-
         add_property_axioms(O).
 
 add_property_axioms(O) :-
-        findall(A,axiom_about_property(A),As),
+        findall(A,(axiom_about_property(A),axiom_profile(A,owl2_EL)),As),
         forall(member(A,As),
                assert_axiom(A,O)).
 
@@ -112,6 +113,10 @@ axiom_about_property(A) :- A=annotationAssertion(_,P,_),objectProperty(P),A.
 % slurp:
 %  * if the class is an an equivalence then ignore non-representative member
 %  * otherwise slurp class into upheno
+slurp_class_into(C) :-
+        annotationAssertion('http://www.w3.org/2002/07/owl#deprecated',C,literal(type(_,true))),
+        print_message(informational,owlfmt('Ignore Obsolete: ~w',[C])),
+        !.
 slurp_class_into(C) :-
         has_representative(C,C2),
         print_message(informational,owlfmt('Ignore: ~w (will instead use ~w as representative)',[C,C2])),

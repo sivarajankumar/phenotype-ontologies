@@ -14,10 +14,16 @@ SWI-Prolog can be downloaded from:
   http://swi-prolog.org
 
 The latest debian version should be fine, but be sure to include the
-jpl extension.
+full set of optional extensions. E.g.
 
-(For OS-X users, installation via the dmg file on the SWI site is
-painless and reliable)
+  sudo apt-get install swi-prolog-jpl
+  sudo apt-get install swi-prolog-semweb
+  sudo apt-get install swi-prolog-clib
+  sudo apt-get install swi-prolog-http
+  sudo apt-get install swi-prolog-sgml
+
+For OS-X users, installation via the dmg file on the SWI site is
+painless and reliable, and includes jpl and semweb libs.
 
 Thea can be downloaded from github. You will need to switch to the pkb branch:
 

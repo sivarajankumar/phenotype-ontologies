@@ -18,6 +18,7 @@
 \item uberon-bridge-fma
 \item uberon-bridge-zma
 \item uberon-bridge-ma
+\item [TODO - we will add GO, CL in future]
 \end{enumerate}
 
 These are all combined into a single ontology called mp-hp-ext-merged-uberon. This is done using OWLTools, with the following command
@@ -28,18 +29,43 @@ owltools ONT1.owl ONT2.owl ... --merge-support-ontologies -o file://`pwd`/mp-hp-
 
 \subsection{Generation of MP-HP equivalencies}
 
-An equivalence pair $(C1,C2)$ is generated if there exists two
-synonyms S1 and S2, such that S1 is a synonym of C1 and S2 is a
-synonym of C2, and stem(S1)=stem(S2). We use the SWI-Prolog porter
-stem library.
+An equivalence pair $(C1,C2)$ is generated if $C1$ and $C2$ are
+reciprocal best matches according to synonyms.
 
-Each equivalence pair is represented as an OWL equivalence axioms:
+\textbf{Synonym matching:} We use the SWI-Prolog porter_stem method in
+the nlp library to tokenize and stem all tokens for each synonym,
+omitting stemming for acronyms or special tokens (any token with >1
+upper case character, or any non-alphanumeric characters). We filter
+out prepositions and determinants. We apply special purpose
+substitutions (e.g. changing I, first, 1st to 1), and use the Obol
+library of biological relational adjectives to substitute adjectives
+such as ``renal'' with their noun form (e.g. ``kidney'').
+
+Finally, these normalized tokens are ordered alphabetically and
+concatenated without whitespace to produce a normalized label.
+
+\textbf{Reciprical best matches:} Any class pair matches if they share
+the same normalized label. A class pair C1, C2 is a best match if
+there is no C2' such that C1 matches C2', and the both synonyms used
+for the latter had stronger scope than both the synonyms used for the
+former. We treat exact synonyms and primary labels are equal, and as
+being stronger than broad, narrow or related, which are weaker. We
+only consider inter-ontology matches.
+
+A best match C1,C2 is reciprocal if C2 has best match C1.
+
+Each equivalence pair is then translated to OWL equivalence axioms:
 
 \begin{verbatim}
 EquivalentClasses(C1 C2)
 \end{verbatim}
 
-[note: currently the code to do this is in the old cvs. todo - move to googlecode]
+We then checked all equivalence pairs for structural difference across
+the two ontologies, and resolved these [in progress].
+
+The pipeline for making this is in src/ontology/hp-mp
+
+[dir name may change]
 
 \subsection{Generation of ZFIN phenotype ontology}
 
@@ -81,16 +107,22 @@ equivalent of B such that B precedes this class.
 between named classes in $P$ and named classes in $O$
 (i.e. between species-centric phenotype classes and species-generic
 phenotype classes). The mapping function takes the IRI of a phenotype
-class in $P$ (e.g. obo:HP_0000001) and rewrites it as a uberpheno
-IRI (e.g. obo:UPHENO_HP0000001). Specifically, we tokenize on the
+class in $P$ (e.g. obo:HP\_0000001) and rewrites it as a uberpheno
+IRI (e.g. obo:UPHENO\_HP0000001). Specifically, we tokenize on the
 underscore character and then append the resulting tokens onto the
 prefix obo:UPHENO_ base.
 
 
 \textbf{merging}. We then iterate through all classes in $P$. We
-merge each phenotype class $C$ in $P$ into $O$, as follows.
+ignore all classes that have an owl:deprecated annotation (i.e. are
+obsolete in the corresponding obo file). We also ignore classes that
+have a representative (these are handled separately, see below).
 
-First we create a class declaration for $u(C)$ in $O$.
+We merge each remaining phenotype class $C$ in $P$ into $O$, as follows.
+
+First we create a class declaration for $u(C)$ in $O$. For example, if
+P contains a class declaration obo:HP\_0000001, we create a class
+declaration in O for obo:UPHENO\_0000001.
 
 Then we move selected axioms across from $C$ to $u(C)$:
 
@@ -121,12 +153,13 @@ subClassOf(UPHENO_MP0000001 UPHENO_MP0000002)
 
 At this point we save $O$ as uberpheno-asserted.owl
 
-This ontology can be manually inspected on Protege4, or in OE after
-conversion to obo. Browsing in P4 is recommended, as the equivalence
-axioms are displayed more prominently.
+This ontology was manually inspected im Protege4. We also converted
+obo using obolib and browsed in OBOEdit. Browsing in P4 was better
+able to show equivalence axios.
 
-Reasoning will likely produce limited results, due to the lack of
-axioms from support ontologies.
+We did not do reasoning in P4 or OE at this stage, as the lack of
+axioms would deliver limited results. This is done after the next
+stage, bringing in axioms from external ontologies.
 
 \subsubsection{MIREOT}
 
