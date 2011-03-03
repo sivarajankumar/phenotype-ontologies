@@ -151,6 +151,8 @@ becomes
 subClassOf(UPHENO_MP0000001 UPHENO_MP0000002)
 \end{verbatim}
 
+
+
 At this point we save $O$ as uberpheno-asserted.owl
 
 This ontology was manually inspected im Protege4. We also converted
@@ -184,7 +186,10 @@ $$
 c(x SOME R y,y) \larr MireotProperty(p)
 $$
 
-Then set of properties is configurable, but by default is part of, inheres in, inheres in part of, and qualifier.
+Then set of properties is configurable, but by default is part of,
+inheres in, inheres in part of, and qualifier. This is similar to a
+restricted version of the syntactic locality module extractor in the
+OWLAPI.
 
 We calculate the closure of $c$ using depth first search. For each
 object visisted in the search, we import all SubClassOf,
@@ -205,17 +210,21 @@ The resulting subclass and equivalence axioms are added to $O$.
 
 We save $O$ as uberpheno-inferred.
 
-We manually check uberpheno-inferred for incorrect inferences - for
-any we find, we load uberpheno-asserted-full into P4, run the
-reasoner, and use explanation capabilities
+We manually checked uberpheno-inferred for incorrect inferences [todo]
+- for any we found, we loaded uberpheno-asserted-full into P4, ran the
+reasoner, and use explanation capabilities.
 
 \subsubsection{Optional extras}
 
 The above uses very conservative transformations to avoid producing
-weird inferences associated with uberpheno0.0
+weird inferences associated with uberpheno 0.0
 
 We will gradually introduce additional axioms here (for example,
 creating new LCSs). TODO
+
+* selected transformation of patterns (e.g has part)
+* ...
+
 
 
 

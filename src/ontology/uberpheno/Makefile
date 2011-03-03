@@ -21,5 +21,5 @@ zpheno.owl:
 
 
 mktest: 
-	 thea-jpl --debug upheno --format rdf_direct file:test/kyph.owl --consult ../../tools/upheno_maker/upheno_maker.pro --goal make_upheno >& $@.LOG
+	 (cd test && thea-jpl --debug upheno --format rdf_direct kyph.owl --consult ../../../tools/upheno_maker/upheno_maker.pro --goal make_upheno) >& $@.LOG
 
