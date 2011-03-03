@@ -127,6 +127,7 @@ slurp_class_into(C) :-
         print_message(informational,owlfmt('Slurping: ~w as ~w',[C,CX])),
         cache_axiom(class(CX)),
         % TODO: xref
+        cache_axiom(annotationAssertion('http://purl.obolibrary.org/obo/IAO_xref',CX,literal(type('xsd:string',C)))),
 
         % get set of equivalents
         findall(EC,nc_equivalent_to(C,EC),ECs1),
