@@ -51,7 +51,7 @@ hp/hp-equivalence-axioms.obo: external/hpo/human-phenotype-ontology_xp.obo
 	cp $< $@
 
 %.owl: %.obo
-	obolib-obo2owl --allow-dangling --default-ontology $*  $< -o file://`pwd`/$@
+	obolib-obo2owl --allow-dangling --default-ontology $*  $< -o $@
 
 %.owl.owlpl: %.owl
 	thea --to owlpl $< > $@
@@ -61,11 +61,15 @@ hp/hp-ext-merged.owl: hp.owl hp/hp-equivalence-axioms.owl
 mp/mp-ext-merged.owl: mp.owl mp/mp-equivalence-axioms.owl
 	owltools file:$< --merge file:mp/mp-equivalence-axioms.owl -o file://`pwd`/$@
 
+hp/hp-defs-simple.owl: hp/hp-equivalence-axioms.obo
+	thea phenorel.owl --popl-file ../tools/model-translation/tr.popl $< --to rdf_direct > $@
+#	thea phenorel.owl --popl-file ../tools/model-translation/tr.popl into "http://purl.obolibrary.org/obo/hp/hp-defs-simple.owl" $< --to rdf_direct > $@
+
 # phenotype simple model (experimental)
-hp/hp-ext-merged-psm.owl: hp-psm.owl hp/hp-equivalence-axioms-psm.owl
-	owltools file:$< --merge file:hp/hp-equivalence-axioms-psm.owl -o file://`pwd`/$@
-mp/mp-ext-merged-psm.owl: mp-psm.owl mp/mp-equivalence-axioms-psm.owl
-	owltools file:$< --merge file:mp/mp-equivalence-axioms-psm.owl -o file://`pwd`/$@
+#hp/hp-ext-merged-psm.owl: hp-psm.owl hp/hp-equivalence-axioms-psm.owl
+#	owltools file:$< --merge file:hp/hp-equivalence-axioms-psm.owl -o file://`pwd`/$@
+#mp/mp-ext-merged-psm.owl: mp-psm.owl mp/mp-equivalence-axioms-psm.owl
+#	owltools file:$< --merge file:mp/mp-equivalence-axioms-psm.owl -o file://`pwd`/$@
 
 $(ONT)/%-ext-merged.owl: %.owl $(ONT)/%-equivalence-axioms.owl
 	owltools file:$< --merge file:$(ONT)/$*-equivalence-axioms.owl -o file://`pwd`/$@
@@ -83,9 +87,39 @@ $(ONT)/%-ext-merged-tr.owl: %.owl $(ONT)/%-equivalence-axioms-tr.owl
 #	thea --debug popl --popl-file std_to_frames.popl $< --to owl > $@
 
 # phenotype simple model (psm)
-%-psm.obo: %.obo psm/psm.obo
-	../tools/converters/std-to-frames.pl $< psm/psm.obo > $@
-.PRECIOUS: %-psm.obo
+#%-psm.obo: %.obo psm/psm.obo
+#	../tools/converters/std-to-frames.pl $< psm/psm.obo > $@
+#.PRECIOUS: %-psm.obo
+
+# ----------------------------------------
+# Subqualities model
+# ----------------------------------------
+%-subq.obo: %.obo
+	(echo "logical-definition-view-relation: has_part" && cat $<) > $@
+
+# ----------------------------------------
+# Uberon
+# ----------------------------------------
+
+UBRIDGE = external/uberon/bridge/uberon-bridge-to-
+
+# hack: render taxon-equivalents as plain equivalents
+#  NOTE: this could have unintended consequences and lead to unsatisfiable classes (e.g. check mammary gland)
+uberon-simple-vertebrate-bridge.obo:
+	cat $(UBRIDGE)/ma.obo $(UBRIDGE)/fma.obo $(UBRIDGE)/zfa.obo | grep -v ^ontology | ../tools/flatten-taxon-equivalents.pl > $@.tmp && (echo "ontology: uberon/uberon-simple-bridge" && cat $@.tmp) > $@
+
+# ----------------------------------------
+# Oort
+# ----------------------------------------
+OBO=http://purl.obolibrary.org/obo
+CORE= external/pato/quality.obo $(OBO)/go.owl external/cell/cl.owl $(OBO)/uberon/merged.owl $(OBO)/nbo.owl $(OBO)/mpath.owl
+
+merged-hp:
+	ontology-release-runner --allow-overwrite --outdir hp --repair-cardinality --no-subsets --no-reasoner --asserted --re-mireot hp.obo -b hp/hp-equivalence-axioms.obo $(CORE) $(OBO)/fma.owl $(OBO)/uberon/bridge/uberon-bridge-to-fma.owl
+
+merged-mp:
+	ontology-release-runner --allow-overwrite --outdir mp --repair-cardinality --no-subsets --no-reasoner --asserted --re-mireot mp.obo -b mp/mp-equivalence-axioms.obo $(CORE) $(OBO)/ma.owl $(OBO)/uberon/bridge/uberon-bridge-to-ma.owl
+
 
 # ----------------------------------------
 # APPLICATION ONTOLOGIES AND ANNOTATIONS
@@ -111,6 +145,12 @@ phenotype-annotations.owl: external/annotations/MGI/genotype_phenotype.owl exter
 # ----------------------------------------
 %-names.obo: %.obo
 	obo-filter-tags.pl  -t id -t name  $< > $@
+
+# ----------------------------------------
+# DEFINITION PATTERNS
+# ----------------------------------------
+hp-patterns.txt: hp/hp-equivalence-axioms.obo
+	blip-findall -r HP -consult util/pattern.pro -i $< pattern_xs/2 -no_pred -label | perl -npe 's/,HP:/\t/g' | sort -u > $@
 
 # ----------------------------------------
 # ANALYSIS

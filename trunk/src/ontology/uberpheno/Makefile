@@ -1,7 +1,8 @@
 all: uberpheno
 
 # uses the upheno_maker.pro script to build uberpheno (requires Thea)
-uberpheno: mp-hp-ext-merged-uberon-psm.owlpl zpheno.owl
+#uberpheno: mp-hp-ext-merged-uberon-psm.owlpl zpheno.owl
+uberpheno: mp-hp-ext-merged-uberon.owlpl zpheno.owl
 	 thea-jpl --jvm-opt -Xmx6G --debug upheno  $< zpheno.owl  --consult ../../tools/upheno_maker/upheno_maker.pro --goal make_upheno >& $@.LOG
 
 upheno-inferred_obo.obo: upheno-inferred.owl

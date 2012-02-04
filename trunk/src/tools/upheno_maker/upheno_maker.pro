@@ -46,9 +46,9 @@
 % ----------------------------------------
 
 conf(ontology,'http://purl.obolibrary.org/obo/upheno').
-conf(asserted_file,'upheno-asserted.owl').
-conf(asserted_file_full,'upheno-asserted-full.owl').
-conf(inferred_file,'upheno-inferred.owl').
+conf(asserted_file,'upheno-asserted.owlpl').
+conf(asserted_file_full,'upheno-asserted-full.owlpl').  % includes MIREOT, post EL-filtering
+conf(inferred_file,'upheno-inferred-psm.owl'). % TEMP
 
 % ----------------------------------------
 % DB
@@ -73,15 +73,17 @@ assert_axiom_if_valid(A2,O) :- assert_axiom(A2,O).
 make_upheno :-
         table_pred(owl2_model:equivalent_to/2), % optimization
         conf(ontology,O),
-        conf(inferred_file,IF),
-        conf(asserted_file,AF),
         conf(asserted_file_full,AFF),
+        conf(inferred_file,IF),
         slurp_all_phenotype_classes(O),
         assert_cached_axioms(O),
         % todo - fix - this clears rdf graph and loses input axioms
-        %save_axioms(AF,owl,[ontology(O)]),
+        conf(asserted_file,AF),
+        save_axioms(AF,owlpl,[ontology(O)]),
         mireot(O),
-        save_axioms(AFF,owl,[ontology(O)]),
+        debug(upheno,'trimming to EL',[]),
+        trim_axioms_by_profile(O,owl2_EL),
+        save_axioms(AFF,owlpl,[ontology(O)]),
         add_direct_inferred_links(O),
         save_axioms(IF,owl,[ontology(O)]).
 
@@ -185,7 +187,7 @@ ubermap(X,Y) :-
 in_uberon(X) :- atom(X),atom_concat('http://purl.obolibrary.org/obo/UBERON_',_,X).
 
 phenotype_class(C) :- class(C),is_phenotype_class(C).
-phenotype_class(C) :- equivalent_to(C,_),\+class(C),is_phenotype_class(C). % HACK to make up for bug in ZFIN OWL
+%%%%phenotype_class(C) :- equivalent_to(C,_),\+class(C),is_phenotype_class(C). % HACK to make up for bug in ZFIN OWL
 is_phenotype_class(X) :- atom(X),atom_concat('http://purl.obolibrary.org/obo/HP_',_,X).
 is_phenotype_class(X) :- atom(X),atom_concat('http://purl.obolibrary.org/obo/MP_',_,X).
 is_phenotype_class(X) :- atom(X),atom_concat('http://purl.obolibrary.org/obo/_ZPHEN',_,X).
@@ -243,7 +245,13 @@ mireot_traverse(X,Y) :- equivalent_to(X,Y).
 
 % only traverse these properties:
 mireot_property('http://purl.obolibrary.org/obo/BFO_0000050'). % part_of // '0
+mireot_property('http://purl.obolibrary.org/obo/BFO_0000070'). % depends_on // '0
 mireot_property('http://purl.obolibrary.org/obo/BFO_0000052'). % inheres_in
+mireot_property('http://purl.obolibrary.org/obo/RO_0700001'). % 
+mireot_property('http://purl.obolibrary.org/obo/RO_0700002'). % 
+mireot_property('http://purl.obolibrary.org/obo/RO_0700003'). % 
+mireot_property('http://purl.obolibrary.org/obo/RO_0700004'). % 
+mireot_property('http://purl.obolibrary.org/obo/RO_0700005'). % 
 mireot_property('http://purl.obolibrary.org/obo/hp/hp-logical-definitions_inheres_in_part_of'). 
 mireot_property('http://purl.obolibrary.org/obo/hp/hp-logical-definitions_qualifier'). 
 
@@ -258,7 +266,7 @@ paxiom_refs(equivalentClasses(ECL),Y) :-
 % ----------------------------------------
 
 add_direct_inferred_links(O) :-
-        initialize_reasoner(pellet,
+        initialize_reasoner(jcel,
                             RE,
                             [ontology(O),
                              filter(A,(axiom_profile(A,owl2_EL),\+individualAxiom(A)))
@@ -266,8 +274,7 @@ add_direct_inferred_links(O) :-
         debug(upheno,'done initializing reasoner',[]),
 
         % query for inferred SubClassOfs
-        AT=subClassOf(_,_),
-        findall(AT,reasoner_ask(RE,AT,true),Axs),
+        findall(subClassOf(A,B),reasoner_ask(RE,directSubClassOf(A,B),true),Axs),
         debug(upheno,'got axioms',[]),
         length(Axs,NumAxs),
         debug(upheno,'num axioms = ~w',[NumAxs]),
