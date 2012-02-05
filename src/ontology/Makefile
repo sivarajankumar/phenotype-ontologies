@@ -95,7 +95,7 @@ $(ONT)/%-ext-merged-tr.owl: %.owl $(ONT)/%-equivalence-axioms-tr.owl
 # Subqualities model
 # ----------------------------------------
 %-subq.obo: %.obo
-	(echo "logical-definition-view-relation: has_part" && cat $<) > $@
+	../tools/make-subq-model-from-obo.pl $< > $@
 
 # ----------------------------------------
 # Uberon
