@@ -136,3 +136,22 @@ This allows composite phenotypes. E.g.
 
 This is called the "subquality" model. Files are named "-equivalence-axioms-subq.owl"
 
+Use of Uberon
+-------------
+
+Uberon classes *subsume* species-specific classes. Specifically,
+Uberon renders the species AO classes as *taxonomic equivalents*. For example:
+
+       'mammary gland (FMA)' EquivalentTo: 'mammary gland (generic)' and part_of some NCBITaxon_9606
+
+See http://uberon.org and
+http://genomebiology.com/2012/13/1/R5/abstract
+
+For the purposes of phenotype analysis, we can use a stronger interpretation:
+
+       'mammary gland (FMA)' EquivalentTo: 'mammary gland (generic)'
+
+Due to the fact that we mix Uberon and ssAO classes in the logical
+definitions, this is necessary, although it may lead to some incorrect
+inferences (such as the location of mammary glands in mice)
+
