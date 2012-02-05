@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/phenotype/hp-mp/mp_hp-align-equiv.owl" uri="hp-mp/mp_hp-align-equiv.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/uberon/uberon-simple-vertebrate-bridge.owl" uri="uberon-simple-vertebrate-bridge.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/hp-mp/mp_hp-align-equiv.owl" uri="hp-mp/mp_hp-align-equiv.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/uberon-simple-vertebrate-bridge.owl" uri="uberon-simple-vertebrate-bridge.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/go.owl" uri="external/go.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mp.owl" uri="mp.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mp/mp-logical-definitions.owl" uri="mp/mp-equivalence-axioms.owl"/>
