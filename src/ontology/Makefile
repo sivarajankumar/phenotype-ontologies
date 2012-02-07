@@ -97,6 +97,10 @@ $(ONT)/%-ext-merged-tr.owl: %.owl $(ONT)/%-equivalence-axioms-tr.owl
 %-subq.obo: %.obo
 	../tools/make-subq-model-from-obo.pl $< > $@
 
+# HACKS
+HACKED-catalog-v001.xml: catalog-v001.xml
+	perl -npe 's@uri="@uri="file:@' $< > $@
+
 # ----------------------------------------
 # Uberon
 # ----------------------------------------
@@ -163,3 +167,4 @@ all-ic.txt: mp-hp-ext-merged-uberon.owl phenotype-annotations.owl
 
 all-closure.txt: mp-hp-ext-merged-uberon.owl phenotype-annotations.owl
 	owltools  file:phenotype-annotations.owl --merge file:$< --monitor-memory --save-closure $@
+
