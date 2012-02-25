@@ -1,0 +1,88 @@
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: obo: <http://purl.obolibrary.org/obo/>
+Prefix: : <http://purl.obolibrary.org/obo/phenometa_>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+Ontology: <http://purl.obolibrary.org/obo/upheno/graph-traversal-metadata.owl>
+
+ObjectProperty: obo:BFO_0000050
+ObjectProperty: obo:BFO_0000051
+
+AnnotationProperty: :excludeMe
+  Annotations: rdfs:label "exclude me"
+
+AnnotationProperty: :includeMe
+  Annotations: rdfs:label "include me"
+
+ObjectProperty: obo:TODO_regional_part_of
+  Annotations: :excludeMe true
+
+ObjectProperty: obo:TODO_constitutional_part_of
+  Annotations: :excludeMe true
+
+ObjectProperty: <http://purl.obolibrary.org/obo/uberon#spatially_disjoint_from>
+  Annotations: :excludeMe true
+
+ObjectProperty: <http://purl.obolibrary.org/obo/zfa#end>
+  Annotations: :excludeMe true
+
+ObjectProperty: <http://purl.obolibrary.org/obo/zfa#start>
+  Annotations: :excludeMe true
+
+ObjectProperty: <http://purl.obolibrary.org/obo/TODO_attaches_to>
+  Annotations: :excludeMe true
+
+# has_part - we can experiment with bringing this back later
+ObjectProperty: obo:BFO_0000051
+  Annotations: :excludeMe true
+
+ObjectProperty: :part_of_has_part
+  Annotations: :excludeMe true
+  SubPropertyChain: obo:BFO_0000050 o obo:BFO_0000051
+
+## --INCLUSION--
+
+# part of
+ObjectProperty: obo:BFO_0000050
+  Annotations: :includeMe true
+
+# occurs in
+ObjectProperty: obo:BFO_0000066
+  Annotations: :includeMe true
+
+# bearer of
+ObjectProperty: obo:BFO_0000053
+  Annotations: :includeMe true
+
+# participates in
+ObjectProperty: obo:BFO_0000056
+  Annotations: :includeMe true
+
+ObjectProperty: obo:BSPO_0000120
+  Annotations: :includeMe true
+
+ObjectProperty: obo:BSPO_0000121
+  Annotations: :includeMe true
+
+# continuous with
+ObjectProperty: obo:FMA_85972
+  Annotations: :includeMe true
+
+# branch of
+ObjectProperty: obo:FMA_85994
+  Annotations: :includeMe true
+
+# develops from
+ObjectProperty: obo:RO_0002202
+  Annotations: :includeMe true
+
+# replaces
+ObjectProperty: obo:RO_0002285
+  Annotations: :includeMe true
+
+
