@@ -51,7 +51,8 @@ hp/hp-equivalence-axioms.obo: external/hpo/human-phenotype-ontology_xp.obo
 	cp $< $@
 
 %.owl: %.obo
-	obolib-obo2owl --allow-dangling --default-ontology $*  $< -o $@
+	owltools  $< -o file://`pwd`/$@
+#	obolib-obo2owl --allow-dangling --default-ontology $*  $< -o $@
 
 %.owl.owlpl: %.owl
 	thea --to owlpl $< > $@
