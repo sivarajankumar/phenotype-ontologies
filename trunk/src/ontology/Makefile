@@ -91,6 +91,11 @@ $(ONT)/%-ext-merged-tr.owl: %.owl $(ONT)/%-equivalence-axioms-tr.owl
 #	../tools/converters/std-to-frames.pl $< psm/psm.obo > $@
 #.PRECIOUS: %-psm.obo
 
+# new
+all_merged: uberpheno-subq-full-merged.owl
+%-merged.owl: %-importer.owl
+	owltools --use-catalog $< --merge-import-closure --ni graph-traversal-metadata.owl --merge-support-ontologies   --merge-equivalent-classes -f $(OBO)/MP_ -t $(OBO)/HP_ --merge-equivalent-classes -f $(OBO)/FMA_ -f $(OBO)/EMAPA_ -f $(OBO)/MA_ -t $(OBO)/UBERON_ --merge-equivalent-classes -f $(OBO)/FMA_ -f $(OBO)/CL_ -o file://`pwd`/$@
+
 # ----------------------------------------
 # Subqualities model
 # ----------------------------------------
@@ -101,6 +106,10 @@ $(ONT)/%-ext-merged-tr.owl: %.owl $(ONT)/%-equivalence-axioms-tr.owl
 HACKED-catalog-v001.xml: catalog-v001.xml
 	perl -npe 's@uri="@uri="file:@' $< > $@
 
+# temp hack:
+fixed-behavior_xp.obo: external/behavior-ontology/behavior_xp.obo
+	obo-grep.pl --neg -r PATO $< > $@
+
 # ----------------------------------------
 # Uberon
 # ----------------------------------------
@@ -110,7 +119,7 @@ UBRIDGE = external/uberon/bridge/uberon-bridge-to-
 # hack: render taxon-equivalents as plain equivalents
 #  NOTE: this could have unintended consequences and lead to unsatisfiable classes (e.g. check mammary gland)
 uberon-simple-vertebrate-bridge.obo:
-	cat $(UBRIDGE)/ma.obo $(UBRIDGE)/fma.obo $(UBRIDGE)/zfa.obo | grep -v ^ontology | ../tools/flatten-taxon-equivalents.pl > $@.tmp && (echo "ontology: uberon/uberon-simple-bridge" && cat $@.tmp) > $@
+	cat $(UBRIDGE)ma.obo $(UBRIDGE)fma.obo $(UBRIDGE)zfa.obo $(UBRIDGE)ehdaa2.obo | grep -v ^ontology | ../tools/flatten-taxon-equivalents.pl > $@.tmp && (echo "ontology: uberon/uberon-simple-bridge" && cat $@.tmp) > $@
 
 # ----------------------------------------
 # Oort
