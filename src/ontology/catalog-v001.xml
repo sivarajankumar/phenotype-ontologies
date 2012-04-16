@@ -8,7 +8,6 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/hp/hp-equivalence-axioms.owl" uri="hp/hp-equivalence-axioms.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/hp/hp-equivalence-axioms-subq.owl" uri="hp/hp-equivalence-axioms-subq.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/hp.owl" uri="hp.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/hp-TEST.owl" uri="tmp/hp-with-defs.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obofoundry.org/obo/bfo.owl" uri="external/bfo/owl-ruttenberg/bfo2.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ma.owl" uri="external/anatomy/ma.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/spatial.owl" uri="external/spatial.owl"/>
@@ -17,7 +16,7 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mpath.owl" uri="external/mpath.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/pr.owl" uri="external/pr.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/nbo.owl" uri="external/behavior-ontology/behavior.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/nbo/extensions/behavior_xp.owl" uri="fixed-behavior_xp.owl"/>
+<!--     <uri id="User Entered Import Resolution"  name="http://purl.obolibrary.org/obo/nbo/extensions/behavior_xp.owl" uri="fixed-behavior_xp.owl"/> -->
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/pato.owl" uri="pato.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl" uri="external/ncbitaxon-subsets/taxslim.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim-disjoint-over-in-taxon.owl" uri="external/ncbitaxon-subsets/taxslim-disjoint-over-in-taxon.owl"/>
