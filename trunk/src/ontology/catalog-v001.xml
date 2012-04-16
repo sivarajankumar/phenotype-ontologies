@@ -11,7 +11,6 @@
     <uri id="User Entered Import Resolution" name="http://purl.obofoundry.org/obo/bfo.owl" uri="external/bfo/owl-ruttenberg/bfo2.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ma.owl" uri="external/anatomy/ma.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/spatial.owl" uri="external/spatial.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/go/extensions/x-metazoan-anatomy.owl" uri="external/go/extensions/x-metazoan-anatomy.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/fma.owl" uri="external/anatomy/fma.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mpath.owl" uri="external/mpath.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/pr.owl" uri="external/pr.owl"/>
