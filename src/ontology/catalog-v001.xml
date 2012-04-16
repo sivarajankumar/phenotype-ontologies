@@ -15,7 +15,6 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/go/extensions/x-metazoan-anatomy.owl" uri="external/go/extensions/x-metazoan-anatomy.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/fma.owl" uri="external/anatomy/fma.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mpath.owl" uri="external/mpath.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/zfa.owl" uri="external/zfa.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/pr.owl" uri="external/pr.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/nbo.owl" uri="external/behavior-ontology/behavior.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/nbo/extensions/behavior_xp.owl" uri="fixed-behavior_xp.owl"/>
