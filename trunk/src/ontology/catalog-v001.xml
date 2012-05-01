@@ -12,7 +12,7 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ma.owl" uri="external/anatomy/ma.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/spatial.owl" uri="external/spatial.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/fma.owl" uri="external/anatomy/fma.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/nbo.owl" uri="external/behavior-ontology/behavior.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/nbo.owl" uri="external/behavior-ontology/behavior-edit.owl"/>
 <!--     <uri id="User Entered Import Resolution"  name="http://purl.obolibrary.org/obo/nbo/extensions/behavior_xp.owl" uri="fixed-behavior_xp.owl"/> -->
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/pato.owl" uri="pato.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl" uri="external/ncbitaxon-subsets/taxslim.owl"/>
