@@ -94,7 +94,7 @@ $(ONT)/%-ext-merged-tr.owl: %.owl $(ONT)/%-equivalence-axioms-tr.owl
 
 # new
 all_merged: uberpheno-subq-full-merged.owl
-%-merged.owl: %-importer.owl
+%-merged.owl: %-importer.owl mp/mp-equivalence-axioms-subq.owl hp/hp-equivalence-axioms-subq.owl mp.owl hp.owl
 	owltools --use-catalog $< --merge-import-closure --ni graph-traversal-metadata.owl --merge-support-ontologies   --merge-equivalent-classes -f $(OBO)/MP_ -t $(OBO)/HP_ --merge-equivalent-classes -f $(OBO)/FMA_ -f $(OBO)/EMAPA_ -f $(OBO)/MA_ -t $(OBO)/UBERON_ --merge-equivalent-classes -f $(OBO)/FMA_ -t $(OBO)/CL_ -t $(OBO)/UBERON_ -o file://`pwd`/$@
 
 # ----------------------------------------

@@ -7,11 +7,20 @@ Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 Prefix: dc: <http://purl.org/dc/elements/1.1/>
 Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
+# use this in combination with EITHER
+#  --exclusion-annotation-property "exclude me"
+# (liberal)
+# OR
+#  --inclusion-annotation-property "include me"
+# (conservative)
 
 Ontology: <http://purl.obolibrary.org/obo/upheno/graph-traversal-metadata.owl>
 
-ObjectProperty: obo:BFO_0000050
+## --DECLARATIONS--
+
 ObjectProperty: obo:BFO_0000051
+
+## --META--
 
 AnnotationProperty: :excludeMe
   Annotations: rdfs:label "exclude me"
@@ -19,36 +28,20 @@ AnnotationProperty: :excludeMe
 AnnotationProperty: :includeMe
   Annotations: rdfs:label "include me"
 
-ObjectProperty: obo:TODO_regional_part_of
-  Annotations: :excludeMe true
-
-ObjectProperty: obo:TODO_constitutional_part_of
-  Annotations: :excludeMe true
-
-ObjectProperty: <http://purl.obolibrary.org/obo/uberon#spatially_disjoint_from>
-  Annotations: :excludeMe true
-
-ObjectProperty: <http://purl.obolibrary.org/obo/zfa#end>
-  Annotations: :excludeMe true
-
-ObjectProperty: <http://purl.obolibrary.org/obo/zfa#start>
-  Annotations: :excludeMe true
-
-ObjectProperty: <http://purl.obolibrary.org/obo/TODO_attaches_to>
-  Annotations: :excludeMe true
-
-# has_part - we can experiment with bringing this back later
-ObjectProperty: obo:BFO_0000051
-  Annotations: :excludeMe true
-
-ObjectProperty: :part_of_has_part
-  Annotations: :excludeMe true
-  SubPropertyChain: obo:BFO_0000050 o obo:BFO_0000051
-
 ## --INCLUSION--
+
+# TODO - inferred relations
 
 # part of
 ObjectProperty: obo:BFO_0000050
+  Annotations: :includeMe true
+
+# has_part - note we have to include this for the subq phenotype model
+ObjectProperty: obo:BFO_0000051
+  Annotations: :includeMe true
+
+# inheres in
+ObjectProperty: obo:BFO_0000052
   Annotations: :includeMe true
 
 # occurs in
@@ -81,8 +74,38 @@ ObjectProperty: obo:FMA_85994
 ObjectProperty: obo:RO_0002202
   Annotations: :includeMe true
 
+# has developmental contrubtion from
+ObjectProperty: obo:RO_0002254
+  Annotations: :includeMe true
+
 # replaces
 ObjectProperty: obo:RO_0002285
   Annotations: :includeMe true
+
+## --EXCLUSION--
+
+ObjectProperty: obo:TODO_regional_part_of
+  Annotations: :excludeMe true
+
+ObjectProperty: obo:TODO_constitutional_part_of
+  Annotations: :excludeMe true
+
+ObjectProperty: <http://purl.obolibrary.org/obo/uberon#spatially_disjoint_from>
+  Annotations: :excludeMe true
+
+ObjectProperty: <http://purl.obolibrary.org/obo/zfa#end>
+  Annotations: :excludeMe true
+
+ObjectProperty: <http://purl.obolibrary.org/obo/zfa#start>
+  Annotations: :excludeMe true
+
+ObjectProperty: <http://purl.obolibrary.org/obo/TODO_attaches_to>
+  Annotations: :excludeMe true
+
+# special case - unwanted chains
+ObjectProperty: :part_of_has_part
+  Annotations: :excludeMe true
+  SubPropertyChain: obo:BFO_0000050 o obo:BFO_0000051
+
 
 
