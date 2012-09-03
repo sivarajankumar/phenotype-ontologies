@@ -16,8 +16,8 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/uberon/merged.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/upheno/uberon-simple-vertebrate-bridge.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/mp/mp-logical-definitions.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/hp/hp-logical-definitions.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/mp/mp-equivalence-axioms.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/hp/hp-equivalence-axioms.owl"/>
     </owl:Ontology>
     
 </rdf:RDF>

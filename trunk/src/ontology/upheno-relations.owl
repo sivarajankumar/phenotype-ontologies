@@ -69,7 +69,7 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000052 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000052">
-        <rdfs:label xml:lang="en">inheres in part of</rdfs:label>
+        <rdfs:label xml:lang="en">inheres in</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002314"/>
     </owl:ObjectProperty>
     
@@ -104,9 +104,19 @@
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002200"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002314"/>
         </owl:propertyChainAxiom>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002314"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002314"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002200"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        </owl:propertyChainAxiom>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002314"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002200"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002258"/>
+        </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
-
 
     <!-- http://purl.obolibrary.org/obo/RO_0002200 -->
 
