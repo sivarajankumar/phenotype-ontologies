@@ -4,6 +4,10 @@ remark: alpha version of translation of omia phenes to an ontology
 [Term]
 id: OMIA:000000
 name: phenotype
+equivalent_to: SCTID_258060006 {source="AUTO"} ! Phenotyping
+equivalent_to: SCTID_405884007 {source="AUTO"} ! S- phenotype
+equivalent_to: SCTID_405886009 {source="AUTO"} ! s- phenotype
+equivalent_to: SCTID_405890006 {source="AUTO"} ! S-s- phenotype
 
 [Term]
 id: OMIA:000001
@@ -17,6 +21,8 @@ name: adrenal hyperplasia, congenital
 is_a: OMIA:000000 ! phenotype
 relationship: similar_to MIM:118485 {source="omiaxml"} ! CYTOCHROME P450, SUBFAMILY XIA, POLYPEPTIDE 1
 relationship: similar_to MIM:201710 {source="omiaxml"} ! LIPOID CONGENITAL ADRENAL HYPERPLASIA
+equivalent_to: SCTID_237751000 {source="AUTO"} ! Congenital adrenal hyperplasia
+equivalent_to: SCTID_237755009 {source="AUTO"} ! Congenital adrenal hyperplasia
 
 [Term]
 id: OMIA:000031
@@ -41,6 +47,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000078
 name: ataxia, cerebellar
 is_a: OMIA:000000 ! phenotype
+equivalent_to: SCTID_85102008 {source="AUTO"} ! Cerebellar ataxia
 
 [Term]
 id: OMIA:000102
@@ -101,6 +108,8 @@ equivalent_to: MP:0001304 {status="AUTO"} ! cataracts
 equivalent_to: HP:0000518 {status="AUTO"} ! Cataract
 equivalent_to: DOID:83 {status="AUTO"} ! cataract
 relationship: similar_to MIM:116200 {source="omiaxml"} ! CATARACT, ZONULAR PULVERULENT 1
+equivalent_to: SCTID_128306009 {source="AUTO"} ! Cataract
+equivalent_to: SCTID_193570009 {source="AUTO"} ! Cataract
 
 [Term]
 id: OMIA:000175
@@ -121,6 +130,7 @@ name: chondrodysplasia
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:0002657 {status="AUTO"} ! chondrodystrophy
 relationship: similar_to MIM:225500 {source="omiaxml"} ! ELLIS-VAN CREVELD SYNDROME
+equivalent_to: SCTID_205465004 {source="AUTO"} ! Chondrodysplasia
 
 [Term]
 id: OMIA:000194
@@ -187,6 +197,7 @@ id: OMIA:000248
 name: neutropenia, cyclic
 is_a: OMIA:000000 ! phenotype
 relationship: similar_to MIM:608233 {source="omiaxml"} ! HERMANSKY-PUDLAK SYNDROME 2
+equivalent_to: SCTID_191347008 {source="AUTO"} ! Cyclical neutropenia
 
 [Term]
 id: OMIA:000256
@@ -213,6 +224,7 @@ id: OMIA:000263
 name: degenerative myelopathy
 is_a: OMIA:000000 ! phenotype
 relationship: similar_to MIM:105400 {source="omiaxml"} ! AMYOTROPHIC LATERAL SCLEROSIS 1
+equivalent_to: SCTID_70350007 {source="AUTO"} ! Degenerative myelopathy
 
 [Term]
 id: OMIA:000272
@@ -224,6 +236,7 @@ id: OMIA:000307
 name: dwarfism, pituitary
 is_a: OMIA:000000 ! phenotype
 relationship: similar_to MIM:221750 {source="omiaxml"} ! PITUITARY HORMONE DEFICIENCY, COMBINED, 3
+equivalent_to: SCTID_367460001 {source="AUTO"} ! Pituitary dwarfism
 
 [Term]
 id: OMIA:000309
@@ -239,6 +252,7 @@ is_a: OMIA:000000 ! phenotype
 equivalent_to: HP:0000968 {status="AUTO"} ! Ectodermal dysplasia
 equivalent_to: DOID:2121 {status="AUTO"} ! ectodermal dysplasia
 relationship: similar_to MIM:305100 {source="omiaxml"} ! ECTODERMAL DYSPLASIA, HYPOHIDROTIC, X-LINKED
+equivalent_to: SCTID_8654005 {source="AUTO"} ! Ectodermal dysplasia
 
 [Term]
 id: OMIA:000327
@@ -261,6 +275,7 @@ relationship: similar_to MIM:225400 {source="omiaxml"} ! EHLERS-DANLOS SYNDROME,
 relationship: similar_to MIM:225410 {source="omiaxml"} ! EHLERS-DANLOS SYNDROME, TYPE VII, AUTOSOMAL RECESSIVE
 relationship: similar_to MIM:229200 {source="omiaxml"} ! BRITTLE CORNEA SYNDROME 1
 relationship: similar_to MIM:305200 {source="omiaxml"} ! EHLERS-DANLOS SYNDROME, TYPE V
+equivalent_to: SCTID_398114001 {source="AUTO"} ! Ehlers-Danlos syndrome
 
 [Term]
 id: OMIA:000328
@@ -287,6 +302,7 @@ relationship: similar_to MIM:226730 {source="omiaxml"} ! EPIDERMOLYSIS BULLOSA J
 relationship: similar_to MIM:226735 {source="omiaxml"} ! EPIDERMOLYSIS BULLOSA WITH DIAPHRAGMATIC HERNIA
 relationship: similar_to MIM:302000 {source="omiaxml"} ! BULLOUS DYSTROPHY, HEREDITARY MACULAR TYPE
 relationship: similar_to MIM:601001 {source="omiaxml"} ! EPIDERMOLYSIS BULLOSA SIMPLEX, AUTOSOMAL RECESSIVE
+equivalent_to: SCTID_61003004 {source="AUTO"} ! Epidermolysis bullosa
 
 [Term]
 id: OMIA:000341
@@ -298,6 +314,7 @@ relationship: similar_to MIM:131950 {source="omiaxml"} ! EPIDERMOLYSIS BULLOSA S
 relationship: similar_to MIM:132000 {source="omiaxml"} ! EPIDERMOLYSIS BULLOSA WITH CONGENITAL LOCALIZED ABSENCE OF SKIN AND
 relationship: similar_to MIM:226500 {source="omiaxml"} ! EPIDERMOLYSIS BULLOSA DYSTROPHICA NEUROTROPHICA
 relationship: similar_to MIM:226600 {source="omiaxml"} ! EPIDERMOLYSIS BULLOSA DYSTROPHICA, AUTOSOMAL RECESSIVE
+equivalent_to: SCTID_254185007 {source="AUTO"} ! Dystrophic epidermolysis bullosa
 
 [Term]
 id: OMIA:000344
@@ -337,6 +354,7 @@ relationship: similar_to MIM:600513 {source="omiaxml"} ! EPILEPSY, NOCTURNAL FRO
 relationship: similar_to MIM:600669 {source="omiaxml"} ! EPILEPSY, IDIOPATHIC GENERALIZED
 relationship: similar_to MIM:601068 {source="omiaxml"} ! EPILEPSY, FAMILIAL ADULT MYOCLONIC, 1
 relationship: similar_to MIM:601085 {source="omiaxml"} ! ROLANDIC EPILEPSY, MENTAL RETARDATION, AND SPEECH DYSPRAXIA, AUTOSOMAL
+equivalent_to: SCTID_84757009 {source="AUTO"} ! Epilepsy
 
 [Term]
 id: OMIA:000361
@@ -345,6 +363,7 @@ is_a: OMIA:000000 ! phenotype
 equivalent_to: HP:0008169 {status="AUTO"} ! Factor VII deficiency
 equivalent_to: DOID:2215 {status="AUTO"} ! factor VII deficiency
 relationship: similar_to MIM:227500 {source="omiaxml"} ! FACTOR VII DEFICIENCY
+equivalent_to: SCTID_37193007 {source="AUTO"} ! Factor VII deficiency
 
 [Term]
 id: OMIA:000363
@@ -427,6 +446,7 @@ name: gangliosidosis, GM1
 is_a: OMIA:000000 ! phenotype
 relationship: similar_to MIM:230500 {source="omiaxml"} ! GM1-GANGLIOSIDOSIS, TYPE I
 relationship: similar_to MIM:230650 {source="omiaxml"} ! GM1-GANGLIOSIDOSIS, TYPE III
+equivalent_to: SCTID_238025006 {source="AUTO"} ! GM1 gangliosidosis
 
 [Term]
 id: OMIA:000405
@@ -511,6 +531,7 @@ is_a: OMIA:000000 ! phenotype
 equivalent_to: HP:0001639 {status="AUTO"} ! Hypertrophic cardiomyopathy
 equivalent_to: DOID:11984 {status="AUTO"} ! hypertrophic cardiomyopathy
 relationship: similar_to MIM:192600 {source="omiaxml"} ! CARDIOMYOPATHY, FAMILIAL HYPERTROPHIC, 1
+equivalent_to: SCTID_233873004 {source="AUTO"} ! Hypertrophic cardiomyopathy
 
 [Term]
 id: OMIA:000536
@@ -520,6 +541,7 @@ equivalent_to: MP:0003503 {status="AUTO"} ! decreased activity of thyroid
 equivalent_to: HP:0000821 {status="AUTO"} ! Hypothyroidism
 equivalent_to: DOID:1459 {status="AUTO"} ! hypothyroidism
 relationship: similar_to MIM:274500 {source="omiaxml"} ! THYROID DYSHORMONOGENESIS 2A
+equivalent_to: SCTID_40930008 {source="AUTO"} ! Hypothyroidism
 
 [Term]
 id: OMIA:000540
@@ -534,6 +556,7 @@ relationship: similar_to MIM:211370 {source="omiaxml"} ! BRACHYMETAPODY-ANODONTI
 relationship: similar_to MIM:246500 {source="omiaxml"} ! LEUKOMELANODERMA, INFANTILISM, MENTAL RETARDATION, HYPODONTIA, HYPOTRICHOSIS
 relationship: similar_to MIM:250460 {source="omiaxml"} ! METAPHYSEAL DYSPLASIA WITHOUT HYPOTRICHOSIS
 relationship: similar_to MIM:278200 {source="omiaxml"} ! WOOLLY HAIR, HYPOTRICHOSIS, EVERTED LOWER LIP, AND OUTSTANDING EARS
+equivalent_to: SCTID_53602002 {source="AUTO"} ! Hypotrichosis
 
 [Term]
 id: OMIA:000543
@@ -581,6 +604,7 @@ id: OMIA:000588
 name: lens luxation
 is_a: OMIA:000000 ! phenotype
 relationship: similar_to MIM:613195 {source="omiaxml"} ! WEILL-MARCHESANI-LIKE SYNDROME
+equivalent_to: SCTID_422659005 {source="AUTO"} ! Luxation of lens
 
 [Term]
 id: OMIA:000593
@@ -599,6 +623,8 @@ relationship: similar_to MIM:116920 {source="omiaxml"} ! LEUKOCYTE ADHESION DEFI
 id: OMIA:000620
 name: histiocytosis, malignant
 is_a: OMIA:000000 ! phenotype
+equivalent_to: SCTID_118612006 {source="AUTO"} ! Malignant histiocytosis
+equivalent_to: SCTID_128920006 {source="AUTO"} ! Malignant histiocytosis
 
 [Term]
 id: OMIA:000621
@@ -607,6 +633,7 @@ is_a: OMIA:000000 ! phenotype
 equivalent_to: HP:0002047 {status="AUTO"} ! Malignant hyperthermia
 equivalent_to: DOID:8545 {status="AUTO"} ! malignant hyperthermia
 relationship: similar_to MIM:145600 {source="omiaxml"} ! MALIGNANT HYPERTHERMIA, SUSCEPTIBILITY TO, 1
+equivalent_to: SCTID_405501007 {source="AUTO"} ! Malignant hyperthermia
 
 [Term]
 id: OMIA:000625
@@ -628,6 +655,7 @@ name: maple syrup urine disease
 is_a: OMIA:000000 ! phenotype
 equivalent_to: DOID:9269 {status="AUTO"} ! maple syrup urine disease
 relationship: similar_to MIM:248600 {source="omiaxml"} ! MAPLE SYRUP URINE DISEASE
+equivalent_to: SCTID_27718001 {source="AUTO"} ! Maple syrup urine disease
 
 [Term]
 id: OMIA:000628
@@ -635,6 +663,7 @@ name: marfan syndrome
 is_a: OMIA:000000 ! phenotype
 equivalent_to: DOID:14323 {status="AUTO"} ! Marfan syndrome
 relationship: similar_to MIM:154700 {source="omiaxml"} ! MARFAN SYNDROME
+equivalent_to: SCTID_19346006 {source="AUTO"} ! Marfan's syndrome
 
 [Term]
 id: OMIA:000629
@@ -667,6 +696,7 @@ equivalent_to: DOID:10629 {status="AUTO"} ! microphthalmia
 id: OMIA:000662
 name: motor neuron disease, lower
 is_a: OMIA:000000 ! phenotype
+equivalent_to: SCTID_84590007 {source="AUTO"} ! Lower motor neuron disease
 
 [Term]
 id: OMIA:000664
@@ -705,6 +735,7 @@ is_a: OMIA:000000 ! phenotype
 equivalent_to: HP:0003560 {status="AUTO"} ! Muscular dystrophy
 equivalent_to: DOID:9884 {status="AUTO"} ! muscular dystrophy
 relationship: similar_to MIM:310200 {source="omiaxml"} ! MUSCULAR DYSTROPHY, DUCHENNE TYPE
+equivalent_to: SCTID_73297009 {source="AUTO"} ! Muscular dystrophy
 
 [Term]
 id: OMIA:000683
@@ -725,6 +756,7 @@ is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:0000243 {status="AUTO"} ! myoclonus
 equivalent_to: HP:0001336 {status="AUTO"} ! Myoclonus
 relationship: similar_to MIM:149400 {source="omiaxml"} ! HYPEREKPLEXIA, HEREDITARY 1
+equivalent_to: SCTID_17450006 {source="AUTO"} ! Myoclonus
 
 [Term]
 id: OMIA:000690
@@ -738,6 +770,7 @@ name: myotonia
 is_a: OMIA:000000 ! phenotype
 equivalent_to: HP:0002486 {status="AUTO"} ! Myotonia
 relationship: similar_to MIM:160800 {source="omiaxml"} ! MYOTONIA CONGENITA, AUTOSOMAL DOMINANT
+equivalent_to: SCTID_3434004 {source="AUTO"} ! Myotonia
 
 [Term]
 id: OMIA:000701
@@ -762,6 +795,7 @@ equivalent_to: MP:0005279 {status="AUTO"} ! narcolepsy
 equivalent_to: DOID:8986 {status="AUTO"} ! narcolepsy
 relationship: similar_to MIM:161400 {source="omiaxml"} ! NARCOLEPSY 1
 relationship: similar_to MIM:602393 {source="omiaxml"} ! HYPOCRETIN RECEPTOR 2
+equivalent_to: SCTID_60380001 {source="AUTO"} ! Narcolepsy
 
 [Term]
 id: OMIA:000710
@@ -775,12 +809,14 @@ name: neuroaxonal dystrophy
 is_a: OMIA:000000 ! phenotype
 equivalent_to: DOID:2367 {status="AUTO"} ! neuroaxonal dystrophy
 relationship: similar_to MIM:608507 {source="omiaxml"} ! MITOFUSIN 2
+equivalent_to: SCTID_230365004 {source="AUTO"} ! Neuroaxonal dystrophy
 
 [Term]
 id: OMIA:000725
 name: niemann-Pick disease, type C
 is_a: OMIA:000000 ! phenotype
 relationship: similar_to MIM:257220 {source="omiaxml"} ! NIEMANN-PICK DISEASE, TYPE C1
+equivalent_to: SCTID_66751000 {source="AUTO"} ! Niemann-Pick disease, type C
 
 [Term]
 id: OMIA:000733
@@ -795,6 +831,7 @@ equivalent_to: DOID:12347 {status="AUTO"} ! osteogenesis imperfecta
 relationship: similar_to MIM:166210 {source="omiaxml"} ! OSTEOGENESIS IMPERFECTA, TYPE II
 relationship: similar_to MIM:166220 {source="omiaxml"} ! OSTEOGENESIS IMPERFECTA, TYPE IV
 relationship: similar_to MIM:259420 {source="omiaxml"} ! OSTEOGENESIS IMPERFECTA, TYPE III
+equivalent_to: SCTID_78314001 {source="AUTO"} ! Osteogenesis imperfecta
 
 [Term]
 id: OMIA:000755
@@ -808,6 +845,7 @@ relationship: similar_to MIM:259710 {source="omiaxml"} ! OSTEOPETROSIS, AUTOSOMA
 relationship: similar_to MIM:259720 {source="omiaxml"} ! OSTEOPETROSIS, AUTOSOMAL RECESSIVE 5
 relationship: similar_to MIM:259730 {source="omiaxml"} ! OSTEOPETROSIS, AUTOSOMAL RECESSIVE 3
 relationship: similar_to MIM:600329 {source="omiaxml"} ! OSTEOPETROSIS AND INFANTILE NEUROAXONAL DYSTROPHY
+equivalent_to: SCTID_1926006 {source="AUTO"} ! Osteopetrosis
 
 [Term]
 id: OMIA:000770
@@ -865,12 +903,14 @@ equivalent_to: MP:0000562 {status="AUTO"} ! polydactyly
 equivalent_to: HP:0010442 {status="AUTO"} ! Polydactyly
 equivalent_to: DOID:1148 {status="AUTO"} ! polydactyly
 relationship: similar_to MIM:174500 {source="omiaxml"} ! POLYDACTYLY, PREAXIAL II
+equivalent_to: SCTID_367506006 {source="AUTO"} ! Polydactyly
 
 [Term]
 id: OMIA:000819
 name: prekallikrein deficiency
 is_a: OMIA:000000 ! phenotype
 relationship: similar_to MIM:229000 {source="omiaxml"} ! KALLIKREIN B, PLASMA, 1
+equivalent_to: SCTID_48976006 {source="AUTO"} ! Prekallikrein deficiency
 
 [Term]
 id: OMIA:000821
@@ -934,6 +974,7 @@ id: OMIA:000878
 name: arrhythmogenic right ventricular cardiomyopathy
 is_a: OMIA:000000 ! phenotype
 relationship: similar_to MIM:107970 {source="omiaxml"} ! ARRHYTHMOGENIC RIGHT VENTRICULAR DYSPLASIA, FAMILIAL, 1
+equivalent_to: SCTID_281170005 {source="AUTO"} ! Arrhythmogenic right ventricular cardiomyopathy
 
 [Term]
 id: OMIA:000881
@@ -980,6 +1021,7 @@ is_a: OMIA:000000 ! phenotype
 equivalent_to: HP:0007269 {status="AUTO"} ! Spinal muscular atrophy
 equivalent_to: DOID:12377 {status="AUTO"} ! spinal muscular atrophy
 relationship: similar_to MIM:253400 {source="omiaxml"} ! SPINAL MUSCULAR ATROPHY, TYPE III
+equivalent_to: SCTID_5262007 {source="AUTO"} ! Spinal muscular atrophy
 
 [Term]
 id: OMIA:000944
@@ -988,6 +1030,7 @@ is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:0002654 {status="AUTO"} ! spongiform encephalopathy
 equivalent_to: DOID:649 {status="AUTO"} ! prion disease
 relationship: similar_to MIM:176640 {source="omiaxml"} ! PRION PROTEIN
+equivalent_to: SCTID_230284004 {source="AUTO"} ! Spongiform encephalopathy
 
 [Term]
 id: OMIA:000963
@@ -1058,6 +1101,7 @@ name: urolithiasis
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:0005360 {status="AUTO"} ! urolithiasis
 relationship: similar_to MIM:220150 {source="omiaxml"} ! HYPOURICEMIA, RENAL, 1
+equivalent_to: SCTID_95566004 {source="AUTO"} ! Urolithiasis
 
 [Term]
 id: OMIA:001058
@@ -1071,11 +1115,13 @@ name: wilson disease
 is_a: OMIA:000000 ! phenotype
 equivalent_to: DOID:893 {status="AUTO"} ! Wilson disease
 relationship: similar_to MIM:277900 {source="omiaxml"} ! WILSON DISEASE
+equivalent_to: SCTID_88518009 {source="AUTO"} ! Wilson's disease
 
 [Term]
 id: OMIA:001079
 name: yellow fat
 is_a: OMIA:000000 ! phenotype
+equivalent_to: SCTID_38888009 {source="AUTO"} ! Yellow fat
 
 [Term]
 id: OMIA:001081
@@ -1093,6 +1139,7 @@ id: OMIA:001089
 name: blood group system ABO
 is_a: OMIA:000000 ! phenotype
 relationship: similar_to MIM:110300 {source="omiaxml"} ! ABO GLYCOSYLTRANSFERASE
+equivalent_to: SCTID_63915006 {source="AUTO"} ! ABO blood group system
 
 [Term]
 id: OMIA:001106
@@ -1123,6 +1170,7 @@ is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:0002135 {status="AUTO"} ! abnormal kidney morphology
 equivalent_to: HP:0000110 {status="AUTO"} ! Renal dysplasia
 relationship: similar_to MIM:248250 {source="omiaxml"} ! HYPOMAGNESEMIA 3, RENAL
+equivalent_to: SCTID_204949001 {source="AUTO"} ! Renal dysplasia
 
 [Term]
 id: OMIA:001138
@@ -1148,6 +1196,7 @@ id: OMIA:001175
 name: porphyria, congenital erythropoietic
 is_a: OMIA:000000 ! phenotype
 relationship: similar_to MIM:263700 {source="omiaxml"} ! PORPHYRIA, CONGENITAL ERYTHROPOIETIC
+equivalent_to: SCTID_22935002 {source="AUTO"} ! Congenital erythropoietic porphyria
 
 [Term]
 id: OMIA:001176
@@ -1155,6 +1204,7 @@ name: porphyria cutanea tarda
 is_a: OMIA:000000 ! phenotype
 equivalent_to: DOID:3132 {status="AUTO"} ! porphyria cutanea tarda
 relationship: similar_to MIM:176100 {source="omiaxml"} ! PORPHYRIA CUTANEA TARDA
+equivalent_to: SCTID_61860000 {source="AUTO"} ! Porphyria cutanea tarda
 
 [Term]
 id: OMIA:001199
@@ -1192,6 +1242,7 @@ equivalent_to: MP:0002812 {status="AUTO"} ! spherocytosis
 equivalent_to: HP:0004444 {status="AUTO"} ! Spherocytosis
 relationship: similar_to MIM:109270 {source="omiaxml"} ! SOLUTE CARRIER FAMILY 4 (ANION EXCHANGER), MEMBER 1
 relationship: similar_to MIM:182900 {source="omiaxml"} ! SPHEROCYTOSIS, TYPE 1
+equivalent_to: SCTID_17235000 {source="AUTO"} ! Spherocytosis
 
 [Term]
 id: OMIA:001230
@@ -1274,6 +1325,7 @@ is_a: OMIA:000000 ! phenotype
 equivalent_to: HP:0001271 {status="AUTO"} ! Polyneuropathy
 equivalent_to: DOID:1389 {status="AUTO"} ! polyneuropathy
 relationship: similar_to MIM:601455 {source="omiaxml"} ! CHARCOT-MARIE-TOOTH DISEASE, TYPE 4D
+equivalent_to: SCTID_42345000 {source="AUTO"} ! Polyneuropathy
 
 [Term]
 id: OMIA:001297
@@ -1319,6 +1371,7 @@ name: elliptocytosis
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:0009547 {status="AUTO"} ! elliptocytosis
 equivalent_to: HP:0004445 {status="AUTO"} ! Elliptocytosis
+equivalent_to: SCTID_250242004 {source="AUTO"} ! Elliptocytosis
 
 [Term]
 id: OMIA:001319
@@ -1416,6 +1469,7 @@ name: trimethylaminuria
 is_a: OMIA:000000 ! phenotype
 equivalent_to: HP:0003614 {status="AUTO"} ! Trimethylaminuria
 relationship: similar_to MIM:602079 {source="omiaxml"} ! TRIMETHYLAMINURIA
+equivalent_to: SCTID_237959005 {source="AUTO"} ! Trimethylaminuria
 
 [Term]
 id: OMIA:001365
@@ -1472,6 +1526,7 @@ relationship: similar_to MIM:171050 {source="omiaxml"} ! ATP-BINDING CASSETTE, S
 id: OMIA:001403
 name: pancreatitis, hereditary
 is_a: OMIA:000000 ! phenotype
+equivalent_to: SCTID_68072000 {source="AUTO"} ! Hereditary pancreatitis
 
 [Term]
 id: OMIA:001405
@@ -1716,12 +1771,14 @@ relationship: similar_to MIM:601591 {source="omiaxml"} ! PROTEIN KINASE, cGMP-DE
 id: OMIA:001486
 name: night blindness, congenital stationary
 is_a: OMIA:000000 ! phenotype
+equivalent_to: SCTID_232061009 {source="AUTO"} ! Congenital stationary night blindness
 
 [Term]
 id: OMIA:001493
 name: porphyria, acute intermittent
 is_a: OMIA:000000 ! phenotype
 relationship: similar_to MIM:176000 {source="omiaxml"} ! PORPHYRIA, ACUTE INTERMITTENT
+equivalent_to: SCTID_234422006 {source="AUTO"} ! Acute intermittent porphyria
 
 [Term]
 id: OMIA:001494
@@ -1802,6 +1859,7 @@ equivalent_to: MP:0009515 {status="AUTO"} ! gastrointestinal stromal tumor
 equivalent_to: HP:0100723 {status="AUTO"} ! Gastrointestinal stroma tumor
 equivalent_to: DOID:9253 {status="AUTO"} ! gastrointestinal stromal tumor
 relationship: similar_to MIM:606764 {source="omiaxml"} ! GASTROINTESTINAL STROMAL TUMOR
+equivalent_to: SCTID_420120006 {source="AUTO"} ! Gastrointestinal stromal tumor
 
 [Term]
 id: OMIA:001518
@@ -1839,6 +1897,7 @@ id: OMIA:001524
 name: gallbladder mucoceles
 is_a: OMIA:000000 ! phenotype
 relationship: similar_to MIM:600803 {source="omiaxml"} ! GALLBLADDER DISEASE 1
+equivalent_to: SCTID_78793006 {source="AUTO"} ! Mucocele of gallbladder
 
 [Term]
 id: OMIA:001525
@@ -1963,6 +2022,7 @@ name: leukemia, chronic monocytic
 is_a: OMIA:000000 ! phenotype
 relationship: similar_to MIM:151410 {source="omiaxml"} ! BREAKPOINT CLUSTER REGION
 relationship: similar_to MIM:608232 {source="omiaxml"} ! LEUKEMIA, CHRONIC MYELOID
+equivalent_to: SCTID_188745007 {source="AUTO"} ! Chronic monocytic leukemia
 
 [Term]
 id: OMIA:001574
@@ -2069,6 +2129,8 @@ id: OMIA:001608
 name: may-Hegglin anomaly
 is_a: OMIA:000000 ! phenotype
 relationship: similar_to MIM:155100 {source="omiaxml"} ! MAY-HEGGLIN ANOMALY
+equivalent_to: SCTID_234484005 {source="AUTO"} ! May-Hegglin anomaly
+equivalent_to: SCTID_250279001 {source="AUTO"} ! May-Hegglin anomaly
 
 [Term]
 id: OMIA:001612
@@ -2115,6 +2177,7 @@ id: OMIA:001673
 name: spermatogenic arrest
 is_a: OMIA:000000 ! phenotype
 relationship: similar_to MIM:605792 {source="omiaxml"} ! TESTIS-EXPRESSED GENE 14
+equivalent_to: SCTID_85716005 {source="AUTO"} ! Spermatogenic arrest
 
 [Term]
 id: OMIA:001676
