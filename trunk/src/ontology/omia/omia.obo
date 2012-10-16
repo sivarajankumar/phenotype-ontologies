@@ -16,6 +16,8 @@ name: tremor, X-linked
 is_a: OMIA:000000 ! phenotype
 equivalent_to: SYMP:0000162 {status="AUTO"} ! tremor
 equivalent_to: MP:0000745 {status="AUTO"} ! tremors
+equivalent_to: HP:0001337 {status="AUTO"} ! Tremor
+equivalent_to: HP:0001417 {status="AUTO"} ! X-linked inheritance
 
 [Term]
 id: OMIA:000664
@@ -36,6 +38,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000156
 name: c8 deficiency
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0004434 {status="AUTO"} ! C8 deficiency
 
 [Term]
 id: OMIA:000155
@@ -71,11 +74,13 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000309
 name: dwarfism, sex-linked
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0001516 {status="AUTO"} ! Dwarfism
 
 [Term]
 id: OMIA:000424
 name: goitre, familial
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0000853 {status="AUTO"} ! Goiter
 
 [Term]
 id: OMIA:000424
@@ -88,6 +93,8 @@ name: nephritis, X-linked
 is_a: OMIA:000000 ! phenotype
 equivalent_to: SYMP:0000098 {status="AUTO"} ! nephritis
 equivalent_to: MP:0001859 {status="AUTO"} ! kidney inflammation
+equivalent_to: HP:0000123 {status="AUTO"} ! Nephritis
+equivalent_to: HP:0001417 {status="AUTO"} ! X-linked inheritance
 
 [Term]
 id: OMIA:000438
@@ -126,6 +133,7 @@ name: alopecia, colour mutant
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:0000414 {status="AUTO"} ! alopecia
 equivalent_to: MP:MP_0000414 {status="AUTO"} ! alopecia
+equivalent_to: HP:0001596 {status="AUTO"} ! Alopecia
 
 [Term]
 id: OMIA:000042
@@ -168,11 +176,13 @@ name: cardiomyopathy and woolly haircoat syndrome
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:0005330 {status="AUTO"} ! cardiomyopathy
 equivalent_to: MP:MP_0005330 {status="AUTO"} ! cardiomyopathy
+equivalent_to: HP:0001638 {status="AUTO"} ! Cardiomyopathy
 
 [Term]
 id: OMIA:000162
 name: cardiomyopathy, dilated
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0001644 {status="AUTO"} ! Dilated cardiomyopathy
 
 [Term]
 id: OMIA:000162
@@ -189,6 +199,7 @@ id: OMIA:000168
 name: cataract
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:0001304 {status="AUTO"} ! cataracts
+equivalent_to: HP:0000518 {status="AUTO"} ! Cataract
 
 [Term]
 id: OMIA:000175
@@ -220,6 +231,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000202
 name: coat colour, albinism
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0001022 {status="AUTO"} ! Albinism
 
 [Term]
 id: OMIA:000202
@@ -287,11 +299,13 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000361
 name: factor VII deficiency
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0008169 {status="AUTO"} ! Factor VII deficiency
 
 [Term]
 id: OMIA:000363
 name: factor XI deficiency
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0001929 {status="AUTO"} ! Factor XI deficiency
 
 [Term]
 id: OMIA:000363
@@ -302,11 +316,13 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000369
 name: feather colour, albinism
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0001022 {status="AUTO"} ! Albinism
 
 [Term]
 id: OMIA:000370
 name: feather colour, albinism, sex-linked, imperfect
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0001022 {status="AUTO"} ! Albinism
 
 [Term]
 id: OMIA:000373
@@ -412,12 +428,14 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000515
 name: cardiomyopathy, hypertrophic
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0001639 {status="AUTO"} ! Hypertrophic cardiomyopathy
 
 [Term]
 id: OMIA:000536
 name: hypothyroidism
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:0003503 {status="AUTO"} ! decreased activity of thyroid
+equivalent_to: HP:0000821 {status="AUTO"} ! Hypothyroidism
 
 [Term]
 id: OMIA:000536
@@ -428,6 +446,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000540
 name: hypotrichosis
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0001006 {status="AUTO"} ! Hypotrichosis
 
 [Term]
 id: OMIA:000540
@@ -438,6 +457,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000543
 name: anhidrotic ectodermal dysplasia
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0007476 {status="AUTO"} ! Anhidrotic ectodermal dysplasia
 
 [Term]
 id: OMIA:000547
@@ -448,6 +468,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000565
 name: intestinal cobalamin malabsorption
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0002024 {status="AUTO"} ! Malabsorption
 
 [Term]
 id: OMIA:000375
@@ -493,6 +514,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000621
 name: malignant hyperthermia
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0002047 {status="AUTO"} ! Malignant hyperthermia
 
 [Term]
 id: OMIA:000621
@@ -540,11 +562,13 @@ name: megacolon
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:0002731 {status="AUTO"} ! megacolon
 equivalent_to: MP:MP_0002731 {status="AUTO"} ! megacolon
+equivalent_to: HP:0002251 {status="AUTO"} ! Aganglionic megacolon
 
 [Term]
 id: OMIA:000636
 name: membranoproliferative glomerulonephritis type II
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0004746 {status="AUTO"} ! membranoproliferative glomerulonephritis type ii
 
 [Term]
 id: OMIA:000649
@@ -552,6 +576,7 @@ name: microphthalmia
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:0001297 {status="AUTO"} ! microphthalmia
 equivalent_to: MP:MP_0001297 {status="AUTO"} ! microphthalmia
+equivalent_to: HP:0000568 {status="AUTO"} ! Microphthalmos
 
 [Term]
 id: OMIA:000664
@@ -587,6 +612,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000679
 name: muscular dystrophy
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0003560 {status="AUTO"} ! Muscular dystrophy
 
 [Term]
 id: OMIA:001081
@@ -597,6 +623,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000683
 name: muscular hypertrophy (double muscling)
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0003712 {status="AUTO"} ! Muscle hypertrophy
 
 [Term]
 id: OMIA:000683
@@ -607,6 +634,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001354
 name: muscular hypertrophy (double muscling), Callipyge
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0003712 {status="AUTO"} ! Muscle hypertrophy
 
 [Term]
 id: OMIA:000685
@@ -619,6 +647,7 @@ name: myoclonus
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:0000243 {status="AUTO"} ! myoclonus
 equivalent_to: MP:MP_0000243 {status="AUTO"} ! myoclonus
+equivalent_to: HP:0001336 {status="AUTO"} ! Myoclonus
 
 [Term]
 id: OMIA:000690
@@ -629,6 +658,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000698
 name: myotonia
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0002486 {status="AUTO"} ! Myotonia
 
 [Term]
 id: OMIA:000701
@@ -655,6 +685,7 @@ equivalent_to: MP:MP_0005279 {status="AUTO"} ! narcolepsy
 id: OMIA:000710
 name: nephropathy
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0000112 {status="AUTO"} ! Nephropathy
 
 [Term]
 id: OMIA:000715
@@ -682,6 +713,7 @@ name: osteopetrosis
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:MP_0000067 {status="AUTO"} ! osteopetrosis
 equivalent_to: MP:0000067 {status="AUTO"} ! osteopetrosis
+equivalent_to: HP:0011002 {status="AUTO"} ! Osteopetrosis
 
 [Term]
 id: OMIA:000782
@@ -697,6 +729,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000807
 name: polycystic kidney disease
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0000113 {status="AUTO"} ! Polycystic kidney dysplasia
 
 [Term]
 id: OMIA:000810
@@ -704,6 +737,7 @@ name: polydactyly
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:MP_0000562 {status="AUTO"} ! polydactyly
 equivalent_to: MP:0000562 {status="AUTO"} ! polydactyly
+equivalent_to: HP:0010442 {status="AUTO"} ! Polydactyly
 
 [Term]
 id: OMIA:000810
@@ -724,6 +758,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000831
 name: x-linked PRA 1
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0001417 {status="AUTO"} ! X-linked inheritance
 
 [Term]
 id: OMIA:000836
@@ -736,6 +771,7 @@ name: vitamin D-deficiency rickets, type I
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:MP_0003116 {status="AUTO"} ! rickets
 equivalent_to: MP:0003116 {status="AUTO"} ! rickets
+equivalent_to: HP:0002748 {status="AUTO"} ! Rickets
 
 [Term]
 id: OMIA:000844
@@ -763,6 +799,7 @@ name: retinal degeneration II
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:MP_0001326 {status="AUTO"} ! retinal degeneration
 equivalent_to: MP:0001326 {status="AUTO"} ! retinal degeneration
+equivalent_to: HP:0000546 {status="AUTO"} ! Retinal degeneration
 
 [Term]
 id: OMIA:000876
@@ -815,6 +852,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000939
 name: spinal muscular atrophy
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0007269 {status="AUTO"} ! Spinal muscular atrophy
 
 [Term]
 id: OMIA:000944
@@ -829,6 +867,7 @@ name: syndactyly (mule foot)
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:0000564 {status="AUTO"} ! syndactyly
 equivalent_to: MP:MP_0000564 {status="AUTO"} ! syndactyly
+equivalent_to: HP:0001159 {status="AUTO"} ! Syndactyly
 
 [Term]
 id: OMIA:000979
@@ -844,6 +883,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001000
 name: thrombasthenia
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0004807 {status="AUTO"} ! Thrombasthenia
 
 [Term]
 id: OMIA:001001
@@ -882,6 +922,7 @@ id: OMIA:001135
 name: renal dysplasia
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:0002135 {status="AUTO"} ! abnormal kidney morphology
+equivalent_to: HP:0000110 {status="AUTO"} ! Renal dysplasia
 
 [Term]
 id: OMIA:000915
@@ -942,6 +983,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001222
 name: leber congenital amaurosis (congenital stationary night blindness)
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0007642 {status="AUTO"} ! Congenital stationary night blindness
 
 [Term]
 id: OMIA:001228
@@ -949,6 +991,7 @@ name: spherocytosis
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:MP_0002812 {status="AUTO"} ! spherocytosis
 equivalent_to: MP:0002812 {status="AUTO"} ! spherocytosis
+equivalent_to: HP:0004444 {status="AUTO"} ! Spherocytosis
 
 [Term]
 id: OMIA:001230
@@ -971,6 +1014,7 @@ name: retinal degeneration I
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:MP_0001326 {status="AUTO"} ! retinal degeneration
 equivalent_to: MP:0001326 {status="AUTO"} ! retinal degeneration
+equivalent_to: HP:0000546 {status="AUTO"} ! Retinal degeneration
 
 [Term]
 id: OMIA:000809
@@ -978,6 +1022,7 @@ name: polycythemia
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:MP_0002872 {status="AUTO"} ! polycythemia
 equivalent_to: MP:0002872 {status="AUTO"} ! polycythemia
+equivalent_to: HP:0001901 {status="AUTO"} ! Polycythemia
 
 [Term]
 id: OMIA:000209
@@ -988,6 +1033,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001247
 name: spinal dysmyelination
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0003469 {status="AUTO"} ! Dysmyelination
 
 [Term]
 id: OMIA:001248
@@ -1038,6 +1084,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001271
 name: dwarfism, Dexter
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0001516 {status="AUTO"} ! Dwarfism
 
 [Term]
 id: OMIA:001003
@@ -1058,6 +1105,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001292
 name: polyneuropathy
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0001271 {status="AUTO"} ! Polyneuropathy
 
 [Term]
 id: OMIA:000515
@@ -1085,6 +1133,7 @@ name: early retinal degeneration
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:MP_0001326 {status="AUTO"} ! retinal degeneration
 equivalent_to: MP:0001326 {status="AUTO"} ! retinal degeneration
+equivalent_to: HP:0000546 {status="AUTO"} ! Retinal degeneration
 
 [Term]
 id: OMIA:001298
@@ -1110,6 +1159,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000546
 name: ichthyosis
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0008064 {status="AUTO"} ! Ichthyosiform abnormality of the skin
 
 [Term]
 id: OMIA:001314
@@ -1142,6 +1192,7 @@ name: elliptocytosis
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:0009547 {status="AUTO"} ! elliptocytosis
 equivalent_to: MP:MP_0009547 {status="AUTO"} ! elliptocytosis
+equivalent_to: HP:0004445 {status="AUTO"} ! Elliptocytosis
 
 [Term]
 id: OMIA:001199
@@ -1154,6 +1205,7 @@ name: myopathy of the diaphragmatic muscles
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:0000751 {status="AUTO"} ! myopathy
 equivalent_to: MP:MP_0000751 {status="AUTO"} ! myopathy
+equivalent_to: HP:0003198 {status="AUTO"} ! Myopathy
 
 [Term]
 id: OMIA:001322
@@ -1231,6 +1283,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001346
 name: autosomal dominant PRA
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0000006 {status="AUTO"} ! Autosomal dominant inheritance
 
 [Term]
 id: OMIA:000220
@@ -1266,6 +1319,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001360
 name: trimethylaminuria
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0003614 {status="AUTO"} ! Trimethylaminuria
 
 [Term]
 id: OMIA:000209
@@ -1284,11 +1338,13 @@ id: OMIA:001366
 name: retinal dysplasia and degeneration
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:0001325 {status="AUTO"} ! abnormal retina morphology
+equivalent_to: HP:0007973 {status="AUTO"} ! Retinal dysplasia
 
 [Term]
 id: OMIA:001368
 name: retinopathy globe enlarged
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0000488 {status="AUTO"} ! Retinopathy
 
 [Term]
 id: OMIA:001371
@@ -1418,6 +1474,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001426
 name: muscular hypertrophy (double muscling), Texel
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0003712 {status="AUTO"} ! Muscle hypertrophy
 
 [Term]
 id: OMIA:000202
@@ -1498,6 +1555,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001444
 name: multifocal retinopathy 1
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0000488 {status="AUTO"} ! Retinopathy
 
 [Term]
 id: OMIA:000206
@@ -1530,6 +1588,7 @@ name: congenital muscular dystonia 1
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:MP_0005323 {status="AUTO"} ! dystonia
 equivalent_to: MP:0005323 {status="AUTO"} ! dystonia
+equivalent_to: HP:0001332 {status="AUTO"} ! Dystonia
 
 [Term]
 id: OMIA:001451
@@ -1537,6 +1596,7 @@ name: congenital muscular dystonia 2
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:MP_0005323 {status="AUTO"} ! dystonia
 equivalent_to: MP:0005323 {status="AUTO"} ! dystonia
+equivalent_to: HP:0001332 {status="AUTO"} ! Dystonia
 
 [Term]
 id: OMIA:001452
@@ -1552,6 +1612,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001455
 name: cone-rod dystrophy, Standard Wire-haired Dachshund
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0000548 {status="AUTO"} ! Cone-rod dystrophy
 
 [Term]
 id: OMIA:001342
@@ -1592,6 +1653,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001467
 name: sensory ataxic neuropathy
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0003434 {status="AUTO"} ! Sensory ataxic neuropathy
 
 [Term]
 id: OMIA:001199
@@ -1602,6 +1664,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000323
 name: ectodermal dysplasia
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0000968 {status="AUTO"} ! Ectodermal dysplasia
 
 [Term]
 id: OMIA:000202
@@ -1619,6 +1682,7 @@ name: neonatal encephalopathy with seizures
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:MP_0002064 {status="AUTO"} ! seizures
 equivalent_to: MP:0002064 {status="AUTO"} ! seizures
+equivalent_to: HP:0001250 {status="AUTO"} ! Seizures
 
 [Term]
 id: OMIA:001472
@@ -1634,6 +1698,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001473
 name: dwarfism, growth-hormone deficiency
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0001516 {status="AUTO"} ! Dwarfism
 
 [Term]
 id: OMIA:000439
@@ -1666,6 +1731,7 @@ name: vitamin D-deficiency rickets, type II
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:MP_0003116 {status="AUTO"} ! rickets
 equivalent_to: MP:0003116 {status="AUTO"} ! rickets
+equivalent_to: HP:0002748 {status="AUTO"} ! Rickets
 
 [Term]
 id: OMIA:000837
@@ -1676,6 +1742,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001485
 name: dwarfism, Angus
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0001516 {status="AUTO"} ! Dwarfism
 
 [Term]
 id: OMIA:001486
@@ -1833,11 +1900,13 @@ name: gastrointestinal stromal tumor
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:MP_0009515 {status="AUTO"} ! gastrointestinal stromal tumor
 equivalent_to: MP:0009515 {status="AUTO"} ! gastrointestinal stromal tumor
+equivalent_to: HP:0100723 {status="AUTO"} ! Gastrointestinal stroma tumor
 
 [Term]
 id: OMIA:001518
 name: x-linked PRA 2
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0001417 {status="AUTO"} ! X-linked inheritance
 
 [Term]
 id: OMIA:001520
@@ -1923,6 +1992,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001544
 name: hypotrichosis with coat-colour dilution
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0001006 {status="AUTO"} ! Hypotrichosis
 
 [Term]
 id: OMIA:001545
@@ -1938,11 +2008,13 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001553
 name: multifocal retinopathy 2
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0000488 {status="AUTO"} ! Retinopathy
 
 [Term]
 id: OMIA:001554
 name: multifocal retinopathy 3
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0000488 {status="AUTO"} ! Retinopathy
 
 [Term]
 id: OMIA:001559
@@ -1965,6 +2037,7 @@ name: abortion and stillbirth
 is_a: OMIA:000000 ! phenotype
 equivalent_to: SYMP:0000197 {status="AUTO"} ! abortion
 equivalent_to: SYMP:0000849 {status="AUTO"} ! stillbirth
+equivalent_to: HP:0001624 {status="AUTO"} ! Stillbirth
 
 [Term]
 id: OMIA:001566
@@ -2042,6 +2115,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001583
 name: hypotrichosis, with whiskers short and curled
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0001006 {status="AUTO"} ! Hypotrichosis
 
 [Term]
 id: OMIA:001586
@@ -2052,6 +2126,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001588
 name: ichthyosis, Golden Retriever
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0008064 {status="AUTO"} ! Ichthyosiform abnormality of the skin
 
 [Term]
 id: OMIA:001590
@@ -2189,6 +2264,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001671
 name: silky/Silkie pigmentation (Fibromelanosis)
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0001000 {status="AUTO"} ! Abnormality of skin pigmentation
 
 [Term]
 id: OMIA:001672
@@ -2266,6 +2342,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001683
 name: congenital keratoconjunctivitis sicca and ichthyosiform dermatosis
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0001097 {status="AUTO"} ! Keratoconjunctivitis sicca
 
 [Term]
 id: OMIA:000698
@@ -2286,6 +2363,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001686
 name: dwarfism, proportionate, with inflammatory lesions
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0001516 {status="AUTO"} ! Dwarfism
 
 [Term]
 id: OMIA:001199
@@ -2335,6 +2413,7 @@ is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:MP_0001967 {status="AUTO"} ! deafness
 equivalent_to: MP:0001967 {status="AUTO"} ! deafness
 equivalent_to: SYMP:0000019 {status="AUTO"} ! deafness
+equivalent_to: HP:0000404 {status="AUTO"} ! Deafness
 
 [Term]
 id: OMIA:001703
@@ -2358,6 +2437,7 @@ name: retinal degeneration, fluoroquinolone-induced
 is_a: OMIA:000000 ! phenotype
 equivalent_to: MP:MP_0001326 {status="AUTO"} ! retinal degeneration
 equivalent_to: MP:0001326 {status="AUTO"} ! retinal degeneration
+equivalent_to: HP:0000546 {status="AUTO"} ! Retinal degeneration
 
 [Term]
 id: OMIA:001709
@@ -2388,6 +2468,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001718
 name: dwarfism, Schmid metaphyseal chondrodysplasia
 is_a: OMIA:000000 ! phenotype
+equivalent_to: HP:0001516 {status="AUTO"} ! Dwarfism
 
 [Term]
 id: OMIA:001721
