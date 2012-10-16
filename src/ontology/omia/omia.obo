@@ -14,6 +14,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000770
 name: tremor, X-linked
 is_a: OMIA:000000 ! phenotype
+equivalent_to: SYMP:0000162 {status="AUTO"} ! tremor
+equivalent_to: MP:0000745 {status="AUTO"} ! tremors
 
 [Term]
 id: OMIA:000664
@@ -84,6 +86,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001112
 name: nephritis, X-linked
 is_a: OMIA:000000 ! phenotype
+equivalent_to: SYMP:0000098 {status="AUTO"} ! nephritis
+equivalent_to: MP:0001859 {status="AUTO"} ! kidney inflammation
 
 [Term]
 id: OMIA:000438
@@ -114,11 +118,14 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000001
 name: abortion due to mutation in APAF1
 is_a: OMIA:000000 ! phenotype
+equivalent_to: SYMP:0000197 {status="AUTO"} ! abortion
 
 [Term]
 id: OMIA:000031
 name: alopecia, colour mutant
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:0000414 {status="AUTO"} ! alopecia
+equivalent_to: MP:MP_0000414 {status="AUTO"} ! alopecia
 
 [Term]
 id: OMIA:000042
@@ -159,6 +166,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000161
 name: cardiomyopathy and woolly haircoat syndrome
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:0005330 {status="AUTO"} ! cardiomyopathy
+equivalent_to: MP:MP_0005330 {status="AUTO"} ! cardiomyopathy
 
 [Term]
 id: OMIA:000162
@@ -179,6 +188,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000168
 name: cataract
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:0001304 {status="AUTO"} ! cataracts
 
 [Term]
 id: OMIA:000175
@@ -194,6 +204,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000187
 name: chondrodysplasia
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:0002657 {status="AUTO"} ! chondrodystrophy
 
 [Term]
 id: OMIA:000187
@@ -234,6 +245,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000220
 name: severe combined immunodeficiency disease, autosomal
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:0002536 {status="AUTO"} ! severe combined immunodeficiency disease
+equivalent_to: MP:MP_0002536 {status="AUTO"} ! severe combined immunodeficiency disease
 
 [Term]
 id: OMIA:000248
@@ -404,6 +417,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000536
 name: hypothyroidism
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:0003503 {status="AUTO"} ! decreased activity of thyroid
 
 [Term]
 id: OMIA:000536
@@ -524,6 +538,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000629
 name: megacolon
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:0002731 {status="AUTO"} ! megacolon
+equivalent_to: MP:MP_0002731 {status="AUTO"} ! megacolon
 
 [Term]
 id: OMIA:000636
@@ -534,6 +550,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000649
 name: microphthalmia
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:0001297 {status="AUTO"} ! microphthalmia
+equivalent_to: MP:MP_0001297 {status="AUTO"} ! microphthalmia
 
 [Term]
 id: OMIA:000664
@@ -599,6 +617,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000689
 name: myoclonus
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:0000243 {status="AUTO"} ! myoclonus
+equivalent_to: MP:MP_0000243 {status="AUTO"} ! myoclonus
 
 [Term]
 id: OMIA:000690
@@ -622,11 +642,14 @@ def: "Nanomelia is a recessively inherited connective tissue disorder of chicken
 comment: nanomelia is an exact synonym for micromelia in MP but it's not clear they are identical
 relationship: affects GO:0051216 ! cartilage development
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:0008736 {status="AUTO"} ! micromelia
 
 [Term]
 id: OMIA:000703
 name: narcolepsy
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:0005279 {status="AUTO"} ! narcolepsy
+equivalent_to: MP:MP_0005279 {status="AUTO"} ! narcolepsy
 
 [Term]
 id: OMIA:000710
@@ -657,6 +680,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000755
 name: osteopetrosis
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:MP_0000067 {status="AUTO"} ! osteopetrosis
+equivalent_to: MP:0000067 {status="AUTO"} ! osteopetrosis
 
 [Term]
 id: OMIA:000782
@@ -677,6 +702,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000810
 name: polydactyly
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:MP_0000562 {status="AUTO"} ! polydactyly
+equivalent_to: MP:0000562 {status="AUTO"} ! polydactyly
 
 [Term]
 id: OMIA:000810
@@ -707,6 +734,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000837
 name: vitamin D-deficiency rickets, type I
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:MP_0003116 {status="AUTO"} ! rickets
+equivalent_to: MP:0003116 {status="AUTO"} ! rickets
 
 [Term]
 id: OMIA:000844
@@ -732,6 +761,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001244
 name: retinal degeneration II
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:MP_0001326 {status="AUTO"} ! retinal degeneration
+equivalent_to: MP:0001326 {status="AUTO"} ! retinal degeneration
 
 [Term]
 id: OMIA:000876
@@ -767,6 +798,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000899
 name: severe combined immunodeficiency disease, X-linked
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:0002536 {status="AUTO"} ! severe combined immunodeficiency disease
+equivalent_to: MP:MP_0002536 {status="AUTO"} ! severe combined immunodeficiency disease
 
 [Term]
 id: OMIA:000770
@@ -787,11 +820,15 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000944
 name: spongiform encephalopathy
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:MP_0002654 {status="AUTO"} ! spongiform encephalopathy
+equivalent_to: MP:0002654 {status="AUTO"} ! spongiform encephalopathy
 
 [Term]
 id: OMIA:000963
 name: syndactyly (mule foot)
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:0000564 {status="AUTO"} ! syndactyly
+equivalent_to: MP:MP_0000564 {status="AUTO"} ! syndactyly
 
 [Term]
 id: OMIA:000979
@@ -822,6 +859,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001033
 name: urolithiasis
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:MP_0005360 {status="AUTO"} ! urolithiasis
+equivalent_to: MP:0005360 {status="AUTO"} ! urolithiasis
 
 [Term]
 id: OMIA:001058
@@ -842,6 +881,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001135
 name: renal dysplasia
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:0002135 {status="AUTO"} ! abnormal kidney morphology
 
 [Term]
 id: OMIA:000915
@@ -907,6 +947,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001228
 name: spherocytosis
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:MP_0002812 {status="AUTO"} ! spherocytosis
+equivalent_to: MP:0002812 {status="AUTO"} ! spherocytosis
 
 [Term]
 id: OMIA:001230
@@ -927,11 +969,15 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001245
 name: retinal degeneration I
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:MP_0001326 {status="AUTO"} ! retinal degeneration
+equivalent_to: MP:0001326 {status="AUTO"} ! retinal degeneration
 
 [Term]
 id: OMIA:000809
 name: polycythemia
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:MP_0002872 {status="AUTO"} ! polycythemia
+equivalent_to: MP:0002872 {status="AUTO"} ! polycythemia
 
 [Term]
 id: OMIA:000209
@@ -1037,6 +1083,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001297
 name: early retinal degeneration
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:MP_0001326 {status="AUTO"} ! retinal degeneration
+equivalent_to: MP:0001326 {status="AUTO"} ! retinal degeneration
 
 [Term]
 id: OMIA:001298
@@ -1092,6 +1140,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001318
 name: elliptocytosis
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:0009547 {status="AUTO"} ! elliptocytosis
+equivalent_to: MP:MP_0009547 {status="AUTO"} ! elliptocytosis
 
 [Term]
 id: OMIA:001199
@@ -1102,6 +1152,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001319
 name: myopathy of the diaphragmatic muscles
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:0000751 {status="AUTO"} ! myopathy
+equivalent_to: MP:MP_0000751 {status="AUTO"} ! myopathy
 
 [Term]
 id: OMIA:001322
@@ -1117,6 +1169,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001334
 name: sperm, short tail
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:0000592 {status="AUTO"} ! short tail
+equivalent_to: MP:MP_0000592 {status="AUTO"} ! short tail
 
 [Term]
 id: OMIA:001335
@@ -1222,11 +1276,14 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001365
 name: achromatopsia (cone degeneration, hemeralopia), AMAL
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:MP_0008145 {status="AUTO"} ! hemeralopia
+equivalent_to: MP:0008145 {status="AUTO"} ! hemeralopia
 
 [Term]
 id: OMIA:001366
 name: retinal dysplasia and degeneration
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:0001325 {status="AUTO"} ! abnormal retina morphology
 
 [Term]
 id: OMIA:001368
@@ -1267,6 +1324,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001400
 name: chondrodysplasia, Texel
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:0002657 {status="AUTO"} ! chondrodystrophy
 
 [Term]
 id: OMIA:001228
@@ -1297,6 +1355,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:000214
 name: coat colour, white spotting
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:MP_0002938 {status="AUTO"} ! white spotting
+equivalent_to: MP:0002938 {status="AUTO"} ! white spotting
 
 [Term]
 id: OMIA:001360
@@ -1347,6 +1407,7 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001423
 name: fecundity, small tail Han
 is_a: OMIA:000000 ! phenotype
+equivalent_to: SYMP:0000057 {status="AUTO"} ! hyperplastic alveolar nodules
 
 [Term]
 id: OMIA:001424
@@ -1467,11 +1528,15 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001450
 name: congenital muscular dystonia 1
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:MP_0005323 {status="AUTO"} ! dystonia
+equivalent_to: MP:0005323 {status="AUTO"} ! dystonia
 
 [Term]
 id: OMIA:001451
 name: congenital muscular dystonia 2
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:MP_0005323 {status="AUTO"} ! dystonia
+equivalent_to: MP:0005323 {status="AUTO"} ! dystonia
 
 [Term]
 id: OMIA:001452
@@ -1552,6 +1617,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001471
 name: neonatal encephalopathy with seizures
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:MP_0002064 {status="AUTO"} ! seizures
+equivalent_to: MP:0002064 {status="AUTO"} ! seizures
 
 [Term]
 id: OMIA:001472
@@ -1597,6 +1664,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001431
 name: vitamin D-deficiency rickets, type II
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:MP_0003116 {status="AUTO"} ! rickets
+equivalent_to: MP:0003116 {status="AUTO"} ! rickets
 
 [Term]
 id: OMIA:000837
@@ -1762,6 +1831,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001516
 name: gastrointestinal stromal tumor
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:MP_0009515 {status="AUTO"} ! gastrointestinal stromal tumor
+equivalent_to: MP:0009515 {status="AUTO"} ! gastrointestinal stromal tumor
 
 [Term]
 id: OMIA:001518
@@ -1892,6 +1963,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001565
 name: abortion and stillbirth
 is_a: OMIA:000000 ! phenotype
+equivalent_to: SYMP:0000197 {status="AUTO"} ! abortion
+equivalent_to: SYMP:0000849 {status="AUTO"} ! stillbirth
 
 [Term]
 id: OMIA:001566
@@ -1917,6 +1990,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001574
 name: severe combined immunodeficiency disease, autosomal, T cell-negative, B cell-negative, NK cell-positive
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:0002536 {status="AUTO"} ! severe combined immunodeficiency disease
+equivalent_to: MP:MP_0002536 {status="AUTO"} ! severe combined immunodeficiency disease
 
 [Term]
 id: OMIA:001443
@@ -1997,6 +2072,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001594
 name: hyperekplexia (Startle disease)
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:0005604 {status="AUTO"} ! hyperekplexia
+equivalent_to: MP:MP_0005604 {status="AUTO"} ! hyperekplexia
 
 [Term]
 id: OMIA:001596
@@ -2152,6 +2229,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001676
 name: achromatopsia (cone degeneration, hemeralopia), GSPT
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:MP_0008145 {status="AUTO"} ! hemeralopia
+equivalent_to: MP:0008145 {status="AUTO"} ! hemeralopia
 
 [Term]
 id: OMIA:001677
@@ -2247,16 +2326,21 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001697
 name: abortion due to mutation in CWC15
 is_a: OMIA:000000 ! phenotype
+equivalent_to: SYMP:0000197 {status="AUTO"} ! abortion
 
 [Term]
 id: OMIA:000259
 name: deafness
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:MP_0001967 {status="AUTO"} ! deafness
+equivalent_to: MP:0001967 {status="AUTO"} ! deafness
+equivalent_to: SYMP:0000019 {status="AUTO"} ! deafness
 
 [Term]
 id: OMIA:001703
 name: chondrodysplasia, Spider lamb
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:0002657 {status="AUTO"} ! chondrodystrophy
 
 [Term]
 id: OMIA:001462
@@ -2272,6 +2356,8 @@ is_a: OMIA:000000 ! phenotype
 id: OMIA:001707
 name: retinal degeneration, fluoroquinolone-induced
 is_a: OMIA:000000 ! phenotype
+equivalent_to: MP:MP_0001326 {status="AUTO"} ! retinal degeneration
+equivalent_to: MP:0001326 {status="AUTO"} ! retinal degeneration
 
 [Term]
 id: OMIA:001709
