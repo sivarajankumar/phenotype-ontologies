@@ -1,0 +1,1844 @@
+[Term]
+id: OMIA:OMIA_id
+name: phene_name
+
+[Term]
+id: OMIA:001081
+name: Muscular dystrophy, Duchenne type
+
+[Term]
+id: OMIA:000770
+name: Tremor, X-linked
+
+[Term]
+id: OMIA:000664
+name: Mucopolysaccharidosis I
+
+[Term]
+id: OMIA:001106
+name: Axonopathy
+
+[Term]
+id: OMIA:000625
+name: Mannosidosis, alpha
+
+[Term]
+id: OMIA:000156
+name: C8 deficiency
+
+[Term]
+id: OMIA:000155
+name: C3 deficiency
+
+[Term]
+id: OMIA:000194
+name: Citrullinaemia
+
+[Term]
+id: OMIA:000017
+name: Adrenal hyperplasia, congenital
+
+[Term]
+id: OMIA:000262
+name: Deficiency of uridine monophosphate synthase
+
+[Term]
+id: OMIA:000328
+name: Ehlers-Danlos syndrome, type VII (Dermatosparaxis)
+
+[Term]
+id: OMIA:000328
+name: Ehlers-Danlos syndrome, type VII (Dermatosparaxis)
+
+[Term]
+id: OMIA:000309
+name: Dwarfism, sex-linked
+
+[Term]
+id: OMIA:000424
+name: Goitre, familial
+
+[Term]
+id: OMIA:000424
+name: Goitre, familial
+
+[Term]
+id: OMIA:001112
+name: Nephritis, X-linked
+
+[Term]
+id: OMIA:000438
+name: Haemophilia B
+
+[Term]
+id: OMIA:000438
+name: Haemophilia B
+
+[Term]
+id: OMIA:000437
+name: Haemophilia A
+
+[Term]
+id: OMIA:000452
+name: Henny feathering
+
+[Term]
+id: OMIA:000785
+name: Periodic paralysis II
+
+[Term]
+id: OMIA:000001
+name: Abortion due to mutation in APAF1
+
+[Term]
+id: OMIA:000031
+name: Alopecia, colour mutant
+
+[Term]
+id: OMIA:000042
+name: Analphalipoproteinaemia
+
+[Term]
+id: OMIA:000059
+name: Arachnomelia, BTA5
+
+[Term]
+id: OMIA:000078
+name: Ataxia, cerebellar
+
+[Term]
+id: OMIA:000102
+name: Barring
+
+[Term]
+id: OMIA:000119
+name: Blood group system AB
+
+[Term]
+id: OMIA:000151
+name: Brachyspina
+
+[Term]
+id: OMIA:000975
+name: Tail, short
+
+[Term]
+id: OMIA:000161
+name: Cardiomyopathy and woolly haircoat syndrome
+
+[Term]
+id: OMIA:000162
+name: Cardiomyopathy, dilated
+
+[Term]
+id: OMIA:000162
+name: Cardiomyopathy, dilated
+
+[Term]
+id: OMIA:000162
+name: Cardiomyopathy, dilated
+
+[Term]
+id: OMIA:000168
+name: Cataract
+
+[Term]
+id: OMIA:000175
+name: Cerebellar abiotrophy
+
+[Term]
+id: OMIA:000185
+name: Chediak-Higashi syndrome
+
+[Term]
+id: OMIA:000187
+name: Chondrodysplasia
+
+[Term]
+id: OMIA:000187
+name: Chondrodysplasia
+
+[Term]
+id: OMIA:000201
+name: Coat colour, agouti
+
+[Term]
+id: OMIA:000202
+name: Coat colour, albinism
+
+[Term]
+id: OMIA:000202
+name: Coat colour, albinism
+
+[Term]
+id: OMIA:000202
+name: Coat colour, albinism
+
+[Term]
+id: OMIA:000211
+name: Coat colour, merle
+
+[Term]
+id: OMIA:000218
+name: Collie eye anomaly
+
+[Term]
+id: OMIA:000220
+name: Severe combined immunodeficiency disease, autosomal
+
+[Term]
+id: OMIA:000248
+name: Neutropenia, cyclic
+
+[Term]
+id: OMIA:000256
+name: Cystinuria, type A
+
+[Term]
+id: OMIA:000263
+name: Degenerative myelopathy
+
+[Term]
+id: OMIA:000272
+name: Dermoid sinus
+
+[Term]
+id: OMIA:000307
+name: Dwarfism, pituitary
+
+[Term]
+id: OMIA:000340
+name: Epidermolysis bullosa
+
+[Term]
+id: OMIA:000344
+name: Epilepsy
+
+[Term]
+id: OMIA:000361
+name: Factor VII deficiency
+
+[Term]
+id: OMIA:000363
+name: Factor XI deficiency
+
+[Term]
+id: OMIA:000363
+name: Factor XI deficiency
+
+[Term]
+id: OMIA:000369
+name: Feather colour, albinism
+
+[Term]
+id: OMIA:000370
+name: Feather colour, albinism, sex-linked, imperfect
+
+[Term]
+id: OMIA:000373
+name: Feather colour, dominant white
+
+[Term]
+id: OMIA:000380
+name: Feathering, Z-linked
+
+[Term]
+id: OMIA:000383
+name: Fecundity, Booroola
+
+[Term]
+id: OMIA:000384
+name: Fecundity, Cambridge
+
+[Term]
+id: OMIA:000385
+name: Fecundity, Iceland (Thoka)
+
+[Term]
+id: OMIA:000386
+name: Fecundity, Inverdale
+
+[Term]
+id: OMIA:000396
+name: Fucosidosis, alpha
+
+[Term]
+id: OMIA:000402
+name: Gangliosidosis, GM1
+
+[Term]
+id: OMIA:000402
+name: Gangliosidosis, GM1
+
+[Term]
+id: OMIA:000402
+name: Gangliosidosis, GM1
+
+[Term]
+id: OMIA:000405
+name: Gaucher disease, type I
+
+[Term]
+id: OMIA:000418
+name: Glycogen storage disease I
+
+[Term]
+id: OMIA:000419
+name: Glycogen storage disease II
+
+[Term]
+id: OMIA:000420
+name: Glycogen storage disease IV
+
+[Term]
+id: OMIA:000421
+name: Glycogen storage disease VII
+
+[Term]
+id: OMIA:000439
+name: Hair length
+
+[Term]
+id: OMIA:000483
+name: Horns/Polled
+
+[Term]
+id: OMIA:000483
+name: Horns/Polled
+
+[Term]
+id: OMIA:000483
+name: Horns/Polled
+
+[Term]
+id: OMIA:000499
+name: Hypercholesterolaemia
+
+[Term]
+id: OMIA:000515
+name: Cardiomyopathy, hypertrophic
+
+[Term]
+id: OMIA:000536
+name: Hypothyroidism
+
+[Term]
+id: OMIA:000536
+name: Hypothyroidism
+
+[Term]
+id: OMIA:000540
+name: Hypotrichosis
+
+[Term]
+id: OMIA:000540
+name: Hypotrichosis
+
+[Term]
+id: OMIA:000543
+name: Anhidrotic ectodermal dysplasia
+
+[Term]
+id: OMIA:000547
+name: Ichthyosis congenita
+
+[Term]
+id: OMIA:000565
+name: Intestinal cobalamin malabsorption
+
+[Term]
+id: OMIA:000375
+name: Feather colour, panda/dotted white
+
+[Term]
+id: OMIA:000545
+name: Hypotrophic axonopathy
+
+[Term]
+id: OMIA:000578
+name: Krabbe disease
+
+[Term]
+id: OMIA:000588
+name: Lens luxation
+
+[Term]
+id: OMIA:000593
+name: Acrodermatitis enteropathica
+
+[Term]
+id: OMIA:000595
+name: Leukocyte adhesion deficiency, type I
+
+[Term]
+id: OMIA:000595
+name: Leukocyte adhesion deficiency, type I
+
+[Term]
+id: OMIA:000620
+name: Histiocytosis, malignant
+
+[Term]
+id: OMIA:000621
+name: Malignant hyperthermia
+
+[Term]
+id: OMIA:000621
+name: Malignant hyperthermia
+
+[Term]
+id: OMIA:000621
+name: Malignant hyperthermia
+
+[Term]
+id: OMIA:000625
+name: Mannosidosis, alpha
+
+[Term]
+id: OMIA:000626
+name: Mannosidosis, beta
+
+[Term]
+id: OMIA:000626
+name: Mannosidosis, beta
+
+[Term]
+id: OMIA:000627
+name: Maple syrup urine disease
+
+[Term]
+id: OMIA:000628
+name: Marfan syndrome
+
+[Term]
+id: OMIA:001085
+name: Meat quality (Rendement Napole)
+
+[Term]
+id: OMIA:000629
+name: Megacolon
+
+[Term]
+id: OMIA:000636
+name: Membranoproliferative glomerulonephritis type II
+
+[Term]
+id: OMIA:000649
+name: Microphthalmia
+
+[Term]
+id: OMIA:000664
+name: Mucopolysaccharidosis I
+
+[Term]
+id: OMIA:000665
+name: Mucopolysaccharidosis IIID
+
+[Term]
+id: OMIA:000666
+name: Mucopolysaccharidosis VI
+
+[Term]
+id: OMIA:000666
+name: Mucopolysaccharidosis VI
+
+[Term]
+id: OMIA:000667
+name: Mucopolysaccharidosis VII
+
+[Term]
+id: OMIA:000667
+name: Mucopolysaccharidosis VII
+
+[Term]
+id: OMIA:000679
+name: Muscular dystrophy
+
+[Term]
+id: OMIA:001081
+name: Muscular dystrophy, Duchenne type
+
+[Term]
+id: OMIA:000683
+name: Muscular hypertrophy (double muscling)
+
+[Term]
+id: OMIA:000683
+name: Muscular hypertrophy (double muscling)
+
+[Term]
+id: OMIA:001354
+name: Muscular hypertrophy (double muscling), Callipyge
+
+[Term]
+id: OMIA:000685
+name: Myasthenic syndrome, congenital
+
+[Term]
+id: OMIA:000689
+name: Myoclonus
+
+[Term]
+id: OMIA:000690
+name: Myoclonus epilepsy of Lafora
+
+[Term]
+id: OMIA:000698
+name: Myotonia
+
+[Term]
+id: OMIA:000701
+name: Naked neck
+
+[Term]
+id: OMIA:000702
+name: Nanomelia
+
+[Term]
+id: OMIA:000703
+name: Narcolepsy
+
+[Term]
+id: OMIA:000710
+name: Nephropathy
+
+[Term]
+id: OMIA:000715
+name: Neuroaxonal dystrophy
+
+[Term]
+id: OMIA:000725
+name: Niemann-Pick disease, type C
+
+[Term]
+id: OMIA:000733
+name: Multiple ocular defects
+
+[Term]
+id: OMIA:000754
+name: Osteogenesis imperfecta
+
+[Term]
+id: OMIA:000755
+name: Osteopetrosis
+
+[Term]
+id: OMIA:000782
+name: Pea comb
+
+[Term]
+id: OMIA:000791
+name: Persistent Mullerian duct syndrome
+
+[Term]
+id: OMIA:000807
+name: Polycystic kidney disease
+
+[Term]
+id: OMIA:000810
+name: Polydactyly
+
+[Term]
+id: OMIA:000810
+name: Polydactyly
+
+[Term]
+id: OMIA:000819
+name: Prekallikrein deficiency
+
+[Term]
+id: OMIA:000821
+name: Primary hyperoxaluria type II (Oxalosis II)
+
+[Term]
+id: OMIA:000831
+name: X-linked PRA 1
+
+[Term]
+id: OMIA:000836
+name: Protoporphyria
+
+[Term]
+id: OMIA:000837
+name: Vitamin D-deficiency rickets, type I
+
+[Term]
+id: OMIA:000844
+name: Pyruvate kinase deficiency of erythrocyte
+
+[Term]
+id: OMIA:000852
+name: Casein, alpha-S1, reduced concentration
+
+[Term]
+id: OMIA:000862
+name: Resistance to oedema disease (F18 receptor)
+
+[Term]
+id: OMIA:000865
+name: Restricted ovulator
+
+[Term]
+id: OMIA:001244
+name: Retinal degeneration II
+
+[Term]
+id: OMIA:000876
+name: Riboflavinuria
+
+[Term]
+id: OMIA:000878
+name: Arrhythmogenic right ventricular cardiomyopathy
+
+[Term]
+id: OMIA:000881
+name: Rod-cone dysplasia
+
+[Term]
+id: OMIA:000882
+name: Rod-cone dysplasia 1
+
+[Term]
+id: OMIA:000884
+name: Rose comb
+
+[Term]
+id: OMIA:000889
+name: Scaleless
+
+[Term]
+id: OMIA:000899
+name: Severe combined immunodeficiency disease, X-linked
+
+[Term]
+id: OMIA:000770
+name: Tremor, X-linked
+
+[Term]
+id: OMIA:000915
+name: Feather colour, silver
+
+[Term]
+id: OMIA:000939
+name: Spinal muscular atrophy
+
+[Term]
+id: OMIA:000944
+name: Spongiform encephalopathy
+
+[Term]
+id: OMIA:000963
+name: Syndactyly (mule foot)
+
+[Term]
+id: OMIA:000979
+name: Talpid-3
+
+[Term]
+id: OMIA:000991
+name: Androgen insensitivity syndrome (AIS)
+
+[Term]
+id: OMIA:001000
+name: Thrombasthenia
+
+[Term]
+id: OMIA:001001
+name: Thrombocytopaenia
+
+[Term]
+id: OMIA:001003
+name: Thrombopathia
+
+[Term]
+id: OMIA:001033
+name: Urolithiasis
+
+[Term]
+id: OMIA:001058
+name: Von Willebrand disease III
+
+[Term]
+id: OMIA:001071
+name: Wilson disease
+
+[Term]
+id: OMIA:001079
+name: Yellow fat
+
+[Term]
+id: OMIA:001135
+name: Renal dysplasia
+
+[Term]
+id: OMIA:000915
+name: Feather colour, silver
+
+[Term]
+id: OMIA:001139
+name: Glycogen storage disease V
+
+[Term]
+id: OMIA:000374
+name: Feather colour, extended black
+
+[Term]
+id: OMIA:001158
+name: Polysaccharide storage myopathy/Rhabdomyolysis
+
+[Term]
+id: OMIA:001199
+name: Coat colour, extension
+
+[Term]
+id: OMIA:000201
+name: Coat colour, agouti
+
+[Term]
+id: OMIA:000698
+name: Myotonia
+
+[Term]
+id: OMIA:000202
+name: Coat colour, albinism
+
+[Term]
+id: OMIA:000341
+name: Epidermolysis bullosa, dystrophic
+
+[Term]
+id: OMIA:001210
+name: Hyperlipoproteinaemia
+
+[Term]
+id: OMIA:001216
+name: Coat colour, roan
+
+[Term]
+id: OMIA:001222
+name: Leber congenital amaurosis (congenital stationary night blindness)
+
+[Term]
+id: OMIA:001228
+name: Spherocytosis
+
+[Term]
+id: OMIA:001230
+name: Ovotesticular DSD (Disorder of Sexual Development)
+
+[Term]
+id: OMIA:001230
+name: Ovotesticular DSD (Disorder of Sexual Development)
+
+[Term]
+id: OMIA:001199
+name: Coat colour, extension
+
+[Term]
+id: OMIA:001245
+name: Retinal degeneration I
+
+[Term]
+id: OMIA:000809
+name: Polycythemia
+
+[Term]
+id: OMIA:000209
+name: Coat colour, dominant white
+
+[Term]
+id: OMIA:001247
+name: Spinal dysmyelination
+
+[Term]
+id: OMIA:001248
+name: Mucolipidosis II
+
+[Term]
+id: OMIA:001249
+name: Coat colour, brown
+
+[Term]
+id: OMIA:001199
+name: Coat colour, extension
+
+[Term]
+id: OMIA:001252
+name: Feather colour, recessive white
+
+[Term]
+id: OMIA:000175
+name: Cerebellar abiotrophy
+
+[Term]
+id: OMIA:001263
+name: Coat colour, champagne
+
+[Term]
+id: OMIA:001260
+name: Rod-cone dysplasia 2
+
+[Term]
+id: OMIA:000201
+name: Coat colour, agouti
+
+[Term]
+id: OMIA:001199
+name: Coat colour, extension
+
+[Term]
+id: OMIA:001271
+name: Dwarfism, Dexter
+
+[Term]
+id: OMIA:001003
+name: Thrombopathia
+
+[Term]
+id: OMIA:000578
+name: Krabbe disease
+
+[Term]
+id: OMIA:001139
+name: Glycogen storage disease V
+
+[Term]
+id: OMIA:001292
+name: Polyneuropathy
+
+[Term]
+id: OMIA:000515
+name: Cardiomyopathy, hypertrophic
+
+[Term]
+id: OMIA:000543
+name: Anhidrotic ectodermal dysplasia
+
+[Term]
+id: OMIA:000162
+name: Cardiomyopathy, dilated
+
+[Term]
+id: OMIA:000807
+name: Polycystic kidney disease
+
+[Term]
+id: OMIA:001297
+name: Early retinal degeneration
+
+[Term]
+id: OMIA:001298
+name: Progressive rod-cone degeneration
+
+[Term]
+id: OMIA:001299
+name: Resistance to avian sarcoma and leukosis viruses, subgroup A
+
+[Term]
+id: OMIA:001302
+name: Resistance to avian sarcoma and leukosis viruses, subgroup B
+
+[Term]
+id: OMIA:001309
+name: Mucopolysaccharidosis IIIA
+
+[Term]
+id: OMIA:000546
+name: Ichthyosis
+
+[Term]
+id: OMIA:001314
+name: Rod-cone dysplasia 3
+
+[Term]
+id: OMIA:000625
+name: Mannosidosis, alpha
+
+[Term]
+id: OMIA:001135
+name: Renal dysplasia
+
+[Term]
+id: OMIA:000201
+name: Coat colour, agouti
+
+[Term]
+id: OMIA:001199
+name: Coat colour, extension
+
+[Term]
+id: OMIA:001318
+name: Elliptocytosis
+
+[Term]
+id: OMIA:001199
+name: Coat colour, extension
+
+[Term]
+id: OMIA:001319
+name: Myopathy of the diaphragmatic muscles
+
+[Term]
+id: OMIA:001322
+name: Feather colour, roux
+
+[Term]
+id: OMIA:000209
+name: Coat colour, dominant white
+
+[Term]
+id: OMIA:001334
+name: Sperm, short tail
+
+[Term]
+id: OMIA:001335
+name: Renal cystadenocarcinoma and nodular dermatofibrosis
+
+[Term]
+id: OMIA:000327
+name: Ehlers-Danlos syndrome
+
+[Term]
+id: OMIA:001138
+name: Hypocatalasia
+
+[Term]
+id: OMIA:000755
+name: Osteopetrosis
+
+[Term]
+id: OMIA:001339
+name: Von Willebrand disease II
+
+[Term]
+id: OMIA:001341
+name: Coat colour, appaloosa
+
+[Term]
+id: OMIA:001342
+name: Mucopolysaccharidosis IIIB
+
+[Term]
+id: OMIA:001089
+name: Blood group system ABO
+
+[Term]
+id: OMIA:001130
+name: Leucodystrophy
+
+[Term]
+id: OMIA:001344
+name: Coat colour, cream dilution
+
+[Term]
+id: OMIA:001340
+name: Complex vertebral malformation
+
+[Term]
+id: OMIA:001346
+name: Autosomal dominant PRA
+
+[Term]
+id: OMIA:000220
+name: Severe combined immunodeficiency disease, autosomal
+
+[Term]
+id: OMIA:000420
+name: Glycogen storage disease IV
+
+[Term]
+id: OMIA:001348
+name: Atrichia with papular lesions
+
+[Term]
+id: OMIA:001350
+name: Fecundity, Hanna
+
+[Term]
+id: OMIA:001249
+name: Coat colour, brown
+
+[Term]
+id: OMIA:001356
+name: Coat colour, grey
+
+[Term]
+id: OMIA:001360
+name: Trimethylaminuria
+
+[Term]
+id: OMIA:000209
+name: Coat colour, dominant white
+
+[Term]
+id: OMIA:001365
+name: Achromatopsia (cone degeneration, hemeralopia), AMAL
+
+[Term]
+id: OMIA:001366
+name: Retinal dysplasia and degeneration
+
+[Term]
+id: OMIA:001368
+name: Retinopathy globe enlarged
+
+[Term]
+id: OMIA:001371
+name: L-2-hydroxyglutaricacidemia
+
+[Term]
+id: OMIA:000685
+name: Myasthenic syndrome, congenital
+
+[Term]
+id: OMIA:001374
+name: Myopathy, centronuclear
+
+[Term]
+id: OMIA:000201
+name: Coat colour, agouti
+
+[Term]
+id: OMIA:001199
+name: Coat colour, extension
+
+[Term]
+id: OMIA:001199
+name: Coat colour, extension
+
+[Term]
+id: OMIA:001400
+name: Chondrodysplasia, Texel
+
+[Term]
+id: OMIA:001228
+name: Spherocytosis
+
+[Term]
+id: OMIA:001401
+name: Waardenburg syndrome, type IIA
+
+[Term]
+id: OMIA:001402
+name: Multidrug resistance 1
+
+[Term]
+id: OMIA:001403
+name: Pancreatitis, hereditary
+
+[Term]
+id: OMIA:001405
+name: Metabolizer of a cognitive enhancer
+
+[Term]
+id: OMIA:000214
+name: Coat colour, white spotting
+
+[Term]
+id: OMIA:001360
+name: Trimethylaminuria
+
+[Term]
+id: OMIA:001406
+name: Pyruvate dehydrogenase deficiency
+
+[Term]
+id: OMIA:001342
+name: Mucopolysaccharidosis IIIB
+
+[Term]
+id: OMIA:001249
+name: Coat colour, brown
+
+[Term]
+id: OMIA:001415
+name: Hyperkeratosis, epidermolytic
+
+[Term]
+id: OMIA:001416
+name: Coat colour, dominant black
+
+[Term]
+id: OMIA:001176
+name: Porphyria cutanea tarda
+
+[Term]
+id: OMIA:000844
+name: Pyruvate kinase deficiency of erythrocyte
+
+[Term]
+id: OMIA:000939
+name: Spinal muscular atrophy
+
+[Term]
+id: OMIA:001423
+name: Fecundity, small tail Han
+
+[Term]
+id: OMIA:001424
+name: Casein, beta, null allele
+
+[Term]
+id: OMIA:001426
+name: Muscular hypertrophy (double muscling), Texel
+
+[Term]
+id: OMIA:000202
+name: Coat colour, albinism
+
+[Term]
+id: OMIA:001427
+name: Gangliosidosis, GM2, GM2A deficiency
+
+[Term]
+id: OMIA:001428
+name: Trapped Neutrophil Syndrome
+
+[Term]
+id: OMIA:001429
+name: Coat colour, tabby
+
+[Term]
+id: OMIA:001249
+name: Coat colour, brown
+
+[Term]
+id: OMIA:001199
+name: Coat colour, extension
+
+[Term]
+id: OMIA:001433
+name: Coat colour, golden
+
+[Term]
+id: OMIA:001435
+name: Feather colour, extended brown
+
+[Term]
+id: OMIA:001199
+name: Coat colour, extension
+
+[Term]
+id: OMIA:001436
+name: Non-shivering thermiogenesis, absence of
+
+[Term]
+id: OMIA:001437
+name: Beta-lactoglobulin, aberrant low expression
+
+[Term]
+id: OMIA:001438
+name: Coat colour, silver
+
+[Term]
+id: OMIA:001438
+name: Coat colour, silver
+
+[Term]
+id: OMIA:000370
+name: Feather colour, albinism, sex-linked, imperfect
+
+[Term]
+id: OMIA:001443
+name: Neuronal ceroid lipofuscinosis, 6
+
+[Term]
+id: OMIA:001444
+name: Multifocal retinopathy 1
+
+[Term]
+id: OMIA:000206
+name: Coat colour, dilute
+
+[Term]
+id: OMIA:001445
+name: Feather colour, lavender
+
+[Term]
+id: OMIA:001445
+name: Feather colour, lavender
+
+[Term]
+id: OMIA:000374
+name: Feather colour, extended black
+
+[Term]
+id: OMIA:001449
+name: Skin colour, yellow
+
+[Term]
+id: OMIA:001450
+name: Congenital muscular dystonia 1
+
+[Term]
+id: OMIA:001451
+name: Congenital muscular dystonia 2
+
+[Term]
+id: OMIA:001452
+name: Tail, crooked
+
+[Term]
+id: OMIA:001454
+name: Coat colour, harlequin
+
+[Term]
+id: OMIA:001455
+name: Cone-rod dystrophy, Standard Wire-haired Dachshund
+
+[Term]
+id: OMIA:001342
+name: Mucopolysaccharidosis IIIB
+
+[Term]
+id: OMIA:001461
+name: Gangliosidosis, GM2, type I
+
+[Term]
+id: OMIA:001462
+name: Gangliosidosis, GM2, type II
+
+[Term]
+id: OMIA:001464
+name: Pseudomyotonia, congenital
+
+[Term]
+id: OMIA:000374
+name: Feather colour, extended black
+
+[Term]
+id: OMIA:000374
+name: Feather colour, extended black
+
+[Term]
+id: OMIA:001466
+name: Exercise-induced collapse
+
+[Term]
+id: OMIA:001467
+name: Sensory ataxic neuropathy
+
+[Term]
+id: OMIA:001199
+name: Coat colour, extension
+
+[Term]
+id: OMIA:000323
+name: Ectodermal dysplasia
+
+[Term]
+id: OMIA:000202
+name: Coat colour, albinism
+
+[Term]
+id: OMIA:000437
+name: Haemophilia A
+
+[Term]
+id: OMIA:001471
+name: Neonatal encephalopathy with seizures
+
+[Term]
+id: OMIA:001472
+name: Neuronal ceroid lipofuscinosis, 2
+
+[Term]
+id: OMIA:001199
+name: Coat colour, extension
+
+[Term]
+id: OMIA:001473
+name: Dwarfism, growth-hormone deficiency
+
+[Term]
+id: OMIA:000439
+name: Hair length
+
+[Term]
+id: OMIA:001216
+name: Coat colour, roan
+
+[Term]
+id: OMIA:001481
+name: Achromatopsia-2
+
+[Term]
+id: OMIA:001482
+name: Neuronal ceroid lipofuscinosis, 5
+
+[Term]
+id: OMIA:001483
+name: Osteogenesis imperfecta_Dachshund
+
+[Term]
+id: OMIA:001431
+name: Vitamin D-deficiency rickets, type II
+
+[Term]
+id: OMIA:000837
+name: Vitamin D-deficiency rickets, type I
+
+[Term]
+id: OMIA:001485
+name: Dwarfism, Angus
+
+[Term]
+id: OMIA:001486
+name: Night blindness, congenital stationary
+
+[Term]
+id: OMIA:001175
+name: Porphyria, congenital erythropoietic
+
+[Term]
+id: OMIA:001493
+name: Porphyria, acute intermittent
+
+[Term]
+id: OMIA:000201
+name: Coat colour, agouti
+
+[Term]
+id: OMIA:001199
+name: Coat colour, extension
+
+[Term]
+id: OMIA:001199
+name: Coat colour, extension
+
+[Term]
+id: OMIA:001199
+name: Coat colour, extension
+
+[Term]
+id: OMIA:001199
+name: Coat colour, extension
+
+[Term]
+id: OMIA:001199
+name: Coat colour, extension
+
+[Term]
+id: OMIA:001199
+name: Coat colour, extension
+
+[Term]
+id: OMIA:001199
+name: Coat colour, extension
+
+[Term]
+id: OMIA:001199
+name: Coat colour, extension
+
+[Term]
+id: OMIA:001494
+name: Feather colour, bronze
+
+[Term]
+id: OMIA:001495
+name: Coat colour, grizzle
+
+[Term]
+id: OMIA:001199
+name: Coat colour, extension
+
+[Term]
+id: OMIA:001497
+name: Coat colour, Himalayan
+
+[Term]
+id: OMIA:001498
+name: Improper coat
+
+[Term]
+id: OMIA:001079
+name: Yellow fat
+
+[Term]
+id: OMIA:001501
+name: Lavender foal syndrome
+
+[Term]
+id: OMIA:000733
+name: Multiple ocular defects
+
+[Term]
+id: OMIA:000214
+name: Coat colour, white spotting
+
+[Term]
+id: OMIA:001503
+name: Neuronal ceroid lipofuscinosis, 4A
+
+[Term]
+id: OMIA:001504
+name: Neuronal ceroid lipofuscinosis, 1
+
+[Term]
+id: OMIA:001505
+name: Neuronal ceroid lipofuscinosis, 10
+
+[Term]
+id: OMIA:001482
+name: Neuronal ceroid lipofuscinosis, 5
+
+[Term]
+id: OMIA:001506
+name: Neuronal ceroid lipofuscinosis, 8
+
+[Term]
+id: OMIA:001508
+name: Myotubular myopathy 1
+
+[Term]
+id: OMIA:001509
+name: Musladin-Lueke syndrome
+
+[Term]
+id: OMIA:001482
+name: Neuronal ceroid lipofuscinosis, 5
+
+[Term]
+id: OMIA:001515
+name: Colorectal hamartomatous polyposis and ganglioneuromatosis
+
+[Term]
+id: OMIA:001516
+name: Gastrointestinal stromal tumor
+
+[Term]
+id: OMIA:001518
+name: X-linked PRA 2
+
+[Term]
+id: OMIA:001520
+name: Cone-rod dystrophy 3
+
+[Term]
+id: OMIA:001521
+name: Generalized PRA
+
+[Term]
+id: OMIA:001522
+name: Oculoskeletal dysplasia 1
+
+[Term]
+id: OMIA:001523
+name: Oculoskeletal dysplasia 2
+
+[Term]
+id: OMIA:001524
+name: Gallbladder mucoceles
+
+[Term]
+id: OMIA:001525
+name: Leukocyte adhesion deficiency, type III
+
+[Term]
+id: OMIA:001000
+name: Thrombasthenia
+
+[Term]
+id: OMIA:001531
+name: Furnishings (moustache and eyebrows)
+
+[Term]
+id: OMIA:000245
+name: Curly coat
+
+[Term]
+id: OMIA:001534
+name: Resistance to myxovirus
+
+[Term]
+id: OMIA:000201
+name: Coat colour, agouti
+
+[Term]
+id: OMIA:000201
+name: Coat colour, agouti
+
+[Term]
+id: OMIA:000201
+name: Coat colour, agouti
+
+[Term]
+id: OMIA:001540
+name: Ciliary dyskinesia, primary
+
+[Term]
+id: OMIA:001541
+name: Arachnomelia, BTA23
+
+[Term]
+id: OMIA:001542
+name: Hypophosphatemic rickets, autosomal recessive, 1
+
+[Term]
+id: OMIA:001544
+name: Hypotrichosis with coat-colour dilution
+
+[Term]
+id: OMIA:001545
+name: Coat colour, dilution
+
+[Term]
+id: OMIA:001552
+name: Neuronal ceroid lipofuscinosis, adult-onset, Tibetan Terrier
+
+[Term]
+id: OMIA:001553
+name: Multifocal retinopathy 2
+
+[Term]
+id: OMIA:001554
+name: Multifocal retinopathy 3
+
+[Term]
+id: OMIA:001559
+name: Fecundity, Embrapa
+
+[Term]
+id: OMIA:001561
+name: Periodic Fever Syndrome
+
+[Term]
+id: OMIA:001564
+name: Bleeding disorder due to P2RY12 defect
+
+[Term]
+id: OMIA:001565
+name: Abortion and stillbirth
+
+[Term]
+id: OMIA:001566
+name: Rex coat
+
+[Term]
+id: OMIA:001569
+name: Feather colour, dark brown
+
+[Term]
+id: OMIA:001572
+name: Golden Retriever PRA 1
+
+[Term]
+id: OMIA:001573
+name: Leukemia, chronic monocytic
+
+[Term]
+id: OMIA:001574
+name: Severe combined immunodeficiency disease, autosomal, T cell-negative, B cell-negative, NK cell-positive
+
+[Term]
+id: OMIA:001443
+name: Neuronal ceroid lipofuscinosis, 6
+
+[Term]
+id: OMIA:001575
+name: Rod-cone dysplasia 4
+
+[Term]
+id: OMIA:001576
+name: Coat colour, colour-sided
+
+[Term]
+id: OMIA:001577
+name: Glycogen storage disease IIIa
+
+[Term]
+id: OMIA:001578
+name: Foal immunodeficiency syndrome
+
+[Term]
+id: OMIA:000683
+name: Muscular hypertrophy (double muscling)
+
+[Term]
+id: OMIA:001579
+name: Ear size
+
+[Term]
+id: OMIA:001580
+name: Feet, white
+
+[Term]
+id: OMIA:001581
+name: Curly coat, Devon rex
+
+[Term]
+id: OMIA:001583
+name: Hypotrichosis, with whiskers short and curled
+
+[Term]
+id: OMIA:001586
+name: Deficient acetaminophen glucuronidation
+
+[Term]
+id: OMIA:001588
+name: Ichthyosis, Golden Retriever
+
+[Term]
+id: OMIA:001590
+name: Coat colour, melanistic mask
+
+[Term]
+id: OMIA:001592
+name: Episodic falling
+
+[Term]
+id: OMIA:001593
+name: Scurs, type 2
+
+[Term]
+id: OMIA:001594
+name: Hyperekplexia (Startle disease)
+
+[Term]
+id: OMIA:001596
+name: Epilepsy, benign familial juvenile
+
+[Term]
+id: OMIA:001249
+name: Coat colour, brown
+
+[Term]
+id: OMIA:001602
+name: Feather colour, yellow
+
+[Term]
+id: OMIA:001608
+name: May-Hegglin anomaly
+
+[Term]
+id: OMIA:001612
+name: Oligozeugodactyly
+
+[Term]
+id: OMIA:001617
+name: Sweet taste, lack of
+
+[Term]
+id: OMIA:001617
+name: Sweet taste, lack of
+
+[Term]
+id: OMIA:001617
+name: Sweet taste, lack of
+
+[Term]
+id: OMIA:001622
+name: Resistance to avian sarcoma and leukosis viruses, subgroup C
+
+[Term]
+id: OMIA:001623
+name: Casein, alpha-S2, null allele
+
+[Term]
+id: OMIA:001416
+name: Coat colour, dominant black
+
+[Term]
+id: OMIA:001416
+name: Coat colour, dominant black
+
+[Term]
+id: OMIA:001089
+name: Blood group system ABO
+
+[Term]
+id: OMIA:001089
+name: Blood group system ABO
+
+[Term]
+id: OMIA:001089
+name: Blood group system ABO
+
+[Term]
+id: OMIA:001089
+name: Blood group system ABO
+
+[Term]
+id: OMIA:001089
+name: Blood group system ABO
+
+[Term]
+id: OMIA:001089
+name: Blood group system ABO
+
+[Term]
+id: OMIA:001089
+name: Blood group system ABO
+
+[Term]
+id: OMIA:000201
+name: Coat colour, agouti
+
+[Term]
+id: OMIA:000374
+name: Feather colour, extended black
+
+[Term]
+id: OMIA:001669
+name: Rod-cone dysplasia 1a
+
+[Term]
+id: OMIA:001671
+name: Silky/Silkie pigmentation (Fibromelanosis)
+
+[Term]
+id: OMIA:001672
+name: Primary hyperoxaluria type I (Oxalosis I)
+
+[Term]
+id: OMIA:000374
+name: Feather colour, extended black
+
+[Term]
+id: OMIA:000374
+name: Feather colour, extended black
+
+[Term]
+id: OMIA:000374
+name: Feather colour, extended black
+
+[Term]
+id: OMIA:000374
+name: Feather colour, extended black
+
+[Term]
+id: OMIA:000202
+name: Coat colour, albinism
+
+[Term]
+id: OMIA:001673
+name: Spermatogenic arrest
+
+[Term]
+id: OMIA:001676
+name: Achromatopsia (cone degeneration, hemeralopia), GSPT
+
+[Term]
+id: OMIA:001677
+name: Epidermolysis bullosa, junctionalis, LAMA3
+
+[Term]
+id: OMIA:001677
+name: Epidermolysis bullosa, junctionalis, LAMA3
+
+[Term]
+id: OMIA:001678
+name: Epidermolysis bullosa, junctionalis, LAMC2
+
+[Term]
+id: OMIA:001678
+name: Epidermolysis bullosa, junctionalis, LAMC2
+
+[Term]
+id: OMIA:001505
+name: Neuronal ceroid lipofuscinosis, 10
+
+[Term]
+id: OMIA:001680
+name: Dominant white with bilateral deafness
+
+[Term]
+id: OMIA:001683
+name: Congenital keratoconjunctivitis sicca and ichthyosiform dermatosis
+
+[Term]
+id: OMIA:000698
+name: Myotonia
+
+[Term]
+id: OMIA:001685
+name: Stress syndrome
+
+[Term]
+id: OMIA:000662
+name: Motor neuron disease, lower
+
+[Term]
+id: OMIA:001686
+name: Dwarfism, proportionate, with inflammatory lesions
+
+[Term]
+id: OMIA:001199
+name: Coat colour, extension
+
+[Term]
+id: OMIA:000202
+name: Coat colour, albinism
+
+[Term]
+id: OMIA:000214
+name: Coat colour, white spotting
+
+[Term]
+id: OMIA:001688
+name: Coat colour, macchiato
+
+[Term]
+id: OMIA:000341
+name: Epidermolysis bullosa, dystrophic
+
+[Term]
+id: OMIA:001692
+name: Ataxia, cerebellar, progressive early-onset
+
+[Term]
+id: OMIA:001695
+name: Reduced scale-3
+
+[Term]
+id: OMIA:001697
+name: Abortion due to mutation in CWC15
+
+[Term]
+id: OMIA:000259
+name: Deafness
+
+[Term]
+id: OMIA:001703
+name: Chondrodysplasia, Spider lamb
+
+[Term]
+id: OMIA:001462
+name: Gangliosidosis, GM2, type II
+
+[Term]
+id: OMIA:001461
+name: Gangliosidosis, GM2, type I
+
+[Term]
+id: OMIA:001707
+name: Retinal degeneration, fluoroquinolone-induced
+
+[Term]
+id: OMIA:001709
+name: XY Ovotesticular DSD (Disorder of Sexual Development)
+
+[Term]
+id: OMIA:000185
+name: Chediak-Higashi syndrome
+
+[Term]
+id: OMIA:000374
+name: Feather colour, extended black
+
+[Term]
+id: OMIA:001715
+name: Gaitedness
+
+[Term]
+id: OMIA:001716
+name: Ehlers-Danlos syndrome, Holstein variant
+
+[Term]
+id: OMIA:001718
+name: Dwarfism, Schmid metaphyseal chondrodysplasia
+
+[Term]
+id: OMIA:001721
+name: Coat colour, king
+
