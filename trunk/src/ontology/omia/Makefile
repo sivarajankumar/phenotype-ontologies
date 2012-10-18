@@ -1,3 +1,28 @@
+OBO = http://purl.obolibrary.org/obo
+CATALOG = catalog-v001.xml
+
+omia.owl: omia-edit.obo
+	owltools --catalog-xml $(CATALOG) $< $(OBO)/hp.owl $(OBO)/mp.owl $(OBO)/upheno/hp-mp/mp_hp-align-equiv.owl \
+	 --add-imports-from-supports --assert-inferred-subclass-axioms --useIsInferred --allowEquivalencies \
+	  -o file://`pwd`/$@ \
+	  -o -f obo omia.obo \
+	 --extract-bridge-ontologies -d . -s omia -x \
+	  -o file://`pwd`/core.owl \
+	  -o -f obo core.obo
+.PRECIOUS: omia.owl
+
+omia.obo: omia.owl
+	owltools  --catalog-xml $(CATALOG) $< -o -f obo $@
+
+importer.owl: omia.owl
+	owltools $< --extract-bridge-ontologies -d . -s omia -x -o file://`pwd`/$@
+
+oort: omia-edit.obo
+	ontology-release-runner --prefix $(OBO)/OMIA_ --catalog-xml $(CATALOG) --allow-overwrite --force --outdir oort --reasoner elk $< $(OBO)/hp.owl $(OBO)/mp.owl $(OBO)/upheno/hp-mp/mp_hp-align-equiv.owl $(OBO)/doid.owl
+# owltools  oort/omia.owl --merge-equivalent-classes -f $OBO/HP -f $OBO/MP -f $OBO/DOID -f $OBO/SCTID -t $OBO/OMIA -o file://`pwd`/z.owl -o -f obo z.obo
+
+bridges: omia.obo
+
 omia-genes.txt:
 	wget 'http://omia.angis.org.au/curate/causal_mutations/?format=gene_table' -O $@
 .PRECIOUS: omia-genes.txt
