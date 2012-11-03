@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 22:08:2012 20:09
-saved-by: hecht
-auto-generated-by: OBO-Edit 2.1.1-beta6
+date: 12:10:2012 14:01
+saved-by: sebastiankohler
+auto-generated-by: OBO-Edit 2.1.1-beta9
 subsetdef: secondary_consequence "Consequence of a disorder in another organ system."
 default-namespace: human_phenotype
 ontology: hp
@@ -610,6 +610,7 @@ id: HP:0000077
 name: Abnormality of the kidney
 def: "An abnormality of the `kidney` (FMA:7203)." [HPO:curators]
 comment: The kidney is a paired organ whose primary function is the production of urine.
+synonym: "Kidney disease" RELATED []
 synonym: "Renal anomalies" EXACT []
 synonym: "Renal anomaly" EXACT []
 is_a: HP:0010935 ! Abnormality of the upper urinary tract
@@ -933,6 +934,7 @@ alt_id: HP:0008658
 alt_id: HP:0008704
 def: "The presence of any abnormality of the `genitourinary system` (FMA:280610)." [HPO:curators]
 synonym: "Genitourinary abnormality" EXACT []
+synonym: "Genitourinary disease" RELATED []
 synonym: "Genitourinary tract anomalies" EXACT []
 synonym: "Urogenital abnormalities" EXACT []
 synonym: "Urogenital anomalies" EXACT []
@@ -1079,6 +1081,7 @@ id: HP:0000137
 name: Abnormality of the ovary
 def: "An abnormality of the `ovary` (FMA:7209)." [HPO:probinson]
 synonym: "Abnormality of the ovaries" EXACT []
+synonym: "Ovarian disease" RELATED []
 is_a: HP:0000008 ! Abnormality of female internal genitalia
 
 [Term]
@@ -1325,6 +1328,7 @@ synonym: "Abnormal teeth" EXACT []
 synonym: "Dental abnormalities" EXACT []
 synonym: "Dental abnormality" EXACT []
 synonym: "Dental anomalies" EXACT []
+synonym: "Tooth abnormalities" RELATED []
 xref: UMLS:C0262444 "Dental abnormalities"
 is_a: HP:0000163 ! Abnormality of the oral cavity
 
@@ -3501,12 +3505,14 @@ is_a: HP:0000464 ! Abnormality of the neck
 id: HP:0000478
 name: Abnormality of the eye
 def: "Any abnormality of the `eye` (FMA:54448), including location, spacing, and intraocular abnormalities." [HPO:curators]
+synonym: "Eye disease" RELATED []
 is_a: HP:0000118 ! Phenotypic abnormality
 
 [Term]
 id: HP:0000479
 name: Abnormality of the retina
 def: "An abnormality of the `retina` (FMA:58301)." [HPO:probinson]
+synonym: "Retinal disease" RELATED []
 is_a: HP:0001098 ! Abnormality of the fundus
 
 [Term]
@@ -3704,7 +3710,8 @@ is_a: HP:0001595 ! Abnormality of the hair
 [Term]
 id: HP:0000501
 name: Glaucoma
-def: "Glaucoma refers loss of retinal ganglion cells in a characteristic pattern of optic neuropathy usually associated with increased intraocular pressure." [HPO:curators]
+def: "Glaucoma refers loss of retinal ganglion cells in a characteristic pattern of optic neuropathy usually associated with increased intraocular pressure." [HPO:probinson, pmid:11815354]
+comment: The feature that differentiates glaucoma from other causes of visual morbidity is a characteristic pattern of damage to the optic nerve head. This is most easily recognised at the superior and inferior poles of the optic disc. The vertical cup:disc ratio (VCDR) has proved to be a simple, relatively robust index of glaucomatous loss of the neuroretinal rim. As with intraocular pressure, VCDR is a continuous variable within the population.
 xref: MeSH:D005901 "Glaucoma"
 xref: UMLS:C1962986 "Glaucoma"
 is_a: HP:0000478 ! Abnormality of the eye
@@ -6057,6 +6064,7 @@ is_a: HP:0000078 ! Abnormality of the genital system
 [Term]
 id: HP:0000812
 name: Abnormal internal genitalia
+def: "An anomaly of the  adnexa, uterus, and vagina (in female) orseminal tract and prostate (in male)." [HPO:probinson]
 is_a: HP:0000078 ! Abnormality of the genital system
 
 [Term]
@@ -6204,6 +6212,7 @@ id: HP:0000828
 name: Abnormality of the parathyroid gland
 def: "An abnormality of the `parathyroid gland` (FMA:13890)." [HPO:curators]
 comment: There are four parathyroid glands, which are small endocrine glands located in the neck behind the thyroid gland that produce parathyroid hormone.
+synonym: "Parathyroid disease" RELATED []
 is_a: HP:0000818 ! Abnormality of the endocrine system
 
 [Term]
@@ -6369,6 +6378,7 @@ name: Increased circulating renin level
 alt_id: HP:0003615
 def: "An increased level of renin (PRO:000013883) in the `blood` (FMA:9670)." [HPO:probinson]
 synonym: "Elevated plasma renin" EXACT []
+synonym: "Hyperreninemia" EXACT []
 synonym: "Increased plasma renin" EXACT []
 synonym: "Increased serum renin" EXACT []
 xref: UMLS:C1846346 "Increased plasma renin"
@@ -7229,6 +7239,7 @@ is_a: HP:0000971 ! Abnormality of the sweat gland
 id: HP:0000971
 name: Abnormality of the sweat gland
 def: "An abnormality of the `sweat gland` (FMA:59152)." [HPO:probinson]
+synonym: "Sweat gland disease" RELATED []
 is_a: HP:0011138 ! Abnormality of skin adnexa
 
 [Term]
@@ -7322,6 +7333,7 @@ is_a: HP:0001933 ! Subcutaneous hemorrhage
 id: HP:0000980
 name: Pallor
 def: "Abnormally `pale` (PATO:0000328) `skin` (FMA:7163)." [HPO:probinson]
+synonym: "Paleness" RELATED []
 xref: MeSH:D010167 "Pallor"
 xref: UMLS:C0030232 "Pallor"
 is_a: HP:0011121 ! Abnormality of skin morphology
@@ -7771,6 +7783,7 @@ is_a: HP:0000952 ! Jaundice
 [Term]
 id: HP:0001047
 name: Atopic dermatitis
+alt_id: HP:0007533
 alt_id: HP:0007564
 def: "A chronic inflammatory genetically determined disease of the skin manifested by lichenification, excoriation, and crusting, mainly on the flexural surfaces of the elbow and knee." [HPO:probinson]
 comment: In infants, atopic dermatitis is known as infantile eczema.
@@ -8121,7 +8134,7 @@ name: Iridocyclitis
 def: "A type of anterior uveitis, in which there is Inflammation of the iris and the ciliary body." [HPO:probinson]
 xref: MeSH:D015863 "Iridocyclitis"
 xref: UMLS:C0022073 "Iridocyclitis"
-is_a: HP:0000554 ! Uveitis
+is_a: HP:0012122 ! Anterior uveitis
 
 [Term]
 id: HP:0001095
@@ -8994,7 +9007,7 @@ synonym: "Fusion of hamate and capitate" EXACT []
 xref: UMLS:C1857002 "Capitate-hamate fusion"
 is_a: HP:0004259 ! Abnormality of the hamate bone
 is_a: HP:0004262 ! Abnormality of the capitate bone
-is_a: HP:0009702 ! Synostosis involving the carpal bones
+is_a: HP:0009702 ! Carpal synostosis
 
 [Term]
 id: HP:0001245
@@ -9151,6 +9164,9 @@ is_a: HP:0010550 ! Paraplegia
 [Term]
 id: HP:0001259
 name: Coma
+def: "Complete absence of wakefulness and content of conscience, which manifests itself as a lack of response to any kind of external stimuli." [HPO:probinson]
+comment: Coma is generally a result of diffuse or extensive involvement of both hemispheres of the brain or lesions in the brainstem.
+xref: ICD-10:R40.2 "Coma, unspecified"
 xref: MeSH:D003128 "Coma"
 xref: UMLS:C0009421 "Coma"
 is_a: HP:0004372 ! Reduced consciousness/confusion
@@ -9506,6 +9522,8 @@ is_a: HP:0002011 ! Abnormality of the central nervous system
 [Term]
 id: HP:0001300
 name: Parkinsonism
+def: "Characteristic neurologic anomaly resulting form degeneration of dopamine-generating cells in the substantia nigra, a region of the midbrain, characterized clinically by shaking, rigidity, slowness of movement and difficulty with walking and gait." [HPO:probinson]
+synonym: "Parkinsonian disease" RELATED []
 xref: UMLS:C0242422 "Parkinsonism"
 is_a: HP:0002071 ! Abnormality of extrapyramidal motor function
 
@@ -9938,6 +9956,7 @@ id: HP:0001367
 name: Abnormal joint morphology
 def: "An abnormal structure or form of the `joints` (FMA:73023), i.e., one or more of the articulations where two bones join." [HPO:probinson]
 synonym: "Abnormality of the joints" EXACT []
+synonym: "Joint disease" RELATED []
 is_a: HP:0011842 ! Abnormality of skeletal morphology
 
 [Term]
@@ -10104,6 +10123,7 @@ id: HP:0001392
 name: Abnormality of the liver
 def: "An abnormality of the `liver` (FMA:7197)." [HPO:probinson]
 synonym: "Liver abnormality" EXACT []
+synonym: "Liver disease" RELATED []
 is_a: HP:0002012 ! Abnormality of the abdominal organs
 
 [Term]
@@ -10335,7 +10355,6 @@ name: Abnormality of the calf musculature
 alt_id: HP:0004300
 synonym: "Abnormality of calf musculature" EXACT []
 is_a: HP:0001437 ! Abnormality of the musculature of the lower limbs
-is_a: HP:0002981 ! Abnormality of the calf
 created_by: peter
 creation_date: 2008-04-07T10:18:00Z
 
@@ -11796,6 +11815,7 @@ is_a: HP:0001675 ! Rhythm disturbances associated with pheochromocytoma
 id: HP:0001677
 name: Coronary artery disease
 alt_id: HP:0005138
+def: "Reduction of the diamter of the coronary arteries as the result of an accumulation of atheromatous plaques within the walls of the coronary arteries, which increases the risk of myocardial ischemia." [HPO:probinson]
 synonym: "Coronary disease" EXACT []
 xref: MeSH:D003324 "Coronary Artery Disease"
 xref: UMLS:C0010068 "Coronary Artery Disease"
@@ -12150,6 +12170,7 @@ is_a: HP:0000365 ! Hearing impairment
 id: HP:0001732
 name: Abnormality of the pancreas
 def: "An abnormality of the `pancreas` (FMA:7198)." [HPO:probinson]
+synonym: "Pancreatic disease" RELATED []
 is_a: HP:0002012 ! Abnormality of the abdominal organs
 
 [Term]
@@ -13035,6 +13056,7 @@ def: "An abnormality of the `hematopoietic system` (FMA:9667)." [HPO:probinson]
 comment: The hematopoietic system comprises the organs that are involved in the production of blood, primarily the bone marrow, spleen, tonsils, and lymph nodes.
 synonym: "Abnormality of the haematopoietic system" RELATED []
 synonym: "Abnormality of the hematopoietic system" EXACT []
+synonym: "Hematologic disease" RELATED []
 synonym: "Hematological abnormality" EXACT []
 is_a: HP:0000118 ! Phenotypic abnormality
 
@@ -13088,7 +13110,7 @@ name: Pancytopenia
 def: "An abnormal reduction in numbers of all blood cell types (red blood cells, white blood cells, and platelets)." [HPO:probinson]
 xref: MeSH:D010198 "Pancytopenia"
 xref: UMLS:C0030312 "Pancytopenia"
-is_a: HP:0005561 ! Abnormality of bone marrow cell morphology
+is_a: HP:0012145 ! Abnormality of multiple cell lineages in the bone marrow
 
 [Term]
 id: HP:0001877
@@ -13184,6 +13206,7 @@ synonym: "Lymphocytopenia" EXACT []
 xref: MeSH:D008231 "Lymphopenia"
 xref: UMLS:C0024312 "Lymphopenia"
 is_a: HP:0004332 ! Abnormality of lymphocytes
+is_a: HP:0012140 ! Abnormality of cells of the lymphoid lineage
 
 [Term]
 id: HP:0001889
@@ -13330,6 +13353,7 @@ is_a: HP:0001873 ! Thrombocytopenia
 id: HP:0001907
 name: Thromboembolism
 def: "The formation of a blood clot inside a blood vessel that subsequently travels through the blood stream from the site where it formed to another location in the body, generally leading to vascular occlusion at the distant site." [HPO:probinson]
+synonym: "Embolism and thrombosis" RELATED []
 synonym: "Thromboembolic disease" EXACT []
 synonym: "Thromboembolic events" EXACT []
 xref: MeSH:D013923 "Thromboembolism"
@@ -13390,6 +13414,7 @@ name: Renal amyloidosis
 def: "A form of `amyloidosis` (HP:0011034) that affects the `kidney` (FMA:7203)." [HPO:probinson]
 xref: UMLS:C0268382 "Renal amyloidosis"
 is_a: HP:0000077 ! Abnormality of the kidney
+is_a: HP:0011034 ! Amyloidosis
 
 [Term]
 id: HP:0001919
@@ -13852,7 +13877,7 @@ name: Megaloblastic bone marrow
 def: "Abnormal increased number of megaloblasts in the bone marrow." [HPO:probinson]
 comment: A megaloblast is an abnormally large nucleated red blood cell found especially in people with pernicious anemia. Megaloblasts, like their normal counterparts, normoblasts, are  immature red cell precursors in the bone marrow. Megaloblasts display both a larger size than normoblasts as well as a fine reticular nuclear structure.
 xref: UMLS:C0238801 "Megaloblastic bone marrow"
-is_a: HP:0005561 ! Abnormality of bone marrow cell morphology
+is_a: HP:0012145 ! Abnormality of multiple cell lineages in the bone marrow
 
 [Term]
 id: HP:0001981
@@ -14114,6 +14139,7 @@ id: HP:0002015
 name: Dysphagia
 alt_id: HP:0002569
 def: "Difficulty in swallowing." [HPO:curators]
+synonym: "Deglutition disorder" RELATED []
 synonym: "Poor swallowing" EXACT []
 synonym: "Swallowing difficulties" EXACT []
 synonym: "Swallowing difficulty" EXACT []
@@ -14500,6 +14526,7 @@ synonym: "Extrapyramidal dysfunction" EXACT []
 synonym: "Extrapyramidal signs" EXACT []
 synonym: "Extrapyramidal symptoms" EXACT []
 synonym: "Extrapyramidal syndrome" EXACT []
+synonym: "Extrapyramidal tract signs" EXACT []
 xref: UMLS:C0234133 "Extrapyramidal signs"
 is_a: HP:0011442 ! Abnormality of central motor function
 
@@ -14644,6 +14671,7 @@ id: HP:0002088
 name: Abnormality of the lung
 def: "An abnormality of the `lung` (FMA:7195)." [HPO:probinson]
 synonym: "Abnormality of the lungs" EXACT []
+synonym: "Lung disease" RELATED []
 is_a: HP:0002086 ! Abnormality of the respiratory system
 
 [Term]
@@ -14999,7 +15027,8 @@ is_a: HP:0001288 ! Gait disturbance
 [Term]
 id: HP:0002143
 name: Abnormality of the spinal cord
-def: "An abnormality of the spinal cord (myelon)." [HPO:curators]
+def: "An abnormality of the spinal cord (myelon)." [HPO:probinson]
+synonym: "Spinal cord disease" RELATED []
 is_a: HP:0007319 ! Morphological abnormality of the central nervous system
 
 [Term]
@@ -15266,7 +15295,9 @@ is_a: HP:0001257 ! Spasticity
 [Term]
 id: HP:0002180
 name: Neurodegeneration
+def: "Progressive loss of neural cells and tissue." [HPO:probinson]
 synonym: "Neuro-degenerative disease" EXACT []
+synonym: "Neurodegenerative disease" RELATED []
 is_a: HP:0007367 ! Atrophy/Degeneration affecting the central nervous system
 
 [Term]
@@ -16422,6 +16453,7 @@ is_a: HP:0001288 ! Gait disturbance
 [Term]
 id: HP:0002363
 name: Abnormality of the brainstem
+def: "An anomaly of the `brainstem` (FMA:79876)." [HPO:probinson]
 comment: Note: The term 'bulbar' refers to the brainstem.
 is_a: HP:0007319 ! Morphological abnormality of the central nervous system
 
@@ -18831,6 +18863,8 @@ is_a: HP:0002778 ! Abnormality of the trachea
 [Term]
 id: HP:0002778
 name: Abnormality of the trachea
+def: "An anomaly of the `trachea` (FMA:7394)." [HPO:probinson]
+synonym: "Tracheal disease" RELATED []
 is_a: HP:0005607 ! Abnormality of the tracheobronchial system
 
 [Term]
@@ -19684,12 +19718,11 @@ id: HP:0002912
 name: Methylmalonic acidemia
 alt_id: HP:0003123
 alt_id: HP:0008295
+def: "Increased concentration of `methylmalonic acid` (CHEBI:30860) in the blood." [HPO:probinson]
 comment: Methylmalonic aciduria is a genetically heterogeneous disorder of methylmalonate and cobalamin (cbl; vitamin B12) metabolism.
-synonym: "Methylmalonic aciduria" EXACT []
-synonym: "Methymalonicaciduria" EXACT []
 xref: UMLS:C1855119 "Methymalonicaciduria"
-is_a: HP:0003355 ! Aminoaciduria
 is_a: HP:0004341 ! Abnormality of the vitamin B12 metabolism
+is_a: HP:0010995 ! Abnormality of dicarboxylic acid metabolism
 
 [Term]
 id: HP:0002913
@@ -20109,20 +20142,6 @@ synonym: "Brain atrophy" RELATED []
 is_a: HP:0007319 ! Morphological abnormality of the central nervous system
 created_by: peter
 creation_date: 2008-03-31T05:13:00Z
-
-[Term]
-id: HP:0002978
-name: Knee contractures
-synonym: "Contractures of knees" EXACT []
-synonym: "Contractures of the knees" EXACT []
-synonym: "Flexion contracture of knees" EXACT []
-synonym: "Flexion contractures of knees" EXACT []
-synonym: "Knee contracture" EXACT []
-synonym: "Knee flexion contracture" EXACT []
-synonym: "Knee flexion contractures" EXACT []
-xref: UMLS:C1837263 "Knee contractures"
-is_a: HP:0002815 ! Abnormality of the knees
-is_a: HP:0005750 ! Contractures of the joints of the lower limbs
 
 [Term]
 id: HP:0002979
@@ -20696,7 +20715,7 @@ def: "Reduction in the concentration of `albumin` (PR:000003918) in the `blood` 
 synonym: "Hypoalbuminaemia" EXACT []
 xref: MeSH:D034141 "Hypoalbuminemia"
 xref: UMLS:C0239981 "Hypoalbuminaemia"
-is_a: HP:0010876 ! Abnormality of circulating protein level
+is_a: HP:0012116 ! Abnormal albumin level
 
 [Term]
 id: HP:0003074
@@ -20861,6 +20880,7 @@ is_a: HP:0005922 ! Abnormal hand morphology
 [Term]
 id: HP:0003099
 name: Fibular overgrowth
+def: "Relatively increased growth of the fibula compared to that of the tibia." [HPO:probinson, pmid:17259417]
 xref: UMLS:C1864298 "Fibular overgrowth"
 is_a: HP:0002991 ! Abnormality of the fibula
 
@@ -21639,6 +21659,7 @@ def: "An increased concentration of `dicarboxylic acid` (CHEBI:35692) in the `ur
 comment: Dicarboxylic aciduria occurs during increased mobilization or inhibited beta-oxidation of fatty acids, where a number of 3-hydroxydicarboxylic acids are excreted in the urine.
 xref: UMLS:C1856432 "Dicarboxylic aciduria"
 is_a: HP:0010995 ! Abnormality of dicarboxylic acid metabolism
+is_a: HP:0012072 ! Aciduria
 
 [Term]
 id: HP:0003216
@@ -21673,7 +21694,7 @@ name: Ethylmalonic aciduria
 def: "An increased concentration of `ethylmalonic acid` (CHEBI:741548) in the `urine` (FMA:12274)." [HPO:probinson]
 comment: Ethylmalonic acid is a dicarboxylic acid obtained by substitution of one of the methylene hydrogens of malonic acid by an ethyl group.
 xref: UMLS:C1865353 "Ethylmalonic aciduria"
-is_a: HP:0010995 ! Abnormality of dicarboxylic acid metabolism
+is_a: HP:0003215 ! Dicarboxylic aciduria
 
 [Term]
 id: HP:0003220
@@ -22103,7 +22124,7 @@ is_a: HP:0004339 ! Abnormality of sulfur amino acid metabolism
 [Term]
 id: HP:0003287
 name: Abnormality of mitochondrial metabolism
-is_a: HP:0011017 ! Abnormality of cell physiology
+is_a: HP:0012103 ! Abnormality of the mitochondrion
 
 [Term]
 id: HP:0003288
@@ -23215,12 +23236,6 @@ def: "Paralysis of voluntary muscles means loss of contraction due to interrupti
 xref: MeSH:D010243 "Paralysis"
 xref: UMLS:C0522224 "Paralysis"
 is_a: HP:0011442 ! Abnormality of central motor function
-
-[Term]
-id: HP:0003471
-name: Upper limb amyotrophy
-def: "Muscular atrophy affecting the upper limb." [HPO:probinson]
-is_a: HP:0009129 ! Amyotrophy involving the upper limbs
 
 [Term]
 id: HP:0003472
@@ -26967,7 +26982,7 @@ id: HP:0004293
 name: Synostosis of second metacarpal-trapezoid
 def: "Fusion of the second metacarpal-trapezoid." [HPO:probinson]
 synonym: "Fusion of second metacarpal-trapezoid" EXACT []
-is_a: HP:0009702 ! Synostosis involving the carpal bones
+is_a: HP:0009702 ! Carpal synostosis
 is_a: HP:0009705 ! Synostosis involving the 2nd metacarpal
 is_a: HP:0100328 ! Carpometacarpal synostosis
 
@@ -27522,8 +27537,8 @@ id: HP:0004359
 name: Abnormality of fatty-acid metabolism
 def: "An abnormality of `fatty acid` (CHEBI:35366) metabolism." [HPO:probinson]
 comment: A fatty acid is an aliphatic monocarboxylic acid derived from or contained in esterified form. Natural fatty acids commonly have a chain of 4 to 28 carbons (usually unbranched and even-numbered), which may be saturated or unsaturated. R-COOH. Fatty acids are usually derived from triglycerides or phospholipids.
-synonym: "<new synonym>" RELATED []
 synonym: "Abnormality of fatty acid metabolism" EXACT []
+synonym: "Fatty acids abnormal" RELATED []
 is_a: HP:0003119 ! Abnormality of lipid metabolism
 created_by: peter
 creation_date: 2008-03-17T03:28:00Z
@@ -29491,8 +29506,11 @@ is_a: HP:0002256 ! Small bowel diverticula
 [Term]
 id: HP:0004787
 name: Fulminant hepatitis
+def: "Acute hepatitis complicated by acute liver failure with hepatic encephalopathy occurring less than 8 weeks after the onset of jaundice." [HPO:probinson, pmid:18825677]
+comment: Note that different definitions of fulminant hepatitis are used in the medical literature.
 xref: UMLS:C0302809 "Fulminant hepatitis"
 is_a: HP:0004448 ! Fulminant hepatic failure
+is_a: HP:0012115 ! Hepatitis
 
 [Term]
 id: HP:0004788
@@ -29729,7 +29747,7 @@ name: Refractory anemia with ringed sideroblasts
 def: "A type of myelodysplastic syndrome characterized by less than 5% myeloblasts in the bone marrow, but with 15% or greater red cell precursors in the marrow being abnormal iron-stuffed cells called ringed sideroblasts." [HPO:probinson]
 synonym: "Myelodysplasia with sideroblastosis" EXACT []
 xref: ICD-O:M9982/3 "Refractory anemia with ringed sideroblasts"
-is_a: HP:0002863 ! Myelodysplasia
+is_a: HP:0012150 ! Single lineage myelodysplasia
 
 [Term]
 id: HP:0004831
@@ -30732,7 +30750,7 @@ is_a: HP:0003034 ! Diaphyseal sclerosis
 id: HP:0005048
 name: Synostosis of carpal bones
 synonym: "Fusion of carpal bones" EXACT []
-is_a: HP:0009702 ! Synostosis involving the carpal bones
+is_a: HP:0009702 ! Carpal synostosis
 
 [Term]
 id: HP:0005050
@@ -32962,7 +32980,7 @@ id: HP:0005513
 name: Increased megakaryocyte count
 def: "Increased `megakaryocyte` (CL:0000556) number, i.e., of platelet precursor cells, present in the bone marrow." [HPO:probinson]
 xref: UMLS:C1849757 "Increased megakaryocyte precursor cells"
-is_a: HP:0005561 ! Abnormality of bone marrow cell morphology
+is_a: HP:0012143 ! Abnormality of cells of the megakaryocyte lineage
 
 [Term]
 id: HP:0005517
@@ -33048,11 +33066,13 @@ is_a: HP:0010989 ! Abnormality of the intrinsic pathway
 id: HP:0005528
 name: Bone marrow hypocellularity
 alt_id: HP:0005529
+alt_id: HP:0100549
 def: "A reduced number of hematopoietic cells present in the bone marrow." [DDD:wouwehand, HPO:probinson]
+synonym: "Bone marrow failure" EXACT []
 synonym: "Bone marrow hypoplasia" EXACT []
 synonym: "Hypoplastic bone marrow" EXACT []
 xref: UMLS:C1855710 "Hypoplastic bone marrow"
-is_a: HP:0005561 ! Abnormality of bone marrow cell morphology
+is_a: HP:0012145 ! Abnormality of multiple cell lineages in the bone marrow
 
 [Term]
 id: HP:0005531
@@ -33156,7 +33176,7 @@ name: Megakaryocytopenia
 def: "A `reduced count` (PATO:0002001) of `megakaryocytes` (CL:0000556)." [HPO:probinson]
 comment: Megakaryocytes are giant cells in the bone marrow. Mature blood platelets are released from the cytoplasm of megakaryocytes.
 xref: UMLS:C1858312 "Megakaryocytopenia"
-is_a: HP:0005561 ! Abnormality of bone marrow cell morphology
+is_a: HP:0012143 ! Abnormality of cells of the megakaryocyte lineage
 
 [Term]
 id: HP:0005549
@@ -33624,7 +33644,7 @@ is_a: HP:0003022 ! Hypoplasia of the ulna
 id: HP:0005650
 name: Cutaneous syndactyly between fingers 2 and 5
 def: "A soft tissue continuity in the anteroposterior axis between the second to the fifth fingers that extends distally to at least the level of the proximal interphalangeal joints." [HPO:probinson]
-is_a: HP:0010554 ! Cutaneous syndactyly of fingers
+is_a: HP:0010554 ! Cutaneous finger syndactyly
 
 [Term]
 id: HP:0005651
@@ -33737,7 +33757,7 @@ is_a: HP:0001370 ! Rheumatoid arthritis
 [Term]
 id: HP:0005682
 name: Talocalcaneal synostosis
-is_a: HP:0008368 ! Synostosis involving tarsal bones
+is_a: HP:0008368 ! Tarsal synostosis
 
 [Term]
 id: HP:0005684
@@ -33778,7 +33798,7 @@ is_a: HP:0001382 ! Joint hypermobility
 [Term]
 id: HP:0005694
 name: Partial fusion of proximal row of carpal bones
-is_a: HP:0009702 ! Synostosis involving the carpal bones
+is_a: HP:0009702 ! Carpal synostosis
 
 [Term]
 id: HP:0005696
@@ -34124,7 +34144,7 @@ is_a: HP:0003083 ! Dislocated radial head
 id: HP:0005802
 name: Coalescence of tarsal bones
 xref: UMLS:C0039316 "Tarsal Bones"
-is_a: HP:0008368 ! Synostosis involving tarsal bones
+is_a: HP:0008368 ! Tarsal synostosis
 
 [Term]
 id: HP:0005807
@@ -34413,7 +34433,9 @@ is_a: HP:0005651 ! Flexion contracture of finger
 [Term]
 id: HP:0005880
 name: Metacarpophalangeal synostosis
+alt_id: HP:0100325
 def: "Fusion of a metacarpal bone with the proximal phalanx of the finger distal to it across the corresponding `metacarpophalangeal joint` (FMA:35246)." [HPO:probinson]
+is_a: HP:0009700 ! Synostosis involving bones of the fingers
 is_a: HP:0009701 ! Metacarpal synostosis
 is_a: HP:0011911 ! Abnormality of metacarpophalangeal joint
 
@@ -35191,7 +35213,7 @@ is_a: HP:0005916 ! Abnormal metacarpal morphology
 [Term]
 id: HP:0006088
 name: 1-5 finger complete cutaneous syndactyly
-is_a: HP:0010554 ! Cutaneous syndactyly of fingers
+is_a: HP:0010554 ! Cutaneous finger syndactyly
 
 [Term]
 id: HP:0006089
@@ -35642,7 +35664,7 @@ is_a: HP:0009544 ! Abnormality of the proximal phalanx of the 2nd finger
 [Term]
 id: HP:0006207
 name: Partial fusion of carpals
-is_a: HP:0009702 ! Synostosis involving the carpal bones
+is_a: HP:0009702 ! Carpal synostosis
 
 [Term]
 id: HP:0006208
@@ -36365,9 +36387,21 @@ is_a: HP:0005736 ! Hypoplastic tibia
 
 [Term]
 id: HP:0006380
-name: Knee flexion deformities
+name: Knee flexion contracture
+alt_id: HP:0002978
+def: "A bent (flexed) knee joint that cannot be straightened actively or passively." [HPO:probinson]
+synonym: "Contractures of knees" EXACT []
+synonym: "Contractures of the knees" EXACT []
+synonym: "Flexion contracture of knees" EXACT []
+synonym: "Flexion contractures of knees" EXACT []
+synonym: "Knee contracture" EXACT []
+synonym: "Knee contractures" EXACT []
+synonym: "Knee flexion contractures" EXACT []
+synonym: "Knee flexion deformity" EXACT []
 xref: UMLS:C0581324 "Knee flexion deformities"
+xref: UMLS:C1837263 "Knee contractures"
 is_a: HP:0002815 ! Abnormality of the knees
+is_a: HP:0005750 ! Contractures of the joints of the lower limbs
 
 [Term]
 id: HP:0006381
@@ -37344,8 +37378,10 @@ is_a: HP:0001392 ! Abnormality of the liver
 [Term]
 id: HP:0006562
 name: Viral hepatitis
+def: "Inflammation of the liver due to infection with a virus." [HPO:probinson]
+xref: MeSH:D006525 "Hepatitis, Viral, Human"
 xref: UMLS:C1963279 "Viral hepatitis"
-is_a: HP:0001392 ! Abnormality of the liver
+is_a: HP:0012115 ! Hepatitis
 
 [Term]
 id: HP:0006563
@@ -38623,6 +38659,10 @@ is_a: HP:0002352 ! Leukoencephalopathy
 [Term]
 id: HP:0006862
 name: Intermittent cerebellar ataxia
+alt_id: HP:0007214
+def: "Episodes or attacks of ataxia typically lasting from 10 minutes to several hours." [HPO:probinson]
+synonym: "Intermittent ataxia" EXACT []
+synonym: "Paroxysmal ataxia" EXACT []
 xref: UMLS:C1856190 "Intermittent cerebellar ataxia"
 is_a: HP:0001251 ! Ataxia
 
@@ -38846,7 +38886,8 @@ is_a: HP:0002415 ! Leukodystrophy
 
 [Term]
 id: HP:0006927
-name: Unilateral polymicrogyria, most often right-sided
+name: Unilateral polymicrogyria
+def: "Excessive number of small gyri (convolutions) on the surface of one side of the brain." [HPO:probinson]
 is_a: HP:0002126 ! Polymicrogyria
 
 [Term]
@@ -39632,7 +39673,8 @@ id: HP:0007149
 name: Distal upper limb amyotrophy
 def: "Muscular atrophy of distal arm muscles." [HPO:probinson]
 synonym: "Distal upper limb muscle atrophy" EXACT []
-is_a: HP:0009129 ! Amyotrophy involving the upper limbs
+is_a: HP:0003693 ! Distal amyotrophy
+is_a: HP:0009129 ! Upper limb amyotrophy
 
 [Term]
 id: HP:0007152
@@ -39834,11 +39876,6 @@ is_a: HP:0003202 ! Amyotrophy
 id: HP:0007213
 name: Late-onset form of familial Alzheimer disease
 is_a: HP:0002511 ! Alzheimer disease
-
-[Term]
-id: HP:0007214
-name: Cerebellar ataxia during episodes
-is_a: HP:0001251 ! Ataxia
 
 [Term]
 id: HP:0007215
@@ -41268,12 +41305,6 @@ is_a: HP:0000968 ! Ectodermal dysplasia
 id: HP:0007530
 name: Punctate palmoplantar hyperkeratosis
 is_a: HP:0000972 ! Palmoplantar hyperkeratosis
-
-[Term]
-id: HP:0007533
-name: Severe atopic dermatitis
-xref: UMLS:C1861874 "Severe atopic dermatitis"
-is_a: HP:0001047 ! Atopic dermatitis
 
 [Term]
 id: HP:0007534
@@ -43454,6 +43485,7 @@ is_a: HP:0007928 ! Abnormal flash visual evoked potentials
 [Term]
 id: HP:0008046
 name: Abnormality of the retinal vasculature
+def: "An arterial or venous retinal vascular anomaly." [HPO:probinson]
 is_a: HP:0000479 ! Abnormality of the retina
 is_a: HP:0008047 ! Abnormality of the vasculature of the eye
 created_by: peter
@@ -43811,7 +43843,7 @@ is_a: HP:0100498 ! Deviation of toes
 [Term]
 id: HP:0008097
 name: Partial fusion of tarsals
-is_a: HP:0008368 ! Synostosis involving tarsal bones
+is_a: HP:0008368 ! Tarsal synostosis
 
 [Term]
 id: HP:0008102
@@ -43902,7 +43934,7 @@ is_a: HP:0001850 ! Abnormality of the tarsal bones
 id: HP:0008122
 name: Calcaneonavicular fusion
 def: "Synostosis of the `calcaneus` (FMA:24496) with the `navicular bone` (FMA:24499)." [HPO:probinson]
-is_a: HP:0008368 ! Synostosis involving tarsal bones
+is_a: HP:0008368 ! Tarsal synostosis
 
 [Term]
 id: HP:0008124
@@ -44301,6 +44333,7 @@ alt_id: HP:0004317
 def: "A reduced concentration of `cortisol` (CHEBI:17650) in the blood." [HPO:probinson]
 synonym: "Decreased cortisol production" EXACT []
 synonym: "Glucocorticoid insufficiency" EXACT []
+synonym: "Hypocortisolism" RELATED []
 xref: UMLS:C1833054 "Hypocortisolemia"
 xref: UMLS:C1846225 "Glucocorticoid insufficiency"
 is_a: HP:0008207 ! Primary adrenal insufficiency
@@ -44335,6 +44368,8 @@ is_a: HP:0008249 ! Thyroid hyperplasia
 [Term]
 id: HP:0008226
 name: Androgen insufficiency
+def: "Insufficient amount of androgenic activity." [HPO:probinson]
+synonym: "Hypoandrogenism" EXACT []
 is_a: HP:0008373 ! Puberty and gonadal disorders
 
 [Term]
@@ -44705,8 +44740,11 @@ is_a: HP:0010990 ! Abnormality of the common coagulation pathway
 
 [Term]
 id: HP:0008322
-name: Ultrastructural abnormalities in mitochondria on electron microscopy
-is_a: HP:0003287 ! Abnormality of mitochondrial metabolism
+name: Abnormal mitochondrial morphology
+def: "Any structural anomaly of the mitochondria." [HPO:probinson]
+comment: This feature may be assessed by means of electron microscopy.
+synonym: "Abnormal mitochondrion morphology" EXACT []
+is_a: HP:0012103 ! Abnormality of the mitochondrion
 
 [Term]
 id: HP:0008323
@@ -44731,8 +44769,7 @@ is_a: HP:0000121 ! Nephrocalcinosis
 id: HP:0008330
 name: Reduced von Willebrand factor activity
 def: "Decreased activity of `von Willebrand factor` (PR:000017364). Von Willebrand factor mediates the adhesion of platelets to the collagen exposed on endothelial cell surfaces." [HPO:probinson]
-synonym: "Decreased von Willebrand factor" EXACT []
-is_a: HP:0003256 ! Abnormality of the coagulation cascade
+is_a: HP:0012146 ! Abnormality of  von Willebrand factor
 
 [Term]
 id: HP:0008331
@@ -44901,15 +44938,16 @@ creation_date: 2008-04-04T11:44:00Z
 
 [Term]
 id: HP:0008368
-name: Synostosis involving tarsal bones
+name: Tarsal synostosis
 alt_id: HP:0001851
 alt_id: HP:0001957
 alt_id: HP:0008092
+def: "Synostosis (bony fusion) involving one or more bones of the tarsus (calcaneus, talus, cuboid, navicular, cuneiiform bones)." [HPO:probinson]
+synonym: "Synostosis involving tarsal bones" EXACT []
 synonym: "Tarsal bone fusion" EXACT []
 synonym: "Tarsal bone synostosis" EXACT []
 synonym: "Tarsal fusion" EXACT []
 synonym: "Tarsal fusions" EXACT []
-synonym: "Tarsal synostosis" RELATED []
 xref: UMLS:C1834164 "Tarsal bone synostosis"
 is_a: HP:0001850 ! Abnormality of the tarsal bones
 is_a: HP:0009140 ! Synostosis involving bones of the feet
@@ -47245,6 +47283,7 @@ synonym: "Lower limb muscle hypotrophy" RELATED []
 synonym: "Muscle atrophy, lower limb, distal" EXACT []
 xref: UMLS:C1845256 "Lower limb muscle hypotrophy"
 is_a: HP:0003693 ! Distal amyotrophy
+is_a: HP:0007210 ! Lower limb amyotrophy
 
 [Term]
 id: HP:0008945
@@ -47275,10 +47314,11 @@ is_a: HP:0001252 ! Muscular hypotonia
 
 [Term]
 id: HP:0008948
-name: Proximal upper limb muscle atrophy
+name: Proximal upper limb amyotrophy
 alt_id: HP:0008995
 def: "Muscular atrophy affecting proximally located muscles of the arms." [HPO:curators]
 synonym: "Proximal muscle atrophy in upper limbs" EXACT []
+synonym: "Proximal upper limb muscle atrophy" EXACT []
 xref: UMLS:C1836768 "Proximal upper limb muscle atrophy"
 is_a: HP:0007126 ! Proximal amyotrophy
 
@@ -47312,12 +47352,13 @@ is_a: HP:0003693 ! Distal amyotrophy
 
 [Term]
 id: HP:0008956
-name: Proximal lower limb muscle atrophy
+name: Proximal lower limb amyotrophy
 alt_id: HP:0003748
 alt_id: HP:0008974
 def: "Muscular atrophy affecting proximally located muscles of the legs, i.e., of the thigh." [HPO:probinson]
 synonym: "Amyotrophy involving the thigh" EXACT []
 synonym: "Amyotrophy of the thigh musculature" EXACT []
+synonym: "Proximal lower limb muscle atrophy" EXACT []
 synonym: "Thigh muscle atrophy" EXACT []
 xref: UMLS:C1836767 "Proximal lower limb muscle atrophy"
 xref: UMLS:C2058268 "thigh muscle atrophy"
@@ -47639,7 +47680,7 @@ id: HP:0009050
 name: Quadriceps muscle atrophy
 def: "Muscular atrophy involving the quadriceps muscle." [HPO:curators]
 xref: UMLS:C1842818 "Quadriceps muscle atrophy"
-is_a: HP:0008956 ! Proximal lower limb muscle atrophy
+is_a: HP:0008956 ! Proximal lower limb amyotrophy
 
 [Term]
 id: HP:0009051
@@ -48082,10 +48123,12 @@ creation_date: 2008-04-07T02:01:00Z
 
 [Term]
 id: HP:0009129
-name: Amyotrophy involving the upper limbs
-def: "Muscular atrophy involving the muscles of the upper limbs." [HPO:curators]
+name: Upper limb amyotrophy
+alt_id: HP:0003471
+def: "Muscular atrophy involving the muscles of the upper limbs." [HPO:probinson]
+synonym: "Amyotrophy involving the upper limbs" EXACT []
 is_a: HP:0002817 ! Abnormality of the upper limb
-is_a: HP:0003693 ! Distal amyotrophy
+is_a: HP:0003202 ! Amyotrophy
 created_by: peter
 creation_date: 2008-04-07T05:01:00Z
 
@@ -48104,7 +48147,7 @@ synonym: "Hand muscle wasting" EXACT []
 synonym: "Hand muscle wasting, bilateral" EXACT []
 xref: UMLS:C0239830 "Hand muscle atrophy"
 is_a: HP:0001421 ! Abnormality of the musculature of the hand
-is_a: HP:0009129 ! Amyotrophy involving the upper limbs
+is_a: HP:0007149 ! Distal upper limb amyotrophy
 created_by: peter
 creation_date: 2008-04-07T05:01:00Z
 
@@ -49064,7 +49107,6 @@ def: "Fusion of the proximal phalanx of the 5th finger with the 5th metacarpal."
 is_a: HP:0005880 ! Metacarpophalangeal synostosis
 is_a: HP:0009232 ! Symphalangism affecting the proximal phalanx of the 5th finger
 is_a: HP:0009708 ! Synostosis involving the 5th metacarpal
-is_a: HP:0100325 ! Metacarpophalangeal Synostosis
 created_by: doelkens
 creation_date: 2009-01-05T06:19:01Z
 
@@ -51371,7 +51413,6 @@ def: "Fusion of the proximal phalanx of the 4th finger with the 4th metacarpal."
 is_a: HP:0005880 ! Metacarpophalangeal synostosis
 is_a: HP:0009314 ! Symphalangism affecting the proximal phalanx of the 4th finger
 is_a: HP:0009707 ! Synostosis involving the 4th metacarpal
-is_a: HP:0100325 ! Metacarpophalangeal Synostosis
 created_by: doelkens
 creation_date: 2009-01-15T10:24:03Z
 
@@ -51393,7 +51434,6 @@ def: "Fusion of the proximal phalanx of the 3rd finger with the 3rd metacarpal."
 is_a: HP:0005880 ! Metacarpophalangeal synostosis
 is_a: HP:0009455 ! Symphalangism affecting the proximal phalanx of the 3rd finger
 is_a: HP:0009706 ! Synostosis involving the 3rd metacarpal
-is_a: HP:0100325 ! Metacarpophalangeal Synostosis
 created_by: doelkens
 creation_date: 2009-01-15T10:29:08Z
 
@@ -52538,7 +52578,6 @@ def: "Fusion of the proximal phalanx of the 2nd finger with the 2nd metacarpal."
 is_a: HP:0005880 ! Metacarpophalangeal synostosis
 is_a: HP:0009586 ! Symphalangism affecting the proximal phalanx of the 2nd finger
 is_a: HP:0009705 ! Synostosis involving the 2nd metacarpal
-is_a: HP:0100325 ! Metacarpophalangeal Synostosis
 created_by: doelkens
 creation_date: 2009-01-29T10:21:45Z
 
@@ -52932,7 +52971,6 @@ is_a: HP:0005880 ! Metacarpophalangeal synostosis
 is_a: HP:0006152 ! Proximal symphalangism (hands)
 is_a: HP:0009635 ! Symphalangism of proximal phalanx of  thumb
 is_a: HP:0009703 ! Synostosis involving the 1st metacarpal
-is_a: HP:0100325 ! Metacarpophalangeal Synostosis
 created_by: doelkens
 creation_date: 2009-01-29T05:17:08Z
 
@@ -53547,13 +53585,14 @@ creation_date: 2009-01-30T04:13:07Z
 
 [Term]
 id: HP:0009702
-name: Synostosis involving the carpal bones
+name: Carpal synostosis
 alt_id: HP:0001192
 alt_id: HP:0005799
+def: "Synostosis (bony fusion) involving one or more bones of the carpus (scaphoid, lunate, triquetrum, trapezium, trapezoid, capitate, hamate, pisiform)." [HPO:probinson]
 synonym: "Carpal bone fusion" EXACT []
 synonym: "Carpal fusion" EXACT []
-synonym: "Carpal synostosis" EXACT []
 synonym: "Fused carpal bones" EXACT []
+synonym: "Synostosis involving the carpal bones" EXACT []
 xref: UMLS:C1836220 "Fused carpal bones"
 is_a: HP:0001191 ! Abnormality of the carpal bones
 is_a: HP:0004278 ! Synostosis involving bones of the hand
@@ -58835,6 +58874,7 @@ creation_date: 2009-07-12T10:37:03Z
 id: HP:0010286
 name: Abnormality of the salivary glands
 def: "Any abnormality of the salivary glands, the exocrine glands that produce saliva." [HPO:curators]
+synonym: "Salivary gland disease" RELATED []
 is_a: HP:0000163 ! Abnormality of the oral cavity
 created_by: peter
 creation_date: 2009-07-12T10:38:51Z
@@ -58986,7 +59026,7 @@ creation_date: 2009-07-12T12:58:04Z
 id: HP:0010302
 name: Spinal cord tumor
 alt_id: HP:0009712
-def: "A `neoplasm` (MPATH:218) affecting the `spinal cord` (FMA:7647)." [HPO:pnrobinson]
+def: "A `neoplasm` (MPATH:218) affecting the `spinal cord` (FMA:7647)." [HPO:probinson]
 synonym: "Spinal tumor" RELATED []
 synonym: "Tumor of the spinal cord" EXACT []
 xref: MeSH:D013120 "Spinal cprd neoplasms"
@@ -61190,7 +61230,7 @@ creation_date: 2009-10-01T08:56:39Z
 
 [Term]
 id: HP:0010554
-name: Cutaneous syndactyly of fingers
+name: Cutaneous finger syndactyly
 alt_id: HP:0001214
 alt_id: HP:0005637
 alt_id: HP:0006054
@@ -61199,6 +61239,7 @@ def: "A soft tissue continuity in the A/P axis between two fingers that extends 
 comment: We have set an arguably arbitrary threshold to distinguish the object form the subjective finding. While severe degrees of cutaneous syndactyly are clearly objective, more subtle degrees are subjective. We set this threshold to distinguish these two situations. The digits (or parts of) are joined together by tissue that is not normally present between the digits at that point in the P/D axis. A modifier of "complete" may be used if the cutaneous syndactyly extends to the distal end of the nail bed of the digits. The affected digits should be specified. Note that the unqualified term "syndactyly" is no longer allowed as it is unclear whether this refers to bony or cutaneous syndactyly.
 synonym: "Cutaneous syndactyly" EXACT []
 synonym: "Cutaneous syndactyly (hands)" EXACT []
+synonym: "Cutaneous syndactyly of fingers" EXACT []
 synonym: "Syndactyly, cutaneous" EXACT []
 xref: UMLS:C1846072 "Partial cutaneous syndactyly"
 is_a: HP:0006101 ! Finger syndactyly
@@ -64491,6 +64532,7 @@ id: HP:0010932
 name: Abnormality of nucleobase metabolism
 def: "An abnormality of a `nucleobase metabolic process` (GO:0009112)." [HPO:probinson]
 comment: This term is used to refers to abnormality in chemical reactions and pathways involving a nucleobase, a nitrogenous base that is a constituent of a nucleic acid, e.g. the purines: adenine, guanine, hypoxanthine, xanthine and the pyrimidines: cytosine, uracil, thymine.
+synonym: "Abnormal nucleoside levels" RELATED []
 is_a: HP:0001939 ! Abnormality of metabolism/homeostasis
 created_by: peter
 creation_date: 2011-01-06T10:46:17Z
@@ -65318,6 +65360,8 @@ creation_date: 2011-02-28T09:19:20Z
 id: HP:0011024
 name: Abnormality of the gastrointestinal tract
 def: "An abnormality of the `gastrointestinal tract` (FMA:71132)." [HPO:probinson]
+synonym: "Digestive system disease" RELATED []
+synonym: "Gastrointestinal disease" RELATED []
 is_a: HP:0002012 ! Abnormality of the abdominal organs
 created_by: peter
 creation_date: 2011-03-01T07:52:06Z
@@ -65483,7 +65527,6 @@ name: Abnormality of circulating adrenocorticotropin level
 def: "An `abnormal` (PATO:0000460) `concentration` (PATO:0000033) of `corticotropin` (CHEBI:3892) in the `blood` (FMA:9670)." [HPO:probinson]
 comment: Adrenocorticotropic hormone (ACTH), also known as corticotropin, is a polypeptide hormone produced and secreted by the pituitary gland comprising 39 amino acid residues coupled in a linear sequence. . It is a component of the hypothalamic-pituitary-adrenal axis and stimulates increased production and release of corticosteroids and cortisol from the adrenal cortex.
 is_a: HP:0003117 ! Abnormality of circulating hormone level
-is_a: HP:0004364 ! Abnormality of nitrogen compound homeostasis
 created_by: peter
 creation_date: 2011-03-10T07:46:59Z
 
@@ -68585,7 +68628,7 @@ creation_date: 2012-03-12T04:39:51Z
 id: HP:0011399
 name: Tibialis atrophy
 def: "Atrophy of the tibialis muscle." [HPO:probinson]
-is_a: HP:0003693 ! Distal amyotrophy
+is_a: HP:0008944 ! Distal lower limb amyotrophy
 created_by: peter
 creation_date: 2012-03-12T06:15:40Z
 
@@ -71403,7 +71446,7 @@ creation_date: 2012-04-19T07:44:18Z
 id: HP:0011731
 name: Abnormality of circulating cortisol level
 def: "An abnormality of the concentration of `cortisol` (CHEBI:17650) in the blood." [HPO:probinson]
-is_a: HP:0003117 ! Abnormality of circulating hormone level
+is_a: HP:0012111 ! Abnormality of circulating glucocorticoid level
 created_by: peter
 creation_date: 2012-04-21T07:59:26Z
 
@@ -71542,6 +71585,7 @@ creation_date: 2012-04-21T11:58:38Z
 id: HP:0011747
 name: Abnormality of the anterior pituitary
 def: "An abnormality of the `adenohypophysis` (FMA:74627), which is also known as the anterior lobe of the pituitary gland." [DDD:spark]
+synonym: "Pituitary disease" RELATED []
 is_a: HP:0000864 ! Abnormality of the hypothalamus-pituitary axis
 created_by: peter
 creation_date: 2012-04-22T11:17:00Z
@@ -73161,7 +73205,7 @@ creation_date: 2012-06-10T04:27:42Z
 id: HP:0011939
 name: 3-4 finger cutaneous syndactyly
 def: "A soft tissue continuity in the A/P axis between fingers 4 and 4." [HPO:probinson]
-is_a: HP:0010554 ! Cutaneous syndactyly of fingers
+is_a: HP:0010554 ! Cutaneous finger syndactyly
 is_a: HP:0010621 ! Cutaneous syndactyly of toes
 created_by: peter
 creation_date: 2012-06-10T05:13:51Z
@@ -73470,7 +73514,7 @@ id: HP:0011974
 name: Myelofibrosis
 def: "Replacement of bone marrow by fibrous tissue." [HPO:probinson]
 xref: MeSH:D055728 "Primary Myelofibrosis"
-is_a: HP:0005561 ! Abnormality of bone marrow cell morphology
+is_a: HP:0012145 ! Abnormality of multiple cell lineages in the bone marrow
 created_by: peter
 creation_date: 2012-07-18T08:51:57Z
 
@@ -74437,10 +74481,11 @@ creation_date: 2012-08-20T09:12:30Z
 
 [Term]
 id: HP:0012087
-name: CLONE OF Abnormal urinary color
-is_a: HP:0003110 ! Abnormality of urine homeostasis
+name: Abnormal mitochondrial shape
+def: "An anomaly in the surface contour of mitochondria." [HPO:probinson, MP:0011633]
+is_a: HP:0008322 ! Abnormal mitochondrial morphology
 created_by: peter
-creation_date: 2012-08-20T09:13:17Z
+creation_date: 2012-09-08T11:02:39Z
 
 [Term]
 id: HP:0012088
@@ -74561,6 +74606,448 @@ synonym: "Reduced creatinine levels" EXACT []
 is_a: HP:0012100 ! Abnormal circulating creatinine level
 created_by: hecht
 creation_date: 2012-08-22T08:42:16Z
+
+[Term]
+id: HP:0012102
+name: Abnormal mitochondrial number
+def: "A deviation from the normal number of mitochondria per cell." [HPO:probinson]
+is_a: HP:0008322 ! Abnormal mitochondrial morphology
+created_by: peter
+creation_date: 2012-09-08T11:03:33Z
+
+[Term]
+id: HP:0012103
+name: Abnormality of the mitochondrion
+def: "An anomaly of the `mitochondrion` (FMA:63835), the membranous cytoplasmic organelle the interior of which is subdivided by cristae. The `mitochondrion` (GO:0005739) is a self replicating organelle that is the site of tissue respiration." [HPO:probinson]
+is_a: HP:0011017 ! Abnormality of cell physiology
+created_by: peter
+creation_date: 2012-09-08T11:05:06Z
+
+[Term]
+id: HP:0012104
+name: Parietal cortical atrophy
+def: "Atrophy of the `parietal cortex` (FMA:61826)." [HPO:probinson]
+is_a: HP:0002120 ! Cerebral cortical atrophy
+created_by: peter
+creation_date: 2012-09-08T02:50:05Z
+
+[Term]
+id: HP:0012105
+name: Occipital cortical atrophy
+def: "Atrophy of the `occipital cortex` (FMA:67325)." [HPO:probinson]
+is_a: HP:0002120 ! Cerebral cortical atrophy
+created_by: peter
+creation_date: 2012-09-08T02:50:53Z
+
+[Term]
+id: HP:0012106
+name: Rhizomelic leg shortening
+def: "Disproportionate shortening of the proximal segment of the leg (i.e. the femur)." [HPO:probinson]
+xref: UMLS:C1969532 "Rhizomelic arm shortening"
+is_a: HP:0008905 ! Rhizomelic short stature
+created_by: peter
+creation_date: 2012-09-08T03:53:33Z
+
+[Term]
+id: HP:0012107
+name: Increased fibular diameter
+def: "Increased width of the cross sectional diameter of the fibula." [HPO:probinson, MP:0008159]
+synonym: "Thick fibula" EXACT []
+synonym: "Wide fibula" EXACT []
+is_a: HP:0002991 ! Abnormality of the fibula
+created_by: peter
+creation_date: 2012-09-08T04:03:50Z
+
+[Term]
+id: HP:0012108
+name: Primary open angle glaucoma
+def: "A type of glaucoma with optic nerve damage in an eye with evidence of significant obstruction of the functional trabecular meshwork by the peripheral iris would be classified as having primary angle closure." [HPO:probinson, pmid:11815354]
+comment: Evidence of optic nerve damage can include s optic disc abnormalities (Vertical cup:disc ratio over the 97. 5th percentile in the normal population), visual field defects. The role of increased intraocular pressure (IOP) in glaucoma is debated, but an IOP exceeding the 99. 5th percentile of the normal population may be considered to support the diagnosis.
+is_a: HP:0000501 ! Glaucoma
+created_by: peter
+creation_date: 2012-09-10T05:17:24Z
+
+[Term]
+id: HP:0012109
+name: Primary angle closure glaucoma
+def: "A type of glaucoma with optic nerve damage in an eye that does not have evidence of angle closure and in which there is no evidence of a secondary cause." [HPO:probinson, pmid:11815354]
+comment: Evidence of optic nerve damage can include s optic disc abnormalities (Vertical cup:disc ratio over the 97. 5th percentile in the normal population), visual field defects. The role of increased intraocular pressure (IOP) in glaucoma is debated, but an IOP exceeding the 99. 5th percentile of the normal population may be considered to support the diagnosis.
+is_a: HP:0000501 ! Glaucoma
+created_by: peter
+creation_date: 2012-09-10T05:22:48Z
+
+[Term]
+id: HP:0012110
+name: Hypoplasia of the pons
+def: "Underdevelopment of the `pons` (FMA:67943)." [HPO:probinson]
+is_a: HP:0007361 ! Abnormality of the pons
+created_by: peter
+creation_date: 2012-09-10T05:35:36Z
+
+[Term]
+id: HP:0012111
+name: Abnormality of circulating glucocorticoid level
+def: "An abnormality of the concentration of a `glucocorticoid` (CHEBI:24261) in the blood." [HPO:probinson]
+is_a: HP:0003117 ! Abnormality of circulating hormone level
+created_by: hecht
+creation_date: 2012-09-16T04:22:26Z
+
+[Term]
+id: HP:0012112
+name: Abnormality of circulating corticosterone level
+def: "An abnormality of the concentration of `corticosterone` (CHEBI:16827) in the blood." [HPO:probinson]
+is_a: HP:0012111 ! Abnormality of circulating glucocorticoid level
+created_by: hecht
+creation_date: 2012-09-16T04:23:55Z
+
+[Term]
+id: HP:0012113
+name: Abnormality of creatine metabolism
+def: "An anomaly of the concentration or homeostasis of `creatine`  (CHEBI:16919). Creatine is a derivative of glycine having methyl and amidino groups attached to the nitrogen. Creatine is naturally produced from amino acids, primarily in liver and kidney, and acts as an energy source for cells, primarly for muscle cells." [HPO:probinson]
+synonym: "Creatine metabolism abnormal" RELATED []
+is_a: HP:0004337 ! Abnormality of amino acid metabolism
+created_by: hecht
+creation_date: 2012-09-16T04:29:41Z
+
+[Term]
+id: HP:0012114
+name: Endometrial carcinoma
+def: "A carcinoma of the endometrium, the mucous lining of the uterus." [HPO:probinson]
+xref: MeSH:D016889 "Endometrial Neoplasms"
+is_a: HP:0010784 ! Uterine neoplasm
+created_by: hecht
+creation_date: 2012-09-16T04:37:32Z
+
+[Term]
+id: HP:0012115
+name: Hepatitis
+def: "Inflammation of the liver." [HPO:probinson]
+xref: MeSH:D006505 "Hepatitis"
+is_a: HP:0001392 ! Abnormality of the liver
+created_by: hecht
+creation_date: 2012-09-16T05:03:29Z
+
+[Term]
+id: HP:0012116
+name: Abnormal albumin level
+def: "Deviation from normal concentration of `albumin` (PR:000003918) in the `blood` (FMA:9670)." [HPO:probinson]
+is_a: HP:0010876 ! Abnormality of circulating protein level
+created_by: hecht
+creation_date: 2012-09-16T05:14:53Z
+
+[Term]
+id: HP:0012117
+name: Hyperalbuminemia
+def: "Elevation in the concentration of `albumin` (PR:000003918) in the `blood` (FMA:9670)." [HPO:probinson]
+synonym: "Hyperalbuminaemia" EXACT []
+is_a: HP:0012116 ! Abnormal albumin level
+created_by: hecht
+creation_date: 2012-09-16T05:15:41Z
+
+[Term]
+id: HP:0012118
+name: Laryngeal carcinoma
+def: "A carcinoma of the larynx." [HPO:probinson]
+comment: Laryngeal carcinoma often is related to a history of smoking and may manifest by hoarseness, a lump in the neck, persistent cough, stridor and other symptoms.
+synonym: "Cancer of the larynx" EXACT []
+synonym: "Laryngeal cancer" EXACT []
+xref: MeSH:D007822 "Laryngeal Neoplasms"
+is_a: HP:0100605 ! Neoplasm of the larynx
+created_by: hecht
+creation_date: 2012-09-16T05:28:05Z
+
+[Term]
+id: HP:0012119
+name: Methemoglobinemia
+def: "Abnormally increased levels of Methemoglobinemia in the blood. In this form of hemoglobin, there is an oxidized ferric iron (Fe +3) rather than the reduced ferrous form (Fe 2+) that is normally found in hemoglobin. Methemoglobin has a reduced affinity for oxygen, resulting in a reduced ability to release oxygen to tissues." [HPO:probinson]
+is_a: HP:0011902 ! Abnormal hemoglobin
+created_by: hecht
+creation_date: 2012-09-16T05:42:35Z
+
+[Term]
+id: HP:0012120
+name: Methylmalonic aciduria
+def: "Increased concentration of `methylmalonic acid` (CHEBI:30860) in the urine." [HPO:probinson]
+comment: Methylmalonic aciduria is a genetically heterogeneous disorder of methylmalonate and cobalamin (cbl; vitamin B12) metabolism.
+synonym: "Methymalonicaciduria" EXACT []
+xref: UMLS:C1855119 "Methymalonicaciduria"
+is_a: HP:0003215 ! Dicarboxylic aciduria
+created_by: hecht
+creation_date: 2012-09-16T06:02:23Z
+
+[Term]
+id: HP:0012121
+name: Panuveitis
+def: "Inflammation of the uveal tract in which inflammation affects the anterior chamber, vitreous, retina or choroid." [HPO:probinson]
+is_a: HP:0000554 ! Uveitis
+created_by: hecht
+creation_date: 2012-09-16T06:23:34Z
+
+[Term]
+id: HP:0012122
+name: Anterior uveitis
+def: "Inflammation of the uveal tract in which the primary site of inflammation is the anterior chamber." [HPO:probinson]
+is_a: HP:0000554 ! Uveitis
+created_by: hecht
+creation_date: 2012-09-16T06:24:32Z
+
+[Term]
+id: HP:0012123
+name: Posterior uveitis
+def: "Inflammation of the uveal tract in which the primary site of inflammation is the retina or choroid." [HPO:probinson]
+is_a: HP:0000554 ! Uveitis
+created_by: hecht
+creation_date: 2012-09-16T06:25:06Z
+
+[Term]
+id: HP:0012124
+name: Intermediate uveitis
+def: "Inflammation of the uveal tract in which the primary site of inflammation is the vitreous." [HPO:probinson]
+is_a: HP:0000554 ! Uveitis
+created_by: hecht
+creation_date: 2012-09-16T06:25:53Z
+
+[Term]
+id: HP:0012125
+name: Prostate cancer
+def: "A cancer of the `prostate` (FMA:9600)." [HPO:probinson]
+synonym: "Prostatic cancer" EXACT []
+xref: MeSH:D011471 "Prostatic Neoplasms"
+is_a: HP:0100787 ! Prostate neoplasm
+created_by: hecht
+creation_date: 2012-09-16T06:33:32Z
+
+[Term]
+id: HP:0012126
+name: Stomach cancer
+def: "A cancer arising in any part of the stomach." [HPO:probinson]
+synonym: "Gastric cancer" EXACT []
+xref: MeSH:D013274 "Stomach Neoplasms"
+is_a: HP:0006753 ! Neoplasm of the stomach
+created_by: hecht
+creation_date: 2012-09-16T06:45:29Z
+
+[Term]
+id: HP:0012127
+name: Uraciluria
+def: "Increased concentration of `uracil` (CHEBI:17568)  in the urine." [HPO:probinson]
+is_a: HP:0004353 ! Abnormality of pyrimidine metabolism
+created_by: hecht
+creation_date: 2012-09-16T06:53:53Z
+
+[Term]
+id: HP:0012128
+name: Basal ganglia necrosis
+def: "Death of cells in the `basal ganglia` (FMA:84013)." [HPO:probinson]
+is_a: HP:0002134 ! Abnormality of the basal ganglia
+created_by: hecht
+creation_date: 2012-09-16T07:00:22Z
+
+[Term]
+id: HP:0012129
+name: Abnormality of bone marrow stromal cells
+is_a: HP:0005561 ! Abnormality of bone marrow cell morphology
+created_by: peter
+creation_date: 2012-09-16T19:13:26Z
+
+[Term]
+id: HP:0012130
+name: Abnormality of cells of the erythroid lineage
+def: "An anomaly of `erythroid lineage cells` (CL:0000764), that is, of the erythropoietic cells in the lineage leading to and including erythrocytes." [DDD:akelly]
+is_a: HP:0005561 ! Abnormality of bone marrow cell morphology
+created_by: peter
+creation_date: 2012-09-16T19:14:03Z
+
+[Term]
+id: HP:0012131
+name: Abnormal number of erythroid precursors
+def: "A deviation from the normal count of erythroid precursor cells, that is,  `erythroid lineage cells` (CL:0000764) in the bone marrow." [DDD:akelly]
+is_a: HP:0012130 ! Abnormality of cells of the erythroid lineage
+created_by: peter
+creation_date: 2012-09-16T19:17:18Z
+
+[Term]
+id: HP:0012132
+name: Erythroid hyperplasia
+def: "Increased count of erythroid precursor cells, that is,  `erythroid lineage cells` (CL:0000764) in the bone marrow." [DDD:akelly]
+is_a: HP:0012131 ! Abnormal number of erythroid precursors
+created_by: peter
+creation_date: 2012-09-16T19:19:21Z
+
+[Term]
+id: HP:0012133
+name: Erythroid hypoplasia
+def: "Decreased count of erythroid precursor cells, that is,  `erythroid lineage cells` (CL:0000764) in the bone marrow." [DDD:akelly]
+is_a: HP:0012131 ! Abnormal number of erythroid precursors
+created_by: peter
+creation_date: 2012-09-16T19:21:19Z
+
+[Term]
+id: HP:0012134
+name: Dysplastic erythropoesis
+is_a: HP:0012130 ! Abnormality of cells of the erythroid lineage
+created_by: peter
+creation_date: 2012-09-16T20:01:11Z
+
+[Term]
+id: HP:0012135
+name: Abnormality of cells of the granulocytic lineage
+def: "An anomaly of cells involved in  the formation of a granulocytes, that is, of the `granulocytopoietic cell` (CL:0002191)." [DDD:akelly]
+is_a: HP:0005561 ! Abnormality of bone marrow cell morphology
+created_by: peter
+creation_date: 2012-09-16T20:02:11Z
+
+[Term]
+id: HP:0012136
+name: Dysplastic granulopoesis
+is_a: HP:0012135 ! Abnormality of cells of the granulocytic lineage
+created_by: peter
+creation_date: 2012-09-16T20:05:13Z
+
+[Term]
+id: HP:0012137
+name: Abnormal number of granulocyte precursors
+is_a: HP:0012135 ! Abnormality of cells of the granulocytic lineage
+created_by: peter
+creation_date: 2012-09-16T20:09:13Z
+
+[Term]
+id: HP:0012138
+name: Granulocytic hyperplasia
+is_a: HP:0012137 ! Abnormal number of granulocyte precursors
+created_by: peter
+creation_date: 2012-09-16T20:09:36Z
+
+[Term]
+id: HP:0012139
+name: Granulocytic hypoplasia
+def: "Decreased number of granulocyte precursors in the bone marrow." [HPO:akelly]
+is_a: HP:0012137 ! Abnormal number of granulocyte precursors
+created_by: peter
+creation_date: 2012-09-16T20:09:56Z
+
+[Term]
+id: HP:0012140
+name: Abnormality of cells of the lymphoid lineage
+def: "An anomaly of cells that originate from the `lymphoid lineage restricted progenitor cell` (CL:0000838)." [HPO:probinson]
+is_a: HP:0005561 ! Abnormality of bone marrow cell morphology
+created_by: peter
+creation_date: 2012-09-16T20:13:39Z
+
+[Term]
+id: HP:0012141
+name: Lymphocvtosis
+def: "Increase in the number or proportion of lymphocytes in the blood." [DDD:akelly]
+is_a: HP:0012140 ! Abnormality of cells of the lymphoid lineage
+created_by: peter
+creation_date: 2012-09-16T20:18:05Z
+
+[Term]
+id: HP:0012142
+name: Pancreatic squamous cell carcinoma
+def: "A subtype of ductal pancreatic carcinoma that is thought to  originate from squamous metaplasia of pancreatic ductal epithelium." [HPO:probinson, pmid:19079631]
+synonym: "Squamous cell carcinoma of the pancreas" EXACT []
+is_a: HP:0002894 ! Neoplasm of the pancreas
+created_by: peter
+creation_date: 2012-09-16T20:55:24Z
+
+[Term]
+id: HP:0012143
+name: Abnormality of cells of the megakaryocyte lineage
+def: "Anomaly of `megakaryocytes` (CL:0000556)." [HPO:probinson]
+is_a: HP:0005561 ! Abnormality of bone marrow cell morphology
+created_by: peter
+creation_date: 2012-09-16T20:20:38Z
+
+[Term]
+id: HP:0012144
+name: Abnormality of cells of the monocyte/macrophage lineage
+is_a: HP:0005561 ! Abnormality of bone marrow cell morphology
+created_by: peter
+creation_date: 2012-09-16T20:21:37Z
+
+[Term]
+id: HP:0012145
+name: Abnormality of multiple cell lineages in the bone marrow
+is_a: HP:0005561 ! Abnormality of bone marrow cell morphology
+created_by: peter
+creation_date: 2012-09-16T20:21:57Z
+
+[Term]
+id: HP:0012146
+name: Abnormality of  von Willebrand factor
+def: "Decreased quantity or activity of `von Willebrand factor` (PR:000017364). Von Willebrand factor mediates the adhesion of platelets to the collagen exposed on endothelial cell surfaces." [DDD:akelly]
+is_a: HP:0003256 ! Abnormality of the coagulation cascade
+created_by: peter
+creation_date: 2012-09-16T20:25:58Z
+
+[Term]
+id: HP:0012147
+name: Reduced quantity of Von Willebrand factor
+def: "Decreased quantity of `von Willebrand factor` (PR:000017364)." [DDD:akelly]
+synonym: "Decreased von Willebrand factor" RELATED []
+is_a: HP:0012146 ! Abnormality of  von Willebrand factor
+created_by: peter
+creation_date: 2012-09-16T20:27:00Z
+
+[Term]
+id: HP:0012148
+name: Multiple lineage myelodysplasia
+def: "Myelodysplasia with dysplastic changes in two or more of the myeloid lineages: erythroid, granulocytic, megakaryocytic." [DDD:akelly]
+is_a: HP:0002863 ! Myelodysplasia
+created_by: peter
+creation_date: 2012-09-16T20:33:33Z
+
+[Term]
+id: HP:0012149
+name: Bilineage myelodysplasia
+def: "Myelodysplasia with dysplastic changes in two of the myeloid lineages: erythroid, granulocytic, megakaryocytic." [DDD:akelly]
+is_a: HP:0002863 ! Myelodysplasia
+created_by: peter
+creation_date: 2012-09-16T20:39:10Z
+
+[Term]
+id: HP:0012150
+name: Single lineage myelodysplasia
+def: "Abnormality/dysplasia of a single myeloid cell (erythroid, granulocytic, or megakaryocytic)." [DDD:akelly]
+is_a: HP:0002863 ! Myelodysplasia
+created_by: peter
+creation_date: 2012-09-16T20:39:39Z
+
+[Term]
+id: HP:0012151
+name: Hemothorax
+def: "The presence of blood in the pleural space." [HPO:probinson]
+comment: Hemothorax may result from hemorrhage in the chest wall, lung parenchyma, heart, or great vessels.
+xref: MeSH:D006491 "Hemothorax"
+is_a: HP:0002103 ! Abnormality of the pleura
+created_by: peter
+creation_date: 2012-09-16T20:58:32Z
+
+[Term]
+id: HP:0012152
+name: Foveoschisis
+def: "Splitting of the retinal layers in the macula." [HPO:probinson]
+is_a: HP:0000493 ! Abnormality of the fovea
+created_by: peter
+creation_date: 2012-09-16T21:06:26Z
+
+[Term]
+id: HP:0012153
+name: Hypotriglyceridemia
+def: "An decrease in the level of `triglycerides` (CHEBI:17855) in the `blood` (FMA:9670)." [HPO:probinson]
+is_a: HP:0003119 ! Abnormality of lipid metabolism
+created_by: peter
+creation_date: 2012-09-20T06:39:11Z
+
+[Term]
+id: HP:0012154
+name: Anhedonia
+def: "Inability to experience pleasure  activities usually found enjoyable." [HPO:probinson]
+xref: MerSH:D059445 "Anhedonia"
+is_a: HP:0100851 ! Abnormal emotion/affect behavior
+created_by: peter
+creation_date: 2012-09-20T06:51:36Z
 
 [Term]
 id: HP:0100000
@@ -76607,6 +77094,7 @@ id: HP:0100247
 name: Recurrent singultus
 def: "A contraction of the diaphragm that repeats several times per minute. In humans, the abrupt rush of air into the lungs causes the epiglottis to close, creating a hic sound. Also known as synchronous diaphragmatic flutter (SDF), or singultus, from the Latin singult, the act of catching one's breath while sobbing. The hiccup is an involuntary action involving a reflex arc." [HPO:sdoelken]
 comment: A bout of hiccups, in general, resolves itself without intervention, although many home remedies claim to shorten the duration, and medical treatment is occasionally necessary in cases of chronic hiccups. Hiccups are caused by many central and peripheral nervous system disorders, all from injury or irritation to the phrenic and vagus nerves, as well as toxic or metabolic disorders affecting the aforementioned systems. Hiccups often occur after consuming carbonated beverages, alcohol, dry breads, or spicy foods. Prolonged laughter or eating too fast are also known to cause hiccups. Persistent or intractable hiccups may be caused by any condition which irritates or damages the relevant nerves.
+synonym: "Hiccup" RELATED []
 synonym: "Recurrent hiccough" EXACT []
 synonym: "Recurrent hiccup" EXACT []
 synonym: "Recurrent synchronous diaphragmatic flutter" EXACT []
@@ -76995,6 +77483,7 @@ id: HP:0100292
 name: Amyloidosis of peripheral nerves
 def: "The presence of `amyloid deposition` (MPATH:34) in the nerves of the `peripheral nervous system` (FMA:9903)." [HPO:probinson]
 is_a: HP:0000759 ! Abnormality of the peripheral nervous system
+is_a: HP:0011034 ! Amyloidosis
 created_by: doelkens
 creation_date: 2010-08-10T01:46:51Z
 
@@ -77264,14 +77753,6 @@ created_by: doelkens
 creation_date: 2010-08-10T04:14:42Z
 
 [Term]
-id: HP:0100325
-name: Metacarpophalangeal Synostosis
-def: "Fusion of proximal phalanges of the fingers with the corresponding metacarpals." [HPO:sdoelken]
-is_a: HP:0009700 ! Synostosis involving bones of the fingers
-created_by: doelkens
-creation_date: 2010-09-14T05:41:34Z
-
-[Term]
 id: HP:0100326
 name: Immunologic hypersensitivity
 is_a: HP:0010978 ! Abnormality of immune system physiology
@@ -77291,7 +77772,7 @@ id: HP:0100328
 name: Carpometacarpal synostosis
 def: "Fusion involving carpal and metacarpal bones." [HPO:probinson]
 is_a: HP:0009701 ! Metacarpal synostosis
-is_a: HP:0009702 ! Synostosis involving the carpal bones
+is_a: HP:0009702 ! Carpal synostosis
 created_by: doelkens
 creation_date: 2010-10-08T03:52:00Z
 
@@ -77299,14 +77780,14 @@ creation_date: 2010-10-08T03:52:00Z
 id: HP:0100329
 name: Tarsometatarsal synostosis
 is_a: HP:0001440 ! Synostosis involving metatarsal bones
-is_a: HP:0008368 ! Synostosis involving tarsal bones
+is_a: HP:0008368 ! Tarsal synostosis
 created_by: doelkens
 creation_date: 2010-10-08T03:53:06Z
 
 [Term]
 id: HP:0100330
 name: Synostosis of tarsal bones
-is_a: HP:0008368 ! Synostosis involving tarsal bones
+is_a: HP:0008368 ! Tarsal synostosis
 created_by: doelkens
 creation_date: 2010-10-08T04:07:01Z
 
@@ -78681,7 +79162,9 @@ creation_date: 2010-12-20T11:40:58Z
 [Term]
 id: HP:0100526
 name: Neoplasm of the lungs
+def: "Tumor of the lung." [HPO:probinson]
 synonym: "Lung tumor" EXACT []
+xref: MeSH:D008175 "Lung Neoplasms"
 is_a: HP:0002088 ! Abnormality of the lung
 is_a: HP:0100606 ! Neoplasm of the respiratory system
 created_by: doelkens
@@ -78902,13 +79385,6 @@ def: "Eversion of a hollow organ and exposure, inside out, and protruded through
 is_a: HP:0004298 ! Abnormality of the abdominal wall
 created_by: doelkens
 creation_date: 2010-12-21T02:20:01Z
-
-[Term]
-id: HP:0100549
-name: Bone marrow failure
-is_a: HP:0005561 ! Abnormality of bone marrow cell morphology
-created_by: doelkens
-creation_date: 2010-12-21T02:43:24Z
 
 [Term]
 id: HP:0100550
@@ -79228,6 +79704,7 @@ creation_date: 2010-12-27T03:06:35Z
 [Term]
 id: HP:0100586
 name: Aseptic leukocyturia
+def: "Leukocyturia without bacterial growth upon urine culture." [HPO:probinson]
 is_a: HP:0012085 ! Pyuria
 created_by: doelkens
 creation_date: 2010-12-27T03:09:12Z
@@ -79380,7 +79857,7 @@ creation_date: 2010-12-27T05:46:46Z
 
 [Term]
 id: HP:0100605
-name: Neoplasia of the larynx
+name: Neoplasm of the larynx
 is_a: HP:0001600 ! Abnormality of the larynx
 is_a: HP:0100606 ! Neoplasm of the respiratory system
 created_by: doelkens
@@ -80328,7 +80805,7 @@ name: Gastrointestinal stroma tumor
 synonym: "Gastrointestinal stromal tumor" EXACT []
 synonym: "GIST" EXACT []
 xref: MeSH:D046152 "Gastrointestinal Stromal Tumors"
-is_a: HP:0006753 ! Neoplasm of the stomach
+is_a: HP:0007378 ! Neoplasm of the gastrointestinal tract
 created_by: doelkens
 creation_date: 2011-06-06T02:49:58Z
 
@@ -80648,6 +81125,8 @@ creation_date: 2011-06-07T10:36:09Z
 [Term]
 id: HP:0100763
 name: Abnormality of the lymphatic system
+def: "An anomaly of the lymphatic system, a network of lymphatic vessels that carry a clear fluid called lymph unidirectionally towards either the right lymphatic duct or the thoracic duct, which in turn drain into the right and left subclavian veins respectively." [HPO:probinson]
+synonym: "Lymphatic disease" RELATED []
 is_a: HP:0002715 ! Abnormality of the immune system
 created_by: doelkens
 creation_date: 2011-06-07T10:40:36Z
@@ -82548,4 +83027,15 @@ name: Monodactyly (feet)
 is_a: HP:0001849 ! Oligodactyly (feet)
 created_by: doelkens
 creation_date: 2011-11-22T09:56:55Z
+
+
+
+[Term]
+id: HP:0200055
+name: Small hands
+synonym: "Disproportionately small hands" EXACT []
+synonym: "Relatively small hands" EXACT []
+is_a: HP:0005922 ! Abnormal hand morphology
+created_by: sebastiankohler
+
 
