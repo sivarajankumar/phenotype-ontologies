@@ -37,6 +37,7 @@ mp.obo:
 	wget ftp://ftp.informatics.jax.org/pub/reports/MPheno_OBO.ontology -O $@
 
 hp.obo: external/hpo/human-phenotype-ontology.obo
+	echo remember to update external/hpo && \
 	cp $< $@
 
 pato.obo:

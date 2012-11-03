@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 13:07:2012 16:16
+date: 01:11:2012 16:23
 saved-by: csmith
 auto-generated-by: OBO-Edit 2.1
 subsetdef: CvDC_Terms "NHLBI Cardiovascular Development Consortium (CvDC) Terms"
@@ -3599,7 +3599,10 @@ is_a: MP:0000540 ! abnormal urinary bladder urothelium morphology
 [Term]
 id: MP:0000542
 name: left-sided isomerism
+alt_id: Fyler:0192
+alt_id: Fyler:192
 def: "anomaly in the asymmetry of the visceral paired organs (e.g. lungs) such that organs on the left and right side have the morphology normally seen on the left side of the body; this may also be associated with the presence of multiple spleens" [MGI:smb]
+synonym: "polysplenia syndrome (left isomerism)" RELATED []
 is_a: MP:0004133 ! heterotaxia
 
 [Term]
@@ -4214,7 +4217,6 @@ name: abnormal mammary gland morphology
 def: "any structural anomaly of the compound, alveolar and apocrine milk-secreting gland that lies within the breast" [ISBN:0-683-40008-8]
 synonym: "abnormal mammary glands" BROAD []
 synonym: "mammary gland dysplasia" EXACT []
-is_a: MP:0001119 ! abnormal female reproductive system morphology
 is_a: MP:0002163 ! abnormal gland morphology
 is_a: MP:0010678 ! abnormal skin adnexa morphology
 
@@ -4225,7 +4227,6 @@ alt_id: MP:0003428
 def: "aberration in the differentiation of the mammary gland during early embryogenesis or during sexual maturity" [ISBN:0-683-40008-8]
 synonym: "abnormal mammary development" EXACT []
 is_a: MP:0000627 ! abnormal mammary gland morphology
-is_a: MP:0003936 ! abnormal reproductive system development
 
 [Term]
 id: MP:0000629
@@ -4923,9 +4924,13 @@ is_a: MP:0000738 ! impaired muscle contractility
 
 [Term]
 id: MP:0000741
-name: impaired contractility of detrusor smooth muscle
-def: "inability or reduced ability of the detrusor smooth muscle to shorten or to develop increased tension" [ISBN:0-683-40008-8]
+name: impaired contractility of urinary bladder detrusor smooth muscle
+def: "inability or reduced ability of the detrusor smooth muscle of the urinary bladder to shorten or to develop increased tension voluntarily or involuntarily; stretching of the smooth muscle fibers by accumulation of urine in the bladder leads to nervous signaling giving the urge to urinate; contraction of the detrusor muscle leads to urination, via emptying of the urine contained in the bladder through the urethra and urine excretion" [ISBN:0-683-40008-8, MGI:anna]
+synonym: "impaired contractility of detrusor muscle" EXACT []
+synonym: "impaired contractility of detrusor urinae muscle" EXACT []
+synonym: "impaired contractility of musculus detrusor" EXACT []
 is_a: MP:0000740 ! impaired smooth muscle contractility
+is_a: MP:0010386 ! abnormal urinary bladder physiology
 
 [Term]
 id: MP:0000742
@@ -5672,6 +5677,7 @@ is_a: MP:0005277 ! abnormal brainstem morphology
 id: MP:0000849
 name: abnormal cerebellum morphology
 def: "any structural anomaly of the part of the metencephalon that lies in the posterior cranial fossa dorsal to the pons and medulla that is concerned with the coordination of movement and learning of motor skills" [ISBN:0838580343, PMID:9778510]
+synonym: "cerebellar dysplasia" EXACT []
 synonym: "cerebellum dysplasia" EXACT []
 is_a: MP:0000847 ! abnormal metencephalon morphology
 
@@ -5960,6 +5966,7 @@ name: ectopic Purkinje cell
 def: "Purkinje cell body resides in places other than the Purkinje cell layer in the cerebellum" [MGI:tc, PMID:10716451]
 synonym: "heterotopic Purkinje cell" EXACT []
 is_a: MP:0000877 ! abnormal Purkinje cell morphology
+is_a: MP:0011723 ! ectopic neuron
 
 [Term]
 id: MP:0000886
@@ -9712,7 +9719,7 @@ subset: Europhenome_Terms
 subset: Sanger_Terms
 synonym: "abnormal transfer arousal" EXACT []
 synonym: "transfer arousal" EXACT []
-is_a: MP:0001449 ! abnormal learning/ memory
+is_a: MP:0002063 ! abnormal learning/memory/conditioning
 is_a: MP:0003107 ! abnormal response to novelty
 
 [Term]
@@ -9914,12 +9921,6 @@ def: "deviation from the usual tendency of mice to pile together when sleeping" 
 is_a: MP:0002557 ! abnormal social/conspecific interaction
 
 [Term]
-id: MP:0001449
-name: abnormal learning/ memory
-def: "altered ability to ascertain, retain or recall information" [MGI:csmith]
-is_a: MP:0002063 ! abnormal learning/memory/conditioning
-
-[Term]
 id: MP:0001450
 name: Altered Intelligence
 def: "OBSOLETE." [MGI:csmith]
@@ -9959,23 +9960,23 @@ id: MP:0001456
 name: impaired long term memory in cued fear conditioning test
 def: "OBSOLETE. altered ability to recall an association between an auditory cue and a foot shock over time; measured by \"freezing\" of animal in response to auditory cue" [ISBN:0-471-31639-3, MGI:csmith, PMID:9949198]
 is_obsolete: true
-consider: MP:0001449
 consider: MP:0001454
+consider: MP:0002063
 
 [Term]
 id: MP:0001457
 name: impaired long term memory in contextual fear test
 def: "OBSOLETE. altered ability to recall an association between a location and a foot shock over time; measured by \"freezing\" of animal in response to auditory cue" [ISBN:0-471-31639-3, MGI:csmith]
 is_obsolete: true
-consider: MP:0001449
 consider: MP:0001469
+consider: MP:0002063
 
 [Term]
 id: MP:0001458
 name: abnormal object recognition memory
 def: "anomaly in the ability to recognize objects that the animal has previously encountered; recognition is measured by relative amount of time exploring objects, which should decrease upon subsequent or multiple presentations of the same object when presented with novel objects at the same time" [MGI:CFG]
 synonym: "object recognition memory abnormalities" EXACT []
-is_a: MP:0001449 ! abnormal learning/ memory
+is_a: MP:0002063 ! abnormal learning/memory/conditioning
 
 [Term]
 id: MP:0001459
@@ -10014,7 +10015,7 @@ def: "anomaly in the ability to ascertain or acquire spatial location informatio
 synonym: "spatial learning abnormalities" EXACT []
 synonym: "spatial learning impairment in morris water maze test" NARROW []
 synonym: "visible learning impairment in morris water maze test" NARROW []
-is_a: MP:0001449 ! abnormal learning/ memory
+is_a: MP:0002063 ! abnormal learning/memory/conditioning
 
 [Term]
 id: MP:0001464
@@ -10035,7 +10036,7 @@ id: MP:0001468
 name: abnormal temporal memory
 def: "anomaly in the ability to recall temporal events and stimuli" [MGI:CFG]
 synonym: "temporal memory abnormalities" EXACT []
-is_a: MP:0001449 ! abnormal learning/ memory
+is_a: MP:0002063 ! abnormal learning/memory/conditioning
 
 [Term]
 id: MP:0001469
@@ -12136,8 +12137,8 @@ name: kidney inflammation
 def: "local accumulation of fluid, plasma proteins, and leukocytes in the kidney" [ISBN:0-8153-1691-7, MGI:cwg]
 synonym: "nephritis" EXACT []
 synonym: "renal inflammation" EXACT []
-is_a: MP:0001846 ! increased inflammatory response
 is_a: MP:0002136 ! abnormal kidney physiology
+is_a: MP:0011762 ! renal/urinary system inflammation
 
 [Term]
 id: MP:0001860
@@ -12285,7 +12286,6 @@ def: "any functional anomaly of the compound, alveolar and apocrine milk-secreti
 synonym: "abnormal mammary gland function" EXACT []
 synonym: "mammary gland abnormalities" BROAD []
 is_a: MP:0002164 ! abnormal gland physiology
-is_a: MP:0003699 ! abnormal female reproductive system physiology
 is_a: MP:0010680 ! abnormal skin adnexa physiology
 
 [Term]
@@ -13441,12 +13441,14 @@ def: "anomaly in the ability to change the frequency or form of a behavior as a 
 synonym: "abnormal conditioning behavior" EXACT []
 synonym: "neurological/behavioral: conditioning defect" EXACT []
 xref: MGI:2173567
-is_a: MP:0001449 ! abnormal learning/ memory
+is_a: MP:0002063 ! abnormal learning/memory/conditioning
 
 [Term]
 id: MP:0002063
 name: abnormal learning/memory/conditioning
+alt_id: MP:0001449
 def: "altered ability to receive, store, process or recall informational stimuli" [MGI:csmith]
+synonym: "abnormal learning/ memory" EXACT []
 synonym: "neurological/behavioral: learning/memory anomalies" EXACT []
 synonym: "neurological/behavioral: learning/memory impairment" EXACT []
 xref: MGI:2173568
@@ -14532,9 +14534,9 @@ is_a: MP:0003632 ! abnormal nervous system morphology
 id: MP:0002185
 name: ectopia
 alt_id: MP:0002186
-def: "congenital positional anomaly or displacement of any part of the body or organ" [ISBN:0-683-40008-8]
+def: "OBSOLETE. congenital positional anomaly or displacement of any part of the body or organ" [ISBN:0-683-40008-8]
 synonym: "heterotopia" EXACT []
-is_a: MP:0002168 ! other aberrant phenotype
+is_obsolete: true
 
 [Term]
 id: MP:0002187
@@ -17422,7 +17424,7 @@ is_a: MP:0002554 ! aversion to addictive substance
 id: MP:0002571
 name: senility
 def: "a degenerative state of brain function manifesting in an impairment of memory, judgment, attention span, problem solving skills, the inability to perform previously learned skills that cannot be attributed to deficits of motor or sensory function, and a global loss of cognitive abilities" [MGI:csmith]
-is_a: MP:0001449 ! abnormal learning/ memory
+is_a: MP:0002063 ! abnormal learning/memory/conditioning
 
 [Term]
 id: MP:0002572
@@ -17805,6 +17807,7 @@ name: hepatic steatosis
 def: "an accumulation of fat deposits in the liver" [MGI:pvb]
 synonym: "fatty liver" EXACT []
 synonym: "hepatic lipidosis" RELATED []
+synonym: "hepatosteatosis" EXACT []
 synonym: "liver adiposis" EXACT []
 synonym: "liver steatosis" EXACT []
 is_a: MP:0000598 ! abnormal liver morphology
@@ -17866,6 +17869,7 @@ is_a: MP:0003633 ! abnormal nervous system physiology
 id: MP:0002635
 name: reduced sensorimotor gating
 def: "attenuation of the process by which inhibitory neural pathways filter multiple stimuli and allow attention to be focused on one stimulus; usually measured by pre-pulse inhibition (PPI)" [MGI:pvb]
+synonym: "impaired sensorimotor gating" EXACT []
 is_a: MP:0002634 ! abnormal sensorimotor gating
 
 [Term]
@@ -18267,6 +18271,7 @@ synonym: "round sperm heads" EXACT []
 synonym: "round-headed spermatozoa" EXACT []
 is_a: MP:0001156 ! abnormal spermatogenesis
 is_a: MP:0008898 ! abnormal acrosome morphology
+is_a: MP:0009230 ! abnormal sperm head morphology
 
 [Term]
 id: MP:0002687
@@ -18274,6 +18279,7 @@ name: oligozoospermia
 alt_id: MP:0002684
 def: "reduced concentration of spermatozoa in the seminal fluid" [J:57312, MGI:pvb]
 synonym: "decreased sperm count" EXACT []
+synonym: "hypospermia" EXACT []
 synonym: "oligospermia" EXACT []
 synonym: "reduced sperm count" EXACT []
 synonym: "reduced sperm number" EXACT []
@@ -18872,6 +18878,7 @@ synonym: "ectopic granule neuron" BROAD []
 synonym: "heterotopic granule cells" BROAD []
 xref: CL:0001031
 is_a: MP:0004098 ! abnormal cerebellar granule cell morphology
+is_a: MP:0011723 ! ectopic neuron
 
 [Term]
 id: MP:0002763
@@ -19034,9 +19041,9 @@ is_a: MP:0003507 ! abnormal ovary physiology
 [Term]
 id: MP:0002784
 name: abnormal Sertoli cell morphology
-def: "any structural anomaly of the cells of the seminiferous tubules that create the blood-testes barrier and enable spermatogenesis" [J:65900, MGI:pvb]
+def: "any structural anomaly of the supporting cells of the seminiferous tubule epithelium that create the blood-testes barrier and enable spermatogenesis" [MGI:pvb]
 synonym: "abnormal Sertoli cells" EXACT []
-is_a: MP:0002216 ! abnormal seminiferous tubule morphology
+is_a: MP:0011750 ! abnormal seminiferous tubule epithelium morphology
 
 [Term]
 id: MP:0002785
@@ -19048,7 +19055,7 @@ is_a: MP:0002786 ! abnormal Leydig cell morphology
 [Term]
 id: MP:0002786
 name: abnormal Leydig cell morphology
-def: "any structural anomaly of the interstitial cells of the seminiferous tubules that secrete testosterone" [MGI:pvb]
+def: "any structural anomaly of the interstitial cells near the seminiferous tubules that secrete testosterone" [MGI:pvb]
 synonym: "abnormal Leydig cells" BROAD []
 is_a: MP:0002216 ! abnormal seminiferous tubule morphology
 
@@ -19170,7 +19177,7 @@ id: MP:0002802
 name: abnormal discrimination learning
 def: "anomaly in the ability to exhibit a differential response to different stimuli that is achieved by the reinforcement of the desired response for each particular stimulus" [MGI:CFG]
 synonym: "discrimination learning abnormalities" EXACT []
-is_a: MP:0001449 ! abnormal learning/ memory
+is_a: MP:0002063 ! abnormal learning/memory/conditioning
 
 [Term]
 id: MP:0002803
@@ -19184,7 +19191,7 @@ id: MP:0002804
 name: abnormal motor learning
 def: "anomaly in the ability to repeat a motor task requiring well coordinated movements and balance; measures cerebellar dependent learning" [MGI:CFG]
 synonym: "motor learning abnormalities" EXACT []
-is_a: MP:0001449 ! abnormal learning/ memory
+is_a: MP:0002063 ! abnormal learning/memory/conditioning
 
 [Term]
 id: MP:0002805
@@ -20626,7 +20633,7 @@ is_a: MP:0000807 ! abnormal hippocampus morphology
 [Term]
 id: MP:0003007
 name: ectopic thymus
-def: "ectopic location of the thymus primordium, which normally resides in the superior mediastinum and lower part of the neck" [J:76015, MGI:anna]
+def: "ectopic location of the thymus primordium, which normally resides in the superior mediastinum and lower part of the neck" [MGI:anna]
 is_a: MP:0000703 ! abnormal thymus morphology
 
 [Term]
@@ -21127,8 +21134,11 @@ is_a: MP:0005164 ! abnormal response to injury
 [Term]
 id: MP:0003076
 name: increased susceptibility to ischemic brain injury
-def: "more severe response, such as necrotic tissue size, to lack of adequate blood flow, due to trauma or disease, to support the normal functioning of all or part of the brain tissue, compared to controls" [MGI:csmith]
+alt_id: MP:0006081
+def: "increased frequency or more severe response, such as necrotic tissue size, to lack of adequate blood flow, due to trauma or disease, to support the normal functioning of all or part of the brain tissue, compared to controls" [MGI:csmith]
 synonym: "decreased resistance to ischemic brain injury" EXACT []
+synonym: "increased CNS stroke" EXACT []
+synonym: "increased susceptibility to spontaneous CNS ischemia" RELATED []
 is_a: MP:0003075 ! altered response to CNS ischemic injury
 is_a: MP:0005165 ! increased susceptibility to injury
 
@@ -21517,7 +21527,6 @@ subset: CvDC_Terms
 synonym: "atresia ani" EXACT []
 synonym: "imperforate anus" EXACT []
 synonym: "proctatresia" EXACT []
-is_a: MP:0000492 ! abnormal rectum morphology
 is_a: MP:0005034 ! abnormal anus morphology
 
 [Term]
@@ -24909,7 +24918,12 @@ is_a: MP:0003014 ! abnormal kidney medulla morphology
 [Term]
 id: MP:0003614
 name: urinary bladder prolapse
-def: "downward movement, and possible external appearance, of the bladder through the urethra" [NCBI:matt]
+def: "hernial protrusion of the urinary bladder, usually through the vaginal wall" [MGI:anna, NCBI:matt]
+synonym: "cystocele " EXACT []
+synonym: "cystocoele" EXACT []
+synonym: "fallen bladder" EXACT []
+synonym: "prolapsed bladder" EXACT []
+synonym: "vesical hernia" EXACT []
 is_a: MP:0000538 ! abnormal urinary bladder morphology
 
 [Term]
@@ -36902,7 +36916,7 @@ is_a: MP:0002084 ! abnormal developmental patterning
 [Term]
 id: MP:0005222
 name: abnormal somite size
-def: "atypical size of any of the segmental masses along the notochord of the developing embryo" [J:72325]
+def: "atypical size of any of the segmental masses along the notochord of the developing embryo" [MGI:smb]
 synonym: "irregular somite size" EXACT []
 is_a: MP:0001688 ! abnormal somite development
 
@@ -40026,7 +40040,7 @@ is_a: MP:0006279 ! abnormal limb development
 id: MP:0005651
 name: abnormal gonad rudiment morphology
 def: "any structural anomaly of the undifferentiated mesoderm that gives rise to the gonads" [MGI:llw2]
-is_a: MP:0002210 ! abnormal sex determination
+is_a: MP:0003936 ! abnormal reproductive system development
 
 [Term]
 id: MP:0005652
@@ -40808,13 +40822,6 @@ name: CNS ischemia
 def: "inadequate blood flow to a region of the brain that may lead to cerebral infarction" [MGI:smb, NCBI:matt]
 synonym: "CNS stroke" EXACT []
 is_a: MP:0003633 ! abnormal nervous system physiology
-
-[Term]
-id: MP:0006081
-name: increased incidence of spontaneous CNS ischemia
-def: "greater than normal occurrence of loss of circulation in a region of the brain" [MGI:smb, NCBI:matt]
-synonym: "increased CNS stroke" EXACT []
-is_a: MP:0006080 ! CNS ischemia
 
 [Term]
 id: MP:0006082
@@ -41849,6 +41856,7 @@ def: "abnormal location of the pupil so that it is not in the center of the iris
 subset: Europhenome_Terms
 subset: Sanger_Terms
 synonym: "corectopia" EXACT []
+synonym: "ectopic pupil" EXACT []
 is_a: MP:0001317 ! abnormal pupil morphology
 
 [Term]
@@ -42260,12 +42268,6 @@ name: abnormal retinal nerve fiber layer morphology
 def: "any structural anomaly of the layer of the retina formed by expansion of the fibers of the optic nerve" [ISBN:0-914294-08-3, MGI:smb]
 synonym: "abnormal stratum opticum morphology" EXACT []
 is_a: MP:0006069 ! abnormal retinal neuronal layer morphology
-
-[Term]
-id: MP:0006304
-name: abnormal seminiferous epithelium morphology
-def: "any structural anomaly of the epithelial cells of the seminiferous tubules" [MGI:mberry, MGI:smb]
-is_a: MP:0002216 ! abnormal seminiferous tubule morphology
 
 [Term]
 id: MP:0006305
@@ -43117,7 +43119,7 @@ is_a: MP:0002786 ! abnormal Leydig cell morphology
 [Term]
 id: MP:0006428
 name: ectopic Sertoli cells
-def: "abnormal position of the cells of the seminiferous tubules that create the blood-testes barrier and enable spermatogenesis" [MGI:anna]
+def: "abnormal position of the supporting cells of the seminiferous tubule epithelium that create the blood-testes barrier and enable spermatogenesis" [MGI:anna]
 synonym: "heterotopic Sertoli cells" EXACT []
 is_a: MP:0002784 ! abnormal Sertoli cell morphology
 
@@ -46916,7 +46918,7 @@ id: MP:0008414
 name: abnormal spatial reference memory
 def: "anomaly in the ability to recall spatial location information from previous encounters or training sessions in order to navigate or perform other behavior using such location cues" [MGI:csmith]
 synonym: "abnormal SRM" EXACT []
-is_a: MP:0001449 ! abnormal learning/ memory
+is_a: MP:0002063 ! abnormal learning/memory/conditioning
 
 [Term]
 id: MP:0008415
@@ -47009,7 +47011,7 @@ id: MP:0008428
 name: abnormal spatial working memory
 def: "anomaly in the ability to spontaneously process spatial location information in order to navigate or perform other behavior using such location cues, without previous encounters or training at that location" [MGI:csmith]
 synonym: "abnormal SWM" EXACT []
-is_a: MP:0001449 ! abnormal learning/ memory
+is_a: MP:0002063 ! abnormal learning/memory/conditioning
 
 [Term]
 id: MP:0008429
@@ -52698,7 +52700,7 @@ is_a: MP:0009033 ! abnormal posterior cerebellomedullary cistern
 [Term]
 id: MP:0009037
 name: abnormal subarachnoid space development
-def: "anomaly in the formation of the space between the arachnoid and dura mater that is traversed by fibrous trabeculae and contains cerebrospinal fluid" [ISBN:0-683-40008-8]
+def: "anomaly in the formation of the space between the arachnoid and pia mater that is traversed by fibrous trabeculae and contains cerebrospinal fluid" [ISBN:0-683-40008-8]
 synonym: "abnormal cavum subarachnoideum development" EXACT []
 synonym: "abnormal leptomeningeal space development" EXACT []
 synonym: "abnormal spatium subarachnoideum development" EXACT []
@@ -57676,8 +57678,9 @@ is_a: MP:0009643 ! abnormal urine homeostasis
 id: MP:0009646
 name: urinary bladder inflammation
 def: "local accumulation of fluid, plasma proteins, and leukocytes in the urinary bladder" [MGI:csmith]
-is_a: MP:0001846 ! increased inflammatory response
+synonym: "cystitis" EXACT []
 is_a: MP:0010386 ! abnormal urinary bladder physiology
+is_a: MP:0011762 ! renal/urinary system inflammation
 
 [Term]
 id: MP:0009647
@@ -60078,6 +60081,7 @@ creation_date: 2010-02-02T02:23:28Z
 [Term]
 id: MP:0009939
 name: abnormal hippocampus neuron morphology
+def: "any structural anomaly of one or more neurons residing in the hippocampal region of the brain" [MGI:smb]
 synonym: "abnormal hippocampal neuron morphology" EXACT []
 is_a: MP:0000807 ! abnormal hippocampus morphology
 is_a: MP:0002882 ! abnormal neuron morphology
@@ -60793,6 +60797,7 @@ name: ectopic hippocampus pyramidal cells
 def: "the hippocampus pyramidal cell body resides in places other than the pyramidal cell layer of the hippocampus" [MGI:csmith]
 synonym: "ectopic hippocampus pyramidal neurons" EXACT []
 is_a: MP:0009940 ! abnormal hippocampus pyramidal cell morphology
+is_a: MP:0011723 ! ectopic neuron
 created_by: csmith
 creation_date: 2010-02-16T02:38:08Z
 
@@ -60802,6 +60807,7 @@ name: ectopic cerebral cortex pyramidal cells
 def: "the cerebral cortex pyramidal cell body resides in places other than the pyramidal cell layer of the cerebral cortex" [MGI:csmith]
 synonym: "ectopic cerebral cortex pyramidal neurons" EXACT []
 is_a: MP:0009969 ! abnormal cerebral cortex pyramidal cell morphology
+is_a: MP:0011723 ! ectopic neuron
 created_by: csmith
 creation_date: 2010-02-16T02:39:06Z
 
@@ -62412,21 +62418,15 @@ creation_date: 2010-05-12T03:18:53Z
 [Term]
 id: MP:0010163
 name: hemolysis
+alt_id: MP:0010164
 def: "destruction of erythrocytes such that hemoglobin is released from the cells; may occur by many different causal agents such as antibodies, bacteria, chemicals, temperature, and changes in tonicity" [ISBN:0-683-40008-8]
 synonym: "erythrocytolysis" EXACT []
 synonym: "erythrolysis" EXACT []
 synonym: "hematolysis" EXACT []
+synonym: "increased hemolysis" EXACT []
 is_a: MP:0003656 ! abnormal erythrocyte physiology
 created_by: csmith
 creation_date: 2010-05-21T02:13:18Z
-
-[Term]
-id: MP:0010164
-name: increased hemolysis
-def: "a greater incidence of erythrocyte destruction such that hemoglobin is released from the cells that may occur by many different causal agents such as antibodies, bacteria, chemicals, temperature, and changes in tonicity" [ISBN:0-683-40008-8]
-is_a: MP:0010163 ! hemolysis
-created_by: csmith
-creation_date: 2010-05-21T03:14:57Z
 
 [Term]
 id: MP:0010165
@@ -65874,6 +65874,7 @@ creation_date: 2010-09-30T11:56:57Z
 id: MP:0010488
 name: abnormal left subclavian artery morphology
 def: "any structural anomaly of the artery that extends from the aortic arch to the left side of the body" [MGI:csmith]
+synonym: "abnormal LSCA morphology" EXACT []
 is_a: MP:0003395 ! abnormal subclavian artery morphology
 created_by: csmith
 creation_date: 2010-09-30T11:57:31Z
@@ -75682,6 +75683,7 @@ name: ectopic dopaminergic neuron
 def: "abnormal location of one or more of the neurons that utilize dopamine as a neurotransmitter" [MGI:smb]
 synonym: "ectopic dopaminergic neurons" EXACT []
 is_a: MP:0003243 ! abnormal dopaminergic neuron morphology
+is_a: MP:0011723 ! ectopic neuron
 created_by: csmith
 creation_date: 2011-11-09T04:05:37Z
 
@@ -76023,7 +76025,7 @@ creation_date: 2011-11-18T12:20:07Z
 [Term]
 id: MP:0011486
 name: ectopic ureter
-def: "an abnormally placed opening of the ureter, either into the urinary bladder or at another site in the lower urinary or genital tract" [MGI:anna]
+def: "an abnormally placed opening of the ureter, either into the urinary bladder or at another site in the lower urinary or genital tract; commonly a result of a duplicated renal collecting system, a duplex kidney with two ureters where usually one ureter terminates at the urinary bladder, while the duplicated ureter being ectopic, ends in the vagina, the urethra or the vulval vestibule" [MGI:anna]
 synonym: "ureteral ectopia" EXACT []
 is_a: MP:0000534 ! abnormal ureter morphology
 created_by: csmith
@@ -76086,8 +76088,10 @@ creation_date: 2011-11-18T01:31:53Z
 [Term]
 id: MP:0011493
 name: double ureter
-def: "two ureters open separately into the renal pelvis superiorly and drain separately into the urinary bladder or genital tract; if two ureteral buds arise from the Wolffian duct, a duplex kidney with complete ureteral duplication ensues" [http://emedicine.medscape.com/article/378075-overview, MGI:anna]
+def: "two ureters open separately into the renal pelvis superiorly and drain separately into the urinary bladder or genital tract; if two ureteral buds arise from the Wolffian duct, a duplex kidney with complete ureteral duplication ensues where the additional ureter may result in a ureterocele, or an ectopic ureter" [http://emedicine.medscape.com/article/378075-overview, MGI:anna]
 synonym: "complete ureteral duplication" EXACT []
+synonym: "duplex ureter" EXACT []
+synonym: "duplicated ureter" EXACT []
 is_a: MP:0000534 ! abnormal ureter morphology
 created_by: csmith
 creation_date: 2011-11-18T01:43:54Z
@@ -77568,7 +77572,7 @@ id: MP:0011616
 name: abnormal nonassociative learning
 def: "anomaly in the process of a simple form of learning whereby the repeated presence of a stimulus leads to a change in the probability or strength of the response to that stimulus; there is no association of one type of stimulus with another, rather it is a generalized response to the environment" [GO:0046958]
 synonym: "abnormal unconditional response" EXACT []
-is_a: MP:0001449 ! abnormal learning/ memory
+is_a: MP:0002063 ! abnormal learning/memory/conditioning
 created_by: csmith
 creation_date: 2012-04-12T10:53:06Z
 
@@ -77872,6 +77876,7 @@ creation_date: 2012-04-12T03:38:29Z
 id: MP:0011649
 name: immotile respiratory cilia
 def: "failure of the multiple epithelial tiny, motile hair-like projections of the repiratory tract epithelium to beat with a characteristic whip-like pattern in order to promote transport of fluids and other cells across the epithelium of the respiratory tract" [MGI:csmith]
+synonym: "immotile airway cilium" BROAD []
 synonym: "immotile respiratory cilium" EXACT []
 is_a: MP:0011055 ! abnormal respiratory motile cilium physiology
 created_by: csmith
@@ -78565,6 +78570,521 @@ is_a: MP:0002113 ! abnormal skeleton development
 is_a: MP:0008271 ! abnormal bone ossification
 created_by: csmith
 creation_date: 2012-07-11T09:39:42Z
+
+[Term]
+id: MP:0011723
+name: ectopic neuron
+def: "appearance of a neuron or group of neurons in a region where it is not normally found" [MGI:csmith]
+synonym: "neuronal ectopia" EXACT []
+synonym: "neuronal heterotopia" EXACT []
+is_a: MP:0002882 ! abnormal neuron morphology
+created_by: csmith
+creation_date: 2012-09-27T02:37:58Z
+
+[Term]
+id: MP:0011724
+name: ectopic cortical neuron
+def: "appearance of a cerebral cortical neuron or group of cerebral cortical neurons in a region where it is not normally found" [MGI:csmith]
+synonym: "cortical neuron ectopia" EXACT []
+is_a: MP:0011723 ! ectopic neuron
+created_by: csmith
+creation_date: 2012-09-27T02:38:52Z
+
+[Term]
+id: MP:0011725
+name: neuronal leptomeningeal ectopia
+def: "during development, migrating cortical neurons fail to stop at the border of the marginal zone and continue through this layer and occasionally through the pial-glial layer into the meninges" [PMID:9184108]
+is_a: MP:0011723 ! ectopic neuron
+created_by: csmith
+creation_date: 2012-09-27T02:39:48Z
+
+[Term]
+id: MP:0011726
+name: ectopic Cajal-Retzius cell morphology
+def: "appearance of a Cajal-Retzius cell in a region where it is not normally found" [MGI:csmith]
+is_a: MP:0008030 ! abnormal Cajal-Retzius cell morphology
+is_a: MP:0011723 ! ectopic neuron
+created_by: csmith
+creation_date: 2012-09-27T02:40:54Z
+
+[Term]
+id: MP:0011727
+name: ectopic ovary
+def: "appearance of an ovary in a region where it is not normally found (topographical anomaly)" [MGI:csmith]
+synonym: "ovary ectopia" EXACT []
+is_a: MP:0001126 ! abnormal ovary morphology
+created_by: csmith
+creation_date: 2012-09-27T02:50:01Z
+
+[Term]
+id: MP:0011728
+name: abnormal pineal gland physiology
+def: "any functional anomaly of the small flattened endocrine gland located in the depression between the superior colliculi of the brain" [MGI:llw2]
+is_a: MP:0002164 ! abnormal gland physiology
+is_a: MP:0003633 ! abnormal nervous system physiology
+created_by: csmith
+creation_date: 2012-09-27T02:54:58Z
+
+[Term]
+id: MP:0011729
+name: abnormal pineal gland melatonin secretion
+def: "anomaly in the production and/or release of a catecholamine hormone by the pineal body that controls behavior influenced by seasonal changes" [MGI:llw2]
+is_a: MP:0011728 ! abnormal pineal gland physiology
+created_by: csmith
+creation_date: 2012-09-27T02:57:00Z
+
+[Term]
+id: MP:0011730
+name: increased myelin sheath thickness
+def: "increase in the depth of the insulating envelope that surrounds nerve fibers or axons" [MGI:smb]
+is_a: MP:0003871 ! abnormal myelin sheath morphology
+created_by: csmith
+creation_date: 2012-09-27T03:27:40Z
+
+[Term]
+id: MP:0011731
+name: decreased myelin sheath thickness
+def: "decrease in the depth of the insulating envelope that surrounds nerve fibers or axons" [MGI:smb]
+synonym: "reduced myelin sheath thickness" EXACT []
+is_a: MP:0003871 ! abnormal myelin sheath morphology
+created_by: csmith
+creation_date: 2012-09-27T03:28:04Z
+
+[Term]
+id: MP:0011732
+name: decreased somite size
+def: "reduced size of any of the segmental masses along the notochord of the developing embryo" [MGI:smb]
+synonym: "reduced somite size" EXACT []
+is_a: MP:0005222 ! abnormal somite size
+created_by: csmith
+creation_date: 2012-09-27T03:33:36Z
+
+[Term]
+id: MP:0011733
+name: fused somites
+def: "a defect in which there is an appearance of a single enlarged somite resulting from partial or complete fusion of the two somitic anlage" [MGI:smb]
+is_a: MP:0001688 ! abnormal somite development
+created_by: csmith
+creation_date: 2012-09-27T03:34:50Z
+
+[Term]
+id: MP:0011734
+name: abnormal urine ammonium level
+def: "any change in the amount of ammonium in urine" [MGI:anna]
+is_a: MP:0009643 ! abnormal urine homeostasis
+created_by: csmith
+creation_date: 2012-09-27T03:39:05Z
+
+[Term]
+id: MP:0011735
+name: increased urine ammonium level
+def: "a greater amount of ammonium in the urine compared to the normal state" [MGI:anna]
+synonym: "increased ammonium excretion" EXACT []
+is_a: MP:0011734 ! abnormal urine ammonium level
+created_by: csmith
+creation_date: 2012-09-27T03:39:53Z
+
+[Term]
+id: MP:0011736
+name: decreased urine ammonium level
+def: "a reduced amount of ammonium in the urine compared to the normal state" [MGI:anna]
+synonym: "decreased ammonium excretion" EXACT []
+synonym: "reduced ammonium excretion" EXACT []
+synonym: "reduced urine ammonium level" EXACT []
+is_a: MP:0011734 ! abnormal urine ammonium level
+created_by: csmith
+creation_date: 2012-09-27T03:39:53Z
+
+[Term]
+id: MP:0011737
+name: hypodipsia
+def: "abnormally diminished thirst with a consequential reduction of fluid intake; often related to dysfunction of the thirst osmoreceptor in the anterior hypothalamus" [MGI:anna]
+synonym: "hypodypsia" EXACT []
+is_a: MP:0001422 ! abnormal drinking behavior
+created_by: csmith
+creation_date: 2012-09-27T03:48:47Z
+
+[Term]
+id: MP:0011738
+name: anasarca
+def: "widespread swelling due to effusion of serous fluid into the extracellular space, especially into the connective tissue" [MGI:smb]
+synonym: "extreme generalized edema" EXACT []
+synonym: "generalized massive edema" EXACT []
+is_a: MP:0001785 ! edema
+created_by: csmith
+creation_date: 2012-09-27T03:54:03Z
+
+[Term]
+id: MP:0011739
+name: abnormal Boettcher cell morphology
+def: "any structural anomaly of the polyhedral cells located on the basilar membrane beneath the Claudius cells in the basal turn of the cochlea, and considered supporting cells for the organ of Corti; Boettcher cells interweave with each other, project microvilli into the intercellular space, show high levels of calmodulin, and may be involved in mediating Ca(2+) regulation and ion transport" [CL:0002084, MGI:anna]
+synonym: "abnormal Boettcher's cell morphology" RELATED []
+synonym: "abnormal Bottcher cell morphology" EXACT []
+synonym: "abnormal Bottcher's cell morphology" EXACT []
+xref: CL:0002084
+is_a: MP:0000031 ! abnormal cochlea morphology
+created_by: csmith
+creation_date: 2012-09-27T04:03:51Z
+
+[Term]
+id: MP:0011740
+name: abnormal urine nitrite level
+def: "anomaly in the amount of nitrite (NO2-) in the urine; may be suggestive of impaired nitric oxide (NO) release, or of a urinary tract infection" [MGI:anna]
+is_a: MP:0009643 ! abnormal urine homeostasis
+created_by: csmith
+creation_date: 2012-09-27T04:07:53Z
+
+[Term]
+id: MP:0011741
+name: increased urine nitrite level
+def: "higher than normal amount of nitrite (NO2-) in the urine, usually indicative of a urinary tract infection; commonly a result of the action of Escherichia coli, Proteus vulgaris, and other microorganisms that may reduce nitrates" [MGI:anna]
+synonym: "increased nitrite excretion" EXACT []
+synonym: "nitrituria" EXACT []
+is_a: MP:0011740 ! abnormal urine nitrite level
+created_by: csmith
+creation_date: 2012-09-27T04:08:11Z
+
+[Term]
+id: MP:0011742
+name: decreased urine nitrite level
+def: "lower than normal amount of nitrite (NO2-) in the urine; suggestive of impaired nitric oxide (NO) release" [MGI:anna]
+synonym: "decreased nitrite excretion" EXACT []
+synonym: "reduced nitrite excretion" EXACT []
+synonym: "reduced urine nitrite level" EXACT []
+is_a: MP:0011740 ! abnormal urine nitrite level
+created_by: csmith
+creation_date: 2012-09-27T04:08:29Z
+
+[Term]
+id: MP:0011743
+name: abnormal Golgi apparatus morphology
+def: "any structural anomaly of the compound membranous cytoplasmic organelle of eukaryotic cells, consisting of flattened, ribosome-free vesicles arranged in a more or less regular stack; Golgi apparatus processes proteins produced on the ribosomes of the rough endoplasmic reticulum; such processing includes modification of the core oligosaccharides of glycoproteins, and the sorting and packaging of proteins for transport to a variety of cellular locations" [GO:0005794, MGI:mberry]
+synonym: "abnormal Golgi complex morphology" EXACT []
+synonym: "abnormal Golgi ribon morphology" EXACT []
+xref: GO:0005794
+is_a: MP:0000358 ! abnormal cell morphology
+created_by: csmith
+creation_date: 2012-09-27T04:11:52Z
+
+[Term]
+id: MP:0011744
+name: abnormal kidney epithelial cell primary cilium physiology
+def: "any functional anomaly of the non-motile primary cilia found on renal epithelial cells and thought to act as a mechanical sensor to detect renal tubular fluid; impaired mechanical response of primary cilia to physiological fluid flow, or abnormalities in intracellular Ca2+ increase in response to fluid stress may alter renal (tubular) cell proliferation and differentiation and lead to renal cyst formation" [MGI:anna]
+synonym: " abnormal renal epithelial cell primary cilium physiology" EXACT []
+synonym: "abnormal kidney epithelial cell primary cilia physiology" EXACT []
+synonym: "abnormal renal epithelial cell primary cilia physiology" EXACT []
+synonym: "abnormal renal monocilium physiology" EXACT []
+synonym: "abnormal renal primary cilium physiology" EXACT []
+is_a: MP:0002136 ! abnormal kidney physiology
+created_by: csmith
+creation_date: 2012-09-27T04:19:00Z
+
+[Term]
+id: MP:0011745
+name: isolation of the left subclavian artery
+alt_id: Fyler:2732
+def: "the loss of continuity between the left subclavian artery and the aorta, with persistent connection to the homolateral pulmonary artery through the patent (PDA) or nonpatent ductus arteriosus" [PMID:16039248]
+is_a: MP:0010464 ! abnormal aortic arch and aortic arch branch attachment
+is_a: MP:0010488 ! abnormal left subclavian artery morphology
+created_by: csmith
+creation_date: 2012-10-01T01:54:32Z
+
+[Term]
+id: MP:0011746
+name: spleen fibrosis
+def: "invasion of fibrous connective tissue into the spleen, often resulting from inflammation or injury" [MGI:csmith]
+synonym: "fibrotic spleen" EXACT []
+is_a: MP:0000689 ! abnormal spleen morphology
+created_by: csmith
+creation_date: 2012-10-18T02:34:41Z
+
+[Term]
+id: MP:0011747
+name: myelofibrosis
+def: "appearance of fibrous connective tissue in the bone marrow, often resulting from inflammation or injury; especially replacement of the marrow with collagenous connective tissue fibers, frequently accompanied by splenomegaly and anemia or cytopenias" [ISBN:0-683-40008-8]
+synonym: "bone marrow fibrosis" EXACT []
+synonym: "myelosclerosis" EXACT []
+synonym: "osteomyelofibrosis" EXACT []
+is_a: MP:0002397 ! abnormal bone marrow morphology
+created_by: csmith
+creation_date: 2012-10-18T02:38:33Z
+
+[Term]
+id: MP:0011748
+name: intestinal fibrosis
+def: "formation of fibrous tissue in any part of the intestine as a result of repair or a reactive process" [MGI:csmith]
+is_a: MP:0000477 ! abnormal intestine morphology
+created_by: csmith
+creation_date: 2012-10-18T03:09:50Z
+
+[Term]
+id: MP:0011749
+name: perivascular fibrosis
+def: "invasion of fibrous connective tissue into the perivascular tissue, often resulting from inflammation or injury" [MGI:csmith]
+is_a: MP:0000249 ! abnormal blood vessel physiology
+created_by: csmith
+creation_date: 2012-10-18T03:46:04Z
+
+[Term]
+id: MP:0011750
+name: abnormal seminiferous tubule epithelium morphology
+alt_id: MP:0006304
+def: "any structural anomaly of the stratified epithelial lining of the seminiferous tubules, consisting of the developing spermatozoa and the supporting Sertoli cells, which are tall, columnar type cells that line the tubule" [MGI:csmith]
+synonym: "abnormal male germinal epithelium morphology" EXACT []
+synonym: "abnormal seminiferous epithelium morphology" EXACT []
+is_a: MP:0002216 ! abnormal seminiferous tubule morphology
+created_by: csmith
+creation_date: 2012-10-23T03:20:20Z
+
+[Term]
+id: MP:0011751
+name: abnormal X-Y chromosome synapsis during male meiosis
+def: "an anomaly in the process in which the side by side pairing and physical juxtaposition of X and Y chromosomes is created at the metaphase plate, usually resulting in incorrect sex chromosome disjunction" [MGI:llw2]
+synonym: "abnormal X-Y chromosome pairing during male meiosis" RELATED []
+is_a: MP:0005169 ! abnormal male meiosis
+created_by: csmith
+creation_date: 2012-10-26T03:21:28Z
+
+[Term]
+id: MP:0011752
+name: abnormal X-Y chromosome synaptonemal complex assembly during male meiosis
+def: "an anomaly in the process in which forms the structure that holds the X and Y chomosomes together during prophase I of male meiosis and results in exchange of X and Y chromatin during prophase I, or results in exchange of X and Y chromatin outside the chromatin associated with the pseudoautosomal region" [MGI:llw2]
+is_a: MP:0005169 ! abnormal male meiosis
+created_by: csmith
+creation_date: 2012-10-26T03:37:16Z
+
+[Term]
+id: MP:0011753
+name: decreased podocyte number
+def: "reduced number of the modified epithelial cells of the visceral layer of the Bowman capsule in the renal corpuscle" [MGI:anna]
+synonym: "decreased glomerular epithelial cell number" EXACT []
+synonym: "decreased glomerular visceral epithelial cell number" EXACT []
+synonym: "reduced glomerular epithelial cell number" EXACT []
+synonym: "reduced glomerular visceral epithelial cell number" EXACT []
+synonym: "reduced podocyte number" EXACT []
+is_a: MP:0005326 ! abnormal podocyte morphology
+created_by: csmith
+creation_date: 2012-10-26T04:30:36Z
+
+[Term]
+id: MP:0011754
+name: abnormal kidney collecting duct intercalated cell morphology
+def: "any structural anomaly of any of the functionally distinct subtypes of cells (alpha or beta) found on the kidney collecting duct epithelium that regulate acid-base homeostasis and play an important role in the kidney's response to acidosis and alkalosis; alpha-intercalated cells secrete acid whereas beta-intercalated cells secrete base; metabolic acidosis results in the conversion of beta- cells to alpha-intercalated cells giving the kidney a greater ability to secrete protons and return pH to the normal range" [MGI:anna]
+is_a: MP:0004754 ! abnormal kidney collecting duct morphology
+created_by: csmith
+creation_date: 2012-10-29T11:58:19Z
+
+[Term]
+id: MP:0011755
+name: abnormal kidney collecting duct alpha-intercalated cell morphology
+def: "any structural anomaly of the tall, columnar epithelial cells found on the kidney collecting duct epithelium which secrete acid (via an apical H+-ATPase and H+/K+ exchanger) in the form of hydrogen ions and reabsorb bicarbonate (via band 3, a basolateral Cl-/HCO3- exchanger);damage to the alpha-intercalated cell's ability to secrete acid can result in distal renal tubular acidosis" [MGI:anna]
+synonym: " abnormal collecting duct type A intercalated cells" EXACT []
+synonym: "abnormal collecting duct alpha-intercalated cells" EXACT []
+synonym: "abnormal kidney collecting duct A-type intercalated cells" EXACT []
+is_a: MP:0011754 ! abnormal kidney collecting duct intercalated cell morphology
+created_by: csmith
+creation_date: 2012-10-29T11:58:19Z
+
+[Term]
+id: MP:0011756
+name: abnormal kidney collecting duct beta-intercalated cell morphology
+def: "any structural anomaly of the shorter, flatter cells found on the kidney collecting duct epithelium which secrete bicarbonate (via pendrin, a specialized apical Cl-/HCO3- exchanger) and reabsorb acid (via a basal H+-ATPase)" [MGI:anna]
+synonym: "abnormal collecting duct beta-intercalated cells" EXACT []
+synonym: "abnormal collecting duct type B intercalated cells" EXACT []
+synonym: "abnormal kidney collecting duct B-type intercalated cells" EXACT []
+is_a: MP:0011754 ! abnormal kidney collecting duct intercalated cell morphology
+created_by: csmith
+creation_date: 2012-10-29T11:58:19Z
+
+[Term]
+id: MP:0011757
+name: abnormal kidney collecting duct principal cell morphology
+def: "any structural abnormality of the cuboidal epithelial cells found in the collecting ducts of the kidney which regulate sodium and potassium balance via channels located on the cells apical membrane. Aldosterone increases the number of Na+/K+-ATPase pumps that allow increased sodium reabsorption and potassium secretion whereas antidiuretic hormone (vasopressin) determines the expression of aquaporin channels on the cell surface; together, aldosterone and vasopressin let the principal cell control the quantity of water that is reabsorbed" [MGI:anna]
+is_a: MP:0004754 ! abnormal kidney collecting duct morphology
+created_by: csmith
+creation_date: 2012-10-29T02:32:19Z
+
+[Term]
+id: MP:0011758
+name: renal ischemia
+def: "inadequate blood flow to one or both kidneys, or nephrons, usually due to functional constriction or actual obstruction of a blood vessel; a significant cause of renal dysfunction and cortical and medullary necrosis" [MGI:anna]
+synonym: " kidney ischemia" EXACT []
+synonym: "nephric ischemia" EXACT []
+is_a: MP:0002136 ! abnormal kidney physiology
+created_by: csmith
+creation_date: 2012-10-29T02:34:27Z
+
+[Term]
+id: MP:0011759
+name: absent Rathke's pouch
+def: "absence of the diverticulum arsing from the embryonic buccal cavity from which the anterior lobe of the pituitary gland is developed" [MGI:anna]
+synonym: "absent craniobuccal pouch" EXACT []
+synonym: "absent craniopharyngeal pouch" EXACT []
+is_a: MP:0003817 ! abnormal pituitary diverticulum morphology
+created_by: csmith
+creation_date: 2012-10-29T02:36:48Z
+
+[Term]
+id: MP:0011760
+name: abnormal ureteric bud tip morphology
+def: "any structural anomaly of the terminal ends of the ureteric tree; the ureteric tip cells are proliferating immature cells located at the branching points that induce the adjacent cap mesenchyme to undergo nephrogenesis" [MGI:anna]
+synonym: " abnormal ureteric ampulla morphology" EXACT []
+synonym: "abnormal ureteric tip morphology" EXACT []
+is_a: MP:0006032 ! abnormal ureteric bud morphology
+created_by: csmith
+creation_date: 2012-10-29T03:41:43Z
+
+[Term]
+id: MP:0011761
+name: abnormal ureteric bud trunk morphology
+def: "any structural anomaly of the ureteric bud cells that elongate to form a rigid structure (stalk) consisting of polarized epithelial cells without branching; the stalks differentiate into the collecting system of the mature kidney, while the tip cells interact with the adjacent cells of the metanephric mesenchyme, inducing their conversion into nephrons" [MGI:anna]
+synonym: "abnormal ureteric bud stalk morphology" EXACT []
+synonym: "abnormal ureteric stalk morphology" EXACT []
+synonym: "abnormal ureteric trunk morphology" EXACT []
+is_a: MP:0006032 ! abnormal ureteric bud morphology
+created_by: csmith
+creation_date: 2012-10-29T03:41:43Z
+
+[Term]
+id: MP:0011762
+name: renal/urinary system inflammation
+def: "local accumulation of fluid, plasma proteins, and leukocytes in the renal/urinary system; may involve inflammation of the urethra, urinary bladder, ureters or kidneys" [MGI:anna]
+synonym: "urinary tract inflammation" EXACT []
+is_a: MP:0001846 ! increased inflammatory response
+is_a: MP:0005502 ! abnormal renal/urinary system physiology
+created_by: csmith
+creation_date: 2012-11-01T10:57:04Z
+
+[Term]
+id: MP:0011763
+name: urethritis
+def: "local accumulation of fluid, plasma proteins, and leukocytes in the urethra, usually caused by an infection" [MGI:anna]
+synonym: "urethra inflammation" EXACT []
+synonym: "urethral inflammation" EXACT []
+is_a: MP:0011762 ! renal/urinary system inflammation
+created_by: csmith
+creation_date: 2012-11-01T10:58:40Z
+
+[Term]
+id: MP:0011764
+name: ureteritis
+def: "local accumulation of fluid, plasma proteins, and leukocytes in a ureter, usually caused by infection or by the mechanic irritation of a stone; the epithelial reaction may be cystic if the reaction is liquefaction, or glandular if the epithelial reaction is by metaplasia" [MGI:anna]
+synonym: "ureter inflammation" EXACT []
+synonym: "ureteral inflammation" EXACT []
+synonym: "ureteric inflammation" EXACT []
+is_a: MP:0011762 ! renal/urinary system inflammation
+created_by: csmith
+creation_date: 2012-11-01T10:58:40Z
+
+[Term]
+id: MP:0011765
+name: oroticaciduria
+def: "increased level of orotic acid, an intermediate of pyrimidine synthesis, in the urine" [MGI:anna]
+synonym: "increased urine orotic acid level" EXACT []
+synonym: "orotic aciduria" EXACT []
+is_a: MP:0010028 ! aciduria
+created_by: csmith
+creation_date: 2012-11-01T12:53:53Z
+
+[Term]
+id: MP:0011766
+name: abnormal urinary bladder mucosa morphology
+def: "any structural anomaly of the mucous membrane lining the urinary bladder" [MGI:anna]
+synonym: "abnormal tunica mucosa vesicae urinariae" EXACT []
+is_a: MP:0000538 ! abnormal urinary bladder morphology
+created_by: csmith
+creation_date: 2012-11-01T01:08:25Z
+
+[Term]
+id: MP:0011767
+name: ureterocele
+def: "saccular dilation of the terminal portion of the ureter that protrudes into the lumen of the urinary bladder, probably due to a congenital stenosis of the ureteric orifice meatus; most often associated with a duplicated collection system, where two ureters drain their respective kidney instead of one" [MGI:anna]
+synonym: "ureterocoele" EXACT []
+is_a: MP:0000534 ! abnormal ureter morphology
+created_by: csmith
+creation_date: 2012-11-01T01:30:31Z
+
+[Term]
+id: MP:0011768
+name: abnormal urinary bladder trigone morphology
+def: "any structural anomaly of the smooth triangular region of the wall of the urinary bladder formed by the two ureteral orifices and the internal urethral orifice; it is an area in which the muscle fibers are closely adherent to the mucosa" [MGI:anna]
+synonym: "abnormal trigone of urinary bladder" EXACT []
+synonym: "abnormal vesical trigone morphology" EXACT []
+is_a: MP:0000538 ! abnormal urinary bladder morphology
+created_by: csmith
+creation_date: 2012-11-01T01:35:50Z
+
+[Term]
+id: MP:0011769
+name: urinary bladder fibrosis
+def: "invasion of fibrous connective tissue into the urinary bladder, often resulting from inflammation or injury" [MGI:anna]
+is_a: MP:0000538 ! abnormal urinary bladder morphology
+created_by: csmith
+creation_date: 2012-11-01T01:37:40Z
+
+[Term]
+id: MP:0011770
+name: increased urine selenium level
+def: "greater than normal amount of selenium in the urine" [MGI:anna]
+synonym: "increased urinary selenium excretion" EXACT []
+is_a: MP:0009643 ! abnormal urine homeostasis
+created_by: csmith
+creation_date: 2012-11-01T02:08:10Z
+
+[Term]
+id: MP:0011771
+name: abnormal genital tubercle morphology
+def: "any structural anomaly of the embryonic anlage of the external genitalia, which emerges as paired swellings ventral to the cloacal membrane, is proposed to be derived from all three germ layers, and gives rise to the penis, clitoris, scrotum, labia, and foreskin; GT development is indistinguishable in male and female mouse embryos until  approximately E16, when the urethral plate begins to be masculinized to form the penile urethra, marking the beginning of an androgen-dependent phase of sexual differentiation" [MGI:anna]
+synonym: "abnormal phallic tubercle morphology" EXACT []
+is_a: MP:0003936 ! abnormal reproductive system development
+created_by: csmith
+creation_date: 2012-11-01T02:14:18Z
+
+[Term]
+id: MP:0011772
+name: genital tubercle hypoplasia
+def: "underdevelopment or reduced size of the embryonic anlage of the external genitalia, usually due to a reduced number of cells" [MGI:anna]
+synonym: "hypoplastic genital tubercle" EXACT []
+synonym: "phallic tubercle hypoplasia" EXACT []
+is_a: MP:0011771 ! abnormal genital tubercle morphology
+created_by: csmith
+creation_date: 2012-11-01T02:15:21Z
+
+[Term]
+id: MP:0011773
+name: abnormal urinary bladder blood vessel morphology
+def: "any structural anomaly of the network of tubes that carries blood through the distensible musculomembranous organ that serves to collect and store urine excreted by the kidneys" [MGI:anna]
+synonym: "abnormal urinary bladder vasculature morphology" EXACT []
+synonym: "abnormal vesical vasculature" EXACT []
+synonym: "bladder vasculature abnormalities" EXACT []
+is_a: MP:0000538 ! abnormal urinary bladder morphology
+is_a: MP:0001614 ! abnormal blood vessel morphology
+created_by: csmith
+creation_date: 2012-11-01T02:37:24Z
+
+[Term]
+id: MP:0011774
+name: abnormal urinary bladder detrusor smooth muscle morphology
+def: "any structural anomaly of the bundles of smooth muscle fibers forming the muscular wall of the urinary bladder, which are arranged in a longitudinal and a circular layer and, on contraction, serve to expel urine" [MGI:anna]
+synonym: " abnormal detrusor urinae morphology" EXACT []
+synonym: "abnormal detrusor muscle morphology" EXACT []
+synonym: "abnormal musculus detrusor vesicae" EXACT []
+synonym: "abnormal urinary bladder smooth muscle morphology" EXACT []
+is_a: MP:0000538 ! abnormal urinary bladder morphology
+is_a: MP:0000767 ! abnormal smooth muscle morphology
+created_by: csmith
+creation_date: 2012-11-01T02:41:16Z
+
+[Term]
+id: MP:0011775
+name: rectal atresia
+def: "congenital absence, closure, or constriction of the lumen of the terminal portion of the intestinal tube adjacent to the anus, leading to abdominal distention after birth" [MGI:anna]
+synonym: "atresia recti" EXACT []
+synonym: "imperforate rectum" EXACT []
+synonym: "rectum atresia" EXACT []
+is_a: MP:0000492 ! abnormal rectum morphology
+created_by: csmith
+creation_date: 2012-11-01T02:53:34Z
 
 [Typedef]
 id: part_of
