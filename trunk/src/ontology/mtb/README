@@ -1,0 +1,5 @@
+A preliminary set of mappings between MTB and OBO library
+ontologies. Mappings will be promoted to xrefs after initial
+revision. Where >1 xref exists for a term, either an OWL intersection
+will be created, or a pre-composed class created. Anything with a
+comment tag requires expert attention
