@@ -1,766 +1,766 @@
 ontology: mtb-to-uberon-cl-bridge
-remark: A preliminary set of mappings between MTB and OBO library ontologies. Mappings will be promoted to xrefs after initial revision. Where >1 xref exists for a term, either an OWL intersection will be created, or a pre-composed class created. Anything with a comment tag requires expert attention
+remark: A preliminary set of mappings between MTB and OBO library ontologies. Mappings will be promoted to xrefs after initial revision. Where >1 xref exists for a term, either an OWL intersection will be created, or a pre-composed class created. Anything with a comment tag requires expert attention. The IDs may not be stable - they are derived from the <option> values on the HTML of the main MTB query form. This is primarily an exercise to see that we have the MTB anatomy covered.
 
 [Term]
-id: MTB:116
+id: MTBANAT:116
 name: adipose tissue
 synonym: "adipose tissue" EXACT []
 xref: UBERON:0001013 ! adipose tissue
 
 [Term]
-id: MTB:154
+id: MTBANAT:154
 name: brown
 synonym: "adipose tissue - brown" EXACT []
 xref: UBERON:0001348 ! brown adipose tissue
 
 [Term]
-id: MTB:195
+id: MTBANAT:195
 name: white
 synonym: "adipose tissue - white" EXACT []
 xref: UBERON:0001347 ! white adipose tissue
 
 [Term]
-id: MTB:56
+id: MTBANAT:56
 name: adrenal gland
 synonym: "adrenal gland" EXACT []
 xref: UBERON:0002369 ! adrenal gland
 
 [Term]
-id: MTB:510
+id: MTBANAT:510
 name: capsule
 synonym: "adrenal gland - capsule" EXACT []
 xref: UBERON:0002052 ! capsule of adrenal gland
 
 [Term]
-id: MTB:49
+id: MTBANAT:49
 name: cortex
 synonym: "adrenal gland - cortex" EXACT []
 xref: UBERON:0001235 ! adrenal cortex
 
 [Term]
-id: MTB:72
+id: MTBANAT:72
 name: medulla
 synonym: "adrenal gland - medulla" EXACT []
 xref: UBERON:0001236 ! adrenal medulla
 
 [Term]
-id: MTB:482
+id: MTBANAT:482
 name: chromaffin cell
 synonym: "adrenal gland - medulla - chromaffin cell" EXACT []
 xref: CL:0000166 ! chromaffin cell
 xref: UBERON:0001236 ! adrenal medulla
 
 [Term]
-id: MTB:192
+id: MTBANAT:192
 name: subcapsular cell
 synonym: "adrenal gland - subcapsular cell" EXACT []
 
 [Term]
-id: MTB:215
+id: MTBANAT:215
 name: ampullary gland
 synonym: "ampullary gland" EXACT []
 xref: UBERON:0009645 ! ampullary gland
 
 [Term]
-id: MTB:151
+id: MTBANAT:151
 name: blood
 synonym: "blood" EXACT []
 xref: UBERON:0000178 ! blood
 
 [Term]
-id: MTB:12
+id: MTBANAT:12
 name: blood vessel
 synonym: "blood vessel" EXACT []
 xref: UBERON:0001981 ! blood vessel
 
 [Term]
-id: MTB:357
+id: MTBANAT:357
 name: aorta
 synonym: "blood vessel - aorta" EXACT []
 xref: UBERON:0000947 ! aorta
 
 [Term]
-id: MTB:244
+id: MTBANAT:244
 name: pericyte
 synonym: "blood vessel - pericyte" EXACT []
 xref: CL:0000669 ! pericyte cell
 
 [Term]
-id: MTB:71
+id: MTBANAT:71
 name: bone
 synonym: "bone" EXACT []
 xref: UBERON:0001474 ! bone
 
 [Term]
-id: MTB:385
+id: MTBANAT:385
 name: femur
 synonym: "bone - femur" EXACT []
 xref: UBERON:0000981 ! femur
 
 [Term]
-id: MTB:505
+id: MTBANAT:505
 name: humerus
 synonym: "bone - humerus" EXACT []
 xref: UBERON:0000976 ! humerus
 
 [Term]
-id: MTB:181
+id: MTBANAT:181
 name: jaw
 synonym: "bone - jaw" EXACT []
 xref: UBERON:0011595 ! jaw region
 
 [Term]
-id: MTB:281
+id: MTBANAT:281
 name: mandible
 synonym: "bone - jaw - mandible" EXACT []
 xref: UBERON:0001684 ! mandible
 
 [Term]
-id: MTB:459
+id: MTBANAT:459
 name: maxilla
 synonym: "bone - jaw - maxilla" EXACT []
 xref: UBERON:0002397 ! maxilla
 
 [Term]
-id: MTB:265
+id: MTBANAT:265
 name: nose
 synonym: "bone - nose" EXACT []
 xref: UBERON:0001681 ! nasal bone
 
 [Term]
-id: MTB:506
+id: MTBANAT:506
 name: patella
 synonym: "bone - patella" EXACT []
 xref: UBERON:0002446 ! patella
 
 [Term]
-id: MTB:387
+id: MTBANAT:387
 name: pelvis
 synonym: "bone - pelvis" EXACT []
 xref: UBERON:0012179 ! bone of pelvis
 
 [Term]
-id: MTB:327
+id: MTBANAT:327
 name: rib
 synonym: "bone - rib" EXACT []
 xref: UBERON:0002228 ! rib
 
 [Term]
-id: MTB:386
+id: MTBANAT:386
 name: scapula
 synonym: "bone - scapula" EXACT []
 xref: UBERON:0006849 ! scapula
 
 [Term]
-id: MTB:186
+id: MTBANAT:186
 name: skull
 synonym: "bone - skull" EXACT []
 xref: UBERON:0003129 ! skull
 
 [Term]
-id: MTB:460
+id: MTBANAT:460
 name: tibia
 synonym: "bone - tibia" EXACT []
 xref: UBERON:0000979 ! tibia
 
 [Term]
-id: MTB:362
+id: MTBANAT:362
 name: vertebral column
 synonym: "bone - vertebral column" EXACT []
 xref: UBERON:0001130 ! vertebral column
 
 [Term]
-id: MTB:324
+id: MTBANAT:324
 name: vertebra
 synonym: "bone - vertebral column - vertebra" EXACT []
 xref: UBERON:0002412 ! vertebra
 
 [Term]
-id: MTB:65
+id: MTBANAT:65
 name: bone marrow
 synonym: "bone marrow" EXACT []
 xref: UBERON:0002371 ! bone marrow
 
 [Term]
-id: MTB:194
+id: MTBANAT:194
 name: bulbourethral gland
 synonym: "bulbourethral gland" EXACT []
 xref: UBERON:0002366 ! bulbo-urethral gland
 
 [Term]
-id: MTB:40
+id: MTBANAT:40
 name: brain
 synonym: "cns - brain" EXACT []
 xref: UBERON:0000955 ! brain
 
 [Term]
-id: MTB:86
+id: MTBANAT:86
 name: astrocyte
 synonym: "cns - brain - astrocyte" EXACT []
 xref: CL:0000127 ! astrocyte
 
 [Term]
-id: MTB:314
+id: MTBANAT:314
 name: basal ganglia
 synonym: "cns - brain - basal ganglia" EXACT []
 xref: UBERON:0002420 ! basal ganglion
 
 [Term]
-id: MTB:27
+id: MTBANAT:27
 name: brain stem
 synonym: "cns - brain - brain stem" EXACT []
 xref: UBERON:0002298 ! brainstem
 
 [Term]
-id: MTB:33
+id: MTBANAT:33
 name: cerebellum
 synonym: "cns - brain - cerebellum" EXACT []
 xref: UBERON:0002037 ! cerebellum
 
 [Term]
-id: MTB:308
+id: MTBANAT:308
 name: posterior
 synonym: "cns - brain - cerebellum - posterior" EXACT []
 comment: TODO
 xref: UBERON:0002037 ! cerebellum
 
 [Term]
-id: MTB:351
+id: MTBANAT:351
 name: purkinje cell
 synonym: "cns - brain - cerebellum - purkinje cell" EXACT []
 xref: CL:0000121 ! Purkinje cell
 
 [Term]
-id: MTB:412
+id: MTBANAT:412
 name: cerebrum
 synonym: "cns - brain - cerebrum" EXACT []
 xref: UBERON:0001893 ! telencephalon
 
 [Term]
-id: MTB:34
+id: MTBANAT:34
 name: cortex
 synonym: "cns - brain - cerebrum - cortex" EXACT []
 xref: UBERON:0001851 ! cortex
 
 [Term]
-id: MTB:23
+id: MTBANAT:23
 name: choroid plexus
 synonym: "cns - brain - choroid plexus" EXACT []
 xref: UBERON:0001886 ! choroid plexus
 
 [Term]
-id: MTB:87
+id: MTBANAT:87
 name: ependyma
 synonym: "cns - brain - ependyma" EXACT []
 xref: UBERON:0004670 ! ependyma
 
 [Term]
-id: MTB:313
+id: MTBANAT:313
 name: forebrain
 synonym: "cns - brain - forebrain" EXACT []
 xref: UBERON:0001890 ! forebrain
 
 [Term]
-id: MTB:158
+id: MTBANAT:158
 name: glial cell
 synonym: "cns - brain - glial cell" EXACT []
 xref: CL:0000125 ! glial cell
 xref: UBERON:0000955 ! brain
 
 [Term]
-id: MTB:379
+id: MTBANAT:379
 name: interpedunclear nucleus
 synonym: "cns - brain - interpedunclear nucleus" EXACT []
 xref: UBERON:0002145 ! interpeduncular nucleus
 
 [Term]
-id: MTB:293
+id: MTBANAT:293
 name: neuron
 synonym: "cns - brain - neuron" EXACT []
 xref: CL:0000540 ! neuron
 xref: UBERON:0000955 ! brain
 
 [Term]
-id: MTB:216
+id: MTBANAT:216
 name: olfactory bulb
 synonym: "cns - brain - olfactory bulb" EXACT []
 xref: UBERON:0002264 ! olfactory bulb
 
 [Term]
-id: MTB:319
+id: MTBANAT:319
 name: oligodendroglial cell
 synonym: "cns - brain - oligodendroglial cell" EXACT []
 comment: TODO
 xref: CL:0000128 ! oligodendrocyte
 
 [Term]
-id: MTB:142
+id: MTBANAT:142
 name: optic chiasma
 synonym: "cns - brain - optic chiasma" EXACT []
 xref: UBERON:0000959 ! optic chiasma
 
 [Term]
-id: MTB:377
+id: MTBANAT:377
 name: striatum
 synonym: "cns - brain - striatum" EXACT []
 xref: UBERON:0002435 ! striatum
 
 [Term]
-id: MTB:169
+id: MTBANAT:169
 name: thalamus
 synonym: "cns - brain - thalamus" EXACT []
 xref: UBERON:0001897 ! thalamus
 
 [Term]
-id: MTB:88
+id: MTBANAT:88
 name: undifferentiated cell
 synonym: "cns - brain - undifferentiated cell" EXACT []
 comment: TODO
 xref: CL:0000031 ! neuroblast
 
 [Term]
-id: MTB:378
+id: MTBANAT:378
 name: tegmental nuclei
 synonym: "cns - brain - tegmental nuclei" EXACT []
 comment: TODO: Check this - the uberon class is a generic grouping class for any nucleus in the midbrain tegmentum. Example MTB description: Tumor cells were observed to spread from the pontine central gray into the interpeduncular nucleus at the ventral pontine surface.
 xref: UBERON:0012277 ! tegmental nucleus
 
 [Term]
-id: MTB:120
+id: MTBANAT:120
 name: meninges
 synonym: "cns - meninges" EXACT []
 xref: UBERON:0010743 ! meningeal cluster
 
 [Term]
-id: MTB:54
+id: MTBANAT:54
 name: spinal cord
 synonym: "cns - spinal cord" EXACT []
 xref: UBERON:0002240 ! spinal cord
 
 [Term]
-id: MTB:454
+id: MTBANAT:454
 name: (unspecified organ)
 synonym: "cardiovascular system - (unspecified organ)" EXACT []
 xref: UBERON:0004535 ! cardiovascular system
 
 [Term]
-id: MTB:51
+id: MTBANAT:51
 name: clitoral gland
 synonym: "clitoral gland" EXACT []
 xref: UBERON:0005302 ! female preputial gland
 
 [Term]
-id: MTB:189
+id: MTBANAT:189
 name: coagulating gland
 synonym: "coagulating gland" EXACT []
 xref: UBERON:0008807 ! coagulating gland
 
 [Term]
-id: MTB:95
+id: MTBANAT:95
 name: connective tissue
 synonym: "connective tissue" EXACT []
 xref: UBERON:0002384 ! connective tissue
 
 [Term]
-id: MTB:144
+id: MTBANAT:144
 name: cartilage
 synonym: "connective tissue - cartilage" EXACT []
 xref: UBERON:0002418 ! cartilage tissue
 
 [Term]
-id: MTB:358
+id: MTBANAT:358
 name: articular
 synonym: "connective tissue - cartilage - articular" EXACT []
 comment: CHECKME
 xref: UBERON:0010996 ! articular cartilage of joint
 
 [Term]
-id: MTB:48
+id: MTBANAT:48
 name: fibroblast
 synonym: "connective tissue - fibroblast" EXACT []
 xref: CL:0000057 ! fibroblast
 
 [Term]
-id: MTB:298
+id: MTBANAT:298
 name: dendritic cell
 synonym: "dendritic cell" EXACT []
 xref: CL:0000451 ! dendritic cell
 
 [Term]
-id: MTB:206
+id: MTBANAT:206
 name: (unspecified organ)
 synonym: "digestive system - (unspecified organ)" EXACT []
 xref: UBERON:0001007 ! digestive system
 
 [Term]
-id: MTB:242
+id: MTBANAT:242
 name: ear
 synonym: "ear" EXACT []
 xref: UBERON:0001690 ! ear
 
 [Term]
-id: MTB:267
+id: MTBANAT:267
 name: middle ear
 synonym: "ear - middle ear" EXACT []
 xref: UBERON:0001756 ! middle ear
 
 [Term]
-id: MTB:328
+id: MTBANAT:328
 name: outer ear
 synonym: "ear - outer ear" EXACT []
 xref: UBERON:0001691 ! external ear
 
 [Term]
-id: MTB:442
+id: MTBANAT:442
 name: ear canal
 synonym: "ear - outer ear - ear canal" EXACT []
 xref: UBERON:0001352 ! external acoustic meatus
 
 [Term]
-id: MTB:414
+id: MTBANAT:414
 name: zymbal gland
 synonym: "ear - zymbal gland" EXACT []
 xref: UBERON:1000022 ! Zymbal's gland
 
 [Term]
-id: MTB:273
+id: MTBANAT:273
 name: (unspecified organ)
 synonym: "endocrine gland system - (unspecified organ)" EXACT []
 xref: UBERON:0000949 ! endocrine system
 
 [Term]
-id: MTB:46
+id: MTBANAT:46
 name: epididymis
 synonym: "epididymis" EXACT []
 xref: UBERON:0001301 ! epididymis
 
 [Term]
-id: MTB:130
+id: MTBANAT:130
 name: erythrocyte
 synonym: "erythrocyte" EXACT []
 xref: CL:0000232 ! erythrocyte
 
 [Term]
-id: MTB:18
+id: MTBANAT:18
 name: esophagus
 synonym: "esophagus" EXACT []
 xref: UBERON:0001043 ! esophagus
 
 [Term]
-id: MTB:318
+id: MTBANAT:318
 name: glandular
 synonym: "esophagus - glandular" EXACT []
 xref: UBERON:0008989 ! esophageal gland
 
 [Term]
-id: MTB:108
+id: MTBANAT:108
 name: eye
 synonym: "eye" EXACT []
 xref: UBERON:0000970 ! eye
 
 [Term]
-id: MTB:115
+id: MTBANAT:115
 name: conjunctiva
 synonym: "eye - conjunctiva" EXACT []
 xref: UBERON:0001811 ! conjunctiva
 
 [Term]
-id: MTB:197
+id: MTBANAT:197
 name: cornea
 synonym: "eye - cornea" EXACT []
 xref: UBERON:0000964 ! cornea
 
 [Term]
-id: MTB:260
+id: MTBANAT:260
 name: eyelid
 synonym: "eye - eyelid" EXACT []
 xref: UBERON:0001711 ! eyelid
 
 [Term]
-id: MTB:13
+id: MTBANAT:13
 name: harderian gland
 synonym: "eye - harderian gland" EXACT []
 xref: UBERON:0004187 ! Harderian gland
 
 [Term]
-id: MTB:128
+id: MTBANAT:128
 name: lacrimal gland
 synonym: "eye - lacrimal gland" EXACT []
 xref: UBERON:0001817 ! lacrimal gland
 
 [Term]
-id: MTB:415
+id: MTBANAT:415
 name: meibomian gland
 synonym: "eye - meibomian gland" EXACT []
 xref: UBERON:0001818 ! tarsal gland
 
 [Term]
-id: MTB:96
+id: MTBANAT:96
 name: retina
 synonym: "eye - retina" EXACT []
 xref: UBERON:0000966 ! retina
 
 [Term]
-id: MTB:372
+id: MTBANAT:372
 name: pigmented retinal epithelium
 synonym: "eye - retina - pigmented retinal epithelium" EXACT []
 xref: UBERON:0001782 ! pigmented layer of retina
 
 [Term]
-id: MTB:237
+id: MTBANAT:237
 name: melanocyte
 synonym: "eye - uvea - choroid - melanocyte" EXACT []
 xref: CL:0000148 ! melanocyte
 
 [Term]
-id: MTB:467
+id: MTBANAT:467
 name: melanocyte
 synonym: "eye - uvea - melanocyte" EXACT []
 xref: CL:0000148 ! melanocyte
 
 [Term]
-id: MTB:205
+id: MTBANAT:205
 name: (unspecified organ)
 synonym: "female reproductive system - (unspecified organ)" EXACT []
 xref: UBERON:0000474 ! female reproductive system
 
 [Term]
-id: MTB:15
+id: MTBANAT:15
 name: forestomach
 synonym: "forestomach" EXACT []
 xref: UBERON:0008827 ! forestomach
 
 [Term]
-id: MTB:373
+id: MTBANAT:373
 name: basal cell
 synonym: "forestomach - basal cell" EXACT []
 xref: CL:0000646 ! basal cell
 
 [Term]
-id: MTB:317
+id: MTBANAT:317
 name: squamocolumnar junction with the glandular stomach
 synonym: "forestomach - squamocolumnar junction with the glandular stomach" EXACT []
 xref: UBERON:0012270 ! forestomach-glandular stomach junction
 
 [Term]
-id: MTB:193
+id: MTBANAT:193
 name: gallbladder
 synonym: "gallbladder" EXACT []
 xref: UBERON:0002110 ! gallbladder
 
 [Term]
-id: MTB:494
+id: MTBANAT:494
 name: epithelium
 synonym: "gallbladder - epithelium" EXACT []
 xref: UBERON:0002029 ! epithelium of gall bladder
 
 [Term]
-id: MTB:199
+id: MTBANAT:199
 name: gastrointestinal tract
 synonym: "gastrointestinal tract" EXACT []
 xref: UBERON:0005409 ! gastrointestinal system
 
 [Term]
-id: MTB:100
+id: MTBANAT:100
 name: germ cell (sex not specified)
 synonym: "germ cell (sex not specified)" EXACT []
 xref: CL:0000586 ! germ cell
 
 [Term]
-id: MTB:363
+id: MTBANAT:363
 name: gingiva
 synonym: "gingiva" EXACT []
 xref: UBERON:0001828 ! gingiva
 
 [Term]
-id: MTB:261
+id: MTBANAT:261
 name: epithelium
 synonym: "gingiva - epithelium" EXACT []
 xref: UBERON:0001949 ! gingival epithelium
 
 [Term]
-id: MTB:427
+id: MTBANAT:427
 name: gonad (sex not specified)
 synonym: "gonad (sex not specified)" EXACT []
 xref: UBERON:0000991 ! gonad
 
 [Term]
-id: MTB:212
+id: MTBANAT:212
 name: head
 synonym: "head" EXACT []
 xref: UBERON:0000033 ! head
 
 [Term]
-id: MTB:443
+id: MTBANAT:443
 name: face
 synonym: "head - face" EXACT []
 xref: UBERON:0001456 ! face
 
 [Term]
-id: MTB:38
+id: MTBANAT:38
 name: heart
 synonym: "heart" EXACT []
 xref: UBERON:0000948 ! heart
 
 [Term]
-id: MTB:491
+id: MTBANAT:491
 name: endocardium
 synonym: "heart - endocardium" EXACT []
 xref: UBERON:0002165 ! endocardium
 
 [Term]
-id: MTB:361
+id: MTBANAT:361
 name: heart valve
 synonym: "heart - heart valve" EXACT []
 xref: UBERON:0000946 ! cardial valve
 
 [Term]
-id: MTB:208
+id: MTBANAT:208
 name: (unspecified organ)
 synonym: "integument system - (unspecified organ)" EXACT []
 xref: UBERON:0002416 ! integumental system
 
 [Term]
-id: MTB:17
+id: MTBANAT:17
 name: intestine
 synonym: "intestine" EXACT []
 xref: UBERON:0000160 ! intestine
 
 [Term]
-id: MTB:220
+id: MTBANAT:220
 name: ileocecal junction
 synonym: "intestine - ileocecal junction" EXACT []
 xref: UBERON:0001073 ! ileocecal junction
 
 [Term]
-id: MTB:74
+id: MTBANAT:74
 name: large intestine
 synonym: "intestine - large intestine" EXACT []
 xref: UBERON:0000059 ! large intestine
 
 [Term]
-id: MTB:166
+id: MTBANAT:166
 name: anus
 synonym: "intestine - large intestine - anus" EXACT []
 xref: UBERON:0001245 ! anus
 
 [Term]
-id: MTB:164
+id: MTBANAT:164
 name: cecum
 synonym: "intestine - large intestine - cecum" EXACT []
 xref: UBERON:0001153 ! caecum
 
 [Term]
-id: MTB:138
+id: MTBANAT:138
 name: colon
 synonym: "intestine - large intestine - colon" EXACT []
 xref: UBERON:0001155 ! colon
 
 [Term]
-id: MTB:161
+id: MTBANAT:161
 name: distal
 synonym: "intestine - large intestine - colon - distal" EXACT []
 comment: TODO
 xref: UBERON:0001155 ! colon
 
 [Term]
-id: MTB:162
+id: MTBANAT:162
 name: medial
 synonym: "intestine - large intestine - colon - medial" EXACT []
 comment: TODO
 xref: UBERON:0001155 ! colon
 
 [Term]
-id: MTB:163
+id: MTBANAT:163
 name: proximal
 synonym: "intestine - large intestine - colon - proximal" EXACT []
 comment: TODO
 xref: UBERON:0001155 ! colon
 
 [Term]
-id: MTB:139
+id: MTBANAT:139
 name: rectum
 synonym: "intestine - large intestine - rectum" EXACT []
 xref: UBERON:0001052 ! rectum
 
 [Term]
-id: MTB:64
+id: MTBANAT:64
 name: small intestine
 synonym: "intestine - small intestine" EXACT []
 xref: UBERON:0002108 ! small intestine
 
 [Term]
-id: MTB:331
+id: MTBANAT:331
 name: brunner&#39;s gland
 synonym: "intestine - small intestine - brunner&#39;s gland" EXACT []
 xref: UBERON:0001212 ! duodenal gland
 
 [Term]
-id: MTB:297
+id: MTBANAT:297
 name: distal
 synonym: "intestine - small intestine - distal" EXACT []
 comment: TODO
 xref: UBERON:0002108 ! small intestine
 
 [Term]
-id: MTB:111
+id: MTBANAT:111
 name: duodenum
 synonym: "intestine - small intestine - duodenum" EXACT []
 xref: UBERON:0002114 ! duodenum
 
 [Term]
-id: MTB:444
+id: MTBANAT:444
 name: periampullary region
 synonym: "intestine - small intestine - duodenum - periampullary region" EXACT []
 xref: UBERON:0012273 ! periampullary region of duodenum
 
 [Term]
-id: MTB:493
+id: MTBANAT:493
 name: epithelium
 synonym: "intestine - small intestine - epithelium" EXACT []
 xref: UBERON:0001902 ! epithelium of small intestine
 
 [Term]
-id: MTB:137
+id: MTBANAT:137
 name: ileum
 synonym: "intestine - small intestine - ileum" EXACT []
 xref: UBERON:0002116 ! ileum
 
 [Term]
-id: MTB:343
+id: MTBANAT:343
 name: distal
 synonym: "intestine - small intestine - ileum - distal" EXACT []
 comment: TODO
 xref: UBERON:0002116 ! ileum
 
 [Term]
-id: MTB:136
+id: MTBANAT:136
 name: jejunum
 synonym: "intestine - small intestine - jejunum" EXACT []
 xref: UBERON:0002115 ! jejunum
 
 [Term]
-id: MTB:334
+id: MTBANAT:334
 name: distal
 synonym: "intestine - small intestine - jejunum - distal" EXACT []
 comment: TODO
 xref: UBERON:0002115 ! jejunum
 
 [Term]
-id: MTB:296
+id: MTBANAT:296
 name: medial
 synonym: "intestine - small intestine - medial" EXACT []
 comment: TODO
 xref: UBERON:0002108 ! small intestine
 
 [Term]
-id: MTB:332
+id: MTBANAT:332
 name: paneth cell
 synonym: "intestine - small intestine - paneth cell" EXACT []
 xref: CL:1000343 ! paneth cell of epithelium of small intestine
 
 [Term]
-id: MTB:295
+id: MTBANAT:295
 name: proximal
 synonym: "intestine - small intestine - proximal" EXACT []
 comment: TODO
@@ -768,70 +768,70 @@ xref: UBERON:0002108 ! small intestine
 
 
 [Term]
-id: MTB:36
+id: MTBANAT:36
 name: kidney
 synonym: "kidney" EXACT []
 xref: UBERON:0002113 ! kidney
 
 [Term]
-id: MTB:127
+id: MTBANAT:127
 name: cortex
 synonym: "kidney - cortex" EXACT []
 xref: UBERON:0001225 ! cortex of kidney
 
 [Term]
-id: MTB:246
+id: MTBANAT:246
 name: renal tubule
 synonym: "kidney - renal tubule" EXACT []
 xref: UBERON:0009773 ! renal tubule
 
 [Term]
-id: MTB:234
+id: MTBANAT:234
 name: larynx
 synonym: "larynx" EXACT []
 xref: UBERON:0001737 ! larynx
 
 [Term]
-id: MTB:305
+id: MTBANAT:305
 name: leg
 synonym: "leg" EXACT []
 comment: we presume they mean any of the 4 limbs
 xref: UBERON:0002101 ! limb
 
 [Term]
-id: MTB:3
+id: MTBANAT:3
 name: leukocyte
 synonym: "leukocyte" EXACT []
 xref: CL:0000738 ! leukocyte
 
 [Term]
-id: MTB:20
+id: MTBANAT:20
 name: lymphoblast
 synonym: "leukocyte - lymphoblast" EXACT []
 comment: TODO - CL:0000229 ! lymphoblast **OBSOLETE** 
 xref: CL:0000738 ! leukocyte
 
 [Term]
-id: MTB:68
+id: MTBANAT:68
 name: lymphocyte
 synonym: "leukocyte - lymphocyte" EXACT []
 xref: CL:0000542 ! lymphocyte
 
 [Term]
-id: MTB:21
+id: MTBANAT:21
 name: b-lymphocyte
 synonym: "leukocyte - lymphocyte - b-lymphocyte" EXACT []
 xref: CL:0000236 ! B cell
 
 [Term]
-id: MTB:1
+id: MTBANAT:1
 name: follicular center cell
 synonym: "leukocyte - lymphocyte - b-lymphocyte - follicular center cell" EXACT []
 comment: TODO
 xref: CL:0000236 ! B cell
 
 [Term]
-id: MTB:446
+id: MTBANAT:446
 name: immature plasma cell
 synonym: "leukocyte - lymphocyte - b-lymphocyte - immature plasma cell" EXACT []
 comment: TODO
@@ -839,7 +839,7 @@ xref: CL:0000236 ! B cell
 xref: CL:0000786 ! plasma cell
 
 [Term]
-id: MTB:85
+id: MTBANAT:85
 name: plasma cell
 synonym: "leukocyte - lymphocyte - b-lymphocyte - plasma cell" EXACT []
 comment: TODO
@@ -847,26 +847,26 @@ xref: CL:0000236 ! B cell
 xref: CL:0000786 ! plasma cell
 
 [Term]
-id: MTB:458
+id: MTBANAT:458
 name: immature b-lymphocyte
 synonym: "leukocyte - lymphocyte - immature b-lymphocyte" EXACT []
 xref: CL:0000816 ! immature B cell
 
 [Term]
-id: MTB:99
+id: MTBANAT:99
 name: immature t-lymphocyte
 synonym: "leukocyte - lymphocyte - immature t-lymphocyte" EXACT []
 comment: TODO
 xref: CL:0000084 ! T cell
 
 [Term]
-id: MTB:391
+id: MTBANAT:391
 name: natural killer cell
 synonym: "leukocyte - lymphocyte - natural killer cell" EXACT []
 xref: CL:0000623 ! natural killer cell
 
 [Term]
-id: MTB:240
+id: MTBANAT:240
 name: null (non-t, non-b) cell
 synonym: "leukocyte - lymphocyte - null (non-t, non-b) cell" EXACT []
 comment: TODO - CL:0000585 ! null cell **OBSOLETE**
@@ -875,345 +875,344 @@ xref: CL:0000825 ! pro-NK cell
 
 
 [Term]
-id: MTB:24
+id: MTBANAT:24
 name: pre-b-lymphocyte
 synonym: "leukocyte - lymphocyte - pre-b-lymphocyte" EXACT []
 xref: CL:0000955 ! pre-B-II cell
 
 [Term]
-id: MTB:497
+id: MTBANAT:497
 name: pre-t-lymphocyte
 synonym: "leukocyte - lymphocyte - pre-t-lymphocyte" EXACT []
 comment: TODO
 xref: CL:0000084 ! T cell
 
 [Term]
-id: MTB:286
+id: MTBANAT:286
 name: pro-b-lymphocyte
 synonym: "leukocyte - lymphocyte - pro-b-lymphocyte" EXACT []
 xref: CL:0000826 ! pro-B cell
 
 [Term]
-id: MTB:78
+id: MTBANAT:78
 name: t-lymphocyte
 synonym: "leukocyte - lymphocyte - t-lymphocyte" EXACT []
 xref: CL:0000084 ! T cell
 
 [Term]
-id: MTB:152
+id: MTBANAT:152
 name: thymocyte
 synonym: "leukocyte - lymphocyte - thymocyte" EXACT []
 xref: CL:0000893 ! thymocyte
 
 [Term]
-id: MTB:436
+id: MTBANAT:436
 name: megakaryocyte
 synonym: "leukocyte - megakaryocyte" EXACT []
 xref: CL:0000556 ! megakaryocyte
 
 [Term]
-id: MTB:264
+id: MTBANAT:264
 name: monocyte
 synonym: "leukocyte - monocyte" EXACT []
 xref: CL:0000576 ! monocyte
 
 [Term]
-id: MTB:131
+id: MTBANAT:131
 name: histiocyte
 synonym: "leukocyte - monocyte - macrophage - histiocyte" EXACT []
 comment: CHECKME
 xref: CL:0000235 ! macrophage
 
 [Term]
-id: MTB:473
+id: MTBANAT:473
 name: kupffer cell
 synonym: "leukocyte - monocyte - macrophage - kupffer cell" EXACT []
 xref: CL:0000091 ! Kupffer cell
 
 [Term]
-id: MTB:421
+id: MTBANAT:421
 name: myeloblast
 synonym: "leukocyte - myeloblast" EXACT []
 xref: CL:0000835 ! myeloblast
 
 [Term]
-id: MTB:55
+id: MTBANAT:55
 name: myelocyte (granulocyte)
 synonym: "leukocyte - myelocyte (granulocyte)" EXACT []
 xref: CL:0000094 ! granulocyte
 
 [Term]
-id: MTB:75
+id: MTBANAT:75
 name: mast cell
 synonym: "leukocyte - myelocyte (granulocyte) - basophil - mast cell" EXACT []
 xref: CL:0000097 ! mast cell
 
 [Term]
-id: MTB:466
+id: MTBANAT:466
 name: promyelocyte
 synonym: "leukocyte - promyelocyte" EXACT []
 xref: CL:0000836 ! promyelocyte
 
 [Term]
-id: MTB:26
+id: MTBANAT:26
 name: liver
 synonym: "liver" EXACT []
 xref: UBERON:0002107 ! liver
 
 [Term]
-id: MTB:113
+id: MTBANAT:113
 name: bile duct
 synonym: "liver - bile duct" EXACT []
 xref: UBERON:0002394 ! bile duct
 
 [Term]
-id: MTB:8
+id: MTBANAT:8
 name: hepatocyte
 synonym: "liver - hepatocyte" EXACT []
 xref: CL:0000182 ! hepatocyte
 
 [Term]
-id: MTB:337
+id: MTBANAT:337
 name: oval cell
 synonym: "liver - oval cell" EXACT []
 comment: CHECKME
 xref: CL:0002196 ! hepatic oval stem cell
 
 [Term]
-id: MTB:271
+id: MTBANAT:271
 name: ito cell
 synonym: "liver - sinusoid - ito cell" EXACT []
 xref: CL:0000632 ! hepatic stellate cell
 
 [Term]
-id: MTB:4
+id: MTBANAT:4
 name: lung
 synonym: "lung" EXACT []
 xref: UBERON:0002048 ! lung
 
 [Term]
-id: MTB:109
+id: MTBANAT:109
 name: alveolus
 synonym: "lung - alveolus" EXACT []
 xref: UBERON:0002299 ! alveolus of lung
 
 [Term]
-id: MTB:262
+id: MTBANAT:262
 name: type ii cell
 synonym: "lung - alveolus - type ii cell" EXACT []
 comment: CHECKME
 xref: CL:0002063 ! type II pneumocyte
 
 [Term]
-id: MTB:103
+id: MTBANAT:103
 name: bronchiole
 synonym: "lung - bronchiole" EXACT []
 xref: UBERON:0002186 ! bronchiole
 
 [Term]
-id: MTB:376
+id: MTBANAT:376
 name: epithelium
 synonym: "lung - bronchiole - epithelium" EXACT []
 xref: UBERON:0002051 ! epithelium of bronchiole
 
 [Term]
-id: MTB:223
+id: MTBANAT:223
 name: bronchus
 synonym: "lung - bronchus" EXACT []
 xref: UBERON:0002185 ! bronchus
 
 [Term]
-id: MTB:150
+id: MTBANAT:150
 name: clara cell
 synonym: "lung - clara cell" EXACT []
 xref: CL:0000158 ! Clara cell
 
 [Term]
-id: MTB:393
+id: MTBANAT:393
 name: neuroendocrine cell
 synonym: "lung - neuroendocrine cell" EXACT []
 xref: CL:0000165 ! neuroendocrine cell
 
 [Term]
-id: MTB:25
+id: MTBANAT:25
 name: lymph node
 synonym: "lymph node" EXACT []
 xref: UBERON:0000029 ! lymph node
 
 [Term]
-id: MTB:514
+id: MTBANAT:514
 name: abdominal
 synonym: "lymph node - abdominal" EXACT []
 xref: UBERON:0002507 ! abdominal lymph node
 
 [Term]
-id: MTB:353
+id: MTBANAT:353
 name: cervical
 synonym: "lymph node - cervical" EXACT []
 xref: UBERON:0002429 ! cervical lymph node
 
 [Term]
-id: MTB:355
+id: MTBANAT:355
 name: inguinal
 synonym: "lymph node - inguinal" EXACT []
 xref: UBERON:0001542 ! inguinal lymph node
 
 [Term]
-id: MTB:336
+id: MTBANAT:336
 name: mesenteric
 synonym: "lymph node - mesenteric" EXACT []
 xref: UBERON:0002509 ! mesenteric lymph node
 
 [Term]
-id: MTB:344
+id: MTBANAT:344
 name: peripancreatic
 synonym: "lymph node - peripancreatic" EXACT []
 comment: TODO
 xref: UBERON:0000029 ! lymph node
 
 [Term]
-id: MTB:413
+id: MTBANAT:413
 name: peripheral
 synonym: "lymph node - peripheral" EXACT []
 xref: UBERON:0003968 ! peripheral lymph node
 
 [Term]
-id: MTB:408
+id: MTBANAT:408
 name: submandibular
 synonym: "lymph node - submandibular" EXACT []
 xref: UBERON:0002520 ! submandibular lymph node
 
 [Term]
-id: MTB:145
+id: MTBANAT:145
 name: lymphatic vessel
 synonym: "lymphatic vessel" EXACT []
 xref: UBERON:0001473 ! lymphatic vessel
 
 [Term]
-id: MTB:203
+id: MTBANAT:203
 name: (unspecified organ)
 synonym: "lymphohematopoietic system - (unspecified organ)" EXACT []
 comment: CHECKME
 xref: UBERON:0002465 ! lymphoid system
 
 [Term]
-id: MTB:342
+id: MTBANAT:342
 name: lymphoid tissue
 synonym: "lymphoid tissue" EXACT []
 xref: UBERON:0001744 ! lymphoid tissue
 
 [Term]
-id: MTB:411
+id: MTBANAT:411
 name: gut-associated lymphoid tissue
 synonym: "lymphoid tissue - gut-associated lymphoid tissue" EXACT []
 xref: UBERON:0001962 ! gut-associated lymphoid tissue
 
 [Term]
-id: MTB:207
+id: MTBANAT:207
 name: (unspecified organ)
 synonym: "male reproductive system - (unspecified organ)" EXACT []
 xref: UBERON:0000079 ! male reproductive system
 
 [Term]
-id: MTB:67
+id: MTBANAT:67
 name: mammary fat pad
 synonym: "mammary fat pad" EXACT []
 comment: TODO
-xref: UBERON:0003916 ! fat pad
-xref: UBERON:0001911 ! mammary gland
+xref: UBERON:0012282 ! mammary fat pad
 
 [Term]
-id: MTB:5
+id: MTBANAT:5
 name: mammary gland
 synonym: "mammary gland" EXACT []
 xref: UBERON:0001911 ! mammary gland
 
 [Term]
-id: MTB:512
+id: MTBANAT:512
 name: cervical
 synonym: "mammary gland - cervical" EXACT []
 xref: UBERON:0005199 ! cervical mammary gland
 
 [Term]
-id: MTB:398
+id: MTBANAT:398
 name: inguinal
 synonym: "mammary gland - inguinal" EXACT []
 xref: UBERON:0008424 ! inguinal mammary gland
 
 [Term]
-id: MTB:433
+id: MTBANAT:433
 name: nipple
 synonym: "mammary gland - nipple" EXACT []
 xref: UBERON:0002030 ! nipple
 
 [Term]
-id: MTB:513
+id: MTBANAT:513
 name: thoracic
 synonym: "mammary gland - thoracic" EXACT []
 xref: UBERON:0005200 ! thoracic mammary gland
 
 [Term]
-id: MTB:238
+id: MTBANAT:238
 name: melanocyte
 synonym: "melanocyte" EXACT []
 xref: CL:0000148 ! melanocyte
 
 [Term]
-id: MTB:2
+id: MTBANAT:2
 name: mesodermal cell/mesoblast
 synonym: "mesodermal cell/mesoblast" EXACT []
 xref: CL:0000222 ! mesodermal cell
 
 [Term]
-id: MTB:153
+id: MTBANAT:153
 name: mesothelium
 synonym: "mesothelium" EXACT []
 xref: UBERON:0001136 ! mesothelium
 
 [Term]
-id: MTB:245
+id: MTBANAT:245
 name: mouth
 synonym: "mouth" EXACT []
 xref: UBERON:0000165 ! mouth
 
 [Term]
-id: MTB:349
+id: MTBANAT:349
 name: lip
 synonym: "mouth - lip" EXACT []
 xref: UBERON:0001833 ! lip
 
 [Term]
-id: MTB:431
+id: MTBANAT:431
 name: oral mucosa
 synonym: "mouth - oral mucosa" EXACT []
 xref: UBERON:0003343 ! mucosa of oral region
 
 [Term]
-id: MTB:350
+id: MTBANAT:350
 name: palate
 synonym: "mouth - palate" EXACT []
 xref: UBERON:0007375 ! primary or secondary palate
 
 [Term]
-id: MTB:61
+id: MTBANAT:61
 name: muscle
 synonym: "muscle" EXACT []
 xref: UBERON:0001630 ! muscle organ
 
 [Term]
-id: MTB:97
+id: MTBANAT:97
 name: smooth
 synonym: "muscle - smooth" EXACT []
 xref: UBERON:0001135 ! smooth muscle tissue
 
 [Term]
-id: MTB:160
+id: MTBANAT:160
 name: cardiac
 synonym: "muscle - striated - cardiac" EXACT []
 xref: UBERON:0001133 ! cardiac muscle tissue
 
 [Term]
-id: MTB:236
+id: MTBANAT:236
 name: melanocyte
 synonym: "muscle - striated - melanocyte" EXACT []
 comment: TODO
@@ -1221,13 +1220,13 @@ xref: CL:0000148 ! melanocyte
 xref: UBERON:0002036 ! striated muscle tissue
 
 [Term]
-id: MTB:37
+id: MTBANAT:37
 name: skeletal
 synonym: "muscle - striated - skeletal" EXACT []
 xref: UBERON:0001134 ! skeletal muscle tissue
 
 [Term]
-id: MTB:329
+id: MTBANAT:329
 name: abdomen
 synonym: "muscle - striated - skeletal - abdomen" EXACT []
 comment: TODO - compositional class?
@@ -1235,7 +1234,7 @@ xref: UBERON:0001134 ! skeletal muscle tissue
 xref: UBERON:0000916 ! abdomen
 
 [Term]
-id: MTB:91
+id: MTBANAT:91
 name: diaphragm
 synonym: "muscle - striated - skeletal - diaphragm" EXACT []
 comment: TODO - compositional class?
@@ -1243,7 +1242,7 @@ xref: UBERON:0001134 ! skeletal muscle tissue
 xref: UBERON:0001103 ! diaphragm
 
 [Term]
-id: MTB:311
+id: MTBANAT:311
 name: limb
 synonym: "muscle - striated - skeletal - limb" EXACT []
 comment: TODO - compositional class?
@@ -1251,151 +1250,151 @@ xref: UBERON:0001134 ! skeletal muscle tissue
 xref: UBERON:0002101 ! limb
 
 [Term]
-id: MTB:255
+id: MTBANAT:255
 name: muzzle
 synonym: "muzzle" EXACT []
 xref: UBERON:0006333 ! snout
 
 [Term]
-id: MTB:107
+id: MTBANAT:107
 name: myoepitheliocyte
 synonym: "myoepitheliocyte" EXACT []
 xref: CL:0000185 ! myoepithelial cell
 
 [Term]
-id: MTB:348
+id: MTBANAT:348
 name: nail
 synonym: "nail" EXACT []
 xref: UBERON:0001705 ! nail
 
 [Term]
-id: MTB:149
+id: MTBANAT:149
 name: nerve
 synonym: "nerve" EXACT []
 xref: UBERON:0001021 ! nerve
 
 [Term]
-id: MTB:399
+id: MTBANAT:399
 name: optic
 synonym: "nerve - optic" EXACT []
 xref: UBERON:0000941 ! cranial nerve II
 
 [Term]
-id: MTB:209
+id: MTBANAT:209
 name: (unspecified organ)
 synonym: "nervous system - (unspecified organ)" EXACT []
 xref: UBERON:0001016 ! nervous system
 
 [Term]
-id: MTB:143
+id: MTBANAT:143
 name: neuroblast
 synonym: "neuroblast" EXACT []
 xref: CL:0000031 ! neuroblast
 
 [Term]
-id: MTB:269
+id: MTBANAT:269
 name: nose
 synonym: "nose" EXACT []
 xref: UBERON:0007827 ! external nose
 
 [Term]
-id: MTB:155
+id: MTBANAT:155
 name: nasal cavity
 synonym: "nose - nasal cavity" EXACT []
 xref: UBERON:0001707 ! nasal cavity
 
 [Term]
-id: MTB:188
+id: MTBANAT:188
 name: nasal gland
 synonym: "nose - nasal cavity - nasal gland" EXACT []
 xref: UBERON:0012278 ! nasal gland
 
 [Term]
-id: MTB:447
+id: MTBANAT:447
 name: olfactory epithelium
 synonym: "nose - nasal cavity - olfactory epithelium" EXACT []
 xref: UBERON:0001997 ! olfactory epithelium
 
 [Term]
-id: MTB:283
+id: MTBANAT:283
 name: nasal turbinate
 synonym: "nose - nasal turbinate" EXACT []
 xref: UBERON:0001762 ! nasal concha
 
 [Term]
-id: MTB:52
+id: MTBANAT:52
 name: olfactory gland
 synonym: "nose - olfactory gland" EXACT []
 xref: UBERON:0002232 ! olfactory gland
 
 [Term]
-id: MTB:171
+id: MTBANAT:171
 name: olfactory receptor nerve
 synonym: "nose - olfactory receptor nerve" EXACT []
 xref: UBERON:0001579 ! olfactory nerve
 
 [Term]
-id: MTB:416
+id: MTBANAT:416
 name: vomeronasal organ
 synonym: "nose - vomeronasal organ" EXACT []
 xref: UBERON:0002255 ! vomeronasal organ
 
 [Term]
-id: MTB:14
+id: MTBANAT:14
 name: oral cavity
 synonym: "oral cavity" EXACT []
 xref: UBERON:0000167 ! oral cavity
 
 [Term]
-id: MTB:60
+id: MTBANAT:60
 name: ovary
 synonym: "ovary" EXACT []
 xref: UBERON:0000992 ! female gonad
 
 [Term]
-id: MTB:489
+id: MTBANAT:489
 name: follicle
 synonym: "ovary - follicle" EXACT []
 xref: UBERON:0001305 ! ovarian follicle
 
 [Term]
-id: MTB:89
+id: MTBANAT:89
 name: germ cell
 synonym: "ovary - germ cell" EXACT []
 xref: CL:0000586 ! germ cell
 
 [Term]
-id: MTB:80
+id: MTBANAT:80
 name: granulosa cell
 synonym: "ovary - granulosa cell" EXACT []
 xref: CL:0000501 ! granulosa cell
 
 [Term]
-id: MTB:274
+id: MTBANAT:274
 name: hilus cell
 synonym: "ovary - hilus cell" EXACT []
 xref: CL:0002095 ! hilus cell of ovary
 
 [Term]
-id: MTB:90
+id: MTBANAT:90
 name: interstitial cell
 synonym: "ovary - interstitial cell" EXACT []
 xref: CL:0002094 ! interstitial cell of ovary
 
 [Term]
-id: MTB:81
+id: MTBANAT:81
 name: luteal cell
 synonym: "ovary - luteal cell" EXACT []
 xref: CL:0000175 ! luteal cell
 
 [Term]
-id: MTB:190
+id: MTBANAT:190
 name: sertoli cell
 synonym: "ovary - sertoli cell" EXACT []
 xref: CL:0000216 ! Sertoli cell
 
 [Term]
-id: MTB:315
+id: MTBANAT:315
 name: sex cord stromal cell
 synonym: "ovary - sex cord stromal cell" EXACT []
 comment: TODO
@@ -1403,397 +1402,397 @@ xref: UBERON:0005296 ! ovary sex cord
 xref: CL:0000499 ! stromal cell
 
 [Term]
-id: MTB:168
+id: MTBANAT:168
 name: theca cell
 synonym: "ovary - theca cell" EXACT []
 xref: CL:0000503 ! theca cell
 
 [Term]
-id: MTB:135
+id: MTBANAT:135
 name: oviduct
 synonym: "oviduct" EXACT []
 xref: UBERON:0000993 ! oviduct
 
 [Term]
-id: MTB:380
+id: MTBANAT:380
 name: ganglion
 synonym: "pns - ganglion" EXACT []
 xref: UBERON:0000045 ! ganglion
 
 [Term]
-id: MTB:394
+id: MTBANAT:394
 name: dorsal root
 synonym: "pns - ganglion - dorsal root" EXACT []
 xref: UBERON:0002261 ! dorsal root of spinal cord
 
 [Term]
-id: MTB:248
+id: MTBANAT:248
 name: paraganglion
 synonym: "pns - ganglion - paraganglion" EXACT []
 comment: TODO - check this in uberon
 xref: UBERON:0012279 ! paraganglion
 
 [Term]
-id: MTB:395
+id: MTBANAT:395
 name: trigeminal
 synonym: "pns - ganglion - trigeminal" EXACT []
 xref: UBERON:0001675 ! trigeminal ganglion
 
 [Term]
-id: MTB:366
+id: MTBANAT:366
 name: nerve
 synonym: "pns - nerve" EXACT []
 xref: UBERON:0001021 ! nerve
 
 [Term]
-id: MTB:396
+id: MTBANAT:396
 name: sciatic
 synonym: "pns - nerve - sciatic" EXACT []
 xref: UBERON:0001322 ! sciatic nerve
 
 [Term]
-id: MTB:254
+id: MTBANAT:254
 name: nerve sheath
 synonym: "pns - nerve sheath" EXACT []
 comment: CHECKME
 xref: GO:0043209 ! myelin sheath
 
 [Term]
-id: MTB:118
+id: MTBANAT:118
 name: schwann cell
 synonym: "pns - schwann cell" EXACT []
 xref: CL:0002573 ! Schwann cell
 
 [Term]
-id: MTB:28
+id: MTBANAT:28
 name: pancreas
 synonym: "pancreas" EXACT []
 xref: UBERON:0001264 ! pancreas
 
 [Term]
-id: MTB:198
+id: MTBANAT:198
 name: acinar cell
 synonym: "pancreas - acinar cell" EXACT []
 xref: CL:0002064 ! pancreatic acinar cell
 
 [Term]
-id: MTB:257
+id: MTBANAT:257
 name: duct
 synonym: "pancreas - duct" EXACT []
 xref: UBERON:0007329 ! pancreatic duct
 
 [Term]
-id: MTB:486
+id: MTBANAT:486
 name: exocrine
 synonym: "pancreas - exocrine" EXACT []
 xref: UBERON:0000017 ! exocrine pancreas
 
 [Term]
-id: MTB:105
+id: MTBANAT:105
 name: islet of langerhans
 synonym: "pancreas - islet of langerhans" EXACT []
 xref: UBERON:0000006 ! islet of Langerhans
 
 [Term]
-id: MTB:302
+id: MTBANAT:302
 name: alpha cell
 synonym: "pancreas - islet of langerhans - alpha cell" EXACT []
 xref: CL:0000171 ! pancreatic A cell
 
 [Term]
-id: MTB:121
+id: MTBANAT:121
 name: beta cell
 synonym: "pancreas - islet of langerhans - beta cell" EXACT []
 xref: CL:0000169 ! type B pancreatic cell
 
 [Term]
-id: MTB:270
+id: MTBANAT:270
 name: paranasal sinus
 synonym: "paranasal sinus" EXACT []
 xref: UBERON:0001825 ! paranasal sinus
 
 [Term]
-id: MTB:251
+id: MTBANAT:251
 name: parathyroid gland
 synonym: "parathyroid gland" EXACT []
 xref: UBERON:0001132 ! parathyroid gland
 
 [Term]
-id: MTB:340
+id: MTBANAT:340
 name: hindpaw
 synonym: "paw - hindpaw" EXACT []
 xref: UBERON:0002387 ! pes
 
 [Term]
-id: MTB:347
+id: MTBANAT:347
 name: penis
 synonym: "penis" EXACT []
 xref: UBERON:0000989 ! penis
 
 [Term]
-id: MTB:110
+id: MTBANAT:110
 name: peritoneum
 synonym: "peritoneum" EXACT []
 xref: UBERON:0002358 ! peritoneum
 
 [Term]
-id: MTB:77
+id: MTBANAT:77
 name: mesentery
 synonym: "peritoneum - mesentery" EXACT []
 xref: UBERON:0002095 ! mesentery
 
 [Term]
-id: MTB:148
+id: MTBANAT:148
 name: peyer&#39;s patch
 synonym: "peyer&#39;s patch" EXACT []
 xref: UBERON:0001211 ! Peyer's patch
 
 [Term]
-id: MTB:390
+id: MTBANAT:390
 name: pharynx
 synonym: "pharynx" EXACT []
 xref: UBERON:0006562 ! pharynx
 
 [Term]
-id: MTB:106
+id: MTBANAT:106
 name: pineal gland
 synonym: "pineal gland" EXACT []
 xref: UBERON:0001905 ! pineal body
 
 [Term]
-id: MTB:58
+id: MTBANAT:58
 name: pituitary gland
 synonym: "pituitary gland" EXACT []
 xref: UBERON:0000007 ! pituitary gland
 
 [Term]
-id: MTB:487
+id: MTBANAT:487
 name: infundibulum
 synonym: "pituitary gland - infundibulum" EXACT []
 xref: UBERON:0002434 ! pituitary stalk
 
 [Term]
-id: MTB:167
+id: MTBANAT:167
 name: pars anterior
 synonym: "pituitary gland - pars anterior" EXACT []
 xref: UBERON:0006964 ! pars distalis of adenohypophysis
 
 [Term]
-id: MTB:445
+id: MTBANAT:445
 name: chromophobe
 synonym: "pituitary gland - pars anterior - chromophobe" EXACT []
 comment: TODO
 xref: UBERON:0006964 ! pars distalis of adenohypophysis
 
 [Term]
-id: MTB:122
+id: MTBANAT:122
 name: pars distalis
 synonym: "pituitary gland - pars distalis" EXACT []
 xref: UBERON:0006964 ! pars distalis of adenohypophysis
 
 [Term]
-id: MTB:101
+id: MTBANAT:101
 name: pars intermedia
 synonym: "pituitary gland - pars intermedia" EXACT []
 xref: UBERON:0002432 ! pars intermedia of adenohypophysis
 
 [Term]
-id: MTB:326
+id: MTBANAT:326
 name: melanotroph
 synonym: "pituitary gland - pars intermedia - melanotroph" EXACT []
 xref: CL:0000440 ! melanocyte stimulating hormone secreting cell
 
 [Term]
-id: MTB:117
+id: MTBANAT:117
 name: placenta
 synonym: "placenta" EXACT []
 xref: UBERON:0001987 ! placenta
 
 [Term]
-id: MTB:465
+id: MTBANAT:465
 name: decidua
 synonym: "placenta - decidua" EXACT []
 xref: UBERON:0002450 ! decidua
 
 [Term]
-id: MTB:191
+id: MTBANAT:191
 name: trophoblast
 synonym: "placenta - trophoblast" EXACT []
 xref: UBERON:0000088 ! trophoblast
 
 [Term]
-id: MTB:402
+id: MTBANAT:402
 name: pleura
 synonym: "pleura" EXACT []
 xref: UBERON:0000977 ! pleura
 
 [Term]
-id: MTB:507
+id: MTBANAT:507
 name: pleural cavity
 synonym: "pleural cavity" EXACT []
 xref: UBERON:0002402 ! pleural cavity
 
 [Term]
-id: MTB:256
+id: MTBANAT:256
 name: prepuce
 synonym: "prepuce" EXACT []
 xref: UBERON:0011374 ! prepuce
 
 [Term]
-id: MTB:133
+id: MTBANAT:133
 name: preputial gland (female)
 synonym: "preputial gland (female)" EXACT []
 xref: UBERON:0005302 ! female preputial gland
 
 [Term]
-id: MTB:57
+id: MTBANAT:57
 name: preputial gland (male)
 synonym: "preputial gland (male)" EXACT []
 xref: UBERON:0005301 ! male preputial gland
 
 [Term]
-id: MTB:134
+id: MTBANAT:134
 name: preputial gland (sex not specified)
 synonym: "preputial gland (sex not specified)" EXACT []
 xref: UBERON:0000359 ! preputial gland
 
 [Term]
-id: MTB:140
+id: MTBANAT:140
 name: prostate gland
 synonym: "prostate gland" EXACT []
 xref: UBERON:0002367 ! prostate gland
 
 [Term]
-id: MTB:226
+id: MTBANAT:226
 name: anterior lobe
 synonym: "prostate gland - anterior lobe" EXACT []
 xref: UBERON:0001329 ! prostate gland anterior lobe
 
 [Term]
-id: MTB:432
+id: MTBANAT:432
 name: dorsal lobe
 synonym: "prostate gland - dorsal lobe" EXACT []
 comment: CHECKME - prostate in mouse and human differs
 xref: UBERON:0001328 ! lobe of prostate
 
 [Term]
-id: MTB:227
+id: MTBANAT:227
 name: dorsolateral lobe
 synonym: "prostate gland - dorsolateral lobe" EXACT []
 xref: UBERON:0008808 ! prostate gland dorsolateral lobe
 
 [Term]
-id: MTB:231
+id: MTBANAT:231
 name: epithelial cell
 synonym: "prostate gland - epithelial cell" EXACT []
 xref: CL:0002231 ! epithelial cell of prostate
 
 [Term]
-id: MTB:410
+id: MTBANAT:410
 name: lateral lobe
 synonym: "prostate gland - lateral lobe" EXACT []
 comment: CHECKME - prostate in mouse and human differs
 xref: UBERON:0001328 ! lobe of prostate
 
 [Term]
-id: MTB:232
+id: MTBANAT:232
 name: neuroendocrine cell
 synonym: "prostate gland - neuroendocrine cell" EXACT []
 xref: CL:0000165 ! neuroendocrine cell
 
 [Term]
-id: MTB:228
+id: MTBANAT:228
 name: ventral lobe
 synonym: "prostate gland - ventral lobe" EXACT []
 xref: UBERON:0007615 ! prostate gland ventral lobe
 
 [Term]
-id: MTB:156
+id: MTBANAT:156
 name: renal pelvis
 synonym: "renal pelvis" EXACT []
 xref: UBERON:0001224 ! renal pelvis
 
 [Term]
-id: MTB:407
+id: MTBANAT:407
 name: reproductive system (sex not specified)
 synonym: "reproductive system (sex not specified)" EXACT []
 xref: UBERON:0000990 ! reproductive system
 
 [Term]
-id: MTB:452
+id: MTBANAT:452
 name: (unspecified organ)
 synonym: "respiratory system - (unspecified organ)" EXACT []
 xref: UBERON:0001004 ! respiratory system
 
 [Term]
-id: MTB:187
+id: MTBANAT:187
 name: rete ovarii
 synonym: "rete ovarii" EXACT []
 xref: UBERON:0010185 ! rete ovarii
 
 [Term]
-id: MTB:214
+id: MTBANAT:214
 name: rete testis
 synonym: "rete testis" EXACT []
 xref: UBERON:0003959 ! rete testis
 
 [Term]
-id: MTB:129
+id: MTBANAT:129
 name: reticular cell
 synonym: "reticular cell" EXACT []
 xref: CL:0000432 ! reticular cell
 
 [Term]
-id: MTB:9
+id: MTBANAT:9
 name: salivary gland
 synonym: "salivary gland" EXACT []
 xref: UBERON:0001044 ! salivary gland
 
 [Term]
-id: MTB:19
+id: MTBANAT:19
 name: parotid
 synonym: "salivary gland - parotid" EXACT []
 xref: UBERON:0001831 ! parotid gland
 
 [Term]
-id: MTB:375
+id: MTBANAT:375
 name: salivary duct
 synonym: "salivary gland - salivary duct" EXACT []
 xref: UBERON:0001837 ! duct of salivary gland
 
 [Term]
-id: MTB:430
+id: MTBANAT:430
 name: parotid
 synonym: "salivary gland - salivary duct - parotid" EXACT []
 comment: CHECKME
 xref: UBERON:0001831 ! parotid gland
 
 [Term]
-id: MTB:125
+id: MTBANAT:125
 name: sublingual
 synonym: "salivary gland - sublingual" EXACT []
 xref: UBERON:0001832 ! sublingual gland
 
 [Term]
-id: MTB:10
+id: MTBANAT:10
 name: submandibular
 synonym: "salivary gland - submandibular" EXACT []
 xref: UBERON:0001736 ! submandibular gland
 
 [Term]
-id: MTB:11
+id: MTBANAT:11
 name: seminal vesicle
 synonym: "seminal vesicle" EXACT []
 xref: UBERON:0000998 ! seminal vesicle
 
 [Term]
-id: MTB:389
+id: MTBANAT:389
 name: sertoli cell (sex not specified)
 synonym: "sertoli cell (sex not specified)" EXACT []
 xref: CL:0000216 ! Sertoli cell
 
 [Term]
-id: MTB:303
+id: MTBANAT:303
 name: sex cord stromal cell (sex not specified)
 synonym: "sex cord stromal cell (sex not specified)" EXACT []
 comment: TODO
@@ -1801,209 +1800,209 @@ xref: UBERON:0005295 ! sex cord
 xref: CL:0000499 ! stromal cell
 
 [Term]
-id: MTB:247
+id: MTBANAT:247
 name: (unspecified organ)
 synonym: "skeletal system - (unspecified organ)" EXACT []
 xref: UBERON:0001434 ! skeletal system
 
 [Term]
-id: MTB:45
+id: MTBANAT:45
 name: skin
 synonym: "skin" EXACT []
 xref: UBERON:0000014 ! zone of skin
 
 [Term]
-id: MTB:369
+id: MTBANAT:369
 name: abdomen
 synonym: "skin - abdomen" EXACT []
 xref: UBERON:0001416 ! skin of abdomen
 
 [Term]
-id: MTB:182
+id: MTBANAT:182
 name: anogenital region
 synonym: "skin - anogenital region" EXACT []
 comment: CHECKME
 xref: UBERON:0002356 ! perineum
 
 [Term]
-id: MTB:185
+id: MTBANAT:185
 name: dermis
 synonym: "skin - dermis" EXACT []
 xref: UBERON:0002067 ! dermis
 
 [Term]
-id: MTB:183
+id: MTBANAT:183
 name: dorsal region
 synonym: "skin - dorsal region" EXACT []
 xref: UBERON:0001068 ! skin of back
 
 [Term]
-id: MTB:368
+id: MTBANAT:368
 name: ear
 synonym: "skin - ear" EXACT []
 xref: UBERON:0001459 ! skin of external ear
 
 [Term]
-id: MTB:124
+id: MTBANAT:124
 name: epidermis
 synonym: "skin - epidermis" EXACT []
 xref: UBERON:0001003 ! epidermis
 
 [Term]
-id: MTB:50
+id: MTBANAT:50
 name: basal cell
 synonym: "skin - epidermis - basal cell" EXACT []
 xref: CL:0000646 ! basal cell
 
 [Term]
-id: MTB:200
+id: MTBANAT:200
 name: hair matrix cell
 synonym: "skin - epidermis - hair matrix cell" EXACT []
 comment: CHECKME
 xref: CL:0002562 ! hair germinal matrix cell
 
 [Term]
-id: MTB:165
+id: MTBANAT:165
 name: keratinocyte
 synonym: "skin - epidermis - keratinocyte" EXACT []
 xref: CL:0000312 ! keratinocyte
 
 [Term]
-id: MTB:346
+id: MTBANAT:346
 name: facial region
 synonym: "skin - facial region" EXACT []
 xref: UBERON:1000021 ! skin of face
 
 [Term]
-id: MTB:47
+id: MTBANAT:47
 name: hair follicle
 synonym: "skin - hair follicle" EXACT []
 xref: UBERON:0002073 ! hair follicle
 
 [Term]
-id: MTB:341
+id: MTBANAT:341
 name: basal cell
 synonym: "skin - hair follicle - basal cell" EXACT []
 xref: CL:0000646 ! basal cell
 
 [Term]
-id: MTB:419
+id: MTBANAT:419
 name: head
 synonym: "skin - head" EXACT []
 xref: UBERON:0001084 ! skin of head
 
 [Term]
-id: MTB:345
+id: MTBANAT:345
 name: inguinal region
 synonym: "skin - inguinal region" EXACT []
 xref: UBERON:0008337 ! inguinal part of abdomen
 
 [Term]
-id: MTB:146
+id: MTBANAT:146
 name: melanocyte
 synonym: "skin - melanocyte" EXACT []
 xref: CL:1000458 ! melanocyte of skin
 
 [Term]
-id: MTB:365
+id: MTBANAT:365
 name: skin gland
 synonym: "skin gland" EXACT []
 xref: UBERON:0002419 ! skin gland
 
 [Term]
-id: MTB:279
+id: MTBANAT:279
 name: perianal gland
 synonym: "skin gland - perianal gland" EXACT []
 xref: UBERON:0012281 ! perianal gland
 
 [Term]
-id: MTB:114
+id: MTBANAT:114
 name: sebaceous gland
 synonym: "skin gland - sebaceous gland" EXACT []
 xref: UBERON:0003487 ! skin sebaceous gland
 
 [Term]
-id: MTB:276
+id: MTBANAT:276
 name: sweat gland
 synonym: "skin gland - sweat gland" EXACT []
 xref: UBERON:0001820 ! sweat gland
 
 [Term]
-id: MTB:204
+id: MTBANAT:204
 name: (unspecified organ)
 synonym: "soft tissues - (unspecified organ)" EXACT []
 comment: TODO
 xref: UBERON:0000479 ! tissue
 
 [Term]
-id: MTB:455
+id: MTBANAT:455
 name: (unspecified organ)
 synonym: "special sensory organs - (unspecified organ)" EXACT []
 comment: TODO
 xref: UBERON:0000020 ! sense organ
 
 [Term]
-id: MTB:32
+id: MTBANAT:32
 name: spleen
 synonym: "spleen" EXACT []
 xref: UBERON:0002106 ! spleen
 
 [Term]
-id: MTB:22
+id: MTBANAT:22
 name: red pulp
 synonym: "spleen - red pulp" EXACT []
 xref: UBERON:0001250 ! red pulp of spleen
 
 [Term]
-id: MTB:70
+id: MTBANAT:70
 name: white pulp
 synonym: "spleen - white pulp" EXACT []
 xref: UBERON:0001959 ! white pulp of spleen
 
 [Term]
-id: MTB:157
+id: MTBANAT:157
 name: stem cell
 synonym: "stem cell" EXACT []
 xref: CL:0000034 ! stem cell
 
 [Term]
-id: MTB:159
+id: MTBANAT:159
 name: stomach
 synonym: "stomach" EXACT []
 xref: UBERON:0000945 ! stomach
 
 [Term]
-id: MTB:492
+id: MTBANAT:492
 name: epithelium
 synonym: "stomach - epithelium" EXACT []
 xref: UBERON:0001276 ! epithelium of stomach
 
 [Term]
-id: MTB:304
+id: MTBANAT:304
 name: fundus
 synonym: "stomach - fundus" EXACT []
 xref: UBERON:0001160 ! fundus of stomach
 
 [Term]
-id: MTB:16
+id: MTBANAT:16
 name: glandular
 synonym: "stomach - glandular" EXACT []
 xref: UBERON:0011953 ! stomach glandular region
 
 [Term]
-id: MTB:63
+id: MTBANAT:63
 name: pyloric antrum
 synonym: "stomach - glandular - pyloric antrum" EXACT []
 xref: UBERON:0001165 ! pyloric antrum
 
 [Term]
-id: MTB:322
+id: MTBANAT:322
 name: pylorus
 synonym: "stomach - glandular - pylorus" EXACT []
 xref: UBERON:0001166 ! pylorus
 
 [Term]
-id: MTB:252
+id: MTBANAT:252
 name: neuroendocrine cell
 synonym: "stomach - neuroendocrine cell" EXACT []
 comment: TODO
@@ -2011,55 +2010,55 @@ xref: CL:0000165 ! neuroendocrine cell
 xref: UBERON:0000945 ! stomach
 
 [Term]
-id: MTB:221
+id: MTBANAT:221
 name: subcutis
 synonym: "subcutis" EXACT []
 xref: UBERON:0002072 ! hypodermis
 
 [Term]
-id: MTB:132
+id: MTBANAT:132
 name: synovium
 synonym: "synovium" EXACT []
 xref: UBERON:0011233 ! synovial membrane of synovial tendon sheath
 
 [Term]
-id: MTB:284
+id: MTBANAT:284
 name: tail
 synonym: "tail" EXACT []
 xref: UBERON:0002415 ! tail
 
 [Term]
-id: MTB:39
+id: MTBANAT:39
 name: testis
 synonym: "testis" EXACT []
 xref: UBERON:0000473 ! testis
 
 [Term]
-id: MTB:123
+id: MTBANAT:123
 name: germ cell
 synonym: "testis - germ cell" EXACT []
 xref: CL:0000586 ! germ cell
 
 [Term]
-id: MTB:83
+id: MTBANAT:83
 name: leydig cell (interstitial cell)
 synonym: "testis - leydig cell (interstitial cell)" EXACT []
 xref: CL:0000178 ! Leydig cell
 
 [Term]
-id: MTB:43
+id: MTBANAT:43
 name: seminiferous tubules
 synonym: "testis - seminiferous tubules" EXACT []
 xref: UBERON:0001343 ! seminiferous tubule of testis
 
 [Term]
-id: MTB:241
+id: MTBANAT:241
 name: sertoli cell
 synonym: "testis - seminiferous tubules - sertoli cell" EXACT []
 xref: CL:0000216 ! Sertoli cell
 
 [Term]
-id: MTB:469
+id: MTBANAT:469
 name: sex cord stromal cell
 synonym: "testis - sex cord stromal cell" EXACT []
 comment: TODO
@@ -2067,7 +2066,7 @@ xref: UBERON:0005295 ! sex cord
 xref: UBERON:0005297 ! testis sex cord
 
 [Term]
-id: MTB:456
+id: MTBANAT:456
 name: stroma
 synonym: "testis - stroma" EXACT []
 comment: TODO
@@ -2075,61 +2074,61 @@ xref: UBERON:0003891 ! stroma
 xref: UBERON:0000473 ! testis
 
 [Term]
-id: MTB:356
+id: MTBANAT:356
 name: thoracic cavity
 synonym: "thoracic cavity" EXACT []
 xref: UBERON:0002224 ! thoracic cavity
 
 [Term]
-id: MTB:6
+id: MTBANAT:6
 name: thymus
 synonym: "thymus" EXACT []
 xref: UBERON:0002370 ! thymus
 
 [Term]
-id: MTB:243
+id: MTBANAT:243
 name: cortex
 synonym: "thymus - cortex" EXACT []
 xref: UBERON:0002123 ! cortex of thymus
 
 [Term]
-id: MTB:266
+id: MTBANAT:266
 name: medulla
 synonym: "thymus - medulla" EXACT []
 xref: UBERON:0002124 ! medulla of thymus
 
 [Term]
-id: MTB:29
+id: MTBANAT:29
 name: thyroid gland
 synonym: "thyroid gland" EXACT []
 xref: UBERON:0002046 ! thyroid gland
 
 [Term]
-id: MTB:53
+id: MTBANAT:53
 name: follicular cell
 synonym: "thyroid gland - follicular cell" EXACT []
 xref: CL:0002258 ! thyroid follicular cell
 
 [Term]
-id: MTB:263
+id: MTBANAT:263
 name: medulla
 synonym: "thyroid gland - medulla" EXACT []
 xref: UBERON:0004827 ! thyroid gland medulla
 
 [Term]
-id: MTB:249
+id: MTBANAT:249
 name: c cell
 synonym: "thyroid gland - medulla - c cell" EXACT []
 xref: CL:0000570 ! parafollicular cell
 
 [Term]
-id: MTB:31
+id: MTBANAT:31
 name: tongue
 synonym: "tongue" EXACT []
 xref: UBERON:0001723 ! tongue
 
 [Term]
-id: MTB:488
+id: MTBANAT:488
 name: basal cell
 synonym: "tongue - basal cell" EXACT []
 comment: TODO
@@ -2137,37 +2136,37 @@ xref: CL:0000646 ! basal cell
 xref: UBERON:0001723 ! tongue
 
 [Term]
-id: MTB:180
+id: MTBANAT:180
 name: tooth
 synonym: "tooth" EXACT []
 xref: UBERON:0001091 ! calcareous tooth
 
 [Term]
-id: MTB:508
+id: MTBANAT:508
 name: tooth enamel organ
 synonym: "tooth - tooth enamel organ" EXACT []
 xref: UBERON:0005176 ! tooth enamel organ
 
 [Term]
-id: MTB:93
+id: MTBANAT:93
 name: trachea
 synonym: "trachea" EXACT []
 xref: UBERON:0003126 ! trachea
 
 [Term]
-id: MTB:7
+id: MTBANAT:7
 name: (unspecified organ)
 synonym: "unspecified - (unspecified organ)" EXACT []
 xref: UBERON:0000062 ! organ
 
 [Term]
-id: MTB:177
+id: MTBANAT:177
 name: ureter
 synonym: "ureter" EXACT []
 xref: UBERON:0000056 ! ureter
 
 [Term]
-id: MTB:306
+id: MTBANAT:306
 name: transitional cell
 synonym: "ureter - transitional cell" EXACT []
 comment: TODO
@@ -2175,19 +2174,19 @@ xref: CL:0000731 ! urothelial cell
 xref: UBERON:0000056 ! ureter
 
 [Term]
-id: MTB:272
+id: MTBANAT:272
 name: urethra
 synonym: "urethra" EXACT []
 xref: UBERON:0000057 ! urethra
 
 [Term]
-id: MTB:104
+id: MTBANAT:104
 name: gland
 synonym: "urethra - gland" EXACT []
 xref: UBERON:0001338 ! urethral gland
 
 [Term]
-id: MTB:285
+id: MTBANAT:285
 name: transitional cell
 synonym: "urethra - transitional cell" EXACT []
 comment: TODO
@@ -2195,38 +2194,38 @@ xref: CL:0000731 ! urothelial cell
 xref: UBERON:0000057 ! urethra
 
 [Term]
-id: MTB:94
+id: MTBANAT:94
 name: urinary bladder
 synonym: "urinary bladder" EXACT []
 xref: UBERON:0001255 ! urinary bladder
 
 [Term]
-id: MTB:211
+id: MTBANAT:211
 name: transitional cell
 synonym: "urinary bladder - transitional cell" EXACT []
 comment: TODO
 xref: UBERON:0004645 ! urinary bladder urothelium 
 
 [Term]
-id: MTB:453
+id: MTBANAT:453
 name: (unspecified organ)
 synonym: "urinary system - (unspecified organ)" EXACT []
 xref: UBERON:0001008 ! excretory system
 
 [Term]
-id: MTB:66
+id: MTBANAT:66
 name: uterus
 synonym: "uterus" EXACT []
 xref: UBERON:0000995 ! uterus
 
 [Term]
-id: MTB:84
+id: MTBANAT:84
 name: cervix
 synonym: "uterus - cervix" EXACT []
 xref: UBERON:0000002 ! uterine cervix
 
 [Term]
-id: MTB:424
+id: MTBANAT:424
 name: stroma
 synonym: "uterus - cervix - stroma" EXACT []
 comment: TODO
@@ -2234,13 +2233,13 @@ xref: UBERON:0003891 ! stroma
 xref: UBERON:0000002 ! uterine cervix
 
 [Term]
-id: MTB:62
+id: MTBANAT:62
 name: endometrium
 synonym: "uterus - endometrium" EXACT []
 xref: UBERON:0001295 ! endometrium
 
 [Term]
-id: MTB:268
+id: MTBANAT:268
 name: stroma
 synonym: "uterus - endometrium - stroma" EXACT []
 xref: UBERON:0000002 ! uterine cervix
@@ -2248,25 +2247,25 @@ xref: UBERON:0003891 ! stroma
 xref: UBERON:0001295 ! endometrium
 
 [Term]
-id: MTB:435
+id: MTBANAT:435
 name: myometrium
 synonym: "uterus - myometrium" EXACT []
 xref: UBERON:0001296 ! myometrium
 
 [Term]
-id: MTB:426
+id: MTBANAT:426
 name: uterine gland
 synonym: "uterus - uterine gland" EXACT []
 xref: UBERON:0002451 ! uterine gland
 
 [Term]
-id: MTB:92
+id: MTBANAT:92
 name: vagina
 synonym: "vagina" EXACT []
 xref: UBERON:0000996 ! vagina
 
 [Term]
-id: MTB:490
+id: MTBANAT:490
 name: basal cell
 synonym: "vagina - basal cell" EXACT []
 comment: TODO
@@ -2274,31 +2273,31 @@ xref: CL:0000646 ! basal cell
 xref: UBERON:0000996 ! vagina
 
 [Term]
-id: MTB:495
+id: MTBANAT:495
 name: epithelium
 synonym: "vagina - epithelium" EXACT []
 xref: UBERON:0001344 ! epithelium of vagina
 
 [Term]
-id: MTB:44
+id: MTBANAT:44
 name: vas deferens
 synonym: "vas deferens" EXACT []
 xref: UBERON:0001000 ! vas deferens
 
 [Term]
-id: MTB:112
+id: MTBANAT:112
 name: vesicular gland
 synonym: "vesicular gland" EXACT []
 xref: UBERON:0007194 ! vesicular gland
 
 [Term]
-id: MTB:119
+id: MTBANAT:119
 name: vulva
 synonym: "vulva" EXACT []
 xref: UBERON:0000997 ! mammalian vulva
 
 [Term]
-id: MTB:184
+id: MTBANAT:184
 name: yolk sac
 synonym: "yolk sac" EXACT []
 xref: UBERON:0001040 ! yolk sac
