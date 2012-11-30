@@ -19,7 +19,7 @@
         LAMHDI members are free to add new imports. Care must be taken to avoid causing unsatisfiable
         classes.
       </rdfs:comment>
-      <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://genomebiology.com/2012/13/1/R5</rdfs:seeAlso>
+      <rdfs:seeAlso rdf:datatype="http://build.berkeleybop.org/job/build-lamhdi/">http://genomebiology.com/2012/13/1/R5</rdfs:seeAlso>
       <dc:creator xml:lang="en">Chris Mungall</dc:creator>
 
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/mp.owl"/>
@@ -27,6 +27,8 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/fma.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ma.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/zfa.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/upheno/hp-mp/mp_hp-align-equiv.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/uberon/merged.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/uberon/bridge/uberon-bridge-to-zfa.owl"/>
