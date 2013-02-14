@@ -123,6 +123,11 @@ UBRIDGE = external/uberon/bridge/uberon-bridge-to-
 uberon-simple-vertebrate-bridge.obo:
 	cat $(UBRIDGE)ma.obo $(UBRIDGE)fma.obo $(UBRIDGE)zfa.obo $(UBRIDGE)ehdaa2.obo | grep -v ^ontology | ../tools/flatten-taxon-equivalents.pl > $@.tmp && (echo "ontology: uberon/uberon-simple-bridge" && cat $@.tmp) > $@
 
+# mapping to uberon
+# TODO: don't hardcode idspace
+%-ubr.obo: %.obo
+	obo-map-ids.pl --use-xref-inverse --xref-idspace MA $(HOME)/cvs/uberon/uberon_edit.obo $< > $@
+
 # ----------------------------------------
 # Oort
 # ----------------------------------------

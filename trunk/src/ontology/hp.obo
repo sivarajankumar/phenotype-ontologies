@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 12:10:2012 14:01
+date: 19:11:2012 16:21
 saved-by: sebastiankohler
 auto-generated-by: OBO-Edit 2.1.1-beta9
 subsetdef: secondary_consequence "Consequence of a disorder in another organ system."
@@ -96,6 +96,7 @@ synonym: "Frequent urinary tract infections" EXACT []
 synonym: "Urinary infection" EXACT []
 synonym: "Urinary tract infection" EXACT []
 synonym: "Urinary tract infections" EXACT []
+synonym: "Urinary tract infections, recurrent" EXACT [HPO:skoehler]
 xref: UMLS:C0042029 "Infections, Urinary Tract"
 xref: UMLS:C0262655 "Recurrent urinary tract infections"
 is_a: HP:0002719 ! Recurrent infections
@@ -1641,7 +1642,8 @@ is_a: HP:0000159 ! Abnormality of the lip
 id: HP:0000214
 name: Lip telangiectasia
 def: "`Telangiectasia` (MPATH:476) (that is, the presence of small dilated superficial blood vessels) of the `lips` (FMA:59815)." [HPO:probinson]
-synonym: "Lip telangiectases" RELATED []
+synonym: "Lip telangiectases" EXACT []
+synonym: "TELANGIECTASIA OF THE LIPS" EXACT [HPO:skoehler]
 xref: UMLS:C1857697 "Lip telangiectases"
 is_a: HP:0000159 ! Abnormality of the lip
 is_a: HP:0000228 ! Oral cavity teleangiectasia
@@ -2985,6 +2987,7 @@ synonym: "Frequent otitis media" EXACT []
 synonym: "Multiple episodes of otitis media" EXACT []
 synonym: "Recurrent episodes of otitis media" EXACT []
 synonym: "Susceptibility to otitis media" EXACT []
+synonym: "Otitis media, recurrent" EXACT [HPO:skoehler]
 xref: UMLS:C0747085 "Recurrent otitis media"
 is_a: HP:0000388 ! Otitis media
 is_a: HP:0002719 ! Recurrent infections
@@ -3021,6 +3024,7 @@ alt_id: HP:0008614
 def: "A type of `hearing impairment` (HP:0000365)  in one or both ears related to an `abnormal` (PATO:0000460) `functionality` (PATO:0001509) of the `cochlear nerve` (FMA:53431)." [HPO:probinson]
 comment: Hearing loss caused by damage or dysfunction of the auditory nerve (cranial nerve VIII, also known as the cochlear nerve).
 synonym: "Sensorineural deafness" EXACT []
+synonym: "HEARING LOSS, SENSORINEURAL" EXACT [HPO:skoehler]
 is_a: HP:0000365 ! Hearing impairment
 is_a: HP:0011389 ! Functional abnormality of the inner ear
 
@@ -3648,6 +3652,7 @@ synonym: "Down-slanted palpebral fissures" EXACT []
 synonym: "Down-slanting palpebral fissure" EXACT []
 synonym: "Down-slanting palpebral fissures" EXACT []
 synonym: "Downslanting palpebral fissure" EXACT []
+synonym: "DOWNSLANTING PALPEBRAL FISSURES" EXACT [HPO:skoehler]
 synonym: "Downward slanted palpebral fissures" EXACT []
 synonym: "Downward-slanting palpebral fissures" EXACT []
 synonym: "Palpebral fissures down-slanted" EXACT []
@@ -3664,6 +3669,7 @@ synonym: "Corneal ulceration" RELATED []
 synonym: "Corneal ulcerations" EXACT []
 synonym: "Epithelial corneal erosions" RELATED []
 synonym: "Recurrent corneal ulceration" EXACT []
+synonym: "Corneal erosions, recurrent" EXACT []
 xref: UMLS:C0155119 "Recurrent corneal erosions"
 is_a: HP:0200020 ! Corneal erosions
 
@@ -8322,6 +8328,7 @@ creation_date: 2008-04-02T03:23:00Z
 [Term]
 id: HP:0001123
 name: Visual field defect
+synonym: "VISUAL FIELD DEFECTS" EXACT [HPO:skoehler]
 xref: UMLS:C0036454 "Visual field defects NOS"
 is_a: HP:0000504 ! Abnormality of vision
 
@@ -10299,6 +10306,7 @@ is_a: HP:0010985 ! Gonosomal inheritance
 id: HP:0001419
 name: X-linked recessive inheritance
 def: "A mode of inheritance that is observed for recessive traits related to a gene encoded on the X chromosome. In the context of medical genetics, X-linked recessive disorders manifest in males (who have one copy of the X chromosome and are thus hemizygotes), but generally not in female heterozygotes who have one mutant and one normal allele." [HPO:curators]
+synonym: "X-LINKED RECESSIVE" EXACT [HPO:skoehler]
 xref: UMLS:C0241764
 is_a: HP:0001417 ! X-linked inheritance
 
@@ -11183,6 +11191,7 @@ alt_id: HP:0007563
 def: "Infections of the skin that happen multiple times." [HPO:curators]
 synonym: "Cutaneous infections" EXACT []
 synonym: "Skin infections" EXACT []
+synonym: "Skin infections, recurrent" EXACT [HPO:skoehler]
 xref: UMLS:C1853193 "Recurrent skin infections"
 is_a: HP:0011123 ! Inflammatory abnormality of the skin
 
@@ -13940,8 +13949,10 @@ id: HP:0001988
 name: Recurrent hypoglycemia
 def: "`Recurrent` (PATO:0000427) episodes of `decreased concentration` (PATO:0001163) of `glucose` (CHEBI:17234) in the `blood` (FMA:9670)." [HPO:gcarletti]
 synonym: "Hypoglycemic episodes" EXACT []
-synonym: "Recurrent hypoglycaemia" RELATED []
+synonym: "Recurrent hypoglycaemia" EXACT []
 synonym: "Recurrent hypoglycemic episodes" EXACT []
+synonym: "hypoglycemia, recurrent" EXACT [HPO:skoehler]
+synonym: "hypoglycaemia, recurrent" EXACT [HPO:skoehler]
 xref: UMLS:C1846288 "Recurrent hypoglycemic episodes"
 is_a: HP:0001943 ! Hypoglycemia
 
@@ -15487,6 +15498,7 @@ def: "An increased susceptibility to respiratory infections as manifested by a h
 synonym: "Frequent respiratory infections" EXACT []
 synonym: "Multiple respiratory infections" EXACT []
 synonym: "Susceptibility to respiratory infections" EXACT []
+synonym: "respiratory infections, recurrent" EXACT [HPO:skoehler]
 xref: UMLS:C1866203 "Recurrent respiratory infections"
 is_a: HP:0002719 ! Recurrent infections
 is_a: HP:0011947 ! Respiratory tract infection
@@ -18526,6 +18538,7 @@ synonym: "Frequent, severe infections" EXACT []
 synonym: "Increased frequency of infection" EXACT []
 synonym: "Predisposition to infections" EXACT []
 synonym: "Susceptibility to infection" EXACT []
+synonym: "infections, recurrent" EXACT [HPO:skoehler]
 xref: UMLS:C0239998 "Recurrent infections"
 is_a: HP:0010978 ! Abnormality of immune system physiology
 
@@ -18570,6 +18583,7 @@ is_a: HP:0010977 ! Abnormality of phagocytes
 id: HP:0002724
 name: Recurrent Aspergillus infections
 def: "An increased susceptibility to Aspergillus infections, as manifested by a history of recurrent episodes of Aspergillus infections." [HPO:probinson]
+synonym: "Aspergillus infections, recurrent" EXACT [HPO:skoehler]
 xref: UMLS:C0851807 "Aspergillus infections"
 is_a: HP:0002841 ! Recurrent fungal infections
 
@@ -18583,6 +18597,7 @@ is_a: HP:0002960 ! Autoimmunity
 id: HP:0002726
 name: Recurrent Staphylococcus aureus infections
 def: "Increased susceptibility to Staphylococcus aureus infections, as manifested by recurrent episodes of Staphylococcus aureus infection." [HPO:probinson]
+synonym: "Staphylococcus aureus infections, recurrent" EXACT [HPO:skoehler]
 xref: UMLS:C1318973 "Staphylococcus aureus infections"
 is_a: HP:0007499 ! Recurrent staphylococcal infections
 
@@ -18655,6 +18670,7 @@ id: HP:0002740
 name: Recurrent E. coli infections
 def: "Increased susceptibility to infections with Escherichia coli, as manifested by recurrent episodes of infection with this agent." [HPO:probinson]
 synonym: "E coli infections" EXACT []
+synonym: "E coli infections, recurrent" EXACT [HPO:skoehler]
 is_a: HP:0005420 ! Recurrent gram-negative bacterial infections
 
 [Term]
@@ -18668,6 +18684,7 @@ is_a: HP:0005420 ! Recurrent gram-negative bacterial infections
 id: HP:0002742
 name: Recurrent Klebsiella infections
 def: "Increased susceptibility to Klebsiella infections, as manifested by recurrent episodes of Klebsiella infection." [HPO:probinson]
+synonym: "Klebsiella infections, recurrent" EXACT [HPO:skoehler]
 xref: UMLS:C0022729 "Klebsiella Infections"
 is_a: HP:0005420 ! Recurrent gram-negative bacterial infections
 
@@ -18928,6 +18945,7 @@ synonym: "Recurrent upper respiratory and lower respiratory infections" EXACT []
 synonym: "Recurrent upper respiratory infection" EXACT []
 synonym: "Recurrent upper respiratory infections" EXACT []
 synonym: "Upper respiratory tract infections" EXACT []
+synonym: "Upper respiratory tract infections, recurrent" EXACT [HPO:skoehler]
 xref: UMLS:C0581381 "Recurrent upper respiratory tract infections"
 is_a: HP:0001739 ! Abnormality of the nasopharynx
 is_a: HP:0002205 ! Recurrent respiratory infections
@@ -19199,6 +19217,7 @@ id: HP:0002837
 name: Recurrent bronchitis
 alt_id: HP:0002785
 def: "An increased susceptibility to bronchitis as manifested by a history of recurrent bronchitis." [HPO:probinson]
+synonym: "Bronchitis, recurrent" EXACT [HPO:skoehler]
 xref: UMLS:C0741796 "Recurrent bronchitis"
 is_a: HP:0002109 ! Abnormality of the bronchi
 is_a: HP:0002788 ! Recurrent upper respiratory tract infections
@@ -21771,6 +21790,7 @@ is_a: HP:0010917 ! Abnormality of tyrosine metabolism
 [Term]
 id: HP:0003232
 name: Mitochondrial malic enzyme reduced
+synonym: "DECREASED MITOCHONDRIAL MALIC ENZYME" EXACT [HPO:skoehler]
 is_a: HP:0003287 ! Abnormality of mitochondrial metabolism
 
 [Term]
@@ -24080,6 +24100,7 @@ name: Recurrent myoglobinuria
 alt_id: HP:0008313
 def: "Recurring episodes of myoglobinuria, i.e., of the presence of myoglobin in the urine. This is usually a consequence of rhabdomyolysis, i.e., of the destruction of muscle tissue." [HPO:probinson]
 synonym: "Myoglobinuria, episodic" EXACT []
+synonym: "Myoglobinuria, recurrent" EXACT [HPO:skoehler]
 is_a: HP:0000093 ! Proteinuria
 
 [Term]
@@ -31049,6 +31070,7 @@ id: HP:0005115
 name: Supraventricular arrhythmia
 def: "A type of arrhythmia that originates above the ventricles, whereby the electrical impulse propagates down the normal His Purkinje system similar to normal sinus rhythm." [HPO:probinson]
 comment: Supraventricular arrhythmia includes atrial arrhythmias (atrial tachycardia, atrial flutter, atrial fibrillation), atrioventricular nodal reentrant tachycardia, junctional ectopic tachycardia, atrioventricular reentrant tachycardia (Wolf-Parkinson-White Syndrome), orthodromic or antidromic. Supraventricular arrhythmia is distinct from ventricular tachycardia, which originates in the ventricles.
+synonym: "arrhythmias, Supraventricular" EXACT [HPO:skoehler]
 xref: UMLS:C0428974 "Supraventricular arrhythmia"
 is_a: HP:0011675 ! Arrhythmia
 created_by: peter
@@ -32217,6 +32239,7 @@ comment: Abnormal sparseness of the eyebrows laterally.
 synonym: "Lateral hypoplasia of eyebrows " EXACT []
 synonym: "Lateral thinning of eyebrows" EXACT []
 synonym: "Laterally sparse eyebrow" EXACT []
+synonym: "Laterally sparse eyebrows" EXACT [HPO:skoehler]
 xref: UMLS:C1860829 "Laterally sparse eyebrow"
 is_a: HP:0000535 ! Sparse eyebrow
 
@@ -37240,6 +37263,8 @@ synonym: "Pneumonia, recurrent episodes" EXACT []
 synonym: "Pulmonary infection" EXACT []
 synonym: "Pulmonary infections" EXACT []
 synonym: "Recurrent pulmonary infections" EXACT []
+synonym: "pulmonary infections, recurrent" EXACT [HPO:skoehler]
+synonym: "Pneumonia, recurrent" EXACT [HPO:skoehler]
 xref: UMLS:C0694550 "recurrent pneumonia"
 is_a: HP:0002090 ! Pneumonia
 is_a: HP:0002783 ! Recurrent lower respiratory tract infections
@@ -43071,8 +43096,7 @@ is_a: HP:0010924 ! Posterior cortical cataract
 [Term]
 id: HP:0007949
 name: Progressive macular scarring
-is_a: HP:0001103 ! Abnormality of the macula
-is_a: HP:0100699 ! Scarring
+is_a: HP:0200056 ! Macular scarring
 
 [Term]
 id: HP:0007950
@@ -64000,6 +64024,7 @@ creation_date: 2010-08-18T01:39:38Z
 id: HP:0010871
 name: Sensory ataxia
 def: "Incoordination of movement caused by a deficit in the sensory nervous system. Sensory ataxia can be distinguished from cerebellar ataxia by asking the patient to close his or her eyes. Persons with cerebellar ataxia show only a minimal worsening of symptoms, whereas persons with sensory ataxia show a marked worsening of symptoms." [HPO:probinson]
+synonym: "Ataxia, sensory" EXACT [HPO:skoehler]
 is_a: HP:0010831 ! Impaired proprioception
 created_by: peter
 creation_date: 2010-08-18T01:57:54Z
@@ -66096,6 +66121,7 @@ id: HP:0011108
 name: Recurrent sinusitis
 def: "A `recurrent` (PATO:0000427) form of `sinusitis` (HP:0000246)." [HPO:probinson]
 comment: Recurring inflammation of the paranasal sinuses.
+synonym: "Sinusitis, recurrent" EXACT [HPO:skoehler]
 is_a: HP:0000246 ! Sinusitis
 is_a: HP:0002788 ! Recurrent upper respiratory tract infections
 created_by: peter
@@ -72077,6 +72103,7 @@ creation_date: 2012-04-26T12:05:14Z
 id: HP:0011808
 name: Decreased patellar reflex
 def: "Decreased intensity of the patellar reflex (also known as the knee jerk reflex)." [HPO:probinson]
+synonym: "DECREASED PATELLAR REFLEXES" EXACT [HPO:skoehler]
 is_a: HP:0002600 ! Hyporeflexia of lower limbs
 created_by: peter
 creation_date: 2012-04-27T08:38:22Z
@@ -74848,7 +74875,7 @@ id: HP:0012129
 name: Abnormality of bone marrow stromal cells
 is_a: HP:0005561 ! Abnormality of bone marrow cell morphology
 created_by: peter
-creation_date: 2012-09-16T19:13:26Z
+creation_date: 2012-09-16T07:13:26Z
 
 [Term]
 id: HP:0012130
@@ -74856,7 +74883,7 @@ name: Abnormality of cells of the erythroid lineage
 def: "An anomaly of `erythroid lineage cells` (CL:0000764), that is, of the erythropoietic cells in the lineage leading to and including erythrocytes." [DDD:akelly]
 is_a: HP:0005561 ! Abnormality of bone marrow cell morphology
 created_by: peter
-creation_date: 2012-09-16T19:14:03Z
+creation_date: 2012-09-16T07:14:03Z
 
 [Term]
 id: HP:0012131
@@ -74864,7 +74891,7 @@ name: Abnormal number of erythroid precursors
 def: "A deviation from the normal count of erythroid precursor cells, that is,  `erythroid lineage cells` (CL:0000764) in the bone marrow." [DDD:akelly]
 is_a: HP:0012130 ! Abnormality of cells of the erythroid lineage
 created_by: peter
-creation_date: 2012-09-16T19:17:18Z
+creation_date: 2012-09-16T07:17:18Z
 
 [Term]
 id: HP:0012132
@@ -74872,7 +74899,7 @@ name: Erythroid hyperplasia
 def: "Increased count of erythroid precursor cells, that is,  `erythroid lineage cells` (CL:0000764) in the bone marrow." [DDD:akelly]
 is_a: HP:0012131 ! Abnormal number of erythroid precursors
 created_by: peter
-creation_date: 2012-09-16T19:19:21Z
+creation_date: 2012-09-16T07:19:21Z
 
 [Term]
 id: HP:0012133
@@ -74880,14 +74907,14 @@ name: Erythroid hypoplasia
 def: "Decreased count of erythroid precursor cells, that is,  `erythroid lineage cells` (CL:0000764) in the bone marrow." [DDD:akelly]
 is_a: HP:0012131 ! Abnormal number of erythroid precursors
 created_by: peter
-creation_date: 2012-09-16T19:21:19Z
+creation_date: 2012-09-16T07:21:19Z
 
 [Term]
 id: HP:0012134
 name: Dysplastic erythropoesis
 is_a: HP:0012130 ! Abnormality of cells of the erythroid lineage
 created_by: peter
-creation_date: 2012-09-16T20:01:11Z
+creation_date: 2012-09-16T08:01:11Z
 
 [Term]
 id: HP:0012135
@@ -74895,28 +74922,28 @@ name: Abnormality of cells of the granulocytic lineage
 def: "An anomaly of cells involved in  the formation of a granulocytes, that is, of the `granulocytopoietic cell` (CL:0002191)." [DDD:akelly]
 is_a: HP:0005561 ! Abnormality of bone marrow cell morphology
 created_by: peter
-creation_date: 2012-09-16T20:02:11Z
+creation_date: 2012-09-16T08:02:11Z
 
 [Term]
 id: HP:0012136
 name: Dysplastic granulopoesis
 is_a: HP:0012135 ! Abnormality of cells of the granulocytic lineage
 created_by: peter
-creation_date: 2012-09-16T20:05:13Z
+creation_date: 2012-09-16T08:05:13Z
 
 [Term]
 id: HP:0012137
 name: Abnormal number of granulocyte precursors
 is_a: HP:0012135 ! Abnormality of cells of the granulocytic lineage
 created_by: peter
-creation_date: 2012-09-16T20:09:13Z
+creation_date: 2012-09-16T08:09:13Z
 
 [Term]
 id: HP:0012138
 name: Granulocytic hyperplasia
 is_a: HP:0012137 ! Abnormal number of granulocyte precursors
 created_by: peter
-creation_date: 2012-09-16T20:09:36Z
+creation_date: 2012-09-16T08:09:36Z
 
 [Term]
 id: HP:0012139
@@ -74924,7 +74951,7 @@ name: Granulocytic hypoplasia
 def: "Decreased number of granulocyte precursors in the bone marrow." [HPO:akelly]
 is_a: HP:0012137 ! Abnormal number of granulocyte precursors
 created_by: peter
-creation_date: 2012-09-16T20:09:56Z
+creation_date: 2012-09-16T08:09:56Z
 
 [Term]
 id: HP:0012140
@@ -74932,7 +74959,7 @@ name: Abnormality of cells of the lymphoid lineage
 def: "An anomaly of cells that originate from the `lymphoid lineage restricted progenitor cell` (CL:0000838)." [HPO:probinson]
 is_a: HP:0005561 ! Abnormality of bone marrow cell morphology
 created_by: peter
-creation_date: 2012-09-16T20:13:39Z
+creation_date: 2012-09-16T08:13:39Z
 
 [Term]
 id: HP:0012141
@@ -74940,7 +74967,7 @@ name: Lymphocvtosis
 def: "Increase in the number or proportion of lymphocytes in the blood." [DDD:akelly]
 is_a: HP:0012140 ! Abnormality of cells of the lymphoid lineage
 created_by: peter
-creation_date: 2012-09-16T20:18:05Z
+creation_date: 2012-09-16T08:18:05Z
 
 [Term]
 id: HP:0012142
@@ -74949,7 +74976,7 @@ def: "A subtype of ductal pancreatic carcinoma that is thought to  originate fro
 synonym: "Squamous cell carcinoma of the pancreas" EXACT []
 is_a: HP:0002894 ! Neoplasm of the pancreas
 created_by: peter
-creation_date: 2012-09-16T20:55:24Z
+creation_date: 2012-09-16T08:55:24Z
 
 [Term]
 id: HP:0012143
@@ -74957,21 +74984,21 @@ name: Abnormality of cells of the megakaryocyte lineage
 def: "Anomaly of `megakaryocytes` (CL:0000556)." [HPO:probinson]
 is_a: HP:0005561 ! Abnormality of bone marrow cell morphology
 created_by: peter
-creation_date: 2012-09-16T20:20:38Z
+creation_date: 2012-09-16T08:20:38Z
 
 [Term]
 id: HP:0012144
 name: Abnormality of cells of the monocyte/macrophage lineage
 is_a: HP:0005561 ! Abnormality of bone marrow cell morphology
 created_by: peter
-creation_date: 2012-09-16T20:21:37Z
+creation_date: 2012-09-16T08:21:37Z
 
 [Term]
 id: HP:0012145
 name: Abnormality of multiple cell lineages in the bone marrow
 is_a: HP:0005561 ! Abnormality of bone marrow cell morphology
 created_by: peter
-creation_date: 2012-09-16T20:21:57Z
+creation_date: 2012-09-16T08:21:57Z
 
 [Term]
 id: HP:0012146
@@ -74979,7 +75006,7 @@ name: Abnormality of  von Willebrand factor
 def: "Decreased quantity or activity of `von Willebrand factor` (PR:000017364). Von Willebrand factor mediates the adhesion of platelets to the collagen exposed on endothelial cell surfaces." [DDD:akelly]
 is_a: HP:0003256 ! Abnormality of the coagulation cascade
 created_by: peter
-creation_date: 2012-09-16T20:25:58Z
+creation_date: 2012-09-16T08:25:58Z
 
 [Term]
 id: HP:0012147
@@ -74988,7 +75015,7 @@ def: "Decreased quantity of `von Willebrand factor` (PR:000017364)." [DDD:akelly
 synonym: "Decreased von Willebrand factor" RELATED []
 is_a: HP:0012146 ! Abnormality of  von Willebrand factor
 created_by: peter
-creation_date: 2012-09-16T20:27:00Z
+creation_date: 2012-09-16T08:27:00Z
 
 [Term]
 id: HP:0012148
@@ -74996,7 +75023,7 @@ name: Multiple lineage myelodysplasia
 def: "Myelodysplasia with dysplastic changes in two or more of the myeloid lineages: erythroid, granulocytic, megakaryocytic." [DDD:akelly]
 is_a: HP:0002863 ! Myelodysplasia
 created_by: peter
-creation_date: 2012-09-16T20:33:33Z
+creation_date: 2012-09-16T08:33:33Z
 
 [Term]
 id: HP:0012149
@@ -75004,7 +75031,7 @@ name: Bilineage myelodysplasia
 def: "Myelodysplasia with dysplastic changes in two of the myeloid lineages: erythroid, granulocytic, megakaryocytic." [DDD:akelly]
 is_a: HP:0002863 ! Myelodysplasia
 created_by: peter
-creation_date: 2012-09-16T20:39:10Z
+creation_date: 2012-09-16T08:39:10Z
 
 [Term]
 id: HP:0012150
@@ -75012,7 +75039,7 @@ name: Single lineage myelodysplasia
 def: "Abnormality/dysplasia of a single myeloid cell (erythroid, granulocytic, or megakaryocytic)." [DDD:akelly]
 is_a: HP:0002863 ! Myelodysplasia
 created_by: peter
-creation_date: 2012-09-16T20:39:39Z
+creation_date: 2012-09-16T08:39:39Z
 
 [Term]
 id: HP:0012151
@@ -75022,7 +75049,7 @@ comment: Hemothorax may result from hemorrhage in the chest wall, lung parenchym
 xref: MeSH:D006491 "Hemothorax"
 is_a: HP:0002103 ! Abnormality of the pleura
 created_by: peter
-creation_date: 2012-09-16T20:58:32Z
+creation_date: 2012-09-16T08:58:32Z
 
 [Term]
 id: HP:0012152
@@ -75030,7 +75057,7 @@ name: Foveoschisis
 def: "Splitting of the retinal layers in the macula." [HPO:probinson]
 is_a: HP:0000493 ! Abnormality of the fovea
 created_by: peter
-creation_date: 2012-09-16T21:06:26Z
+creation_date: 2012-09-16T09:06:26Z
 
 [Term]
 id: HP:0012153
@@ -83028,8 +83055,6 @@ is_a: HP:0001849 ! Oligodactyly (feet)
 created_by: doelkens
 creation_date: 2011-11-22T09:56:55Z
 
-
-
 [Term]
 id: HP:0200055
 name: Small hands
@@ -83038,4 +83063,33 @@ synonym: "Relatively small hands" EXACT []
 is_a: HP:0005922 ! Abnormal hand morphology
 created_by: sebastiankohler
 
+[Term]
+id: HP:0200056
+name: Macular scarring
+is_a: HP:0001103 ! Abnormality of the macula
+is_a: HP:0100699 ! Scarring
+created_by: sebastiankohler
+creation_date: 2012-11-18T11:09:09Z
+
+[Term]
+id: HP:0200057
+name: Marcus Gunn pupil
+comment: Video description of how to test patients at: http://www.youtube.com/watch?v=HSYo7LhfV3A .
+synonym: "relative afferent pupil defect" EXACT [HPO:skoehler]
+synonym: "relative afferent pupillary defect" EXACT [HPO:skoehler]
+is_a: HP:0000587 ! Abnormality of the optic nerve
+created_by: sebastiankohler
+creation_date: 2012-11-18T12:14:22Z
+
+[Term]
+id: HP:0200058
+name: Angiosarcoma
+is_a: HP:0100242 ! Sarcoma
+created_by: sebastiankohler
+
+[Term]
+id: HP:0200059
+name: Metastatic angiosarcoma
+is_a: HP:0200058 ! Angiosarcoma
+created_by: sebastiankohler
 
