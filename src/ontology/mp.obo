@@ -1,9 +1,10 @@
 format-version: 1.2
-date: 01:11:2012 16:23
+date: 04:12:2012 10:22
 saved-by: csmith
 auto-generated-by: OBO-Edit 2.1
 subsetdef: CvDC_Terms "NHLBI Cardiovascular Development Consortium (CvDC) Terms"
 subsetdef: Europhenome_Terms "Terms in use by Europhenome"
+subsetdef: IMPC_Prenatal "Terms in use by IMPC Early Viability Group"
 subsetdef: Sanger_Terms "Terms in use by Mouse Genetics Project, Sanger Institute, Wellcome Trust Genome Campus"
 default-namespace: MPheno.ontology
 remark: The Mammalian Phenotype Ontology is being developed by Cynthia L. Smith, Susan M. Bello, Carroll W. Goldsmith and Janan T. Eppig, as part of the Mouse Genome Database (MGD) Project, Mouse Genome Informatics (MGI), The Jackson Laboratory, Bar Harbor, ME. Copyright 2007 The Jackson Laboratory. This file contains pre-coordinated phenotype terms, definitions and synonyms that can be used to describe mammalian phenotypes. The ontology is represented as a directed acyclic graph (DAG). It organizes phenotype terms into major biological system headers such as nervous system and respiratory system.  Behavior and lethality terms are also represented. This ontology is currently under development. Daily updates are available at the Mouse Genome Informatics (MGI) ftp site (ftp://ftp.informatics.jax.org/pub/reports/index.html#pheno) as well as the OBO Foundry site (http://obofoundry.org/). Questions, comments and suggestions are welcome, and should be directed to pheno@informatics.jax.org MGD is funded by NIH/NHGRI grant HG000330.
@@ -208,9 +209,14 @@ is_a: MP:0003169 ! abnormal scala media morphology
 
 [Term]
 id: MP:0000034
-name: abnormal vestibule morphology
+name: abnormal inner ear vestibule morphology
 def: "any structural anomaly of the cavity between the semicircular canals and the cochlea of the inner ear" [ISBN:0-683-40008-8]
-synonym: "vestibular dysplasia" EXACT []
+synonym: "abnormal bony labyrinth vestibule morphology" EXACT []
+synonym: "abnormal inner ear vestibulum morphology" EXACT []
+synonym: "abnormal osseous labyrinth vestibule morphology" EXACT []
+synonym: "abnormal vestibule morphology" BROAD []
+synonym: "abnormal vestibule of bony labyrinth morphology" EXACT []
+synonym: "vestibular dysplasia" BROAD []
 is_a: MP:0000026 ! abnormal inner ear morphology
 
 [Term]
@@ -578,6 +584,7 @@ id: MP:0000097
 name: short maxilla
 alt_id: MP:0000093
 def: "reduced length of the upper jaw bone" [ISBN:0-683-40008-8, PMID:9949198]
+synonym: "reduced maxilla length" EXACT []
 synonym: "reduced upper jaw length" EXACT []
 is_a: MP:0004540 ! small maxilla
 
@@ -674,6 +681,7 @@ alt_id: Fyler:4876
 alt_id: MP:0000429
 def: "congenital fissure of the tissues normally uniting to form the palate" [ISBN:0-683-40008-8, PMID:9753320]
 subset: CvDC_Terms
+subset: IMPC_Prenatal
 synonym: "palatoschisis" EXACT []
 is_a: MP:0003755 ! abnormal palate morphology
 
@@ -1585,6 +1593,7 @@ id: MP:0000259
 name: abnormal vascular development
 alt_id: MP:0001620
 def: "aberrant process of vascular formation" [ISBN:0-683-40008-8]
+subset: IMPC_Prenatal
 synonym: "vascular development abnormalities" EXACT []
 is_a: MP:0001614 ! abnormal blood vessel morphology
 is_a: MP:0002925 ! abnormal cardiovascular development
@@ -1630,6 +1639,7 @@ alt_id: MP:0000271
 def: "any structural anomaly of the hollow, muscular organ that maintains the circulation of the blood" [MESH:A07.541, PMID:7477375]
 subset: CvDC_Terms
 subset: Europhenome_Terms
+subset: IMPC_Prenatal
 synonym: "abnormal cardiac morphology" EXACT []
 synonym: "abnormal heart" BROAD []
 synonym: "cardiac abnormalities" BROAD []
@@ -1645,6 +1655,7 @@ id: MP:0000267
 name: abnormal heart development
 alt_id: MP:0001624
 def: "aberrant formation or incomplete differentiation of the heart" [MGI:csmith, PMID:9949198]
+subset: IMPC_Prenatal
 synonym: "abnormal cardiac development" EXACT []
 synonym: "cardiac development abnormalities" EXACT []
 xref: GO:0007505
@@ -1733,7 +1744,7 @@ is_a: MP:0010563 ! increased heart right ventricle size
 [Term]
 id: MP:0000277
 name: abnormal heart shape
-def: "any structural anomaly of the form or the patterning of the heart" [PMID:7926784]
+def: "any anomaly in the characteristic surface outline or contour of the heart" [MGI:csmith]
 synonym: "heart shape abnormalities" EXACT []
 is_a: MP:0000266 ! abnormal heart morphology
 
@@ -1841,6 +1852,7 @@ name: abnormal pericardium morphology
 alt_id: Fyler:1900
 def: "any structural anomaly of the fibroserous membrane covering the heart and beginning of the great vessels" [ISBN:0-683-40008-8, MGI:cml, PMID:10072433]
 subset: CvDC_Terms
+subset: IMPC_Prenatal
 synonym: "abnormal pericaridal sac morphology" EXACT []
 synonym: "pericardial abnormalities" BROAD []
 synonym: "pericardium dysplasia" EXACT []
@@ -2990,6 +3002,7 @@ name: abnormal digestive system morphology
 alt_id: MP:0000463
 alt_id: MP:0002141
 def: "any structural anomaly of the system dedicated to the mechanical, chemical, and enzymatic processing of food" [ISBN:0-683-40008-8, MGI:cwg]
+subset: IMPC_Prenatal
 synonym: "digestive system abnormalities" BROAD []
 synonym: "digestive system defects" BROAD []
 synonym: "digestive system dysplasia" EXACT []
@@ -3479,6 +3492,7 @@ is_a: MP:0011333 ! abnormal kidney inner medulla morphology
 id: MP:0000527
 name: abnormal kidney development
 def: "any anomaly in the differentiation of the paired organs responsible for urine secretion" [MGI:cwg]
+subset: IMPC_Prenatal
 synonym: "abnormal nephrogenesis" EXACT []
 synonym: "abnormal renal development" EXACT []
 synonym: "kidney development abnormalities" EXACT []
@@ -3556,7 +3570,8 @@ is_a: MP:0000534 ! abnormal ureter morphology
 [Term]
 id: MP:0000537
 name: abnormal urethra morphology
-def: "any structural anomaly of the canal leading from the bladder, discharging the urine externally" [ISBN:0-683-40008-8]
+def: "any structural anomaly of the fibromuscular tubular canal through which urine is discharged from the bladder to the exterior via the external urinary meatus; in males, the urethra is joined by the ejaculatory ducts and serves as a passageway for semen during ejaculation, as well as a canal for urine during voiding; in females, the urethra is shorter and emerges above the vaginal opening" [MGI:anna]
+synonym: "abnormal urogenital canal morphology" EXACT []
 synonym: "urethra abnormalities" BROAD []
 synonym: "urethra dysplasia" EXACT []
 is_a: MP:0000516 ! abnormal renal/urinary system morphology
@@ -3577,6 +3592,10 @@ is_a: MP:0000516 ! abnormal renal/urinary system morphology
 id: MP:0000539
 name: distended urinary bladder
 def: "stretched musculomembranous organ that serves to collect and store urine excreted by the kidneys" [ISBN:0-683-40008-8]
+synonym: "dilated urinary bladder" EXACT []
+synonym: "megabladder" EXACT []
+synonym: "megacystis" EXACT []
+synonym: "megalocystis" EXACT []
 synonym: "urinary bladder distension" EXACT []
 is_a: MP:0000538 ! abnormal urinary bladder morphology
 
@@ -3769,6 +3788,7 @@ alt_id: Fyler:4103
 def: "greater than the normal complement of digits on one or more autopods" [ISBN:0-683-40008-8]
 subset: CvDC_Terms
 subset: Europhenome_Terms
+subset: IMPC_Prenatal
 subset: Sanger_Terms
 synonym: "extra fingers" NARROW []
 synonym: "extra toes" NARROW []
@@ -3993,6 +4013,7 @@ is_obsolete: true
 id: MP:0000596
 name: abnormal liver development
 def: "any anomaly in the differentiation of the liver" [MGI:cwg]
+subset: IMPC_Prenatal
 synonym: "abnormal hepatic development" EXACT []
 is_a: MP:0000598 ! abnormal liver morphology
 is_a: MP:0003943 ! abnormal hepatobiliary system development
@@ -4010,6 +4031,7 @@ alt_id: Fyler:4447
 alt_id: MP:0000595
 def: "any structural anomaly of the bile-secreting organ that is important for detoxification, for fat, carbohydrate, and protein metabolism, and for glycogen storage" [ISBN:0-683-40008-8, MGI:csmith]
 subset: CvDC_Terms
+subset: IMPC_Prenatal
 synonym: "abnormal hepatic morphology" EXACT []
 synonym: "abnormal liver" BROAD []
 synonym: "liver dysplasia" EXACT []
@@ -4048,6 +4070,7 @@ is_a: MP:0008989 ! abnormal liver sinusoid morphology
 id: MP:0000603
 name: pale liver
 def: "liver lacking normal coloration, often refers to bloodless condition" [PMID:7926784]
+subset: IMPC_Prenatal
 is_a: MP:0000598 ! abnormal liver morphology
 
 [Term]
@@ -6153,6 +6176,7 @@ id: MP:0000913
 name: abnormal brain development
 alt_id: MP:0001888
 def: "aberrant or incomplete differentiation of the brain" [MGI:csmith, PMID:9753320]
+subset: IMPC_Prenatal
 synonym: "brain development abnormalities" EXACT []
 xref: GO:0007420
 is_a: MP:0002152 ! abnormal brain morphology
@@ -6162,6 +6186,7 @@ is_a: MP:0003861 ! abnormal nervous system development
 id: MP:0000914
 name: exencephaly
 def: "neurocranial defects resulting in exposure or extrusion of the brain" [ISBN:0-683-40008-8, PMID:9753320]
+subset: IMPC_Prenatal
 subset: Sanger_Terms
 synonym: "cranial hernia" EXACT []
 synonym: "exencephalia" EXACT []
@@ -7832,7 +7857,7 @@ is_a: MP:0001137 ! abnormal cervix epithelium morphology
 [Term]
 id: MP:0001139
 name: abnormal vagina morphology
-def: "any structural anomaly of the female reproductive canal located between the uterus and the vulva" [ISBN:0-683-40008-8]
+def: "any structural anomaly of the part of the genital canal in the female that extends between the cervix of the uterus and the vestibule; it is an organ of copulation that receives the penis during sexual intercourse" [ISBN:0-683-40008-8, MGI:anna]
 subset: Europhenome_Terms
 synonym: "abnormal vaginal morphology" EXACT []
 synonym: "vaginal dysplasia" EXACT []
@@ -7853,17 +7878,25 @@ is_a: MP:0001140 ! abnormal vagina epithelium morphology
 
 [Term]
 id: MP:0001142
-name: abnormal vagina opening
-def: "any structural anomaly of the opening to the female genital canal" [ISBN:0-683-40008-8, MGI:csmith]
+name: abnormal vagina orifice morphology
+def: "any structural anomaly of the median slit located inferior and posterior to the external urethral orifice in the female; the exit for menstrual flow and birth and the entrance for the penis during sexual intercourse; the size and appearance of the vaginal orifice varies inversely with that of the hymen (G. membrane), a thin fold of mucous membrane that surrounds the vaginal orifice" [MGI:anna, MGI:csmith]
+synonym: "abnormal introitus of vagina morphology" EXACT []
+synonym: "abnormal orificium vaginae morphology" EXACT []
+synonym: "abnormal ostium vaginae morphology" EXACT []
+synonym: "abnormal vagina opening" EXACT []
+synonym: "abnormal vaginal introitus morphology" EXACT []
 synonym: "abnormal vaginal opening" EXACT []
+synonym: "abnormal vaginal orifice morphology" EXACT []
 is_a: MP:0001139 ! abnormal vagina morphology
 
 [Term]
 id: MP:0001143
-name: constricted vagina opening
-def: "shrunken, narrowed external vaginal opening" [J:50844]
+name: constricted vagina orifice
+def: "shrunken, narrowed external median slit located inferior and posterior to the external urethral orifice in the female" [MGI:anna]
+synonym: "constricted vagina opening" EXACT []
+synonym: "constricted vaginal introitus " EXACT []
 synonym: "constricted vaginal opening" EXACT []
-is_a: MP:0001142 ! abnormal vagina opening
+is_a: MP:0001142 ! abnormal vagina orifice morphology
 
 [Term]
 id: MP:0001144
@@ -7876,7 +7909,7 @@ synonym: "fused vagina opening" EXACT []
 synonym: "fused vaginal opening" RELATED []
 synonym: "imperforate vagina" EXACT []
 synonym: "vaginal atresia" EXACT []
-is_a: MP:0001142 ! abnormal vagina opening
+is_a: MP:0001142 ! abnormal vagina orifice morphology
 
 [Term]
 id: MP:0001145
@@ -8055,8 +8088,10 @@ is_a: MP:0001158 ! abnormal prostate gland morphology
 id: MP:0001169
 name: abnormal bulbourethral gland morphology
 alt_id: MP:0000669
-def: "any structural anomaly of the gland in males that lies along the prostate gland and secretes a fluid component of the seminal fluid into the urethra" [ISBN:0-683-40008-8]
+def: "any structural anomaly of any of the small paired racemose (compound tubulo-alveolar) glands below the apex of the prostate in males, located posterolateral to the membranous portion of the urethra at the base of the penis, between the two layers of the fascia of the urogenital diaphragm, in the deep perineal pouch, and enclosed by transverse fibers of the sphincter urethrae membranaceae muscle; they secrete a clear fluid known as pre-ejaculate (Cowper's fluid), and are homologous to the greater vestibular (Bartholin's) glands in the female" [MGI:anna]
 synonym: "abnormal Cowper's gland morphology" EXACT []
+synonym: "abnormal glandula bulbourethralis" EXACT []
+synonym: "abnormal Méry gland morphology" EXACT []
 synonym: "bulbourethral gland dysplasia" EXACT []
 is_a: MP:0000653 ! abnormal sex gland morphology
 is_a: MP:0009205 ! abnormal internal male genitalia morphology
@@ -8085,6 +8120,7 @@ consider: MP:0001169
 id: MP:0001175
 name: abnormal lung morphology
 def: "any structural anomaly of the paired lobed visceral organs of respiration in the pulmonary cavity of the thorax where aeration of the blood normally occurs" [ISBN:0-683-40008-8]
+subset: IMPC_Prenatal
 synonym: "abnormal lung" BROAD []
 synonym: "lung dysplasia" EXACT []
 is_a: MP:0002132 ! abnormal respiratory system morphology
@@ -8093,6 +8129,7 @@ is_a: MP:0002132 ! abnormal respiratory system morphology
 id: MP:0001176
 name: abnormal lung development
 def: "anomaly in the process of formation of the paired lobed visceral organs of respiration in the pulmonary cavity of the thorax where aeration of the blood normally occurs" [ISBN:0-683-40008-8]
+subset: IMPC_Prenatal
 is_a: MP:0001175 ! abnormal lung morphology
 is_a: MP:0003115 ! abnormal respiratory system development
 
@@ -8932,6 +8969,7 @@ alt_id: MP:0001298
 def: "absence of the globe and ocular tissue from the orbit, with or without the presence of ocular adnexa (eyelids, conjunctiva, and lacrimal apparatus); remnants of the globe sometimes appear in ectopic locations" [MGI:csmith]
 subset: CvDC_Terms
 subset: Europhenome_Terms
+subset: IMPC_Prenatal
 subset: Sanger_Terms
 synonym: "absence of eyes" EXACT []
 synonym: "absent eyes" EXACT []
@@ -8956,6 +8994,7 @@ alt_id: Fyler:4877
 def: "reduced average size of the eyes" [PMID:7926784]
 subset: CvDC_Terms
 subset: Europhenome_Terms
+subset: IMPC_Prenatal
 subset: Sanger_Terms
 synonym: "decreased eye size" EXACT []
 synonym: "microphthalamos" EXACT []
@@ -9638,6 +9677,7 @@ is_a: MP:0003313 ! abnormal locomotor activation
 id: MP:0001404
 name: no spontaneous movement
 def: "failure of neonates or embryos to initiate any voluntary or spontaneous change in position or posture, with or without external stimulus" [ISBN:0-683-40008-8, MGI:csmith]
+subset: IMPC_Prenatal
 synonym: "failure to move" EXACT []
 is_a: MP:0003313 ! abnormal locomotor activation
 
@@ -10599,6 +10639,7 @@ is_a: MP:0003948 ! abnormal gas homeostasis
 id: MP:0001575
 name: cyanosis
 def: "a dark bluish or purple skin discoloration resulting from deficient oxygenation of the blood" [ISBN:0-683-40008-8]
+subset: IMPC_Prenatal
 synonym: "cyanotic" EXACT []
 is_a: MP:0001574 ! abnormal oxygen level
 is_a: MP:0009642 ! abnormal blood homeostasis
@@ -10742,6 +10783,7 @@ alt_id: MP:0000252
 alt_id: MP:0001611
 alt_id: MP:0002125
 def: "any structural anomaly of the network of tubes that carries blood through the body" [MGI:csmith]
+subset: IMPC_Prenatal
 synonym: "abnormal vasculature morphology" EXACT []
 synonym: "blood vessel abnormalities" BROAD []
 synonym: "blood vessel dysplasia" EXACT []
@@ -11085,6 +11127,7 @@ is_a: MP:0001685 ! abnormal endoderm development
 id: MP:0001688
 name: abnormal somite development
 def: "any anomaly in the formation of any of the paired, metamerically arranged cell masses formed in the embryonic paraxial mesoderm" [ISBN:0-683-40008-8]
+subset: IMPC_Prenatal
 synonym: "abnormal metablastic segment development" EXACT []
 is_a: MP:0002085 ! abnormal embryonic tissue morphology
 
@@ -11145,7 +11188,8 @@ is_a: MP:0010866 ! abnormal prenatal body size
 [Term]
 id: MP:0001698
 name: decreased embryo size
-def: "smaller proportions of an embryo compared to littermates or other controls (sensu Mus: up to E14, or the completion of organogenesis)" [J:61790]
+def: "smaller proportions of an embryo compared to littermates or other controls (sensu Mus: up to E14, or the completion of organogenesis)" [MGI:cwg]
+subset: IMPC_Prenatal
 synonym: "reduced embryo size" EXACT []
 synonym: "small embryo" EXACT []
 is_a: MP:0001697 ! abnormal embryo size
@@ -11154,6 +11198,7 @@ is_a: MP:0001697 ! abnormal embryo size
 id: MP:0001699
 name: increased embryo size
 def: "larger proportions of embryo compared to littermates or other controls (sensu Mus: up to E14, or the completion of organogenesis)" [MGI:cwg]
+subset: IMPC_Prenatal
 synonym: "enlarged embryo size" EXACT []
 is_a: MP:0001697 ! abnormal embryo size
 
@@ -11162,6 +11207,7 @@ id: MP:0001700
 name: abnormal embryo turning
 def: "atypical axial rotation of the germ layers of the embryo during the primitive streak/early somite stage during which the curvature of the entire trunk region is normally reversed and the neural ectoderm moves to the convex region and the midgut region becomes located in the concave region" [ISBN:0-12-402035-6, MGI:csmith]
 comment: In mouse, this event occurs at E8.5-E9.5.
+subset: IMPC_Prenatal
 synonym: "abnormal embryonic axial rotation" EXACT []
 synonym: "Abnormal Turning of Embryo" EXACT []
 xref: GO:0007669
@@ -11172,6 +11218,7 @@ id: MP:0001701
 name: incomplete embryo turning
 def: "arrest of the axial rotation of the germ layers of the embryo during the primitive streak/early somite stage" [J:62571]
 comment: In mouse, this event occurs at E8.5-E9.5.
+subset: IMPC_Prenatal
 xref: GO:0007669
 is_a: MP:0001700 ! abnormal embryo turning
 
@@ -11192,6 +11239,7 @@ is_a: MP:0002084 ! abnormal developmental patterning
 id: MP:0001706
 name: abnormal left-right axis patterning
 def: "anomaly in the formation or development of the body or a specific organ of the body in relation to the left and right sides of the body or organ" [MGI:cwg]
+subset: IMPC_Prenatal
 is_a: MP:0002084 ! abnormal developmental patterning
 
 [Term]
@@ -11205,6 +11253,7 @@ is_a: MP:0005029 ! abnormal amnion morphology
 id: MP:0001711
 name: abnormal placenta morphology
 def: "any structural anomaly of the organ of metabolic interchange between fetus and mother, which is partly of embryonic origin and partly of maternal origin" [MGI:csmith]
+subset: IMPC_Prenatal
 synonym: "abnormal placental morphology" EXACT []
 is_a: MP:0002086 ! abnormal extraembryonic tissue morphology
 
@@ -11212,6 +11261,7 @@ is_a: MP:0002086 ! abnormal extraembryonic tissue morphology
 id: MP:0001712
 name: abnormal placenta development
 def: "malformed or incomplete differentiation of the organ of metabolic exchange between the fetus and mother" [ISBN:0-683-40008-8, J:61790]
+subset: IMPC_Prenatal
 synonym: "abnormal placental development" EXACT []
 is_a: MP:0001711 ! abnormal placenta morphology
 
@@ -11259,6 +11309,7 @@ is_a: MP:0005032 ! abnormal ectoplacental cone morphology
 id: MP:0001718
 name: abnormal visceral yolk sac morphology
 def: "any structural anomaly of the extraembryonic tissue membrane, formed from the visceral endoderm and the extraembryonic mesoderm, which is located ventral to the embryonic disc and is connected to the presumptive midgut of the embryo; the yolk that it contains is the site of embryonic hematopoiesis and vitelline circulation is involved in early embryonic circulation; it is the origin of the primordial germ cells" [ISBN:0-683-40008-8, ISBN10:9780123364258, PMID:21123814]
+subset: IMPC_Prenatal
 synonym: "abnormal secondary yolk sac morphology" EXACT []
 synonym: "abnormal umbilical vesicle morphology" EXACT []
 synonym: "abnormal vitelline sac morphology" EXACT []
@@ -11291,6 +11342,7 @@ is_a: MP:0011204 ! abnormal visceral yolk sac blood island morphology
 id: MP:0001722
 name: pale yolk sac
 def: "bloodless yolk sac" [J:62571]
+subset: IMPC_Prenatal
 is_a: MP:0001718 ! abnormal visceral yolk sac morphology
 
 [Term]
@@ -11317,6 +11369,7 @@ is_a: MP:0002086 ! abnormal extraembryonic tissue morphology
 id: MP:0001726
 name: abnormal allantois morphology
 def: "any structural anomaly fetal membrane which contributes to the formation of the umbilical cord and placental blood vessels" [ISBN:0-683-40008-8]
+subset: IMPC_Prenatal
 is_a: MP:0002086 ! abnormal extraembryonic tissue morphology
 
 [Term]
@@ -11684,6 +11737,7 @@ id: MP:0001785
 name: edema
 alt_id: MP:0001338
 def: "an accumulation of an excessive amount of watery fluid in cells or intercellular tissues" [ISBN:0-683-40008-8]
+subset: IMPC_Prenatal
 subset: Sanger_Terms
 synonym: "oedema" EXACT []
 is_a: MP:0001784 ! abnormal fluid regulation
@@ -12482,6 +12536,7 @@ id: MP:0001914
 name: hemorrhage
 alt_id: MP:0001635
 def: "loss of blood from the vascular compartment to the exterior or into nonvascular body space as a result of rupture or severance of the blood vessels" [ISBN:0-683-40008-8]
+subset: IMPC_Prenatal
 subset: Sanger_Terms
 synonym: "bleeding" EXACT []
 is_a: MP:0002128 ! abnormal blood circulation
@@ -12750,6 +12805,7 @@ is_a: MP:0002334 ! abnormal airway responsiveness
 id: MP:0001953
 name: respiratory failure
 def: "cessation of or failure to commence breathing" [J:60159, MGI:csmith]
+subset: IMPC_Prenatal
 is_a: MP:0001943 ! abnormal respiration
 
 [Term]
@@ -13403,7 +13459,8 @@ is_a: MP:0002081 ! perinatal lethality
 id: MP:0002059
 name: abnormal seminal vesicle morphology
 alt_id: MP:0000656
-def: "any structural anomaly of one of the two folded, sac shaped, glands that is a diverticulum of the ductus deferens" [ISBN:0-683-40008-8]
+def: "any structural anomaly of either of the paired sac-like glandular structures situated posterolateral to the urinary bladder in the male and functioning as part of the reproductive system; each sac is pyramidal in shape and convoluted in appearance and at the anterior extremity becomes constricted into a narrow straight duct that joins the ipsilateral vas deferens to form the ejaculatory duct; seminal vesicles secrete seminal fluid and nourish and promote the movement of spermatozoa through the urethra" [MGI:anna]
+synonym: "abnormal gonecyst morphology" EXACT []
 synonym: "abnormal seminal gland morphology" EXACT []
 synonym: "abnormal seminal vesicles morphology" EXACT []
 synonym: "seminal gland dysplasia" EXACT []
@@ -13679,6 +13736,7 @@ name: abnormal extraembryonic tissue morphology
 alt_id: MP:0001708
 alt_id: MP:0001709
 def: "any structural anomaly of the membranes involved with embryonic protection and nutrition" [ISBN:0-683-40008-8, MGI:csmith]
+subset: IMPC_Prenatal
 synonym: "abnormal extraembryonic tissues morphology" EXACT []
 synonym: "embryogenesis: extraembryonic tissue dysmorphology" EXACT []
 synonym: "extraembryonic tissue dysplasia" EXACT []
@@ -13744,6 +13802,7 @@ alt_id: MP:0004104
 def: "any structural anomaly of the spheroid organ and optic nerve that serves to detect light" [ISBN:0-683-40008-8, MGI:csmith]
 subset: CvDC_Terms
 subset: Europhenome_Terms
+subset: IMPC_Prenatal
 synonym: "abnormal eyes morphology" EXACT []
 synonym: "abnormal ocular orb morphology" EXACT []
 synonym: "eye abnormalities" BROAD []
@@ -13815,6 +13874,7 @@ name: abnormal vibrissa morphology
 alt_id: MP:0001271
 def: "any structural anomaly of the stiff hairs projecting from the face around the nose of most mammals which act as touch receptors" [MESH:A13.950, MGI:csmith]
 subset: Europhenome_Terms
+subset: IMPC_Prenatal
 subset: Sanger_Terms
 synonym: "abnormal contour hair morphology" EXACT []
 synonym: "abnormal sinus hair morphology" EXACT []
@@ -13921,6 +13981,7 @@ id: MP:0002109
 name: abnormal limb morphology
 alt_id: MP:0000546
 def: "any structural anomaly of the projecting paired appendages of an animal trunk, used in particular for movement and grasping; usually denotes the arm and/or legs in mammalian species" [MGI:csmith]
+subset: IMPC_Prenatal
 synonym: "extremities: limb dysmorphology" EXACT []
 synonym: "limb abnormalities" BROAD []
 synonym: "limb dysplasia" EXACT []
@@ -13949,6 +14010,7 @@ alt_id: MP:0000584
 alt_id: MP:0005173
 def: "any structural anomaly of the flexible elongated appendage located at the caudal end of the torso in many species; it is usually continuous with the vertebral column" [MGI:csmith]
 subset: Europhenome_Terms
+subset: IMPC_Prenatal
 subset: Sanger_Terms
 synonym: "abnormal tail structure" EXACT []
 synonym: "extremities: tail dysmorphology" EXACT []
@@ -14312,6 +14374,7 @@ alt_id: Fyler:4339
 alt_id: MP:0000922
 def: "any structural anomaly of or development of the embryonic neural tube" [MGI:csmith]
 subset: CvDC_Terms
+subset: IMPC_Prenatal
 synonym: "abnormal neural tube morphology" NARROW []
 synonym: "central nervous system: neural tube defects" BROAD []
 synonym: "neural tube defects" BROAD []
@@ -14482,6 +14545,7 @@ is_a: MP:0005238 ! increased brain size
 id: MP:0002177
 name: abnormal outer ear morphology
 def: "any structural anomaly of any components of the auricles or external acoustic meatus" [ISBN:0-683-40008-8, MGI:csmith]
+subset: IMPC_Prenatal
 subset: Sanger_Terms
 synonym: "abnormal pinna morphology" EXACT []
 synonym: "dysplastic pinna" EXACT []
@@ -14584,6 +14648,7 @@ is_a: MP:0001614 ! abnormal blood vessel morphology
 id: MP:0002192
 name: hydrops fetalis
 def: "an abnormal accumulation of serous fluid in fetal tissues" [ISBN:0-683-40008-8, MGI:csmith]
+subset: IMPC_Prenatal
 subset: Sanger_Terms
 synonym: "fetal edema" EXACT []
 is_a: MP:0001785 ! edema
@@ -15257,6 +15322,7 @@ id: MP:0002279
 name: abnormal diaphragm morphology
 alt_id: MP:0000760
 def: "any structural anomaly of the thin musculomebranous barrier that separates the abdominal and thoracic cavities; these muscles often used for breathing control" [ISBN:0-683-40008-8, MGI:cwg]
+subset: IMPC_Prenatal
 synonym: "diaphragm muscle dysplasia" EXACT []
 is_a: MP:0003358 ! abnormal hypaxial muscle morphology
 
@@ -17761,7 +17827,7 @@ id: MP:0002623
 name: abnormal vestibular hair cell morphology
 def: "any structural anomaly of the mechanoreceptor cells in the sensory epithelium of the maculae and cristae of the membranous labyrinth of the internal ear; afferent and efferent nerve fibers of the vestibular nerve end synaptically on them; from the apical end of each cell a bundle of stereocilia and a kinocilium extend into the statoconial membrane of the maculae and the cupula of the cristae" [ISBN:0-683-40008-8, MGI:anna]
 synonym: "abnormal vestibular hair cells morphology" EXACT []
-is_a: MP:0000034 ! abnormal vestibule morphology
+is_a: MP:0000034 ! abnormal inner ear vestibule morphology
 is_a: MP:0000045 ! abnormal hair cell morphology
 
 [Term]
@@ -18351,6 +18417,7 @@ id: MP:0002697
 name: abnormal eye size
 def: "deviation from the average range of eye size for a given organism" [MGI:csmith]
 subset: Europhenome_Terms
+subset: IMPC_Prenatal
 subset: Sanger_Terms
 synonym: "eye size abnormalities" EXACT []
 is_a: MP:0002092 ! abnormal eye morphology
@@ -18513,17 +18580,18 @@ is_a: MP:0002713 ! abnormal glycogen catabolism
 
 [Term]
 id: MP:0002716
-name: small preputial glands
+name: small male preputial glands
 def: "reduced size of the sebaceous glands of the corona and neck of the glans penis" [ISBN:0-683-40008-8, MGI:il]
-is_a: MP:0002717 ! abnormal preputial gland morphology
+is_a: MP:0002717 ! abnormal male preputial gland morphology
 
 [Term]
 id: MP:0002717
-name: abnormal preputial gland morphology
-def: "any structural anomaly of the sebaceous glands of the corona and neck of the glans penis" [ISBN:0-683-40008-8]
-synonym: "abnormal preputial glands" EXACT []
+name: abnormal male preputial gland morphology
+def: "any structural anomaly of the paired, lobulated, modified sebaceous glands of the corona, the neck of the glans penis, and the inner surface of the prepuce with pheromonal functions in male rodents; male preputial secretions strongly attract females, may accelerate estrus, and have been implicated in intermale aggression; homologous to the clitoral glands (aka female preputial glands) in female rodents; there is no true anatomical equivalent in humans" [MGI:anna]
+synonym: "abnormal preputial gland morphology" BROAD []
+synonym: "abnormal preputial glands" BROAD []
 synonym: "abnormal Tyson's glands" RELATED []
-synonym: "preputial gland dysplasia" EXACT []
+synonym: "preputial gland dysplasia" BROAD []
 is_a: MP:0000647 ! abnormal sebaceous gland morphology
 is_a: MP:0000653 ! abnormal sex gland morphology
 is_a: MP:0009102 ! abnormal glans penis morphology
@@ -18941,7 +19009,7 @@ is_a: MP:0009205 ! abnormal internal male genitalia morphology
 [Term]
 id: MP:0002770
 name: absent bulbourethral gland
-def: "missing gland in males that lie along the prostate gland that secrete a fluid component of the seminal fluid into the urethra" [J:78062, MGI:pvb]
+def: "absence of any of the small paired racemose (compound tubulo-alveolar) glands below the apex of the prostate in males, located posterolateral to the membranous portion of the urethra at the base of the penis, between the two layers of the fascia of the urogenital diaphragm, in the deep perineal pouch, and enclosed by transverse fibers of the sphincter urethrae membranaceae muscle; they secrete a clear fluid known as pre-ejaculate (Cowper's fluid), and are homologous to the greater vestibular (Bartholin's) glands in the female" [MGI:anna]
 synonym: "absence of bulbourethral gland" EXACT []
 synonym: "absent Cowper's gland" EXACT []
 is_a: MP:0001169 ! abnormal bulbourethral gland morphology
@@ -19323,6 +19391,7 @@ is_a: MP:0002113 ! abnormal skeleton development
 id: MP:0002824
 name: abnormal chorioallantoic fusion
 def: "anomaly in the process by which a highly vascularized extra-embryonic fetal membrane is formed by fusion of the chorion and allantois; in most mammals, the chorioallantois constitutes the fetal portion of the placenta" [ISBN:0-683-40008-8, MGI:anna]
+subset: IMPC_Prenatal
 is_a: MP:0001712 ! abnormal placenta development
 
 [Term]
@@ -19765,6 +19834,7 @@ is_a: MP:0002882 ! abnormal neuron morphology
 id: MP:0002884
 name: abnormal branchial arch morphology
 def: "any structural anomaly of the transient structures of the embryo that develop into regions of the head, neck and ears" [MGI:csmith]
+subset: IMPC_Prenatal
 synonym: "abnormal branchial arches" EXACT []
 synonym: "abnormal pharyngeal arches" EXACT []
 is_a: MP:0002085 ! abnormal embryonic tissue morphology
@@ -19828,6 +19898,7 @@ name: abnormal otolith morphology
 def: "any structural anomaly of the crystalline particles composed of calcium carbonate and a protein which adhere to the gelatinous membrane of the maculae of the utricle and saccule (otolithic membrane)" [ISBN:0-683-40008-8, MGI:llw2]
 synonym: "abnormal ear crystals" EXACT []
 synonym: "abnormal otoconia" EXACT []
+synonym: "abnormal otoconial crystal morphology" EXACT []
 synonym: "abnormal otoliths" RELATED []
 synonym: "abnormal statoconia" EXACT []
 synonym: "abnormal statoliths" EXACT []
@@ -20059,6 +20130,7 @@ is_a: MP:0004996 ! abnormal CNS synapse formation
 id: MP:0002925
 name: abnormal cardiovascular development
 def: "aberrant formation or incomplete differentiation of the cardiovascular system" [RGD:cur]
+subset: IMPC_Prenatal
 is_a: MP:0002127 ! abnormal cardiovascular system morphology
 
 [Term]
@@ -20253,7 +20325,7 @@ is_a: MP:0002882 ! abnormal neuron morphology
 [Term]
 id: MP:0002949
 name: abnormal neural crest cells
-def: "defect in the transient and migratory group of cells that emerge from the dorsal region of the neural tube and disperse to many peripheral locations to form various tissues of the adult" [ISBN:0838580343]
+def: "OBSOLETE. defect in the transient and migratory group of cells that emerge from the dorsal region of the neural tube and disperse to many peripheral locations to form various tissues of the adult" [ISBN:0838580343]
 is_obsolete: true
 consider: MP:0009845
 
@@ -20288,11 +20360,14 @@ is_a: MP:0005294 ! abnormal heart ventricle morphology
 id: MP:0002954
 name: abnormal aerobic energy metabolism
 alt_id: MP:0005622
-def: "defect in respiratory chain energy production (oxidative metabolism) process in all living cells where oxygen is consumed and carbon dioxide and water are produced" [ISBN:0-683-40008-8]
+def: "OBSOLETE. defect in respiratory chain energy production (oxidative metabolism) process in all living cells where oxygen is consumed and carbon dioxide and water are produced" [ISBN:0-683-40008-8]
 synonym: "abnormal cell respiration" EXACT []
 synonym: "abnormal mitochondrial energy production" EXACT []
 synonym: "abnormal respiratory chain function" EXACT []
-is_a: MP:0006036 ! abnormal mitochondrial physiology
+is_obsolete: true
+consider: MP:0010951
+consider: MP:0010954
+consider: MP:0010959
 
 [Term]
 id: MP:0002955
@@ -20464,6 +20539,7 @@ name: absent otoliths
 def: "absence of the crystalline calciferous particles adhering to the otolithic membrane" [ISBN:0-683-40008-8]
 synonym: "absent ear crystals" EXACT []
 synonym: "absent otoconia" EXACT []
+synonym: "absent otoconial crystals" EXACT []
 synonym: "absent statoconia" EXACT []
 synonym: "absent statoliths" EXACT []
 is_a: MP:0002894 ! abnormal otolith morphology
@@ -21473,7 +21549,7 @@ alt_id: Fyler:4504
 def: "a urethral opening located below the normal location; in males, the opening is usually on the ventral surface of the penis, and in females, the opening is usually in the vagina" [MESH:C12.294.494.400]
 subset: CvDC_Terms
 synonym: "hypospadis" EXACT []
-is_a: MP:0000537 ! abnormal urethra morphology
+is_a: MP:0011796 ! abnormal external urethral orifice morphology
 
 [Term]
 id: MP:0003125
@@ -21637,6 +21713,7 @@ id: MP:0003143
 name: enlarged otoliths
 def: "increased average size of the crystalline calciferous particles adhering to the otolithic membrane" [MGI:anna, PMID:11152663]
 synonym: "enlarged ear crystals" EXACT []
+synonym: "enlarged otoconial crystals" EXACT []
 synonym: "enlarged statoconia" EXACT []
 synonym: "enlarged statoliths" EXACT []
 synonym: "giant otoconia" EXACT []
@@ -21647,6 +21724,7 @@ id: MP:0003144
 name: decreased otolith number
 def: "reduced average number of the crystalline calciferous particles adhering to the otolithic membrane" [J:30611, MGI:anna]
 synonym: "decreased number of otoliths" EXACT []
+synonym: "decreased otoconial crystal number" EXACT []
 synonym: "reduced number of otoconia" EXACT []
 synonym: "reduced number of otoliths" EXACT []
 synonym: "reduced otolith number" EXACT []
@@ -22247,6 +22325,7 @@ is_a: MP:0000267 ! abnormal heart development
 id: MP:0003229
 name: abnormal vitelline vasculature morphology
 def: "any structural anomaly of the vascular network that supplies the yolk sac" [MGI:csmith]
+subset: IMPC_Prenatal
 synonym: "abnormal omphalomesenteric vasculature" EXACT []
 synonym: "abnormal yolk sac vasculature" EXACT []
 is_a: MP:0000259 ! abnormal vascular development
@@ -22263,6 +22342,7 @@ is_a: MP:0003410 ! abnormal artery development
 id: MP:0003231
 name: abnormal placenta vasculature
 def: "any structural anomaly of the vessels of the placenta" [MGI:smb]
+subset: IMPC_Prenatal
 synonym: "abnormal placental vasculature" EXACT []
 is_a: MP:0001614 ! abnormal blood vessel morphology
 is_a: MP:0001711 ! abnormal placenta morphology
@@ -22271,6 +22351,7 @@ is_a: MP:0001711 ! abnormal placenta morphology
 id: MP:0003232
 name: abnormal forebrain development
 def: "anomaly in the formation or patterning of the anterior primitive cerebral vesicle; most rostral of three primary vesicles of the embryonic neural tube" [J:93081, MGI:smb]
+subset: IMPC_Prenatal
 is_a: MP:0000783 ! abnormal forebrain morphology
 is_a: MP:0000913 ! abnormal brain development
 
@@ -23345,6 +23426,7 @@ is_a: MP:0003385 ! abnormal body wall morphology
 id: MP:0003385
 name: abnormal body wall morphology
 def: "any structural anomaly of the external portion of an animal body comprised of ectoderm and mesoderm layers that encloses the body cavity" [MGI:csmith]
+subset: IMPC_Prenatal
 is_a: MP:0005378 ! growth/size phenotype
 
 [Term]
@@ -24352,7 +24434,7 @@ is_a: MP:0001139 ! abnormal vagina morphology
 id: MP:0003538
 name: abnormal hymen development
 def: "anomaly in the morphogenesis of the thin membrane which may partially occlude the opening of the vagina; often absent in normal females" [ISBN:0-683-40008-8, NCBI:matt]
-is_a: MP:0001142 ! abnormal vagina opening
+is_a: MP:0001142 ! abnormal vagina orifice morphology
 
 [Term]
 id: MP:0003539
@@ -24510,7 +24592,7 @@ is_a: MP:0002993 ! arthritis
 [Term]
 id: MP:0003562
 name: abnormal pancreatic beta cell physiology
-def: "anomaly in the function of the insulin-producing cells of the islets of Langerhans in the pancreas" [MGI:smb]
+def: "anomaly in the function of the cells that secrete insulin and are located towards the center of the islets of Langerhans in the pancreas" [CL:0000169]
 synonym: "abnormal insulin-secreting cell physiology" EXACT []
 synonym: "abnormal pancreatic B cell physiology" EXACT []
 is_a: MP:0010147 ! abnormal endocrine pancreas physiology
@@ -24758,8 +24840,10 @@ is_a: MP:0000537 ! abnormal urethra morphology
 
 [Term]
 id: MP:0003592
-name: urethra stenosis
-def: "abnormal narrowing or constriction of the urethra" [NCBI:matt]
+name: urethra stricture
+def: "abnormal narrowing at one or more points in the urethra, almost invariably restricted to males and often secondary to injury, inflammation, tumors or any other cause of scarring; whether congenital or acquired, urethral strictures may compromise voiding and cause incontinence, bleeding, stones or even renal failure" [MGI:anna]
+synonym: "urethra stenosis" EXACT []
+synonym: "urethral constriction" EXACT []
 is_a: MP:0000537 ! abnormal urethra morphology
 
 [Term]
@@ -24798,10 +24882,13 @@ is_a: MP:0010383 ! increased adenoma incidence
 
 [Term]
 id: MP:0003598
-name: epispadias
-def: "congenital absence of the upper wall of the urethra" [MESH:C12.706.374, NCBI:matt]
-is_a: MP:0000537 ! abnormal urethra morphology
+name: epispadia
+def: "congenital absence of the upper wall of the urethra, occurring in both sexes, but more often in the male, with the urethral opening somewhere on the dorsum of the penis at any point below the internal sphincter; in females, the malformed urethral opening is often located between the clitoris and the labia, or in the abdomen" [MGI:anna]
+synonym: "epispadias" EXACT []
+synonym: "hyperspadia" EXACT []
+synonym: "hyperspadias" EXACT []
 is_a: MP:0005187 ! abnormal penis morphology
+is_a: MP:0011796 ! abnormal external urethral orifice morphology
 
 [Term]
 id: MP:0003599
@@ -24880,6 +24967,7 @@ id: MP:0003608
 name: prostate gland inflammation
 def: "local accumulation of fluid, plasma proteins, and leukocytes in the prostate" [MGI:cwg]
 synonym: "prostate inflammation" EXACT []
+synonym: "prostatitis" EXACT []
 is_a: MP:0001846 ! increased inflammatory response
 is_a: MP:0003607 ! abnormal prostate gland physiology
 
@@ -25704,6 +25792,7 @@ id: MP:0003717
 name: pallor
 def: "an unnatural paleness to the skin, generally attributable to anemia" [MESH:C23.888.885.500]
 subset: Europhenome_Terms
+subset: IMPC_Prenatal
 synonym: "pale skin" EXACT []
 synonym: "pallid" EXACT []
 is_a: MP:0009931 ! abnormal skin appearance
@@ -25724,6 +25813,7 @@ is_a: MP:0001614 ! abnormal blood vessel morphology
 id: MP:0003720
 name: abnormal neural tube closure
 def: "any anomaly in the last step in the formation of the neural tube, where the paired neural folds are brought together and fuse at the dorsal midline" [J:99099, MGI:monikat]
+subset: IMPC_Prenatal
 synonym: "abnormal neural fold fusion" EXACT []
 synonym: "abnormal neural tube fusion" EXACT []
 is_a: MP:0002151 ! abnormal neural tube morphology/development
@@ -25874,6 +25964,7 @@ is_a: MP:0011495 ! abnormal head shape
 id: MP:0003743
 name: abnormal facial morphology
 def: "any structural anomaly of the face" [NCBI:matt]
+subset: IMPC_Prenatal
 is_a: MP:0000432 ! abnormal head morphology
 
 [Term]
@@ -26685,6 +26776,7 @@ is_a: MP:0005656 ! decreased aggression
 id: MP:0003864
 name: abnormal midbrain development
 def: "anomaly in the formation of or the patterning of the part of the brainstem developing from the middle of the three primary cerebral vesicles of the embryo" [ISBN:0-683-40008-8, MGI:csmith]
+subset: IMPC_Prenatal
 is_a: MP:0000913 ! abnormal brain development
 
 [Term]
@@ -27207,6 +27299,7 @@ is_a: MP:0001944 ! abnormal pancreas morphology
 id: MP:0003935
 name: abnormal craniofacial development
 def: "anomaly in the process of forming the face and/or cranium" [MGI:csmith]
+subset: IMPC_Prenatal
 is_a: MP:0000428 ! abnormal craniofacial morphology
 
 [Term]
@@ -27225,6 +27318,7 @@ is_obsolete: true
 id: MP:0003938
 name: abnormal ear development
 def: "developmental anomaly of any of the structures involved in the ear or vestibular system" [MGI:csmith]
+subset: IMPC_Prenatal
 is_a: MP:0002102 ! abnormal ear morphology
 
 [Term]
@@ -29091,6 +29185,8 @@ id: MP:0004194
 name: abnormal kidney pelvis morphology
 def: "any structural anomaly of the funnel shaped proximal portion of the ureter that is formed by convergence of the major calices" [MGI:smb]
 synonym: "abnormal pelvis of ureter morphology" EXACT []
+synonym: "abnormal pyelum morphology" RELATED []
+synonym: "abnormal renal pelvis morphology" EXACT []
 is_a: MP:0000534 ! abnormal ureter morphology
 is_a: MP:0002135 ! abnormal kidney morphology
 
@@ -29504,6 +29600,7 @@ is_a: MP:0002152 ! abnormal brain morphology
 id: MP:0004251
 name: failure of heart looping
 def: "failure of the primitive heart tube to loop asymmetrically during early development" [GO:0001947]
+subset: IMPC_Prenatal
 synonym: "failure of cardiac looping" EXACT []
 synonym: "failure of looping morphogenesis" RELATED []
 is_a: MP:0000269 ! abnormal heart looping
@@ -29512,6 +29609,7 @@ is_a: MP:0000269 ! abnormal heart looping
 id: MP:0004252
 name: abnormal direction of heart looping
 def: "deviation from the characteristic rightward direction of looping of the primitive heart tube; frequently seen in heterotaxy syndromes" [MGI:csmith]
+subset: IMPC_Prenatal
 synonym: "abnormal direction of cardiac looping" EXACT []
 synonym: "abnormal direction of looping morphogenesis" RELATED []
 is_a: MP:0000269 ! abnormal heart looping
@@ -29967,9 +30065,10 @@ is_a: MP:0003703 ! abnormal vestibulocochlear ganglion morphology
 
 [Term]
 id: MP:0004314
-name: absent vestibule
+name: absent inner ear vestibule
 def: "absence of the cavity between the semicircular canals and the cochlea of the inner ear" [MGI:anna]
-is_a: MP:0000034 ! abnormal vestibule morphology
+synonym: "absent vestibule" BROAD []
+is_a: MP:0000034 ! abnormal inner ear vestibule morphology
 
 [Term]
 id: MP:0004315
@@ -30787,7 +30886,7 @@ is_a: MP:0004422 ! small temporal bone
 id: MP:0004425
 name: abnormal otolith organ morphology
 def: "any structural anomaly in the utricle and saccule of the inner ear which possess otoliths and respond to linear acceleration and deceleration, including gravity" [MGI:anna]
-is_a: MP:0000034 ! abnormal vestibule morphology
+is_a: MP:0000034 ! abnormal inner ear vestibule morphology
 is_a: MP:0004427 ! abnormal vestibular labyrinth morphology
 
 [Term]
@@ -31842,6 +31941,7 @@ is_a: MP:0005650 ! abnormal limb bud morphology
 id: MP:0004576
 name: abnormal foot plate morphology
 def: "any structural anomaly of the distal elements of the developing limb of vertebrates that will give rise to the pedal appendages (e.g. hand, foot, paw)" [MGI:csmith]
+subset: IMPC_Prenatal
 synonym: "abnormal footplate morphology" EXACT []
 synonym: "abnormal hand plate morphology" EXACT []
 synonym: "abnormal handplate morphology" EXACT []
@@ -33161,7 +33261,7 @@ is_a: MP:0002206 ! abnormal CNS synaptic transmission
 [Term]
 id: MP:0004754
 name: abnormal kidney collecting duct morphology
-def: "any structural anomaly of the duct that drains fluid from the nephron and either allows bodily reabsorbtion of water or allows the fluid to drain to the bladder via the ureter; the collecting duct system also maintains acid-base homeostasis" [MGI:csmith]
+def: "any structural anomaly of the kidney ducts lined by simple cuboidal epithelium that collect urine from the distal convoluted tubules, merge and become larger as they descend from the renal cortex into the medulla, and respond to vasopressin and aldosterone to regulate water, electrolyte and acid-base balance; each cortical collecting duct joints with other ducts to make a medullary connecting duct, which eventually drains into a papillary duct, emptying urine into the renal pelvis for drainage into the ureter" [MGI:anna, MGI:csmith]
 synonym: "abnormal collecting tubule morphology" EXACT []
 synonym: "abnormal kidney collecting tube morphology" EXACT []
 synonym: "abnormal kidney collecting tubule morphology" EXACT []
@@ -33333,7 +33433,7 @@ is_a: MP:0005365 ! abnormal bile salt homeostasis
 id: MP:0004775
 name: abnormal vestibular dark cell morphology
 def: "any structural anomaly in the nonsensory epithelial cells located above the vestibular melanocytes and adjacent to the sensory structures in the utricle and in the ampullae at the ends of each of the semicircular canals; these cells provide and maintain the high potassium ionic environment within the vestibular labyrinth and are therefore homologous to the marginal cells of the stria vascularis; they are joined to each other by tight junctions and provide a barrier between endolymph and perilymph" [MGI:anna]
-is_a: MP:0000034 ! abnormal vestibule morphology
+is_a: MP:0000034 ! abnormal inner ear vestibule morphology
 
 [Term]
 id: MP:0004776
@@ -33912,6 +34012,7 @@ is_a: MP:0004848 ! abnormal liver size
 id: MP:0004848
 name: abnormal liver size
 def: "anomaly in the average size of the liver" [MGI:csmith]
+subset: IMPC_Prenatal
 synonym: "abnormal hepatic size" EXACT []
 is_a: MP:0000598 ! abnormal liver morphology
 
@@ -36389,6 +36490,7 @@ name: holoprosencephaly
 alt_id: Fyler:4338
 def: "presence of a single forebrain hemisphere or lobe; often accompanied by a deficit in median facial development" [ISBN:0-683-40008-8]
 subset: CvDC_Terms
+subset: IMPC_Prenatal
 is_a: MP:0000913 ! abnormal brain development
 
 [Term]
@@ -36879,10 +36981,11 @@ is_a: MP:0005215 ! abnormal pancreatic islet morphology
 [Term]
 id: MP:0005217
 name: abnormal pancreatic beta cell morphology
-def: "any structural anomaly of the cells of the pancreas that secrete insulin" [MESH:A03.734.414.131]
+def: "any structural anomaly of a cell that secretes insulin and is located towards the center of the islets of Langerhans in the pancreas" [CL:0000169]
 synonym: "abnormal insulin-secreting cells" EXACT []
 synonym: "abnormal pancreatic B cells" EXACT []
 synonym: "abnormal pancreatic beta cells" EXACT []
+synonym: "abnormal type B enteroendocrine cell morphology" EXACT []
 is_a: MP:0005215 ! abnormal pancreatic islet morphology
 
 [Term]
@@ -40033,6 +40136,7 @@ is_a: MP:0010296 ! increased hemolymphoid system tumor incidence
 id: MP:0005650
 name: abnormal limb bud morphology
 def: "any structural anomaly of the mesenchymal outgrowth on the lateral trunk of the embryo that develops into the limbs" [MESH:A16.567, MGI:hdene]
+subset: IMPC_Prenatal
 is_a: MP:0002085 ! abnormal embryonic tissue morphology
 is_a: MP:0006279 ! abnormal limb development
 
@@ -40517,11 +40621,11 @@ is_a: MP:0006037 ! abnormal mitochondrial proliferation
 [Term]
 id: MP:0006040
 name: increased mitochondrial oxidation
-def: "greater than normal activity of the process in mitochondria that produces ATP" [MGI:smb]
+def: "OBSOLETE. greater than normal activity of the process in mitochondria that produces ATP" [MGI:smb]
 synonym: "increased oxidative phosphorylation" EXACT []
 is_obsolete: true
-consider: MP:0002954
 consider: MP:0010951
+consider: MP:0010954
 consider: MP:0010959
 
 [Term]
@@ -40529,8 +40633,8 @@ id: MP:0006041
 name: decreased mitochondrial oxidation
 def: "OBSOLETE. less than normal activity of the mitochondrial process that produces ATP" [MGI:smb, RGD:cur]
 is_obsolete: true
-consider: MP:0002954
 consider: MP:0010951
+consider: MP:0010954
 consider: MP:0010959
 
 [Term]
@@ -41006,6 +41110,7 @@ is_a: MP:0000267 ! abnormal heart development
 id: MP:0006108
 name: abnormal hindbrain development
 def: "anomaly in the formation or pattering of the caudal region of the brain" [MGI:smb]
+subset: IMPC_Prenatal
 is_a: MP:0000913 ! abnormal brain development
 
 [Term]
@@ -41148,6 +41253,7 @@ is_a: MP:0002624 ! abnormal tricuspid valve morphology
 id: MP:0006126
 name: abnormal outflow tract development
 def: "anomaly in the development of the common arterial trunk that forms the aorta and pulmonary artery and the ventricular outflow regions" [MGI:smb]
+subset: IMPC_Prenatal
 synonym: "abnormal fetal outflow tract morphology" EXACT []
 is_a: MP:0002925 ! abnormal cardiovascular development
 
@@ -41301,9 +41407,10 @@ is_a: MP:0002001 ! blindness
 
 [Term]
 id: MP:0006149
-name: blurred vision
+name: decreased visual acuity
 def: "loss of visual acuity or ability to distinguish small details" [MGI:smb, NCBI:matt]
-is_a: MP:0002090 ! abnormal vision
+synonym: "blurred vision" EXACT []
+is_a: MP:0011832 ! abnormal visual acuity
 
 [Term]
 id: MP:0006150
@@ -41633,6 +41740,7 @@ is_a: MP:0001634 ! internal hemorrhage
 id: MP:0006204
 name: embryonic lethality before implantation
 def: "death anytime between fertilization and implantation (Mus: E0 to less than E4.5)" [MGI:smb]
+subset: IMPC_Prenatal
 synonym: "embryonic death before implantation" EXACT []
 synonym: "preimplantation death" EXACT []
 synonym: "preimplantation lethality" EXACT []
@@ -41660,6 +41768,7 @@ is_a: MP:0009850 ! embryonic lethality between implantation and placentation
 id: MP:0006207
 name: embryonic lethality during organogenesis
 def: "death anytime between embryo turning and the completion of organogenesis (Mus: E9 to less than E14)" [MGI:smb]
+subset: IMPC_Prenatal
 synonym: "embryonic death during organogenesis" EXACT []
 is_a: MP:0008762 ! embryonic lethality
 
@@ -41667,6 +41776,7 @@ is_a: MP:0008762 ! embryonic lethality
 id: MP:0006208
 name: lethality throughout fetal growth and development
 def: "death anytime between the completion of organogenesis and birth (Mus: E14 to approximately E18.5)" [MGI:smb]
+subset: IMPC_Prenatal
 synonym: "embryonic death during fetal growth and development" RELATED []
 synonym: "embryonic lethality during fetal growth and development" RELATED []
 synonym: "embryonic lethality throughout fetal growth and development" RELATED []
@@ -42902,10 +43012,10 @@ is_a: MP:0002689 ! abnormal molar morphology
 
 [Term]
 id: MP:0006401
-name: absent preputial gland
+name: absent male preputial gland
 def: "a lack of the sebaceous glands of the corona and neck of the glans penis" [MGI:monikat]
 synonym: "absent Tyson's glands" EXACT []
-is_a: MP:0002717 ! abnormal preputial gland morphology
+is_a: MP:0002717 ! abnormal male preputial gland morphology
 
 [Term]
 id: MP:0006402
@@ -45576,7 +45686,7 @@ is_a: MP:0001932 ! abnormal spermiogenesis
 
 [Term]
 id: MP:0008280
-name: male germ cell apoptosis
+name: abnormal male germ cell apoptosis
 def: "presence of male germs cells that undergo programmed cell death" [MGI:csmith]
 is_a: MP:0001648 ! abnormal apoptosis
 is_a: MP:0003698 ! abnormal male reproductive system physiology
@@ -50500,6 +50610,7 @@ id: MP:0008762
 name: embryonic lethality
 def: "death of an animal within the embryonic period prior to organogenesis (Mus: prior to E14)" [MGI:csmith]
 comment: Note that a term with the former name embryonic lethality exists as MP:0002080. In many species, the terms prenatal lethality and embryonic lethality are used interchangeably. However, this is not technically correct and we have modified this ontology to define the prenatal period to include the embryonic stages distinctly from the fetal stages. The names embryonic lethality and embryonic death have been retained as a narrow synonyms for the prenatal lethality term to aid in searching for those species that may use these terms as synonyms.
+subset: IMPC_Prenatal
 subset: Sanger_Terms
 synonym: "embryonic death" EXACT []
 is_a: MP:0002080 ! prenatal lethality
@@ -50764,6 +50875,7 @@ is_a: MP:0008795 ! abnormal lens fiber apoptosis
 id: MP:0008797
 name: facial cleft
 def: "a cleft resulting from incomplete merging or fusion of any of the embryonic facial processes that normally unite to form the face" [MGI:csmith]
+subset: IMPC_Prenatal
 synonym: "prosopoanoschisis" EXACT []
 synonym: "split face malformation" EXACT []
 synonym: "split-face malformation" EXACT []
@@ -53972,7 +54084,7 @@ is_a: MP:0003339 ! decreased pancreatic beta cell number
 [Term]
 id: MP:0009175
 name: abnormal pancreatic beta cell differentiation
-def: "atypical production of or inability to produce the cells of the pancreas that secrete insulin, and/or accumulation of pancreatic beta cell precursors" [MESH:A03.734.414.131]
+def: "atypical production of or inability to produce the cells that secrete insulin and are located towards the center of the islets of Langerhans in the pancreas, and/or accumulation of pancreatic beta cell precursors" [CL:0000169]
 synonym: "abnormal insulin-secreting cell differentiation" EXACT []
 synonym: "abnormal pancreatic B cell differentiation" EXACT []
 is_a: MP:0003934 ! abnormal pancreas development
@@ -54743,12 +54855,14 @@ is_a: MP:0008488 ! abnormal semicircular canal ampulla morphology
 id: MP:0009263
 name: abnormal eyelid fusion
 def: "anomaly in the process by which the upper and lower eyelids are joined during development" [MGI:smb]
+subset: IMPC_Prenatal
 is_a: MP:0009651 ! abnormal eyelid development
 
 [Term]
 id: MP:0009264
 name: failure of eyelid fusion
 def: "the upper and lower thin folds of skin and muscle that cover the exposed portion of the eye do not fuse together during development; normally fused by E17 in the mouse" [MGI:llw2]
+subset: IMPC_Prenatal
 is_a: MP:0009263 ! abnormal eyelid fusion
 
 [Term]
@@ -56429,7 +56543,7 @@ is_a: MP:0000492 ! abnormal rectum morphology
 
 [Term]
 id: MP:0009488
-name: pancreatic islet cell apoptosis
+name: abnormal pancreatic islet cell apoptosis
 def: "change in the timing or the number of pancreatic islet cells undergoing programmed cell death" [MGI:csmith]
 is_a: MP:0001648 ! abnormal apoptosis
 is_a: MP:0002693 ! abnormal pancreas physiology
@@ -57161,6 +57275,7 @@ is_a: MP:0000452 ! abnormal mouth morphology
 id: MP:0009577
 name: abnormal developmental vascular remodeling
 def: "any anomaly in the process by which existing vessels are reorganized during development" [MGI:smb]
+subset: IMPC_Prenatal
 is_a: MP:0000260 ! abnormal angiogenesis
 
 [Term]
@@ -59168,6 +59283,7 @@ is_a: MP:0001409 ! increased stereotypic behavior
 id: MP:0009850
 name: embryonic lethality between implantation and placentation
 def: "death anytime between the point of implantation and the initiation of placentation (Mus: E4.5 to less than E9)" [MGI:llw2]
+subset: IMPC_Prenatal
 is_a: MP:0008762 ! embryonic lethality
 
 [Term]
@@ -60006,6 +60122,7 @@ id: MP:0009931
 name: abnormal skin appearance
 def: "anomaly in the visual aspect of the skin" [MGI:llw2]
 subset: Europhenome_Terms
+subset: IMPC_Prenatal
 subset: Sanger_Terms
 is_a: MP:0002060 ! abnormal skin morphology
 created_by: csmith
@@ -64572,7 +64689,7 @@ creation_date: 2010-09-16T02:01:46Z
 
 [Term]
 id: MP:0010380
-name: inner cell mass apoptosis
+name: abnormal inner cell mass apoptosis
 def: "the cells of the blastocyst that develop into the body of the embryo are undergoing programmed cell death" [MGI:csmith]
 is_a: MP:0001648 ! abnormal apoptosis
 is_a: MP:0008932 ! abnormal embryonic tissue physiology
@@ -67620,6 +67737,7 @@ creation_date: 2010-10-19T03:26:06Z
 id: MP:0010666
 name: abnormal vitelline vein morphology
 def: "any structural anomaly of the paired veins that carry blood from the yolk sac back to the embryo" [MGI:csmith]
+subset: IMPC_Prenatal
 synonym: "abnormal omphalomesenteric vein morphology" EXACT []
 is_a: MP:0003229 ! abnormal vitelline vasculature morphology
 is_a: MP:0003411 ! abnormal vein development
@@ -72058,6 +72176,7 @@ creation_date: 2011-04-26T09:39:34Z
 id: MP:0011091
 name: complete prenatal lethality
 def: "death of all organisms of a given genotype in a population between fertilization and birth (Mus: approximately E18.5)" [MGI:csmith]
+subset: IMPC_Prenatal
 is_a: MP:0002080 ! prenatal lethality
 created_by: csmith
 creation_date: 2011-04-26T03:56:08Z
@@ -72066,6 +72185,7 @@ creation_date: 2011-04-26T03:56:08Z
 id: MP:0011092
 name: complete embryonic lethality
 def: "death of all organisms of a given genotype in a population within the embryonic period prior to organogenesis (Mus: prior to E14)" [MGI:csmith]
+subset: IMPC_Prenatal
 is_a: MP:0008762 ! embryonic lethality
 created_by: csmith
 creation_date: 2011-04-26T03:56:08Z
@@ -72140,6 +72260,7 @@ creation_date: 2011-04-26T03:56:08Z
 id: MP:0011101
 name: partial prenatal lethality
 def: "the appearance of lower than Mendelian ratios of organisms of a given genotype due to death of some, but not all of the organisms between fertilization and birth (Mus: approximately E18.5)" [MGI:csmith]
+subset: IMPC_Prenatal
 is_a: MP:0002080 ! prenatal lethality
 created_by: csmith
 creation_date: 2011-04-26T03:56:08Z
@@ -72148,6 +72269,7 @@ creation_date: 2011-04-26T03:56:08Z
 id: MP:0011102
 name: partial embryonic lethality
 def: "the appearance of lower than Mendelian ratios of organisms of a given genotype due to death of some, but not all of the organisms within the embryonic period prior to organogenesis (Mus: prior to E14)" [MGI:csmith]
+subset: IMPC_Prenatal
 is_a: MP:0008762 ! embryonic lethality
 created_by: csmith
 creation_date: 2011-04-26T03:56:08Z
@@ -72431,6 +72553,7 @@ def: "increased or faster movement of endothelial cells or their precursors to t
 synonym: "increased lung microvascular endothelial cell migration" EXACT []
 synonym: "increased pulmonary endothelial cell migration" EXACT []
 is_a: MP:0011132 ! abnormal lung endothelial cell migration
+is_a: MP:0011804 ! increased cell migration
 created_by: csmith
 creation_date: 2011-05-20T02:06:38Z
 
@@ -72443,6 +72566,7 @@ synonym: "decreased pulmonary endothelial cell migration" EXACT []
 synonym: "reduced lung microvascular endothelial cell migration" EXACT []
 synonym: "reduced pulmonary endothelial cell migration" EXACT []
 is_a: MP:0011132 ! abnormal lung endothelial cell migration
+is_a: MP:0011805 ! decreased cell migration
 created_by: csmith
 creation_date: 2011-05-20T02:06:38Z
 
@@ -73488,6 +73612,7 @@ creation_date: 2011-07-27T12:39:11Z
 id: MP:0011239
 name: abnormal skin coloration
 def: "a variation in an expected skin color or complexion that may be due to inflammation, pigment defects or other causes" [MGI:llw2]
+subset: IMPC_Prenatal
 is_a: MP:0002060 ! abnormal skin morphology
 created_by: csmith
 creation_date: 2011-07-27T01:21:38Z
@@ -73670,6 +73795,7 @@ creation_date: 2011-09-12T02:42:33Z
 id: MP:0011256
 name: abnormal neural fold morphology
 def: "any structural anomaly of the elevated margins of the neural groove" [ISBN:0-683-40008-8]
+subset: IMPC_Prenatal
 synonym: "abnormal medullary fold morphology" EXACT []
 is_a: MP:0002085 ! abnormal embryonic tissue morphology
 created_by: csmith
@@ -76108,6 +76234,7 @@ creation_date: 2011-11-18T02:22:56Z
 id: MP:0011495
 name: abnormal head shape
 def: "any anomaly in the characteristic surface outline or contour of a head of an organism" [MGI:csmith]
+subset: IMPC_Prenatal
 is_a: MP:0000432 ! abnormal head morphology
 created_by: csmith
 creation_date: 2011-11-18T02:53:23Z
@@ -76116,6 +76243,7 @@ creation_date: 2011-11-18T02:53:23Z
 id: MP:0011496
 name: abnormal head size
 def: "anomaly in the average size of the portion of the body containing the brain and organs of sight, hearing, taste, and smell" [MGI:csmith]
+subset: IMPC_Prenatal
 is_a: MP:0000432 ! abnormal head morphology
 created_by: csmith
 creation_date: 2011-11-18T02:56:49Z
@@ -76302,6 +76430,7 @@ creation_date: 2011-12-08T03:02:10Z
 id: MP:0011514
 name: skin hemorrhage
 def: "bleeding into the skin" [MGI:anna]
+subset: IMPC_Prenatal
 synonym: "cutaneous bleeding" EXACT []
 synonym: "cutaneous hemorrhage" EXACT []
 is_a: MP:0001914 ! hemorrhage
@@ -78451,6 +78580,7 @@ id: MP:0011708
 name: decreased fibroblast cell migration
 def: "reduced frequency of or less rapid cell migration that is accomplished by extension and retraction of a fibroblast pseudopodium" [MGI:csmith]
 is_a: MP:0011706 ! abnormal fibroblast migration
+is_a: MP:0011805 ! decreased cell migration
 created_by: csmith
 creation_date: 2012-05-18T11:42:49Z
 
@@ -78459,6 +78589,7 @@ id: MP:0011709
 name: increased fibroblast cell migration
 def: "greater frequency of or more rapid cell migration that is accomplished by extension and retraction of a fibroblast pseudopodium" [MGI:csmith]
 is_a: MP:0011706 ! abnormal fibroblast migration
+is_a: MP:0011804 ! increased cell migration
 created_by: csmith
 creation_date: 2012-05-18T11:42:49Z
 
@@ -78870,7 +79001,7 @@ creation_date: 2012-10-26T04:30:36Z
 id: MP:0011754
 name: abnormal kidney collecting duct intercalated cell morphology
 def: "any structural anomaly of any of the functionally distinct subtypes of cells (alpha or beta) found on the kidney collecting duct epithelium that regulate acid-base homeostasis and play an important role in the kidney's response to acidosis and alkalosis; alpha-intercalated cells secrete acid whereas beta-intercalated cells secrete base; metabolic acidosis results in the conversion of beta- cells to alpha-intercalated cells giving the kidney a greater ability to secrete protons and return pH to the normal range" [MGI:anna]
-is_a: MP:0004754 ! abnormal kidney collecting duct morphology
+is_a: MP:0011843 ! abnormal kidney collecting duct epithelium morphology
 created_by: csmith
 creation_date: 2012-10-29T11:58:19Z
 
@@ -78900,7 +79031,7 @@ creation_date: 2012-10-29T11:58:19Z
 id: MP:0011757
 name: abnormal kidney collecting duct principal cell morphology
 def: "any structural abnormality of the cuboidal epithelial cells found in the collecting ducts of the kidney which regulate sodium and potassium balance via channels located on the cells apical membrane. Aldosterone increases the number of Na+/K+-ATPase pumps that allow increased sodium reabsorption and potassium secretion whereas antidiuretic hormone (vasopressin) determines the expression of aquaporin channels on the cell surface; together, aldosterone and vasopressin let the principal cell control the quantity of water that is reabsorbed" [MGI:anna]
-is_a: MP:0004754 ! abnormal kidney collecting duct morphology
+is_a: MP:0011843 ! abnormal kidney collecting duct epithelium morphology
 created_by: csmith
 creation_date: 2012-10-29T02:32:19Z
 
@@ -79034,7 +79165,7 @@ creation_date: 2012-11-01T02:08:10Z
 [Term]
 id: MP:0011771
 name: abnormal genital tubercle morphology
-def: "any structural anomaly of the embryonic anlage of the external genitalia, which emerges as paired swellings ventral to the cloacal membrane, is proposed to be derived from all three germ layers, and gives rise to the penis, clitoris, scrotum, labia, and foreskin; GT development is indistinguishable in male and female mouse embryos until  approximately E16, when the urethral plate begins to be masculinized to form the penile urethra, marking the beginning of an androgen-dependent phase of sexual differentiation" [MGI:anna]
+def: "any structural anomaly of the embryonic anlage of the external genitalia, which emerges as paired swellings ventral to the cloacal membrane, is proposed to be derived from all three germ layers, and gives rise to the penis, clitoris, scrotum, labia, and foreskin; GT development is indistinguishable in male and female mouse embryos until approximately E16, when the urethral plate begins to be masculinized to form the penile urethra, marking the beginning of an androgen-dependent phase of sexual differentiation" [MGI:anna]
 synonym: "abnormal phallic tubercle morphology" EXACT []
 is_a: MP:0003936 ! abnormal reproductive system development
 created_by: csmith
@@ -79085,6 +79216,722 @@ synonym: "rectum atresia" EXACT []
 is_a: MP:0000492 ! abnormal rectum morphology
 created_by: csmith
 creation_date: 2012-11-01T02:53:34Z
+
+[Term]
+id: MP:0011776
+name: abnormal male urethra morphology
+def: "any structural anomaly of the male fibromuscular tubular canal which extends from the internal urethral orifice in the urinary bladder to the external urethral orifice at the tip of the penis and provides an exit for urine as well as semen during ejaculation; the male urethra is longer than the urethra of females and comprises three major portions, the (i) prostatic, (ii) membranous (aka intermediate), and (iii) cavernous (aka spongy or penile)" [MGI:anna]
+synonym: "abnormal urethra masculina morphology" EXACT []
+synonym: "abnormal urethra virilis morphology" EXACT []
+is_a: MP:0000537 ! abnormal urethra morphology
+created_by: csmith
+creation_date: 2012-11-15T02:41:24Z
+
+[Term]
+id: MP:0011777
+name: abnormal male prostatic urethra morphology
+def: "any structural anomaly of the widest and most dilatable part of the male urethra canal which runs almost vertically through the prostate from its base to its apex, lying nearer its anterior than its posterior surface; this portion of the urethral canal is spindle-shaped, being wider in the middle than at either extremity, and narrowest below, where it joins the membranous portion; it is lined by transitional epithelium and contains in its posterior wall, or floor, the orifices of the prostatic utricle, ejaculatory ducts, and prostatic ducts, collectively known as the seminal colliculus (aka verumontanum)" [MGI:anna]
+synonym: "abnormal pars prostatica urethrae morphology" EXACT []
+synonym: "abnormal prostatic part of male urethra" EXACT []
+is_a: MP:0011776 ! abnormal male urethra morphology
+created_by: csmith
+creation_date: 2012-11-15T02:41:24Z
+
+[Term]
+id: MP:0011778
+name: abnormal male membranous urethra morphology
+def: "any structural anomaly of the shortest, least dilatable, and, with the exception of the external orifice, the narrowest part of the male urethral canal located in the deep perineal pouch and lined by pseudostratified columnar epithelium; it extends downward and forward, with a slight anterior concavity, between the apex of the prostate and the bulb of the urethra, perforating the urogenital diaphragm below and behind the pubic symphysis; the membranous portion of the urethra is completely surrounded by the fibers of the sphincter urethrae membranaceae; on either side near its termination are the bulbourethral glands" [MGI:anna]
+synonym: "abnormal intermediate part of male urethra" EXACT []
+synonym: "abnormal pars intermedia urethrae morphology" EXACT []
+synonym: "abnormal pars membranacea urethrae morphology" EXACT []
+is_a: MP:0011776 ! abnormal male urethra morphology
+created_by: csmith
+creation_date: 2012-11-15T02:41:24Z
+
+[Term]
+id: MP:0011779
+name: abnormal male spongy urethra morphology
+def: "any structural anomaly of the that longest part of the male urethra contained in the corpus spongiosum and extending from the end of the membranous portion to the external urethral orifice; commencing below the inferior fascia of the urogenital diaphragm it passes forward and upward to the front of the symphysis pubis; and then, in the flaccid condition of the penis, it bends downward and forward; while narrow and of uniform size in the body of the penis, it is dilated behind, within the bulb, and again anteriorly within the glans penis, where it forms the fossa navicularis urethrae; the spongy urethra is lined by pseudostratified columnar epithelium proximally, and by stratified squamous epithelium distally" [MGI:anna]
+synonym: "abnormal cavernous portion of male urethra" EXACT []
+synonym: "abnormal pars cavernosa urethrae morphology" EXACT []
+synonym: "abnormal pars spongiosa urethrae masculinae morphology" EXACT []
+synonym: "abnormal penile urethra morphology" EXACT []
+synonym: "abnormal spongiose urethra morphology" EXACT []
+is_a: MP:0011776 ! abnormal male urethra morphology
+created_by: csmith
+creation_date: 2012-11-15T02:41:24Z
+
+[Term]
+id: MP:0011780
+name: abnormal female urethra morphology
+def: "any structural anomaly of the short and relatively simple female fibromuscular tubular canal which extends from the urinary bladder outlet to the perineum adjacent to the anterior wall of the vagina, and opens in the vestibule of the vagina posterior to the clitoris and anterior to the vaginal orifice; small mucus urethral glands (Skene's glands) open along its entire length and drain into a single paraurethral duct, which empties at the lateral margin of the external urethral orifice: its epithelial lining changes from transitional epithelium at the bladder end to non-keratinizing stratified squamous epithelium distally" [MGI:anna]
+synonym: "abnormal urethra feminina morphology" EXACT []
+synonym: "abnormal urethra muliebris morphology" EXACT []
+is_a: MP:0000537 ! abnormal urethra morphology
+created_by: csmith
+creation_date: 2012-11-15T02:41:24Z
+
+[Term]
+id: MP:0011781
+name: abnormal bulbourethral gland physiology
+def: "any functional anomaly of the small paired racemose (compound tubulo-alveolar) glands below the apex of the prostate in males, located posterolateral to the membranous portion of the urethra at the base of the penis, which produce a clear, salty, viscous secretion known as pre-ejaculate (aka as pre-ejaculatory fluid, preseminal fluid, or Cowper's fluid) upon sexual stimulation; this fluid is believed to lubricate the urethra for spermatozoa to pass through and neutralize traces of acidic urine in the urethra" [MGI:anna]
+synonym: "abnormal Cowper's gland physiology" EXACT []
+is_a: MP:0003698 ! abnormal male reproductive system physiology
+is_a: MP:0005647 ! abnormal sex gland physiology
+created_by: csmith
+creation_date: 2012-11-15T02:53:25Z
+
+[Term]
+id: MP:0011782
+name: abnormal internal urethral orifice morphology
+def: "any structural anomaly of the usually crescent-shaped opening of the urinary bladder into the urethra, placed at the anteroinferior angle (apex) of the urinary bladder trigone" [MGI:anna]
+synonym: " abnormal ostium urethrae internum morphology" EXACT []
+synonym: "abnormal internal urethral ostium morphology" EXACT []
+synonym: "abnormal internal urinary meatus morphology" EXACT []
+synonym: "abnormal orificium urethrae internum morphology" EXACT []
+synonym: "abnormal urethral opening morphology" EXACT []
+is_a: MP:0000516 ! abnormal renal/urinary system morphology
+created_by: csmith
+creation_date: 2012-11-15T03:00:31Z
+
+[Term]
+id: MP:0011783
+name: abnormal ureteral orifice morphology
+def: "any structural anomaly of the slit-like opening of either ureter into the bladder; normally, the two ureteral orifices are placed at the posterolateral angles of the urinary bladder trigone while the internal urethral orifice is placed at its anteroinferior angle (apex); wide gaping usually indicates vesicoureteral reflux" [MGI:anna]
+synonym: " abnormal orificium ureteris morphology" EXACT []
+synonym: " abnormal ureteral opening morphology" EXACT []
+synonym: "abnormal ostium ureteris morphology" EXACT []
+synonym: "abnormal ureteral meatus morphology" EXACT []
+synonym: "abnormal ureteric orifice morphology" EXACT []
+synonym: "abnormal ureterovesical orifice morphology" EXACT []
+is_a: MP:0011488 ! abnormal ureterovesical junction morphology
+created_by: csmith
+creation_date: 2012-11-15T03:05:54Z
+
+[Term]
+id: MP:0011784
+name: abnormal urinary bladder neck morphology
+def: "any structural anomaly of the constricted portion of the urinary bladder, formed by the meeting of its inferolateral surfaces proximal to the opening of the urethra" [MGI:anna]
+synonym: "abnormal cervix vesicae morphology" EXACT []
+synonym: "abnormal collum vesicae morphology" EXACT []
+synonym: "abnormal vesical neck morphology" EXACT []
+is_a: MP:0000538 ! abnormal urinary bladder morphology
+created_by: csmith
+creation_date: 2012-11-15T03:09:34Z
+
+[Term]
+id: MP:0011785
+name: abnormal urinary bladder fundus morphology
+def: "any structural anomaly of the base or posterior surface of the urinary bladder, which contains the trigone of the bladder and the outlet where urine empties through the internal urethral orifice" [MGI:anna]
+synonym: "abnormal fundus vesicae morphology" EXACT []
+synonym: "abnormal urinary bladder base morphology" EXACT []
+is_a: MP:0000538 ! abnormal urinary bladder morphology
+created_by: csmith
+creation_date: 2012-11-15T03:11:19Z
+
+[Term]
+id: MP:0011786
+name: rectourethral fistula
+def: "an abnormal anatomical passage connecting the urethra and the rectum" [MGI:anna]
+synonym: "recto-urethral fistula" EXACT []
+is_a: MP:0000537 ! abnormal urethra morphology
+created_by: csmith
+creation_date: 2012-11-15T03:13:52Z
+
+[Term]
+id: MP:0011787
+name: abnormal Bartholin's gland morphology
+def: "any structural anomaly of the paired glands located slightly posterior and to the left and right of the opening of the vagina in the superficial perineal pouch in females; they secrete mucus to lubricate the vagina and are homologous to bulbourethral (Cowper's) glands in males" [MGI:anna]
+synonym: "abnormal Bartholin gland morphology" EXACT []
+synonym: "abnormal greater vestibular gland morphology" EXACT []
+synonym: "abnormal major vestibular gland morphology" EXACT []
+is_a: MP:0000653 ! abnormal sex gland morphology
+is_a: MP:0009209 ! abnormal internal female genitalia morphology
+created_by: csmith
+creation_date: 2012-11-15T03:44:43Z
+
+[Term]
+id: MP:0011788
+name: absent urethra
+def: "absence or failure to form of any part of the male or female urethra" [MGI:anna]
+synonym: "urethral agenesis" EXACT []
+is_a: MP:0000537 ! abnormal urethra morphology
+created_by: csmith
+creation_date: 2012-11-15T03:48:21Z
+
+[Term]
+id: MP:0011789
+name: increased urethra carcinoma incidence
+def: "greater than the expected number of malignant neoplasms arising from the epithelial lining of the urethra in a given population in a given time period" [MGI:anna]
+synonym: "increased urethral carcinoma incidence" EXACT []
+is_a: MP:0010289 ! increased urinary system tumor incidence
+created_by: csmith
+creation_date: 2012-11-15T03:50:50Z
+
+[Term]
+id: MP:0011790
+name: increased urethral gland adenocarcinoma incidence
+def: "greater than the expected number of malignant neoplasms arising from urothelial lining or surrounding glands of the urethra in a given population in a given time period" [MGI:anna]
+is_a: MP:0010289 ! increased urinary system tumor incidence
+created_by: csmith
+creation_date: 2012-11-15T03:50:50Z
+
+[Term]
+id: MP:0011791
+name: increased bulbourethral gland adenocarcinoma incidence
+def: "greater than the expected number of malignant neoplasm of epithelial cells in the bulbourethral glands, usually with a glandular organization in a given population in a given time period" [MGI:anna]
+synonym: "increased adenocarcinoma of Cowper's gland incidence" EXACT []
+is_a: MP:0010288 ! increased gland tumor incidence
+is_a: MP:0010289 ! increased urinary system tumor incidence
+created_by: csmith
+creation_date: 2012-11-15T03:50:50Z
+
+[Term]
+id: MP:0011792
+name: abnormal urethral gland morphology
+def: "any structural anomaly of any of the numerous small mucous-secreting glands located in the wall of the male or female urethra that help protect the epithelium from the corrosive urine" [MGI:anna]
+is_a: MP:0000537 ! abnormal urethra morphology
+created_by: csmith
+creation_date: 2012-11-15T04:00:10Z
+
+[Term]
+id: MP:0011793
+name: abnormal female urethral gland morphology
+def: "any structural anomaly of the numerous mucous-secreting glands found in several female mammalian species (including rodents and humans) on the anterior wall of the vagina, around the lower end of the urethra, and possessing a common paraurethral duct which opens (on each side) near the external urethral orifice; they are homologous with the prostate gland in males, have highly variable anatomy, and are believed to be the source of the female ejaculate, a lubricating fluid with a similar consistency to male prostatic fluid that is expelled through the urethra during sexual stimulation; like the male prostate, these glands are susceptible to infection (skenitis), cyst development, and cancer" [MGI:anna]
+synonym: "abnormal female prostate morphology" EXACT []
+synonym: "abnormal glands of the female urethra" BROAD []
+synonym: "abnormal glandula vestibulares minor morphology" EXACT []
+synonym: "abnormal glandulae urethrales femininae" BROAD []
+synonym: "abnormal Guérin gland morphology" EXACT []
+synonym: "abnormal lesser vestibular gland morphology" EXACT []
+synonym: "abnormal para-urethral gland morphology" EXACT []
+synonym: "abnormal paraurethral gland morphology" EXACT []
+synonym: "abnormal periurethral gland morphology" EXACT []
+synonym: "abnormal Schueller's gland morphology" EXACT []
+synonym: "abnormal Skene gland morphology" EXACT []
+synonym: "abnormal Skene's gland morphology" EXACT []
+synonym: "abnormal U-spot morphology" EXACT []
+is_a: MP:0011792 ! abnormal urethral gland morphology
+created_by: csmith
+creation_date: 2012-11-15T04:00:52Z
+
+[Term]
+id: MP:0011794
+name: abnormal male urethral gland morphology
+def: "any structural anomaly of any of the numerous small mucous-secreting glands located in the wall of the penile urethra" [MGI:anna]
+synonym: "abnormal glands of the male urethra" BROAD []
+synonym: "abnormal glandulae urethrales masculinae" EXACT []
+synonym: "abnormal Littré glands morphology" EXACT []
+is_a: MP:0011792 ! abnormal urethral gland morphology
+created_by: csmith
+creation_date: 2012-11-15T04:00:52Z
+
+[Term]
+id: MP:0011795
+name: abnormal urinary bladder development
+def: "incomplete or aberrant differentiation of the distensible musculomembranous organ situated in the anterior part of the pelvic cavity in which urine collects before excretion" [MGI:anna]
+synonym: "abnormal cystis urinaria development" EXACT []
+synonym: "abnormal urocyst development" EXACT []
+synonym: "abnormal urocystis development" EXACT []
+synonym: "abnormal vesica development" EXACT []
+synonym: "abnormal vesica urinaria development" EXACT []
+synonym: "urinary bladder dysgenesis" EXACT []
+synonym: "urinary bladder malformation" EXACT []
+is_a: MP:0000538 ! abnormal urinary bladder morphology
+is_a: MP:0003942 ! abnormal urinary system development
+created_by: csmith
+creation_date: 2012-11-15T04:04:12Z
+
+[Term]
+id: MP:0011796
+name: abnormal external urethral orifice morphology
+def: "any structural anomaly of the external opening or orifice of the urethra through which urine and seminal fluid (in males only) leave the body; in males the meatus presents as a vertical slit normally positioned at the tip of glans penis; in females the meatus is located between the clitoris and the vagina in the vulvular vestibule of the female genitalia" [MGI:anna]
+synonym: "abnormal external urethral ostium morphology" EXACT []
+synonym: "abnormal external urinary meatus morphology" EXACT []
+synonym: "abnormal meatus urinarius morphology" EXACT []
+synonym: "abnormal orificium urethrae externum morphology" EXACT []
+synonym: "abnormal ostium urethrae externum morphology" EXACT []
+synonym: "abnormal urinary meatus morphology" EXACT []
+is_a: MP:0000537 ! abnormal urethra morphology
+created_by: csmith
+creation_date: 2012-11-15T04:12:05Z
+
+[Term]
+id: MP:0011797
+name: blind ureter
+def: "a ureter ending in a blind-ended segment or pouch" [MGI:anna]
+synonym: "blind-ended ureter" EXACT []
+synonym: "blind-ending ureter" EXACT []
+is_a: MP:0000534 ! abnormal ureter morphology
+created_by: csmith
+creation_date: 2012-11-15T04:19:31Z
+
+[Term]
+id: MP:0011798
+name: abnormal urinary bladder weight
+def: "anomaly in the average weight of the distensible musculomembranous organ that serves to collect and store urine excreted by the kidneys compared to controls" [MGI:anna]
+is_a: MP:0000538 ! abnormal urinary bladder morphology
+created_by: csmith
+creation_date: 2012-11-15T04:20:49Z
+
+[Term]
+id: MP:0011799
+name: increased urinary bladder weight
+def: "greater than average weight of the distensible musculomembranous organ that serves to collect and store urine excreted by the kidneys compared to controls" [MGI:anna]
+is_a: MP:0011798 ! abnormal urinary bladder weight
+created_by: csmith
+creation_date: 2012-11-15T04:21:19Z
+
+[Term]
+id: MP:0011800
+name: decreased urinary bladder weight
+def: "less than average weight of the distensible musculomembranous organ that serves to collect and store urine excreted by the kidneys compared to controls" [MGI:anna]
+synonym: "reduced urinary bladder weight" EXACT []
+is_a: MP:0011798 ! abnormal urinary bladder weight
+created_by: csmith
+creation_date: 2012-11-15T04:21:40Z
+
+[Term]
+id: MP:0011801
+name: urethra obstruction
+def: "any impediment or blockage of the canal through which urine is discharged from the bladder in most mammals and through which semen is discharged in the male; usually caused by calculus, or plugs composed of proteinaceous material, cellular debris and possibly crystals" [MGI:anna]
+synonym: "urethral obstruction" EXACT []
+synonym: "urethral plug" EXACT []
+is_a: MP:0000537 ! abnormal urethra morphology
+created_by: csmith
+creation_date: 2012-11-15T04:23:17Z
+
+[Term]
+id: MP:0011802
+name: seminal vesiculitis
+def: "local accumulation of fluid, plasma proteins, and leukocytes in the seminal vesicle(s), usually caused by an infection" [MGI:anna]
+synonym: "gonecystitis" EXACT []
+synonym: "seminal gland inflammation" EXACT []
+synonym: "seminal vesicle inflammation" EXACT []
+is_a: MP:0002254 ! reproductive system inflammation
+created_by: csmith
+creation_date: 2012-11-15T04:26:55Z
+
+[Term]
+id: MP:0011803
+name: double kidney pelvis
+def: "duplication of the funnel shaped proximal portion of the ureter that is formed by convergence of the major calices" [MGI:anna]
+synonym: "double pyelum" EXACT []
+synonym: "double renal pelvis" EXACT []
+synonym: "duplex pyelum" EXACT []
+synonym: "duplicated pyelum" EXACT []
+synonym: "duplication of renal pelvis" EXACT []
+is_a: MP:0004194 ! abnormal kidney pelvis morphology
+created_by: csmith
+creation_date: 2012-11-15T04:29:19Z
+
+[Term]
+id: MP:0011804
+name: increased cell migration
+def: "increased or faster movement of cells from one site to another, often occuring during developmental or chemotactic processes" [GO:0016477, MGI:csmith]
+is_a: MP:0003091 ! abnormal cell migration
+created_by: csmith
+creation_date: 2012-11-16T10:14:05Z
+
+[Term]
+id: MP:0011805
+name: decreased cell migration
+def: "reduced or slower movement of cells from one site to another, often occuring during developmental or chemotactic processes" [GO:0016477, MGI:csmith]
+synonym: "reduced cell migration" EXACT []
+is_a: MP:0003091 ! abnormal cell migration
+created_by: csmith
+creation_date: 2012-11-16T10:14:05Z
+
+[Term]
+id: MP:0011806
+name: decreased dermal fibroblast proliferation
+def: "reduction in the expansion rate of a dermal fibroblast cell population by cell division" [MGI:csmith]
+is_a: MP:0011704 ! decreased fibroblast proliferation
+created_by: csmith
+creation_date: 2012-11-16T10:19:09Z
+
+[Term]
+id: MP:0011807
+name: decreased lung fibroblast proliferation
+def: "reduction in the expansion rate of a lung fibroblast cell population by cell division" [MGI:csmith]
+is_a: MP:0011704 ! decreased fibroblast proliferation
+created_by: csmith
+creation_date: 2012-11-16T10:20:12Z
+
+[Term]
+id: MP:0011808
+name: abnormal myoblast differentiation
+def: "anomaly in the process in which a relatively unspecialized cell acquires specialized features of a myoblast, a mononucleate cell type that, by fusion with other myoblasts, gives rise to the myotubes that eventually develop into striated muscle fibers" [GO:0045445]
+synonym: "abnormal myoblast cell differentiation" EXACT []
+is_a: MP:0000729 ! abnormal myogenesis
+is_a: MP:0005076 ! abnormal cell differentiation
+created_by: csmith
+creation_date: 2012-11-16T10:23:14Z
+
+[Term]
+id: MP:0011809
+name: abnormal anoikis
+def: "anomaly in the apoptosis response triggered by inadequate or inappropriate adherence to substrate e.g. after disruption of the interactions between normal epithelial cells and the extracellular matrix" [GO:0043276]
+synonym: "abnormal detachment induced cell death" EXACT []
+synonym: "abnormal suspension induced apoptosis" EXACT []
+is_a: MP:0001648 ! abnormal apoptosis
+created_by: csmith
+creation_date: 2012-11-16T10:50:45Z
+
+[Term]
+id: MP:0011810
+name: increased anoikis
+def: "increase in the apoptosis response triggered by inadequate or inappropriate adherence to substrate e.g. after disruption of the interactions between normal epithelial cells and the extracellular matrix" [GO:0043276]
+is_a: MP:0006042 ! increased apoptosis
+is_a: MP:0011809 ! abnormal anoikis
+created_by: csmith
+creation_date: 2012-11-16T10:53:17Z
+
+[Term]
+id: MP:0011811
+name: decreased anoikis
+def: "reduction in the apoptosis response triggered by inadequate or inappropriate adherence to substrate e.g. after disruption of the interactions between normal epithelial cells and the extracellular matrix" [GO:0043276]
+synonym: "reduced anoikis" EXACT []
+is_a: MP:0006043 ! decreased apoptosis
+is_a: MP:0011809 ! abnormal anoikis
+created_by: csmith
+creation_date: 2012-11-16T10:53:17Z
+
+[Term]
+id: MP:0011812
+name: increased cranium length
+def: "having an increased dorsal-to-ventral distance of the cranium" [MGI:mberry]
+is_a: MP:0010031 ! abnormal cranium size
+created_by: csmith
+creation_date: 2012-11-16T12:14:30Z
+
+[Term]
+id: MP:0011813
+name: long maxilla
+def: "increased length of the upper jaw bone" [MGI:mberry]
+synonym: "increased maxilla length" EXACT []
+is_a: MP:0000455 ! abnormal maxilla morphology
+created_by: csmith
+creation_date: 2012-11-16T12:16:36Z
+
+[Term]
+id: MP:0011814
+name: abnormal pre-pro B cell morphology
+def: "any structural anomaly of a pro-B cell that CD45R/B220-positive, CD43-positive, HSA-low, BP-1-negative and Ly6c-negative. This cell type is also described as being lin-negative, AA4-positive, Kit-positive, IL7Ra-positive and CD45R-positive" [CL:0002045]
+synonym: "abnormal Fraction A pre-pro B cell morphology" EXACT []
+is_a: MP:0005432 ! abnormal pro-B cell morphology
+created_by: csmith
+creation_date: 2012-11-16T12:46:55Z
+
+[Term]
+id: MP:0011815
+name: increased pre-pro B cell number
+def: "increased number of pro-B cells that are CD45R/B220-positive, CD43-positive, HSA-low, BP-1-negative and Ly6c-negative; this cell type is also described as being lin-negative, AA4-positive, Kit-positive, IL7Ra-positive and CD45R-positive" [CL:0002045, MGI:csmith]
+is_a: MP:0008186 ! increased pro-B cell number
+is_a: MP:0011814 ! abnormal pre-pro B cell morphology
+created_by: csmith
+creation_date: 2012-11-16T12:50:14Z
+
+[Term]
+id: MP:0011816
+name: decreased pre-pro B cell number
+def: "reduced number of pro-B cells that are CD45R/B220-positive, CD43-positive, HSA-low, BP-1-negative and Ly6c-negative; this cell type is also described as being lin-negative, AA4-positive, Kit-positive, IL7Ra-positive and CD45R-positive" [CL:0002045, MGI:csmith]
+synonym: "reduced pre-pro B cell number" EXACT []
+is_a: MP:0008208 ! decreased pro-B cell number
+is_a: MP:0011814 ! abnormal pre-pro B cell morphology
+created_by: csmith
+creation_date: 2012-11-16T12:50:14Z
+
+[Term]
+id: MP:0011817
+name: absent pre-pro B cells
+def: "absence of pro-B cells that are CD45R/B220-positive, CD43-positive, HSA-low, BP-1-negative and Ly6c-negative; this cell type is also described as being lin-negative, AA4-positive, Kit-positive, IL7Ra-positive and CD45R-positive" [CL:0002045, MGI:csmith]
+is_a: MP:0008187 ! absent pro-B cells
+is_a: MP:0011816 ! decreased pre-pro B cell number
+created_by: csmith
+creation_date: 2012-11-16T12:50:24Z
+
+[Term]
+id: MP:0011818
+name: abnormal pancreatic beta cell proliferation
+def: "anomaly in the ability of the cells that secrete insulin and are located towards the center of the islets of Langerhans in the pancreas to undergo expansion by cell division" [CL:0000169, MGI:csmith]
+is_a: MP:0000350 ! abnormal cell proliferation
+is_a: MP:0003562 ! abnormal pancreatic beta cell physiology
+created_by: csmith
+creation_date: 2012-11-16T01:18:26Z
+
+[Term]
+id: MP:0011819
+name: increased pancreatic beta cell proliferation
+def: "increase in the ability of the cells that secrete insulin and are located towards the center of the islets of Langerhans in the pancreas to undergo expansion by cell division" [CL:0000169]
+is_a: MP:0011818 ! abnormal pancreatic beta cell proliferation
+created_by: csmith
+creation_date: 2012-11-16T01:25:35Z
+
+[Term]
+id: MP:0011820
+name: decreased pancreatic beta cell proliferation
+def: "reduction in the ability of the cells that secrete insulin and are located towards the center of the islets of Langerhans in the pancreas to undergo expansion by cell division" [CL:0000169]
+synonym: "reduced pancreatic beta cell proliferation" EXACT []
+is_a: MP:0011818 ! abnormal pancreatic beta cell proliferation
+created_by: csmith
+creation_date: 2012-11-16T01:25:35Z
+
+[Term]
+id: MP:0011821
+name: abnormal CD8-positive, alpha-beta memory T cell proliferation
+def: "anomaly in the ability of the a CD8-positive, alpha-beta T cell with memory phenotype indicated by being CD45RO and CD127-positive, or also described as being CD25-negative, CD44-high, and CD122- high, to undergo expansion by cell division" [CL:0000909]
+is_a: MP:0000350 ! abnormal cell proliferation
+is_a: MP:0008051 ! abnormal memory T cell physiology
+created_by: csmith
+creation_date: 2012-11-16T01:34:52Z
+
+[Term]
+id: MP:0011822
+name: increased CD8-positive, alpha-beta memory T cell proliferation
+def: "increase in the ability of the a CD8-positive, alpha-beta T cell with memory phenotype indicated by being CD45RO and CD127-positive, or also described as being CD25-negative, CD44-high, and CD122- high, to undergo expansion by cell division" [CL:0000909]
+is_a: MP:0000351 ! increased cell proliferation
+is_a: MP:0011821 ! abnormal CD8-positive, alpha-beta memory T cell proliferation
+created_by: csmith
+creation_date: 2012-11-16T01:36:08Z
+
+[Term]
+id: MP:0011823
+name: decreased CD8-positive, alpha-beta memory T cell proliferation
+def: "reduction in the ability of the a CD8-positive, alpha-beta T cell with memory phenotype indicated by being CD45RO and CD127-positive, or also described as being CD25-negative, CD44-high, and CD122- high, to undergo expansion by cell division" [CL:0000909]
+synonym: "reduced CD8-positive, alpha-beta memory T cell proliferation" EXACT []
+is_a: MP:0000352 ! decreased cell proliferation
+is_a: MP:0011821 ! abnormal CD8-positive, alpha-beta memory T cell proliferation
+created_by: csmith
+creation_date: 2012-11-16T01:36:08Z
+
+[Term]
+id: MP:0011824
+name: increased cell chemotaxis
+def: "increase in the directed movement response of a motile cell guided by a specific chemical concentration gradient; movement may be towards a higher concentration (positive chemotaxis) or towards a lower concentration (negative chemotaxis)" [MGI:csmith]
+is_a: MP:0011518 ! abnormal cell chemotaxis
+created_by: csmith
+creation_date: 2012-11-16T01:44:31Z
+
+[Term]
+id: MP:0011825
+name: decreased cell chemotaxis
+def: "reduciton in the directed movement response of a motile cell guided by a specific chemical concentration gradient; movement may be towards a higher concentration (positive chemotaxis) or towards a lower concentration (negative chemotaxis)" [MGI:csmith]
+synonym: "reduced cell chemotaxis" EXACT []
+is_a: MP:0011518 ! abnormal cell chemotaxis
+created_by: csmith
+creation_date: 2012-11-16T01:44:49Z
+
+[Term]
+id: MP:0011826
+name: increased lymphocyte chemotaxis
+def: "any anomaly in the directed movement of a lymphocyte in response to an external stimulus" [GO:0048247]
+is_a: MP:0003156 ! abnormal leukocyte migration
+is_a: MP:0011824 ! increased cell chemotaxis
+created_by: csmith
+creation_date: 2012-11-16T01:51:42Z
+
+[Term]
+id: MP:0011827
+name: impaired neuron differentiation
+def: "decreased production of or inability to produce the mature cells of the nervous system that receive, conduct, and transmit impulses" [MGI:csmith]
+is_a: MP:0009937 ! abnormal neuron differentiation
+created_by: csmith
+creation_date: 2012-11-16T01:56:36Z
+
+[Term]
+id: MP:0011828
+name: urinary bladder cysts
+def: "abnormal membranous pouches or sacs usually filled with a fluid or viscous substance found along the internal lining of the urinary bladder" [MGI:anna]
+synonym: "bladder cysts" EXACT []
+synonym: "cystic bladder" EXACT []
+is_a: MP:0000538 ! abnormal urinary bladder morphology
+created_by: csmith
+creation_date: 2012-11-16T02:56:30Z
+
+[Term]
+id: MP:0011829
+name: vesicovaginal fistula
+def: "an abnormal fistulous tract extending between the bladder and the vagina, with resulting leakage of urine into the vaginal cavity" [MGI:anna]
+is_a: MP:0000538 ! abnormal urinary bladder morphology
+is_a: MP:0001139 ! abnormal vagina morphology
+created_by: csmith
+creation_date: 2012-11-16T03:00:44Z
+
+[Term]
+id: MP:0011830
+name: ectopic hair follicle melanin granules
+def: "any aberration in normal location of pigment granules in the hair follicle that results in variation from expected hair color" [MGI:llw2]
+is_a: MP:0005072 ! abnormal hair follicle melanin granule morphology
+created_by: csmith
+creation_date: 2012-11-16T03:04:36Z
+
+[Term]
+id: MP:0011831
+name: abnormal visual contrast sensitivity
+def: "any abnormality in the ability to distinguish between increments of light versus dark" [MGI:smb]
+is_a: MP:0002090 ! abnormal vision
+created_by: csmith
+creation_date: 2012-11-16T03:50:13Z
+
+[Term]
+id: MP:0011832
+name: abnormal visual acuity
+def: "any abnormality in the spatial resolution or resolving power of the visual processing system" [MGI:smb]
+is_a: MP:0002090 ! abnormal vision
+created_by: csmith
+creation_date: 2012-11-16T03:51:48Z
+
+[Term]
+id: MP:0011833
+name: abnormal cremaster muscle morphology
+def: "any structural anomaly of the thin layer of skeletal muscle that envelops the spermatic cord and testis of most male mammals in a series of loops; it is a continuation of the obliquus internus, arising from the inguinal ligament and inserting into the crest of the pubis and into the sheath of the rectus abdominis; it is innervated by the genital branch of the genitofemoral nerve and functions to draw the testis up toward the superficial inguinal ring in response to cold or to stimulation of the nerve; in females it is represented by only a few muscle loops that envelop the round ligament of the uterus" [MGI:anna]
+comment: In rats, it has been shown that cremaster muscles develop from the gubernacular bulb.
+synonym: "abnormal cremaster morphology" EXACT []
+is_a: MP:0000759 ! abnormal skeletal muscle morphology
+created_by: csmith
+creation_date: 2012-11-30T02:55:12Z
+
+[Term]
+id: MP:0011834
+name: abnormal clitoral gland morphology
+def: "any structural anomaly of the paired, lobulated, modified sebaceous glands located on the side of the clitoris in female rodents; in contrast to the preputial glands in male rodents, clitoral glands are a minor source of olfactory stimuli contributing to sexual attractivity; unlike other sebaceous glands, they undergo progressive atrophy of the glandular portion with marked ductal ectasia as rodents age; there is no true anatomical equivalent in humans" [MGI:anna]
+synonym: "abnormal female preputial gland morphology" EXACT []
+is_a: MP:0000653 ! abnormal sex gland morphology
+created_by: csmith
+creation_date: 2012-11-30T02:58:33Z
+
+[Term]
+id: MP:0011835
+name: abnormal urogenital fold morphology
+def: "any structural anomaly of the pair of folds derived from the cloacal folds which give rise to a portion of the external genitalia; in male embryos they close over the urethral plate and fuse to form the spongy (penile) urethra and ventral aspect of the penis, not including the glans; failure of fusion of the urethral folds leads to hypospadias; in female embryos they fuse only anterior to the anus and form the labia minora" [MGI:anna]
+synonym: "abnormal urethral fold morphology" EXACT []
+synonym: "abnormal urogenital ridge morphology" EXACT []
+is_a: MP:0002085 ! abnormal embryonic tissue morphology
+created_by: csmith
+creation_date: 2012-11-30T03:18:00Z
+
+[Term]
+id: MP:0011836
+name: abnormal cloacal fold morphology
+def: "any structural anomaly of the pair of mesenchymal swellings (folds) located on either side of the cloacal membrane during the indifferent stage of embryonic development; cranial to the cloacal membrane the folds unite to form the genital tubercle; caudally the folds are subdivided into urogenital folds anteriorly and anal folds posteriorly" [MGI:anna]
+is_a: MP:0010115 ! abnormal embryonic cloaca morphology
+created_by: csmith
+creation_date: 2012-11-30T03:20:12Z
+
+[Term]
+id: MP:0011837
+name: abnormal cloacal membrane morphology
+def: "any structural anomaly of the membrane that covers the embryonic cloaca, formed by the union of proctodeal (anal pit) ectoderm and cloacal endoderm, with no intervening mesoderm; the urorectal septum joins the cloacal membrane and divides it into an anal membrane and a urogenital membrane; the point where the urorectal septum intersects the cloacal membrane is the future site of the perineal body; proliferation of mesoderm and ectoderm around the cloacal membrane produces primordial tissues of the external genitalia in both sexes: the genital tubercle, genital folds, and genital swellings" [MGI:anna]
+synonym: "abnormal membrana cloacalis morphology" RELATED []
+is_a: MP:0010115 ! abnormal embryonic cloaca morphology
+created_by: csmith
+creation_date: 2012-11-30T03:21:45Z
+
+[Term]
+id: MP:0011838
+name: abnormal navicular fossa morphology
+def: "any structural anomaly of the dilated terminal portion of the male spongy urethra located in the glans penis right before the external urethral orifice, also referred to as the most distal pendulous urethra; it is lined by stratified squamous, non-keratinizing epithelium; during development, the glans of the penis is initially solid but cannulates to give rise to the navicular fossa" [MGI:anna]
+synonym: "abnormal fossa navicularis urethrae morphology" EXACT []
+synonym: "abnormal navicular fossa of male urethra" EXACT []
+is_a: MP:0011779 ! abnormal male spongy urethra morphology
+created_by: csmith
+creation_date: 2012-11-30T03:32:00Z
+
+[Term]
+id: MP:0011839
+name: abnormal Guérin's valve morphology
+def: "any structural anomaly of the fold or valve of mucus membrane on the upper wall of the navicuar fossa" [MGI:anna]
+synonym: "abnormal Guérin's valvule morphology" EXACT []
+synonym: "abnormal urethral valve of Guérin" EXACT []
+synonym: "abnormal valvula fossae navicularis" EXACT []
+is_a: MP:0011838 ! abnormal navicular fossa morphology
+created_by: csmith
+creation_date: 2012-11-30T03:33:07Z
+
+[Term]
+id: MP:0011840
+name: abnormal urethral crest morphology
+def: "any structural anomaly of the longitudinal mucosal fold in the dorsal wall of the urethra" [MGI:anna]
+synonym: "abnormal crista urethralis morphology" EXACT []
+is_a: MP:0000537 ! abnormal urethra morphology
+created_by: csmith
+creation_date: 2012-11-30T03:36:23Z
+
+[Term]
+id: MP:0011841
+name: abnormal male urethral crest morphology
+def: "any structural anomaly of the narrow longitudinal fold of mucosa on the posterior wall of the male urethra, extending from the uvula of the bladder through the prostatic urethra; when distended, it may serve to prevent the passage of the semen backward into the bladder; on either side of the male urethral crest is a slightly depressed fossa, the prostatic sinus, the floor of which is perforated by the orifices of the prostatic ducts from the lateral lobes of the prostate; the ducts of the middle lobe open behind the crest; at the forepart of the crest, below its summit, is a median elevation, the colliculus seminalis, upon or within the margins of which are the orifices of the prostatic utricle and the slit-like openings of the ejaculatory ducts" [MGI:anna]
+synonym: "abnormal crista phallica morphology" EXACT []
+synonym: "abnormal crista urethralis masculinae morphology" EXACT []
+synonym: "abnormal urethral crest of male" EXACT []
+is_a: MP:0011776 ! abnormal male urethra morphology
+is_a: MP:0011840 ! abnormal urethral crest morphology
+created_by: csmith
+creation_date: 2012-11-30T03:36:23Z
+
+[Term]
+id: MP:0011842
+name: abnormal female urethral crest morphology
+def: "any structural anomaly of the conspicuous longitudinal fold of mucosa on the posterior wall of the female urethra" [MGI:anna]
+synonym: "abnormal crista urethralis femininae morphology" EXACT []
+synonym: "abnormal urethral crest of female" EXACT []
+is_a: MP:0011780 ! abnormal female urethra morphology
+is_a: MP:0011840 ! abnormal urethral crest morphology
+created_by: csmith
+creation_date: 2012-11-30T03:36:23Z
+
+[Term]
+id: MP:0011843
+name: abnormal kidney collecting duct epithelium morphology
+def: "any structural anomaly of the simple cuboidal epithelium lining the lumen of kidney collecting ducts; the mature and differentiated CD epithelium comprises two unique cells types with principal cells responsible for vasopressin-regulated water reabsorption, and intercalated cells regulating acid-base homeostasis; injury to the epithelium is believed to cause epithelial cells to acquire mesenchymal characteristics via epithelial-mesenchymal transition (EMT), a process through which tubular epithelial cells may transform into interstitial fibroblasts and promote renal fibrosis" [MGI:anna]
+is_a: MP:0004754 ! abnormal kidney collecting duct morphology
+created_by: csmith
+creation_date: 2012-11-30T03:40:18Z
+
+[Term]
+id: MP:0011844
+name: kidney collecting duct atrophy
+def: "acquired diminution of the size of the kidney collecting ducts associated with wasting as from death and reabsorbtion of cells, diminished cellular proliferation, decreased cellular volume, pressure, ischemia, malnutrition, reduced function or malfunction, or hormonal changes" [MGI:anna]
+is_a: MP:0004754 ! abnormal kidney collecting duct morphology
+created_by: csmith
+creation_date: 2012-11-30T03:43:16Z
+
+[Term]
+id: MP:0011845
+name: abnormal kidney collecting duct number
+def: "anomaly in the number of any of the kidney ducts that collect urine from the distal convoluted tubules, merge and become larger as they descend from the renal cortex into the medulla, and respond to vasopressin and aldosterone to regulate water, electrolyte and acid-base balance" [MGI:anna]
+is_a: MP:0004754 ! abnormal kidney collecting duct morphology
+created_by: csmith
+creation_date: 2012-11-30T03:43:16Z
+
+[Term]
+id: MP:0011846
+name: decreased kidney collecting duct number
+def: "smaller than expected number of the kidney ducts that collect urine from the distal convoluted tubules, merge and become larger as they descend from the renal cortex into the medulla, and respond to vasopressin and aldosterone to regulate water, electrolyte and acid-base balance" [MGI:anna]
+is_a: MP:0011845 ! abnormal kidney collecting duct number
+created_by: csmith
+creation_date: 2012-11-30T03:43:16Z
+
+[Term]
+id: MP:0011847
+name: increased kidney collecting duct number
+def: "larger than expected number of the kidney ducts that collect urine from the distal convoluted tubules, merge and become larger as they descend from the renal cortex into the medulla, and respond to vasopressin and aldosterone to regulate water, electrolyte and acid-base balance" [MGI:anna]
+is_a: MP:0011845 ! abnormal kidney collecting duct number
+created_by: csmith
+creation_date: 2012-11-30T03:43:16Z
+
+[Term]
+id: MP:0011848
+name: abnormal vagina vestibule morphology
+def: "any structural anomaly of the space posterior to the glans clitoridis, between the labia minora; located within the vestibule are the openings of the vagina, the urethra, and the ducts of the lesser vestibular glands, the greater vestibular (Bartholin's) glands, and the paraurethral (Skene's) glands, which release mucus into the vestibule to maintain a moist, lubricated vestibular environment; the vestibule is also moistened by secretions from the cervical mucus glands located in the inferior region of the uterus" [MGI:anna]
+synonym: " abnormal vestibule of vagina " EXACT []
+synonym: "abnormal vaginal vestibule morphology" EXACT []
+synonym: "abnormal vestibulum pudendi" EXACT []
+synonym: "abnormal vestibulum vaginae" EXACT []
+is_a: MP:0003126 ! abnormal external female genitalia morphology
+created_by: csmith
+creation_date: 2012-11-30T03:51:49Z
 
 [Typedef]
 id: part_of
