@@ -562,12 +562,6 @@ intersection_of: affects_quality PATO:0001555 ! has number of
 intersection_of: attribute_of UBERON:0002101 ! limb
 
 [Term]
-id: VT:0000358 ! cell morphology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of GO:0005623 ! cell
-
-[Term]
 id: VT:0000359 ! mast cell morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
@@ -578,12 +572,6 @@ id: VT:0000367 ! coat/hair morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0001037 ! hair
-
-[Term]
-id: VT:0000375 ! hair follicle structure
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000141 ! structure
-intersection_of: attribute_of UBERON:0002073 ! hair follicle
 
 [Term]
 id: VT:0000379 ! hair follicle number
@@ -668,12 +656,6 @@ id: VT:0000458 ! mandible morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0001710 ! lower jaw
-
-[Term]
-id: VT:0000459 ! presacral vertebra morphology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0004451 ! presacral vertebra
 
 [Term]
 id: VT:0000461 ! presacral vertebra number
@@ -1024,12 +1006,6 @@ id: VT:0000674 ! sweat gland morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0001820 ! sweat gland
-
-[Term]
-id: VT:0000676 ! water concentration
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000033 ! concentration of
-intersection_of: attribute_of CHEBI:15377 ! water
 
 [Term]
 id: VT:0000678 ! parathyroid gland morphology
@@ -2088,17 +2064,6 @@ intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0002048 ! lung
 
 [Term]
-id: VT:0001186 ! pigmentation trait
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: attribute_of GO:0043473 ! pigmentation
-
-[Term]
-id: VT:0001188 ! pigment concentration
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000033 ! concentration of
-intersection_of: attribute_of CHEBI:26130 ! pigment
-
-[Term]
 id: VT:0001200 ! skin thickness
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000915 ! thickness
@@ -2285,18 +2250,6 @@ intersection_of: affects_quality PATO:0001555 ! has number of
 intersection_of: attribute_of CL:1000191 ! pillar cell
 
 [Term]
-id: VT:0001375 ! mating preference
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000773 ! preference
-intersection_of: attribute_of GO:0007618 ! mating
-
-[Term]
-id: VT:0001376 ! mating receptivity
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0001719 ! receptivity
-intersection_of: attribute_of GO:0007618 ! mating
-
-[Term]
 id: VT:0001418 ! tectorial membrane size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
@@ -2307,12 +2260,6 @@ id: VT:0001421 ! scala media size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
 intersection_of: attribute_of UBERON:0002295 ! scala media
-
-[Term]
-id: VT:0001432 ! food preference
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000773 ! preference
-intersection_of: attribute_of CHEBI:33290 ! food
 
 [Term]
 id: VT:0001444 ! scala tympani size
@@ -2351,22 +2298,10 @@ intersection_of: affects_quality PATO:0000117 ! size
 intersection_of: attribute_of UBERON:0001689 ! malleus
 
 [Term]
-id: VT:0001468 ! temporal memory
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000057 ! occurrence quality
-intersection_of: attribute_of GO:0007613 ! memory
-
-[Term]
 id: VT:0001501 ! sleep pattern
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000060 ! spatial pattern
 intersection_of: attribute_of GO:0030431 ! sleep
-
-[Term]
-id: VT:0001524 ! limb coordination
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000188 ! coordination
-intersection_of: attribute_of UBERON:0002101 ! limb
 
 [Term]
 id: VT:0001539 ! caudal vertebra number
@@ -2387,12 +2322,6 @@ intersection_of: affects_quality PATO:0000033 ! concentration of
 intersection_of: attribute_of CHEBI:18059 ! lipid
 
 [Term]
-id: VT:0001574 ! oxygen concentration
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000033 ! concentration of
-intersection_of: attribute_of CHEBI:25805 ! oxygen
-
-[Term]
 id: VT:0001586 ! erythrocyte number
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000070 ! count
@@ -2409,11 +2338,6 @@ id: VT:0001614 ! blood vessel morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0001981 ! blood vessel
-
-[Term]
-id: VT:0001625 ! heart cell size
-intersection_of: VT:0005406 ! heart size
-intersection_of: attribute_of GO:0005623 ! cell
 
 [Term]
 id: VT:0001684 ! axial mesoderm development
@@ -2480,12 +2404,6 @@ id: VT:0001726 ! allantois morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0004340 ! allantois
-
-[Term]
-id: VT:0001761 ! urination frequency
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000044 ! frequency
-intersection_of: attribute_of UBERON:0001088 ! urine
 
 [Term]
 id: VT:0001770 ! iron concentration
@@ -3257,12 +3175,6 @@ intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0002116 ! ileum
 
 [Term]
-id: VT:0002586 ! platelet volume
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000918 ! volume
-intersection_of: attribute_of CL:0000233 ! platelet
-
-[Term]
 id: VT:0002602 ! eosinophil number
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000070 ! count
@@ -3285,12 +3197,6 @@ id: VT:0002620 ! monocyte morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of CL:0000576 ! monocyte
-
-[Term]
-id: VT:0002621 ! time of neural tube closure
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0001309 ! duration quality of a process
-intersection_of: attribute_of GO:0001843 ! neural tube closure
 
 [Term]
 id: VT:0002622 ! cochlea hair cell morphology
@@ -3548,12 +3454,6 @@ intersection_of: VT:0001325 ! retina morphology
 intersection_of: attribute_of UBERON:0001981 ! blood vessel
 
 [Term]
-id: VT:0002802 ! discrimination learning
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000189 ! discrimination
-intersection_of: attribute_of GO:0007612 ! learning
-
-[Term]
 id: VT:0002809 ! spinal cord size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
@@ -3667,12 +3567,6 @@ intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0003951 ! ocular fundus
 
 [Term]
-id: VT:0002877 ! melanocyte morphology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of CL:0000148 ! melanocyte
-
-[Term]
 id: VT:0002878 ! corticospinal tract morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
@@ -3683,12 +3577,6 @@ id: VT:0002882 ! neuron morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of CL:0000540 ! neuron
-
-[Term]
-id: VT:0002891 ! insulin sensitivity
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000085 ! sensitivity toward
-intersection_of: attribute_of PRO:000009054 ! insulin
 
 [Term]
 id: VT:0002894 ! otolith morphology
@@ -3778,24 +3666,6 @@ id: VT:0003047 ! thoracic vertebra morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0002347 ! thoracic vertebra
-
-[Term]
-id: VT:0003048 ! cervical vertebra morphology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0002413 ! cervical vertebra
-
-[Term]
-id: VT:0003049 ! lumbar vertebra morphology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0002414 ! lumbar vertebra
-
-[Term]
-id: VT:0003050 ! sacral vertebra morphology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001094 ! sacral vertebra
 
 [Term]
 id: VT:0003051 ! tail shape
@@ -3893,12 +3763,6 @@ intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0003953 ! posterior stroma
 
 [Term]
-id: VT:0003097 ! tendon stiffness
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0001545 ! inflexible
-intersection_of: attribute_of UBERON:0000043 ! tendon
-
-[Term]
 id: VT:0003102 ! sclera thickness
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000915 ! thickness
@@ -3914,12 +3778,6 @@ intersection_of: attribute_of UBERON:0003129 ! skull
 id: VT:0003105 ! heart atrium morphology
 intersection_of: VT:0000266 ! heart morphology
 intersection_of: attribute_of UBERON:0001050 ! atrium
-
-[Term]
-id: VT:0003111 ! nucleus morphology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of GO:0005634 ! nucleus
 
 [Term]
 id: VT:0003112 ! parathyroid gland size
@@ -4123,12 +3981,6 @@ intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0003895 ! hypaxial myotome region
 
 [Term]
-id: VT:0003382 ! tail position
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000140 ! position
-intersection_of: attribute_of UBERON:0002415 ! tail
-
-[Term]
 id: VT:0003385 ! body wall morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
@@ -4165,22 +4017,10 @@ intersection_of: affects_quality PATO:0000052 ! shape
 intersection_of: attribute_of CL:0000233 ! platelet
 
 [Term]
-id: VT:0003429 ! response to growth hormone
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000077 ! response to
-intersection_of: attribute_of PRO:000007968 ! somatotropin
-
-[Term]
 id: VT:0003437 ! carotid body morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0001629 ! carotid body
-
-[Term]
-id: VT:0003439 ! glycerol concentration
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000033 ! concentration of
-intersection_of: attribute_of CHEBI:17754 ! glycerol
 
 [Term]
 id: VT:0003450 ! pancreas size
@@ -4199,12 +4039,6 @@ id: VT:0003456 ! tail size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
 intersection_of: attribute_of UBERON:0002415 ! tail
-
-[Term]
-id: VT:0003497 ! response to parathyroid hormone
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000077 ! response to
-intersection_of: attribute_of PRO:000013429 ! parathyroid hormone
 
 [Term]
 id: VT:0003511 ! labium morphology
@@ -4339,12 +4173,6 @@ intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of CL:0000125 ! glial cell
 
 [Term]
-id: VT:0003639 ! response to vitamin
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000077 ! response to
-intersection_of: attribute_of CHEBI:33229 ! vitamin
-
-[Term]
 id: VT:0003641 ! lung size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
@@ -4434,34 +4262,16 @@ intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0000086 ! zona pellucida
 
 [Term]
-id: VT:0003702 ! chromosome morphology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of GO:0005694 ! chromosome
-
-[Term]
 id: VT:0003705 ! hypodermis morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0002072 ! hypodermis
 
 [Term]
-id: VT:0003706 ! nucleus number
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000070 ! count
-intersection_of: attribute_of GO:0005634 ! nucleus
-
-[Term]
 id: VT:0003713 ! ear rotation
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001599 ! rotated
 intersection_of: attribute_of UBERON:0001690 ! ear
-
-[Term]
-id: VT:0003717 ! skin color
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000014 ! color
-intersection_of: attribute_of UBERON:0000014 ! zone of skin
 
 [Term]
 id: VT:0003720 ! neural tube closure
@@ -4643,12 +4453,6 @@ intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0002077 ! cortex of hair
 
 [Term]
-id: VT:0003813 ! dermal papilla morphology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0000412 ! dermal papilla
-
-[Term]
 id: VT:0003815 ! hair number
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001555 ! has number of
@@ -4717,18 +4521,6 @@ intersection_of: VT:0000556 ! hindlimb morphology
 intersection_of: attribute_of UBERON:0002471 ! zeugopod
 
 [Term]
-id: VT:0003860 ! carbon dioxide concentration
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000033 ! concentration of
-intersection_of: attribute_of CHEBI:16526 ! carbon dioxide
-
-[Term]
-id: VT:0003868 ! feces composition
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000025 ! composition
-intersection_of: attribute_of UBERON:0001988 ! feces
-
-[Term]
 id: VT:0003871 ! myelin sheath morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
@@ -4763,12 +4555,6 @@ id: VT:0003892 ! gastric gland morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0000325 ! gastric gland
-
-[Term]
-id: VT:0003902 ! cell mass
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000125 ! mass
-intersection_of: attribute_of GO:0005623 ! cell
 
 [Term]
 id: VT:0003920 ! right ventricle morphology
@@ -4812,21 +4598,10 @@ intersection_of: affects_quality PATO:0000033 ! concentration of
 intersection_of: attribute_of CHEBI:16113 ! cholesterol
 
 [Term]
-id: VT:0003950 ! plasma membrane morphology
-intersection_of: VT:0000358 ! cell morphology
-intersection_of: attribute_of GO:0016020 ! membrane
-
-[Term]
 id: VT:0003952 ! copper concentration
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000033 ! concentration of
 intersection_of: attribute_of CHEBI:30052 ! copper(0)
-
-[Term]
-id: VT:0003953 ! hormone concentration
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000033 ! concentration of
-intersection_of: attribute_of CHEBI:24621 ! hormone
 
 [Term]
 id: VT:0003954 ! Reichert's membrane morphology
@@ -4839,36 +4614,6 @@ id: VT:0003955 ! ultimobranchial body morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0003092 ! ultimobranchial body
-
-[Term]
-id: VT:0003962 ! epinephrine concentration
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000033 ! concentration of
-intersection_of: attribute_of CHEBI:28918 ! (R)-adrenaline
-
-[Term]
-id: VT:0003963 ! corticosterone concentration
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000033 ! concentration of
-intersection_of: attribute_of CHEBI:16827 ! corticosterone
-
-[Term]
-id: VT:0003964 ! norepinephrine concentration
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000033 ! concentration of
-intersection_of: attribute_of CHEBI:33569 ! noradrenaline
-
-[Term]
-id: VT:0003968 ! growth hormone concentration
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000033 ! concentration of
-intersection_of: attribute_of PRO:000007968 ! somatotropin
-
-[Term]
-id: VT:0003970 ! prolactin concentration
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000033 ! concentration of
-intersection_of: attribute_of PRO:000013246 ! prolactin
 
 [Term]
 id: VT:0003974 ! endocardium morphology
@@ -4910,18 +4655,6 @@ id: VT:0004020 ! amniotic fluid volume
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000918 ! volume
 intersection_of: attribute_of UBERON:0000173 ! amniotic fluid
-
-[Term]
-id: VT:0004023 ! chromosome number
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0001555 ! has number of
-intersection_of: attribute_of GO:0005694 ! chromosome
-
-[Term]
-id: VT:0004028 ! chromosome breakage frequency
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000044 ! frequency
-intersection_of: attribute_of GO:0031052 ! chromosome breakage
 
 [Term]
 id: VT:0004035 ! sublingual gland morphology
@@ -5026,12 +4759,6 @@ intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of GO:0030018 ! Z disc
 
 [Term]
-id: VT:0004092 ! Z line number
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0001555 ! has number of
-intersection_of: attribute_of GO:0030018 ! Z disc
-
-[Term]
 id: VT:0004093 ! Z line pattern
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000060 ! spatial pattern
@@ -5132,12 +4859,6 @@ intersection_of: VT:0000003 ! adipose morphology
 intersection_of: attribute_of GO:0005623 ! cell
 
 [Term]
-id: VT:0004129 ! respiratory quotient
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0001470 ! proportionality to
-intersection_of: attribute_of VT:0001943 ! respiration
-
-[Term]
 id: VT:0004134 ! thorax morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
@@ -5172,12 +4893,6 @@ id: VT:0004147 ! porphyrin concentration
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000033 ! concentration of
 intersection_of: attribute_of CHEBI:8337 ! porphyrin
-
-[Term]
-id: VT:0004150 ! caveola morphology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of GO:0005901 ! caveola
 
 [Term]
 id: VT:0004162 ! mammillary body morphology
@@ -5790,12 +5505,6 @@ intersection_of: affects_quality PATO:0001323 ! area
 intersection_of: attribute_of UBERON:0002123 ! cortex of thymus
 
 [Term]
-id: VT:0005058 ! lysosome morphology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of GO:0005764 ! lysosome
-
-[Term]
 id: VT:0005061 ! eosinophil morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
@@ -5812,12 +5521,6 @@ id: VT:0005068 ! NK cell morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of CL:0000623 ! natural killer cell
-
-[Term]
-id: VT:0005075 ! melanosome morphology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of GO:0042470 ! melanosome
 
 [Term]
 id: VT:0005083 ! biliary tract morphology
@@ -6195,18 +5898,6 @@ intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0003221 ! phalanx
 
 [Term]
-id: VT:0005320 ! biopterin concentration
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000033 ! concentration of
-intersection_of: attribute_of CHEBI:15373 ! biopterin
-
-[Term]
-id: VT:0005321 ! neopterin concentration
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000033 ! concentration of
-intersection_of: attribute_of CHEBI:28670 ! neopterin
-
-[Term]
 id: VT:0005326 ! podocyte morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
@@ -6223,12 +5914,6 @@ id: VT:0005329 ! heart muscle morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0002349 ! myocardium
-
-[Term]
-id: VT:0005332 ! amino acid concentration
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000033 ! concentration of
-intersection_of: attribute_of CHEBI:33709 ! amino acid
 
 [Term]
 id: VT:0005334 ! fat pad morphology
@@ -6293,16 +5978,6 @@ intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: attribute_of UBERON:0000033 ! head
 
 [Term]
-id: VT:0005384 ! cellular trait
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: attribute_of GO:0005623 ! cell
-
-[Term]
-id: VT:0005386 ! behavior trait
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: attribute_of GO:0007610 ! behavior
-
-[Term]
 id: VT:0005388 ! respiratory system trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: occurs_in UBERON:0001004 ! respiratory system
@@ -6311,18 +5986,6 @@ intersection_of: occurs_in UBERON:0001004 ! respiratory system
 id: VT:0005389 ! reproductive system trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: occurs_in UBERON:0000990 ! reproductive system
-
-[Term]
-id: VT:0005400 ! vitamin concentration
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000033 ! concentration of
-intersection_of: attribute_of CHEBI:33229 ! vitamin
-
-[Term]
-id: VT:0005401 ! fat-soluble vitamin concentration
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000033 ! concentration of
-intersection_of: attribute_of CHEBI:24020 ! fat-soluble vitamin
 
 [Term]
 id: VT:0005404 ! axon morphology
@@ -6379,12 +6042,6 @@ intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of CL:0000451 ! dendritic cell
 
 [Term]
-id: VT:0005469 ! thyroxine concentration
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000033 ! concentration of
-intersection_of: attribute_of CHEBI:30660 ! thyroxine
-
-[Term]
 id: VT:0005490 ! Clara cell number
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001555 ! has number of
@@ -6415,12 +6072,6 @@ intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0000211 ! ligament
 
 [Term]
-id: VT:0005508 ! skeletal system morphology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001434 ! skeletal system
-
-[Term]
 id: VT:0005535 ! body temperature
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000146 ! temperature
@@ -6443,18 +6094,6 @@ id: VT:0005547 ! Muller cell morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of CL:0000636 ! Muller cell
-
-[Term]
-id: VT:0005548 ! retinal pigment epithelium size
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of UBERON:0001782 ! pigmented layer of retina
-
-[Term]
-id: VT:0005552 ! orbital bone morphology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001683 ! zygomatic bone
 
 [Term]
 id: VT:0005592 ! blood vessel smooth muscle morphology
@@ -6593,12 +6232,6 @@ id: VT:0006033 ! external auditory canal morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0001352 ! external acoustic meatus
-
-[Term]
-id: VT:0006035 ! mitochondria morphology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of GO:0005739 ! mitochondrion
 
 [Term]
 id: VT:0006055 ! blood vessel endothelial cell morphology
@@ -7140,7 +6773,7 @@ intersection_of: attribute_of CL:0000817 ! precursor B cell
 id: VT:0008211 ! mature B cell number
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001997 ! present in fewer numbers in organism
-intersection_of: towards CL:0000785 ! mature B cell
+intersection_of: attribute_of CL:0000785 ! mature B cell
 
 [Term]
 id: VT:0008215 ! immature B cell number
@@ -7332,12 +6965,6 @@ id: VT:0008749 ! peripheral T cell anergy
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0002107 ! peripheral
 intersection_of: attribute_of GO:0002870 ! T cell anergy
-
-[Term]
-id: VT:0008828 ! lymph node cellularity
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0001992 ! cellularity
-intersection_of: attribute_of UBERON:0000029 ! lymph node
 
 [Term]
 id: VT:0009332 ! splenocyte morphology
@@ -7741,18 +7368,6 @@ intersection_of: affects_quality PATO:0000117 ! size
 intersection_of: attribute_of CL:0000448 ! white fat cell
 
 [Term]
-id: VT:0015012 ! white adipocyte number
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0001555 ! has number of
-intersection_of: attribute_of CL:0000448 ! white fat cell
-
-[Term]
-id: VT:0015023 ! mating frequency
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000044 ! frequency
-intersection_of: attribute_of GO:0007618 ! mating
-
-[Term]
 id: VT:0015035 ! auditory cortex morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
@@ -7850,12 +7465,6 @@ intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0003995 ! subarcuate fossa
 
 [Term]
-id: VT:0015082 ! response to nutrient
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000077 ! response to
-intersection_of: attribute_of CHEBI:33284 ! nutrient
-
-[Term]
 id: VT:0015085 ! cerebellum vermis lobule morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
@@ -7908,12 +7517,6 @@ intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: attribute_of UBERON:0000475 ! organism subdivision
 
 [Term]
-id: VT:0100008 ! body symmetry
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000965 ! symmetry
-intersection_of: attribute_of UBERON:0000468 ! multi-cellular organism
-
-[Term]
 id: VT:0100016 ! circulatory system morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
@@ -7954,12 +7557,6 @@ id: VT:1000062 ! chest circumference
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001648 ! circumference
 intersection_of: attribute_of UBERON:0001443 ! chest
-
-[Term]
-id: VT:1000064 ! hip height
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000119 ! height
-intersection_of: attribute_of UBERON:0001464 ! hip
 
 [Term]
 id: VT:1000066 ! hip width
@@ -8040,24 +7637,6 @@ intersection_of: affects_quality PATO:0000128 ! weight
 intersection_of: attribute_of UBERON:0005052 ! gizzard
 
 [Term]
-id: VT:1000234 ! thigh muscle weight
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000128 ! weight
-intersection_of: attribute_of UBERON:0004252 ! upper leg muscle
-
-[Term]
-id: VT:1000235 ! thigh weight
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000128 ! weight
-intersection_of: attribute_of UBERON:0000376 ! upper leg
-
-[Term]
-id: VT:1000237 ! wing weight
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000128 ! weight
-intersection_of: attribute_of UBERON:0000023 ! wing
-
-[Term]
 id: VT:1000276 ! humerus area
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001323 ! area
@@ -8073,12 +7652,6 @@ intersection_of: attribute_of UBERON:0000976 ! humerus
 id: VT:1000281 ! tibia area
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001323 ! area
-intersection_of: attribute_of UBERON:0000979 ! tibia
-
-[Term]
-id: VT:1000287 ! tibia strain
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0001034 ! strain
 intersection_of: attribute_of UBERON:0000979 ! tibia
 
 [Term]
@@ -8112,12 +7685,6 @@ intersection_of: affects_quality PATO:0000122 ! length
 intersection_of: attribute_of UBERON:0002108 ! small intestine
 
 [Term]
-id: VT:1000422 ! shoulder weight
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000128 ! weight
-intersection_of: attribute_of UBERON:0001467 ! shoulder
-
-[Term]
 id: VT:1000425 ! skin weight
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000128 ! weight
@@ -8128,12 +7695,6 @@ id: VT:1000436 ! skeletal muscle conductivity
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001585 ! conductivity
 intersection_of: attribute_of UBERON:0001134 ! skeletal muscle tissue
-
-[Term]
-id: VT:1000539 ! meat flavor intensity
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000049 ! intensity
-intersection_of: attribute_of GO:0050909 ! sensory perception of taste
 
 [Term]
 id: VT:1000574 ! longissimus dorsi muscle area
@@ -8202,18 +7763,6 @@ intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0005052 ! gizzard
 
 [Term]
-id: VT:1000671 ! glucocorticoid concentration
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000033 ! concentration of
-intersection_of: attribute_of CHEBI:24261 ! glucocorticoid
-
-[Term]
-id: VT:1000672 ! cortisol concentration
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000033 ! concentration of
-intersection_of: attribute_of CHEBI:17650 ! cortisol
-
-[Term]
 id: VT:1000687 ! forelimb weight
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000128 ! weight
@@ -8250,12 +7799,6 @@ intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0001401 ! longissimus thoracis
 
 [Term]
-id: VT:1000709 ! shoulder muscle weight
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000128 ! weight
-intersection_of: attribute_of UBERON:0001482 ! muscle of shoulder
-
-[Term]
 id: VT:1000711 ! abdominal fat pad weight
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000128 ! weight
@@ -8266,17 +7809,6 @@ id: VT:1000712 ! skeletal muscle weight
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000128 ! weight
 intersection_of: attribute_of UBERON:0001134 ! skeletal muscle tissue
-
-[Term]
-id: VT:1000719 ! ham bone weight
-intersection_of: VT:1000563 ! ham weight
-intersection_of: attribute_of UBERON:0001474 ! bone
-
-[Term]
-id: VT:1000727 ! teat placement
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000140 ! position
-intersection_of: attribute_of UBERON:0002030 ! nipple
 
 [Term]
 id: VT:1000731 ! chest width
@@ -8309,12 +7841,6 @@ intersection_of: affects_quality PATO:0001555 ! has number of
 intersection_of: attribute_of CL:0000188 ! skeletal muscle cell
 
 [Term]
-id: VT:1000744 ! neck weight
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000128 ! weight
-intersection_of: attribute_of UBERON:0000974 ! neck
-
-[Term]
 id: VT:1000775 ! integumentary system trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: occurs_in UBERON:0002416 ! integumental system
@@ -8323,11 +7849,6 @@ intersection_of: occurs_in UBERON:0002416 ! integumental system
 id: VT:1000777 ! urinary system trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: occurs_in UBERON:0001008 ! urinary system
-
-[Term]
-id: VT:1000778 ! skeletal system trait
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: occurs_in UBERON:0001434 ! skeletal system
 
 [Term]
 id: VT:1000781 ! nervous system trait
@@ -8421,12 +7942,6 @@ id: VT:0001348 ! lacrimal gland physiology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001509 ! functionality
 intersection_of: attribute_of UBERON:0001817 ! lacrimal gland
-
-[Term]
-id: VT:0001533 ! skeletal system physiology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of UBERON:0001434 ! skeletal system
 
 [Term]
 id: VT:0001541 ! osteoclast physiology
@@ -8573,18 +8088,6 @@ intersection_of: affects_quality PATO:0001509 ! functionality
 intersection_of: attribute_of PRO:000005897 ! C-reactive protein
 
 [Term]
-id: VT:0002487 ! fibrinogen physiology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of GO:0005577 ! fibrinogen complex
-
-[Term]
-id: VT:0002503 ! histamine physiology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of CHEBI:18295 ! histamine
-
-[Term]
 id: VT:0002504 ! serotonin activity
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001509 ! functionality
@@ -8615,12 +8118,6 @@ intersection_of: affects_quality PATO:0001509 ! functionality
 intersection_of: attribute_of UBERON:0001821 ! sebaceous gland
 
 [Term]
-id: VT:0003172 ! lysosome physiology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of GO:0005764 ! lysosome
-
-[Term]
 id: VT:0003252 ! bile duct physiology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001509 ! functionality
@@ -8631,12 +8128,6 @@ id: VT:0003431 ! parathyroid gland physiology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001509 ! functionality
 intersection_of: attribute_of UBERON:0001132 ! parathyroid gland
-
-[Term]
-id: VT:0003453 ! keratinocyte physiology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of CL:0000312 ! keratinocyte
 
 [Term]
 id: VT:0003507 ! ovary physiology
@@ -8855,12 +8346,6 @@ intersection_of: affects_quality PATO:0001509 ! functionality
 intersection_of: attribute_of UBERON:0001008 ! urinary system
 
 [Term]
-id: VT:0005621 ! cell physiology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of GO:0005623 ! cell
-
-[Term]
 id: VT:0005645 ! hypothalamus physiology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001509 ! functionality
@@ -8877,12 +8362,6 @@ id: VT:0005647 ! sex gland physiology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001509 ! functionality
 intersection_of: attribute_of UBERON:0003937 ! sex gland
-
-[Term]
-id: VT:0006036 ! mitochondria physiology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of GO:0005739 ! mitochondrion
 
 [Term]
 id: VT:0006276 ! autonomic nervous system physiology
@@ -9053,12 +8532,6 @@ intersection_of: affects_quality PATO:0001509 ! functionality
 intersection_of: attribute_of UBERON:0000955 ! brain
 
 [Term]
-id: VT:0015062 ! thorax physiology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of UBERON:0000915 ! thorax
-
-[Term]
 id: VT:0015068 ! surface structure physiology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001509 ! functionality
@@ -9089,68 +8562,10 @@ intersection_of: affects_quality PATO:0001509 ! functionality
 intersection_of: attribute_of UBERON:0002416 ! integumental system
 
 [Term]
-id: VT:1000015 ! egg morphology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of CL:0000025 ! egg
-
-[Term]
-id: VT:1000257 ! egg shape
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000052 ! shape
-intersection_of: attribute_of CL:0000025 ! egg
-
-[Term]
-id: VT:1000266 ! egg yolk weight
-intersection_of: VT:1000577 ! egg weight
-intersection_of: attribute_of UBERON:0000918 ! yolk
-
-[Term]
-id: VT:1000577 ! egg weight
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000128 ! weight
-intersection_of: attribute_of CL:0000025 ! egg
-
-[Term]
-id: VT:1000697 ! egg yolk morphology
-intersection_of: VT:1000015 ! egg morphology
-intersection_of: attribute_of UBERON:0000918 ! yolk
-
-[Term]
-id: VT:1000772 ! egg size
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of CL:0000025 ! egg
-
-[Term]
-id: VT:1000773 ! egg length
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000122 ! length
-intersection_of: attribute_of CL:0000025 ! egg
-
-[Term]
-id: VT:4000006 ! melanocyte physiology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of CL:0000148 ! melanocyte
-
-[Term]
 id: VT:4000007 ! coat/hair physiology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001509 ! functionality
 intersection_of: attribute_of UBERON:0001037 ! hair
-
-[Term]
-id: VT:4000008 ! nail physiology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of UBERON:0001705 ! nail
-
-[Term]
-id: VT:4000010 ! feather physiology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of UBERON:0000022 ! feather
 
 [Term]
 id: VT:0000056  ! urine trait
