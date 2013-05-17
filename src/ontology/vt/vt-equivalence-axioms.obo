@@ -13,7 +13,7 @@ intersection_of: attribute_of UBERON:0000033 ! head
 id: VT:0000005 ! right atrium size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of UBERON:0002078 ! right atrium
+intersection_of: attribute_of UBERON:0002078 ! right cardiac atrium
 
 [Term]
 id: VT:0000010 ! abdominal fat pad morphology
@@ -25,7 +25,7 @@ intersection_of: attribute_of UBERON:0003427 ! abdominal fat pad
 id: VT:0000012 ! left atrium size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of UBERON:0002079 ! left atrium
+intersection_of: attribute_of UBERON:0002079 ! left cardiac atrium
 
 [Term]
 id: VT:0000013 ! adipose distribution
@@ -48,13 +48,13 @@ intersection_of: attribute_of UBERON:0004143 ! membranous septum
 id: VT:0000019 ! right atrium morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0002078 ! right atrium
+intersection_of: attribute_of UBERON:0002078 ! right cardiac atrium
 
 [Term]
 id: VT:0000020 ! left atrium morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0002079 ! left atrium
+intersection_of: attribute_of UBERON:0002079 ! left cardiac atrium
 
 [Term]
 id: VT:0000022 ! outer ear shape
@@ -226,7 +226,7 @@ intersection_of: attribute_of UBERON:0000120 ! blood brain barrier
 id: VT:0000076 ! calvaria morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0004339 ! calvaria
+intersection_of: attribute_of UBERON:0004339 ! vault of skull
 
 [Term]
 id: VT:0000077 ! interparietal bone morphology
@@ -238,13 +238,13 @@ intersection_of: attribute_of UBERON:0002229 ! interparietal bone
 id: VT:0000079 ! basilar bone morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001692 ! basilar part of occipital bone
+intersection_of: attribute_of UBERON:0001692 ! basioccipital bone
 
 [Term]
 id: VT:0000080 ! exoccipital bone morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001693 ! lateral part of occipital bone
+intersection_of: attribute_of UBERON:0001693 ! exoccipital bone
 
 [Term]
 id: VT:0000084 ! fontanelle morphology
@@ -274,7 +274,7 @@ intersection_of: attribute_of UBERON:0002396 ! vomer
 id: VT:0000100 ! ethmoid bone morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001679 ! ethmoid
+intersection_of: attribute_of UBERON:0001679 ! ethmoid bone
 
 [Term]
 id: VT:0000102 ! nasal bone morphology
@@ -369,7 +369,7 @@ intersection_of: attribute_of UBERON:0003109 ! parapophysis
 id: VT:0000141 ! vertebral body morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001075 ! body of vertebra
+intersection_of: attribute_of UBERON:0001075 ! vertebral centrum
 
 [Term]
 id: VT:0000142 ! ear thickness
@@ -381,7 +381,7 @@ intersection_of: attribute_of UBERON:0001690 ! ear
 id: VT:0000149 ! scapula morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001124 ! scapula
+intersection_of: attribute_of UBERON:0001124 ! pectoral limb scapula
 
 [Term]
 id: VT:0000150 ! rib morphology
@@ -393,7 +393,7 @@ intersection_of: attribute_of UBERON:0002228 ! rib
 id: VT:0000157 ! sternum morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0000975 ! vertebrate sternum
+intersection_of: attribute_of UBERON:0000975 ! sternum
 
 [Term]
 id: VT:0000159 ! xiphoid process morphology
@@ -405,7 +405,7 @@ intersection_of: attribute_of UBERON:0002207 ! xiphoid process
 id: VT:0000163 ! cartilage morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0002418 ! cartilage
+intersection_of: attribute_of UBERON:0002418 ! cartilage tissue
 
 [Term]
 id: VT:0000166 ! chondrocyte morphology
@@ -571,7 +571,7 @@ intersection_of: attribute_of CL:0000097 ! mast cell
 id: VT:0000367 ! coat/hair morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001037 ! hair
+intersection_of: attribute_of UBERON:0001037 ! strand of hair
 
 [Term]
 id: VT:0000379 ! hair follicle number
@@ -607,19 +607,19 @@ intersection_of: attribute_of UBERON:0003221 ! phalanx
 id: VT:0000416 ! hair density
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001019 ! density
-intersection_of: attribute_of UBERON:0001037 ! hair
+intersection_of: attribute_of UBERON:0001037 ! strand of hair
 
 [Term]
 id: VT:0000417 ! hair length
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000122 ! length
-intersection_of: attribute_of UBERON:0001037 ! hair
+intersection_of: attribute_of UBERON:0001037 ! strand of hair
 
 [Term]
 id: VT:0000424 ! hair growth rate
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001492 ! growth rate
-intersection_of: attribute_of UBERON:0001037 ! hair
+intersection_of: attribute_of UBERON:0001037 ! strand of hair
 
 [Term]
 id: VT:0000432 ! head morphology
@@ -643,7 +643,7 @@ intersection_of: attribute_of UBERON:0000165 ! mouth
 id: VT:0000454 ! jaw morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001708 ! jaw
+intersection_of: attribute_of UBERON:0001708 ! jaw skeleton
 
 [Term]
 id: VT:0000455 ! maxilla morphology
@@ -655,13 +655,13 @@ intersection_of: attribute_of UBERON:0002397 ! maxilla
 id: VT:0000458 ! mandible morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001710 ! lower jaw
+intersection_of: attribute_of UBERON:0001710 ! lower jaw region
 
 [Term]
 id: VT:0000461 ! presacral vertebra number
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001555 ! has number of
-intersection_of: attribute_of UBERON:0004451 ! presacral vertebra
+intersection_of: attribute_of UBERON:0004451 ! trunk or cervical vertebra
 
 [Term]
 id: VT:0000462 ! gastrointestinal system morphology
@@ -750,7 +750,7 @@ intersection_of: attribute_of UBERON:0001052 ! rectum
 id: VT:0000494 ! cecum morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001153 ! cecum
+intersection_of: attribute_of UBERON:0001153 ! caecum
 
 [Term]
 id: VT:0000495 ! colon morphology
@@ -780,7 +780,7 @@ intersection_of: attribute_of UBERON:0001242 ! intestinal mucosa
 id: VT:0000516 ! urinary system morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001008 ! urinary system
+intersection_of: attribute_of UBERON:0001008 ! excretory system
 
 [Term]
 id: VT:0000521 ! kidney cortex morphology
@@ -791,7 +791,7 @@ intersection_of: attribute_of UBERON:0001851 ! cortex
 id: VT:0000524 ! kidney tubule number
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001555 ! has number of
-intersection_of: attribute_of UBERON:0001231 ! renal tubule
+intersection_of: attribute_of UBERON:0001231 ! nephron tubule
 
 [Term]
 id: VT:0000526 ! kidney pyramid size
@@ -844,13 +844,13 @@ intersection_of: attribute_of UBERON:0002102 ! forelimb
 id: VT:0000552 ! radius morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001423 ! radius
+intersection_of: attribute_of UBERON:0001423 ! radius bone
 
 [Term]
 id: VT:0000554 ! carpus morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0004452 ! carpus
+intersection_of: attribute_of UBERON:0004452 ! carpal region
 
 [Term]
 id: VT:0000556 ! hindlimb morphology
@@ -874,7 +874,7 @@ intersection_of: attribute_of UBERON:0000981 ! femur
 id: VT:0000572 ! autopod morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0002470 ! autopod
+intersection_of: attribute_of UBERON:0002470 ! autopod region
 
 [Term]
 id: VT:0000579 ! nail morphology
@@ -951,7 +951,7 @@ intersection_of: attribute_of UBERON:0001837 ! duct of salivary gland
 id: VT:0000627 ! mammary gland morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001911 ! lactiferous gland
+intersection_of: attribute_of UBERON:0001911 ! mammary gland
 
 [Term]
 id: VT:0000632 ! pineal gland morphology
@@ -999,7 +999,7 @@ intersection_of: attribute_of UBERON:0003937 ! sex gland
 id: VT:0000659 ! prostate size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of UBERON:0002367 ! prostate
+intersection_of: attribute_of UBERON:0002367 ! prostate gland
 
 [Term]
 id: VT:0000674 ! sweat gland morphology
@@ -1017,13 +1017,13 @@ intersection_of: attribute_of UBERON:0001132 ! parathyroid gland
 id: VT:0000681 ! thyroid gland morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0002046 ! thyroid follicle
+intersection_of: attribute_of UBERON:0002046 ! thyroid gland
 
 [Term]
 id: VT:0000685 ! immune system morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0002465 ! lymphoid system
+intersection_of: attribute_of UBERON:0002405 ! immune system
 
 [Term]
 id: VT:0000689 ! spleen morphology
@@ -1065,7 +1065,8 @@ intersection_of: attribute_of CL:0000893 ! thymocyte
 id: VT:0000716 ! immune system cell morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of CL:0000738 ! leukocyte
+intersection_of: attribute_of CL:0000000 ! cell
+intersection_of: occurs_in UBERON:0002405 ! immune system
 
 [Term]
 id: VT:0000717 ! lymphocyte number
@@ -1165,7 +1166,7 @@ intersection_of: attribute_of UBERON:0001890 ! forebrain
 id: VT:0000787 ! telencephalon morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001893 ! telencephalon
+intersection_of: attribute_of UBERON:0014371 ! future telencephalon
 
 [Term]
 id: VT:0000788 ! cerebral cortex morphology
@@ -1207,7 +1208,7 @@ intersection_of: attribute_of UBERON:0002688 ! supramarginal gyrus
 id: VT:0000798 ! frontal lobe morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001870 ! frontal lobe
+intersection_of: attribute_of UBERON:0001870 ! frontal cortex
 
 [Term]
 id: VT:0000799 ! precentral gyrus morphology
@@ -1249,7 +1250,7 @@ intersection_of: attribute_of UBERON:0002436 ! primary visual cortex
 id: VT:0000807 ! hippocampus morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001954 ! hippocampus
+intersection_of: attribute_of UBERON:0001954 ! Ammon's horn
 
 [Term]
 id: VT:0000812 ! dentate gyrus morphology
@@ -1290,19 +1291,19 @@ intersection_of: attribute_of UBERON:0001886 ! choroid plexus
 [Term]
 id: VT:0000822 ! brain ventricle morphology
 intersection_of: VT:0002152 ! brain morphology
-intersection_of: attribute_of UBERON:0002300 ! ventricle
+intersection_of: attribute_of UBERON:0002300 ! obsolete ventricle
 
 [Term]
 id: VT:0000823 ! lateral ventricle morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0002285 ! lateral ventricle
+intersection_of: attribute_of UBERON:0002285 ! telencephalic ventricle
 
 [Term]
 id: VT:0000825 ! lateral ventricle size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of UBERON:0002285 ! lateral ventricle
+intersection_of: attribute_of UBERON:0002285 ! telencephalic ventricle
 
 [Term]
 id: VT:0000826 ! third ventricle morphology
@@ -1488,19 +1489,19 @@ intersection_of: attribute_of UBERON:0001891 ! midbrain
 id: VT:0000899 ! corpora quadrigemina morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0002259 ! tectal plate
+intersection_of: attribute_of UBERON:0002259 ! corpora quadrigemina
 
 [Term]
 id: VT:0000900 ! corpora quadrigemina size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of UBERON:0002259 ! tectal plate
+intersection_of: attribute_of UBERON:0002259 ! corpora quadrigemina
 
 [Term]
 id: VT:0000901 ! corpora quadrigemina position
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000140 ! position
-intersection_of: attribute_of UBERON:0002259 ! tectal plate
+intersection_of: attribute_of UBERON:0002259 ! corpora quadrigemina
 
 [Term]
 id: VT:0000904 ! superior colliculus morphology
@@ -1721,7 +1722,7 @@ intersection_of: attribute_of UBERON:0002441 ! cervicothoracic ganglion
 id: VT:0001019 ! L4 dorsal root ganglion morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0003943 ! L4 dorsal root ganglion
+intersection_of: attribute_of UBERON:0003943 ! fourth lumbar dorsal root ganglion
 
 [Term]
 id: VT:0001022 ! L5 dorsal root ganglion morphology
@@ -1805,7 +1806,7 @@ intersection_of: attribute_of UBERON:0001785 ! cranial nerve
 id: VT:0001059 ! optic nerve size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of UBERON:0004904 ! optic nerve
+intersection_of: attribute_of UBERON:0004904 ! nerve connecting eye with brain
 
 [Term]
 id: VT:0001061 ! oculomotor nerve morphology
@@ -1876,7 +1877,7 @@ intersection_of: attribute_of UBERON:0001759 ! vagus nerve
 id: VT:0001075 ! accessory nerve morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0002019 ! spinal accessory nerve
+intersection_of: attribute_of UBERON:0002019 ! accessory XI nerve
 
 [Term]
 id: VT:0001076 ! hypoglossal nerve morphology
@@ -1966,19 +1967,19 @@ intersection_of: attribute_of CL:0000023 ! oocyte
 id: VT:0001126 ! ovary morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0000992 ! ovary
+intersection_of: attribute_of UBERON:0000992 ! female gonad
 
 [Term]
 id: VT:0001127 ! ovary size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of UBERON:0000992 ! ovary
+intersection_of: attribute_of UBERON:0000992 ! female gonad
 
 [Term]
 id: VT:0001131 ! ovarian follicle morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001305 ! follicle of ovary
+intersection_of: attribute_of UBERON:0001305 ! ovarian follicle
 
 [Term]
 id: VT:0001135 ! cervix morphology
@@ -2038,7 +2039,7 @@ intersection_of: attribute_of UBERON:0001343 ! seminiferous tubule of testis
 id: VT:0001158 ! prostate morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0002367 ! prostate
+intersection_of: attribute_of UBERON:0002367 ! prostate gland
 
 [Term]
 id: VT:0001168 ! prostate epithelium morphology
@@ -2079,13 +2080,13 @@ intersection_of: attribute_of UBERON:0001003 ! epidermis
 id: VT:0001231 ! basal cell layer morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0002025 ! basal cell layer of epidermis
+intersection_of: attribute_of UBERON:0002025 ! stratum basale of epidermis
 
 [Term]
 id: VT:0001236 ! spinous layer morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0002026 ! prickle cell layer of epidermis
+intersection_of: attribute_of UBERON:0002026 ! stratum spinosum of epidermis
 
 [Term]
 id: VT:0001237 ! spinous cell size
@@ -2097,25 +2098,25 @@ intersection_of: attribute_of CL:0000649 ! prickle cell
 id: VT:0001238 ! epidermal spinous layer thickness
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000915 ! thickness
-intersection_of: attribute_of UBERON:0002026 ! prickle cell layer of epidermis
+intersection_of: attribute_of UBERON:0002026 ! stratum spinosum of epidermis
 
 [Term]
 id: VT:0001239 ! granular layer morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0002069 ! granular layer of epidermis
+intersection_of: attribute_of UBERON:0002069 ! stratum granulosum of epidermis
 
 [Term]
 id: VT:0001240 ! cornified layer morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0002027 ! horny layer of epidermis
+intersection_of: attribute_of UBERON:0002027 ! stratum corneum of epidermis
 
 [Term]
 id: VT:0001242 ! cornified layer thickness
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000915 ! thickness
-intersection_of: attribute_of UBERON:0002027 ! horny layer of epidermis
+intersection_of: attribute_of UBERON:0002027 ! stratum corneum of epidermis
 
 [Term]
 id: VT:0001243 ! dermis morphology
@@ -2157,19 +2158,19 @@ intersection_of: attribute_of UBERON:0000468 ! multi-cellular organism
 id: VT:0001303 ! lens morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0000965 ! lens
+intersection_of: attribute_of UBERON:0000965 ! lens of camera-type eye
 
 [Term]
 id: VT:0001305 ! lens size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of UBERON:0000965 ! lens
+intersection_of: attribute_of UBERON:0000965 ! lens of camera-type eye
 
 [Term]
 id: VT:0001308 ! lens polarity
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0002186 ! polarity
-intersection_of: attribute_of UBERON:0000965 ! lens
+intersection_of: attribute_of UBERON:0000965 ! lens of camera-type eye
 
 [Term]
 id: VT:0001310 ! conjunctiva morphology
@@ -2217,7 +2218,7 @@ intersection_of: attribute_of UBERON:0000966 ! retina
 id: VT:0001330 ! optic nerve morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0004904 ! optic nerve
+intersection_of: attribute_of UBERON:0004904 ! nerve connecting eye with brain
 
 [Term]
 id: VT:0001334 ! optic tract size
@@ -2307,13 +2308,13 @@ intersection_of: attribute_of GO:0030431 ! sleep
 id: VT:0001539 ! caudal vertebra number
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001555 ! has number of
-intersection_of: attribute_of UBERON:0001095 ! coccygeal vertebra
+intersection_of: attribute_of UBERON:0001095 ! caudal vertebra
 
 [Term]
 id: VT:0001542 ! bone strength
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001230 ! strength
-intersection_of: attribute_of UBERON:0001474 ! bone
+intersection_of: attribute_of UBERON:0001474 ! bone element
 
 [Term]
 id: VT:0001547 ! lipid concentration
@@ -2445,7 +2446,7 @@ intersection_of: attribute_of UBERON:0001473 ! lymphatic vessel
 id: VT:0001885 ! mammary duct morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001765 ! lactiferous duct
+intersection_of: attribute_of UBERON:0001765 ! mammary duct
 
 [Term]
 id: VT:0001905 ! dopamine concentration
@@ -2481,7 +2482,7 @@ intersection_of: attribute_of UBERON:0000998 ! seminal vesicle
 id: VT:0002074 ! hair texture
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000150 ! texture
-intersection_of: attribute_of UBERON:0001037 ! hair
+intersection_of: attribute_of UBERON:0001037 ! strand of hair
 
 [Term]
 id: VT:0002076 ! hair follicle morphology
@@ -2546,7 +2547,7 @@ intersection_of: attribute_of UBERON:0002415 ! tail
 [Term]
 id: VT:0002116 ! craniofacial bone morphology
 intersection_of: VT:0000428 ! craniofacial morphology
-intersection_of: attribute_of UBERON:0001474 ! bone
+intersection_of: attribute_of UBERON:0001474 ! bone element
 
 [Term]
 id: VT:0002121 ! metabolism trait
@@ -2704,7 +2705,7 @@ intersection_of: attribute_of UBERON:0000004 ! olfactory apparatus
 id: VT:0002234 ! pharynx morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001042 ! pharynx
+intersection_of: attribute_of UBERON:0001042 ! chordate pharynx
 
 [Term]
 id: VT:0002237 ! nasal cavity morphology
@@ -3255,19 +3256,19 @@ intersection_of: attribute_of CL:0000312 ! keratinocyte
 id: VT:0002660 ! caput morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0004358 ! caput
+intersection_of: attribute_of UBERON:0004358 ! caput epididymis
 
 [Term]
 id: VT:0002661 ! corpus morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0004359 ! corpus
+intersection_of: attribute_of UBERON:0004359 ! corpus epididymis
 
 [Term]
 id: VT:0002662 ! cauda morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0004360 ! cauda
+intersection_of: attribute_of UBERON:0004360 ! cauda epididymis
 
 [Term]
 id: VT:0002669 ! scrotum morphology
@@ -3315,13 +3316,13 @@ intersection_of: attribute_of UBERON:0001798 ! vitreous body
 id: VT:0002703 ! kidney tubule morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001231 ! renal tubule
+intersection_of: attribute_of UBERON:0001231 ! nephron tubule
 
 [Term]
 id: VT:0002705 ! kidney tubule size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of UBERON:0001231 ! renal tubule
+intersection_of: attribute_of UBERON:0001231 ! nephron tubule
 
 [Term]
 id: VT:0002706 ! kidney size
@@ -3405,13 +3406,13 @@ intersection_of: attribute_of UBERON:0000012 ! somatic nervous system
 id: VT:0002753 ! left ventricle size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of UBERON:0002084 ! left ventricle
+intersection_of: attribute_of UBERON:0002084 ! heart left ventricle
 
 [Term]
 id: VT:0002754 ! right ventricle size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of UBERON:0002080 ! right ventricle
+intersection_of: attribute_of UBERON:0002080 ! heart right ventricle
 
 [Term]
 id: VT:0002758 ! tail length
@@ -3474,7 +3475,7 @@ intersection_of: attribute_of UBERON:0002487 ! tooth cavity
 [Term]
 id: VT:0002820 ! premaxilla morphology
 intersection_of: VT:0005358 ! incisor morphology
-intersection_of: attribute_of UBERON:0001474 ! bone
+intersection_of: attribute_of UBERON:0001474 ! bone element
 
 [Term]
 id: VT:0002825 ! notochord morphology
@@ -3613,7 +3614,7 @@ intersection_of: attribute_of UBERON:0002394 ! bile duct
 id: VT:0002932 ! joint morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0004905 ! joint
+intersection_of: attribute_of UBERON:0004905 ! articulation
 
 [Term]
 id: VT:0002970 ! white adipose morphology
@@ -3707,19 +3708,19 @@ intersection_of: attribute_of UBERON:0001448 ! metatarsal bone
 id: VT:0003073 ! metacarpus morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0004453 ! metacarpus
+intersection_of: attribute_of UBERON:0004453 ! metacarpus region
 
 [Term]
 id: VT:0003074 ! metacarpus number
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001555 ! has number of
-intersection_of: attribute_of UBERON:0004453 ! metacarpus
+intersection_of: attribute_of UBERON:0004453 ! metacarpus region
 
 [Term]
 id: VT:0003081 ! soleus morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001389 ! soleus
+intersection_of: attribute_of UBERON:0001389 ! soleus muscle
 
 [Term]
 id: VT:0003082 ! gastrocnemius morphology
@@ -3777,7 +3778,7 @@ intersection_of: attribute_of UBERON:0003129 ! skull
 [Term]
 id: VT:0003105 ! heart atrium morphology
 intersection_of: VT:0000266 ! heart morphology
-intersection_of: attribute_of UBERON:0001050 ! atrium
+intersection_of: attribute_of UBERON:0001050 ! obsolete atrium
 
 [Term]
 id: VT:0003112 ! parathyroid gland size
@@ -3795,7 +3796,7 @@ intersection_of: attribute_of UBERON:0003604 ! trachea cartilage
 id: VT:0003126 ! vulva morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0000997 ! vulva
+intersection_of: attribute_of UBERON:0000997 ! mammalian vulva
 
 [Term]
 id: VT:0003127 ! clitoris morphology
@@ -3813,7 +3814,7 @@ intersection_of: attribute_of CL:0000558 ! reticulocyte
 id: VT:0003140 ! atrium size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of UBERON:0001050 ! atrium
+intersection_of: attribute_of UBERON:0001050 ! obsolete atrium
 
 [Term]
 id: VT:0003143 ! otolith size
@@ -4044,55 +4045,55 @@ intersection_of: attribute_of UBERON:0002415 ! tail
 id: VT:0003511 ! labium morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0004084 ! labium
+intersection_of: attribute_of UBERON:0004084 ! genital labium
 
 [Term]
 id: VT:0003512 ! labia size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of UBERON:0004084 ! labium
+intersection_of: attribute_of UBERON:0004084 ! genital labium
 
 [Term]
 id: VT:0003515 ! labia majora morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0004085 ! labia majora
+intersection_of: attribute_of UBERON:0004085 ! labium majora
 
 [Term]
 id: VT:0003517 ! labia majora size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of UBERON:0004085 ! labia majora
+intersection_of: attribute_of UBERON:0004085 ! labium majora
 
 [Term]
 id: VT:0003519 ! labia majora shape
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000052 ! shape
-intersection_of: attribute_of UBERON:0004085 ! labia majora
+intersection_of: attribute_of UBERON:0004085 ! labium majora
 
 [Term]
 id: VT:0003520 ! labia minora morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0004014 ! labia minora
+intersection_of: attribute_of UBERON:0004014 ! labium minora
 
 [Term]
 id: VT:0003522 ! labia minora size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of UBERON:0004014 ! labia minora
+intersection_of: attribute_of UBERON:0004014 ! labium minora
 
 [Term]
 id: VT:0003524 ! labia minora shape
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000052 ! shape
-intersection_of: attribute_of UBERON:0004014 ! labia minora
+intersection_of: attribute_of UBERON:0004014 ! labium minora
 
 [Term]
 id: VT:0003528 ! vulva size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of UBERON:0000997 ! vulva
+intersection_of: attribute_of UBERON:0000997 ! mammalian vulva
 
 [Term]
 id: VT:0003529 ! clitoris size
@@ -4360,7 +4361,7 @@ intersection_of: attribute_of UBERON:0000165 ! mouth
 id: VT:0003755 ! palate morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001716 ! palate
+intersection_of: attribute_of UBERON:0001716 ! secondary palate
 
 [Term]
 id: VT:0003756 ! hard palate morphology
@@ -4372,19 +4373,19 @@ intersection_of: attribute_of UBERON:0003216 ! hard palate
 id: VT:0003759 ! palate width
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000921 ! width
-intersection_of: attribute_of UBERON:0001716 ! palate
+intersection_of: attribute_of UBERON:0001716 ! secondary palate
 
 [Term]
 id: VT:0003760 ! palate length
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000122 ! length
-intersection_of: attribute_of UBERON:0001716 ! palate
+intersection_of: attribute_of UBERON:0001716 ! secondary palate
 
 [Term]
 id: VT:0003764 ! palate depth
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001595 ! depth
-intersection_of: attribute_of UBERON:0001716 ! palate
+intersection_of: attribute_of UBERON:0001716 ! secondary palate
 
 [Term]
 id: VT:0003769 ! lip morphology
@@ -4456,7 +4457,7 @@ intersection_of: attribute_of UBERON:0002077 ! cortex of hair
 id: VT:0003815 ! hair number
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001555 ! has number of
-intersection_of: attribute_of UBERON:0001037 ! hair
+intersection_of: attribute_of UBERON:0001037 ! strand of hair
 
 [Term]
 id: VT:0003825 ! pillar cell morphology
@@ -4560,13 +4561,13 @@ intersection_of: attribute_of UBERON:0000325 ! gastric gland
 id: VT:0003920 ! right ventricle morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0002080 ! right ventricle
+intersection_of: attribute_of UBERON:0002080 ! heart right ventricle
 
 [Term]
 id: VT:0003921 ! left ventricle morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0002084 ! left ventricle
+intersection_of: attribute_of UBERON:0002084 ! heart left ventricle
 
 [Term]
 id: VT:0003932 ! molar crown morphology
@@ -4678,13 +4679,13 @@ intersection_of: attribute_of UBERON:0004017 ! periocular mesenchyme
 id: VT:0004062 ! right atrium volume
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000918 ! volume
-intersection_of: attribute_of UBERON:0002078 ! right atrium
+intersection_of: attribute_of UBERON:0002078 ! right cardiac atrium
 
 [Term]
 id: VT:0004063 ! left atrium volume
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000918 ! volume
-intersection_of: attribute_of UBERON:0002079 ! left atrium
+intersection_of: attribute_of UBERON:0002079 ! left cardiac atrium
 
 [Term]
 id: VT:0004066 ! primitive node morphology
@@ -4702,7 +4703,7 @@ intersection_of: attribute_of UBERON:0003718 ! muscle spindle
 id: VT:0004077 ! striatum morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0002777 ! neostriatum
+intersection_of: attribute_of UBERON:0002777 ! obsolete neostriatum
 
 [Term]
 id: VT:0004078 ! caudate nucleus morphology
@@ -4827,7 +4828,7 @@ intersection_of: attribute_of UBERON:0002352 ! atrioventricular node
 id: VT:0004115 ! sinoatrial node morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0002351 ! sinuatrial node
+intersection_of: attribute_of UBERON:0002351 ! sinoatrial node
 
 [Term]
 id: VT:0004117 ! atrioventricular bundle morphology
@@ -4862,7 +4863,7 @@ intersection_of: attribute_of GO:0005623 ! cell
 id: VT:0004134 ! thorax morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0000915 ! thorax
+intersection_of: attribute_of UBERON:0000915 ! thoracic segment of trunk
 
 [Term]
 id: VT:0004136 ! tongue muscle morphology
@@ -5018,7 +5019,7 @@ intersection_of: attribute_of UBERON:0003681 ! masticatory muscle
 id: VT:0004239 ! temporalis muscle morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001598 ! temporalis
+intersection_of: attribute_of UBERON:0001598 ! temporalis muscle
 
 [Term]
 id: VT:0004242 ! plasmacytoid dendritic cell morphology
@@ -5036,7 +5037,7 @@ intersection_of: attribute_of UBERON:0001386 ! extensor digitorum longus
 id: VT:0004248 ! epaxial muscle morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0003900 ! epaxial muscle
+intersection_of: attribute_of UBERON:0003900 ! epaxial myotome region
 
 [Term]
 id: VT:0004249 ! crista ampullaris morphology
@@ -5179,13 +5180,13 @@ intersection_of: attribute_of UBERON:0001854 ! saccule of membranous labyrinth
 id: VT:0004320 ! sternum shape
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000052 ! shape
-intersection_of: attribute_of UBERON:0000975 ! vertebrate sternum
+intersection_of: attribute_of UBERON:0000975 ! sternum
 
 [Term]
 id: VT:0004321 ! sternum length
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000122 ! length
-intersection_of: attribute_of UBERON:0000975 ! vertebrate sternum
+intersection_of: attribute_of UBERON:0000975 ! sternum
 
 [Term]
 id: VT:0004322 ! sternebra morphology
@@ -5197,7 +5198,7 @@ intersection_of: attribute_of UBERON:0002208 ! sternebra
 id: VT:0004323 ! sternum size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of UBERON:0000975 ! vertebrate sternum
+intersection_of: attribute_of UBERON:0000975 ! sternum
 
 [Term]
 id: VT:0004326 ! vestibular hair cell number
@@ -5221,13 +5222,13 @@ intersection_of: attribute_of UBERON:0001105 ! clavicle
 id: VT:0004340 ! scapula length
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000122 ! length
-intersection_of: attribute_of UBERON:0001124 ! scapula
+intersection_of: attribute_of UBERON:0001124 ! pectoral limb scapula
 
 [Term]
 id: VT:0004343 ! scapula size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of UBERON:0001124 ! scapula
+intersection_of: attribute_of UBERON:0001124 ! pectoral limb scapula
 
 [Term]
 id: VT:0004345 ! acromion morphology
@@ -5251,13 +5252,13 @@ intersection_of: attribute_of UBERON:0000976 ! humerus
 id: VT:0004353 ! deltoid tuberosity morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0002498 ! deltoid tuberosity
+intersection_of: attribute_of UBERON:0002498 ! deltopectoral crest
 
 [Term]
 id: VT:0004355 ! radius length
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000122 ! length
-intersection_of: attribute_of UBERON:0001423 ! radius
+intersection_of: attribute_of UBERON:0001423 ! radius bone
 
 [Term]
 id: VT:0004357 ! tibia length
@@ -5311,7 +5312,7 @@ intersection_of: attribute_of UBERON:0000976 ! humerus
 id: VT:0004374 ! radius curvature
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001591 ! curvature
-intersection_of: attribute_of UBERON:0001423 ! radius
+intersection_of: attribute_of UBERON:0001423 ! radius bone
 
 [Term]
 id: VT:0004387 ! prechordal plate morphology
@@ -5466,7 +5467,7 @@ intersection_of: attribute_of CL:0000819 ! B-1 B cell
 id: VT:0005007 ! bone density
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001019 ! density
-intersection_of: attribute_of UBERON:0001474 ! bone
+intersection_of: attribute_of UBERON:0001474 ! bone element
 
 [Term]
 id: VT:0005022 ! immature B cell morphology
@@ -5550,7 +5551,7 @@ intersection_of: attribute_of CL:0000765 ! erythroblast
 id: VT:0005098 ! choroid morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001776 ! choroid
+intersection_of: attribute_of UBERON:0001776 ! optic choroid
 
 [Term]
 id: VT:0005099 ! ciliary body morphology
@@ -5562,7 +5563,7 @@ intersection_of: attribute_of UBERON:0001775 ! ciliary body
 id: VT:0005104 ! tarsus morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0004454 ! tarsus
+intersection_of: attribute_of UBERON:0004454 ! tarsal region
 
 [Term]
 id: VT:0005106 ! incus morphology
@@ -5624,17 +5625,17 @@ intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000122 ! length
 intersection_of: attribute_of UBERON:0002356 ! perineum
 
-[Term]
-id: VT:0005196 ! posterior uvea morphology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001776 ! choroid
+![Term]
+!id: VT:0005196 ! posterior uvea morphology
+!intersection_of: BATTO:0000001  ! biological attribute
+!intersection_of: affects_quality PATO:0000051 ! morphology
+!intersection_of: attribute_of UBERON:0001776 ! optic choroid
 
 [Term]
 id: VT:0005197 ! uvea morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001768 ! vascular layer of eyeball
+intersection_of: attribute_of UBERON:0001768 ! uvea
 
 [Term]
 id: VT:0005198 ! aqueous drainage system morphology
@@ -5759,7 +5760,7 @@ intersection_of: attribute_of UBERON:0002265 ! olfactory tract
 id: VT:0005239 ! Bruch membrane morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0003957 ! Bruch membrane
+intersection_of: attribute_of UBERON:0003957 ! Bruch's membrane
 
 [Term]
 id: VT:0005240 ! amacrine cell morphology
@@ -5771,7 +5772,7 @@ intersection_of: attribute_of CL:0000561 ! amacrine cell
 id: VT:0005246 ! orbit morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001697 ! orbit
+intersection_of: attribute_of UBERON:0001697 ! orbital region
 
 [Term]
 id: VT:0005247 ! extraocular muscle morphology
@@ -5819,7 +5820,7 @@ intersection_of: attribute_of UBERON:0001676 ! occipital bone
 id: VT:0005270 ! zygomatic bone morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001683 ! zygomatic bone
+intersection_of: attribute_of UBERON:0001683 ! jugal bone
 
 [Term]
 id: VT:0005271 ! lacrimal bone morphology
@@ -5842,7 +5843,7 @@ intersection_of: attribute_of UBERON:0002517 ! basicranium
 [Term]
 id: VT:0005274 ! viscerocranium morphology
 intersection_of: VT:0003743 ! facial morphology
-intersection_of: attribute_of UBERON:0001474 ! bone
+intersection_of: attribute_of UBERON:0001474 ! bone element
 
 [Term]
 id: VT:0005277 ! brainstem morphology
@@ -5853,7 +5854,7 @@ intersection_of: attribute_of UBERON:0002298 ! brainstem
 [Term]
 id: VT:0005294 ! heart ventricle morphology
 intersection_of: VT:0000266 ! heart morphology
-intersection_of: attribute_of UBERON:0002300 ! ventricle
+intersection_of: attribute_of UBERON:0002300 ! obsolete ventricle
 
 [Term]
 id: VT:0005296 ! humerus morphology
@@ -5942,7 +5943,7 @@ intersection_of: attribute_of UBERON:0001273 ! ilium
 id: VT:0005355 ! thyroid gland size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of UBERON:0002046 ! thyroid follicle
+intersection_of: attribute_of UBERON:0002046 ! thyroid gland
 
 [Term]
 id: VT:0005358 ! incisor morphology
@@ -6081,7 +6082,7 @@ intersection_of: attribute_of UBERON:0000468 ! multi-cellular organism
 id: VT:0005537 ! cerebral aqueduct morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0002289 ! cerebral aqueduct
+intersection_of: attribute_of UBERON:0002289 ! midbrain cerebral aqueduct
 
 [Term]
 id: VT:0005543 ! corneal thickness
@@ -6249,7 +6250,7 @@ intersection_of: attribute_of CL:0000071 ! blood vessel endothelial cell
 id: VT:0006061 ! atrium symmetry
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000965 ! symmetry
-intersection_of: attribute_of UBERON:0001050 ! atrium
+intersection_of: attribute_of UBERON:0001050 ! obsolete atrium
 
 [Term]
 id: VT:0006062 ! vena cava morphology
@@ -6267,7 +6268,7 @@ intersection_of: attribute_of UBERON:0001072 ! inferior vena cava
 id: VT:0006064 ! superior vena cava morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001585 ! superior vena cava
+intersection_of: attribute_of UBERON:0001585 ! anterior vena cava
 
 [Term]
 id: VT:0006065 ! heart position
@@ -6379,31 +6380,31 @@ intersection_of: attribute_of CL:0000782 ! myeloid dendritic cell
 id: VT:0006175 ! choroid size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of UBERON:0001776 ! choroid
+intersection_of: attribute_of UBERON:0001776 ! optic choroid
 
 [Term]
 id: VT:0006210 ! orbit size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of UBERON:0001697 ! orbit
+intersection_of: attribute_of UBERON:0001697 ! orbital region
 
 [Term]
 id: VT:0006212 ! orbit width
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000921 ! width
-intersection_of: attribute_of UBERON:0001697 ! orbit
+intersection_of: attribute_of UBERON:0001697 ! orbital region
 
 [Term]
 id: VT:0006213 ! orbit depth
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001595 ! depth
-intersection_of: attribute_of UBERON:0001697 ! orbit
+intersection_of: attribute_of UBERON:0001697 ! orbital region
 
 [Term]
 id: VT:0006214 ! orbit symmetry
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000965 ! symmetry
-intersection_of: attribute_of UBERON:0001697 ! orbit
+intersection_of: attribute_of UBERON:0001697 ! orbital region
 
 [Term]
 id: VT:0006215 ! optic disc morphology
@@ -6438,7 +6439,7 @@ intersection_of: attribute_of UBERON:0001981 ! blood vessel
 id: VT:0006245 ! lens position
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000140 ! position
-intersection_of: attribute_of UBERON:0000965 ! lens
+intersection_of: attribute_of UBERON:0000965 ! lens of camera-type eye
 
 [Term]
 id: VT:0006257 ! fungiform papillae morphology
@@ -6498,13 +6499,13 @@ intersection_of: attribute_of CL:0000746 ! cardiac muscle cell
 id: VT:0007026 ! left atrium weight
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000128 ! weight
-intersection_of: attribute_of UBERON:0002079 ! left atrium
+intersection_of: attribute_of UBERON:0002079 ! left cardiac atrium
 
 [Term]
 id: VT:0007027 ! right atrium weight
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000128 ! weight
-intersection_of: attribute_of UBERON:0002078 ! right atrium
+intersection_of: attribute_of UBERON:0002078 ! right cardiac atrium
 
 [Term]
 id: VT:0007028 ! heart weight
@@ -6516,25 +6517,25 @@ intersection_of: attribute_of UBERON:0000948 ! heart
 id: VT:0007030 ! left ventricle volume
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000918 ! volume
-intersection_of: attribute_of UBERON:0002084 ! left ventricle
+intersection_of: attribute_of UBERON:0002084 ! heart left ventricle
 
 [Term]
 id: VT:0007031 ! left ventricle weight
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000128 ! weight
-intersection_of: attribute_of UBERON:0002084 ! left ventricle
+intersection_of: attribute_of UBERON:0002084 ! heart left ventricle
 
 [Term]
 id: VT:0007032 ! right ventricle volume
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000918 ! volume
-intersection_of: attribute_of UBERON:0002080 ! right ventricle
+intersection_of: attribute_of UBERON:0002080 ! heart right ventricle
 
 [Term]
 id: VT:0007033 ! right ventricle weight
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000128 ! weight
-intersection_of: attribute_of UBERON:0002080 ! right ventricle
+intersection_of: attribute_of UBERON:0002080 ! heart right ventricle
 
 [Term]
 id: VT:0007082 ! ventricle septum morphology
@@ -7064,7 +7065,7 @@ intersection_of: attribute_of CL:0000959 ! T2 B cell
 id: VT:0010002 ! mammary gland size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of UBERON:0001911 ! lactiferous gland
+intersection_of: attribute_of UBERON:0001911 ! mammary gland
 
 [Term]
 id: VT:0010009 ! residual milk volume
@@ -7075,7 +7076,7 @@ intersection_of: attribute_of UBERON:0001913 ! milk
 id: VT:0010018 ! mammary gland symmetry
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000965 ! symmetry
-intersection_of: attribute_of UBERON:0001911 ! lactiferous gland
+intersection_of: attribute_of UBERON:0001911 ! mammary gland
 
 [Term]
 id: VT:0010020 ! spleen vascular congestion
@@ -7159,13 +7160,13 @@ intersection_of: attribute_of UBERON:0001275 ! pubis
 id: VT:0010089 ! shoulder girdle morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001421 ! pectoral girdle
+intersection_of: attribute_of UBERON:0001421 ! pectoral girdle region
 
 [Term]
 id: VT:0010090 ! pelvic girdle morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001271 ! pelvic girdle
+intersection_of: attribute_of UBERON:0001271 ! pelvic girdle region
 
 [Term]
 id: VT:0010091 ! appendicular skeleton morphology
@@ -7343,6 +7344,7 @@ id: VT:0010191 ! immune system cell number
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001555 ! has number of
 intersection_of: attribute_of CL:0000738 ! leukocyte
+intersection_of: occurs_in UBERON:0002405 ! immune system
 
 [Term]
 id: VT:0010192 ! CD4-negative, CD8-negative, alpha-beta intraepithelial T cell morphology
@@ -7428,7 +7430,7 @@ intersection_of: attribute_of UBERON:0000162 ! cloaca
 [Term]
 id: VT:0015059 ! thorax trait
 intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: attribute_of UBERON:0000915 ! thorax
+intersection_of: attribute_of UBERON:0000915 ! thoracic segment of trunk
 
 [Term]
 id: VT:0015065 ! gustatory system trait
@@ -7451,7 +7453,7 @@ intersection_of: attribute_of UBERON:0000026 ! appendage
 id: VT:0015072 ! fin morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0002534 ! fin
+intersection_of: attribute_of UBERON:0002534 ! paired fin
 
 [Term]
 id: VT:0015074 ! organ system trait
@@ -7480,19 +7482,19 @@ intersection_of: attribute_of UBERON:0001950 ! neocortex
 id: VT:0015108 ! neurite morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001024 ! neurite
+intersection_of: attribute_of UBERON:0001024 ! obsolete neurite
 
 [Term]
 id: VT:0015109 ! dendrite morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001023 ! dendrite
+intersection_of: attribute_of UBERON:0001023 ! obsolete dendrite
 
 [Term]
 id: VT:0015110 ! synapse morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001025 ! synapse
+intersection_of: attribute_of UBERON:0001025 ! obsolete synapse
 
 [Term]
 id: VT:0100000 ! humerus size
@@ -7544,13 +7546,13 @@ intersection_of: attribute_of UBERON:0002030 ! nipple
 id: VT:0100033 ! mammary gland circumference
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001648 ! circumference
-intersection_of: attribute_of UBERON:0001911 ! lactiferous gland
+intersection_of: attribute_of UBERON:0001911 ! mammary gland
 
 [Term]
 id: VT:0100034 ! mammary gland weight
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000128 ! weight
-intersection_of: attribute_of UBERON:0001911 ! lactiferous gland
+intersection_of: attribute_of UBERON:0001911 ! mammary gland
 
 [Term]
 id: VT:1000062 ! chest circumference
@@ -7568,7 +7570,7 @@ intersection_of: attribute_of UBERON:0001464 ! hip
 id: VT:1000111 ! bone weight
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000128 ! weight
-intersection_of: attribute_of UBERON:0001474 ! bone
+intersection_of: attribute_of UBERON:0001474 ! bone element
 
 [Term]
 id: VT:1000120 ! intercostal muscle thickness
@@ -7592,7 +7594,7 @@ intersection_of: attribute_of UBERON:0002347 ! thoracic vertebra
 id: VT:1000146 ! longissimus dorsi weight
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000128 ! weight
-intersection_of: attribute_of UBERON:0001401 ! longissimus thoracis
+intersection_of: attribute_of UBERON:0001401 ! longissimus thoracis muscle
 
 [Term]
 id: VT:1000149 ! intercostal muscle weight
@@ -7700,7 +7702,7 @@ intersection_of: attribute_of UBERON:0001134 ! skeletal muscle tissue
 id: VT:1000574 ! longissimus dorsi muscle area
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001323 ! area
-intersection_of: attribute_of UBERON:0001401 ! longissimus thoracis
+intersection_of: attribute_of UBERON:0001401 ! longissimus thoracis muscle
 
 [Term]
 id: VT:1000575 ! longissimus dorsi muscle depth
@@ -7712,7 +7714,7 @@ intersection_of: attribute_of UBERON:0004277 ! eye muscle
 id: VT:1000578 ! longissimus dorsi length
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000122 ! length
-intersection_of: attribute_of UBERON:0001401 ! longissimus thoracis
+intersection_of: attribute_of UBERON:0001401 ! longissimus thoracis muscle
 
 [Term]
 id: VT:1000639 ! uterine horn length
@@ -7730,7 +7732,7 @@ intersection_of: attribute_of UBERON:0002247 ! uterine horn
 id: VT:1000641 ! ovary weight
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000128 ! weight
-intersection_of: attribute_of UBERON:0000992 ! ovary
+intersection_of: attribute_of UBERON:0000992 ! female gonad
 
 [Term]
 id: VT:1000642 ! uterus length
@@ -7784,19 +7786,19 @@ intersection_of: attribute_of UBERON:0002103 ! hindlimb
 id: VT:1000704 ! mammary gland height
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000119 ! height
-intersection_of: attribute_of UBERON:0001911 ! lactiferous gland
+intersection_of: attribute_of UBERON:0001911 ! mammary gland
 
 [Term]
 id: VT:1000705 ! mammary gland width
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000921 ! width
-intersection_of: attribute_of UBERON:0001911 ! lactiferous gland
+intersection_of: attribute_of UBERON:0001911 ! mammary gland
 
 [Term]
 id: VT:1000706 ! longissimus dorsi morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001401 ! longissimus thoracis
+intersection_of: attribute_of UBERON:0001401 ! longissimus thoracis muscle
 
 [Term]
 id: VT:1000711 ! abdominal fat pad weight
@@ -7826,7 +7828,7 @@ intersection_of: attribute_of UBERON:0001443 ! chest
 id: VT:1000735 ! hoof angle
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000133 ! angular placement
-intersection_of: attribute_of UBERON:0002387 ! foot
+intersection_of: attribute_of UBERON:0002387 ! pes
 
 [Term]
 id: VT:1000742 ! sarcomere length
@@ -7848,7 +7850,7 @@ intersection_of: occurs_in UBERON:0002416 ! integumental system
 [Term]
 id: VT:1000777 ! urinary system trait
 intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: occurs_in UBERON:0001008 ! urinary system
+intersection_of: occurs_in UBERON:0001008 ! excretory system
 
 [Term]
 id: VT:1000781 ! nervous system trait
@@ -7971,7 +7973,7 @@ intersection_of: attribute_of UBERON:0002405 ! immune system
 id: VT:0001881 ! mammary gland physiology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of UBERON:0001911 ! lactiferous gland
+intersection_of: attribute_of UBERON:0001911 ! mammary gland
 
 [Term]
 id: VT:0001919 ! reproductive system physiology
@@ -8103,7 +8105,7 @@ intersection_of: attribute_of UBERON:0001264 ! pancreas
 id: VT:0002876 ! thyroid gland physiology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of UBERON:0002046 ! thyroid follicle
+intersection_of: attribute_of UBERON:0002046 ! thyroid gland
 
 [Term]
 id: VT:0002909 ! adrenal gland physiology
@@ -8133,7 +8135,7 @@ intersection_of: attribute_of UBERON:0001132 ! parathyroid gland
 id: VT:0003507 ! ovary physiology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of UBERON:0000992 ! ovary
+intersection_of: attribute_of UBERON:0000992 ! female gonad
 
 [Term]
 id: VT:0003562 ! pancreatic beta cell physiology
@@ -8163,7 +8165,7 @@ intersection_of: attribute_of UBERON:0001285 ! nephron
 id: VT:0003607 ! prostate physiology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of UBERON:0002367 ! prostate
+intersection_of: attribute_of UBERON:0002367 ! prostate gland
 
 [Term]
 id: VT:0003633 ! nervous system physiology
@@ -8343,7 +8345,7 @@ intersection_of: attribute_of UBERON:0000014 ! zone of skin
 id: VT:0005502 ! urinary system physiology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of UBERON:0001008 ! urinary system
+intersection_of: attribute_of UBERON:0001008 ! excretory system
 
 [Term]
 id: VT:0005645 ! hypothalamus physiology
@@ -8427,7 +8429,7 @@ intersection_of: attribute_of CL:0000784 ! plasmacytoid dendritic cell
 id: VT:0010043 ! ovarian follicle physiology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of UBERON:0001305 ! follicle of ovary
+intersection_of: attribute_of UBERON:0001305 ! ovarian follicle
 
 [Term]
 id: VT:0010047 ! tendon physiology
@@ -8565,37 +8567,37 @@ intersection_of: attribute_of UBERON:0002416 ! integumental system
 id: VT:4000007 ! coat/hair physiology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of UBERON:0001037 ! hair
+intersection_of: attribute_of UBERON:0001037 ! strand of hair
 
 [Term]
 id: VT:0000056  ! urine trait
 intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: occurs_in UBERON:0001088  ! urine
+intersection_of: occurs_in UBERON:0001088 ! urine
 
 [Term]
 id: VT:0000069  ! embryo trait
 intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: occurs_in UBERON:0000922  ! embryo
+intersection_of: occurs_in UBERON:0000922 ! embryo
 
 [Term]
 id: VT:0005394  ! olfactory system trait
 intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: occurs_in UBERON:0005725  ! olfactory system
+intersection_of: occurs_in UBERON:0005725 ! olfactory system
 
 [Term]
 id: VT:0010248  ! hemolymphoid system trait
 intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: occurs_in UBERON:0002193  ! hemolymphoid system
+intersection_of: occurs_in UBERON:0002193 ! hemolymphoid system
 
 [Term]
 id: VT:0010256  ! colostrum trait
 intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: occurs_in UBERON:0001914  ! colostrum
+intersection_of: occurs_in UBERON:0001914 ! colostrum
 
 [Term]
 id: VT:0010454  ! organism trait
 intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: occurs_in UBERON:0000468  ! multi-cellular organism
+intersection_of: occurs_in UBERON:0000468 ! multi-cellular organism
 
 [Term]
 id: VT:0000057  ! ossification trait
@@ -8775,7 +8777,7 @@ intersection_of: attribute_of PATO:0000185  ! balance
 [Term]
 id: VT:0001529  ! vocalization trait
 intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: attribute_of VT:0001529  ! vocalization trait
+intersection_of: attribute_of GO:0071625 ! vocalization behavior
 
 [Term]
 id: VT:0001601  ! myelopoiesis trait
@@ -9443,16 +9445,6 @@ intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: attribute_of GO:0033152  ! immunoglobulin V(D)J recombination
 
 [Term]
-id: VT:0008756  ! T cell receptor alpha chain V-J recombination trait
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: attribute_of VT:0008756  ! T cell receptor alpha chain V-J recombination trait
-
-[Term]
-id: VT:0008757  ! T cell receptor gamma chain V-J recombination trait
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: attribute_of VT:0008757  ! T cell receptor gamma chain V-J recombination trait
-
-[Term]
 id: VT:0008761  ! immunoglobulin light chain V-J recombination trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: attribute_of GO:0071708  ! immunoglobulin light chain V-J recombination
@@ -9636,85 +9628,85 @@ intersection_of: attribute_of GO:0070527  ! platelet aggregation
 id: VT:0000446  ! snout length
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000122  ! length
-intersection_of: attribute_of UBERON:0006333  ! snout
+intersection_of: attribute_of UBERON:0006333 ! snout
 
 [Term]
 id: VT:0000449  ! nasal bridge width
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000921  ! width
-intersection_of: attribute_of UBERON:0008340  ! nasal bridge
+intersection_of: attribute_of UBERON:0008340 ! nasal bridge
 
 [Term]
 id: VT:0000544  ! urinary bladder transitional epithelium thickness
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000915  ! thickness
-intersection_of: attribute_of UBERON:0004645  ! urinary bladder urothelium
+intersection_of: attribute_of UBERON:0004645 ! urinary bladder urothelium
 
 [Term]
 id: VT:0001179  ! alveolar septum thickness
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000915  ! thickness
-intersection_of: attribute_of UBERON:0004893  ! interalveolar septum
+intersection_of: attribute_of UBERON:0004893 ! interalveolar septum
 
 [Term]
 id: VT:0001219  ! epidermis thickness
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000915  ! thickness
-intersection_of: attribute_of UBERON:0001003  ! epidermis
+intersection_of: attribute_of UBERON:0001003 ! epidermis
 
 [Term]
 id: VT:0006241  ! pupil orientation trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000140  ! position
-intersection_of: attribute_of UBERON:0001771  ! pupil
+intersection_of: attribute_of UBERON:0001771 ! pupil
 
 [Term]
 id: VT:0010013  ! humerus mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0000976  ! humerus
+intersection_of: attribute_of UBERON:0000976 ! humerus
 
 [Term]
 id: VT:0010014  ! femur circumference
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001648  ! circumference
-intersection_of: attribute_of UBERON:0000981  ! femur
+intersection_of: attribute_of UBERON:0000981 ! femur
 
 [Term]
 id: VT:0010015  ! tibia mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0000979  ! tibia
+intersection_of: attribute_of UBERON:0000979 ! tibia
 
 [Term]
 id: VT:0010019  ! epididymis mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0001301  ! epididymis
+intersection_of: attribute_of UBERON:0001301 ! epididymis
 
 [Term]
 id: VT:0010022  ! metacarpus length
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000122  ! length
-intersection_of: attribute_of UBERON:0004453  ! metacarpus region
+intersection_of: attribute_of UBERON:0004453 ! metacarpus region
 
 [Term]
 id: VT:0010023  ! forelimb length
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000122  ! length
-intersection_of: attribute_of UBERON:0002102  ! forelimb
+intersection_of: attribute_of UBERON:0002102 ! forelimb
 
 [Term]
 id: VT:0010024  ! hindlimb length
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000122  ! length
-intersection_of: attribute_of UBERON:0002103  ! hindlimb
+intersection_of: attribute_of UBERON:0002103 ! hindlimb
 
 [Term]
 id: VT:0010030  ! udder height
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000119  ! height
-intersection_of: attribute_of UBERON:0013216  ! udder
+intersection_of: attribute_of UBERON:0013216 ! udder
 
 [Term]
 id: VT:0010061  ! brown adipocyte morphology trait
@@ -9726,439 +9718,439 @@ intersection_of: attribute_of CL:0000449  ! brown fat cell
 id: VT:0010073  ! esophagus length
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000122  ! length
-intersection_of: attribute_of UBERON:0001043  ! esophagus
+intersection_of: attribute_of UBERON:0001043 ! esophagus
 
 [Term]
 id: VT:0010129  ! esophagus mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0001043  ! esophagus
+intersection_of: attribute_of UBERON:0001043 ! esophagus
 
 [Term]
 id: VT:0010131  ! cecum mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0001153  ! caecum
+intersection_of: attribute_of UBERON:0001153 ! caecum
 
 [Term]
 id: VT:0010133  ! gizzard capacity
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000918  ! volume
-intersection_of: attribute_of UBERON:0005052  ! gizzard
+intersection_of: attribute_of UBERON:0005052 ! gizzard
 
 [Term]
 id: VT:0010140  ! small intestine mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0002108  ! small intestine
+intersection_of: attribute_of UBERON:0002108 ! small intestine
 
 [Term]
 id: VT:0010144  ! pancreas mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0001264  ! pancreas
+intersection_of: attribute_of UBERON:0001264 ! pancreas
 
 [Term]
 id: VT:0010145  ! rectum mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0001052  ! rectum
+intersection_of: attribute_of UBERON:0001052 ! rectum
 
 [Term]
 id: VT:0010193  ! colon length
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000122  ! length
-intersection_of: attribute_of UBERON:0001155  ! colon
+intersection_of: attribute_of UBERON:0001155 ! colon
 
 [Term]
 id: VT:0010194  ! colon mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0001155  ! colon
+intersection_of: attribute_of UBERON:0001155 ! colon
 
 [Term]
 id: VT:0010195  ! intestine length
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000122  ! length
-intersection_of: attribute_of UBERON:0000160  ! intestine
+intersection_of: attribute_of UBERON:0000160 ! intestine
 
 [Term]
 id: VT:0010196  ! intestine mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0000160  ! intestine
+intersection_of: attribute_of UBERON:0000160 ! intestine
 
 [Term]
 id: VT:0010197  ! duodenum length
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000122  ! length
-intersection_of: attribute_of UBERON:0002114  ! duodenum
+intersection_of: attribute_of UBERON:0002114 ! duodenum
 
 [Term]
 id: VT:0010198  ! duodenum mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0002114  ! duodenum
+intersection_of: attribute_of UBERON:0002114 ! duodenum
 
 [Term]
 id: VT:0010199  ! stomach capacity
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000918  ! volume
-intersection_of: attribute_of UBERON:0000945  ! stomach
+intersection_of: attribute_of UBERON:0000945 ! stomach
 
 [Term]
 id: VT:0010200  ! stomach mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0000945  ! stomach
+intersection_of: attribute_of UBERON:0000945 ! stomach
 
 [Term]
 id: VT:0010202  ! stomach epithelium thickness
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000915  ! thickness
-intersection_of: attribute_of UBERON:0001276  ! epithelium of stomach
+intersection_of: attribute_of UBERON:0001276 ! epithelium of stomach
 
 [Term]
 id: VT:0010204  ! proventriculus capacity
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000918  ! volume
-intersection_of: attribute_of UBERON:0007357  ! proventriculus
+intersection_of: attribute_of UBERON:0007357 ! proventriculus
 
 [Term]
 id: VT:0010205  ! proventriculus mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0007357  ! proventriculus
+intersection_of: attribute_of UBERON:0007357 ! proventriculus
 
 [Term]
 id: VT:0010212  ! jejunum length
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000122  ! length
-intersection_of: attribute_of UBERON:0002115  ! jejunum
+intersection_of: attribute_of UBERON:0002115 ! jejunum
 
 [Term]
 id: VT:0010213  ! jejunum mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0002115  ! jejunum
+intersection_of: attribute_of UBERON:0002115 ! jejunum
 
 [Term]
 id: VT:0010215  ! jejunum mucosa thickness
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000915  ! thickness
-intersection_of: attribute_of UBERON:0000399  ! jejunal mucosa
+intersection_of: attribute_of UBERON:0000399 ! jejunal mucosa
 
 [Term]
 id: VT:0010219  ! large intestine length
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000122  ! length
-intersection_of: attribute_of UBERON:0000059  ! large intestine
+intersection_of: attribute_of UBERON:0000059 ! large intestine
 
 [Term]
 id: VT:0010220  ! large intestine mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0000059  ! large intestine
+intersection_of: attribute_of UBERON:0000059 ! large intestine
 
 [Term]
 id: VT:0010224  ! ileum length
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000122  ! length
-intersection_of: attribute_of UBERON:0002116  ! ileum
+intersection_of: attribute_of UBERON:0002116 ! ileum
 
 [Term]
 id: VT:0010225  ! ileum mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0002116  ! ileum
+intersection_of: attribute_of UBERON:0002116 ! ileum
 
 [Term]
 id: VT:0010227  ! ileum mucosa thickness
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000915  ! thickness
-intersection_of: attribute_of UBERON:0000331  ! ileal mucosa
+intersection_of: attribute_of UBERON:0000331 ! ileal mucosa
 
 [Term]
 id: VT:0010232  ! colon mucosa thickness
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000915  ! thickness
-intersection_of: attribute_of UBERON:0000317  ! colonic mucosa
+intersection_of: attribute_of UBERON:0000317 ! colonic mucosa
 
 [Term]
 id: VT:0010234  ! cecum mucosa thickness
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000915  ! thickness
-intersection_of: attribute_of UBERON:0000314  ! cecum mucosa
+intersection_of: attribute_of UBERON:0000314 ! cecum mucosa
 
 [Term]
 id: VT:0010236  ! forestomach capacity
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000918  ! volume
-intersection_of: attribute_of UBERON:0008827  ! forestomach
+intersection_of: attribute_of UBERON:0008827 ! forestomach
 
 [Term]
 id: VT:0010237  ! forestomach mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0008827  ! forestomach
+intersection_of: attribute_of UBERON:0008827 ! forestomach
 
 [Term]
 id: VT:0010239  ! crop mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0007356  ! crop
+intersection_of: attribute_of UBERON:0007356 ! crop
 
 [Term]
 id: VT:0010241  ! reticulo-rumen capacity
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000918  ! volume
-intersection_of: attribute_of UBERON:0007364  ! reticulorumen
+intersection_of: attribute_of UBERON:0007364 ! reticulorumen
 
 [Term]
 id: VT:0010242  ! reticulo-rumen mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000128  ! weight
-intersection_of: attribute_of UBERON:0007364  ! reticulorumen
+intersection_of: attribute_of UBERON:0007364 ! reticulorumen
 
 [Term]
 id: VT:0010246  ! omasum capacity
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000918  ! volume
-intersection_of: attribute_of UBERON:0007362  ! omasum
+intersection_of: attribute_of UBERON:0007362 ! omasum
 
 [Term]
 id: VT:0010247  ! omasum mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0007362  ! omasum
+intersection_of: attribute_of UBERON:0007362 ! omasum
 
 [Term]
 id: VT:0010264  ! colostrum amount
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000918  ! volume
-intersection_of: attribute_of UBERON:0001914  ! colostrum
+intersection_of: attribute_of UBERON:0001914 ! colostrum
 
 [Term]
 id: VT:0010375  ! ovary diameter
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001334  ! diameter
-intersection_of: attribute_of UBERON:0000992  ! female gonad
+intersection_of: attribute_of UBERON:0000992 ! female gonad
 
 [Term]
 id: VT:0010384  ! oviduct length
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000122  ! length
-intersection_of: attribute_of UBERON:0003889  ! fallopian tube
+intersection_of: attribute_of UBERON:0003889 ! fallopian tube
 
 [Term]
 id: VT:0010395  ! endometrium thickness
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000915  ! thickness
-intersection_of: attribute_of UBERON:0001295  ! endometrium
+intersection_of: attribute_of UBERON:0001295 ! endometrium
 
 [Term]
 id: VT:0010420  ! adrenal gland mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0002369  ! adrenal gland
+intersection_of: attribute_of UBERON:0002369 ! adrenal gland
 
 [Term]
 id: VT:0010421  ! epididymal fat pad mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0010412  ! epididymal fat pad
+intersection_of: attribute_of UBERON:0010412 ! epididymal fat pad
 
 [Term]
 id: VT:0010423  ! gonadal fat pad mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0003428  ! gonadal fat pad
+intersection_of: attribute_of UBERON:0003428 ! gonadal fat pad
 
 [Term]
 id: VT:0010424  ! inguinal fat pad mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0010410  ! inguinal fat pad
+intersection_of: attribute_of UBERON:0010410 ! inguinal fat pad
 
 [Term]
 id: VT:0010426  ! mammary fat pad mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0012282  ! mammary fat pad
+intersection_of: attribute_of UBERON:0012282 ! mammary fat pad
 
 [Term]
 id: VT:0010428  ! parametrial fat pad mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0010413  ! parametrial fat pad
+intersection_of: attribute_of UBERON:0010413 ! parametrial fat pad
 
 [Term]
 id: VT:0010430  ! retroperitoneal fat pad mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0010411  ! retroperitoneal fat pad
+intersection_of: attribute_of UBERON:0010411 ! retroperitoneal fat pad
 
 [Term]
 id: VT:0010448  ! forelimb muscle mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0003662  ! forelimb muscle
+intersection_of: attribute_of UBERON:0003662 ! forelimb muscle
 
 [Term]
 id: VT:0010449  ! hindlimb muscle mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0003663  ! hindlimb muscle
+intersection_of: attribute_of UBERON:0003663 ! hindlimb muscle
 
 [Term]
 id: VT:0010453  ! abdominal wall mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0003697  ! abdominal wall
+intersection_of: attribute_of UBERON:0003697 ! abdominal wall
 
 [Term]
 id: VT:0010458  ! outer ear area
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001323  ! area
-intersection_of: attribute_of UBERON:0001691  ! external ear
+intersection_of: attribute_of UBERON:0001691 ! external ear
 
 [Term]
 id: VT:0010466  ! prostate mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0002367  ! prostate gland
+intersection_of: attribute_of UBERON:0002367 ! prostate gland
 
 [Term]
 id: VT:0010492  ! left ventricle diameter
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001334  ! diameter
-intersection_of: attribute_of UBERON:0002084  ! heart left ventricle
+intersection_of: attribute_of UBERON:0002084 ! heart left ventricle
 
 [Term]
 id: VT:0010493  ! left atrium diameter
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001334  ! diameter
-intersection_of: attribute_of UBERON:0002079  ! left cardiac atrium
+intersection_of: attribute_of UBERON:0002079 ! left cardiac atrium
 
 [Term]
 id: VT:0010495  ! inguinal lymph node mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0001542  ! inguinal lymph node
+intersection_of: attribute_of UBERON:0001542 ! inguinal lymph node
 
 [Term]
 id: VT:0010496  ! pituitary gland mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0000007  ! pituitary gland
+intersection_of: attribute_of UBERON:0000007 ! pituitary gland
 
 [Term]
 id: VT:0010508  ! neurocranium mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0001703  ! neurocranium
+intersection_of: attribute_of UBERON:0001703 ! neurocranium
 
 [Term]
 id: VT:0010510  ! lumbar vertebra mass
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000125  ! mass
-intersection_of: attribute_of UBERON:0002414  ! lumbar vertebra
+intersection_of: attribute_of UBERON:0002414 ! lumbar vertebra
 
 [Term]
 id: VT:0100028  ! nipple diameter
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001334  ! diameter
-intersection_of: attribute_of UBERON:0002030  ! nipple
+intersection_of: attribute_of UBERON:0002030 ! nipple
 
 [Term]
 id: VT:1000703  ! udder height, floor to tarsal joint
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001595  ! depth
-intersection_of: attribute_of UBERON:0013216  ! udder
+intersection_of: attribute_of UBERON:0013216 ! udder
 
 [Term]
 id: VT:0000006  ! esophagus size trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117  ! size
-intersection_of: attribute_of UBERON:0001043  ! esophagus
+intersection_of: attribute_of UBERON:0001043 ! esophagus
 
 [Term]
 id: VT:0000024  ! atrium appendage morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0006618  ! atrium auricular region
+intersection_of: attribute_of UBERON:0006618 ! atrium auricular region
 
 [Term]
 id: VT:0000046  ! sulcus ampullaris morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0009038  ! sulcus ampullaris
+intersection_of: attribute_of UBERON:0009038 ! sulcus ampullaris
 
 [Term]
 id: VT:0000078  ! supraoccipital bone morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0004747  ! supraoccipital bone
+intersection_of: attribute_of UBERON:0004747 ! supraoccipital bone
 
 [Term]
 id: VT:0000106  ! basisphenoid morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0006428  ! basisphenoid bone
+intersection_of: attribute_of UBERON:0006428 ! basisphenoid bone
 
 [Term]
 id: VT:0000152  ! proximal rib morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010388  ! proximal segment of rib
+intersection_of: attribute_of UBERON:0010388 ! proximal segment of rib
 
 [Term]
 id: VT:0000431  ! palatine shelf morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0005619  ! secondary palatal shelf
+intersection_of: attribute_of UBERON:0005619 ! secondary palatal shelf
 
 [Term]
 id: VT:0000443  ! snout morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0006333  ! snout
+intersection_of: attribute_of UBERON:0006333 ! snout
 
 [Term]
 id: VT:0000444  ! snout shape trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000052  ! shape
-intersection_of: attribute_of UBERON:0006333  ! snout
+intersection_of: attribute_of UBERON:0006333 ! snout
 
 [Term]
 id: VT:0000472  ! stomach squamous epithelium morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0006921  ! stomach squamous epithelium
+intersection_of: attribute_of UBERON:0006921 ! stomach squamous epithelium
 
 [Term]
 id: VT:0000473  ! stomach glandular epithelium morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0006924  ! stomach glandular epithelium
+intersection_of: attribute_of UBERON:0006924 ! stomach glandular epithelium
 
 [Term]
 id: VT:0000490  ! crypt of Lieberkuhn morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0001983  ! crypt of Lieberkuhn
+intersection_of: attribute_of UBERON:0001983 ! crypt of Lieberkuhn
 
 [Term]
 id: VT:0000541  ! urinary bladder transitional epithelium morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0004645  ! urinary bladder urothelium
+intersection_of: attribute_of UBERON:0004645 ! urinary bladder urothelium
 
 [Term]
 id: VT:0000631  ! neuroendocrine gland morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010133  ! neuroendocrine gland
+intersection_of: attribute_of UBERON:0010133 ! neuroendocrine gland
 
 [Term]
 id: VT:0000646  ! adrenocortical cell morphology trait
@@ -10170,103 +10162,103 @@ intersection_of: attribute_of CL:0002097  ! cortical cell of adrenal gland
 id: VT:0000741  ! detrusor smooth muscle contractility trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001579  ! contractility
-intersection_of: attribute_of UBERON:0000381  ! urinary bladder detrusor smooth muscle
+intersection_of: attribute_of UBERON:0000381 ! urinary bladder detrusor smooth muscle
 
 [Term]
 id: VT:0000765  ! tongue squamous epithelium morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0006919  ! tongue squamous epithelium
+intersection_of: attribute_of UBERON:0006919 ! tongue squamous epithelium
 
 [Term]
 id: VT:0000792  ! cortical marginal zone morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010403  ! cortical marginal zone
+intersection_of: attribute_of UBERON:0010403 ! cortical marginal zone
 
 [Term]
 id: VT:0000844  ! pontine flexure morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0005820  ! pontine flexure
+intersection_of: attribute_of UBERON:0005820 ! pontine flexure
 
 [Term]
 id: VT:0000856  ! cerebellum plate morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0004008  ! cerebellar plate
+intersection_of: attribute_of UBERON:0004008 ! cerebellar plate
 
 [Term]
 id: VT:0000859  ! somatosensory cortex morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0008930  ! somatosensory cortex
+intersection_of: attribute_of UBERON:0008930 ! somatosensory cortex
 
 [Term]
 id: VT:0000860  ! primary somatosensory cortex morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0008933  ! primary somatosensory cortex
+intersection_of: attribute_of UBERON:0008933 ! primary somatosensory cortex
 
 [Term]
 id: VT:0000863  ! secondary somatosensory cortex morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0008934  ! secondary somatosensory cortex
+intersection_of: attribute_of UBERON:0008934 ! secondary somatosensory cortex
 
 [Term]
 id: VT:0000865  ! cerebellum vermis size trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117  ! size
-intersection_of: attribute_of UBERON:0004720  ! cerebellar vermis
+intersection_of: attribute_of UBERON:0004720 ! cerebellar vermis
 
 [Term]
 id: VT:0000875  ! cerebellar Purkinje cell layer morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0002979  ! Purkinje cell layer of cerebellar cortex
+intersection_of: attribute_of UBERON:0002979 ! Purkinje cell layer of cerebellar cortex
 
 [Term]
 id: VT:0000972  ! mechanoreceptor morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0012449  ! mechanoreceptor
+intersection_of: attribute_of UBERON:0012449 ! mechanoreceptor
 
 [Term]
 id: VT:0000982  ! Meissner's corpuscle morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0012450  ! Meissner's corpuscle
+intersection_of: attribute_of UBERON:0012450 ! Meissner's corpuscle
 
 [Term]
 id: VT:0000983  ! Meissner's corpuscle size trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117  ! size
-intersection_of: attribute_of UBERON:0012450  ! Meissner's corpuscle
+intersection_of: attribute_of UBERON:0012450 ! Meissner's corpuscle
 
 [Term]
 id: VT:0000985  ! Merkel's receptor morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0012456  ! Merkel nerve ending
+intersection_of: attribute_of UBERON:0012456 ! Merkel nerve ending
 
 [Term]
 id: VT:0000988  ! Pacinian corpuscle morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0003719  ! Pacinian corpuscle
+intersection_of: attribute_of UBERON:0003719 ! Pacinian corpuscle
 
 [Term]
 id: VT:0000989  ! Ruffini's corpuscle morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0012457  ! Ruffini nerve ending
+intersection_of: attribute_of UBERON:0012457 ! Ruffini nerve ending
 
 [Term]
 id: VT:0000999  ! Golgi tendon organ morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0004012  ! golgi tendon organ
+intersection_of: attribute_of UBERON:0004012 ! golgi tendon organ
 
 [Term]
 id: VT:0001046  ! enteric neuron morphology trait
@@ -10278,127 +10270,127 @@ intersection_of: attribute_of CL:0007011  ! enteric neuron
 id: VT:0001084  ! petrosal ganglion morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0005360  ! inferior glossopharyngeal IX ganglion
+intersection_of: attribute_of UBERON:0005360 ! inferior glossopharyngeal IX ganglion
 
 [Term]
 id: VT:0001087  ! nodose ganglion morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0005363  ! inferior vagus X ganglion
+intersection_of: attribute_of UBERON:0005363 ! inferior vagus X ganglion
 
 [Term]
 id: VT:0001088  ! nodose ganglion size trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117  ! size
-intersection_of: attribute_of UBERON:0005363  ! inferior vagus X ganglion
+intersection_of: attribute_of UBERON:0005363 ! inferior vagus X ganglion
 
 [Term]
 id: VT:0001097  ! superior glossopharyngeal ganglion morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0005361  ! superior glossopharyngeal IX ganglion
+intersection_of: attribute_of UBERON:0005361 ! superior glossopharyngeal IX ganglion
 
 [Term]
 id: VT:0001098  ! superior glossopharyngeal ganglion size trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117  ! size
-intersection_of: attribute_of UBERON:0005361  ! superior glossopharyngeal IX ganglion
+intersection_of: attribute_of UBERON:0005361 ! superior glossopharyngeal IX ganglion
 
 [Term]
 id: VT:0001137  ! cervical epithelium morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0004801  ! cervix epithelium
+intersection_of: attribute_of UBERON:0004801 ! cervix epithelium
 
 [Term]
 id: VT:0001138  ! cervical squamous epithelium morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0006922  ! cervix squamous epithelium
+intersection_of: attribute_of UBERON:0006922 ! cervix squamous epithelium
 
 [Term]
 id: VT:0001142  ! vaginal opening morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0012317  ! vagina orifice
+intersection_of: attribute_of UBERON:0012317 ! vagina orifice
 
 [Term]
 id: VT:0001143  ! vaginal opening size trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117  ! size
-intersection_of: attribute_of UBERON:0012317  ! vagina orifice
+intersection_of: attribute_of UBERON:0012317 ! vagina orifice
 
 [Term]
 id: VT:0001163  ! coagulating gland morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0008807  ! coagulating gland
+intersection_of: attribute_of UBERON:0008807 ! coagulating gland
 
 [Term]
 id: VT:0001250  ! dermis stratum papillare morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0001992  ! papillary layer of dermis
+intersection_of: attribute_of UBERON:0001992 ! papillary layer of dermis
 
 [Term]
 id: VT:0001299  ! eye orientation trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000133  ! orientation
-intersection_of: attribute_of UBERON:0000970  ! eye
+intersection_of: attribute_of UBERON:0000970 ! eye
 
 [Term]
 id: VT:0001387  ! spiral ligament size trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117  ! size
-intersection_of: attribute_of UBERON:0006725  ! spiral ligament
+intersection_of: attribute_of UBERON:0006725 ! spiral ligament
 
 [Term]
 id: VT:0001649  ! symphysis menti morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0006606  ! mandibular symphysis
+intersection_of: attribute_of UBERON:0006606 ! mandibular symphysis
 
 [Term]
 id: VT:0001710  ! amniotic fold morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0005971  ! amniotic fold
+intersection_of: attribute_of UBERON:0005971 ! amniotic fold
 
 [Term]
 id: VT:0001944  ! pancreas morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0001264  ! pancreas
+intersection_of: attribute_of UBERON:0001264 ! pancreas
 
 [Term]
 id: VT:0002221  ! immune system organ size trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117  ! size
-intersection_of: attribute_of UBERON:0005057  ! immune organ
+intersection_of: attribute_of UBERON:0005057 ! immune organ
 
 [Term]
 id: VT:0002228  ! spleen trabecular vein morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010400  ! spleen trabecular vein
+intersection_of: attribute_of UBERON:0010400 ! spleen trabecular vein
 
 [Term]
 id: VT:0002235  ! external nares morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0005928  ! external naris
+intersection_of: attribute_of UBERON:0005928 ! external naris
 
 [Term]
 id: VT:0002238  ! nasal mucosa morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0005384  ! nasal cavity epithelium
+intersection_of: attribute_of UBERON:0005384 ! nasal cavity epithelium
 
 [Term]
 id: VT:0002242  ! olfactory mucosa morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0005386  ! olfactory mucosa
+intersection_of: attribute_of UBERON:0005386 ! olfactory mucosa
 
 [Term]
 id: VT:0002262  ! nasal mucosa goblet cell morphology trait
@@ -10410,19 +10402,19 @@ intersection_of: attribute_of CL:0002480  ! nasal mucosa goblet cell
 id: VT:0002265  ! left major bronchus morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0002178  ! left main bronchus
+intersection_of: attribute_of UBERON:0002178 ! left main bronchus
 
 [Term]
 id: VT:0002266  ! right major bronchus morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0002177  ! right main bronchus
+intersection_of: attribute_of UBERON:0002177 ! right main bronchus
 
 [Term]
 id: VT:0002271  ! respiratory alveolar duct morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0002173  ! pulmonary alveolar duct
+intersection_of: attribute_of UBERON:0002173 ! pulmonary alveolar duct
 
 [Term]
 id: VT:0002274  ! type I pneumocyte morphology trait
@@ -10440,91 +10432,91 @@ intersection_of: attribute_of CL:0002063  ! type II pneumocyte
 id: VT:0002284  ! tracheal smooth muscle morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0003387  ! smooth muscle of trachea
+intersection_of: attribute_of UBERON:0003387 ! smooth muscle of trachea
 
 [Term]
 id: VT:0002344  ! lymph node B cell domain morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010416  ! lymph node B cell domain
+intersection_of: attribute_of UBERON:0010416 ! lymph node B cell domain
 
 [Term]
 id: VT:0002345  ! lymph node primary follicle morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010395  ! lymph node primary follicle
+intersection_of: attribute_of UBERON:0010395 ! lymph node primary follicle
 
 [Term]
 id: VT:0002347  ! lymph node T cell domain morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010417  ! lymph node T cell domain
+intersection_of: attribute_of UBERON:0010417 ! lymph node T cell domain
 
 [Term]
 id: VT:0002349  ! afferent lymphatic vessel morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010396  ! afferent lymphatic vessel
+intersection_of: attribute_of UBERON:0010396 ! afferent lymphatic vessel
 
 [Term]
 id: VT:0002350  ! efferent lymphatic vessel morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010397  ! efferent lymphatic vessel
+intersection_of: attribute_of UBERON:0010397 ! efferent lymphatic vessel
 
 [Term]
 id: VT:0002354  ! spleen trabecular artery morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010399  ! spleen trabecular artery
+intersection_of: attribute_of UBERON:0010399 ! spleen trabecular artery
 
 [Term]
 id: VT:0002360  ! spleen B cell corona morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010421  ! spleen B cell corona
+intersection_of: attribute_of UBERON:0010421 ! spleen B cell corona
 
 [Term]
 id: VT:0002361  ! spleen central arteriole morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010401  ! spleen central arteriole
+intersection_of: attribute_of UBERON:0010401 ! spleen central arteriole
 
 [Term]
 id: VT:0002363  ! spleen marginal sinus morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010398  ! spleen marginal sinus
+intersection_of: attribute_of UBERON:0010398 ! spleen marginal sinus
 
 [Term]
 id: VT:0002369  ! thymus subcapsular epithelium morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0006936  ! thymus subcapsular epithelium
+intersection_of: attribute_of UBERON:0006936 ! thymus subcapsular epithelium
 
 [Term]
 id: VT:0002385  ! lingual tonsillar tissue morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0007250  ! lingual tonsil
+intersection_of: attribute_of UBERON:0007250 ! lingual tonsil
 
 [Term]
 id: VT:0002388  ! Peyer's patch epithelium morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0004693  ! Peyer's patch epithelium
+intersection_of: attribute_of UBERON:0004693 ! Peyer's patch epithelium
 
 [Term]
 id: VT:0002389  ! Peyer's patch follicle morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010386  ! peyer's patch follicle
+intersection_of: attribute_of UBERON:0010386 ! peyer's patch follicle
 
 [Term]
 id: VT:0002391  ! Peyer's patch germinal center morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0004697  ! Peyer's patch germinal center
+intersection_of: attribute_of UBERON:0004697 ! Peyer's patch germinal center
 
 [Term]
 id: VT:0002398  ! bone marrow cell morphology trait
@@ -10542,13 +10534,13 @@ intersection_of: attribute_of CL:0002225  ! secondary lens fiber
 id: VT:0002722  ! immune system organ morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0005057  ! immune organ
+intersection_of: attribute_of UBERON:0005057 ! immune organ
 
 [Term]
 id: VT:0002746  ! semilunar valve morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0005623  ! semi-lunar valve
+intersection_of: attribute_of UBERON:0005623 ! semi-lunar valve
 
 [Term]
 id: VT:0002761  ! hippocampus mossy fiber morphology trait
@@ -10560,97 +10552,97 @@ intersection_of: attribute_of GO:0097457  ! hippocampal mossy fiber
 id: VT:0002975  ! blood vessel smooth muscle size trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117  ! size
-intersection_of: attribute_of UBERON:0004237  ! blood vessel smooth muscle
+intersection_of: attribute_of UBERON:0004237 ! blood vessel smooth muscle
 
 [Term]
 id: VT:0003151  ! tunnel of Corti morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0005972  ! tunnel of Corti
+intersection_of: attribute_of UBERON:0005972 ! tunnel of Corti
 
 [Term]
 id: VT:0003159  ! esophageal smooth muscle morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0002112  ! smooth muscle of esophagus
+intersection_of: attribute_of UBERON:0002112 ! smooth muscle of esophagus
 
 [Term]
 id: VT:0003235  ! alisphenoid morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0006721  ! alisphenoid bone
+intersection_of: attribute_of UBERON:0006721 ! alisphenoid bone
 
 [Term]
 id: VT:0003283  ! digestive organ orientation trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000133  ! orientation
-intersection_of: attribute_of UBERON:0013765  ! digestive system organ
+intersection_of: attribute_of UBERON:0013765 ! digestive system organ
 
 [Term]
 id: VT:0003568  ! uterine lumen morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0013769  ! uterine lumen
+intersection_of: attribute_of UBERON:0013769 ! uterine lumen
 
 [Term]
 id: VT:0003662  ! epiphyseal plate proliferative zone morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0006771  ! long bone epiphyseal plate proliferative zone
+intersection_of: attribute_of UBERON:0006771 ! long bone epiphyseal plate proliferative zone
 
 [Term]
 id: VT:0003728  ! retinal photoreceptor layer morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0001787  ! photoreceptor layer of retina
+intersection_of: attribute_of UBERON:0001787 ! photoreceptor layer of retina
 
 [Term]
 id: VT:0003739  ! auditory ossicle size trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117  ! size
-intersection_of: attribute_of UBERON:0001686  ! auditory ossicle
+intersection_of: attribute_of UBERON:0001686 ! auditory ossicle
 
 [Term]
 id: VT:0003812  ! hair medulla morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0005184  ! hair medulla
+intersection_of: attribute_of UBERON:0005184 ! hair medulla
 
 [Term]
 id: VT:0003817  ! Rathke's pouch morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0005356  ! Rathke's pouch
+intersection_of: attribute_of UBERON:0005356 ! Rathke's pouch
 
 [Term]
 id: VT:0003844  ! squamosal suture morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0003954  ! squamoparietal suture
+intersection_of: attribute_of UBERON:0003954 ! squamoparietal suture
 
 [Term]
 id: VT:0003989  ! barrel cortex morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010415  ! barrel cortex
+intersection_of: attribute_of UBERON:0010415 ! barrel cortex
 
 [Term]
 id: VT:0003993  ! ventral spinal root morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0002260  ! ventral root of spinal cord
+intersection_of: attribute_of UBERON:0002260 ! ventral root of spinal cord
 
 [Term]
 id: VT:0003994  ! dorsal spinal root morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0002261  ! dorsal root of spinal cord
+intersection_of: attribute_of UBERON:0002261 ! dorsal root of spinal cord
 
 [Term]
 id: VT:0004032  ! interventricular groove morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0005455  ! interventricular groove
+intersection_of: attribute_of UBERON:0005455 ! interventricular groove
 
 [Term]
 id: VT:0004074  ! Schwann cell precursor morphology trait
@@ -10662,49 +10654,49 @@ intersection_of: attribute_of CL:0002375  ! Schwann cell precursor
 id: VT:0004099  ! cerebellar glomerulus morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0011915  ! cerebellar glomerulus
+intersection_of: attribute_of UBERON:0011915 ! cerebellar glomerulus
 
 [Term]
 id: VT:0004102  ! dorsal striatum morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0005383  ! caudate-putamen
+intersection_of: attribute_of UBERON:0005383 ! caudate-putamen
 
 [Term]
 id: VT:0004103  ! ventral striatum morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0005403  ! ventral striatum
+intersection_of: attribute_of UBERON:0005403 ! ventral striatum
 
 [Term]
 id: VT:0004123  ! impulse conducting system morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0002350  ! conducting system of heart
+intersection_of: attribute_of UBERON:0002350 ! conducting system of heart
 
 [Term]
 id: VT:0004124  ! Purkinje fiber morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0002354  ! purkinje fiber
+intersection_of: attribute_of UBERON:0002354 ! purkinje fiber
 
 [Term]
 id: VT:0004193  ! kidney papilla morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0001228  ! renal papilla
+intersection_of: attribute_of UBERON:0001228 ! renal papilla
 
 [Term]
 id: VT:0004203  ! cranial flexure morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0005818  ! cephalic flexure
+intersection_of: attribute_of UBERON:0005818 ! cephalic flexure
 
 [Term]
 id: VT:0004221  ! iridocorneal angle morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0006206  ! iridocorneal angle
+intersection_of: attribute_of UBERON:0006206 ! iridocorneal angle
 
 [Term]
 id: VT:0004230  ! embryonic erythrocyte morphology trait
@@ -10716,49 +10708,49 @@ intersection_of: attribute_of CL:0002355  ! primitive red blood cell
 id: VT:0004235  ! masseter muscle morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0001597  ! masseter muscle
+intersection_of: attribute_of UBERON:0001597 ! masseter muscle
 
 [Term]
 id: VT:0004236  ! masseter muscle size trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117  ! size
-intersection_of: attribute_of UBERON:0001597  ! masseter muscle
+intersection_of: attribute_of UBERON:0001597 ! masseter muscle
 
 [Term]
 id: VT:0004237  ! pterygoid muscle morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0006720  ! pterygoid muscle
+intersection_of: attribute_of UBERON:0006720 ! pterygoid muscle
 
 [Term]
 id: VT:0004238  ! pterygoid muscle size trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117  ! size
-intersection_of: attribute_of UBERON:0006720  ! pterygoid muscle
+intersection_of: attribute_of UBERON:0006720 ! pterygoid muscle
 
 [Term]
 id: VT:0004240  ! temporalis muscle size trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117  ! size
-intersection_of: attribute_of UBERON:0001598  ! temporalis muscle
+intersection_of: attribute_of UBERON:0001598 ! temporalis muscle
 
 [Term]
 id: VT:0004275  ! postnatal subventricular zone morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0004922  ! postnatal subventricular zone
+intersection_of: attribute_of UBERON:0004922 ! postnatal subventricular zone
 
 [Term]
 id: VT:0004286  ! internal auditory canal morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0011859  ! internal acoustic meatus
+intersection_of: attribute_of UBERON:0011859 ! internal acoustic meatus
 
 [Term]
 id: VT:0004288  ! spiral ligament morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0006725  ! spiral ligament
+intersection_of: attribute_of UBERON:0006725 ! spiral ligament
 
 [Term]
 id: VT:0004293  ! type I spiral ligament fibrocyte morphology trait
@@ -10806,31 +10798,31 @@ intersection_of: attribute_of CL:0000635  ! Deiter's cell
 id: VT:0004305  ! Rosenthal canal morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0006106  ! cochlear canal
+intersection_of: attribute_of UBERON:0006106 ! cochlear canal
 
 [Term]
 id: VT:0004306  ! Rosenthal canal size trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117  ! size
-intersection_of: attribute_of UBERON:0006106  ! cochlear canal
+intersection_of: attribute_of UBERON:0006106 ! cochlear canal
 
 [Term]
 id: VT:0004330  ! saccular macula morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0002212  ! macula of saccule of membranous labyrinth
+intersection_of: attribute_of UBERON:0002212 ! macula of saccule of membranous labyrinth
 
 [Term]
 id: VT:0004333  ! utricular macula morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0002214  ! macula of utricle of membranous labyrinth
+intersection_of: attribute_of UBERON:0002214 ! macula of utricle of membranous labyrinth
 
 [Term]
 id: VT:0004347  ! scapular spine morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0004651  ! scapula spine
+intersection_of: attribute_of UBERON:0004651 ! scapula spine
 
 [Term]
 id: VT:0004365  ! strial basal cell morphology trait
@@ -10854,31 +10846,31 @@ intersection_of: attribute_of CL:0002486  ! strial intermediate cell
 id: VT:0004423  ! squama temporalis morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0001695  ! squamous part of temporal bone
+intersection_of: attribute_of UBERON:0001695 ! squamous part of temporal bone
 
 [Term]
 id: VT:0004448  ! presphenoid bone morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0008828  ! presphenoid bone
+intersection_of: attribute_of UBERON:0008828 ! presphenoid bone
 
 [Term]
 id: VT:0004452  ! pterygoid process morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0004649  ! sphenoid bone pterygoid process
+intersection_of: attribute_of UBERON:0004649 ! sphenoid bone pterygoid process
 
 [Term]
 id: VT:0004453  ! pterygoid bone morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010389  ! pterygoid bone
+intersection_of: attribute_of UBERON:0010389 ! pterygoid bone
 
 [Term]
 id: VT:0004481  ! conjunctival epithelium morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0006763  ! epithelium of conjunctiva
+intersection_of: attribute_of UBERON:0006763 ! epithelium of conjunctiva
 
 [Term]
 id: VT:0004482  ! interdental cell morphology trait
@@ -10908,145 +10900,145 @@ intersection_of: attribute_of CL:0002488  ! trophoblast giant cell
 id: VT:0005081  ! dermis stratum reticulare morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0001993  ! reticular layer of dermis
+intersection_of: attribute_of UBERON:0001993 ! reticular layer of dermis
 
 [Term]
 id: VT:0005082  ! epidermis stratum lucidum morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0002071  ! stratum lucidum of epidermis
+intersection_of: attribute_of UBERON:0002071 ! stratum lucidum of epidermis
 
 [Term]
 id: VT:0005105  ! auditory ossicle morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0001686  ! auditory ossicle
+intersection_of: attribute_of UBERON:0001686 ! auditory ossicle
 
 [Term]
 id: VT:0005112  ! anterior horn morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0002257  ! ventral horn of spinal cord
+intersection_of: attribute_of UBERON:0002257 ! ventral horn of spinal cord
 
 [Term]
 id: VT:0005193  ! anterior eye segment morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0001801  ! anterior segment of eyeball
+intersection_of: attribute_of UBERON:0001801 ! anterior segment of eyeball
 
 [Term]
 id: VT:0005194  ! anterior uvea morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0011892  ! anterior uvea
+intersection_of: attribute_of UBERON:0011892 ! anterior uvea
 
 [Term]
 id: VT:0005195  ! posterior eye segment morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0001802  ! posterior segment of eyeball
+intersection_of: attribute_of UBERON:0001802 ! posterior segment of eyeball
 
 [Term]
 id: VT:0005235  ! olfactory lobe morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0005366  ! olfactory lobe
+intersection_of: attribute_of UBERON:0005366 ! olfactory lobe
 
 [Term]
 id: VT:0005241  ! retinal ganglion layer morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0001792  ! ganglionic layer of retina
+intersection_of: attribute_of UBERON:0001792 ! ganglionic layer of retina
 
 [Term]
 id: VT:0005305  ! coagulating gland size trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117  ! size
-intersection_of: attribute_of UBERON:0008807  ! coagulating gland
+intersection_of: attribute_of UBERON:0008807 ! coagulating gland
 
 [Term]
 id: VT:0005336  ! inguinal fat pad morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010410  ! inguinal fat pad
+intersection_of: attribute_of UBERON:0010410 ! inguinal fat pad
 
 [Term]
 id: VT:0005337  ! retroperitoneal fat pad morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010411  ! retroperitoneal fat pad
+intersection_of: attribute_of UBERON:0010411 ! retroperitoneal fat pad
 
 [Term]
 id: VT:0005593  ! blood vessel smooth muscle contractility trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001579  ! contractility
-intersection_of: attribute_of UBERON:0004237  ! blood vessel smooth muscle
+intersection_of: attribute_of UBERON:0004237 ! blood vessel smooth muscle
 
 [Term]
 id: VT:0006069  ! retinal neuronal layer morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0001781  ! layer of retina
+intersection_of: attribute_of UBERON:0003902 ! retinal neural layer
 
 [Term]
 id: VT:0006168  ! epicanthal fold morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0013766  ! epicanthal fold
+intersection_of: attribute_of UBERON:0013766 ! epicanthal fold
 
 [Term]
 id: VT:0006195  ! eyeball orientation trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000133  ! orientation
-intersection_of: attribute_of UBERON:0010230  ! eyeball of camera-type eye
+intersection_of: attribute_of UBERON:0010230 ! eyeball of camera-type eye
 
 [Term]
 id: VT:0006250  ! line of Schwalbe morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0011918  ! line of Schwalbe
+intersection_of: attribute_of UBERON:0011918 ! line of Schwalbe
 
 [Term]
 id: VT:0006282  ! posterior horn morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0005373  ! spinal cord dorsal column
+intersection_of: attribute_of UBERON:0005373 ! spinal cord dorsal column
 
 [Term]
 id: VT:0007036  ! pericardium orientation trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000133  ! orientation
-intersection_of: attribute_of UBERON:0002407  ! pericardium
+intersection_of: attribute_of UBERON:0002407 ! pericardium
 
 [Term]
 id: VT:0007038  ! endocardial cushion orientation trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000133  ! orientation
-intersection_of: attribute_of UBERON:0002062  ! endocardial cushion
+intersection_of: attribute_of UBERON:0002062 ! endocardial cushion
 
 [Term]
 id: VT:0007041  ! heart tube orientation trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000133  ! orientation
-intersection_of: attribute_of UBERON:0004141  ! heart tube
+intersection_of: attribute_of UBERON:0004141 ! heart tube
 
 [Term]
 id: VT:0007081  ! atrium septum morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0002085  ! interatrial septum
+intersection_of: attribute_of UBERON:0002085 ! interatrial septum
 
 [Term]
 id: VT:0008473  ! spleen follicular dendritic cell network morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010756  ! spleen follicular dendritic cell network
+intersection_of: attribute_of UBERON:0010756 ! spleen follicular dendritic cell network
 
 [Term]
 id: VT:0008522  ! lymph node germinal center morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0009039  ! lymph node germinal center
+intersection_of: attribute_of UBERON:0009039 ! lymph node germinal center
 
 [Term]
 id: VT:0008894  ! intraepithelial T cell morphology trait
@@ -11058,163 +11050,163 @@ intersection_of: attribute_of CL:0002496  ! intraepithelial lymphocyte
 id: VT:0010007  ! skin adnexa morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0000021  ! cutaneous appendage
+intersection_of: attribute_of UBERON:0000021 ! cutaneous appendage
 
 [Term]
 id: VT:0010010  ! femur strength trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001230  ! strength
-intersection_of: attribute_of UBERON:0000981  ! femur
+intersection_of: attribute_of UBERON:0000981 ! femur
 
 [Term]
 id: VT:0010012  ! humerus strength trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001230  ! strength
-intersection_of: attribute_of UBERON:0000976  ! humerus
+intersection_of: attribute_of UBERON:0000976 ! humerus
 
 [Term]
 id: VT:0010067  ! convoluted tubule morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0006534  ! renal convoluted tubule
+intersection_of: attribute_of UBERON:0006534 ! renal convoluted tubule
 
 [Term]
 id: VT:0010071  ! lymphatic system morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0006558  ! lymphatic part of lymphoid system
+intersection_of: attribute_of UBERON:0006558 ! lymphatic part of lymphoid system
 
 [Term]
 id: VT:0010075  ! occipitomastoid suture morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010159  ! occipitomastoid suture
+intersection_of: attribute_of UBERON:0010159 ! occipitomastoid suture
 
 [Term]
 id: VT:0010076  ! parietomastoid suture morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010155  ! parietomastoid suture
+intersection_of: attribute_of UBERON:0010155 ! parietomastoid suture
 
 [Term]
 id: VT:0010077  ! sphenofrontal suture morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010156  ! sphenofrontal suture
+intersection_of: attribute_of UBERON:0010156 ! sphenofrontal suture
 
 [Term]
 id: VT:0010078  ! sphenoparietal suture morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010157  ! sphenoparietal suture
+intersection_of: attribute_of UBERON:0010157 ! sphenoparietal suture
 
 [Term]
 id: VT:0010079  ! sphenozygomatic suture morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010158  ! sphenozygomatic suture
+intersection_of: attribute_of UBERON:0010158 ! sphenozygomatic suture
 
 [Term]
 id: VT:0010083  ! frontal process of maxilla morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0013767  ! frontal process of maxilla
+intersection_of: attribute_of UBERON:0013767 ! frontal process of maxilla
 
 [Term]
 id: VT:0010092  ! thoracic cage morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0003252  ! rib cage
+intersection_of: attribute_of UBERON:0003252 ! rib cage
 
 [Term]
 id: VT:0010203  ! proventriculus morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0007357  ! proventriculus
+intersection_of: attribute_of UBERON:0007357 ! proventriculus
 
 [Term]
 id: VT:0010222  ! jejunum mucosa morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0000399  ! jejunal mucosa
+intersection_of: attribute_of UBERON:0000399 ! jejunal mucosa
 
 [Term]
 id: VT:0010223  ! ileum mucosa morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0000331  ! ileal mucosa
+intersection_of: attribute_of UBERON:0000331 ! ileal mucosa
 
 [Term]
 id: VT:0010235  ! forestomach morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0008827  ! forestomach
+intersection_of: attribute_of UBERON:0008827 ! forestomach
 
 [Term]
 id: VT:0010238  ! crop morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0007356  ! crop
+intersection_of: attribute_of UBERON:0007356 ! crop
 
 [Term]
 id: VT:0010240  ! reticulo-rumen morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0007364  ! reticulorumen
+intersection_of: attribute_of UBERON:0007364 ! reticulorumen
 
 [Term]
 id: VT:0010244  ! rumen papillae morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010153  ! rumen papilla
+intersection_of: attribute_of UBERON:0010153 ! rumen papilla
 
 [Term]
 id: VT:0010245  ! omasum morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0007362  ! omasum
+intersection_of: attribute_of UBERON:0007362 ! omasum
 
 [Term]
 id: VT:0010250  ! hematopoietic system morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0002390  ! hematopoietic system
+intersection_of: attribute_of UBERON:0002390 ! hematopoietic system
 
 [Term]
 id: VT:0010252  ! hemolymphoid system morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0002193  ! hemolymphoid system
+intersection_of: attribute_of UBERON:0002193 ! hemolymphoid system
 
 [Term]
 id: VT:0010274  ! ear orientation trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000133  ! orientation
-intersection_of: attribute_of UBERON:0001690  ! ear
+intersection_of: attribute_of UBERON:0001690 ! ear
 
 [Term]
 id: VT:0010298  ! heart ventricle size trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117  ! size
-intersection_of: attribute_of UBERON:0002082  ! cardiac ventricle
+intersection_of: attribute_of UBERON:0002082 ! cardiac ventricle
 
 [Term]
 id: VT:0010394  ! uterine horn morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0002247  ! uterine horn
+intersection_of: attribute_of UBERON:0002247 ! uterine horn
 
 [Term]
 id: VT:0010401  ! ovarian follicle size trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117  ! size
-intersection_of: attribute_of UBERON:0001305  ! ovarian follicle
+intersection_of: attribute_of UBERON:0001305 ! ovarian follicle
 
 [Term]
 id: VT:0010402  ! corpus luteum size trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117  ! size
-intersection_of: attribute_of UBERON:0002512  ! corpus luteum
+intersection_of: attribute_of UBERON:0002512 ! corpus luteum
 
 [Term]
 id: VT:0010405  ! sperm size trait
@@ -11244,120 +11236,139 @@ intersection_of: attribute_of CL:0000233  ! platelet
 id: VT:0010494  ! lumbar vertebra morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0002414  ! lumbar vertebra
+intersection_of: attribute_of UBERON:0002414 ! lumbar vertebra
 
 [Term]
 id: VT:0010517  ! neurocranium size trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117  ! size
-intersection_of: attribute_of UBERON:0001703  ! neurocranium
+intersection_of: attribute_of UBERON:0001703 ! neurocranium
 
 [Term]
 id: VT:0010518  ! lumbar vertebra size trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117  ! size
-intersection_of: attribute_of UBERON:0002414  ! lumbar vertebra
+intersection_of: attribute_of UBERON:0002414 ! lumbar vertebra
 
 [Term]
 id: VT:0015000  ! epididymal fat pad morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010412  ! epididymal fat pad
+intersection_of: attribute_of UBERON:0010412 ! epididymal fat pad
 
 [Term]
 id: VT:0015001  ! femoral fat pad morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0012283  ! abnormal femoral fat pad morphology
+intersection_of: attribute_of UBERON:0012283 ! abnormal femoral fat pad morphology
 
 [Term]
 id: VT:0015003  ! mammary fat pad morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0012282  ! mammary fat pad
+intersection_of: attribute_of UBERON:0012282 ! mammary fat pad
 
 [Term]
 id: VT:0015005  ! parametrial fat pad morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0010413  ! parametrial fat pad
+intersection_of: attribute_of UBERON:0010413 ! parametrial fat pad
 
 [Term]
 id: VT:0015044  ! beak morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0005094  ! beak
+intersection_of: attribute_of UBERON:0005094 ! beak
 
 [Term]
 id: VT:0015075  ! styloid process of temporal bone morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0003960  ! styloid process of temporal bone
+intersection_of: attribute_of UBERON:0003960 ! styloid process of temporal bone
 
 [Term]
 id: VT:0015105  ! cerebrum morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0001893  ! telencephalon
+intersection_of: attribute_of UBERON:0001893 ! telencephalon
 
 [Term]
 id: VT:0100035  ! udder size trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117  ! size
-intersection_of: attribute_of UBERON:0013216  ! udder
+intersection_of: attribute_of UBERON:0013216 ! udder
 
 [Term]
 id: VT:1000067  ! udder morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0013216  ! udder
+intersection_of: attribute_of UBERON:0013216 ! udder
 
 [Term]
 id: VT:1000284  ! tibia strength trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001230  ! strength
-intersection_of: attribute_of UBERON:0000979  ! tibia
+intersection_of: attribute_of UBERON:0000979 ! tibia
 
 [Term]
 id: VT:1000286  ! tibia elasticity trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001031  ! elasticity
-intersection_of: attribute_of UBERON:0000979  ! tibia
+intersection_of: attribute_of UBERON:0000979 ! tibia
 
 [Term]
 id: VT:2000000  ! arterial blood pressure trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001025  ! pressure
-intersection_of: attribute_of UBERON:0013755  ! arterial blood
+intersection_of: attribute_of UBERON:0013755 ! arterial blood
 
 [Term]
 id: VT:2000001  ! capillary blood pressure trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001025  ! pressure
-intersection_of: attribute_of UBERON:0013757  ! capillary blood
+intersection_of: attribute_of UBERON:0013757 ! capillary blood
 
 [Term]
 id: VT:2000002  ! venous blood pressure trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001025  ! pressure
-intersection_of: attribute_of UBERON:0013756  ! venous blood
+intersection_of: attribute_of UBERON:0013756 ! venous blood
 
 [Term]
 id: VT:4000009  ! skin layer morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0013754  ! layer of skin
+intersection_of: attribute_of UBERON:0013754 ! layer of skin
+
+[Term]
+id: VT:0003231 ! placenta vascular morphology trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: affects_quality PATO:0000051  ! morphology
+intersection_of: attribute_of UBERON:0003970 ! placental labyrinth vasculature
+
+[Typedef]
+id: attribute_of_part_of
+name: attribute_of_part_of
+holds_over_chain: attribute_of part_of
 
 [Typedef]
 id: attribute_of
-name: attribute of
+name: attribute_of
+is_a: attribute_of_part_of
 
 [Typedef]
 id: affects_quality
 name: has quality
 
 [Typedef]
+id: part_of
+name: part_of
+xref: BFO:0000050
+
+[Typedef]
 id: occurs_in
 name: occurs in
 xref: BFO:0000066
 transitive_over: part_of ! part_of
+is_a: attribute_of_part_of
+
