@@ -13,6 +13,8 @@
 OBO=http://purl.obolibrary.org/obo
 ONTS = mp hp
 ALL_ONTS = mp hp wbphenotype apo to
+MP_URL = ftp://ftp.informatics.jax.org/pub/reports/MPheno_OBO.ontology
+WP_URL = http://tazendra.caltech.edu/~azurebrd/cgi-bin/forms/phenotype_ontology_obo.cgi
 
 # ----------------------------------------
 # TOP LEVEL TARGETS
@@ -34,7 +36,10 @@ fetch:
 	svn update && mv mp.obo mp.obo.old && make mp.obo && mv hp.obo hp.obo.old && make hp.obo
 
 mp.obo:
-	wget ftp://ftp.informatics.jax.org/pub/reports/MPheno_OBO.ontology -O $@
+	wget $(MP_URL) -O $@
+
+wbphenotype.obo:
+	wget $(WP_URL) -O $@
 
 hp.obo: external/hpo/human-phenotype-ontology.obo
 	echo remember to update external/hpo && \
@@ -116,29 +121,41 @@ fixed-behavior_xp.obo: external/behavior-ontology/behavior_xp.obo
 # Uberon
 # ----------------------------------------
 
+%-ubr.obo: %.obo
+#	owltools $< uberon-simple-vertebrate-bridge.obo --add-imports-from-supports --merge-equivalent-classes -f $(OBO)/FMA_ -t $(OBO)/CL_ -t $(OBO)/UBERON_ -o -f obo $@
+#	owltools $< uberon-simple-vertebrate-bridge.obo --merge-support-ontologies --merge-equivalent-classes -f $(OBO)/FMA_ -f $(OBO)/MA_ -f $(OBO)/ZFA_ -t $(OBO)/CL_ -t $(OBO)/UBERON_ -o -f obo --no-checkx	 $@
+	owltools $< uberon-simple-vertebrate-bridge.obo --add-imports-from-supports --merge-equivalent-classes -f $(OBO)/FMA_ -f $(OBO)/MA_ -f $(OBO)/ZFA_ -t $(OBO)/CL_ -t $(OBO)/UBERON_ -o -f obo --no-check $@
+
+# mapping to uberon
+# TODO: don't hardcode idspace
+#%-ubr.obo: %.obo
+#	obo-map-ids.pl --use-xref-inverse --xref-idspace MA $(HOME)/cvs/uberon/uberon_edit.obo $< > $@
+
+
+
 UBRIDGE = external/uberon/bridge/uberon-bridge-to-
 
 # hack: render taxon-equivalents as plain equivalents
 #  NOTE: this could have unintended consequences and lead to unsatisfiable classes (e.g. check mammary gland)
 uberon-simple-vertebrate-bridge.obo:
-	cat $(UBRIDGE)ma.obo $(UBRIDGE)fma.obo $(UBRIDGE)zfa.obo $(UBRIDGE)ehdaa2.obo | grep -v ^ontology | ../tools/flatten-taxon-equivalents.pl > $@.tmp && (echo "ontology: uberon/uberon-simple-bridge" && cat $@.tmp) > $@
+	obo-cat.pl $(UBRIDGE)ma.obo $(UBRIDGE)fma.obo $(UBRIDGE)zfa.obo $(UBRIDGE)ehdaa2.obo | grep -v ^ontology | ../tools/flatten-taxon-equivalents.pl > $@.tmp && (echo "ontology: uberon/uberon-simple-bridge" && cat $@.tmp) > $@
 
-# mapping to uberon
-# TODO: don't hardcode idspace
-%-ubr.obo: %.obo
-	obo-map-ids.pl --use-xref-inverse --xref-idspace MA $(HOME)/cvs/uberon/uberon_edit.obo $< > $@
 
 # ----------------------------------------
 # Oort
 # ----------------------------------------
 OBO=http://purl.obolibrary.org/obo
-CORE= external/pato/quality.obo $(OBO)/go.owl external/cell/cl.owl $(OBO)/uberon/merged.owl $(OBO)/nbo.owl $(OBO)/mpath.owl
+#CORE= external/pato/quality.obo $(OBO)/go.owl external/cell/cl.owl $(OBO)/uberon/merged.owl $(OBO)/nbo.owl $(OBO)/mpath.owl
+CORE= external/pato/quality.obo $(OBO)/go.owl external/cell/cl.owl $(OBO)/uberon/merged.owl $(OBO)/mpath.owl
 
 merged-hp:
 	ontology-release-runner --allow-overwrite --outdir hp --repair-cardinality --no-subsets --no-reasoner --asserted --re-mireot hp.obo -b hp/hp-equivalence-axioms.obo $(CORE) $(OBO)/fma.owl $(OBO)/uberon/bridge/uberon-bridge-to-fma.owl
 
 merged-mp:
 	ontology-release-runner --allow-overwrite --outdir mp --repair-cardinality --no-subsets --no-reasoner --asserted --re-mireot mp.obo -b mp/mp-equivalence-axioms.obo $(CORE) $(OBO)/ma.owl $(OBO)/uberon/bridge/uberon-bridge-to-ma.owl
+
+merged-vt:
+	ontology-release-runner --catalog-xml catalog-v001.xml --allow-overwrite --outdir vt/build  --no-subsets --reasoner elk --simple --asserted --re-mireot vt/vt.obo -b vt/vt-equivalence-axioms.obo $(CORE)
 
 
 # ----------------------------------------
