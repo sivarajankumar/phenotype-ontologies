@@ -11346,6 +11346,78 @@ intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
 intersection_of: attribute_of UBERON:0003970 ! placental labyrinth vasculature
 
+[Term]
+id: VT:0000602  ! sinusoidal space size trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: affects_quality PATO:0000117  ! size
+intersection_of: attribute_of UBERON:0014399  ! sinusoidal space
+
+[Term]
+id: VT:0001101  ! superior vagus ganglion morphology trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: affects_quality PATO:0000051  ! morphology
+intersection_of: attribute_of UBERON:0005364  ! superior vagus X ganglion
+
+[Term]
+id: VT:0001102  ! superior vagus ganglion size trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: affects_quality PATO:0000117  ! size
+intersection_of: attribute_of UBERON:0005364  ! superior vagus X ganglion
+
+[Term]
+id: VT:0002278  ! respiratory muscle morphology trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: affects_quality PATO:0000051  ! morphology
+intersection_of: attribute_of UBERON:0014398  ! respiratory muscle
+
+[Term]
+id: VT:0003110  ! processus brevis morphology trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: affects_quality PATO:0000051  ! morphology
+intersection_of: attribute_of UBERON:0014397  ! lateral process of malleus
+
+[Term]
+id: VT:0004287  ! spiral limbus morphology trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: affects_quality PATO:0000051  ! morphology
+intersection_of: attribute_of UBERON:0002276  ! lamina of spiral limbus
+
+[Term]
+id: VT:0005196  ! posterior uvea morphology trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: affects_quality PATO:0000051  ! morphology
+intersection_of: attribute_of UBERON:0001776  ! optic choroid
+
+[Term]
+id: VT:0006025  ! Reissner membrane size trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: affects_quality PATO:0000117  ! size
+intersection_of: attribute_of UBERON:0002281  ! vestibular membrane of cochlear duct
+
+[Term]
+id: VT:0010425  ! interscapular fat pad mass
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: affects_quality PATO:0000125  ! mass
+intersection_of: attribute_of UBERON:0014396  ! interscapular fat pad
+
+[Term]
+id: VT:0010431  ! uterine fat pad mass
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: affects_quality PATO:0000125  ! mass
+intersection_of: attribute_of UBERON:0014394  ! uterine fat pad
+
+[Term]
+id: VT:0015002  ! interscapular fat pad morphology trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: affects_quality PATO:0000051  ! morphology
+intersection_of: attribute_of UBERON:0014396  ! interscapular fat pad
+
+[Term]
+id: VT:0015007  ! uterine fat pad morphology trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: affects_quality PATO:0000051  ! morphology
+intersection_of: attribute_of UBERON:0014394  ! uterine fat pad
+
 [Typedef]
 id: attribute_of_part_of
 name: attribute_of_part_of
