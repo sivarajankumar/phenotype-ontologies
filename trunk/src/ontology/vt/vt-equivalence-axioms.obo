@@ -1,3 +1,5 @@
+ontology: vt/vt-equivalence-axioms
+
 [Term]
 id: BATTO:0000001
 name: biological attribute
@@ -12094,7 +12096,7 @@ intersection_of: attribute_of UBERON:0002450  ! decidua
 id: VT:0004271  ! paw/hand/foot/hoof morphology trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051  ! morphology
-intersection_of: attribute_of UBERON:0002470  ! autopod region
+intersection_of: attribute_of_part_of UBERON:0002470  ! autopod region
 
 [Term]
 id: VT:0004391  ! respiratory conducting tube morphology trait
