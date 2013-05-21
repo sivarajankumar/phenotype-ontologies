@@ -1293,7 +1293,7 @@ intersection_of: attribute_of UBERON:0001886 ! choroid plexus
 [Term]
 id: VT:0000822 ! brain ventricle morphology
 intersection_of: VT:0002152 ! brain morphology
-intersection_of: attribute_of UBERON:0002300 ! obsolete ventricle
+intersection_of: attribute_of UBERON:0004086 ! brain ventricle
 
 [Term]
 id: VT:0000823 ! lateral ventricle morphology
@@ -3780,7 +3780,7 @@ intersection_of: attribute_of UBERON:0003129 ! skull
 [Term]
 id: VT:0003105 ! heart atrium morphology
 intersection_of: VT:0000266 ! heart morphology
-intersection_of: attribute_of UBERON:0001050 ! obsolete atrium
+intersection_of: attribute_of UBERON:0002081 ! cardiac atrium
 
 [Term]
 id: VT:0003112 ! parathyroid gland size
@@ -3816,7 +3816,7 @@ intersection_of: attribute_of CL:0000558 ! reticulocyte
 id: VT:0003140 ! atrium size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of UBERON:0001050 ! obsolete atrium
+intersection_of: attribute_of UBERON:0002081 ! cardiac atrium
 
 [Term]
 id: VT:0003143 ! otolith size
@@ -4705,7 +4705,7 @@ intersection_of: attribute_of UBERON:0003718 ! muscle spindle
 id: VT:0004077 ! striatum morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0002777 ! obsolete neostriatum
+intersection_of: attribute_of UBERON:0002435 ! striatum
 
 [Term]
 id: VT:0004078 ! caudate nucleus morphology
@@ -5856,7 +5856,7 @@ intersection_of: attribute_of UBERON:0002298 ! brainstem
 [Term]
 id: VT:0005294 ! heart ventricle morphology
 intersection_of: VT:0000266 ! heart morphology
-intersection_of: attribute_of UBERON:0002300 ! obsolete ventricle
+intersection_of: attribute_of UBERON:0002082 ! cardiac ventricle
 
 [Term]
 id: VT:0005296 ! humerus morphology
@@ -6252,7 +6252,7 @@ intersection_of: attribute_of CL:0000071 ! blood vessel endothelial cell
 id: VT:0006061 ! atrium symmetry
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000965 ! symmetry
-intersection_of: attribute_of UBERON:0001050 ! obsolete atrium
+intersection_of: attribute_of UBERON:0002081 ! cardiac atrium
 
 [Term]
 id: VT:0006062 ! vena cava morphology
@@ -7484,19 +7484,19 @@ intersection_of: attribute_of UBERON:0001950 ! neocortex
 id: VT:0015108 ! neurite morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001024 ! obsolete neurite
+intersection_of: attribute_of GO:0043005 ! neuron projection
 
 [Term]
 id: VT:0015109 ! dendrite morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001023 ! obsolete dendrite
+intersection_of: attribute_of GO:0030425 ! dendrite
 
 [Term]
 id: VT:0015110 ! synapse morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001025 ! obsolete synapse
+intersection_of: attribute_of GO:0045202 ! synapse
 
 [Term]
 id: VT:0100000 ! humerus size
