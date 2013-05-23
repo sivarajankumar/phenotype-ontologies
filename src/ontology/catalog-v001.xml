@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/hp-mp/mp_hp-align-equiv.owl" uri="hp-mp/mp_hp-align-equiv.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/uberon-simple-vertebrate-bridge.owl" uri="uberon-simple-vertebrate-bridge.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/uberon/uberon-simple-vertebrate-bridge.owl" uri="uberon-simple-vertebrate-bridge.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mp.owl" uri="mp.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mp/mp-equivalence-axioms.owl" uri="mp/mp-equivalence-axioms.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mp/mp-equivalence-axioms-subq.owl" uri="mp/mp-equivalence-axioms-subq.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/hp/hp-equivalence-axioms.owl" uri="hp/hp-equivalence-axioms.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/hp/hp-equivalence-axioms-subq.owl" uri="hp/hp-equivalence-axioms-subq.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/hp.owl" uri="hp.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obofoundry.org/obo/bfo.owl" uri="external/bfo/owl-ruttenberg/bfo2.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ma.owl" uri="external/anatomy/ma.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/spatial.owl" uri="external/spatial.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/fma.owl" uri="external/anatomy/fma.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/nbo.owl" uri="external/behavior-ontology/behavior-edit.owl"/>
-<!--     <uri id="User Entered Import Resolution"  name="http://purl.obolibrary.org/obo/nbo/extensions/behavior_xp.owl" uri="fixed-behavior_xp.owl"/> -->
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/pato.owl" uri="pato.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl" uri="external/ncbitaxon-subsets/taxslim.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim-disjoint-over-in-taxon.owl" uri="external/ncbitaxon-subsets/taxslim-disjoint-over-in-taxon.owl"/>
@@ -23,6 +17,7 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/bfo/core-classes.owl" uri="external/bfo/owl-ruttenberg/bfo2-classes.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/uberon/composite-metazoan.owl" uri="external/uberon/composite-metazoan.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/uberon/merged.owl" uri="external/uberon/merged.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/uberon.owl" uri="external/uberon/uberon.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
     </group>
 </catalog>
