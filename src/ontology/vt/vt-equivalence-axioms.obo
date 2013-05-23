@@ -1676,7 +1676,7 @@ intersection_of: attribute_of UBERON:0001727 ! taste bud
 id: VT:0001005 ! retinal rod cell morphology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of PRO:000009431 ! kinetochore-associated protein 1
+intersection_of: attribute_of PR:000009431 ! kinetochore-associated protein 1
 
 [Term]
 id: VT:0001006 ! retinal cone cell morphology
@@ -7273,7 +7273,7 @@ intersection_of: attribute_of UBERON:0001495 ! pectoral muscle
 id: VT:0010120 ! protein concentration
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000033 ! concentration of
-intersection_of: attribute_of PRO:000000001 ! protein
+intersection_of: attribute_of PR:000000001 ! protein
 
 [Term]
 id: VT:0010122 ! somite morphology
@@ -8089,7 +8089,7 @@ intersection_of: attribute_of CL:0000771 ! eosinophil
 id: VT:0002484 ! C-reactive protein physiology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of PRO:000005897 ! C-reactive protein
+intersection_of: attribute_of PR:000005897 ! C-reactive protein
 
 [Term]
 id: VT:0002504 ! serotonin activity
@@ -8473,7 +8473,7 @@ intersection_of: attribute_of UBERON:0001135 ! smooth muscle tissue
 id: VT:0010153 ! interleukin-8 physiology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of PRO:000001395 ! interleukin-8
+intersection_of: attribute_of PR:000001395 ! interleukin-8
 
 [Term]
 id: VT:0010155 ! leukotriene B4 physiology
@@ -8485,31 +8485,31 @@ intersection_of: attribute_of CHEBI:15647 ! leukotriene B4
 id: VT:0010160 ! tumor necrosis factor-alpha physiology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of PRO:000000134 ! tumor necrosis factor alpha
+intersection_of: attribute_of PR:000000134 ! tumor necrosis factor alpha
 
 [Term]
 id: VT:0010161 ! interleukin-1 physiology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of PRO:000001091 ! interleukin-1
+intersection_of: attribute_of PR:000001091 ! interleukin-1
 
 [Term]
 id: VT:0010162 ! interleukin-10 physiology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of PRO:000001471 ! interleukin-10
+intersection_of: attribute_of PR:000001471 ! interleukin-10
 
 [Term]
 id: VT:0010163 ! interleukin-2 physiology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of PRO:000001379 ! interleukin-2
+intersection_of: attribute_of PR:000001379 ! interleukin-2
 
 [Term]
 id: VT:0010164 ! interleukin-6 physiology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of PRO:000001393 ! interleukin-6
+intersection_of: attribute_of PR:000001393 ! interleukin-6
 
 [Term]
 id: VT:0010169 ! C2 physiology
@@ -8521,7 +8521,7 @@ intersection_of: attribute_of CHEBI:30083 ! dicarbon
 id: VT:0010174 ! C7 physiology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of PRO:000006064 ! C-X-C motif chemokine 10
+intersection_of: attribute_of PR:000006064 ! C-X-C motif chemokine 10
 
 [Term]
 id: VT:0015057 ! head physiology

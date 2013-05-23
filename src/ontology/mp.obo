@@ -1,9 +1,10 @@
 format-version: 1.2
-date: 04:12:2012 10:22
+date: 14:05:2013 16:52
 saved-by: csmith
-auto-generated-by: OBO-Edit 2.1
+auto-generated-by: OBO-Edit 2.2
 subsetdef: CvDC_Terms "NHLBI Cardiovascular Development Consortium (CvDC) Terms"
 subsetdef: Europhenome_Terms "Terms in use by Europhenome"
+subsetdef: IMPC "Terms in use by IMPC"
 subsetdef: IMPC_Prenatal "Terms in use by IMPC Early Viability Group"
 subsetdef: Sanger_Terms "Terms in use by Mouse Genetics Project, Sanger Institute, Wellcome Trust Genome Campus"
 default-namespace: MPheno.ontology
@@ -1205,34 +1206,39 @@ is_a: MP:0005636 ! abnormal mineral homeostasis
 
 [Term]
 id: MP:0000194
-name: hypercalcemia
+name: increased circulating calcium level
 alt_id: MP:0001563
 alt_id: MP:0001768
 def: "abnormally high concentration of calcium ions in the circulating blood" [ISBN:0-683-40008-8]
 subset: Europhenome_Terms
 subset: Sanger_Terms
+synonym: "hypercalcemia" EXACT []
 synonym: "increased circulating calcium" EXACT []
 is_a: MP:0001562 ! abnormal circulating calcium level
 
 [Term]
 id: MP:0000195
-name: hypocalcemia
+name: decreased circulating calcium level
 alt_id: MP:0001564
 alt_id: MP:0001769
 def: "subnormal concentrations of calcium ions in the circulating blood" [ISBN:0-683-40008-8]
 subset: Europhenome_Terms
 subset: Sanger_Terms
 synonym: "decreased circulating calcium" EXACT []
+synonym: "hypocalcemia" EXACT []
+synonym: "reduced circulating calcium level" EXACT []
 is_a: MP:0001562 ! abnormal circulating calcium level
 
 [Term]
 id: MP:0000198
-name: hypophosphatemia
+name: decreased circulating phosphate level
 alt_id: MP:0001567
 alt_id: MP:0001774
 def: "abnormally low concentrations of phosphates in the circulating blood" [ISBN:0-683-40008-8]
 subset: Europhenome_Terms
 subset: Sanger_Terms
+synonym: "hypophosphatemia" EXACT []
+synonym: "reduced circulating phospate level" EXACT []
 is_a: MP:0001565 ! abnormal circulating phosphate level
 
 [Term]
@@ -4828,7 +4834,6 @@ synonym: "increased thymocyte count" EXACT []
 xref: CL:0000893
 is_a: MP:0000703 ! abnormal thymus morphology
 is_a: MP:0005015 ! increased T cell number
-is_a: MP:0005090 ! increased double-negative T cell number
 
 [Term]
 id: MP:0000715
@@ -4841,7 +4846,6 @@ synonym: "reduced thymocyte number" EXACT []
 xref: CL:0000893
 is_a: MP:0000703 ! abnormal thymus morphology
 is_a: MP:0005018 ! decreased T cell number
-is_a: MP:0005089 ! decreased double-negative T cell number
 
 [Term]
 id: MP:0000716
@@ -9013,6 +9017,7 @@ id: MP:0001300
 name: ocular hypertelorism
 def: "increased distance between the eyes" [ISBN:0-683-40008-8]
 synonym: "increased inner canthal distance" EXACT []
+synonym: "increased intercanthal distance" RELATED []
 synonym: "wide set eyes" EXACT []
 synonym: "wider inner canthal distance" EXACT []
 is_a: MP:0001299 ! abnormal eye distance/ position
@@ -9604,13 +9609,14 @@ is_a: MP:0003491 ! abnormal voluntary movement
 id: MP:0001393
 name: ataxia
 def: "inability to coordinate voluntary muscular movements" [ISBN:0-683-40008-8, J:67231]
+synonym: "unsteady gait" RELATED []
 is_a: MP:0001516 ! abnormal motor coordination/ balance
 is_a: MP:0003312 ! abnormal locomotor coordination
 
 [Term]
 id: MP:0001394
 name: circling
-def: "repeated, compulsive movement in a circle; often associated with inner ear defects" [MGI:csmith, PMID:10709991]
+def: "repeated movement in a circle; often associated with inner ear defects" [MGI:csmith, PMID:10709991]
 subset: Sanger_Terms
 is_a: MP:0001408 ! stereotypic behavior
 
@@ -9732,7 +9738,7 @@ is_a: MP:0001408 ! stereotypic behavior
 [Term]
 id: MP:0001410
 name: head bobbing
-def: "compulsive up and down movement of the head" [J:17123]
+def: "repetitive up and down movement of the head" [J:17123]
 synonym: "head nodding" EXACT []
 is_a: MP:0000436 ! abnormal head movements
 is_a: MP:0001408 ! stereotypic behavior
@@ -9740,7 +9746,7 @@ is_a: MP:0001408 ! stereotypic behavior
 [Term]
 id: MP:0001411
 name: spinning
-def: "compulsive rolling of the body" [J:17123]
+def: "repetitive rolling of the body" [J:17123]
 is_a: MP:0001408 ! stereotypic behavior
 
 [Term]
@@ -9807,7 +9813,7 @@ id: MP:0001422
 name: abnormal drinking behavior
 def: "an altered pattern of fluid consumption or altered preference for particular fluids" [MGI:csmith]
 subset: Sanger_Terms
-is_a: MP:0002069 ! abnormal eating/drinking behavior
+is_a: MP:0002069 ! abnormal consumption behavior
 
 [Term]
 id: MP:0001423
@@ -9837,7 +9843,7 @@ def: "abnormally large intake of fluids by mouth, usually due to excessive thirs
 synonym: "excessive drinking" EXACT []
 synonym: "increased drinking" EXACT []
 synonym: "polydypsia" EXACT []
-is_a: MP:0003911 ! increased drinking behavior
+is_a: MP:0011941 ! increased fluid intake
 
 [Term]
 id: MP:0001428
@@ -9856,10 +9862,10 @@ is_a: MP:0001784 ! abnormal fluid regulation
 id: MP:0001431
 name: abnormal eating behavior
 alt_id: MP:0001430
-def: "inability to consume or atypical consumption pattern" [ISBN:0-683-40008-8, MGI:csmith, PMID:7925010]
+def: "altered ability to consume foods or atypical consumption pattern" [ISBN:0-683-40008-8, MGI:csmith]
 synonym: "abnormal feeding" EXACT []
 synonym: "abnormal feeding behavior" EXACT []
-is_a: MP:0002069 ! abnormal eating/drinking behavior
+is_a: MP:0002069 ! abnormal consumption behavior
 
 [Term]
 id: MP:0001432
@@ -9874,7 +9880,7 @@ def: "eating to excess" [MGI:csmith]
 subset: Europhenome_Terms
 synonym: "hyperphagia" EXACT []
 synonym: "over eating" EXACT []
-is_a: MP:0003909 ! increased eating behavior
+is_a: MP:0011939 ! increased food intake
 
 [Term]
 id: MP:0001435
@@ -10494,7 +10500,7 @@ is_a: MP:0003949 ! abnormal circulating lipid level
 id: MP:0001552
 name: increased circulating triglyceride level
 alt_id: MP:0005142
-def: "higher than normal concentration of triacylglycerols in the blood" [ISBN:0-683-40008-8]
+def: "greater concentration of naturally occurring esters of three fatty acids and glycerol in the blood; triglycerides are widespread in adipose tissue, commonly circulate in the blood in the form of lipoproteins, and are involved in the process of bidirectional transference of adipose fat and blood glucose with the liver" [MGI:csmith]
 subset: Europhenome_Terms
 subset: Sanger_Terms
 synonym: "elevated plasma triacylglycerol level" EXACT []
@@ -10502,8 +10508,8 @@ synonym: "elevated plasma triglyceride level" EXACT []
 synonym: "elevated serum triacylglycerol level" EXACT []
 synonym: "elevated serum triglyceride level" EXACT []
 synonym: "hypertriglyceridemia" RELATED []
-is_a: MP:0003949 ! abnormal circulating lipid level
 is_a: MP:0005317 ! increased triglyceride level
+is_a: MP:0011969 ! abnormal circulating triglyceride level
 
 [Term]
 id: MP:0001553
@@ -10592,11 +10598,12 @@ is_a: MP:0006357 ! abnormal circulating mineral level
 
 [Term]
 id: MP:0001566
-name: hyperphosphatemia
+name: increased circulating phosphate level
 alt_id: MP:0000197
 alt_id: MP:0001773
 def: "abnormally high concentrations of phosphates in the circulating blood" [ISBN:0-683-40008-8]
 subset: Europhenome_Terms
+synonym: "hyperphosphatemia" EXACT []
 is_a: MP:0001565 ! abnormal circulating phosphate level
 
 [Term]
@@ -11659,8 +11666,8 @@ id: MP:0001771
 name: abnormal circulating magnesium level
 def: "any anomaly in the blood concentration of magnesium" [ISBN:0-683-40008-8]
 synonym: "abnormal magnesium level" EXACT []
-is_a: MP:0001765 ! abnormal ion homeostasis
 is_a: MP:0006357 ! abnormal circulating mineral level
+is_a: MP:0011979 ! abnormal magnesium ion homeostasis
 
 [Term]
 id: MP:0001775
@@ -11673,8 +11680,8 @@ id: MP:0001776
 name: abnormal circulating sodium level
 def: "any anomaly in the concentration in the blood of sodium, the most plentiful extracellular ion in the body and the principal determinant of extracellular fluid volume" [ISBN:0-683-40008-8]
 synonym: "abnormal sodium level" EXACT []
-is_a: MP:0001765 ! abnormal ion homeostasis
 is_a: MP:0006357 ! abnormal circulating mineral level
+is_a: MP:0011977 ! abnormal sodium ion homeostasis
 
 [Term]
 id: MP:0001777
@@ -13558,8 +13565,9 @@ is_a: MP:0002557 ! abnormal social/conspecific interaction
 
 [Term]
 id: MP:0002069
-name: abnormal eating/drinking behavior
+name: abnormal consumption behavior
 def: "altered ability or inability to eat or drink, or unusual choice or avoidance of foods or drink" [MGI:csmith]
+synonym: "abnormal eating/drinking behavior" EXACT []
 synonym: "abnormal feeding/drinking behavior" EXACT []
 synonym: "neurological/behavioral: feeding/drinking anomalies" EXACT []
 xref: MGI:2173574
@@ -15985,8 +15993,7 @@ name: abnormal dendritic cell physiology
 def: "any functional anomaly of the immunocompetent cells of the lymphoid and hemopoietic systems and skin, which function to process antigens and present them to T cells, thus stimulating cellular immunity" [J:85808, MESH:A11.066.270]
 synonym: "abnormal dendritic cell function" EXACT []
 synonym: "abnormal interdigitating reticular cell physiology" EXACT []
-is_a: MP:0001819 ! abnormal immune cell physiology
-is_a: MP:0002452 ! abnormal antigen presenting cell physiology
+is_a: MP:0002452 ! abnormal professional antigen presenting cell physiology
 
 [Term]
 id: MP:0002377
@@ -16565,7 +16572,7 @@ name: abnormal macrophage morphology
 def: "any structural anomaly of the large mononuclear phagocytes which differentiate from monocytes, are typically resident in a particular tissue, and capable of phagocytosing a variety of extracellular particulate material, including immune complexes, microorganisms, and dead cells" [CL:0000235, MGI:csmith]
 synonym: "macrophage abnormalities" BROAD []
 synonym: "mononuclear phagocyte abnormalities" BROAD []
-is_a: MP:0008195 ! abnormal antigen presenting cell morphology
+is_a: MP:0008195 ! abnormal professional antigen presenting cell morphology
 is_a: MP:0008248 ! abnormal mononuclear phagocyte morphology
 
 [Term]
@@ -16595,14 +16602,14 @@ def: "any functional anomaly of the large mononuclear phagocytes which different
 synonym: "macrophage dysfunction" EXACT []
 is_a: MP:0002419 ! abnormal innate immunity
 is_a: MP:0002442 ! abnormal leukocyte physiology
-is_a: MP:0002452 ! abnormal antigen presenting cell physiology
+is_a: MP:0002452 ! abnormal professional antigen presenting cell physiology
 
 [Term]
 id: MP:0002452
-name: abnormal antigen presenting cell physiology
+name: abnormal professional antigen presenting cell physiology
 def: "any functional anomaly of a cell capable of processing and presenting lipid and protein antigens to T cells in order to initiate an immune response" [CL:0000145, ISBN:0781735149, MGI:csmith]
+synonym: "abnormal antigen presenting cell physiology" RELATED []
 synonym: "antigen presenting cell dysfunction" EXACT []
-is_a: MP:0001790 ! abnormal immune system physiology
 is_a: MP:0001819 ! abnormal immune cell physiology
 is_a: MP:0002420 ! abnormal adaptive immunity
 is_a: MP:0002421 ! abnormal cell-mediated immunity
@@ -16659,7 +16666,7 @@ synonym: "B cell dysfunction" EXACT []
 synonym: "B lymphocyte dysfunction" EXACT []
 synonym: "B lymphocyte functional anomalies" EXACT []
 synonym: "B-cell dysfunction" EXACT []
-is_a: MP:0002452 ! abnormal antigen presenting cell physiology
+is_a: MP:0002452 ! abnormal professional antigen presenting cell physiology
 is_a: MP:0003945 ! abnormal lymphocyte physiology
 
 [Term]
@@ -17979,10 +17986,11 @@ is_a: MP:0000454 ! abnormal jaw morphology
 id: MP:0002640
 name: reticulocytosis
 def: "an increase in the number of circulating reticulocytes, which is normally less than 1 per cent of the total number of red blood cells" [ISBN:0-683-40008-8]
+synonym: "elevated reticulocyte number" EXACT []
 synonym: "increased immature erythrocyte number" EXACT []
 synonym: "increased reticulocyte number" EXACT []
-is_a: MP:0002424 ! abnormal reticulocyte morphology
 is_a: MP:0011181 ! increased hematopoietic cell number
+is_a: MP:0011913 ! abnormal reticulocyte cell number
 
 [Term]
 id: MP:0002641
@@ -18009,7 +18017,7 @@ is_a: MP:0002447 ! abnormal erythrocyte morphology
 id: MP:0002644
 name: decreased circulating triglyceride level
 alt_id: MP:0005143
-def: "lower than normal concentration of triacylglycerols in the blood" [ISBN:0-683-40008-8, MGI:pvb]
+def: "reduced concentration of naturally occurring esters of three fatty acids and glycerol in the blood; triglycerides are widespread in adipose tissue, commonly circulate in the blood in the form of lipoproteins, and are involved in the process of bidirectional transference of adipose fat and blood glucose with the liver" [MGI:csmith]
 subset: Europhenome_Terms
 subset: Sanger_Terms
 synonym: "low plasma triacylglycerol level" EXACT []
@@ -18017,8 +18025,8 @@ synonym: "low plasma triglyceride level" EXACT []
 synonym: "low serum triacylglycerol level" EXACT []
 synonym: "low serum triglyceride level" EXACT []
 synonym: "reduced circulating triglyceride level" EXACT []
-is_a: MP:0003949 ! abnormal circulating lipid level
 is_a: MP:0005318 ! decreased triglyceride level
+is_a: MP:0011969 ! abnormal circulating triglyceride level
 
 [Term]
 id: MP:0002645
@@ -18204,8 +18212,8 @@ id: MP:0002668
 name: abnormal circulating potassium level
 def: "anomalous concentration in the blood of this alkaline metallic element, the most abundant intracellular ion; anomalies in the extracellular (circulating) concentration have important implications for the function of excitable tissues, such as nerve and muscle" [MGI:cwg]
 synonym: "abnormal potassium level" EXACT []
-is_a: MP:0001765 ! abnormal ion homeostasis
 is_a: MP:0006357 ! abnormal circulating mineral level
+is_a: MP:0011978 ! abnormal potassium ion homeostasis
 
 [Term]
 id: MP:0002669
@@ -18687,7 +18695,7 @@ is_a: MP:0000026 ! abnormal inner ear morphology
 [Term]
 id: MP:0002730
 name: head shaking
-def: "compulsive movement of the head in the horizontal plane" [J:274, MGI:pvb]
+def: "repetitive movement of the head in the horizontal plane" [J:274, MGI:pvb]
 subset: Europhenome_Terms
 is_a: MP:0000436 ! abnormal head movements
 is_a: MP:0001408 ! stereotypic behavior
@@ -19249,8 +19257,9 @@ is_a: MP:0002063 ! abnormal learning/memory/conditioning
 
 [Term]
 id: MP:0002803
-name: abnormal operant conditional behavior
+name: abnormal operant conditioning behavior
 def: "anomaly in the operant conditioning system refers to abnormalities in scheduled controlled behavior; behavioral assessment occurs in an automated chamber where responses are reinforced with food" [MGI:CFG]
+synonym: "abnormal operant conditional behavior" RELATED []
 synonym: "operant conditional abnormalities" EXACT []
 is_a: MP:0002062 ! abnormal associative learning
 
@@ -19574,13 +19583,13 @@ is_obsolete: true
 id: MP:0002849
 name: abnormal saccharin consumption
 def: "subjects demonstrate interest in ingesting saccharine" [RGD:cur]
-is_a: MP:0001432 ! abnormal food preference
+is_a: MP:0005449 ! abnormal food intake
 
 [Term]
 id: MP:0002850
 name: saccharin preference
 def: "subjects demonstrate predilection for saccharine over other offered substance" [RGD:cur]
-is_a: MP:0002849 ! abnormal saccharin consumption
+is_a: MP:0011976 ! sweet preference
 
 [Term]
 id: MP:0002851
@@ -20279,14 +20288,14 @@ is_a: MP:0001573 ! abnormal circulating alanine transaminase level
 [Term]
 id: MP:0002943
 name: abnormal lactate dehydrogenase level
-def: "aberrant concentration of this enzyme, which catalyzes the interconversion of lactate and pyruvate" [J:87714, MGI:pvb]
+def: "abnormal level of the tetrameric enzyme that, along with the coenzyme NAD+, catalyzes the interconversion of lactate and pyruvate" [MeSH:D08.811.682.047.551.400]
 synonym: "abnormal LDH level" EXACT []
 is_a: MP:0005319 ! abnormal enzyme/ coenzyme level
 
 [Term]
 id: MP:0002944
 name: increased lactate dehydrogenase level
-def: "greater than the normal concentration of this enzyme, which catalyzes the interconversion of lactate and pyruvate" [MGI:pvb]
+def: "elevated level of the tetrameric enzyme that, along with the coenzyme NAD+, catalyzes the interconversion of lactate and pyruvate" [MeSH:D08.811.682.047.551.400]
 subset: Europhenome_Terms
 subset: Sanger_Terms
 synonym: "elevated lactate dehydrogenase level" EXACT []
@@ -20443,10 +20452,11 @@ is_a: MP:0009862 ! abnormal aorta elastic tissue morphology
 
 [Term]
 id: MP:0002965
-name: hyperalbuminemia
+name: increased circulating serum albumin level
 def: "blood serum albumin concentration above the normal range" [RGD:cur]
 subset: Europhenome_Terms
 subset: Sanger_Terms
+synonym: "hyperalbuminemia" EXACT []
 is_a: MP:0000199 ! abnormal circulating serum albumin level
 
 [Term]
@@ -21336,7 +21346,7 @@ name: decreased corneal stroma thickness
 def: "reduced width of the lamellated connective tissue layer of the cornea" [MGI:anna]
 synonym: "reduced corneal stroma thickness" EXACT []
 is_a: MP:0005300 ! abnormal corneal stroma morphology
-is_a: MP:0005543 ! corneal thinning
+is_a: MP:0005543 ! decreased cornea thickness
 
 [Term]
 id: MP:0003093
@@ -21586,8 +21596,10 @@ is_a: MP:0003127 ! abnormal clitoris morphology
 [Term]
 id: MP:0003129
 name: persistent cloaca
-def: "the presence of a single external opening to which the urinary, digestive and reproductive tracts all connect" [MGI:smb]
+def: "persistence of an early embryonic state in which the urinary, genital, and gastrointestinal tracts remain confluent and communicate with the exterior through a single perineal opening; due to failure of the urogenital septum to divide the embryonic cloaca into rectal and urogenital portions" [MGI:anna]
 comment: Note that the term "urogenital sinus" may refer to the primitive urogenital sinus present as a transient developmental structure in most mammals or it may refer to a condition in which an unseptated cloaca persists in animals longer than normal.
+synonym: "cloacogenic bladder" EXACT []
+synonym: "congenital cloaca" EXACT []
 synonym: "urogenital sinus" RELATED []
 is_a: MP:0000516 ! abnormal renal/urinary system morphology
 is_a: MP:0003119 ! abnormal digestive system development
@@ -21919,7 +21931,7 @@ is_a: MP:0004426 ! abnormal cochlear labyrinth morphology
 [Term]
 id: MP:0003171
 name: phenotypic reversion
-def: "reverse mutation to wild-type genotype and phenotype from a previously characterized mutant phenotype" [MGI:llw2]
+def: "wild-type phenotype restored from a previously characterized mutant phenotype" [MGI:llw2]
 synonym: "phenotypic instability" EXACT []
 synonym: "revertant" EXACT []
 is_a: MP:0002873 ! normal phenotype
@@ -21981,8 +21993,8 @@ synonym: "decreased thrombocyte number" EXACT []
 synonym: "reduced platelet count" EXACT []
 synonym: "thrombocytopenia" EXACT []
 synonym: "thrombopenia" EXACT []
-is_a: MP:0004720 ! abnormal platelet morphology
 is_a: MP:0011182 ! decreased hematopoietic cell number
+is_a: MP:0011898 ! abnormal platelet cell number
 
 [Term]
 id: MP:0003180
@@ -22769,6 +22781,7 @@ id: MP:0003292
 name: melena
 def: "dark colored, foul-smelling feces due to the presence of blood" [ISBN:0-683-40008-8, NCBI:matt]
 synonym: "blood in feces" EXACT []
+synonym: "bloody stool" EXACT []
 synonym: "melanorhhagia" EXACT []
 synonym: "melanorrhea" EXACT []
 is_a: MP:0003868 ! abnormal feces composition
@@ -23783,38 +23796,39 @@ is_a: MP:0010055 ! abnormal sensory neuron physiology
 [Term]
 id: MP:0003439
 name: abnormal glycerol level
-def: "anomalous concentration of this molecule, the backbone of lipids, which is important for gluconeogenesis during starvation" [J:95278, MGI:smb]
+def: "abnormal level of trihydroxy sugar alcohols that are precursors for synthesis of triacylglycerols, and of phospholipids and cellular glucose in the liver and adipose tissue; fat catabolism results in the release of glycerol and fatty acids into the bloodstream to be used as an energy source" [MGI:csmith]
 is_a: MP:0001547 ! abnormal lipid level
 
 [Term]
 id: MP:0003440
 name: decreased glycerol level
-def: "lower than normal concentration of glycerol" [MGI:smb]
-synonym: "reduced glycerol level" RELATED []
+def: "reduced level of trihydroxy sugar alcohols that are precursors for synthesis of triacylglycerols, and of phospholipids and cellular glucose in the liver and adipose tissue; fat catabolism results in the release of glycerol and fatty acids into the bloodstream to be used as an energy source" [MGI:csmith]
+synonym: "reduced glycerol level" EXACT []
 is_a: MP:0003439 ! abnormal glycerol level
 
 [Term]
 id: MP:0003441
 name: increased glycerol level
-def: "higher than normal concentration of glycerol" [MGI:smb]
+def: "elevated level of trihydroxy sugar alcohols that are precursors for synthesis of triacylglycerols, and of phospholipids and cellular glucose in the liver and adipose tissue; fat catabolism results in the release of glycerol and fatty acids into the bloodstream to be used as an energy source" [MGI:csmith]
+synonym: "hyperglycerolemia" EXACT []
 is_a: MP:0003439 ! abnormal glycerol level
 
 [Term]
 id: MP:0003442
 name: decreased circulating glycerol level
-def: "lower than normal concentration of glycerol in the blood" [MGI:smb]
+def: "reduced blood level of trihydroxy sugar alcohols that are precursors for synthesis of triacylglycerols, and of phospholipids and cellular glucose in the liver and adipose tissue; fat catabolism results in the release of glycerol and fatty acids into the bloodstream to be used as an energy source" [MGI:csmith]
 subset: Sanger_Terms
 synonym: "reduced circulating glycerol level" EXACT []
 is_a: MP:0003440 ! decreased glycerol level
-is_a: MP:0003949 ! abnormal circulating lipid level
+is_a: MP:0011973 ! abnormal circulating glycerol level
 
 [Term]
 id: MP:0003443
 name: increased circulating glycerol level
-def: "higher than normal concentration of glycerol in the blood" [MGI:smb]
+def: "elevated blood level of trihydroxy sugar alcohols that are precursors for synthesis of triacylglycerols, and of phospholipids and cellular glucose in the liver and adipose tissue; fat catabolism results in the release of glycerol and fatty acids into the bloodstream to be used as an energy source" [MGI:csmith]
 subset: Sanger_Terms
 is_a: MP:0003441 ! increased glycerol level
-is_a: MP:0003949 ! abnormal circulating lipid level
+is_a: MP:0011973 ! abnormal circulating glycerol level
 
 [Term]
 id: MP:0003444
@@ -24480,7 +24494,7 @@ id: MP:0003545
 name: increased alcohol consumption
 def: "greater than normal consumption of alcohol" [RGD:cur]
 is_a: MP:0001425 ! abnormal alcohol consumption
-is_a: MP:0003911 ! increased drinking behavior
+is_a: MP:0011941 ! increased fluid intake
 
 [Term]
 id: MP:0003546
@@ -24488,7 +24502,7 @@ name: decreased alcohol consumption
 def: "less than normal consumption of alcohol" [RGD:cur]
 synonym: "reduced alcohol consumption" EXACT []
 is_a: MP:0001425 ! abnormal alcohol consumption
-is_a: MP:0003912 ! decreased drinking behavior
+is_a: MP:0011942 ! decreased fluid intake
 
 [Term]
 id: MP:0003547
@@ -25022,8 +25036,8 @@ is_a: MP:0000538 ! abnormal urinary bladder morphology
 
 [Term]
 id: MP:0003616
-name: urachus
-def: "fibrous connection between bladder and umbilicus" [NCBI:matt]
+name: abnormal urachus morphology
+def: "any structural anomaly of the fibrous remnant of the allantoic stalk, a narrow fetal canal connecting the apex of the urinary bladder with the umbilicus located in the space of Retzius, between the transversalis fascia anteriorly and the peritoneum posteriorly. its lumen is normally obliterated during development, transforming the urachus into a solid cord, a functionless remnant that persists throughout life as the median umbilical ligament; failure of complete lumen obliteration may result in distinct congenital urachal remnant anomalies" [MGI:anna]
 is_a: MP:0000538 ! abnormal urinary bladder morphology
 is_a: MP:0001725 ! abnormal umbilical cord morphology
 
@@ -26945,6 +26959,7 @@ is_a: MP:0010080 ! abnormal hepatocyte physiology
 id: MP:0003888
 name: liver hemorrhage
 def: "bleeding within the liver" [MGI:anna]
+is_a: MP:0000598 ! abnormal liver morphology
 is_a: MP:0001634 ! internal hemorrhage
 
 [Term]
@@ -27001,7 +27016,6 @@ is_a: MP:0006042 ! increased apoptosis
 id: MP:0003896
 name: prolonged PR interval
 def: "increase in the length of time between the beginning of atrial depolarization and the beginning of ventricular depolarization, measured by the interval from the beginning of the P wave to the beginning of the QRS complex" [MGI:monikat]
-synonym: "prolonged PQ interval" EXACT []
 synonym: "prolonged PR-interval" EXACT []
 is_a: MP:0003901 ! abnormal PR interval
 is_a: MP:0010519 ! atrioventricular block
@@ -27042,7 +27056,6 @@ id: MP:0003901
 name: abnormal PR interval
 def: "anomaly in the length of time between the beginning of atrial depolarization and the beginning of ventricular depolarization, measured by the interval from the beginning of the P wave to the beginning of the QRS complex" [MGI:monikat]
 comment: The PR interval is measured from the beginning of the P wave to the beginning of the QRS complex. The PR interval reflects the time the electrical impulse takes to travel from the sinus node through the AV node and entering the ventricles. The PR interval is therefore a good estimate of AV node function.
-synonym: "abnormal PQ interval" EXACT []
 is_a: MP:0006141 ! abnormal atrioventricular node conduction
 is_a: MP:0010508 ! abnormal heart electrocardiography waveform feature
 
@@ -27096,7 +27109,7 @@ id: MP:0003909
 name: increased eating behavior
 def: "more frequent pattern of consumption and/or amount of solid food" [RGD:cur]
 subset: Sanger_Terms
-is_a: MP:0005449 ! abnormal food intake
+is_a: MP:0001431 ! abnormal eating behavior
 
 [Term]
 id: MP:0003910
@@ -27104,9 +27117,8 @@ name: decreased eating behavior
 def: "less frequent pattern of consumption and/or amount of solid food" [RGD:cur]
 subset: Europhenome_Terms
 subset: Sanger_Terms
-synonym: "hypophagia" EXACT []
 synonym: "reduced eating behavior" EXACT []
-is_a: MP:0005449 ! abnormal food intake
+is_a: MP:0001431 ! abnormal eating behavior
 
 [Term]
 id: MP:0003911
@@ -27388,6 +27400,7 @@ is_a: MP:0001764 ! abnormal homeostasis
 id: MP:0003949
 name: abnormal circulating lipid level
 def: "anomalous concentrations of fat-soluble substances (molecules composed of carbon and hydrogen and are characteristically insoluble in water) in the blood" [ISBN:0-683-40008-8, MGI:csmith]
+synonym: "dyslipidemia" EXACT []
 is_a: MP:0001547 ! abnormal lipid level
 is_a: MP:0009642 ! abnormal blood homeostasis
 
@@ -28852,7 +28865,7 @@ is_a: MP:0004094 ! abnormal M lines
 id: MP:0004147
 name: increased porphyrin level
 def: "elevated concentration of porphyrins or protoporphyrins" [MGI:smb]
-is_a: MP:0001764 ! abnormal homeostasis
+is_a: MP:0011989 ! abnormal porphyrin level
 
 [Term]
 id: MP:0004148
@@ -28877,6 +28890,7 @@ is_a: MP:0003950 ! abnormal plasma membrane morphology
 id: MP:0004151
 name: decreased circulating iron level
 def: "less than the normal concentration of iron in the blood" [MGI:anna]
+comment: Serum iron measures the total amount of iron in the blood, nearly all of which is bound to transferrin.
 subset: Europhenome_Terms
 subset: Sanger_Terms
 synonym: "decreased serum iron level" EXACT []
@@ -28889,6 +28903,7 @@ is_a: MP:0004152 ! abnormal circulating iron level
 id: MP:0004152
 name: abnormal circulating iron level
 def: "anomalous blood concentration of the metallic element that normally occurs in the heme of hemoglobin, myoglobin, transferrin, ferritin, and iron-containing porphyrins; it is an essential component of enzymes such as catalase, peroxidase, and various cytochromes" [ISBN:0-683-40008-8]
+comment: Serum iron measures the total amount of iron in the blood, nearly all of which is bound to transferrin.
 is_a: MP:0001770 ! abnormal iron level
 is_a: MP:0006357 ! abnormal circulating mineral level
 
@@ -33144,12 +33159,14 @@ is_a: MP:0004736 ! abnormal distortion product otoacoustic emission
 
 [Term]
 id: MP:0004738
-name: abnormal brainstem auditory evoked potential
-def: "anomaly in the electrical activity generated in response to short tone bursts; may be used to evaluate sensorineural hearing function" [MGI:anna, MGI:smb]
+name: abnormal auditory brainstem response
+def: "anomaly in the electrical activity generated in the ascending auditory system in response to short tone bursts; may be used to evaluate sensorineural hearing function; measurements may include the amplitude (the number of neurons firing), latency (the speed of transmission), interpeak latency (the time between peaks), interaural latency (the difference in wave V latency between ears) and threshold" [MGI:anna, MGI:smb]
+subset: IMPC
 subset: Sanger_Terms
 synonym: "abnormal ABRs" EXACT []
 synonym: "abnormal BAEP(s)" EXACT []
 synonym: "abnormal brainstem auditory brainstem response(s)" EXACT []
+synonym: "abnormal brainstem auditory evoked potential" EXACT []
 synonym: "abnormal brainstem evoked responses" EXACT []
 is_a: MP:0006335 ! abnormal hearing electrophysiology
 
@@ -33176,8 +33193,7 @@ is_a: MP:0006327 ! mixed hearing impairment
 [Term]
 id: MP:0004742
 name: abnormal vestibular system physiology
-def: "any functional anomaly of the sensory system responsible for the sense of head position and movement of the body through space; such anomalies may include impaired balance, dizziness, poor regulation of postural muscle tone and inability to detect quick movements of the head" [MGI:csmith]
-synonym: "abnormal equilibrium" EXACT []
+def: "any functional anomaly of the sensory system responsible for the sense of head position and movement of the body through space; such anomalies may result in impaired balance, dizziness, poor regulation of postural muscle tone and inability to detect quick movements of the head" [MGI:csmith]
 is_a: MP:0003878 ! abnormal ear physiology
 
 [Term]
@@ -33336,7 +33352,8 @@ synonym: "absent ABRs" EXACT []
 synonym: "absent BAEP(s)" EXACT []
 synonym: "absent brainstem auditory brainstem response(s)" EXACT []
 synonym: "absent brainstem evoked responses" EXACT []
-is_a: MP:0004738 ! abnormal brainstem auditory evoked potential
+is_obsolete: true
+replaced_by: MP:0011967
 
 [Term]
 id: MP:0004764
@@ -33348,7 +33365,7 @@ synonym: "increased ABRs" EXACT []
 synonym: "increased BAEP(s)" EXACT []
 synonym: "increased brainstem auditory brainstem response(s)" EXACT []
 synonym: "increased brainstem evoked responses" EXACT []
-is_a: MP:0004738 ! abnormal brainstem auditory evoked potential
+is_obsolete: true
 
 [Term]
 id: MP:0004765
@@ -33363,7 +33380,7 @@ synonym: "increased ABR threshold" NARROW []
 synonym: "reduced ABRs" EXACT []
 synonym: "reduced BAEP(s)" EXACT []
 synonym: "reduced brainstem auditory evoked potential" EXACT []
-is_a: MP:0004738 ! abnormal brainstem auditory evoked potential
+is_obsolete: true
 
 [Term]
 id: MP:0004766
@@ -37567,8 +37584,8 @@ is_a: MP:0004508 ! abnormal pectoral girdle bone morphology
 
 [Term]
 id: MP:0005299
-name: abnormal eye posterior chamber
-def: "anomaly of the ring-like space, filled with aqueous humor, between the iris/pupil anteriorly and the lens and ciliary body posteriorly" [ISBN:0-683-40008-8]
+name: abnormal eye posterior chamber morphology
+def: "any structural anomaly of the ring-like space, filled with aqueous humor, between the iris/pupil anteriorly and the lens and ciliary body posteriorly" [ISBN:0-683-40008-8]
 synonym: "eye posterior chamber abnormalities" EXACT []
 is_a: MP:0005193 ! abnormal anterior eye segment morphology
 
@@ -37624,7 +37641,7 @@ is_a: MP:0003723 ! abnormal long bone morphology
 [Term]
 id: MP:0005307
 name: head tossing
-def: "compulsive flailing of the head in multiple directions" [MGI:csmith]
+def: "repetitive flailing of the head in multiple directions" [MGI:csmith]
 is_a: MP:0000436 ! abnormal head movements
 is_a: MP:0001408 ! stereotypic behavior
 
@@ -37702,14 +37719,14 @@ is_a: MP:0001968 ! abnormal touch/ nociception
 [Term]
 id: MP:0005317
 name: increased triglyceride level
-def: "higher than normal concentration of triacylglycerols" [ISBN:0-683-40008-8]
+def: "greater concentration of naturally occurring esters of three fatty acids and glycerol; triglycerides are widespread in adipose tissue, commonly circulate in the blood in the form of lipoproteins, and are involved in the process of bidirectional transference of adipose fat and blood glucose with the liver" [MGI:csmith]
 synonym: "elevated triglyceride level" EXACT []
 is_a: MP:0000187 ! abnormal triglyceride level
 
 [Term]
 id: MP:0005318
 name: decreased triglyceride level
-def: "lower than normal concentration of triacylglycerols" [ISBN:0-683-40008-8]
+def: "reduced concentration of naturally occurring esters of three fatty acids and glycerol in the blood; triglycerides are widespread in adipose tissue, commonly circulate in the blood in the form of lipoproteins, and are involved in the process of bidirectional transference of adipose fat and blood glucose with the liver" [MGI:csmith]
 synonym: "low triglyceride level" EXACT []
 synonym: "reduced triglyceride level" EXACT []
 is_a: MP:0000187 ! abnormal triglyceride level
@@ -38375,10 +38392,12 @@ is_a: MP:0009642 ! abnormal blood homeostasis
 
 [Term]
 id: MP:0005419
-name: hypoalbuminemia
+name: decreased circulating serum albumin level
 def: "blood serum albumin concentration below the normal range" [MGI:csmith]
 subset: Europhenome_Terms
 subset: Sanger_Terms
+synonym: "hypoalbuminemia" EXACT []
+synonym: "reduced circulating serum albumin level" EXACT []
 is_a: MP:0000199 ! abnormal circulating serum albumin level
 
 [Term]
@@ -38582,7 +38601,7 @@ is_a: MP:0001764 ! abnormal homeostasis
 [Term]
 id: MP:0005449
 name: abnormal food intake
-def: "any anomaly in the total number of calories taken in daily when compared to the normal state" [MGI:cwg]
+def: "any anomaly in the total number of calories/food amount taken in over time when compared to the normal state" [MGI:cwg]
 subset: Europhenome_Terms
 synonym: "abnormal calorie consumption" EXACT []
 synonym: "abnormal energy intake" EXACT []
@@ -38666,7 +38685,7 @@ id: MP:0005461
 name: abnormal dendritic cell morphology
 def: "any structural anomaly of a cell of hematopoietic origin, typically resident in particular tissues, specialized in the uptake, processing, and transport of antigens to lymph nodes for the purpose of stimulating an immune response via T cell activation" [ISBN:0781735149, MGI:csmith]
 comment: Do not confuse with abnormal follicular dendritic cell morphology (MP:0008196).
-is_a: MP:0008195 ! abnormal antigen presenting cell morphology
+is_a: MP:0008195 ! abnormal professional antigen presenting cell morphology
 is_a: MP:0008246 ! abnormal leukocyte morphology
 
 [Term]
@@ -39013,8 +39032,8 @@ subset: Sanger_Terms
 synonym: "increased platelet count" EXACT []
 synonym: "increased thrombocyte number" RELATED []
 synonym: "thrombocytosis" EXACT []
-is_a: MP:0004720 ! abnormal platelet morphology
 is_a: MP:0011181 ! increased hematopoietic cell number
+is_a: MP:0011898 ! abnormal platelet cell number
 
 [Term]
 id: MP:0005506
@@ -39241,10 +39260,12 @@ is_a: MP:0003711 ! pathological neovascularization
 
 [Term]
 id: MP:0005543
-name: corneal thinning
+name: decreased cornea thickness
 def: "decreased thickness of the cornea, the transparent anterior portion of the fibrous coat of the eye that serves as the chief refractory structure" [MGI:cwg]
+synonym: "corneal thinning" EXACT []
+synonym: "decreased corneal thickness" EXACT []
 synonym: "thin cornea" EXACT []
-is_a: MP:0001312 ! abnormal cornea morphology
+is_a: MP:0011961 ! abnormal cornea thickness
 
 [Term]
 id: MP:0005544
@@ -39446,7 +39467,7 @@ synonym: "decreased plasma total protein level" EXACT []
 synonym: "decreased total protein level" EXACT []
 synonym: "hypoproteinemia" EXACT []
 synonym: "reduced circulating total protein level" EXACT []
-is_a: MP:0005416 ! abnormal circulating protein level
+is_a: MP:0011888 ! abnormal circulating total protein level
 
 [Term]
 id: MP:0005568
@@ -39457,12 +39478,12 @@ subset: Sanger_Terms
 synonym: "hyperproteinemia" EXACT []
 synonym: "increased plasma total protein level" EXACT []
 synonym: "increased total protein level" EXACT []
-is_a: MP:0005416 ! abnormal circulating protein level
+is_a: MP:0011888 ! abnormal circulating total protein level
 
 [Term]
 id: MP:0005571
 name: decreased lactate dehydrogenase level
-def: "less than the normal concentration of this enzyme, which catalyzes the interconversion of lactate and pyruvate" [MGI:cwg]
+def: "reduced level of the tetrameric enzyme that, along with the coenzyme NAD+, catalyzes the interconversion of lactate and pyruvate" [MeSH:D08.811.682.047.551.400]
 subset: Europhenome_Terms
 subset: Sanger_Terms
 synonym: "decreased LDH level" EXACT []
@@ -41679,6 +41700,9 @@ is_a: MP:0001852 ! conjunctivitis
 id: MP:0006197
 name: ocular hypotelorism
 def: "the distance between the eyes is reduced" [MGI:smb, NCBI:matt]
+synonym: "close set eyes" RELATED []
+synonym: "decreased inner canthal distance" RELATED []
+synonym: "decreased intercanthal distance" RELATED []
 is_a: MP:0001299 ! abnormal eye distance/ position
 
 [Term]
@@ -42000,7 +42024,7 @@ is_a: MP:0001303 ! abnormal lens morphology
 
 [Term]
 id: MP:0006248
-name: lagopthalmos
+name: lagophthalmos
 def: "inability to completely close the eye" [MGI:smb, NCBI:matt]
 is_a: MP:0005253 ! abnormal eye physiology
 
@@ -44763,7 +44787,7 @@ synonym: "abnormal mature B lymphocyte morphology" EXACT []
 synonym: "abnormal mature B-cell morphology" EXACT []
 synonym: "abnormal mature B-lymphocyte morphology" EXACT []
 is_a: MP:0004939 ! abnormal B cell morphology
-is_a: MP:0008195 ! abnormal antigen presenting cell morphology
+is_a: MP:0008195 ! abnormal professional antigen presenting cell morphology
 
 [Term]
 id: MP:0008172
@@ -44937,8 +44961,9 @@ is_a: MP:0002459 ! abnormal B cell physiology
 
 [Term]
 id: MP:0008195
-name: abnormal antigen presenting cell morphology
+name: abnormal professional antigen presenting cell morphology
 def: "any structural anomaly of a cell capable of processing and presenting lipid and protein antigens to T cells in order to initiate an immune response" [CL:0000145, ISBN:0781735149, MGI:csmith]
+synonym: "abnormal antigen presenting cell morphology" RELATED []
 is_a: MP:0000716 ! abnormal immune system cell morphology
 
 [Term]
@@ -44946,14 +44971,14 @@ id: MP:0008196
 name: abnormal follicular dendritic cell morphology
 def: "any structural anomaly of a cell with extensive dendritic processes found in the B cell areas (primary follicles and germinal centers) of lymphoid tissue; follicular dendritic cells have Fc receptors and C3b receptors, and hold antigen in the form of immune complexes on their surfaces for long periods and can present antigen to B cells during an immune response" [CL:0000442, MESH:A10.549.250.200, MGI:csmith]
 comment: Follicular dendritic cells are a distinct population from other dendritic cells associated with T cells. Follicular dendritic cells have Fc receptors and C3b receptors, but unlike other dendritic cells, they do not process or present antigen in a way that allows recognition by T cells. Instead, they hold antigen in the form of immune complexes on their surfaces for long periods and can present antigen to B cells during an immune response. They are not derived from the hematopoietic lineage. Due to its unique lineage and distinct function (B cell vs. T cell presentation), this is NOT a type of dendritic cell.
-is_a: MP:0008195 ! abnormal antigen presenting cell morphology
+is_a: MP:0000716 ! abnormal immune system cell morphology
 
 [Term]
 id: MP:0008197
 name: abnormal follicular dendritic cell physiology
 def: "abnormal function of a cell with extensive dendritic processes found in the B cell areas (primary follicles and germinal centers) of lymphoid tissue; follicular dendritic cells have Fc receptors and C3b receptors, and hold antigen in the form of immune complexes on their surfaces for long periods and can present antigen to B cells during an immune response" [CL:0000442, MESH:A10.549.250.200, MGI:csmith]
 comment: Annotations to this cell type have been erroneously made to dendritic cell morphology. These are unrelated to the dendritic cell associated with T cells. Follicular dendritic cells have Fc receptors and C3b receptors, but unlike other dendritic cells, they do not process or present antigen in a way that allows recognition by T cells. Instead, they hold antigen in the form of immune complexes on their surfaces for long periods and can present antigen to B cells during an immune response. They are not derived from the hematopoietic lineage. Due to its unique lineage and distinct function (B cell vs. T cell presentation), this is NOT a type of dendritic cell.
-is_a: MP:0002452 ! abnormal antigen presenting cell physiology
+is_a: MP:0001819 ! abnormal immune cell physiology
 
 [Term]
 id: MP:0008198
@@ -47783,7 +47808,7 @@ is_a: MP:0005241 ! abnormal retinal ganglion layer morphology
 id: MP:0008511
 name: thin retinal inner nuclear layer
 def: "reduced thickness of the retinal layer which contains the cell bodies of bipolar, horizontal, and amacrine cells" [MGI:monikat]
-is_a: MP:0003733 ! abnormal retinal inner nuclear layer morphology
+is_a: MP:0011996 ! abnormal retinal inner nuclear layer thickness
 
 [Term]
 id: MP:0008512
@@ -47807,7 +47832,7 @@ is_a: MP:0003734 ! abnormal retinal inner plexiform layer morphology
 id: MP:0008515
 name: thin retinal outer nuclear layer
 def: "reduced thickness of the retinal layer that contains the nuclei and cell bodies of rods and cones" [MGI:monikat]
-is_a: MP:0003731 ! abnormal retinal outer nuclear layer morphology
+is_a: MP:0011997 ! abnormal retinal outer nuclear layer thickness
 
 [Term]
 id: MP:0008516
@@ -47819,7 +47844,7 @@ is_a: MP:0003731 ! abnormal retinal outer nuclear layer morphology
 id: MP:0008517
 name: thick retinal outer nuclear layer
 def: "increased thickness of the retinal layer that contains the nuclei and cell bodies of rods and cones" [MGI:monikat]
-is_a: MP:0003731 ! abnormal retinal outer nuclear layer morphology
+is_a: MP:0011997 ! abnormal retinal outer nuclear layer thickness
 
 [Term]
 id: MP:0008518
@@ -50741,11 +50766,13 @@ id: MP:0008780
 name: increased pancreatic acinar cell carcinoma incidence
 def: "greater than the expected number of an adenocarcinoma arising from cells of the pancreas that secrete digestive enzymes, occurring in a specific population in a given time period" [MGI:csmith]
 synonym: "acinar carcinoma" RELATED []
+synonym: "increased pancreatic acinar cell adenocarcinoma incidence" EXACT []
 synonym: "pancreatic ACC" EXACT []
 synonym: "pancreatic acinar carcinoma" EXACT []
 synonym: "pancreatic tumor" BROAD []
 is_a: MP:0002038 ! carcinoma
 is_a: MP:0009153 ! increased pancreas tumor incidence
+is_a: MP:0009308 ! adenocarcinoma
 
 [Term]
 id: MP:0008781
@@ -50990,6 +51017,7 @@ is_a: MP:0008739 ! abnormal spleen iron level
 id: MP:0008810
 name: increased circulating iron level
 def: "elevation in the concentration of iron in the blood" [MGI:smb]
+comment: Serum iron measures the total amount of iron in the blood, nearly all of which is bound to transferrin.
 subset: Europhenome_Terms
 subset: Sanger_Terms
 synonym: "hyperferremia" EXACT []
@@ -51023,9 +51051,9 @@ is_a: MP:0006410 ! abnormal common myeloid progenitor cell morphology
 
 [Term]
 id: MP:0008814
-name: reduced nerve conduction velocity
+name: decreased nerve conduction velocity
 def: "decrease in the rate at which an electrical impulse travels through a nerve" [MGI:smb]
-synonym: "increased nerve conduction latency" EXACT []
+synonym: "reduced nerve conduction velocity" EXACT []
 synonym: "slowed nerve conduction" EXACT []
 is_a: MP:0005403 ! abnormal nerve conduction
 
@@ -51712,6 +51740,10 @@ is_a: MP:0006319 ! abnormal epididymal fat pad morphology
 id: MP:0008902
 name: abnormal renal fat pad morphology
 def: "any structural anomaly of the encapsulated adipose tissue associated with the kidney" [MGI:csmith]
+synonym: "abnormal adipose capsule of kidney morphology" EXACT []
+synonym: "abnormal fatty capsule of kidney morphology" RELATED []
+synonym: "abnormal perirenal fat capsule morphology" EXACT []
+synonym: "abnormal perirenal fat morphology" EXACT []
 synonym: "abnormal perirenal fat pad morphology" EXACT []
 synonym: "abnormal renal fat depot morphology" RELATED []
 synonym: "renal fat pad dysplasia" EXACT []
@@ -52013,8 +52045,8 @@ synonym: "decreased immature erythrocyte number" EXACT []
 synonym: "decreased reticulocyte number" EXACT []
 synonym: "reduced immature erythrocyte number" EXACT []
 synonym: "reduced reticulocyte number" EXACT []
-is_a: MP:0002424 ! abnormal reticulocyte morphology
 is_a: MP:0011182 ! decreased hematopoietic cell number
+is_a: MP:0011913 ! abnormal reticulocyte cell number
 
 [Term]
 id: MP:0008942
@@ -54087,9 +54119,9 @@ name: abnormal pancreatic beta cell differentiation
 def: "atypical production of or inability to produce the cells that secrete insulin and are located towards the center of the islets of Langerhans in the pancreas, and/or accumulation of pancreatic beta cell precursors" [CL:0000169]
 synonym: "abnormal insulin-secreting cell differentiation" EXACT []
 synonym: "abnormal pancreatic B cell differentiation" EXACT []
-is_a: MP:0003934 ! abnormal pancreas development
 is_a: MP:0005076 ! abnormal cell differentiation
 is_a: MP:0005217 ! abnormal pancreatic beta cell morphology
+is_a: MP:0011932 ! abnormal endocrine pancreas development
 
 [Term]
 id: MP:0009176
@@ -54125,9 +54157,9 @@ name: abnormal pancreatic alpha cell differentiation
 def: "atypical production of or inability to produce the cells of the pancreas that secrete glucagon, and/or accumulation of pancreatic alpha cell precursors" [MESH:A03.734.414.065]
 synonym: "abnormal glucagon-secreting cell differentiation" EXACT []
 synonym: "abnormal pancreatic A cell differentiation" EXACT []
-is_a: MP:0003934 ! abnormal pancreas development
 is_a: MP:0005076 ! abnormal cell differentiation
 is_a: MP:0005216 ! abnormal pancreatic alpha cell morphology
+is_a: MP:0011932 ! abnormal endocrine pancreas development
 
 [Term]
 id: MP:0009180
@@ -54166,9 +54198,9 @@ def: "atypical production of or inability to produce the cells found in the panc
 synonym: "abnormal D cell differentiation" EXACT []
 synonym: "abnormal pancreatic D cell differentiation" EXACT []
 synonym: "abnormal somatostatin-secreting cell differentiation" EXACT []
-is_a: MP:0003934 ! abnormal pancreas development
 is_a: MP:0005076 ! abnormal cell differentiation
 is_a: MP:0005218 ! abnormal pancreatic delta cell morphology
+is_a: MP:0011932 ! abnormal endocrine pancreas development
 
 [Term]
 id: MP:0009184
@@ -54216,9 +54248,9 @@ def: "atypical production of or inability to produce the polygonal pancreatic po
 synonym: "abnormal F cell differentiation" EXACT []
 synonym: "abnormal pancreatic polypeptide cell differentiation" EXACT []
 synonym: "abnormal pancreatic polypeptide-secreting cell differentiation" EXACT []
-is_a: MP:0003934 ! abnormal pancreas development
 is_a: MP:0005076 ! abnormal cell differentiation
 is_a: MP:0009184 ! abnormal PP cell morphology
+is_a: MP:0011932 ! abnormal endocrine pancreas development
 
 [Term]
 id: MP:0009189
@@ -54254,9 +54286,9 @@ id: MP:0009193
 name: abnormal pancreatic epsilon cell differentiation
 def: "atypical production of or inability to produce the endocrine cells found in the Islets of Langerhans that produce the hormone ghrelin, and/or accumulation of pancreatic epsilon cell precursors" [PMID:14970313]
 synonym: "abnormal ghrelin-secreting cell differentiation" BROAD []
-is_a: MP:0003934 ! abnormal pancreas development
 is_a: MP:0005076 ! abnormal cell differentiation
 is_a: MP:0009189 ! abnormal pancreatic epsilon cell morphology
+is_a: MP:0011932 ! abnormal endocrine pancreas development
 
 [Term]
 id: MP:0009194
@@ -55568,7 +55600,7 @@ is_a: MP:0003492 ! abnormal involuntary movement
 [Term]
 id: MP:0009355
 name: increased liver triglyceride level
-def: "higher than normal concentration of triacylglycerols in the liver" [MGI:smb]
+def: "greater concentration of naturally occurring esters of three fatty acids and glycerol in the liver; triglycerides are widespread in adipose tissue, commonly circulate in the blood in the form of lipoproteins, and are involved in the process of bidirectional transference of adipose fat and blood glucose with the liver" [MGI:csmith]
 synonym: "increased hepatic triglyceride level" EXACT []
 is_a: MP:0000598 ! abnormal liver morphology
 is_a: MP:0005317 ! increased triglyceride level
@@ -55576,7 +55608,7 @@ is_a: MP:0005317 ! increased triglyceride level
 [Term]
 id: MP:0009356
 name: decreased liver triglyceride level
-def: "lower than normal concentration of triacylglycerols in the liver" [MGI:smb]
+def: "reduced concentration of naturally occurring esters of three fatty acids and glycerol in the liver; triglycerides are widespread in adipose tissue, commonly circulate in the blood in the form of lipoproteins, and are involved in the process of bidirectional transference of adipose fat and blood glucose with the liverower than normal concentration of triacylglycerols in the liver" [MGI:csmith]
 synonym: "decreased hepatic triglyceride level" EXACT []
 synonym: "reduced hepatic triglyceride level" EXACT []
 synonym: "reduced liver triglyceride level" EXACT []
@@ -55793,7 +55825,7 @@ id: MP:0009384
 name: cardiac valve regurgitation
 def: "the backward reflux of blood through a cardiac valve, due to insufficiency caused by disease, aging or congenital malformation" [MGI:csmith]
 synonym: "cardiac valve insufficiency" EXACT []
-is_a: MP:0001544 ! abnormal cardiovascular system physiology
+is_a: MP:0011926 ! abnormal cardiac valve physiology
 
 [Term]
 id: MP:0009385
@@ -57042,7 +57074,7 @@ name: absent gastric milk in neonates
 def: "failure of nursing offspring to ingest milk as indicated by stomach content" [MGI:llw2]
 synonym: "absence of milk in stomach" EXACT []
 synonym: "absent milk spots" EXACT []
-is_a: MP:0005449 ! abnormal food intake
+is_a: MP:0001438 ! aphagia
 
 [Term]
 id: MP:0009547
@@ -61952,10 +61984,10 @@ name: abnormal renal sodium reabsorbtion
 def: "any anomaly in the process by which sodium ions are transported out of the renal tubules back into the bloodstream" [MGI:anna]
 synonym: "abnormal kidney sodium reabsorbtion" EXACT []
 synonym: "abnormal renal sodium ion reabsorbtion" EXACT []
-is_a: MP:0001765 ! abnormal ion homeostasis
 is_a: MP:0005636 ! abnormal mineral homeostasis
 is_a: MP:0010107 ! abnormal renal reabsorbtion
 is_a: MP:0011442 ! abnormal renal sodium ion transport
+is_a: MP:0011977 ! abnormal sodium ion homeostasis
 created_by: csmith
 creation_date: 2010-04-09T10:47:28Z
 
@@ -62015,7 +62047,7 @@ creation_date: 2010-04-09T01:06:05Z
 [Term]
 id: MP:0010115
 name: abnormal embryonic cloaca morphology
-def: "any structural anomaly of the endoderm-lined chamber into which the hidgut and allantois empty in early embryos" [ISBN:0-683-40008-8]
+def: "any structural anomaly of the endoderm-lined chamber that develops as pouch-like dilation of the caudal end of the hindgut and receives the allantois ventrally and two mesonephric ducts laterally; caudally it ends blindly at the cloacal membrane formed by the union of proctodeal (anal pit) ectoderm and cloacal endoderm, with no intervening mesoderm" [MGI:anna]
 is_a: MP:0002085 ! abnormal embryonic tissue morphology
 created_by: csmith
 creation_date: 2010-04-12T12:32:44Z
@@ -62145,6 +62177,7 @@ synonym: "increased DN1 thymic progenitor T cell number" EXACT []
 synonym: "increased DN1 thymocyte number" EXACT []
 xref: CL:0000894
 is_a: MP:0000714 ! increased thymocyte number
+is_a: MP:0005090 ! increased double-negative T cell number
 created_by: csmith
 creation_date: 2010-04-14T02:51:59Z
 
@@ -62165,6 +62198,7 @@ synonym: "reduced DN1 thymic progenitor T cell number" EXACT []
 synonym: "reduced DN1 thymocyte number" EXACT []
 xref: CL:0000894
 is_a: MP:0000715 ! decreased thymocyte number
+is_a: MP:0005089 ! decreased double-negative T cell number
 created_by: csmith
 creation_date: 2010-04-14T02:53:53Z
 
@@ -62182,6 +62216,7 @@ synonym: "increased TN2 cell number" EXACT []
 synonym: "increased TN2 thymocyte number" EXACT []
 xref: CL:0000806
 is_a: MP:0000714 ! increased thymocyte number
+is_a: MP:0005090 ! increased double-negative T cell number
 created_by: csmith
 creation_date: 2010-04-14T02:57:06Z
 
@@ -62207,6 +62242,7 @@ synonym: "reduced TN2 cell number" EXACT []
 synonym: "reduced TN2 thymocyte number" EXACT []
 xref: CL:0000806
 is_a: MP:0000715 ! decreased thymocyte number
+is_a: MP:0005089 ! decreased double-negative T cell number
 created_by: csmith
 creation_date: 2010-04-14T02:59:07Z
 
@@ -62223,6 +62259,7 @@ synonym: "increased TN3 cell number" EXACT []
 synonym: "increased TN3 thymocyte number" EXACT []
 xref: CL:0000807
 is_a: MP:0000714 ! increased thymocyte number
+is_a: MP:0005090 ! increased double-negative T cell number
 created_by: csmith
 creation_date: 2010-04-14T02:59:28Z
 
@@ -62247,6 +62284,7 @@ synonym: "reduced TN3 cell number" EXACT []
 synonym: "reduced TN3 thymocyte number" EXACT []
 xref: CL:0000807
 is_a: MP:0000715 ! decreased thymocyte number
+is_a: MP:0005089 ! decreased double-negative T cell number
 created_by: csmith
 creation_date: 2010-04-14T02:59:48Z
 
@@ -62262,6 +62300,7 @@ synonym: "increased DN4 immature T cell number" EXACT []
 synonym: "increased DN4 immature T-cell number" EXACT []
 xref: CL:0000808
 is_a: MP:0000714 ! increased thymocyte number
+is_a: MP:0005090 ! increased double-negative T cell number
 created_by: csmith
 creation_date: 2010-04-14T03:00:10Z
 
@@ -62283,6 +62322,7 @@ synonym: "reduced DN4 immature T-cell number" EXACT []
 synonym: "reduced DN4 thymocyte number" EXACT []
 xref: CL:0000808
 is_a: MP:0000715 ! decreased thymocyte number
+is_a: MP:0005089 ! decreased double-negative T cell number
 created_by: csmith
 creation_date: 2010-04-14T03:00:30Z
 
@@ -66225,7 +66265,6 @@ name: shortened PR interval
 def: "decrease in the length of time between the beginning of atrial depolarization and the beginning of ventricular depolarization, measured by the interval from the beginning of the P wave to the beginning of the QRS complex" [MGI:csmith]
 synonym: "decreased PR interval" EXACT []
 synonym: "reduced PR interval" EXACT []
-synonym: "short PQ interval" EXACT []
 is_a: MP:0003901 ! abnormal PR interval
 created_by: csmith
 creation_date: 2010-10-01T09:40:04Z
@@ -68734,7 +68773,7 @@ creation_date: 2010-12-09T03:38:16Z
 [Term]
 id: MP:0010763
 name: abnormal hematopoietic stem cell physiology
-def: "any functional anomaly or number of the multipotent, self-renewing stem cells found in the bone marrow and the fetal liver; HSCs give rise to all the types of both the myeloid and lymphoid cell lineages" [MGI:csmith]
+def: "any functional anomaly of the multipotent, self-renewing stem cells found in the bone marrow and the fetal liver; HSCs give rise to all the types of both the myeloid and lymphoid cell lineages" [MGI:csmith]
 synonym: "abnormal hematopoietic progenitor cell physiology" EXACT []
 synonym: "abnormal hemopoietic progenitor cell physiology" EXACT []
 synonym: "abnormal HSC physiology" EXACT []
@@ -70892,6 +70931,7 @@ id: MP:0010955
 name: abnormal respiratory electron transport chain
 def: "anomaly in the process in which a series of electron carriers operate together to transfer electrons from donors such as NADH and FADH2 to any of several different terminal electron acceptors to generate a transmembrane electrochemical gradient" [GO:0022904]
 xref: GO:0022904
+is_a: MP:0006036 ! abnormal mitochondrial physiology
 is_a: MP:0010954 ! abnormal cellular respiration
 created_by: csmith
 creation_date: 2011-03-23T03:51:28Z
@@ -70923,6 +70963,7 @@ synonym: "abnormal citric acid cycle" EXACT []
 synonym: "abnormal Krebs cycle" EXACT []
 synonym: "abnormal TCA cycle" EXACT []
 xref: GO:0006099
+is_a: MP:0006036 ! abnormal mitochondrial physiology
 is_a: MP:0010957 ! abnormal aerobic respiration
 created_by: csmith
 creation_date: 2011-03-24T11:23:08Z
@@ -70932,7 +70973,7 @@ id: MP:0010959
 name: abnormal oxidative phosphorylation
 def: "any anomaly in the process of phosphorylation of ADP to ATP that accompanies the oxidation of a metabolite through the operation of the respiratory chain; oxidation of compounds establishes a proton gradient across the membrane, providing the energy for ATP synthesis" [GO:0006119]
 xref: GO:0006119
-is_a: MP:0005621 ! abnormal cell physiology
+is_a: MP:0006036 ! abnormal mitochondrial physiology
 created_by: csmith
 creation_date: 2011-03-24T11:40:43Z
 
@@ -71463,7 +71504,7 @@ creation_date: 2011-04-06T01:15:13Z
 [Term]
 id: MP:0011017
 name: increased surface body temperature
-def: "increased degree of heat natural to the internal center of a living being" [MGI:smb]
+def: "increased degree of heat natural to the skin-environment interface of a living being" [MGI:smb]
 is_a: MP:0005533 ! increased body temperature
 created_by: csmith
 creation_date: 2011-04-06T01:15:13Z
@@ -76081,6 +76122,8 @@ creation_date: 2011-11-15T02:28:32Z
 id: MP:0011480
 name: impaired ureteric peristalsis
 def: "any anomaly in the wavelike sequence of involuntary muscular contraction and relaxation that passes along the ureter, thus propelling urine from the kidney pelvis to the urinary bladder" [MGI:anna]
+synonym: "impaired pyeloureteral peristalsis" EXACT []
+synonym: "impaired pyeloureteric peristalsis" EXACT []
 synonym: "impaired ureteral peristalsis" EXACT []
 is_a: MP:0003589 ! abnormal ureter physiology
 created_by: csmith
@@ -78800,29 +78843,32 @@ creation_date: 2012-09-27T03:34:50Z
 
 [Term]
 id: MP:0011734
-name: abnormal urine ammonium level
-def: "any change in the amount of ammonium in urine" [MGI:anna]
+name: abnormal urine ammonia level
+def: "any change in the amount of ammonia in urine" [MGI:anna]
+synonym: "abnormal urine ammonium level" NARROW []
 is_a: MP:0009643 ! abnormal urine homeostasis
 created_by: csmith
 creation_date: 2012-09-27T03:39:05Z
 
 [Term]
 id: MP:0011735
-name: increased urine ammonium level
-def: "a greater amount of ammonium in the urine compared to the normal state" [MGI:anna]
+name: increased urine ammonia level
+def: "a greater amount of ammonia in the urine compared to the normal state" [MGI:anna]
 synonym: "increased ammonium excretion" EXACT []
-is_a: MP:0011734 ! abnormal urine ammonium level
+synonym: "increased urine ammonium level" NARROW []
+is_a: MP:0011734 ! abnormal urine ammonia level
 created_by: csmith
 creation_date: 2012-09-27T03:39:53Z
 
 [Term]
 id: MP:0011736
-name: decreased urine ammonium level
-def: "a reduced amount of ammonium in the urine compared to the normal state" [MGI:anna]
+name: decreased urine ammonia level
+def: "a reduced amount of ammonia in the urine compared to the normal state" [MGI:anna]
 synonym: "decreased ammonium excretion" EXACT []
+synonym: "decreased urine ammonium level" NARROW []
 synonym: "reduced ammonium excretion" EXACT []
 synonym: "reduced urine ammonium level" EXACT []
-is_a: MP:0011734 ! abnormal urine ammonium level
+is_a: MP:0011734 ! abnormal urine ammonia level
 created_by: csmith
 creation_date: 2012-09-27T03:39:53Z
 
@@ -78990,6 +79036,7 @@ name: decreased podocyte number
 def: "reduced number of the modified epithelial cells of the visceral layer of the Bowman capsule in the renal corpuscle" [MGI:anna]
 synonym: "decreased glomerular epithelial cell number" EXACT []
 synonym: "decreased glomerular visceral epithelial cell number" EXACT []
+synonym: "podocytopenia" EXACT []
 synonym: "reduced glomerular epithelial cell number" EXACT []
 synonym: "reduced glomerular visceral epithelial cell number" EXACT []
 synonym: "reduced podocyte number" EXACT []
@@ -79710,6 +79757,7 @@ id: MP:0011824
 name: increased cell chemotaxis
 def: "increase in the directed movement response of a motile cell guided by a specific chemical concentration gradient; movement may be towards a higher concentration (positive chemotaxis) or towards a lower concentration (negative chemotaxis)" [MGI:csmith]
 is_a: MP:0011518 ! abnormal cell chemotaxis
+is_a: MP:0011804 ! increased cell migration
 created_by: csmith
 creation_date: 2012-11-16T01:44:31Z
 
@@ -79719,6 +79767,7 @@ name: decreased cell chemotaxis
 def: "reduciton in the directed movement response of a motile cell guided by a specific chemical concentration gradient; movement may be towards a higher concentration (positive chemotaxis) or towards a lower concentration (negative chemotaxis)" [MGI:csmith]
 synonym: "reduced cell chemotaxis" EXACT []
 is_a: MP:0011518 ! abnormal cell chemotaxis
+is_a: MP:0011805 ! decreased cell migration
 created_by: csmith
 creation_date: 2012-11-16T01:44:49Z
 
@@ -79932,6 +79981,1355 @@ synonym: "abnormal vestibulum vaginae" EXACT []
 is_a: MP:0003126 ! abnormal external female genitalia morphology
 created_by: csmith
 creation_date: 2012-11-30T03:51:49Z
+
+[Term]
+id: MP:0011849
+name: abnormal clitoral bone morphology
+def: "any structural anomaly of the ossified region of endochondral and membranous bone located in the clitoris of most mammals except humans;it is homologous to the penile bone (aka as baculum, penis bone or os penis) in male mammals" [MGI:anna]
+synonym: "abnormal baubellum morphology" EXACT []
+synonym: "abnormal os clitoridis morphology" EXACT []
+synonym: "abnormal os clitoris morphology" EXACT []
+is_a: MP:0003127 ! abnormal clitoris morphology
+is_a: MP:0005508 ! abnormal skeleton morphology
+created_by: csmith
+creation_date: 2012-12-17T03:21:34Z
+
+[Term]
+id: MP:0011850
+name: absent clitoral bone
+def: "absence of the unique bone located in the clitoris of most mammals except humans" [MGI:anna]
+synonym: "absent baubellum" EXACT []
+synonym: "absent os clitoridis" EXACT []
+synonym: "absent os clitoris " EXACT []
+is_a: MP:0011849 ! abnormal clitoral bone morphology
+created_by: csmith
+creation_date: 2012-12-17T03:21:34Z
+
+[Term]
+id: MP:0011851
+name: abnormal embryonic cloaca development
+def: "failure or anomaly in the formation of a pouch-like dilation of the caudal end of the hindgut by the process of folding of the caudal region of the embryonic disk; during the tail-fold process, the posteriorly placed allantois, or allantoic diverticulum of the yolk sac, becomes an anterior extension of the cloaca; soon after the cloaca forms, it receives posterolaterally the caudal ends of the paired mesonephric ducts and hence becomes a junctional cistern for the allantois, the hindgut, and the ducts; a cloacal membrane, composed of ectoderm and endoderm, is the caudal limit of the primitive gut and temporarily separates the cloacal cavity from the extraembryonic confines of the amniotic cavity; subsequent growth of the urorectal septum eventually subdivides the once single cloaca chamber into the primitive urogenital sinus (ventrally) and the anorectal canal of the hindgut (dorsally)" [MGI:anna]
+is_a: MP:0010115 ! abnormal embryonic cloaca morphology
+created_by: csmith
+creation_date: 2012-12-17T03:36:14Z
+
+[Term]
+id: MP:0011852
+name: patent urachus
+def: "failure of complete urachal lumen closure resulting in an open channel between the urinary bladder and the umbilicus and leakage of urine through the umbilicus" [MGI:anna]
+is_a: MP:0003616 ! abnormal urachus morphology
+created_by: csmith
+creation_date: 2012-12-17T03:53:07Z
+
+[Term]
+id: MP:0011853
+name: abnormal urorectal septum morphology
+def: "any structural anomaly of the ridge of mesoderm covered with endoderm that in the early developing embryo partitions the endodermal cloaca into the primary urogenital sinus (ventrally) and the anorectal canal of the hindgut (dorsally); the urorectal septum eventually fuses with the cloacal membrane, dividing it into a dorsal anal membrane and a larger ventral urogenital membrane - this area of fusion is represented in the adult by the perineal body" [MGI:anna]
+synonym: "abnormal cloacal septum morphology" EXACT []
+synonym: "abnormal septum urorectale morphology" EXACT []
+synonym: "abnormal urorectal fold morphology" EXACT []
+synonym: "abnormal urorectal membrane morphology" EXACT []
+is_a: MP:0002085 ! abnormal embryonic tissue morphology
+created_by: csmith
+creation_date: 2012-12-17T03:56:42Z
+
+[Term]
+id: MP:0011854
+name: cerebral edema
+def: "excess accumulation of water in the intra- and/or extracellular spaces of the brain" [MGI:anna]
+synonym: "brain edema" EXACT []
+synonym: "brain swelling" EXACT []
+synonym: "swelling of the brain" EXACT []
+synonym: "wet brain" EXACT []
+is_a: MP:0001785 ! edema
+created_by: csmith
+creation_date: 2012-12-17T04:01:47Z
+
+[Term]
+id: MP:0011855
+name: abnormal glomerular filtration barrier morphology
+def: "any structural anomaly of the highly specialized blood filtration interface that displays a high conductance to small and midsized solutes in plasma but retains relative impermeability to macromolecules; its integrity is maintained by physicochemical and signalling interplay among its three core constituents -- the fenestrated endothelium of the glomerular capillaries, the glomerular basement membrane, and the filtration slits of the visceral epithelial cell (podocyte)" [MGI:anna]
+synonym: "abnormal GFB morphology" EXACT []
+is_a: MP:0005325 ! abnormal renal glomerulus morphology
+created_by: csmith
+creation_date: 2012-12-17T04:05:39Z
+
+[Term]
+id: MP:0011856
+name: abnormal glomerular filtration barrier function
+def: "anomaly in the function of the highly specialized blood filtration interface that displays a high conductance to small and midsized solutes in plasma but retains relative impermeability to macromolecules; its integrity is maintained by physicochemical and signalling interplay among its three core constituents -- the fenestrated endothelium of the glomerular capillaries, the glomerular basement membrane, and the filtration slits of the visceral epithelial cell (podocyte); the barrier permits the passage of water, ions, and small molecules from the bloodstream into the Bowman's space and prevents the loss of large and/or negatively charged proteins (e.g. serum albumin) from blood into urine" [MGI:anna]
+synonym: "abnormal GFB permeability" EXACT []
+is_a: MP:0002136 ! abnormal kidney physiology
+created_by: csmith
+creation_date: 2012-12-17T04:12:41Z
+
+[Term]
+id: MP:0011857
+name: short kidney papilla
+def: "reduced average length of the apex of the renal pyramid that projects into a calyx" [MGI:anna]
+synonym: "reduced length of kidney papilla" EXACT []
+synonym: "reduced renal papillary length" EXACT []
+synonym: "short renal papilla" EXACT []
+synonym: "shortened kidney papilla" EXACT []
+is_a: MP:0004193 ! abnormal kidney papilla morphology
+created_by: csmith
+creation_date: 2012-12-17T04:16:45Z
+
+[Term]
+id: MP:0011858
+name: elongated kidney papilla
+def: "increased average length of the apex of the renal pyramid that projects into a calyx" [MGI:anna]
+synonym: "increased renal papillary length" EXACT []
+synonym: "overextended kidney papilla" EXACT []
+synonym: "overextended renal papilla" EXACT []
+synonym: "overgrown papilla" EXACT []
+synonym: "overgrowth of renal papilla" EXACT []
+is_a: MP:0004193 ! abnormal kidney papilla morphology
+created_by: csmith
+creation_date: 2012-12-17T04:16:45Z
+
+[Term]
+id: MP:0011859
+name: decreased renal glomerulus basement membrane thickness
+def: "reduced width of the layer of extracellular matrix that lies between the endothelium of the glomerular capillaries and the podocytes of the inner or visceral layer of the Bowman capsule" [MGI:anna]
+synonym: "GBM thinning" EXACT []
+synonym: "reduced GBM width" EXACT []
+synonym: "thin renal glomerulus basement membrane" EXACT []
+synonym: "thinned renal glomerulus basement membrane" EXACT []
+is_a: MP:0011349 ! abnormal renal glomerulus basement membrane thickness
+created_by: csmith
+creation_date: 2012-12-17T04:20:10Z
+
+[Term]
+id: MP:0011860
+name: abnormal peritubular capillary endothelium morphology
+def: "any structural anomaly of the thin sheet of endothelial cells along the basal lamina of renal tubular cells characterized by their attenuated shape and numerous regularly-spaced transcellular pores (aka fenestrae or fenestrations); the fenestrae of peritubular capillaries differ from the fenestrae of glomerular capillaries in that they are much smaller and possess a small overlying diaphragm" [MGI:anna]
+is_a: MP:0011321 ! abnormal peritubular capillary morphology
+created_by: csmith
+creation_date: 2012-12-17T04:22:13Z
+
+[Term]
+id: MP:0011861
+name: increased cranium height
+def: "increase in the rostral-caudal distance between the cranial base and the upper domelike portion of the skull" [MGI:mnk]
+is_a: MP:0010031 ! abnormal cranium size
+created_by: csmith
+creation_date: 2012-12-17T04:25:18Z
+
+[Term]
+id: MP:0011862
+name: decreased cranium length
+def: "having an decreased dorsal-to-ventral distance of the cranium" [MGI:mnk]
+is_a: MP:0010031 ! abnormal cranium size
+created_by: csmith
+creation_date: 2012-12-17T04:25:18Z
+
+[Term]
+id: MP:0011863
+name: abnormal podocyte physiology
+def: "any functional anomaly of a modified epithelial cell of the visceral layer of the Bowman capsule in the renal corpuscle; it has a small perikaryon and a number of primary and secondary foot processes that interdigitate with those of other podocytes and are attached to the outer surface of the glomerular capillary basement membrane" [ISBN:0-683-40008-8, MGI:csmith]
+is_a: MP:0002136 ! abnormal kidney physiology
+created_by: csmith
+creation_date: 2012-12-20T03:49:19Z
+
+[Term]
+id: MP:0011864
+name: abnormal podocyte adhesion
+def: "any anomaly in the adhesive properties of glomerular podocytes, resulting in abnormal cell to cell and cell to extracellular matrix (ECM) interactions; podocytes adhere tightly to ECM components of the glomerular basement membrane via an integrin-laminin-actin axis to maintain a functional filtration barrier in the presence of mechanical stress" [MGI:anna]
+synonym: "abnormal podocyte adherence" EXACT []
+synonym: "abnormal podocyte-ECM adhesion" EXACT []
+is_a: MP:0003566 ! abnormal cell adhesion
+is_a: MP:0011863 ! abnormal podocyte physiology
+created_by: csmith
+creation_date: 2012-12-20T03:51:30Z
+
+[Term]
+id: MP:0011865
+name: abnormal podocyte motility
+def: "any anomaly in the ability of podocyte foot processes (FPs) to retract or elongate and hence move quickly along the glomerular basement membrane (GBM); motility refers to the dynamic reorganization of the interdigitating FP structure in vivo , and to the cell migration of cultured podocytes in vitro that is seen as surrogate for the former; alterations in podocyte motility are considered to underlie foot process effacement, with changes in the leading edge of the cell and its interactions with the GBM; a rather stationary podocyte phenotype is believed to reflect a stable FP structure with intact slit diaphragms, whereas hypermotility is believed to promote the development of FP effacement and proteinuria" [MGI:anna]
+synonym: "abnormal podocyte foot process motility" NARROW []
+synonym: "abnormal podocyte migration " EXACT []
+is_a: MP:0003091 ! abnormal cell migration
+is_a: MP:0011863 ! abnormal podocyte physiology
+created_by: csmith
+creation_date: 2012-12-20T03:53:30Z
+
+[Term]
+id: MP:0011866
+name: increased podocyte motility
+def: "greater ability of podocyte foot processes (FPs) to retract or elongate and hence move quickly along the glomerular basement membrane (GBM)" [MGI:anna]
+comment: Increased podocyte motility is believed to promote the development of FP effacement and proteinuria.
+synonym: "podocyte hypermotility" EXACT []
+is_a: MP:0011804 ! increased cell migration
+is_a: MP:0011865 ! abnormal podocyte motility
+created_by: csmith
+creation_date: 2012-12-20T03:54:46Z
+
+[Term]
+id: MP:0011867
+name: decreased podocyte motility
+def: "reduced ability of podocyte foot processes (FPs) to retract or elongate and hence move quickly along the glomerular basement membrane (GBM)" [MGI:anna]
+comment: Decreased podocyte motility is believed to stabilize the podocyte FP architecture and protect from effacement and proteinuria.
+synonym: "podocyte hypomotility" EXACT []
+synonym: "reduced podocyte motility" EXACT []
+is_a: MP:0011805 ! decreased cell migration
+is_a: MP:0011865 ! abnormal podocyte motility
+created_by: csmith
+creation_date: 2012-12-20T03:54:46Z
+
+[Term]
+id: MP:0011868
+name: podocyte microvillus transformation
+def: "aberrant formation of numerous slender cellular projections resembling microvilli or vesicle-like structures along the apical surface of podocytes, suggestive of podocyte injury" [MGI:anna]
+synonym: " podocyte pseudovilli" EXACT []
+synonym: "microvillus transformation of foot processes" EXACT []
+synonym: "podocyte microvilli" EXACT []
+synonym: "podocyte microvillous transformation" EXACT []
+synonym: "podocyte pseudovillous transformation" EXACT []
+synonym: "podocyte pseudovillus transformation" EXACT []
+is_a: MP:0005326 ! abnormal podocyte morphology
+created_by: csmith
+creation_date: 2012-12-21T03:23:49Z
+
+[Term]
+id: MP:0011869
+name: detached podocyte
+def: "detachment or loss of adhesion of podocyte foot processes from the glomerular basement membrane (GBM); as a consequence, denuded GBM areas at peripheral capillary loops can become foci for adhesions to parietal epithelial cells (glomerular synechiae) and crescent formation, and podocytes and podocyte-specific proteins may be found in the urine" [MGI:anna]
+synonym: "detached podocyte foot processes" EXACT []
+synonym: "podocyte detachment" EXACT []
+synonym: "podocyte foot process detachment" EXACT []
+is_a: MP:0011864 ! abnormal podocyte adhesion
+created_by: csmith
+creation_date: 2012-12-21T03:27:09Z
+
+[Term]
+id: MP:0011870
+name: abnormal podocyte polarity
+def: "any anomaly in the establishment or maintenance of podocyte cell polarity; podocytes exhibit polarity along at least two axes: (i) an apical-basal axis perpendicular to the glomerular basement membrane in which the apical and basolateral membrane domains of the podocyte are separated by a boundary created by the intercellular junctions of the foot process and (ii) a second plane parallel to the basement membrane that determines the unique orientation of interdigitating foot processes" [MGI:anna]
+is_a: MP:0005326 ! abnormal podocyte morphology
+created_by: csmith
+creation_date: 2012-12-21T03:28:56Z
+
+[Term]
+id: MP:0011871
+name: podocyte hypertrophy
+def: "increase in the bulk size of the modified epithelial cell of the visceral layer of the Bowman capsule in the renal corpuscle, due to cell enlargement" [MGI:anna]
+synonym: "enlarged podocytes" EXACT []
+synonym: "glomerular visceral epithelial cell hypertrophy" EXACT []
+synonym: "hypertrophic glomerular epithelial cells" EXACT []
+synonym: "hypertrophic glomerular visceral epithelial cells" EXACT []
+synonym: "hypertrophic podocytes" EXACT []
+is_a: MP:0005326 ! abnormal podocyte morphology
+created_by: csmith
+creation_date: 2012-12-21T03:29:59Z
+
+[Term]
+id: MP:0011872
+name: absent xiphoid process
+def: "absence of the posterior tip of the sternum" [MGI:Colin_McKerlie]
+is_a: MP:0000159 ! abnormal xiphoid process morphology
+created_by: csmith
+creation_date: 2012-12-21T03:45:48Z
+
+[Term]
+id: MP:0011873
+name: enlarged uterine horn
+def: "increased size of the uterine horn" [MGI:Colin_McKerlie]
+synonym: "enlarged metral horn" EXACT []
+is_a: MP:0009085 ! abnormal uterine horn morphology
+created_by: csmith
+creation_date: 2012-12-21T03:50:19Z
+
+[Term]
+id: MP:0011874
+name: enlarged urinary bladder
+def: "increased size of the distensible musculomembranous organ that serves to collect and store urine excreted by the kidneys" [MGI:Colin_McKerlie]
+is_a: MP:0000538 ! abnormal urinary bladder morphology
+created_by: csmith
+creation_date: 2012-12-21T03:51:32Z
+
+[Term]
+id: MP:0011875
+name: absent stomach
+def: "absence of the sac-like structure of the digestive canal between the esophagus and the small intestine" [MGI:Colin_McKerlie]
+is_a: MP:0000470 ! abnormal stomach morphology
+created_by: csmith
+creation_date: 2012-12-21T03:54:16Z
+
+[Term]
+id: MP:0011876
+name: absent penis
+def: "absence of organ of copulation and urination in the male" [MGI:Colin_McKerlie]
+is_a: MP:0005187 ! abnormal penis morphology
+created_by: csmith
+creation_date: 2012-12-21T03:56:30Z
+
+[Term]
+id: MP:0011877
+name: absent liver
+def: "absence of the bile-secreting exocrine gland, which is important for detoxification; for fat, carbohydrate, and protein metabolism; and for glycogen storage" [MGI:Colin_McKerlie]
+is_a: MP:0000598 ! abnormal liver morphology
+created_by: csmith
+creation_date: 2012-12-21T03:57:54Z
+
+[Term]
+id: MP:0011878
+name: jejunum atresia
+def: "congenital blockage or absence of the lumen of the jejunum" [MGI:Colin_McKerlie]
+is_a: MP:0004002 ! abnormal jejunum morphology
+created_by: csmith
+creation_date: 2012-12-21T03:59:18Z
+
+[Term]
+id: MP:0011879
+name: ileum atresia
+def: "congenital blockage or absence of the lumen of the ileum" [MGI:Colin_McKerlie]
+is_a: MP:0002581 ! abnormal ileum morphology
+created_by: csmith
+creation_date: 2012-12-21T03:59:53Z
+
+[Term]
+id: MP:0011880
+name: absent duodenum
+def: "missing portion of the small intestine that extends from the pyloris to the junction with the jejunum" [MGI:Colin_McKerlie]
+is_a: MP:0003271 ! abnormal duodenum morphology
+created_by: csmith
+creation_date: 2012-12-21T04:00:21Z
+
+[Term]
+id: MP:0011881
+name: distended duodenum
+def: "an expansion in the volume of the portion of the small intestine that extends from the pyloris to the junction with the jejunum, as by stretching or distention" [MGI:Colin_McKerlie]
+is_a: MP:0003271 ! abnormal duodenum morphology
+created_by: csmith
+creation_date: 2012-12-21T04:01:38Z
+
+[Term]
+id: MP:0011882
+name: enlarged duodenum
+def: "increased size of the portion of the small intestine that extends from the pyloris to the junction with the jejunum" [MGI:Colin_McKerlie]
+is_a: MP:0003271 ! abnormal duodenum morphology
+created_by: csmith
+creation_date: 2012-12-21T04:02:07Z
+
+[Term]
+id: MP:0011883
+name: absent diaphragm
+def: "absence of the thin musculomebranous barrier that separates the abdominal and thoracic cavities; these muscles often used for breathing control" [MGI:Colin_McKerlie]
+is_a: MP:0002279 ! abnormal diaphragm morphology
+created_by: csmith
+creation_date: 2012-12-21T04:03:25Z
+
+[Term]
+id: MP:0011884
+name: absent colon
+def: "absence of the portion of the large intestine between the cecum and the rectum" [MGI:Colin_McKerlie]
+is_a: MP:0000495 ! abnormal colon morphology
+created_by: csmith
+creation_date: 2012-12-21T04:04:14Z
+
+[Term]
+id: MP:0011885
+name: abnormal circulating lipase level
+def: "any anomaly in the concentration of lipase in the blood, in particular the serum; the measurement of serum lipase activity is widely used for the diagnosis of acute pancreatitis" [MGI:csmith]
+is_a: MP:0001570 ! abnormal circulating enzyme level
+created_by: csmith
+creation_date: 2013-02-05T12:38:38Z
+
+[Term]
+id: MP:0011886
+name: increased circulating lipase level
+def: "elevated blood level of lipase in the blood, in particular the serum" [MGI:csmith]
+is_a: MP:0011885 ! abnormal circulating lipase level
+created_by: csmith
+creation_date: 2013-02-05T12:39:39Z
+
+[Term]
+id: MP:0011887
+name: decreased circulating lipase level
+def: "reduced blood level of lipase in the blood, in particular the serum" [MGI:csmith]
+is_a: MP:0011885 ! abnormal circulating lipase level
+created_by: csmith
+creation_date: 2013-02-05T12:39:39Z
+
+[Term]
+id: MP:0011888
+name: abnormal circulating total protein level
+def: "total serum protein concentration is outside the normal range" [RGD:cur]
+is_a: MP:0005416 ! abnormal circulating protein level
+created_by: csmith
+creation_date: 2013-02-05T12:43:42Z
+
+[Term]
+id: MP:0011889
+name: abnormal circulating ferritin level
+def: "deviation from the normal concentration of ferritin, a ubiquitous intracellular protein that stores iron and releases it in a controlled fashion; some ferritin is also found in the blood and is measured in tests for overall iron levels, anemia and chronic diseases" [MGI:csmith]
+is_a: MP:0005416 ! abnormal circulating protein level
+created_by: csmith
+creation_date: 2013-02-05T12:48:53Z
+
+[Term]
+id: MP:0011890
+name: increased circulating ferritin level
+def: "elevated concentration in the blood of ferritin, a ubiquitous intracellular protein that stores iron and releases it in a controlled fashion; some ferritin is also found in the blood and is measured in tests for overall iron levels, anemia and chronic diseases" [MGI:csmith]
+is_a: MP:0011889 ! abnormal circulating ferritin level
+created_by: csmith
+creation_date: 2013-02-05T12:49:53Z
+
+[Term]
+id: MP:0011891
+name: decreased circulating ferritin level
+def: "reduced concentration in the blood of ferritin, a ubiquitous intracellular protein that stores iron and releases it in a controlled fashion; some ferritin is also found in the blood and is measured in tests for overall iron levels, anemia and chronic diseases" [MGI:csmith]
+is_a: MP:0011889 ! abnormal circulating ferritin level
+created_by: csmith
+creation_date: 2013-02-05T12:49:53Z
+
+[Term]
+id: MP:0011892
+name: abnormal circulating transferrin level
+def: "deviation from the normal concentration in the blood of a plasma protein that reversibly binds and transports iron and other metal ions through the blood to the liver, spleen and bone marrow" [MGI:csmith]
+is_a: MP:0005416 ! abnormal circulating protein level
+created_by: csmith
+creation_date: 2013-02-05T12:53:05Z
+
+[Term]
+id: MP:0011893
+name: increased circulating transferrin level
+def: "elevated concentration in the blood of a plasma protein that reversibly binds and transports iron and other metal ions through the blood to the liver, spleen and bone marrow" [MGI:csmith]
+is_a: MP:0011892 ! abnormal circulating transferrin level
+created_by: csmith
+creation_date: 2013-02-05T12:54:01Z
+
+[Term]
+id: MP:0011894
+name: decreased circulating transferrin level
+def: "reduced concentration in the blood of a plasma protein that reversibly binds and transports iron and other metal ions through the blood to the liver, spleen and bone marrow" [MGI:csmith]
+is_a: MP:0011892 ! abnormal circulating transferrin level
+created_by: csmith
+creation_date: 2013-02-05T12:54:01Z
+
+[Term]
+id: MP:0011895
+name: abnormal circulating unsaturated transferrin level
+def: "any anomaly in the concentration of transferrin that is not saturated (bound) with iron; this represents the reserve capacity of transferrin and is often measured by the Unsaturated Iron Binding Capacity (UIBC) test" [MGI:csmith]
+synonym: "abnormal unsaturated iron binding capacity" EXACT []
+is_a: MP:0011892 ! abnormal circulating transferrin level
+created_by: csmith
+creation_date: 2013-02-05T01:52:06Z
+
+[Term]
+id: MP:0011896
+name: increased circulating unsaturated transferrin level
+def: "increase in the concentration of transferrin that is not saturated (bound) with iron; this represents the reserve capacity of transferrin and is often measured by the Unsaturated Iron Binding Capacity (UIBC) test" [MGI:csmith]
+synonym: "increased unsaturated iron binding capacity" EXACT []
+is_a: MP:0011893 ! increased circulating transferrin level
+is_a: MP:0011895 ! abnormal circulating unsaturated transferrin level
+created_by: csmith
+creation_date: 2013-02-05T01:52:06Z
+
+[Term]
+id: MP:0011897
+name: decreased circulating unsaturated transferrin level
+def: "reduction in the concentration of transferrin that is not saturated (bound) with iron; this represents the reserve capacity of transferrin and is often measured by the Unsaturated Iron Binding Capacity (UIBC) test" [MGI:csmith]
+synonym: "decreased unsaturated iron binding capacity" RELATED []
+is_a: MP:0011894 ! decreased circulating transferrin level
+is_a: MP:0011895 ! abnormal circulating unsaturated transferrin level
+created_by: csmith
+creation_date: 2013-02-05T01:52:06Z
+
+[Term]
+id: MP:0011898
+name: abnormal platelet cell number
+def: "anomaly in the normal numbers of the non-nucleated cells found in the blood and involved in blood coagulation" [MGI:csmith]
+synonym: "abnormal thrombocyte cell number" EXACT []
+is_a: MP:0011180 ! abnormal hematopoietic cell number
+created_by: csmith
+creation_date: 2013-02-05T02:12:57Z
+
+[Term]
+id: MP:0011899
+name: podocyte vacuolization
+def: "abnormal presence of cavities or fluid-filled vesicles in the cytoplasm of the modified epithelial cell of the visceral layer of the Bowman capsule in the renal corpuscle, often indicative of podocyte injury" [MGI:anna]
+synonym: "glomerular epithelial cell vacuolation" EXACT []
+synonym: "glomerular epithelial cell vacuolization" EXACT []
+synonym: "podocyte vacuolation" EXACT []
+synonym: "podocyte vacuoles" EXACT []
+synonym: "vacuolated podocytes" EXACT []
+synonym: "vacuolization of visceral epithelial cells" BROAD []
+synonym: "vacuolized podocytes" EXACT []
+is_a: MP:0005326 ! abnormal podocyte morphology
+created_by: csmith
+creation_date: 2013-02-05T03:15:15Z
+
+[Term]
+id: MP:0011900
+name: podocyturia
+def: "presence of kidney podocytes, their cell fragments, or podocyte-specific proteins in the urine; urinary loss of viable podocytes may serve as a diagnostic tool for pre-eclampsia and as a marker of active renal disease" [MGI:anna]
+synonym: "urinary podocyte excretion" EXACT []
+synonym: "urinary podocytes" EXACT []
+is_a: MP:0009643 ! abnormal urine homeostasis
+created_by: csmith
+creation_date: 2013-02-05T03:26:54Z
+
+[Term]
+id: MP:0011901
+name: abnormal hematopoietic stem cell proliferation
+def: "anomaly in the ability of a hematopoietic stem cell population to undergo expansion by cell division" [MGI:csmith]
+synonym: "abnormal hematopoietic progenitor cell proliferation" EXACT []
+synonym: "abnormal hemopoietic progenitor cell proliferation" EXACT []
+synonym: "abnormal HSC proliferation" EXACT []
+is_a: MP:0000350 ! abnormal cell proliferation
+is_a: MP:0010763 ! abnormal hematopoietic stem cell physiology
+created_by: csmith
+creation_date: 2013-02-20T11:55:12Z
+
+[Term]
+id: MP:0011902
+name: increased hematopoietic stem cell proliferation
+def: "increase in the expansion rate of a hematopoietic stem cell population by cell division" [MGI:csmith]
+synonym: "increased hematopoietic progenitor cell proliferation" EXACT []
+synonym: "increased hemopoietic progenitor cell proliferation" EXACT []
+synonym: "increased HSC proliferation" EXACT []
+is_a: MP:0000351 ! increased cell proliferation
+is_a: MP:0011901 ! abnormal hematopoietic stem cell proliferation
+created_by: csmith
+creation_date: 2013-02-20T11:57:06Z
+
+[Term]
+id: MP:0011903
+name: decreased hematopoietic stem cell proliferation
+def: "reduction in the expansion rate of a hematopoietic stem cell population by cell division" [MGI:csmith]
+synonym: "decreased hematopoietic progenitor cell proliferation" EXACT []
+synonym: "decreased hemopoietic progenitor cell proliferation" EXACT []
+synonym: "decreased HSC proliferation" EXACT []
+is_a: MP:0000352 ! decreased cell proliferation
+is_a: MP:0011901 ! abnormal hematopoietic stem cell proliferation
+created_by: csmith
+creation_date: 2013-02-20T11:57:06Z
+
+[Term]
+id: MP:0011904
+name: abnormal Schwann cell physiology
+def: "any functional anomaly of the cells which form the insulating myelin sheaths of peripheral axons" [MESH:A08.637.800]
+is_a: MP:0003690 ! abnormal glial cell physiology
+created_by: csmith
+creation_date: 2013-02-20T12:52:51Z
+
+[Term]
+id: MP:0011905
+name: abnormal Schwann cell proliferation
+def: "any anomaly in the ability of a Schwann cell to undergo rapid expansion by cell division" [MGI:csmith]
+is_a: MP:0000350 ! abnormal cell proliferation
+is_a: MP:0011904 ! abnormal Schwann cell physiology
+created_by: csmith
+creation_date: 2013-02-20T12:54:04Z
+
+[Term]
+id: MP:0011906
+name: increased Schwann cell proliferation
+def: "increase in the expansion rate of a Schwann cell population by cell division" [MGI:csmith]
+is_a: MP:0000351 ! increased cell proliferation
+is_a: MP:0011905 ! abnormal Schwann cell proliferation
+created_by: csmith
+creation_date: 2013-02-20T12:54:04Z
+
+[Term]
+id: MP:0011907
+name: decreased Schwann cell proliferation
+def: "reduction in the expansion rate of a Schwann cell population by cell division" [MGI:csmith]
+synonym: "impaired Schwann cell proliferation" EXACT []
+is_a: MP:0000352 ! decreased cell proliferation
+is_a: MP:0011905 ! abnormal Schwann cell proliferation
+created_by: csmith
+creation_date: 2013-02-20T12:54:04Z
+
+[Term]
+id: MP:0011908
+name: abnormal pancreatic endocrine progenitor cell proliferation
+def: "anomaly in the ability of a pancreatic endocrine progenitor cell population to undergo expansion by cell division" [MGI:csmith]
+synonym: "abnormal pancreatic islet progenitor cell proliferation" EXACT []
+xref: CL:0002351
+is_a: MP:0000350 ! abnormal cell proliferation
+is_a: MP:0011911 ! abnormal pancreatic endocrine progenitor cell physiology
+created_by: csmith
+creation_date: 2013-02-20T14:31:03Z
+
+[Term]
+id: MP:0011909
+name: increased pancreatic endocrine progenitor cell proliferation
+def: "increased ability of a pancreatic endocrine progenitor cell population to undergo expansion by cell division" [MGI:csmith]
+synonym: "increased pancreatic islet progenitor cell proliferation" EXACT []
+xref: CL:0002351
+is_a: MP:0000351 ! increased cell proliferation
+is_a: MP:0011908 ! abnormal pancreatic endocrine progenitor cell proliferation
+created_by: csmith
+creation_date: 2013-02-20T14:31:56Z
+
+[Term]
+id: MP:0011910
+name: decreased pancreatic endocrine progenitor cell proliferation
+def: "reduced ability of a pancreatic endocrine progenitor cell population to undergo expansion by cell division" [MGI:csmith]
+synonym: "decreased pancreatic islet progenitor cell proliferation" EXACT []
+xref: CL:0002351
+is_a: MP:0000352 ! decreased cell proliferation
+is_a: MP:0011908 ! abnormal pancreatic endocrine progenitor cell proliferation
+created_by: csmith
+creation_date: 2013-02-20T14:31:56Z
+
+[Term]
+id: MP:0011911
+name: abnormal pancreatic endocrine progenitor cell physiology
+def: "any functional anomaly of a multi-fate stem cell that is able to differentiate into the pancreas alpha, beta and delta endocrine cells" [CL:0002351]
+synonym: "abnormal pancreatic islet progenitor cell physiology" EXACT []
+xref: CL:0002351
+is_a: MP:0010147 ! abnormal endocrine pancreas physiology
+created_by: csmith
+creation_date: 2013-02-20T15:47:45Z
+
+[Term]
+id: MP:0011912
+name: abnormal circulating fibronectin level
+def: "aberrant concentration in the blood of the glycoprotein that binds to integrins or components of the extracellular matrix; plays a major role in cell adhesion, growth, migration, differentiation, wound healing, and embryonic development" [MPD:Molly]
+synonym: "abnormal plasma fibronectin level" EXACT []
+synonym: "abnormal soluble fibronectin level" EXACT []
+is_a: MP:0005416 ! abnormal circulating protein level
+created_by: csmith
+creation_date: 2013-03-07T11:54:01Z
+
+[Term]
+id: MP:0011913
+name: abnormal reticulocyte cell number
+def: "altered number of immature (nucleated) erythrocytes" [MPD:Molly]
+is_a: MP:0002424 ! abnormal reticulocyte morphology
+created_by: csmith
+creation_date: 2013-03-07T13:05:06Z
+
+[Term]
+id: MP:0011914
+name: decreased heart left atrium weight
+def: "less than average weight of the left atrium" [MPD:Molly]
+synonym: "reduced heart left atrium weight" EXACT []
+is_a: MP:0002834 ! decreased heart weight
+is_a: MP:0003923 ! abnormal heart left atrium morphology
+created_by: csmith
+creation_date: 2013-03-07T13:20:51Z
+
+[Term]
+id: MP:0011915
+name: increased heart left atrium weight
+def: "more than average weight of the left atrium" [MPD:Molly]
+is_a: MP:0002833 ! increased heart weight
+is_a: MP:0003923 ! abnormal heart left atrium morphology
+created_by: csmith
+creation_date: 2013-03-07T13:20:51Z
+
+[Term]
+id: MP:0011916
+name: decreased heart right atrium weight
+def: "less than average weight of the right atrium" [MPD:Molly]
+synonym: "reduced heart right atrium weight" EXACT []
+is_a: MP:0002834 ! decreased heart weight
+is_a: MP:0003922 ! abnormal heart right atrium morphology
+created_by: csmith
+creation_date: 2013-03-07T13:20:51Z
+
+[Term]
+id: MP:0011917
+name: increased heart right atrium weight
+def: "more than average weight of the right atrium" [MPD:Molly]
+is_a: MP:0002833 ! increased heart weight
+is_a: MP:0003922 ! abnormal heart right atrium morphology
+created_by: csmith
+creation_date: 2013-03-07T13:20:51Z
+
+[Term]
+id: MP:0011918
+name: abnormal PQ interval
+def: "anomaly in the length of time between the beginning of atrial depolarization and the end of atrial repolarization (or recovery), measured by the interval from the beginning of the P wave to the end of the Q wave" [MPD:Molly]
+is_a: MP:0010508 ! abnormal heart electrocardiography waveform feature
+created_by: csmith
+creation_date: 2013-03-07T13:44:21Z
+
+[Term]
+id: MP:0011919
+name: abnormal R wave
+def: "any anomaly in the R wave which represents ventricular depolarization and corresponds to electrical impulses rather than mechanical ventricular contractions; irregular or multiple R waves may indicate arrhythmia and the shape of the R waves may indicate ventricular problems" [MPD:Molly]
+is_a: MP:0010508 ! abnormal heart electrocardiography waveform feature
+created_by: csmith
+creation_date: 2013-03-07T13:44:21Z
+
+[Term]
+id: MP:0011920
+name: abnormal S wave
+def: "any anomaly in the S wave which represents the end of ventricular depolarization and corresponds to an isoelectric state rather than mechanical ventricular relaxation" [MPD:Molly]
+is_a: MP:0010508 ! abnormal heart electrocardiography waveform feature
+created_by: csmith
+creation_date: 2013-03-07T13:44:21Z
+
+[Term]
+id: MP:0011921
+name: abnormal zona intermedia morphology
+def: "any structural anomaly of the region between the zona glomerulosa and zona fasciculata that is relatively thin and contains mostly undifferentiated cells" [MPD:Molly]
+is_a: MP:0008288 ! abnormal adrenal cortex morphology
+created_by: csmith
+creation_date: 2013-03-07T13:53:34Z
+
+[Term]
+id: MP:0011922
+name: abnormal circulating osteocalcin level
+def: "aberrant concentration in the blood of this hormone secreted by osteoblasts which are found in bone and dentin" [MPD:Molly]
+is_a: MP:0005418 ! abnormal circulating hormone level
+created_by: csmith
+creation_date: 2013-03-07T13:55:35Z
+
+[Term]
+id: MP:0011923
+name: abnormal urine volume
+def: "any anomaly in the amount of space occupied by urine in the bladder" [MPD:Molly]
+is_a: MP:0009643 ! abnormal urine homeostasis
+created_by: csmith
+creation_date: 2013-03-07T13:56:46Z
+
+[Term]
+id: MP:0011924
+name: abnormal liver zinc level
+def: "anomaly in the amount of zinc present in the liver tissue" [MPD:Molly]
+is_a: MP:0000598 ! abnormal liver morphology
+is_a: MP:0009615 ! abnormal zinc homeostasis
+created_by: csmith
+creation_date: 2013-03-07T13:57:41Z
+
+[Term]
+id: MP:0011925
+name: abnormal heart echocardiography feature
+def: "any anomaly in echocardiographic representation of systolic and diastolic function, ventricular compliance, valvular function, or interventricular septum features" [MPD:Molly]
+is_a: MP:0001544 ! abnormal cardiovascular system physiology
+created_by: csmith
+creation_date: 2013-03-07T14:21:58Z
+
+[Term]
+id: MP:0011926
+name: abnormal cardiac valve physiology
+is_a: MP:0001544 ! abnormal cardiovascular system physiology
+created_by: csmith
+creation_date: 2013-03-07T14:24:43Z
+
+[Term]
+id: MP:0011927
+name: abnormal cardiac valve flow
+def: "any anomaly of the regulated one-way movement of blood through the heart valves" [MGI:csmith]
+is_a: MP:0011926 ! abnormal cardiac valve physiology
+created_by: csmith
+creation_date: 2013-03-07T14:26:09Z
+
+[Term]
+id: MP:0011928
+name: abnormal mitral valve flow
+def: "abnormality of valve function causing passive filling of the left ventricle or active filling of the left atrium" [MPD:Molly]
+is_a: MP:0011927 ! abnormal cardiac valve flow
+created_by: csmith
+creation_date: 2013-03-07T14:26:09Z
+
+[Term]
+id: MP:0011929
+name: abnormal aortic valve flow
+def: "abnormality impeding normal blood flow or allowing blood to backflow through this valve into the left ventricle" [MPD:Molly]
+is_a: MP:0011927 ! abnormal cardiac valve flow
+created_by: csmith
+creation_date: 2013-03-07T14:26:09Z
+
+[Term]
+id: MP:0011930
+name: abnormal tricuspid valve flow
+def: "abnormality of valve function causing passive filling of the right ventricle or active filling of the right atrium" [MPD:Molly]
+is_a: MP:0011927 ! abnormal cardiac valve flow
+created_by: csmith
+creation_date: 2013-03-07T14:26:09Z
+
+[Term]
+id: MP:0011931
+name: abnormal pulmonary valve flow
+def: "abnormality impeding normal blood flow or allowing blood to backflow through this valve into the right ventricle" [MPD:Molly]
+is_a: MP:0011927 ! abnormal cardiac valve flow
+created_by: csmith
+creation_date: 2013-03-07T14:26:09Z
+
+[Term]
+id: MP:0011932
+name: abnormal endocrine pancreas development
+is_a: MP:0003934 ! abnormal pancreas development
+created_by: csmith
+creation_date: 2013-03-07T15:09:00Z
+
+[Term]
+id: MP:0011933
+name: abnormal exocrine pancreas development
+is_a: MP:0003934 ! abnormal pancreas development
+created_by: csmith
+creation_date: 2013-03-07T15:09:00Z
+
+[Term]
+id: MP:0011934
+name: abnormal branching involved in pancreas development
+def: "any anomaly in the process in which the branches of the developing pancreas are generated and organized" [GO:0061114]
+is_a: MP:0003934 ! abnormal pancreas development
+created_by: csmith
+creation_date: 2013-03-07T15:09:00Z
+
+[Term]
+id: MP:0011935
+name: abnormal pancreatic bud formation
+def: "any anomaly in the process in which the foregut region specified to become the pancreas forms a bud" [GO:0061130]
+is_a: MP:0011934 ! abnormal branching involved in pancreas development
+created_by: csmith
+creation_date: 2013-03-07T15:11:37Z
+
+[Term]
+id: MP:0011936
+name: abnormal PP interval
+def: "any anomaly in the distance between consecutive P waves in the electrocardiogram, representing the length of the cardiac cycle; this value is often used in calculating heart rate and heart rate variability" [MGI:csmith]
+is_a: MP:0010508 ! abnormal heart electrocardiography waveform feature
+created_by: csmith
+creation_date: 2013-03-08T13:36:03Z
+
+[Term]
+id: MP:0011937
+name: shortened PP interval
+def: "decrease in the distance between consecutive P waves in the electrocardiogram, representing the length of the cardiac cycle" [MGI:csmith]
+is_a: MP:0011936 ! abnormal PP interval
+created_by: csmith
+creation_date: 2013-03-08T13:36:17Z
+
+[Term]
+id: MP:0011938
+name: prolonged PP interval
+def: "increase in the distance between consecutive P waves in the electrocardiogram, representing the length of the cardiac cycle" [MGI:csmith]
+is_a: MP:0011936 ! abnormal PP interval
+created_by: csmith
+creation_date: 2013-03-08T13:36:36Z
+
+[Term]
+id: MP:0011939
+name: increased food intake
+def: "increase in the total number of calories/food amount taken in over time when compared to the normal state" [MGI:csmith]
+is_a: MP:0005449 ! abnormal food intake
+created_by: csmith
+creation_date: 2013-03-11T12:35:34Z
+
+[Term]
+id: MP:0011940
+name: decreased food intake
+def: "reduction in the total number of calories/food amount taken in over time when compared to the normal state" [MGI:csmith]
+synonym: "hypophagia" EXACT []
+synonym: "reduced food intake" EXACT []
+is_a: MP:0005449 ! abnormal food intake
+created_by: csmith
+creation_date: 2013-03-11T12:35:34Z
+
+[Term]
+id: MP:0011941
+name: increased fluid intake
+def: "increase in the total amount of fluid taken in over time when compared to the normal state" [MGI:csmith]
+synonym: "increased liquid intake" RELATED []
+is_a: MP:0011947 ! abnormal fluid intake
+created_by: csmith
+creation_date: 2013-03-11T13:55:16Z
+
+[Term]
+id: MP:0011942
+name: decreased fluid intake
+def: "reduction in the total amount of fluid taken in over time when compared to the normal state" [MGI:csmith]
+synonym: "decreased liquid intake" RELATED []
+is_a: MP:0011947 ! abnormal fluid intake
+created_by: csmith
+creation_date: 2013-03-11T13:55:16Z
+
+[Term]
+id: MP:0011943
+name: abnormal circadian feeding behavior
+def: "anomaly in the fluctuation pattern in feeding behavior (amount and instances) that occurs over an approximately 24 hour light/dark cycle" [MGI:csmith]
+is_a: MP:0001431 ! abnormal eating behavior
+created_by: csmith
+creation_date: 2013-03-11T15:14:50Z
+
+[Term]
+id: MP:0011944
+name: abnormal eating frequency
+def: "anomaly in the number of discrete instances of initiation of eating over time, regardless of amount eaten" [MGI:csmith]
+is_a: MP:0001431 ! abnormal eating behavior
+created_by: csmith
+creation_date: 2013-03-11T15:21:56Z
+
+[Term]
+id: MP:0011945
+name: increased eating frequency
+def: "increase in the number of discrete instances of initiation of eating over time, regardless of amount eaten" [MGI:csmith]
+is_a: MP:0011944 ! abnormal eating frequency
+created_by: csmith
+creation_date: 2013-03-11T15:23:38Z
+
+[Term]
+id: MP:0011946
+name: decreased eating frequency
+def: "reduction in the number of discrete instances of initiation of eating over time, regardless of amount eaten" [MGI:csmith]
+synonym: "reduced eating frequency" EXACT []
+is_a: MP:0011944 ! abnormal eating frequency
+created_by: csmith
+creation_date: 2013-03-11T15:23:38Z
+
+[Term]
+id: MP:0011947
+name: abnormal fluid intake
+def: "significant anomaly in the total amount of fluid taken in over time when compared to the normal state" [MGI:csmith]
+is_a: MP:0001422 ! abnormal drinking behavior
+created_by: csmith
+creation_date: 2013-03-11T15:26:07Z
+
+[Term]
+id: MP:0011948
+name: abnormal drinking frequency
+def: "anomaly in the number of discrete instances of initiation of drinking over time, regardless of amount ingested" [MGI:csmith]
+is_a: MP:0001422 ! abnormal drinking behavior
+created_by: csmith
+creation_date: 2013-03-11T15:27:45Z
+
+[Term]
+id: MP:0011949
+name: increased drinking frequency
+def: "increase in the number of discrete instances of initiation of drinking over time, regardless of amount ingested" [MGI:csmith]
+is_a: MP:0011948 ! abnormal drinking frequency
+created_by: csmith
+creation_date: 2013-03-11T15:28:22Z
+
+[Term]
+id: MP:0011950
+name: decreased drinking frequency
+def: "reduction in the number of discrete instances of initiation of drinking over time, regardless of amount ingested" [MGI:csmith]
+synonym: "reduced drinking frequency" EXACT []
+is_a: MP:0011948 ! abnormal drinking frequency
+created_by: csmith
+creation_date: 2013-03-11T15:28:22Z
+
+[Term]
+id: MP:0011951
+name: increased cardiac stroke volume
+def: "increase in the volume of blood pushed into the aorta with each beat of the heart" [MGI:csmith]
+is_a: MP:0000304 ! abnormal cardiac stroke volume
+created_by: csmith
+creation_date: 2013-03-11T15:46:38Z
+
+[Term]
+id: MP:0011952
+name: decreased cardiac stroke volume
+def: "reduction in the volume of blood pushed into the aorta with each beat of the heart" [MGI:csmith]
+is_a: MP:0000304 ! abnormal cardiac stroke volume
+created_by: csmith
+creation_date: 2013-03-11T15:46:38Z
+
+[Term]
+id: MP:0011953
+name: prolonged PQ interval
+def: "increase in the length of time between the beginning of atrial depolarization and the end of atrial repolarization (or recovery), measured by the interval from the beginning of the P wave to the end of the Q wave" [MPD:Molly]
+is_a: MP:0011918 ! abnormal PQ interval
+created_by: csmith
+creation_date: 2013-03-11T16:00:36Z
+
+[Term]
+id: MP:0011954
+name: shortened PQ interval
+def: "decrease in the length of time between the beginning of atrial depolarization and the end of atrial repolarization (or recovery), measured by the interval from the beginning of the P wave to the end of the Q wave" [MPD:Molly]
+is_a: MP:0011918 ! abnormal PQ interval
+created_by: csmith
+creation_date: 2013-03-11T16:00:36Z
+
+[Term]
+id: MP:0011955
+name: phenotypic reversion by gene product interaction
+def: "two or more mutant gene products, when existing together in one organism, result in a wild-type phenotype when each independent mutation shows a phenotype" [MGI:llw2]
+is_a: MP:0003171 ! phenotypic reversion
+created_by: csmith
+creation_date: 2013-03-11T22:13:27Z
+
+[Term]
+id: MP:0011956
+name: abnormal compensatory feeding amount
+def: "anomaly in the amount of food consumed after a period of fasting" [MGI:csmith]
+is_a: MP:0001431 ! abnormal eating behavior
+created_by: csmith
+creation_date: 2013-03-13T16:06:11Z
+
+[Term]
+id: MP:0011957
+name: decreased compensatory feeding amount
+def: "decreased amount of food consumed after a period of fasting" [MGI:csmith]
+synonym: "reduced compensatory feeding amount" EXACT []
+is_a: MP:0011940 ! decreased food intake
+is_a: MP:0011956 ! abnormal compensatory feeding amount
+created_by: csmith
+creation_date: 2013-03-13T16:06:11Z
+
+[Term]
+id: MP:0011958
+name: increased compensatory feeding amount
+def: "increased amount of food consumed after a period of fasting" [MGI:csmith]
+is_a: MP:0011939 ! increased food intake
+is_a: MP:0011956 ! abnormal compensatory feeding amount
+created_by: csmith
+creation_date: 2013-03-13T16:06:11Z
+
+[Term]
+id: MP:0011959
+name: abnormal eye posterior chamber depth
+def: "anomaly in the distance between the iris and the lens at the center plane (maximum distance) of the posterior chamber, compared to controls" [MGI:csmith]
+synonym: "abnormal PCD" EXACT []
+is_a: MP:0005299 ! abnormal eye posterior chamber morphology
+created_by: csmith
+creation_date: 2013-03-15T13:59:20Z
+
+[Term]
+id: MP:0011960
+name: abnormal eye anterior chamber depth
+def: "anomaly in the distance between the iris and the cornea at the center plane (maximum distance) of the anterior chamber, compared to controls" [MGI:csmith]
+synonym: "abnormal ACD" EXACT []
+is_a: MP:0005205 ! abnormal eye anterior chamber morphology
+created_by: csmith
+creation_date: 2013-03-15T14:25:09Z
+
+[Term]
+id: MP:0011961
+name: abnormal cornea thickness
+def: "increased or decreased width of the cornea in the center plane" [MGI:csmith]
+synonym: "abnormal corneal thickness" EXACT []
+is_a: MP:0001312 ! abnormal cornea morphology
+created_by: csmith
+creation_date: 2013-03-15T14:46:10Z
+
+[Term]
+id: MP:0011962
+name: increased cornea thickness
+def: "increased width of the cornea in the center plane" [MGI:csmith]
+is_a: MP:0011961 ! abnormal cornea thickness
+created_by: csmith
+creation_date: 2013-03-15T14:53:47Z
+
+[Term]
+id: MP:0011963
+name: abnormal total retina thickness
+def: "increased or decreased width of the retina through the center plane" [MGI:csmith]
+synonym: "abnormal total retinal thickness" EXACT []
+is_a: MP:0001325 ! abnormal retina morphology
+created_by: csmith
+creation_date: 2013-03-15T15:03:08Z
+
+[Term]
+id: MP:0011964
+name: increased total retina thickness
+def: "increased width of the retina through the center plane" [MGI:csmith]
+synonym: "increased total retinal thickness" EXACT []
+is_a: MP:0011963 ! abnormal total retina thickness
+created_by: csmith
+creation_date: 2013-03-15T15:04:09Z
+
+[Term]
+id: MP:0011965
+name: decreased total retina thickness
+def: "decreased width of the retina through the center plane" [MGI:csmith]
+synonym: "decreased total retinal thickness" EXACT []
+synonym: "reduced total retina thickness" EXACT []
+is_a: MP:0011963 ! abnormal total retina thickness
+created_by: csmith
+creation_date: 2013-03-15T15:04:09Z
+
+[Term]
+id: MP:0011966
+name: abnormal auditory brainstem response waveform shape
+def: "any anomaly in the characteristic pattern of electrical activity recording of a series of vertex positive waves generated by neurons in the ascending auditory system, that can be recorded from scalp electrograms by using computer-averaged responses to short tone bursts" [MGI:csmith]
+subset: IMPC
+is_a: MP:0004738 ! abnormal auditory brainstem response
+created_by: csmith
+creation_date: 2013-04-04T12:51:28Z
+
+[Term]
+id: MP:0011967
+name: increased or absent threshold for auditory brainstem response
+def: "increase in the value at which one or more sound frequencies or broadband clicks first elicits a recordable response generated by electrical activity of neurons in the ascending auditory system, or complete lack of a recordable response at any frequency or broadband click" [MGI:csmith]
+subset: IMPC
+synonym: "absent ABRs" NARROW []
+synonym: "absent BAEP(s)" NARROW []
+synonym: "absent brainstem auditory brainstem response(s)" NARROW []
+synonym: "absent brainstem auditory evoked potential" NARROW []
+synonym: "absent brainstem evoked responses" NARROW []
+is_a: MP:0004738 ! abnormal auditory brainstem response
+created_by: csmith
+creation_date: 2013-04-04T12:52:39Z
+
+[Term]
+id: MP:0011968
+name: decreased threshold for auditory brainstem response
+def: "reduction in the value at which one or more sound frequencies or broadband clicks first elicits a recordable response generated by electrical activity of neurons in the ascending auditory system" [MGI:csmith]
+subset: IMPC
+is_a: MP:0004738 ! abnormal auditory brainstem response
+created_by: csmith
+creation_date: 2013-04-04T12:52:59Z
+
+[Term]
+id: MP:0011969
+name: abnormal circulating triglyceride level
+def: "abnormal concentration of naturally occurring esters of three fatty acids and glycerol in the blood; triglycerides are widespread in adipose tissue, commonly circulate in the blood in the form of lipoproteins, and are involved in the process of bidirectional transference of adipose fat and blood glucose with the liver" [MGI:csmith]
+is_a: MP:0003949 ! abnormal circulating lipid level
+created_by: csmith
+creation_date: 2013-04-04T16:10:51Z
+
+[Term]
+id: MP:0011970
+name: abnormal circulating lactate dehydrogenase level
+def: "abnormal blood level of the tetrameric enzyme that, along with the coenzyme NAD+, catalyzes the interconversion of lactate and pyruvate; measurements of circulating levels are used clinically as a diagnostic indicator of tissue breakdown, some forms of cancer or particular infection types" [MeSH:D08.811.682.047.551.400, MGI:csmith]
+synonym: "abnormal circulating LDH level" EXACT []
+is_a: MP:0001570 ! abnormal circulating enzyme level
+is_a: MP:0002943 ! abnormal lactate dehydrogenase level
+created_by: csmith
+creation_date: 2013-04-05T12:37:05Z
+
+[Term]
+id: MP:0011971
+name: increased circulating lactate dehydrogenase level
+def: "elevated blood level of the tetrameric enzyme that, along with the coenzyme NAD+, catalyzes the interconversion of lactate and pyruvate; measurements of circulating levels are used clinically as a diagnostic indicator of tissue breakdown, some forms of cancer or particular infection types" [MeSH:D08.811.682.047.551.400, MGI:csmith]
+synonym: "increased circulating LDH level" EXACT []
+is_a: MP:0002944 ! increased lactate dehydrogenase level
+is_a: MP:0011970 ! abnormal circulating lactate dehydrogenase level
+created_by: csmith
+creation_date: 2013-04-05T12:37:05Z
+
+[Term]
+id: MP:0011972
+name: decreased circulating lactate dehydrogenase level
+def: "reduced blood level of the tetrameric enzyme that, along with the coenzyme NAD+, catalyzes the interconversion of lactate and pyruvate; measurements of circulating levels are used clinically as a diagnostic indicator of tissue breakdown, some forms of cancer or particular infection types" [MeSH:D08.811.682.047.551.400, MGI:csmith]
+synonym: "decreased circulating LDH level" EXACT []
+is_a: MP:0005571 ! decreased lactate dehydrogenase level
+is_a: MP:0011970 ! abnormal circulating lactate dehydrogenase level
+created_by: csmith
+creation_date: 2013-04-05T12:37:05Z
+
+[Term]
+id: MP:0011973
+name: abnormal circulating glycerol level
+def: "abnormal blood level of trihydroxy sugar alcohols that are precursors for synthesis of triacylglycerols, and of phospholipids and cellular glucose in the liver and adipose tissue; fat catabolism results in the release of glycerol and fatty acids into the bloodstream to be used as an energy source" [MGI:csmith]
+is_a: MP:0003439 ! abnormal glycerol level
+is_a: MP:0003949 ! abnormal circulating lipid level
+created_by: csmith
+creation_date: 2013-04-05T13:35:12Z
+
+[Term]
+id: MP:0011974
+name: intestinal stenosis
+def: "abnormal narrowing or constriction of the segment of the alimentary canal extending from the pyloric sphincter of the stomach to the anus" [MGI:llw2]
+synonym: "intestine stenosis" EXACT []
+is_a: MP:0000477 ! abnormal intestine morphology
+created_by: csmith
+creation_date: 2013-04-08T15:15:23Z
+
+[Term]
+id: MP:0011975
+name: neuronal cytoplasmic inclusions
+def: "presence of aggregates of protein within the cytoplasm of neurons; hallmark of neurodegenerative disorders" [MGI:mnk]
+is_a: MP:0002882 ! abnormal neuron morphology
+created_by: csmith
+creation_date: 2013-04-08T15:20:07Z
+
+[Term]
+id: MP:0011976
+name: sweet preference
+def: "subjects demonstrate predilection for sweet tasting substances over other offered substance" [MGI:csmith]
+is_a: MP:0001432 ! abnormal food preference
+created_by: csmith
+creation_date: 2013-04-16T12:20:09Z
+
+[Term]
+id: MP:0011977
+name: abnormal sodium ion homeostasis
+def: "anomaly in the processes involved in the maintenance of an internal equilibrium of sodium ions within the body or between a cell and its external environment" [MPD:Molly]
+is_a: MP:0001765 ! abnormal ion homeostasis
+created_by: csmith
+creation_date: 2013-05-03T15:48:46Z
+
+[Term]
+id: MP:0011978
+name: abnormal potassium ion homeostasis
+def: "anomaly in the processes involved in the maintenance of an internal equilibrium of potassium ions within the body or between a cell and its external environment" [MPD:Molly]
+is_a: MP:0001765 ! abnormal ion homeostasis
+created_by: csmith
+creation_date: 2013-05-03T15:48:46Z
+
+[Term]
+id: MP:0011979
+name: abnormal magnesium ion homeostasis
+def: "anomaly in the processes involved in the maintenance of an internal equilibrium of magnesium ions within the body or between a cell and its external environment" [MPD:Molly]
+is_a: MP:0001765 ! abnormal ion homeostasis
+created_by: csmith
+creation_date: 2013-05-03T15:48:46Z
+
+[Term]
+id: MP:0011980
+name: absent Langerhans cell precursors
+def: "absence of the yolk sac-derived primitive myeloid progenitors that populate the skin before the onset of fetal liver hematopoiesis" [PMID:22565823]
+is_a: MP:0008115 ! abnormal dendritic cell differentiation
+created_by: csmith
+creation_date: 2013-05-06T15:12:34Z
+
+[Term]
+id: MP:0011981
+name: abnormal microglial cell differentiation
+def: "atypical production of or inability to produce the small, migratory, phagocytic, interstitial cells derived from myeloid progenitor cells and found in the parenchyma of the central nervous system" [PMID:22729249]
+is_a: MP:0000136 ! abnormal microglial cell morphology
+created_by: csmith
+creation_date: 2013-05-06T15:15:28Z
+
+[Term]
+id: MP:0011982
+name: decreased microglial cell number
+def: "reduced number of the small, migratory, phagocytic, interstitial cells derived from myeloid progenitor cells and found in the parenchyma of the central nervous system" [PMID:22046273]
+is_a: MP:0000136 ! abnormal microglial cell morphology
+created_by: csmith
+creation_date: 2013-05-06T15:16:47Z
+
+[Term]
+id: MP:0011983
+name: abnormal Ito cell differentiation
+def: "atypical production of or inability to produce the fat-storing cells that line the hepatic sinusoids" [PMID:9407545]
+synonym: "abnormal hepatic stellate cell differentiation" EXACT []
+is_a: MP:0008990 ! abnormal Ito cell morphology
+created_by: csmith
+creation_date: 2013-05-06T15:18:26Z
+
+[Term]
+id: MP:0011984
+name: decreased enteroendocrine cell number
+def: "reduction in the number of the various hormone- or neurotransmitter-secreting epithelial cells present throughout the mucosa of the digestive tract" [PMID:23451116]
+is_a: MP:0004141 ! abnormal enteroendocrine cell morphology
+created_by: csmith
+creation_date: 2013-05-06T15:20:26Z
+
+[Term]
+id: MP:0011985
+name: abnormal macrophage proliferation
+def: "anomaly in the ability of macrophages to undergo expansion by cell division; macrophages are large mononuclear phagocytes which differentiate from monocytes, are typically resident in a particular tissue, and capable of phagocytosing a variety of extracellular particulate material, including immune complexes, microorganisms, and dead cells" [CL:0000235]
+is_a: MP:0000350 ! abnormal cell proliferation
+is_a: MP:0002451 ! abnormal macrophage physiology
+created_by: csmith
+creation_date: 2013-05-06T15:38:29Z
+
+[Term]
+id: MP:0011986
+name: decreased macrophage proliferation
+def: "reduced ability of macrophages to undergo expansion by cell division; macrophages are large mononuclear phagocytes which differentiate from monocytes, are typically resident in a particular tissue, and capable of phagocytosing a variety of extracellular particulate material, including immune complexes, microorganisms, and dead cells" [CL:0000235]
+synonym: "reduced macrophage proliferation" EXACT []
+is_a: MP:0000352 ! decreased cell proliferation
+is_a: MP:0011985 ! abnormal macrophage proliferation
+created_by: csmith
+creation_date: 2013-05-06T15:38:54Z
+
+[Term]
+id: MP:0011987
+name: abnormal GABAergic neuron physiology
+def: "any functional anomaly of the neurons that utilize gamma-aminobutyric acid as a neurotransmitter" [PMID:8787741]
+is_a: MP:0004811 ! abnormal neuron physiology
+created_by: csmith
+creation_date: 2013-05-06T16:00:42Z
+
+[Term]
+id: MP:0011988
+name: increased mating frequency
+def: "increased number of attempts of sexual behavioral contact between an initiating organism and a receptive partner" [MESH:F01.145.113.252.748.200]
+synonym: "increased coitus frequency" EXACT []
+synonym: "increased copulation frequency" BROAD []
+is_a: MP:0001377 ! abnormal mating frequency
+created_by: csmith
+creation_date: 2013-05-14T12:41:02Z
+
+[Term]
+id: MP:0011989
+name: abnormal porphyrin level
+def: "aberrant concentration of porphyrins or protoporphyrins" [MGI:csmith]
+is_a: MP:0001764 ! abnormal homeostasis
+created_by: csmith
+creation_date: 2013-05-14T12:45:27Z
+
+[Term]
+id: MP:0011990
+name: decreased porphyrin level
+def: "reduced concentration of porphyrins or protoporphyrins" [MGI:csmith]
+synonym: "reduced porphyrin level" EXACT []
+is_a: MP:0011989 ! abnormal porphyrin level
+created_by: csmith
+creation_date: 2013-05-14T12:45:46Z
+
+[Term]
+id: MP:0011991
+name: aortic cartilaginous metaplasia
+def: "transformation of cells comprising the aorta epithelium to arterial chondrocytes that express type II collagen, resulting in heterotopic formation of cartilage and may lead to calcification in the aorta" [MGI:csmith, PMID:7489252]
+is_a: MP:0000272 ! abnormal aorta morphology
+created_by: csmith
+creation_date: 2013-05-14T14:05:35Z
+
+[Term]
+id: MP:0011992
+name: increased erythrocyte catalase activity
+def: "greater capacity to catalyze the reaction: 2 hydrogen peroxide = O2 + 2 H2O, in erythorcytes" [GO:0004096, MGI:csmith]
+is_a: MP:0011593 ! increased catalase activity
+created_by: csmith
+creation_date: 2013-05-14T15:48:42Z
+
+[Term]
+id: MP:0011993
+name: increased foot pad temperature
+def: "increased degree of heat natural to the foot pad-environment interface of a living being" [MGI:csmith]
+is_a: MP:0005533 ! increased body temperature
+created_by: csmith
+creation_date: 2013-05-14T15:58:24Z
+
+[Term]
+id: MP:0011994
+name: increased nerve conduction velocity
+def: "increase in the rate at which an electrical impulse travels through a nerve" [MGI:csmith]
+synonym: "increased nerve conduction" RELATED []
+is_a: MP:0005403 ! abnormal nerve conduction
+created_by: csmith
+creation_date: 2013-05-14T16:03:20Z
+
+[Term]
+id: MP:0011995
+name: decreased leukemia incidence
+def: "less than the expected number of neoplasms derived from blood or bone marrow in a specific population in a given time period" [MGI:csmith]
+is_a: MP:0010283 ! decreased classified tumor incidence
+created_by: csmith
+creation_date: 2013-05-14T16:18:55Z
+
+[Term]
+id: MP:0011996
+name: abnormal retinal inner nuclear layer thickness
+def: "anomaly in the thickness of the retinal layer which contains the cell bodies of bipolar, horizontal, and amacrine cells" [MGI:csmith]
+is_a: MP:0003733 ! abnormal retinal inner nuclear layer morphology
+created_by: csmith
+creation_date: 2013-05-14T16:24:04Z
+
+[Term]
+id: MP:0011997
+name: abnormal retinal outer nuclear layer thickness
+def: "anomaly in the thickness of the retinal layer that contains the nuclei and cell bodies of rods and cones" [MGI:csmith]
+is_a: MP:0003731 ! abnormal retinal outer nuclear layer morphology
+created_by: csmith
+creation_date: 2013-05-14T16:25:32Z
+
+[Term]
+id: MP:0011998
+name: decreased embryonic cilium length
+def: "reduced length of the cilia of the mouse embryo found on the cells of the embryonic node" [MGI:csmith]
+synonym: "decreased embryonic cilia length" EXACT []
+synonym: "short embryonic cilia" EXACT []
+synonym: "stubby embryonic cilia" EXACT []
+is_a: MP:0004131 ! abnormal embryonic cilium morphology
+created_by: csmith
+creation_date: 2013-05-14T16:44:48Z
 
 [Typedef]
 id: part_of

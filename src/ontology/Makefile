@@ -152,7 +152,7 @@ merged-mp:
 	ontology-release-runner --allow-overwrite --outdir mp --repair-cardinality --no-subsets --no-reasoner --asserted --re-mireot mp.obo -b mp/mp-equivalence-axioms.obo $(CORE) $(OBO)/ma.owl $(OBO)/uberon/bridge/uberon-bridge-to-ma.owl
 
 build-mp: mp/mp-equivalence-axioms-subq-ubr.owl mp.owl
-	ontology-release-runner --catalog-xml $(CATALOG)  --ignoreLock --skip-release-folder --outdir main --simple --allow-overwrite --reasoner elk mp.owl -b $<  $(OBO)/nbo.owl $(OBO)/pato.owl $(OBO)/go.owl $(OBO)/uberon.owl $(OBO)/chebi.owl 
+	ontology-release-runner --catalog-xml $(CATALOG)  --ignoreLock --skip-release-folder --outdir main --simple --allow-overwrite --reasoner elk mp.owl -b $<  $(OBO)/pato.owl $(OBO)/go.owl $(OBO)/uberon.owl $(OBO)/chebi.owl 
 
 merged-vt:
 	ontology-release-runner --catalog-xml $(CATALOG) --allow-overwrite --outdir vt/build  --no-subsets --reasoner elk --simple --asserted --re-mireot vt/vt.obo -b vt/vt-equivalence-axioms.obo $(CORE)
