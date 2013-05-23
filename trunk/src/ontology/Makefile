@@ -121,10 +121,8 @@ fixed-behavior_xp.obo: external/behavior-ontology/behavior_xp.obo
 # Uberon
 # ----------------------------------------
 
-%-ubr.obo: %.obo
-#	owltools $< uberon-simple-vertebrate-bridge.obo --add-imports-from-supports --merge-equivalent-classes -f $(OBO)/FMA_ -t $(OBO)/CL_ -t $(OBO)/UBERON_ -o -f obo $@
-#	owltools $< uberon-simple-vertebrate-bridge.obo --merge-support-ontologies --merge-equivalent-classes -f $(OBO)/FMA_ -f $(OBO)/MA_ -f $(OBO)/ZFA_ -t $(OBO)/CL_ -t $(OBO)/UBERON_ -o -f obo --no-checkx	 $@
-	owltools $< uberon-simple-vertebrate-bridge.obo --add-imports-from-supports --merge-equivalent-classes -f $(OBO)/FMA_ -f $(OBO)/MA_ -f $(OBO)/ZFA_ -t $(OBO)/CL_ -t $(OBO)/UBERON_ -o -f obo --no-check $@
+%-ubr.obo: %.obo uberon-simple-vertebrate-bridge.obo
+	owltools $< uberon-simple-vertebrate-bridge.obo --add-imports-from-supports --merge-equivalent-classes -f FMA -f MA -f ZFA  -t UBERON  --merge-equivalent-classes -f FMA -t CL -o -f obo --no-check $@
 
 # mapping to uberon
 # TODO: don't hardcode idspace
@@ -137,8 +135,8 @@ UBRIDGE = external/uberon/bridge/uberon-bridge-to-
 
 # hack: render taxon-equivalents as plain equivalents
 #  NOTE: this could have unintended consequences and lead to unsatisfiable classes (e.g. check mammary gland)
-uberon-simple-vertebrate-bridge.obo:
-	obo-cat.pl $(UBRIDGE)ma.obo $(UBRIDGE)fma.obo $(UBRIDGE)zfa.obo $(UBRIDGE)ehdaa2.obo | grep -v ^ontology | ../tools/flatten-taxon-equivalents.pl > $@.tmp && (echo "ontology: uberon/uberon-simple-bridge" && cat $@.tmp) > $@
+uberon-simple-vertebrate-bridge.obo: external/uberon/uberon.obo
+	../tools/flatten-taxon-equivalents.pl --omt uberon/uberon-simple-vertebrate-bridge $(UBRIDGE)ma.obo $(UBRIDGE)fma.obo $(UBRIDGE)zfa.obo $(UBRIDGE)ehdaa2.obo external/uberon/bridge/cl-bridge-to-fma.obo > $@.tmp && mv $@.tmp  $@
 
 
 # ----------------------------------------
