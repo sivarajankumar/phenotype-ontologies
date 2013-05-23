@@ -16,6 +16,8 @@ ALL_ONTS = mp hp wbphenotype apo to
 MP_URL = ftp://ftp.informatics.jax.org/pub/reports/MPheno_OBO.ontology
 WP_URL = http://tazendra.caltech.edu/~azurebrd/cgi-bin/forms/phenotype_ontology_obo.cgi
 
+CATALOG = catalog-v001.xml
+
 # ----------------------------------------
 # TOP LEVEL TARGETS
 # ----------------------------------------
@@ -109,9 +111,6 @@ all_merged: uberpheno-subq-full-merged.owl
 %-subq.obo: %.obo
 	../tools/make-subq-model-from-obo.pl $< > $@
 
-# HACKS
-HACKED-catalog-v001.xml: catalog-v001.xml
-	perl -npe 's@uri="@uri="file:@' $< > $@
 
 # temp hack:
 fixed-behavior_xp.obo: external/behavior-ontology/behavior_xp.obo
@@ -122,7 +121,7 @@ fixed-behavior_xp.obo: external/behavior-ontology/behavior_xp.obo
 # ----------------------------------------
 
 %-ubr.obo: %.obo uberon-simple-vertebrate-bridge.obo
-	owltools $< uberon-simple-vertebrate-bridge.obo --add-imports-from-supports --merge-equivalent-classes -f FMA -f MA -f ZFA  -t UBERON  --merge-equivalent-classes -f FMA -t CL -o -f obo --no-check $@
+	owltools $< uberon-simple-vertebrate-bridge.obo --add-imports-from-supports --merge-equivalent-classes -f FMA -f MA -f ZFA  -t UBERON  --merge-equivalent-classes -f FMA -t CL -o -f obo --no-check $@.tmp && grep -v ^import $@.tmp > $@
 
 # mapping to uberon
 # TODO: don't hardcode idspace
@@ -152,8 +151,11 @@ merged-hp:
 merged-mp:
 	ontology-release-runner --allow-overwrite --outdir mp --repair-cardinality --no-subsets --no-reasoner --asserted --re-mireot mp.obo -b mp/mp-equivalence-axioms.obo $(CORE) $(OBO)/ma.owl $(OBO)/uberon/bridge/uberon-bridge-to-ma.owl
 
+build-mp: mp/mp-equivalence-axioms-subq-ubr.owl mp.owl
+	ontology-release-runner --catalog-xml $(CATALOG)  --ignoreLock --skip-release-folder --outdir main --simple --allow-overwrite --reasoner elk mp.owl -b $<  $(OBO)/nbo.owl $(OBO)/pato.owl $(OBO)/go.owl $(OBO)/uberon.owl $(OBO)/chebi.owl 
+
 merged-vt:
-	ontology-release-runner --catalog-xml catalog-v001.xml --allow-overwrite --outdir vt/build  --no-subsets --reasoner elk --simple --asserted --re-mireot vt/vt.obo -b vt/vt-equivalence-axioms.obo $(CORE)
+	ontology-release-runner --catalog-xml $(CATALOG) --allow-overwrite --outdir vt/build  --no-subsets --reasoner elk --simple --asserted --re-mireot vt/vt.obo -b vt/vt-equivalence-axioms.obo $(CORE)
 
 
 # ----------------------------------------
