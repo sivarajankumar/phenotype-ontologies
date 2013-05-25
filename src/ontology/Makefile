@@ -14,7 +14,6 @@ OBO=http://purl.obolibrary.org/obo
 ONTS = mp hp
 ALL_ONTS = mp hp wbphenotype apo to
 MP_URL = ftp://ftp.informatics.jax.org/pub/reports/MPheno_OBO.ontology
-WP_URL = http://tazendra.caltech.edu/~azurebrd/cgi-bin/forms/phenotype_ontology_obo.cgi
 
 CATALOG = catalog-v001.xml
 
@@ -40,8 +39,6 @@ fetch:
 mp.obo:
 	wget $(MP_URL) -O $@
 
-wbphenotype.obo:
-	wget $(WP_URL) -O $@
 
 hp.obo: external/hpo/human-phenotype-ontology.obo
 	echo remember to update external/hpo && \
@@ -151,8 +148,10 @@ merged-hp:
 merged-mp:
 	ontology-release-runner --allow-overwrite --outdir mp --repair-cardinality --no-subsets --no-reasoner --asserted --re-mireot mp.obo -b mp/mp-equivalence-axioms.obo $(CORE) $(OBO)/ma.owl $(OBO)/uberon/bridge/uberon-bridge-to-ma.owl
 
+# non-strict
+MP_OORT_OPTS = --allow-equivalent-pairs
 build-mp: mp/mp-equivalence-axioms-subq-ubr.owl mp.owl
-	ontology-release-runner --repair-cardinality --catalog-xml $(CATALOG)  --ignoreLock --skip-release-folder --outdir main --simple --allow-overwrite --reasoner elk mp.owl -b $<  $(OBO)/pato.owl $(OBO)/go.owl $(OBO)/uberon.owl $(OBO)/chebi.owl 
+	ontology-release-runner $(MP_OORT_OPTS) --repair-cardinality --catalog-xml $(CATALOG)  --ignoreLock --skip-release-folder --skip-format obo --skip-format owx --outdir main --simple --allow-overwrite --reasoner elk mp.owl -b $<  $(OBO)/pato.owl $(OBO)/go.owl $(OBO)/uberon.owl $(OBO)/chebi.owl 
 
 merged-vt:
 	ontology-release-runner --catalog-xml $(CATALOG) --allow-overwrite --outdir vt/build  --no-subsets --reasoner elk --simple --asserted --re-mireot vt/vt.obo -b vt/vt-equivalence-axioms.obo $(CORE)
