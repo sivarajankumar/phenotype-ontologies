@@ -7276,12 +7276,6 @@ intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0002329 ! somite
 
 [Term]
-id: VT:0010124 ! cell size
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000117 ! size
-intersection_of: attribute_of GO:0005623 ! cell
-
-[Term]
 id: VT:0010125 ! celiac lymph node size
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000117 ! size
@@ -13289,6 +13283,107 @@ intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000070  ! count
 intersection_of: attribute_of PR:000007581  ! fibronectin
 intersection_of: occurs_in UBERON:0000178  ! blood
+
+[Term]
+id: VT:0001764 ! homeostasis trait
+intersection_of: BATTO:0000001 ! biological attribute
+intersection_of: attribute_of GO:0042592 ! homeostatic process
+
+[Term]
+id: VT:0001784 ! fluid regulation trait
+intersection_of: BATTO:0000001 ! biological attribute
+intersection_of: attribute_of GO:0050878 ! regulation of body fluid levels
+
+[Term]
+id: VT:0002733  ! thermal nociception trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: attribute_of GO:0050965  ! detection of temperature stimulus involved in sensory perception of pain
+
+[Term]
+id: VT:0002734  ! mechanical nociception trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: attribute_of GO:0050966  ! detection of mechanical stimulus involved in sensory perception of pain
+
+[Term]
+id: VT:0002735  ! chemical nociception trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: attribute_of GO:0050968  ! detection of chemical stimulus involved in sensory perception of pain
+
+[Term]
+id: VT:0002796  ! skin barrier function trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: attribute_of GO:0033561  ! regulation of water loss via skin
+
+[Term]
+id: VT:0004043  ! pH regulation trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: attribute_of GO:0006885  ! regulation of pH
+
+[Term]
+id: VT:0004209  ! sweet taste sensitivity trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: attribute_of GO:0050916  ! sensory perception of sweet taste
+
+[Term]
+id: VT:0004210  ! bitter taste sensitivity trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: attribute_of GO:0050913  ! sensory perception of bitter taste
+
+[Term]
+id: VT:0004211  ! sour taste sensitivity trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: attribute_of GO:0050915  ! sensory perception of sour taste
+
+[Term]
+id: VT:0004212  ! salty taste sensitivity trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: attribute_of GO:0050914  ! sensory perception of salty taste
+
+[Term]
+id: VT:0004213  ! umami taste sensitivity trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: attribute_of GO:0050917  ! sensory perception of umami taste
+
+[Term]
+id: VT:0005584  ! enzyme/coenzyme activity trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: attribute_of GO:0003824  ! catalytic activity
+
+[Term]
+id: VT:0015077  ! molecule homeostasis trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: attribute_of GO:0048878  ! chemical homeostasis
+
+[Term]
+id: VT:0015095  ! sensory trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: attribute_of GO:0007600  ! sensory perception
+
+[Term]
+id: VT:0015097  ! equilibrioception system physiology trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: attribute_of GO:0050957  ! equilibrioception
+
+[Term]
+id: VT:0015100  ! nociception system physiology trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: attribute_of GO:0019233  ! sensory perception of pain
+
+[Term]
+id: VT:0004368 ! stria vascularis blood vessel morphology trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: attribute_of UBERON:0001981 ! blood vessel
+intersection_of: occurs_in UBERON:0002282 ! stria vascularis of cochlear duct
+
+[Term]
+id: VT:0002144 ! B cell development trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: attribute_of GO:0030183 ! B cell differentiation
+
+[Term]
+id: VT:0002145 ! T cell development trait
+intersection_of: BATTO:0000001  ! biological attribute
+intersection_of: attribute_of GO:0030217 ! T cell differentiation
 
 [Typedef]
 id: attribute_of_part_of
