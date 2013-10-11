@@ -150,8 +150,8 @@ UBRIDGE = external/uberon/bridge/uberon-bridge-to-
 
 # hack: render taxon-equivalents as plain equivalents
 #  NOTE: this could have unintended consequences and lead to unsatisfiable classes (e.g. check mammary gland)
-uberon-simple-vertebrate-bridge.obo: external/uberon/uberon.obo
-	../tools/flatten-taxon-equivalents.pl --omt uberon/uberon-simple-vertebrate-bridge $(UBRIDGE)ma.obo $(UBRIDGE)fma.obo $(UBRIDGE)zfa.obo $(UBRIDGE)ehdaa2.obo external/uberon/bridge/cl-bridge-to-fma.obo > $@.tmp && mv $@.tmp  $@
+uberon-simple-vertebrate-bridge.obo: 
+	../tools/flatten-taxon-equivalents.pl --ont uberon/uberon-simple-vertebrate-bridge $(UBRIDGE)ma.obo $(UBRIDGE)fma.obo $(UBRIDGE)zfa.obo $(UBRIDGE)ehdaa2.obo external/uberon/bridge/cl-bridge-to-fma.obo > $@.tmp && mv $@.tmp  $@
 
 # ----------------------------------------
 # Module extraction
