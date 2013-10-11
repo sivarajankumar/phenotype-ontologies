@@ -3066,11 +3066,12 @@ intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of CL:0000048 ! multi fate stem cell
 
-[Term]
-id: VT:0002403 ! pre-B cell morphology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of CL:0000817 ! precursor B cell
+!EquivalentClasses(VT:0002403 'pre-B cell morphology trait' VT:0005022 'immature B cell morphology trait' )
+![Term]
+!id: VT:0002403 ! pre-B cell morphology
+!intersection_of: BATTO:0000001  ! biological attribute
+!intersection_of: affects_quality PATO:0000051 ! morphology
+!intersection_of: attribute_of CL:0000817 ! precursor B cell
 
 [Term]
 id: VT:0002414 ! myeloblast morphology
@@ -3776,11 +3777,12 @@ intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0004013 ! egg cylinder
 
-[Term]
-id: VT:0003092 ! corneal stroma thickness
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0000051 ! morphology
-intersection_of: attribute_of UBERON:0001777 ! substantia propria of cornea
+!EquivalentClasses(VT:0003092 'corneal stroma thickness' VT:0005300 'corneal stroma morphology trait' )
+![Term]
+!id: VT:0003092 ! corneal stroma thickness
+!intersection_of: BATTO:0000001  ! biological attribute
+!intersection_of: affects_quality PATO:0000915 ! thickness
+!intersection_of: attribute_of UBERON:0001777 ! substantia propria of cornea
 
 [Term]
 id: VT:0003093 ! anterior stroma morphology
@@ -6132,7 +6134,7 @@ intersection_of: affects_quality PATO:0000051 ! morphology
 intersection_of: attribute_of UBERON:0002289 ! midbrain cerebral aqueduct
 
 [Term]
-id: VT:0005543 ! corneal thickness
+id: VT:0005543 ! cornea thickness trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0000915 ! thickness
 intersection_of: attribute_of UBERON:0000964 ! cornea
@@ -6815,11 +6817,12 @@ intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001555 ! has number of
 intersection_of: attribute_of CL:0000826 ! pro-B cell
 
-[Term]
-id: VT:0008209 ! pre-B cell number
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0001555 ! has number of
-intersection_of: attribute_of CL:0000817 ! precursor B cell
+!EquivalentClasses(VT:0008209 'pre-B cell quantity' VT:0008215 'immature B cell quantity' )
+![Term]
+!id: VT:0008209 ! pre-B cell quantity
+!intersection_of: BATTO:0000001  ! biological attribute
+!intersection_of: affects_quality PATO:0001555 ! has number of
+!intersection_of: attribute_of CL:0000817 ! precursor B cell
 
 [Term]
 id: VT:0008211 ! mature B cell number
@@ -8793,6 +8796,7 @@ id: VT:0001176  ! lung development trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: attribute_of GO:0030324  ! lung development
 
+!!! https://sourceforge.net/p/geneontology/ontology-requests/10236/
 [Term]
 id: VT:0001225  ! epidermis development trait
 intersection_of: BATTO:0000001  ! biological attribute
@@ -8893,10 +8897,11 @@ id: VT:0001765  ! ion homeostasis trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: attribute_of GO:0050801  ! ion homeostasis
 
-[Term]
-id: VT:0001828  ! T cell activation trait
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: attribute_of GO:0042110  ! T cell activation
+! EquivalentClasses(VT:0001828 'T cell activation trait' VT:0002145 'T cell development trait' )
+![Term]
+!id: VT:0001828  ! T cell activation trait
+!intersection_of: BATTO:0000001  ! biological attribute
+!intersection_of: attribute_of GO:0042110  ! T cell activation
 
 [Term]
 id: VT:0001835  ! antigen presentation trait
@@ -9358,10 +9363,11 @@ id: VT:0008092  ! T-helper 2 cell differentiation trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: attribute_of GO:0045064  ! T-helper 2 cell differentiation
 
-[Term]
-id: VT:0008217  ! B cell activation trait
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: attribute_of GO:0042113  ! B cell activation
+!EquivalentClasses(VT:0002144 'B cell development trait' VT:0008217 'B cell activation trait' )                
+![Term]
+!id: VT:0008217  ! B cell activation trait
+!intersection_of: BATTO:0000001  ! biological attribute
+!intersection_of: attribute_of GO:0042113  ! B cell activation
 
 [Term]
 id: VT:0008557  ! interferon-alpha secretion trait

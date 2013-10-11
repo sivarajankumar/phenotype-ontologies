@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:05:2013 16:52
+date: 09:10:2013 16:26
 saved-by: csmith
 auto-generated-by: OBO-Edit 2.2
 subsetdef: CvDC_Terms "NHLBI Cardiovascular Development Consortium (CvDC) Terms"
@@ -958,6 +958,7 @@ name: rib fusion
 def: "appearance of one or more ribs as a single structure" [PMID:10804168, PMID:10804169]
 subset: Europhenome_Terms
 subset: Sanger_Terms
+synonym: "fused ribs" EXACT []
 synonym: "fusion of ribs" EXACT []
 is_a: MP:0000150 ! abnormal rib morphology
 
@@ -1062,8 +1063,9 @@ is_a: MP:0000163 ! abnormal cartilage morphology
 
 [Term]
 id: MP:0000167
-name: decreased chondrocyte cell number
+name: decreased chondrocyte number
 def: "fewer than normal numbers of polymorphic cells that form cartilage" [CL:0000138]
+synonym: "decreased chondrocyte cell number" EXACT []
 synonym: "decreased number of chondrocytes" EXACT []
 synonym: "reduced chondrocyte numbers" EXACT []
 is_a: MP:0000166 ! abnormal chondrocyte morphology
@@ -1937,6 +1939,7 @@ is_a: MP:0000297 ! abnormal atrioventricular cushion morphology
 id: MP:0000299
 name: failure of atrioventricular cushion closure
 def: "failure of the mounds of embryonic connective tissue that bulge into the fetal atrioventricular canal to fuse to form the valves between the right and left atrioventricular orifices" [PMID:7477375]
+synonym: "atrioventricular cushion closure failure" EXACT []
 synonym: "failure of endocardial cushion closure" EXACT []
 synonym: "failure of endocardial cushion fusion" EXACT []
 synonym: "failure of endocardial cushions to fuse" EXACT []
@@ -3920,13 +3923,14 @@ is_a: MP:0000572 ! abnormal autopod morphology
 
 [Term]
 id: MP:0000577
-name: absent palmar eccrine glands
+name: absent eccrine glands
 alt_id: MP:0000677
-def: "missing sweat glands of the palm" [PMID:9778510]
-synonym: "absence of palmar eccrine glands" EXACT []
-synonym: "absent palmar sweat glands" RELATED []
-synonym: "loss of palmar eccrine glands" EXACT []
-is_a: MP:0000675 ! abnormal palmar eccrine gland morphology
+def: "absence of the coiled tubular glands situated on the digits and footpads of the paws of rodents, and both in the histologically thick skin of the palmar and plantar surfaces and in the thin skin that covers most of the rest of the body in humans" [PMID:15843440]
+synonym: "absence of palmar eccrine glands" NARROW []
+synonym: "absent palmar eccrine glands" NARROW []
+synonym: "absent palmar sweat glands" NARROW []
+synonym: "loss of palmar eccrine glands" NARROW []
+is_a: MP:0000675 ! abnormal eccrine gland morphology
 
 [Term]
 id: MP:0000578
@@ -4006,8 +4010,10 @@ alt_id: MP:0000587
 def: "reduced length of tail compared to control" [PMID:10572046]
 subset: Europhenome_Terms
 subset: Sanger_Terms
+synonym: "decreased tail length" EXACT []
+synonym: "reduced tail length" EXACT []
 synonym: "stubbed tail" EXACT []
-is_a: MP:0002111 ! abnormal tail morphology
+is_a: MP:0011999 ! abnormal tail length
 
 [Term]
 id: MP:0000593
@@ -4558,12 +4564,14 @@ is_a: MP:0010678 ! abnormal skin adnexa morphology
 
 [Term]
 id: MP:0000675
-name: abnormal palmar eccrine gland morphology
-def: "any structural anomaly of the sweat glands of the palm; in mice these are the only sweat glands present" [MGI:csmith]
-synonym: "abnormal palmar eccrine glands" BROAD []
-synonym: "abnormal palmar sweat gland morphology" EXACT []
-synonym: "abnormal palmar sweat glands" BROAD []
-synonym: "palmar eccrine gland dysplasia" EXACT []
+name: abnormal eccrine gland morphology
+def: "any structural anomaly of the coiled tubular glands situated on the digits and footpads of the paws of rodents, and both in the histologically thick skin of the palmar and plantar surfaces and in the thin skin that covers most of the rest of the body in humans; in mice these are the only sweat glands present" [MGI:csmith, PMID:15843440]
+comment: The palmar and plantar eccrine glands of rodents are thought to provide enhanced tactile sensitivity rather than serving the thermoregulatory role ascribed to eccrine glands of the thin skin in humans.
+synonym: "abnormal palmar eccrine gland morphology" NARROW []
+synonym: "abnormal palmar eccrine glands" NARROW []
+synonym: "abnormal palmar sweat gland morphology" NARROW []
+synonym: "abnormal palmar sweat glands" NARROW []
+synonym: "palmar eccrine gland dysplasia" NARROW []
 is_a: MP:0000572 ! abnormal autopod morphology
 is_a: MP:0000674 ! abnormal sweat gland morphology
 
@@ -4771,6 +4779,7 @@ name: athymia
 def: "absence of the primary lymphoid organ" [ISBN:0-683-40008-8, MGI:csmith]
 synonym: "Absence of Thymus" EXACT []
 synonym: "absent thymus" EXACT []
+synonym: "athymic" EXACT []
 is_a: MP:0000703 ! abnormal thymus morphology
 
 [Term]
@@ -5218,16 +5227,18 @@ is_a: MP:0000780 ! abnormal corpus callosum morphology
 [Term]
 id: MP:0000783
 name: abnormal forebrain morphology
-def: "any structural anomaly of the part of the brain developed from the most rostral of the three primary vesicles of the embryonic neural tube from which the diencephalon and telencephalon are derived" [NLX:birnlex_1509, PMID:9010203]
+def: "any structural anomaly of the anterior of the three primary divisions of the developing chordate brain or the corresponding part of the adult brain (in vertebrates, includes especially the cerebral hemispheres, the thalamus, and the hypothalamus and especially in higher vertebrates is the main control center for sensory and associative information processing, visceral functions, and voluntary motor functions)" [GO:0048853]
+synonym: "abnormal prosencephalon morphology" EXACT []
 synonym: "forebrain dysplasia" EXACT []
 is_a: MP:0002152 ! abnormal brain morphology
 
 [Term]
 id: MP:0000784
 name: forebrain hypoplasia
-def: "underdevelopment or reduced size, usually due to a reduced number of cells, in the anterior primitive cerebral vesicle that is the most rostral of three primary vesicles of the embryonic neural tube" [ISBN:0-683-40008-8]
+def: "underdevelopment or reduced size, usually due to a reduced number of cells, in the anterior of the three primary divisions of the developing chordate brain or the corresponding part of the adult brain (in vertebrates, includes especially the cerebral hemispheres, the thalamus, and the hypothalamus and especially in higher vertebrates is the main control center for sensory and associative information processing, visceral functions, and voluntary motor functions)" [GO:0048853]
 synonym: "hypoplastic forebrain" EXACT []
-is_a: MP:0000783 ! abnormal forebrain morphology
+synonym: "prosencephalon hypoplasia" EXACT []
+is_a: MP:0012138 ! decreased forebrain size
 
 [Term]
 id: MP:0000785
@@ -5573,7 +5584,7 @@ is_a: MP:0000783 ! abnormal forebrain morphology
 [Term]
 id: MP:0000831
 name: diencephalon hyperplasia
-def: "overdevelopment or increased size, usually due an increased number of cells in the rostral portion of the brain stem" [ISBN:0-683-40008-8, MGI:csmith, PMID:9753320]
+def: "overdevelopment or increased size, usually due an increased number of cells in the rostral portion of the brain stem" [ISBN:0-683-40008-8, MGI:csmith]
 synonym: "hyperplastic diencephalon" EXACT []
 is_a: MP:0000830 ! abnormal diencephalon morphology
 
@@ -6071,7 +6082,7 @@ is_obsolete: true
 [Term]
 id: MP:0000897
 name: abnormal midbrain morphology
-def: "any structural anomaly associated with the middle of the three cerebral vesicles of the embryo; this region controls sensory and motor functions, including eye movement and coordination of auditory and visual reflexes" [ISBN:0838580343, J:23882]
+def: "any structural anomaly associated with the brain region derived from the middle of the three cerebral vesicles of the embryo; this region controls sensory and motor functions in the adult, including eye movement and coordination of auditory and visual reflexes" [ISBN:0838580343]
 synonym: "abnormal mesencephalon morphology" EXACT []
 synonym: "mesencephalon dysplasia" EXACT []
 synonym: "midbrain dysplasia" EXACT []
@@ -6081,9 +6092,10 @@ is_a: MP:0005277 ! abnormal brainstem morphology
 [Term]
 id: MP:0000898
 name: midbrain hyperplasia
-def: "overdevelopment or increased size, usually due an increased number of cells associated with the middle of the three cerebral vesicles of the embryo" [ISBN:0-683-40008-8, MGI:csmith, PMID:9753320]
+def: "overdevelopment or increased size, usually due an increased number of cells associated with the brain region derived from the middle of the three cerebral vesicles of the embryo; this region controls sensory and motor functions in the adult, including eye movement and coordination of auditory and visual reflexes" [ISBN:0-683-40008-8, MGI:csmith]
 synonym: "hyperplastic midbrain" EXACT []
-is_a: MP:0000897 ! abnormal midbrain morphology
+synonym: "mesencephalon hyperplasia" EXACT []
+is_a: MP:0012091 ! increased midbrain size
 
 [Term]
 id: MP:0000899
@@ -6334,8 +6346,9 @@ is_a: MP:0000934 ! abnormal telencephalon development
 
 [Term]
 id: MP:0000936
-name: small telencephalic vesicles
+name: small embryonic telencephalon
 def: "reduced size of the paired diverticula of the telencephalon, from which the forebrain develops" [ISBN:0-683-40008-8, MGI:csmith, PMID:9753320]
+synonym: "small telencephalic vesicles" EXACT []
 is_a: MP:0000934 ! abnormal telencephalon development
 
 [Term]
@@ -6369,8 +6382,8 @@ is_a: MP:0008948 ! decreased neuron number
 
 [Term]
 id: MP:0000940
-name: abnormal motor neuron innervation
-def: "any misprojection or failure to bundle motor axons to an effector motor tissue, or failure of refinement of neuronal connections during development" [ISBN:0-683-40008-8, MGI:csmith]
+name: abnormal motor neuron innervation pattern
+def: "any changes in the placement, morphology or number of motor nerve fibers to an effector motor tissue, or failure of refinement of neuronal connections during development" [MGI:csmith]
 synonym: "abnormal motoneuron innervation" EXACT []
 synonym: "abnormal motor neuron projections" EXACT []
 is_a: MP:0000937 ! abnormal motor neuron morphology
@@ -6532,9 +6545,11 @@ is_a: MP:0000961 ! abnormal dorsal root ganglion morphology
 id: MP:0000963
 name: fused dorsal root ganglion
 def: "loss of DRG spacing pattern and the appearance of two or more ganglia as one" [PMID:10804168, PMID:10804169]
+synonym: "dorsal root ganglia fusion" EXACT []
 synonym: "fused dorsal root ganglia" EXACT []
 synonym: "fused DRG" EXACT []
 synonym: "fused spinal ganglia" EXACT []
+synonym: "fusion of dorsal root ganglia" EXACT []
 is_a: MP:0000961 ! abnormal dorsal root ganglion morphology
 
 [Term]
@@ -6564,15 +6579,11 @@ is_a: MP:0000965 ! abnormal sensory neuron morphology
 is_a: MP:0008948 ! decreased neuron number
 
 [Term]
-id: MP:0000967
-name: abnormal sensory neuron projections
-def: "misprojection or failure to bundle sensory axons to an effector tissue or to the spinal cord" [ISBN:0-683-40008-8, J:60159]
-is_a: MP:0000968 ! abnormal sensory neuron innervation pattern
-
-[Term]
 id: MP:0000968
 name: abnormal sensory neuron innervation pattern
-def: "any changes in the placement, morphology or number of nerve fibers to sensory termini or to spinal cord" [J:31622]
+alt_id: MP:0000967
+def: "any changes in the placement, morphology or number of sensory nerve fibers to sensory termini or to spinal cord" [MGI:csmith]
+synonym: "abnormal sensory neuron projections" EXACT []
 is_a: MP:0000965 ! abnormal sensory neuron morphology
 is_a: MP:0002184 ! abnormal innervation
 
@@ -6830,7 +6841,7 @@ name: abnormal olfactory receptor morphology
 def: "any structural anomaly of the proteins, usually projecting from the cilia of olfactory receptor neurons, that specifically bind odorant molecules and trigger responses in the specialized neurons of the olfactory epithelium" [MESH:D12.776.543.750.100.600, MGI:cwg]
 synonym: "abnormal odorant receptors" BROAD []
 is_a: MP:0005499 ! abnormal olfactory system morphology
-is_a: MP:0006092 ! abnormal olfactory neuron morphology
+is_a: MP:0006092 ! abnormal olfactory sensory neuron morphology
 
 [Term]
 id: MP:0001004
@@ -7207,10 +7218,10 @@ is_a: MP:0002752 ! abnormal somatic nervous system morphology
 
 [Term]
 id: MP:0001052
-name: abnormal muscle innervation
-def: "malformation or misprojection of sensory or motor nerves to targets in muscle" [J:75958]
+name: abnormal innervation pattern to muscle
+def: "any changes in the placement, morphology or number of sensory, sympathetic or motor nerves to targets in muscle" [MGI:csmith]
+synonym: "abnormal muscle innervation" RELATED []
 synonym: "muscle innervation abnormalities" EXACT []
-is_a: MP:0001051 ! abnormal somatic motor system morphology
 is_a: MP:0002184 ! abnormal innervation
 
 [Term]
@@ -7410,21 +7421,21 @@ is_a: MP:0002752 ! abnormal somatic nervous system morphology
 [Term]
 id: MP:0001078
 name: abnormal phrenic nerve morphology
-def: "any structural anomaly of motor and sensory neuron axons that project to the diaphragm and other tissues" [ISBN:0-683-40008-8, MGI:csmith]
+def: "any structural anomaly of motor, sensory and sympathetic neuron axons that project to the diaphragm and other tissues" [ISBN:0-683-40008-8, MGI:csmith]
 synonym: "phrenic nerve dysplasia" EXACT []
 is_a: MP:0001077 ! abnormal spinal nerve morphology
 
 [Term]
 id: MP:0001079
 name: absent phrenic nerve
-def: "missing motor and sensory neuron axons to the diaphragm and other tissues" [ISBN:0-683-40008-8, MGI:csmith]
+def: "absence of the motor, sensory and sympathetic neuron axons that project to the diaphragm and other tissues" [ISBN:0-683-40008-8, MGI:csmith]
 synonym: "absence of phrenic nerve" EXACT []
 is_a: MP:0001078 ! abnormal phrenic nerve morphology
 
 [Term]
 id: MP:0001080
 name: defasiculated phrenic nerve
-def: "misprojection or failure to bundle motor and sensory neuron axons to the diaphragm and other tissues" [ISBN:0-683-40008-8, MGI:csmith]
+def: "misprojection or failure to bundle the motor, sensory and sympathetic neuron axons that project to the diaphragm and other tissues" [ISBN:0-683-40008-8, MGI:csmith]
 is_a: MP:0001078 ! abnormal phrenic nerve morphology
 
 [Term]
@@ -8680,17 +8691,15 @@ is_a: MP:0001265 ! decreased body size
 [Term]
 id: MP:0001256
 name: abnormal body length
-def: "any anomaly in the crown to tail distance compared to controls" [MGI:cwg]
+def: "any anomaly in the measure of the head and trunk (head, thorax and abdomen) in the rostral-caudal direction" [MGI:csmith]
 subset: Europhenome_Terms
 synonym: "abnormal length" EXACT []
-xref: GO:0040007
-xref: GO:0040014
 is_a: MP:0003956 ! abnormal body size
 
 [Term]
 id: MP:0001257
 name: increased body length
-def: "increased crown to tail distance compared to controls" [MGI:cwg]
+def: "increased measure of the head and trunk (head, thorax and abdomen) in the rostral-caudal direction" [MGI:csmith]
 subset: Europhenome_Terms
 subset: Sanger_Terms
 synonym: "increased length" EXACT []
@@ -8700,7 +8709,7 @@ is_a: MP:0001264 ! increased body size
 [Term]
 id: MP:0001258
 name: decreased body length
-def: "decreased crown to tail distance compared to controls" [MGI:cwg]
+def: "decreased measure of the head and trunk (head, thorax and abdomen) in the rostral-caudal direction" [MGI:csmith]
 subset: Europhenome_Terms
 subset: Sanger_Terms
 synonym: "decreased length" EXACT []
@@ -9083,6 +9092,7 @@ id: MP:0001307
 name: fused cornea and lens
 alt_id: MP:0001315
 def: "condition in which the transparent anterior portion of the fibrous coat of the eye is joined to the transparent biconvex cellular refractive structure lying between the iris and vitreous humor of the eye" [ISBN:0-683-40008-8]
+synonym: "cornea and lens fusion" EXACT []
 synonym: "cornea/lens fusion" EXACT []
 synonym: "fused cornea/lens" EXACT []
 is_a: MP:0001312 ! abnormal cornea morphology
@@ -9811,6 +9821,8 @@ is_obsolete: true
 [Term]
 id: MP:0001422
 name: abnormal drinking behavior
+alt_id: MP:0003911
+alt_id: MP:0003912
 def: "an altered pattern of fluid consumption or altered preference for particular fluids" [MGI:csmith]
 subset: Sanger_Terms
 is_a: MP:0002069 ! abnormal consumption behavior
@@ -9862,6 +9874,8 @@ is_a: MP:0001784 ! abnormal fluid regulation
 id: MP:0001431
 name: abnormal eating behavior
 alt_id: MP:0001430
+alt_id: MP:0003909
+alt_id: MP:0003910
 def: "altered ability to consume foods or atypical consumption pattern" [ISBN:0-683-40008-8, MGI:csmith]
 synonym: "abnormal feeding" EXACT []
 synonym: "abnormal feeding behavior" EXACT []
@@ -9958,7 +9972,7 @@ is_a: MP:0011000 ! abnormal allogrooming behavior
 id: MP:0001447
 name: abnormal nest building behavior
 def: "deviation from the usual behavior of nesting animals to build sleeping nests out of any available materials, or of nesting animals to build nests to protect offspring" [ISBN:0-471-31639-3]
-is_a: MP:0002557 ! abnormal social/conspecific interaction
+is_a: MP:0002068 ! abnormal parental behavior
 
 [Term]
 id: MP:0001448
@@ -10252,7 +10266,7 @@ consider: MP:0004262
 [Term]
 id: MP:0001504
 name: abnormal posture
-def: "atypical position of the limbs or carriage of the body" [ISBN:0-683-40008-8]
+def: "atypical intentionally or habitually assumed position of the limbs or carriage of the body" [ISBN:0-683-40008-8]
 subset: Europhenome_Terms
 subset: Sanger_Terms
 is_a: MP:0002066 ! abnormal motor capabilities/coordination/movement
@@ -10446,7 +10460,8 @@ is_a: MP:0004645 ! decreased vertebrae number
 [Term]
 id: MP:0001541
 name: abnormal osteoclast physiology
-def: "any functional anomaly of the bone resorpting cells that remove bone tissue by degrading the mineralized matrix" [MGI:csmith]
+def: "any functional anomaly of the specialized phagocytic cells associated with the absorption and removal of the mineralized matrix of bone tissue" [CL:0000092]
+synonym: "abnormal chondrocyte physiology" RELATED []
 is_a: MP:0002451 ! abnormal macrophage physiology
 is_a: MP:0002998 ! abnormal bone remodeling
 
@@ -11050,7 +11065,7 @@ is_a: MP:0005380 ! embryogenesis phenotype
 id: MP:0001674
 name: abnormal triploblastic development
 def: "abnormal development of the three primary germ layers of the embryo" [ISBN:0-683-40008-8, MGI:tc]
-is_a: MP:0002084 ! abnormal developmental patterning
+is_a: MP:0001695 ! abnormal gastrulation
 is_a: MP:0002085 ! abnormal embryonic tissue morphology
 
 [Term]
@@ -11174,6 +11189,7 @@ is_a: MP:0003085 ! abnormal egg cylinder morphology
 id: MP:0001695
 name: abnormal gastrulation
 def: "any anomaly in the development and invagination of the embryonic germ layers" [ISBN:0-683-40008-8]
+comment: in the mouse, gastrulation initiates at E6.5, as cells of the primitive ectoderm (epiblast) delaminate at the posterior side of the embryo and ingress through the primitive streak in an epithelial-to-mesenchymal transition
 xref: GO:0007669
 is_a: MP:0002084 ! abnormal developmental patterning
 
@@ -11247,6 +11263,9 @@ id: MP:0001706
 name: abnormal left-right axis patterning
 def: "anomaly in the formation or development of the body or a specific organ of the body in relation to the left and right sides of the body or organ" [MGI:cwg]
 subset: IMPC_Prenatal
+synonym: "abnormal dextro-sinistral axis patterning" EXACT []
+synonym: "abnormal L-R axis patterning" EXACT []
+synonym: "abnormal sinistro-dextral axis patterning" EXACT []
 is_a: MP:0002084 ! abnormal developmental patterning
 
 [Term]
@@ -11369,6 +11388,8 @@ is_a: MP:0002086 ! abnormal extraembryonic tissue morphology
 id: MP:0001725
 name: abnormal umbilical cord morphology
 def: "any structural anomaly of the connective stalk between the fetus and the placenta" [ISBN:0-683-40008-8, PMID:9144284]
+synonym: "abnormal chorda umbilicalis morphology" EXACT []
+synonym: "abnormal funiculus umbilicalis morphology" EXACT []
 synonym: "umbilical cord dysplasia" EXACT []
 is_a: MP:0002086 ! abnormal extraembryonic tissue morphology
 
@@ -11623,6 +11644,7 @@ comment: Clinicians sometimes mistakenly label increased urinary frequency as po
 subset: Sanger_Terms
 synonym: "diuresis" EXACT []
 synonym: "increased urine output" EXACT []
+synonym: "increased urine volume" EXACT []
 is_a: MP:0001756 ! abnormal urination
 
 [Term]
@@ -13132,7 +13154,7 @@ is_a: MP:0000001 ! mammalian phenotype
 [Term]
 id: MP:0002007
 name: increased cellular sensitivity to gamma-irradiation
-def: "increased incidence of cell death following exposure to high levels of gamma-irradiation" [MGI:smb]
+def: "increased incidence of cell death following exposure to gamma-irradiation" [MGI:smb]
 synonym: "decreased cellular resistance to gamma-irradiation" EXACT []
 synonym: "increased cellular susceptibility to gamma-irradiation" EXACT []
 is_a: MP:0004227 ! increased cellular sensitivity to ionizing radiation
@@ -13854,7 +13876,7 @@ synonym: "abnormal cutaneous pigmentation" EXACT []
 synonym: "skin: pigmentation anomalies" EXACT []
 xref: MGI:2173544
 is_a: MP:0001186 ! pigmentation phenotype
-is_a: MP:0002060 ! abnormal skin morphology
+is_a: MP:0011239 ! abnormal skin coloration
 
 [Term]
 id: MP:0002096
@@ -14581,8 +14603,9 @@ consider: MP:0004101
 [Term]
 id: MP:0002182
 name: abnormal astrocyte morphology
-def: "any structural anomaly of one of the large neuroglia cells of nervous tissue" [ISBN:0-683-40008-8, MGI:csmith]
+def: "any structural anomaly of the large neuroglial (macroglial) cells in the central nervous system - the largest and most numerous neuroglial cells in the brain and spinal cord; astrocytes are irregularly shaped with many long processes, including those with 'end feet' which form the glial (limiting) membrane and directly and indirectly contribute to the blood-brain barrier; astrocytes regulate the extracellular ionic and chemical environment, and 'reactive astrocytes' (along with microglia) respond to injury" [CL:0000127, MGI:csmith]
 synonym: "abnormal astrocytes morphology" EXACT []
+synonym: "abnormal astrocytic glia morphology" EXACT []
 synonym: "abnormal astroglia morphology" EXACT []
 synonym: "abnormal astroglial cell morphology" EXACT []
 is_a: MP:0000952 ! abnormal CNS glial cell morphology
@@ -14917,7 +14940,7 @@ name: abnormal primitive streak morphology
 def: "anomaly in the midline ridge of the embryonic epiblast that later develops into mesoderm and endoderm" [ISBN:0-12-402035-6, MGI:csmith]
 synonym: "defective primitive streak" EXACT []
 synonym: "primitive streak dysplasia" EXACT []
-is_a: MP:0002084 ! abnormal developmental patterning
+is_a: MP:0001695 ! abnormal gastrulation
 
 [Term]
 id: MP:0002232
@@ -18162,6 +18185,7 @@ synonym: "absent blastocoele" EXACT []
 synonym: "failure to cavitate" EXACT []
 synonym: "failure to form blastocyst cavity" EXACT []
 is_a: MP:0004963 ! abnormal blastocoele morphology
+is_a: MP:0012129 ! failure of blastocyst formation
 
 [Term]
 id: MP:0002664
@@ -18913,10 +18937,11 @@ is_a: MP:0003313 ! abnormal locomotor activation
 [Term]
 id: MP:0002758
 name: long tail
-def: "increased length of tail relative to average of a given strain" [MGI:pvb]
+def: "increased length of tail relative to average of a given reference population" [MGI:pvb]
 subset: Europhenome_Terms
 subset: Sanger_Terms
-is_a: MP:0002111 ! abnormal tail morphology
+synonym: "increased tail length" EXACT []
+is_a: MP:0011999 ! abnormal tail length
 
 [Term]
 id: MP:0002759
@@ -19805,7 +19830,7 @@ is_a: MP:0000778 ! abnormal nervous system tract morphology
 [Term]
 id: MP:0002879
 name: increased cellular sensitivity to X-ray irradiation
-def: "increased incidence of cell death following exposure to high levels of X-ray irradiation" [RGD:cur]
+def: "increased incidence of cell death following exposure to X-ray irradiation" [RGD:cur]
 synonym: "decreased cellular resistance to X-ray irradiation" EXACT []
 synonym: "increased cellular susceptibility to X-ray irradiation" EXACT []
 is_a: MP:0004227 ! increased cellular sensitivity to ionizing radiation
@@ -20786,7 +20811,7 @@ is_a: MP:0003015 ! abnormal circulating bicarbonate level
 id: MP:0003018
 name: abnormal circulating chloride level
 def: "aberrant concentration of chlorine salts in the circulation" [RGD:cur]
-is_a: MP:0006357 ! abnormal circulating mineral level
+is_a: MP:0012007 ! abnormal chloride level
 
 [Term]
 id: MP:0003019
@@ -21668,8 +21693,9 @@ is_a: MP:0008801 ! abnormal erythroid progenitor cell morphology
 [Term]
 id: MP:0003136
 name: yellow coat color
-def: "amount and distribution of yellow pigment (phaeomelanin) relative to black or brown pigment (eumelanin) is increased compared to wild-type agouti" [MGI:llw2]
-is_a: MP:0002075 ! abnormal coat/hair pigmentation
+def: "amount and distribution of yellow pigment (phaeomelanin) relative to black or brown pigment (eumelanin) is maximally increased in agouti hair" [MGI:llw2]
+comment: This term is rodent specific.
+is_a: MP:0012076 ! abnormal agouti pigmentation
 
 [Term]
 id: MP:0003137
@@ -22060,12 +22086,16 @@ is_obsolete: true
 id: MP:0003189
 name: fused joints
 def: "partial or complete absence of a functional articulation point of two or more bones" [MGI:csmith]
+synonym: "fusion of joints" EXACT []
+synonym: "joint fusion" EXACT []
 is_a: MP:0002932 ! abnormal joint morphology
 
 [Term]
 id: MP:0003190
 name: fused synovial joints
 def: "partial or complete absence of separations containing synovial fluid between bones" [MGI:smb]
+synonym: "fusion of synovial joints" EXACT []
+synonym: "synovial joint fusion" EXACT []
 is_a: MP:0003189 ! fused joints
 
 [Term]
@@ -22183,7 +22213,7 @@ is_a: MP:0001147 ! small testis
 [Term]
 id: MP:0003207
 name: decreased cellular sensitivity to gamma-irradiation
-def: "decreased incidence of cell death following exposure to high levels of gamma-irradiation" [MGI:smb]
+def: "decreased incidence of cell death following exposure to gamma-irradiation" [MGI:smb]
 synonym: "decreased cellular susceptibility to gamma-irradiation" EXACT []
 synonym: "increased cellular resistance to gamma-irradiation" EXACT []
 synonym: "reduced cellular sensitivity to gamma-irradiation" EXACT []
@@ -22362,8 +22392,9 @@ is_a: MP:0001711 ! abnormal placenta morphology
 [Term]
 id: MP:0003232
 name: abnormal forebrain development
-def: "anomaly in the formation or patterning of the anterior primitive cerebral vesicle; most rostral of three primary vesicles of the embryonic neural tube" [J:93081, MGI:smb]
+def: "anomaly in the formation or patterning of the anterior of the three primary divisions of the developing chordate brain or the corresponding part of the adult brain (in vertebrates, includes especially the cerebral hemispheres, the thalamus, and the hypothalamus and especially in higher vertebrates is the main control center for sensory and associative information processing, visceral functions, and voluntary motor functions)" [GO:0048853]
 subset: IMPC_Prenatal
+synonym: "abnormal prosencephalon development" EXACT []
 is_a: MP:0000783 ! abnormal forebrain morphology
 is_a: MP:0000913 ! abnormal brain development
 
@@ -23223,10 +23254,10 @@ is_a: MP:0003349 ! abnormal circulating renin level
 [Term]
 id: MP:0003354
 name: astrocytosis
-def: "a proliferation or spread of astrocytes in the area of a degenerative lesion or damaged tissue" [MESH:C23.550.369]
+def: "a proliferation or spread of astrocytes into the area of a degenerative lesion or damaged tissue" [MESH:C23.550.369]
 synonym: "astrogliosis" EXACT []
-is_a: MP:0002182 ! abnormal astrocyte morphology
 is_a: MP:0002183 ! gliosis
+is_a: MP:0012065 ! increased astrocyte number
 
 [Term]
 id: MP:0003355
@@ -24958,7 +24989,9 @@ def: "a defect in which there is a single malformed organ resulting from partial
 subset: CvDC_Terms
 synonym: "cake kidney" NARROW []
 synonym: "disk kidney" NARROW []
+synonym: "fusion of kidneys" EXACT []
 synonym: "horseshoe kidney" NARROW []
+synonym: "kidney fusion " EXACT []
 is_a: MP:0002135 ! abnormal kidney morphology
 
 [Term]
@@ -25070,6 +25103,7 @@ name: oliguria
 def: "decreased volume of urine produced and excreted" [NCBI:matt]
 subset: Europhenome_Terms
 synonym: "decreased urine output" EXACT []
+synonym: "decreased urine volume" EXACT []
 synonym: "low urine output" EXACT []
 synonym: "oliguresis" EXACT []
 synonym: "reduced urine output" EXACT []
@@ -25327,6 +25361,7 @@ is_a: MP:0010577 ! abnormal heart right ventricle size
 id: MP:0003651
 name: abnormal axon outgrowth
 def: "abnormality in the ability of an axon to extend from a neuron cell body" [J:96121, MGI:monikat]
+synonym: "abnormal axon elongation" EXACT []
 synonym: "abnormal axon extension" EXACT []
 is_a: MP:0009937 ! abnormal neuron differentiation
 
@@ -25499,6 +25534,8 @@ is_a: MP:0002160 ! abnormal reproductive system morphology
 id: MP:0003674
 name: oxidative stress
 def: "condition characterized by an accumulation of free radical groups in the body, which creates a potentially unstable and damaging cellular environment linked to tissue damage, accelerated aging, and degenerative disease; can result from many factors, including exposure to alcohol, medications, poor nutrition, trauma, cold or toxins; may be indicated by low antioxidant levels measured in blood plasma" [MESH:G06.535.710]
+synonym: "increased reactive oxygen species production" RELATED []
+synonym: "increased ROS production" RELATED []
 is_a: MP:0003186 ! abnormal redox activity
 
 [Term]
@@ -25627,21 +25664,22 @@ is_a: MP:0002118 ! abnormal lipid homeostasis
 
 [Term]
 id: MP:0003693
-name: abnormal embryo hatching
-def: "anomalies in the ability of the embryo to break out of the zona pellucida, the thick solid transparent outer membrane that surrounds the developing ovum and embryo prior to implantation, may be seen in vivo or in cultured embryos" [MGI:smb]
+name: abnormal blastocyst hatching
+def: "any anomaly of the hatching of the cellular blastocyst from the zona pellucida, the thick solid transparent outer membrane that surrounds the developing ovum and embryo prior to implantation" [GO:0001835]
+synonym: "abnormal embryo hatching" RELATED []
 is_a: MP:0001672 ! abnormal embryogenesis/ development
 
 [Term]
 id: MP:0003694
-name: failure to hatch from the zona pellucida
-def: "the embryo fails to break out of the thick solid transparent outer membrane that surrounds the developing ovum and embryo prior to implantation, may be seen in vivo or in cultured embryos" [MGI:smb]
-is_a: MP:0003693 ! abnormal embryo hatching
+name: failure of blastocyst to hatch from the zona pellucida
+def: "the hatching of the cellular blastocyst from the zona pellucida, the thick solid transparent outer membrane that surrounds the developing ovum and embryo prior to implantation, fails to occur" [GO:0001835]
+is_a: MP:0003693 ! abnormal blastocyst hatching
 
 [Term]
 id: MP:0003695
-name: delayed hatching from the zona pellucida
-def: "the embryo takes longer than normal to break out of the thick solid transparent outer membrane that surrounds the developing ovum and embryo prior to implantation, may be seen in vivo or in cultured embryos" [MGI:smb]
-is_a: MP:0003693 ! abnormal embryo hatching
+name: delayed blastocyst hatching from the zona pellucida
+def: "the hatching of the cellular blastocyst from the zona pellucida, the thick solid transparent outer membrane that surrounds the developing ovum and embryo prior to implantation, occurs later in development than expected" [GO:0001835]
+is_a: MP:0003693 ! abnormal blastocyst hatching
 
 [Term]
 id: MP:0003696
@@ -25671,7 +25709,7 @@ is_a: MP:0001919 ! abnormal reproductive system physiology
 id: MP:0003700
 name: abnormal oviduct transport
 def: "increased or decreased rate of passage of embryos or oocytes from the ovary to the uterus" [J:97633, MGI:smb]
-is_a: MP:0004015 ! abnormal oviduct environment
+is_a: MP:0012018 ! abnormal oviduct physiology
 
 [Term]
 id: MP:0003701
@@ -25959,6 +25997,8 @@ is_a: MP:0005105 ! abnormal middle ear ossicle morphology
 id: MP:0003740
 name: fusion of middle ear ossicles
 def: "union of the three small bones of the middle ear into a single structure" [NCBI:matt]
+synonym: "fused middle ear ossicles" EXACT []
+synonym: "middle ear ossicle fusion" EXACT []
 is_a: MP:0005105 ! abnormal middle ear ossicle morphology
 
 [Term]
@@ -26791,6 +26831,7 @@ id: MP:0003864
 name: abnormal midbrain development
 def: "anomaly in the formation of or the patterning of the part of the brainstem developing from the middle of the three primary cerebral vesicles of the embryo" [ISBN:0-683-40008-8, MGI:csmith]
 subset: IMPC_Prenatal
+synonym: "abnormal mesencephalon development" EXACT []
 is_a: MP:0000913 ! abnormal brain development
 
 [Term]
@@ -26946,7 +26987,7 @@ synonym: "abnormal embryonic ectoderm morphology" EXACT []
 synonym: "abnormal EPI" EXACT []
 synonym: "abnormal primary ectoderm morphology" EXACT []
 synonym: "abnormal primitive ectoderm morphology" EXACT []
-is_a: MP:0001672 ! abnormal embryogenesis/ development
+is_a: MP:0012103 ! abnormal embryonic disc morphology
 
 [Term]
 id: MP:0003887
@@ -27103,37 +27144,6 @@ name: decreased stereotypic behavior
 def: "less frequent incidence of repetitive, invariant, persistent motor patterns that do not appear to be purposeful" [RGD:cur]
 synonym: "reduced stereotypic behavior" EXACT []
 is_a: MP:0001408 ! stereotypic behavior
-
-[Term]
-id: MP:0003909
-name: increased eating behavior
-def: "more frequent pattern of consumption and/or amount of solid food" [RGD:cur]
-subset: Sanger_Terms
-is_a: MP:0001431 ! abnormal eating behavior
-
-[Term]
-id: MP:0003910
-name: decreased eating behavior
-def: "less frequent pattern of consumption and/or amount of solid food" [RGD:cur]
-subset: Europhenome_Terms
-subset: Sanger_Terms
-synonym: "reduced eating behavior" EXACT []
-is_a: MP:0001431 ! abnormal eating behavior
-
-[Term]
-id: MP:0003911
-name: increased drinking behavior
-def: "more frequent pattern and/or amount of consumption of liquids" [RGD:cur]
-subset: Sanger_Terms
-is_a: MP:0001422 ! abnormal drinking behavior
-
-[Term]
-id: MP:0003912
-name: decreased drinking behavior
-def: "less frequent pattern and/or amount of consumption of liquids" [RGD:cur]
-subset: Sanger_Terms
-synonym: "reduced drinking behavior" EXACT []
-is_a: MP:0001422 ! abnormal drinking behavior
 
 [Term]
 id: MP:0003913
@@ -27435,7 +27445,7 @@ is_a: MP:0001764 ! abnormal homeostasis
 id: MP:0003954
 name: abnormal Reichert's membrane morphology
 def: "any structural anomaly of the extraembryonic basement membrane that forms on the inner surface of the trophectoderm during placenta morphogenesis and is secreted by the distal parietal endoderm; required for the maternofetal exchange of nutrients and is important for the postgastrulation development" [MGI:csmith, MGI:smb]
-is_a: MP:0011203 ! abnormal parietal yolk sac morphology
+is_a: MP:0011187 ! abnormal parietal endoderm morphology
 
 [Term]
 id: MP:0003955
@@ -27893,7 +27903,7 @@ is_a: MP:0009661 ! abnormal pregnancy
 id: MP:0004015
 name: abnormal oviduct environment
 def: "anomaly or inability of the oviduct to support egg viability" [MGI:llw2]
-is_a: MP:0003699 ! abnormal female reproductive system physiology
+is_a: MP:0012018 ! abnormal oviduct physiology
 
 [Term]
 id: MP:0004016
@@ -28473,7 +28483,13 @@ is_a: MP:0001340 ! abnormal eyelid morphology
 id: MP:0004096
 name: abnormal midbrain-hindbrain boundary development
 def: "anomaly in the formation of the midbrain-hindbrain domain, comprised of the mesencephalic vesicle and the first rhombencephalic vesicle at early somitogenesis stages; an organizing center at the boundary patterns the midbrain and hindbrain primordia of the neural plate" [MGI:csmith]
-is_a: MP:0003864 ! abnormal midbrain development
+synonym: " abnormal isthmus organizer development" EXACT []
+synonym: "abnormal isthmic organizer development" EXACT []
+synonym: "abnormal isthmomesencephalic boundary development" EXACT []
+synonym: "abnormal isthmus development" EXACT []
+synonym: "abnormal MHB development" EXACT []
+synonym: "abnormal midbrain-hindbrain organizer development" EXACT []
+is_a: MP:0012132 ! abnormal midbrain-hindbrain boundary morphology
 
 [Term]
 id: MP:0004097
@@ -28833,11 +28849,11 @@ is_a: MP:0002106 ! abnormal muscle physiology
 
 [Term]
 id: MP:0004143
-name: hypertonia
+name: muscle hypertonia
 def: "increased muscle tension resulting in stiffness of the muscles in the resting state" [MGI:hdene]
-synonym: "hypertonicity" EXACT []
-synonym: "hypertonus" EXACT []
-synonym: "spasticity" EXACT []
+synonym: "muscle hypertonicity" EXACT []
+synonym: "muscle hypertonus" EXACT []
+synonym: "muscle spasticity" EXACT []
 is_a: MP:0004142 ! abnormal muscle tone
 
 [Term]
@@ -29435,7 +29451,7 @@ is_a: MP:0005204 ! abnormal canal of Schlemm morphology
 [Term]
 id: MP:0004227
 name: increased cellular sensitivity to ionizing radiation
-def: "increased incidence of cell death following exposure to high levels of ionizing radiation" [MGI:csmith]
+def: "increased incidence of cell death following exposure to ionizing radiation" [MGI:csmith]
 synonym: "decreased cellular resistance to ionizing radiation" EXACT []
 synonym: "increased cellular susceptibility to ionizing radiation" EXACT []
 is_a: MP:0008943 ! increased sensitivity to induced cell death
@@ -29443,7 +29459,7 @@ is_a: MP:0008943 ! increased sensitivity to induced cell death
 [Term]
 id: MP:0004228
 name: decreased cellular sensitivity to ionizing radiation
-def: "decreased incidence of cell death following exposure to high levels of ionizing radiation" [MGI:csmith]
+def: "decreased incidence of cell death following exposure to ionizing radiation" [MGI:csmith]
 synonym: "decreased cellular susceptibility to ionizing radiation" EXACT []
 synonym: "increased cellular resistance to ionizing radiation" EXACT []
 synonym: "reduced cellular sensitivity to ionizing radiation" EXACT []
@@ -29700,7 +29716,8 @@ is_a: MP:0002066 ! abnormal motor capabilities/coordination/movement
 [Term]
 id: MP:0004263
 name: abnormal limb posture
-def: "atypical position of the limbs compared to the normal carriage of the body" [MGI:csmith]
+def: "atypical intentionally or habitually assumed position of the limbs compared to the normal carriage of the body" [MGI:csmith]
+comment: This term should not be used to describe abnormal limb placement on the body (congenital or trauma induced).
 is_a: MP:0001504 ! abnormal posture
 
 [Term]
@@ -29948,7 +29965,6 @@ name: abnormal proprioceptive neuron morphology
 def: "any structural anomaly of the sensory neurons of the dorsal root ganglia that sense body position and send information about how much the muscle is stretched to the spinal cord" [MGI:hdene]
 is_a: MP:0000961 ! abnormal dorsal root ganglion morphology
 is_a: MP:0000965 ! abnormal sensory neuron morphology
-is_a: MP:0002882 ! abnormal neuron morphology
 
 [Term]
 id: MP:0004298
@@ -31403,42 +31419,48 @@ is_a: MP:0004496 ! abnormal organ of Corti supporting cell number
 
 [Term]
 id: MP:0004499
-name: increased incidence of chemically-induced tumors
+name: increased incidence of tumors by chemical induction
 def: "higher than normal frequency of tumor incidence induced by one or more chemical carcinogens or mutagens" [MGI:smb]
+synonym: "increased incidence of chemically-induced tumors" EXACT []
 is_a: MP:0002021 ! increased incidence of induced tumors
 is_a: MP:0008873 ! increased physiological sensitivity to xenobiotic
 
 [Term]
 id: MP:0004500
-name: increased incidence of ionizing radiation-induced tumors
+name: increased incidence of tumors by ionizing radiation induction
 def: "higher than normal frequency of tumor incidence induced by radiation in which the individual particle or photon carries sufficient energy to completely remove an electron from its orbit; common types of this radiation include gamma-rays and X-rays" [MGI:smb]
+synonym: "increased incidence of ionizing radiation-induced tumors" EXACT []
 is_a: MP:0002021 ! increased incidence of induced tumors
 
 [Term]
 id: MP:0004501
-name: increased incidence of UV-induced tumors
+name: increased incidence of tumors by UV-induction
 def: "higher than normal frequency of tumor incidence induced by exposure to ultraviolet light" [MGI:smb]
+synonym: "increased incidence of UV-induced tumors" EXACT []
 is_a: MP:0002021 ! increased incidence of induced tumors
 
 [Term]
 id: MP:0004502
-name: decreased incidence of chemically-induced tumors
+name: decreased incidence of tumors by chemical induction
 def: "lower than normal frequency of tumor incidence induced by one or more chemical carcinogens or mutagens" [MGI:smb]
+synonym: "decreased incidence of chemically-induced tumors" EXACT []
 synonym: "reduced incidence of chemically-induced tumors" EXACT []
 is_a: MP:0002053 ! decreased incidence of induced tumors
 is_a: MP:0008874 ! decreased physiological sensitivity to xenobiotic
 
 [Term]
 id: MP:0004503
-name: decreased incidence of ionizing radiation-induced tumors
+name: decreased incidence of tumors by ionizing radiation induction
 def: "lower than normal frequency of tumor incidence induced by radiation in which the individual particle or photon carries sufficient energy to completely remove an electron from its orbit; common types of this radiation include gamma-rays and X-rays" [MGI:smb]
+synonym: "decreased incidence of ionizing radiation-induced tumors" EXACT []
 synonym: "reduced incidence of ionizing radiation-induced tumors" EXACT []
 is_a: MP:0002053 ! decreased incidence of induced tumors
 
 [Term]
 id: MP:0004504
-name: decreased incidence of UV-induced tumors
+name: decreased incidence of tumors by UV induction
 def: "lower than normal frequency of tumor incidence induced by exposure to ultraviolet light" [MGI:smb]
+synonym: "decreased incidence of UV-induced tumors" EXACT []
 synonym: "reduced incidence of UV-induced tumors" EXACT []
 is_a: MP:0002053 ! decreased incidence of induced tumors
 
@@ -31531,7 +31553,9 @@ id: MP:0004516
 name: fused vestibular hair cell stereocilia
 def: "coalescence of the nonmotile, actin-filled specialized microvilli (stereocilia) normally arrayed on vestibular hair cells, often resulting in giant stereocilia" [MGI:anna]
 synonym: "fused vestibular stereocilia" EXACT []
+synonym: "fusion of vestibular hair cell stereocilia" EXACT []
 synonym: "giant vestibular stereocilia" EXACT []
+synonym: "vestibular hair cell stereocilia fusion" EXACT []
 is_a: MP:0004515 ! abnormal vestibular hair cell stereociliary bundle morphology
 
 [Term]
@@ -31615,7 +31639,9 @@ id: MP:0004528
 name: fused outer hair cell stereocilia
 def: "coalescence of the nonmotile, actin-filled specialized microvilli (stereocilia) normally arrayed on cochlear outer hair cells, often resulting in giant stereocilia" [MGI:anna]
 synonym: "fused OHC stereocilia" EXACT []
+synonym: "fusion of outer hair cell stereocilia" EXACT []
 synonym: "giant OHC stereocilia" EXACT []
+synonym: "outer hair cell stereocilia fusion " EXACT []
 is_a: MP:0004527 ! abnormal outer hair cell stereociliary bundle morphology
 
 [Term]
@@ -31654,6 +31680,8 @@ id: MP:0004533
 name: fused inner hair cell stereocilia
 def: "coalescence of the nonmotile, actin-filled specialized microvilli (stereocilia) normally arrayed on cochlear inner hair cells, often resulting in giant stereocilia" [MGI:anna]
 synonym: "fused IHC stereocilia" EXACT []
+synonym: "fused inner hair cell stereocilia" EXACT []
+synonym: "fusion of inner hair cell stereocilia" EXACT []
 synonym: "giant IHC stereocilia" EXACT []
 is_a: MP:0004532 ! abnormal inner hair cell stereociliary bundle morphology
 
@@ -31791,6 +31819,8 @@ id: MP:0004552
 name: fused tracheal cartilage rings
 def: "fusion of the 16-20 incomplete rings of hyaline cartilage that form the skeleton of the trachea" [MGI:anna]
 synonym: "fused tracheal rings" EXACT []
+synonym: "fusion of tracheal cartilage rings" EXACT []
+synonym: "tracheal cartilage ring fusion" EXACT []
 is_a: MP:0003120 ! abnormal tracheal cartilage morphology
 
 [Term]
@@ -31905,6 +31935,8 @@ is_a: MP:0000278 ! abnormal myocardial fiber morphology
 id: MP:0004568
 name: fusion of glossopharyngeal and vagus nerve
 def: "union of the ninth and tenth cranial nerves into a single structure" [MGI:csmith]
+synonym: "fused glossopharyngeal and vagus nerves" RELATED []
+synonym: "glossopharyngeal and vagus nerve fusion" EXACT []
 is_a: MP:0001073 ! abnormal glossopharyngeal nerve morphology
 is_a: MP:0001074 ! abnormal vagus nerve morphology
 
@@ -31930,6 +31962,8 @@ is_a: MP:0001074 ! abnormal vagus nerve morphology
 id: MP:0004572
 name: fusion of basioccipital and basisphenoid bone
 def: "union of the basioccipital and basisphenoid bones into one structure, when this fusion does not normally occur (such as in a species where these bones normally persist as separate entities)" [MGI:csmith]
+synonym: "basioccipital and basisphenoid bone fusion" EXACT []
+synonym: "fused basioccipital and basisphenoid bones" EXACT []
 is_a: MP:0000079 ! abnormal basioccipital bone morphology
 is_a: MP:0000106 ! abnormal basisphenoid bone morphology
 
@@ -32026,7 +32060,7 @@ is_a: MP:0003825 ! abnormal pillar cell morphology
 [Term]
 id: MP:0004587
 name: decreased cellular sensitivity to X-ray irradiation
-def: "decreased incidence of cell death following exposure to high levels of X-ray irradiation" [MGI:monikat]
+def: "decreased incidence of cell death following exposure to X-ray irradiation" [MGI:monikat]
 synonym: "decreased cellular susceptibility to X-ray irradiation" EXACT []
 synonym: "increased cellular resistance to X-ray irradiation" EXACT []
 synonym: "reduced cellular sensitivity to X-ray irradiation" EXACT []
@@ -32189,6 +32223,8 @@ name: vertebral fusion
 def: "the union of one or more vertebrae into a single structure" [MGI:csmith]
 subset: Europhenome_Terms
 subset: Sanger_Terms
+synonym: "fused vertebrae" EXACT []
+synonym: "fusion of vertebrae" RELATED []
 synonym: "vertebral ankylosis" EXACT []
 is_a: MP:0000137 ! abnormal vertebrae morphology
 is_a: MP:0003189 ! fused joints
@@ -32211,6 +32247,8 @@ is_a: MP:0008873 ! increased physiological sensitivity to xenobiotic
 id: MP:0004612
 name: fusion of vertebral bodies
 def: "improper union of the main cylindrical portion of adjacent vertebra ventral to the vertebral canal" [MGI:csmith]
+synonym: "fused vertebral bodies" RELATED []
+synonym: "vertebral body fusion" EXACT []
 is_a: MP:0000141 ! abnormal vertebral body morphology
 is_a: MP:0004609 ! vertebral fusion
 
@@ -32219,8 +32257,10 @@ id: MP:0004613
 name: fusion of vertebral arches
 def: "improper union of the dorsal part of adjacent vertebra" [MGI:csmith]
 subset: Sanger_Terms
+synonym: "fused vertebral arches" EXACT []
 synonym: "fusion of dorsal arches" EXACT []
 synonym: "fusion of neural arches" EXACT []
+synonym: "vertebral arch fusion" EXACT []
 is_a: MP:0004599 ! abnormal vertebral arch morphology
 is_a: MP:0004609 ! vertebral fusion
 
@@ -32273,6 +32313,7 @@ def: "the union of one or more caudal vertebrae into a single structure in speci
 comment: There are usually 27-30 caudal vertebrae present in rodents and only 3-5 fused caudal vertebrae in human.
 subset: Sanger_Terms
 synonym: "caudal vertebral ankylosis" EXACT []
+synonym: "fused caudal vertebrae" EXACT []
 is_a: MP:0002759 ! abnormal caudal vertebrae morphology
 is_a: MP:0004609 ! vertebral fusion
 
@@ -32282,6 +32323,7 @@ name: cervical vertebral fusion
 def: "the union of one or more cervical vertebrae into a single structure" [MGI:csmith]
 subset: Sanger_Terms
 synonym: "cervical vertebral ankylosis" EXACT []
+synonym: "fused cervical vertebrae" EXACT []
 is_a: MP:0003048 ! abnormal cervical vertebrae morphology
 is_a: MP:0004609 ! vertebral fusion
 
@@ -32289,6 +32331,7 @@ is_a: MP:0004609 ! vertebral fusion
 id: MP:0004621
 name: lumbar vertebral fusion
 def: "the union of one or more lumbar vertebrae into a single structure" [MGI:csmith]
+synonym: "fusion of lumbar vertebrae" EXACT []
 synonym: "lumbar vertebral ankylosis" EXACT []
 is_a: MP:0003049 ! abnormal lumbar vertebrae morphology
 is_a: MP:0004609 ! vertebral fusion
@@ -32298,6 +32341,8 @@ id: MP:0004622
 name: sacral vertebral fusion
 def: "the union of one or more sacral vertebrae into a single structure in species where this does not normally occur" [MGI:csmith]
 comment: In humans, vertebrae S1-S5 are normally fused in maturity, with no intervertebral discs. In rodents, these vertebrae remain distinct in adulthood.
+synonym: "fused sacral vertebrae" EXACT []
+synonym: "fusion of sacral vertebrae" EXACT []
 is_a: MP:0003050 ! abnormal sacral vertebrae morphology
 is_a: MP:0004609 ! vertebral fusion
 
@@ -32305,6 +32350,8 @@ is_a: MP:0004609 ! vertebral fusion
 id: MP:0004623
 name: thoracic vertebral fusion
 def: "the union of one or more thoracic vertebrae into a single structure" [MGI:csmith]
+synonym: "fusied thoracic vertebrae" EXACT []
+synonym: "fusion of thoracic vertebrae" EXACT []
 synonym: "thoracic vertebral ankylosis" EXACT []
 is_a: MP:0003047 ! abnormal thoracic vertebrae morphology
 is_a: MP:0004609 ! vertebral fusion
@@ -32418,6 +32465,8 @@ is_a: MP:0004695 ! increased length of long bones
 id: MP:0004639
 name: fused metacarpal bones
 def: "improper union of one or more of the five bones of the forepaws/hands that articulate proximally with the carpal bones and distally with the phalanges" [ISBN:0-683-40008-8]
+synonym: "fusion of metacarpal bones" EXACT []
+synonym: "metacarpal bone fusion" EXACT []
 is_a: MP:0003073 ! abnormal metacarpal bone morphology
 
 [Term]
@@ -32439,6 +32488,8 @@ is_a: MP:0004695 ! increased length of long bones
 id: MP:0004642
 name: fused metatarsal bones
 def: "improper union of the five bones of the hindpaws/feet that articulate proximally with the cuneiform and cuboid bones of the tarsus and distally with the phalanges" [ISBN:0-683-40008-8]
+synonym: "fusion of metatarsal bones" EXACT []
+synonym: "metatarsal bone fusion" EXACT []
 is_a: MP:0003072 ! abnormal metatarsal bone morphology
 
 [Term]
@@ -33476,15 +33527,11 @@ is_a: MP:0008243 ! abnormal macrophage derived foam cell morphology
 is_a: MP:0009841 ! foam cell reticulosis
 
 [Term]
-id: MP:0004779
-name: abnormal production of surfactant
-def: "anomaly in the production of surfactant, a phospholipid present in the lungs that controls surface tension in the alveoli" [MGI:csmith]
-is_a: MP:0004782 ! abnormal surfactant physiology
-
-[Term]
 id: MP:0004780
 name: abnormal surfactant secretion
-def: "anomaly in the release from pneumocytes of surfactant, a phospholipid present in the lungs that controls surface tension in the alveoli" [MGI:csmith]
+alt_id: MP:0004779
+def: "anomaly in the production or release from pneumocytes of surfactant, a phospholipid present in the lungs that controls surface tension in the alveoli" [MGI:csmith]
+synonym: "abnormal production of surfactant" EXACT []
 is_a: MP:0004782 ! abnormal surfactant physiology
 
 [Term]
@@ -33779,6 +33826,7 @@ is_a: MP:0000759 ! abnormal skeletal muscle morphology
 id: MP:0004818
 name: increased skeletal muscle mass
 def: "increase in the physical bulk, or total amount of matter contained within skeletal muscle" [MGI:csmith]
+synonym: "hypermuscularity" EXACT []
 is_a: MP:0004817 ! abnormal skeletal muscle mass
 
 [Term]
@@ -33796,6 +33844,7 @@ def: "any change in the amount of potassium in the urine" [MGI:csmith]
 synonym: "abnormal kidney potassium excretion" EXACT []
 synonym: "abnormal renal potassium secretion" EXACT []
 is_a: MP:0009643 ! abnormal urine homeostasis
+is_a: MP:0011978 ! abnormal potassium ion homeostasis
 
 [Term]
 id: MP:0004821
@@ -35052,7 +35101,8 @@ is_a: MP:0004979 ! abnormal neuronal precursor cell number
 [Term]
 id: MP:0004982
 name: abnormal osteoclast morphology
-def: "any structural anomaly of the bone resorpting cells that remove bone tissue by degrading the mineralized matrix" [MGI:csmith]
+def: "any structural anomaly of the specialized phagocytic cells associated with the absorption and removal of the mineralized matrix of bone tissue" [CL:0000092]
+synonym: "abnormal chondroclast morphology" RELATED []
 synonym: "abnormal osteophage morphology" EXACT []
 is_a: MP:0002446 ! abnormal macrophage morphology
 is_a: MP:0003795 ! abnormal bone structure
@@ -35060,20 +35110,24 @@ is_a: MP:0003795 ! abnormal bone structure
 [Term]
 id: MP:0004983
 name: abnormal osteoclast cell number
-def: "deviation from the average number of the bone resorpting cells that remove bone tissue by degrading the mineralized matrix" [MGI:csmith]
+def: "deviation from the average number of the specialized phagocytic cells associated with the absorption and removal of the mineralized matrix of bone tissue" [CL:0000092, MGI:csmith]
+synonym: "abnormal chondroclast cell number" RELATED []
 is_a: MP:0004982 ! abnormal osteoclast morphology
 
 [Term]
 id: MP:0004984
 name: increased osteoclast cell number
-def: "greater than average number of the bone resorpting cells that remove bone tissue by degrading the mineralized matrix" [MGI:csmith]
+def: "greater than average number of the specialized phagocytic cells associated with the absorption and removal of the mineralized matrix of bone tissue" [CL:0000092]
+synonym: "increased chondrocyte cell number" RELATED []
 is_a: MP:0004983 ! abnormal osteoclast cell number
 is_a: MP:0005425 ! increased macrophage cell number
 
 [Term]
 id: MP:0004985
 name: decreased osteoclast cell number
-def: "reduced number of the bone resorpting cells that remove bone tissue by degrading the mineralized matrix" [MGI:csmith]
+def: "reduced number of the specialized phagocytic cells associated with the absorption and removal of the mineralized matrix of bone tissue" [CL:0000092]
+synonym: "decreased chondrocyte cell number" RELATED []
+synonym: "reduced chondrocyte cell number" RELATED []
 synonym: "reduced osteoclast cell number" EXACT []
 is_a: MP:0003884 ! decreased macrophage cell number
 is_a: MP:0004983 ! abnormal osteoclast cell number
@@ -35081,20 +35135,20 @@ is_a: MP:0004983 ! abnormal osteoclast cell number
 [Term]
 id: MP:0004986
 name: abnormal osteoblast morphology
-def: "any structural anomaly of a bone-forming cell, which secrete extracellular matrix components and form an osseous matrix (osteoid)" [MESH:A.11.329.629, MGI:csmith]
+def: "any structural anomaly of a skeletogenic cell that secretes osteoid, is capable of producing mineralized (hydroxyapatite) matrix, is located adjacent to or within osteoid tissue, and arises from the transformation of a preosteoblast cell" [CL:0000062]
 is_a: MP:0003795 ! abnormal bone structure
 
 [Term]
 id: MP:0004987
 name: abnormal osteoblast cell number
-def: "deviation from the average number of the bone-forming cells, which secrete extracellular matrix components and form an osseous matrix (osteoid)" [MESH:A.11.329.629, MGI:csmith]
+def: "deviation from the average number of the skeletogenic cells that secrete osteoid, are capable of producing mineralized (hydroxyapatite) matrix, are located adjacent to or within osteoid tissue, and arise from the transformation of a preosteoblast cell" [CL:0000062]
 is_a: MP:0004986 ! abnormal osteoblast morphology
 
 [Term]
 id: MP:0004988
 name: increased osteoblast cell number
 alt_id: MP:0002744
-def: "greater than average number of the bone-forming cells, which secrete extracellular matrix components and form an osseous matrix (osteoid)" [MESH:A.11.329.629, MGI:csmith]
+def: "greater than average number of skeletogenic cells that secrete osteoid, are capable of producing mineralized (hydroxyapatite) matrix, are located adjacent to or within osteoid tissue, and arise from the transformation of a preosteoblast cell" [CL:0000062]
 synonym: "increased osteoblast formation" EXACT []
 is_a: MP:0004987 ! abnormal osteoblast cell number
 
@@ -35102,7 +35156,7 @@ is_a: MP:0004987 ! abnormal osteoblast cell number
 id: MP:0004989
 name: decreased osteoblast cell number
 alt_id: MP:0000058
-def: "reduction in the number of the bone-forming cells, which secrete extracellular matrix components and form an osseous matrix (osteoid)" [MESH:A.11.329.629, MGI:csmith]
+def: "reduction in the number of skeletogenic cells that secrete osteoid, are capable of producing mineralized (hydroxyapatite) matrix, are located adjacent to or within osteoid tissue, and arise from the transformation of a preosteoblast cell" [CL:0000062]
 synonym: "decreased osteoblast formation" EXACT []
 synonym: "reduced osteoblast cell number" EXACT []
 synonym: "reduced osteoblast formation" EXACT []
@@ -35228,7 +35282,7 @@ is_a: MP:0005000 ! abnormal immune tolerance
 [Term]
 id: MP:0005006
 name: abnormal osteoblast physiology
-def: "any functional anomaly of bone-forming cells, which normally form an osseous matrix in which it becomes enclosed as an osteocyte" [ISBN:0-683-40008-8]
+def: "any functional anomaly of a skeletogenic cell that secretes osteoid, is capable of producing mineralized (hydroxyapatite) matrix, is located adjacent to or within osteoid tissue, and arises from the transformation of a preosteoblast cell" [CL:0000062]
 is_a: MP:0002998 ! abnormal bone remodeling
 
 [Term]
@@ -35452,12 +35506,14 @@ name: abnormal ectoplacental cone morphology
 def: "any structural anomaly of the thickened trophoblast of the blastocyst in rodents that becomes the fetal portion of the placenta" [MGI:cwg]
 synonym: "abnormal epamniotic cone" EXACT []
 is_a: MP:0001712 ! abnormal placenta development
+is_a: MP:0012056 ! abnormal polar trophectoderm morphology
 
 [Term]
 id: MP:0005033
 name: abnormal trophoblast giant cells
 def: "anomaly of the cells covering the blastocyst that erode the uterine mucosa and contribute to the formation of the placenta" [ISBN:0-683-40008-8, MGI:dlb]
 is_a: MP:0005031 ! abnormal trophoblast layer morphology
+is_a: MP:0012057 ! abnormal mural trophectoderm morphology
 
 [Term]
 id: MP:0005034
@@ -37715,6 +37771,7 @@ def: "anomaly in the reflex action normally induced by touch or pain" [MGI:csmit
 subset: Europhenome_Terms
 subset: Sanger_Terms
 is_a: MP:0001968 ! abnormal touch/ nociception
+is_a: MP:0012079 ! abnormal spinal reflex
 
 [Term]
 id: MP:0005317
@@ -37726,7 +37783,7 @@ is_a: MP:0000187 ! abnormal triglyceride level
 [Term]
 id: MP:0005318
 name: decreased triglyceride level
-def: "reduced concentration of naturally occurring esters of three fatty acids and glycerol in the blood; triglycerides are widespread in adipose tissue, commonly circulate in the blood in the form of lipoproteins, and are involved in the process of bidirectional transference of adipose fat and blood glucose with the liver" [MGI:csmith]
+def: "reduced concentration of naturally occurring esters of three fatty acids and glycerol; triglycerides are widespread in adipose tissue, commonly circulate in the blood in the form of lipoproteins, and are involved in the process of bidirectional transference of adipose fat and blood glucose with the liver" [MGI:csmith]
 synonym: "low triglyceride level" EXACT []
 synonym: "reduced triglyceride level" EXACT []
 is_a: MP:0000187 ! abnormal triglyceride level
@@ -38330,7 +38387,8 @@ is_a: MP:0001186 ! pigmentation phenotype
 id: MP:0005409
 name: darkened coat color
 def: "amount and distribution of yellow pigment (phaeomelanin) relative to black or brown pigment (eumelanin) is decreased when compared to wild-type agouti" [MGI:llw2]
-is_a: MP:0002075 ! abnormal coat/hair pigmentation
+synonym: "mahogany coat color" NARROW []
+is_a: MP:0012076 ! abnormal agouti pigmentation
 
 [Term]
 id: MP:0005410
@@ -40212,7 +40270,7 @@ is_a: MP:0003861 ! abnormal nervous system development
 [Term]
 id: MP:0005658
 name: increased susceptibility to diet-induced obesity
-def: "more likely to become excessively fat or to increase fat in the subcutaneous connective tissue as a result of consuming a diet geared to increase body fat" [MGI:cwg]
+def: "more likely to become excessively overweight or to increase fat in the subcutaneous connective tissue as a result of consuming a diet geared to increase body fat" [MGI:cwg]
 synonym: "decreased resistance to diet-induced obesity" EXACT []
 is_a: MP:0004890 ! decreased energy expenditure
 is_a: MP:0005455 ! increased susceptibility to weight gain
@@ -40220,7 +40278,7 @@ is_a: MP:0005455 ! increased susceptibility to weight gain
 [Term]
 id: MP:0005659
 name: decreased susceptibility to diet-induced obesity
-def: "less likely to become excessively fat or to increase fat in the subcutaneous connective tissue as a result of consuming a diet geared to increase body fat" [MGI:cwg]
+def: "less likely to become excessively overweight or to increase fat in the subcutaneous connective tissue as a result of consuming a diet geared to increase body fat" [MGI:cwg]
 synonym: "increased resistance to diet-induced obesity" EXACT []
 is_a: MP:0004889 ! increased energy expenditure
 is_a: MP:0010182 ! decreased susceptibility to weight gain
@@ -40797,6 +40855,7 @@ is_a: MP:0006059 ! decreased susceptibility to ischemic brain injury
 id: MP:0006059
 name: decreased susceptibility to ischemic brain injury
 def: "less severe response, such as necrotic tissue size, to lack of adequate blood flow, due to trauma or disease, to support the normal functioning of all or part of the brain tissue, compared to controls" [MGI:csmith]
+synonym: "decreased susceptibility to spontaneous CNS ischemia" RELATED []
 synonym: "increased resistance to ischemic brain injury" EXACT []
 synonym: "reduced susceptibility to ischemic brain injury" EXACT []
 is_a: MP:0003075 ! altered response to CNS ischemic injury
@@ -41019,10 +41078,12 @@ is_a: MP:0004425 ! abnormal otolith organ morphology
 
 [Term]
 id: MP:0006092
-name: abnormal olfactory neuron morphology
+name: abnormal olfactory sensory neuron morphology
 def: "any structural anomaly of the neurons in the olfactory epithelium that are activated by specific odorants" [MESH:A04.531.520.573.580, MGI:smb]
+synonym: "abnormal olfactory neuron morphology" EXACT []
 synonym: "abnormal olfactory receptor neuron morphology" EXACT []
 is_a: MP:0001001 ! abnormal chemoreceptor morphology
+is_a: MP:0008789 ! abnormal olfactory epithelium morphology
 
 [Term]
 id: MP:0006093
@@ -41098,6 +41159,7 @@ is_a: MP:0006100 ! abnormal tegmentum morphology
 id: MP:0006103
 name: abnormal midbrain roof plate morphology
 def: "any structural anomaly of the mesencephalic roof plate, including the caudal and rostral part of the midbrain roof" [MGI:anna, MGI:smb]
+synonym: "abnormal mesencephalon roof plate morphology" EXACT []
 is_a: MP:0000897 ! abnormal midbrain morphology
 
 [Term]
@@ -41584,12 +41646,6 @@ is_a: MP:0005461 ! abnormal dendritic cell morphology
 is_a: MP:0008248 ! abnormal mononuclear phagocyte morphology
 
 [Term]
-id: MP:0006174
-name: abnormal isthmic organizer morphology
-def: "any structural anomaly of the organizing signaling center that forms at the boundary between the midbrain and hindbrain and plays essential role in development of the midbrain and anterior hindbrain" [MGI:smb]
-is_a: MP:0000913 ! abnormal brain development
-
-[Term]
 id: MP:0006175
 name: choroid atrophy
 def: "acquired diminution of the size of the choroid associated with wasting as from death and reabsorbtion of cells, diminished cellular proliferation, decreased cellular volume, pressure, ischemia, malnutrition, reduced function or malfunction, or hormonal changes" [MGI:csmith, NCBI:matt]
@@ -41667,7 +41723,7 @@ is_a: MP:0006209 ! calcified intraocular region
 [Term]
 id: MP:0006190
 name: retinal ischemia
-def: "abnormal incidence of or response to loss of circulation in the retina; may be induced or spontaneous" [MGI:smb, NCBI:matt]
+def: "inadequate blood flow to the retina usually due to functional constriction or obstruction of a blood vessel" [MGI:smb, NCBI:matt]
 is_a: MP:0005253 ! abnormal eye physiology
 
 [Term]
@@ -42182,6 +42238,7 @@ def: "any change in the amount of organic anions in the urine" [MGI:csmith, MGI:
 synonym: "abnormal kidney organic anion excretion" EXACT []
 synonym: "abnormal renal organic anion excretion" EXACT []
 synonym: "abnormal renal organic anion secretion" EXACT []
+is_a: MP:0001765 ! abnormal ion homeostasis
 is_a: MP:0009643 ! abnormal urine homeostasis
 
 [Term]
@@ -42191,6 +42248,7 @@ def: "any change in the amount of organic cations in the urine" [MGI:csmith, MGI
 synonym: "abnormal kidney organic cation excretion" EXACT []
 synonym: "abnormal renal organic cation excretion" RELATED []
 synonym: "abnormal renal organic cation secretion" EXACT []
+is_a: MP:0001765 ! abnormal ion homeostasis
 is_a: MP:0009643 ! abnormal urine homeostasis
 
 [Term]
@@ -42201,6 +42259,7 @@ def: "any change in the amount of sodium in the urine" [MGI:csmith, MGI:smb]
 synonym: "abnormal kidney sodium excretion" EXACT []
 synonym: "abnormal renal sodium excretion" EXACT []
 is_a: MP:0009643 ! abnormal urine homeostasis
+is_a: MP:0011977 ! abnormal sodium ion homeostasis
 
 [Term]
 id: MP:0006276
@@ -44522,6 +44581,8 @@ is_a: MP:0008059 ! abnormal podocyte foot process morphology
 id: MP:0008139
 name: fused podocyte foot processes
 def: "coalescence of the footlike extension of podocytes that interdigitate with one another to form the walls of the glomerular capillaries" [ISBN:0-683-40008-8]
+synonym: "fusion of podocyte foot processes" EXACT []
+synonym: "podocyte foot processes fusion" EXACT []
 is_a: MP:0008059 ! abnormal podocyte foot process morphology
 
 [Term]
@@ -46846,7 +46907,7 @@ is_a: MP:0008391 ! abnormal primordial germ cell morphology
 id: MP:0008395
 name: abnormal osteoblast differentiation
 alt_id: MP:0005008
-def: "atypical production of or inability to produce bone-forming cells, which secrete extracellular matrix components and form an osseous matrix (osteoid)" [MESH:A.11.329.629, MGI:csmith]
+def: "atypical production of or inability to produce skeletogenic cells that secrete osteoid, are capable of producing mineralized (hydroxyapatite) matrix, are located adjacent to or within osteoid tissue, and arise from the transformation of a preosteoblast cell" [CL:0000062]
 synonym: "abnormal osteoblast formation" EXACT []
 synonym: "abnormal osteoplast formation" EXACT []
 is_a: MP:0002113 ! abnormal skeleton development
@@ -46857,7 +46918,8 @@ is_a: MP:0005076 ! abnormal cell differentiation
 id: MP:0008396
 name: abnormal osteoclast differentiation
 alt_id: MP:0000059
-def: "atypical production of or inability to produce bone resorpting cells that remove bone tissue by degrading the mineralized matrix" [MGI:csmith]
+def: "atypical production of or inability to produce the specialized phagocytic cells associated with the absorption and removal of the mineralized matrix of bone tissue" [CL:0000092]
+synonym: "abnormal chondrocyte differentiation" RELATED []
 synonym: "abnormal osteoclast formation" EXACT []
 synonym: "abnormal osteophage formation" EXACT []
 is_a: MP:0002113 ! abnormal skeleton development
@@ -47969,7 +48031,7 @@ id: MP:0008533
 name: abnormal anterior visceral endoderm morphology
 def: "any structural anomaly of the extraembryonic tissue that is responsible for the proper orientation of the anterior-posterior axis of the embryo and for appropriate patterning of adjacent embryonic tissue" [PMID:17078044]
 synonym: "abnormal AVE" EXACT []
-is_a: MP:0001724 ! abnormal extraembryonic endoderm formation
+is_a: MP:0011186 ! abnormal visceral endoderm morphology
 
 [Term]
 id: MP:0008534
@@ -48022,7 +48084,7 @@ id: MP:0008540
 name: abnormal cerebrum morphology
 def: "any structural anomaly of the largest part of the brain, derived from the telencephalon, and is composed of a right and a left hemisphere each which contains an outer cerebral cortex and a subcortical basal ganglia; cerebral functions include sensorimotor, emotional, and intellectual activities" [MESH:A08.186.211.730.885.287]
 synonym: "abnormal cerebral hemispheres" EXACT []
-synonym: "cerebrum dysplasia" RELATED []
+synonym: "cerebrum dysplasia" EXACT []
 is_a: MP:0000787 ! abnormal telencephalon morphology
 
 [Term]
@@ -50345,6 +50407,8 @@ name: fused phalanges
 def: "anomaly of the long bones of the digits resulting in some or all the bones being joined together" [MGI:llw2]
 subset: Sanger_Terms
 synonym: "fused digits" BROAD []
+synonym: "fusion of phalanges" EXACT []
+synonym: "phalanges fusion" EXACT []
 is_a: MP:0000564 ! syndactyly
 is_a: MP:0005306 ! abnormal phalanx morphology
 
@@ -51444,6 +51508,7 @@ id: MP:0008866
 name: chromosomal instability
 def: "abnormalities of DNA metabolism, DNA repair, cell-cycle governance, or control of apoptosis that increase the probability that whole chromosomes or pieces of chromosomes are gained or lost during cell division, resulting in an imbalance in the number of chromosomes per cell (aneuploidy) and an enhanced rate of loss of heterozygosity" [MGI:llw2, PMID:12446840]
 subset: Sanger_Terms
+synonym: "genomic instability" RELATED []
 is_a: MP:0010094 ! abnormal chromosome stability
 
 [Term]
@@ -51839,6 +51904,7 @@ id: MP:0008915
 name: fused carpal bones
 def: "anomaly of the nine nodular bones of the joint between the forelimb bones and the front paws/hands resulting in some or all the bones being joined together" [ISBN:0-683-40008-8]
 subset: Sanger_Terms
+synonym: "carpal bone fusion" EXACT []
 is_a: MP:0000554 ! abnormal carpal bone morphology
 
 [Term]
@@ -51871,6 +51937,8 @@ id: MP:0008919
 name: fused tarsal bones
 def: "anomaly of the eight bones of the instep of the paw/foot resulting in some or all the bones being joined together" [ISBN:0-683-40008-8]
 synonym: "fused tarsus bones" EXACT []
+synonym: "fusion of tarsal bones" EXACT []
+synonym: "tarsal bone fusion" EXACT []
 is_a: MP:0005104 ! abnormal tarsal bone morphology
 
 [Term]
@@ -52180,10 +52248,11 @@ is_a: MP:0001711 ! abnormal placenta morphology
 
 [Term]
 id: MP:0008958
-name: abnormal glycogen cell morphology
+name: abnormal trophoblast glycogen cell morphology
 def: "any structural anomaly of a glycogen-accumulating trophoblast cell that arises in the junctional zone of the placenta" [PMID:17039549]
 synonym: "abnormal GC morphology" EXACT []
-is_a: MP:0008957 ! abnormal placenta junctional zone morphology
+synonym: "abnormal glycogen cell morphology" EXACT []
+is_a: MP:0004255 ! abnormal spongiotrophoblast layer morphology
 
 [Term]
 id: MP:0008959
@@ -55625,7 +55694,7 @@ is_a: MP:0002064 ! seizures
 [Term]
 id: MP:0009358
 name: environmentally induced seizures
-def: "relatively mild but sudden stimulation due to changes in ambient habitat including lighting, sounds, touching, and/ or moving cage" [MGI:llw2]
+def: "seizure activity response due to changes in ambient habitat including room temperature, lighting, sounds, touching, and/ or moving cage" [MGI:llw2]
 is_a: MP:0009357 ! abnormal seizure response to inducing agent
 
 [Term]
@@ -55888,7 +55957,7 @@ is_a: MP:0001325 ! abnormal retina morphology
 [Term]
 id: MP:0009393
 name: abnormal resting posture
-def: "atypical position of the limbs compared to normal carriage when the body is inactive" [MGI:llw2]
+def: "atypical intentionally or habitually assumed position of the limbs compared to normal carriage when the body is inactive" [MGI:llw2]
 is_a: MP:0001504 ! abnormal posture
 
 [Term]
@@ -56202,15 +56271,19 @@ is_a: MP:0001501 ! abnormal sleep pattern
 
 [Term]
 id: MP:0009437
-name: fusion of arytenoid and cricoid cartilages
+name: arytenoid and cricoid cartilage fusion
 def: "union of the arytenoid and cricoid cartilages into one structure, when this fusion does not normally occur" [MGI:smb]
+synonym: "fused arytenoid and cricoid cartilages" EXACT []
+synonym: "fusion of arytenoid and cricoid cartilages" EXACT []
 is_a: MP:0002257 ! abnormal arytenoid cartilage morphology
 is_a: MP:0002258 ! abnormal cricoid cartilage morphology
 
 [Term]
 id: MP:0009438
-name: fusion of cricoid and tracheal cartilages
+name: cricoid and tracheal cartilage fusion
 def: "union of the cricoid cartilage and one or more of the tracheal rings into one structure, when this fusion does not normally occur" [MGI:smb]
+synonym: "fused cricoid and tracheal cartilages" EXACT []
+synonym: "fusion of cricoid and tracheal cartilages" EXACT []
 is_a: MP:0002258 ! abnormal cricoid cartilage morphology
 is_a: MP:0003120 ! abnormal tracheal cartilage morphology
 
@@ -56303,10 +56376,9 @@ is_a: MP:0009447 ! abnormal platelet ATP level
 
 [Term]
 id: MP:0009450
-name: abnormal axon fasiculation
-def: "anomaly in the process by which axons form into bundles" [MGI:smb]
-synonym: "abnormal axonal fasciculation" EXACT []
-synonym: "abnormal fasciculation of neuron" EXACT []
+name: abnormal axon fasciculation
+def: "anomaly in the process by which axons form into nerve fiber bundles" [MGI:smb]
+synonym: "abnormal fasciculation of neuron axon" EXACT []
 xref: GO:0007413
 is_a: MP:0009937 ! abnormal neuron differentiation
 
@@ -57132,6 +57204,8 @@ is_a: MP:0000538 ! abnormal urinary bladder morphology
 id: MP:0009553
 name: fused lips
 def: "an anomaly of the fleshy margins of the mouth resulting in the lips being joined together into one structure" [MGI:mberry]
+synonym: "fusion of lips" EXACT []
+synonym: "lip fusion" EXACT []
 is_a: MP:0003769 ! abnormal lip morphology
 
 [Term]
@@ -57693,7 +57767,7 @@ is_a: MP:0005231 ! abnormal brachial lymph node morphology
 [Term]
 id: MP:0009629
 name: small brachial lymph nodes
-def: "absence of the lymph nodes located along the brachial vein that receive drainage from most of the free upper limb and send efferent vessels to the central axillary lymph nodes" [ISBN:0-683-40008-8, MGI:anna]
+def: "reduced size of the lymph nodes located along the brachial vein that receive drainage from most of the free upper limb and send efferent vessels to the central axillary lymph nodes" [ISBN:0-683-40008-8, MGI:anna]
 synonym: "reduced brachial lymph node size" EXACT []
 synonym: "reduced humeral axillary lymph node size" EXACT []
 synonym: "small humeral axillary lymph nodes" EXACT []
@@ -57898,6 +57972,7 @@ is_a: MP:0002824 ! abnormal chorioallantoic fusion
 id: MP:0009657
 name: failure of chorioallantoic fusion
 def: "failure to initiate and/or complete the formation of a highly vascularized extra-embryonic fetal membrane by fusion of the chorion and allantois" [MGI:anna]
+synonym: "chorioallantoic fusion failure" EXACT []
 is_a: MP:0002824 ! abnormal chorioallantoic fusion
 
 [Term]
@@ -60591,7 +60666,7 @@ creation_date: 2010-02-08T01:55:54Z
 [Term]
 id: MP:0009975
 name: absent cerebral cortex pyramidal cells
-def: "increased number of the projection neurons in the pyramidal cell layer of the cerebral cortex" [ISBN:0-683-40008-8]
+def: "absence of the projection neurons in the pyramidal cell layer of the cerebral cortex" [ISBN:0-683-40008-8]
 synonym: "absent cerebral cortex projection neuron cells" EXACT []
 synonym: "absent cerebral cortex pyramidal neuron cells" EXACT []
 is_a: MP:0009974 ! decreased cerebral cortex pyramidal cell number
@@ -62144,7 +62219,7 @@ id: MP:0010126
 name: abnormal distal visceral endoderm morphology
 def: "any structural anomaly of the precursors of the anterior visceral endoderm that arises at the distal tip of the embryo" [MGI:csmith, PMID:17387317]
 synonym: "abnormal DVE morphology" EXACT []
-is_a: MP:0001724 ! abnormal extraembryonic endoderm formation
+is_a: MP:0011186 ! abnormal visceral endoderm morphology
 created_by: csmith
 creation_date: 2010-04-12T04:06:42Z
 
@@ -62153,6 +62228,7 @@ id: MP:0010127
 name: hypervolemia
 def: "an abnormally increased amount of space occupied by blood in the vessels" [MGI:anna]
 synonym: "high blood volume" EXACT []
+synonym: "increased plasma volume" NARROW []
 is_a: MP:0001599 ! abnormal blood volume
 created_by: csmith
 creation_date: 2010-04-13T03:58:30Z
@@ -62161,6 +62237,7 @@ creation_date: 2010-04-13T03:58:30Z
 id: MP:0010128
 name: hypovolemia
 def: "an abnormally decreased amount of space occupied by blood in the vessels" [MGI:anna]
+synonym: "decreased plasma volume" NARROW []
 synonym: "hyphemia" EXACT []
 is_a: MP:0001599 ! abnormal blood volume
 created_by: csmith
@@ -63877,7 +63954,7 @@ creation_date: 2010-08-04T09:41:22Z
 [Term]
 id: MP:0010290
 name: increased muscle tumor incidence
-def: "greater than the expected number of tumors originating in a gland in a given population in a given time period" [MGI:csmith]
+def: "greater than the expected number of tumors originating in muscle tissue in a given population in a given time period" [MGI:csmith]
 is_a: MP:0010274 ! increased organ/body region tumor incidence
 created_by: csmith
 creation_date: 2010-08-04T09:50:15Z
@@ -63946,7 +64023,7 @@ creation_date: 2010-08-04T01:54:12Z
 [Term]
 id: MP:0010298
 name: increased respiratory system tumor incidence
-def: "greater than the expected number of tumors originating in the urinary system in a given population in a given time period" [MGI:csmith]
+def: "greater than the expected number of tumors originating in the respiratory system in a given population in a given time period" [MGI:csmith]
 is_a: MP:0010274 ! increased organ/body region tumor incidence
 created_by: csmith
 creation_date: 2010-08-04T02:00:11Z
@@ -64291,6 +64368,8 @@ creation_date: 2010-08-13T03:49:42Z
 id: MP:0010335
 name: fused first branchial arch
 def: "the first arch fails to fully divide along the midline" [MGI:smb]
+synonym: "first branchial arch fusion" EXACT []
+synonym: "fused first branchial arch" EXACT []
 synonym: "fused first pharyngeal arch" EXACT []
 is_a: MP:0006337 ! abnormal first branchial arch morphology
 created_by: csmith
@@ -65552,7 +65631,7 @@ creation_date: 2010-09-28T04:13:22Z
 id: MP:0010447
 name: heart left ventricle aneurysm
 alt_id: Fyler:2340
-def: "thinning, stretching and bulging of a weakened heart right ventricular wall" [ISBN:0-683-40008-8]
+def: "thinning, stretching and bulging of a weakened heart left ventricular wall" [ISBN:0-683-40008-8]
 subset: CvDC_Terms
 synonym: "LV aneurysm" EXACT []
 is_a: MP:0003921 ! abnormal heart left ventricle morphology
@@ -68177,7 +68256,9 @@ creation_date: 2010-10-21T10:55:28Z
 id: MP:0010701
 name: fusion of atlas and odontoid process
 def: "the large protuberance that projects upward from the cervical axis (C2), around which the cervical atlas normally rotates, is instead fused to elements of the atlas; the odontoid process may or may not remain attached to the axis" [MGI:csmith]
+synonym: "atlas and odontoid process fusion" EXACT []
 synonym: "C1 anterior arch and dens fusion" EXACT []
+synonym: "fused atlas and odontoid process" EXACT []
 synonym: "fusion of AA and dens" EXACT []
 is_a: MP:0004607 ! abnormal cervical atlas morphology
 is_a: MP:0004620 ! cervical vertebral fusion
@@ -68445,6 +68526,8 @@ creation_date: 2010-11-03T01:21:12Z
 id: MP:0010728
 name: fusion of atlas and occipital bones
 def: "union of elements of the atlas and the bone at the lower, posterior part of the skull into one structure" [MGI:csmith]
+synonym: "atlas and occipital bone fusion" EXACT []
+synonym: "fused atlas and occipital bones" EXACT []
 is_a: MP:0004607 ! abnormal cervical atlas morphology
 is_a: MP:0005269 ! abnormal occipital bone morphology
 created_by: csmith
@@ -70349,6 +70432,7 @@ creation_date: 2011-03-04T01:16:56Z
 [Term]
 id: MP:0010899
 name: abnormal pulmonary alveolar system morphology
+def: "any structural anomaly of the portion of the lung comprised of the pulmonary acinus and the alveolar parenchyma" [MGI:csmith]
 is_a: MP:0001175 ! abnormal lung morphology
 created_by: csmith
 creation_date: 2011-03-04T01:25:38Z
@@ -71138,6 +71222,8 @@ creation_date: 2011-03-24T03:40:20Z
 id: MP:0010977
 name: fused right lung lobes
 def: "complete or partial fusion of the right lung lobes, indicative of defective lobar septation during embryonic lung development" [MGI:anna]
+synonym: "fusion of right lung lobes" EXACT []
+synonym: "right lung lobes fusion" EXACT []
 is_a: MP:0009570 ! abnormal right lung morphology
 is_a: MP:0010975 ! abnormal lung lobe morphology
 created_by: csmith
@@ -71245,31 +71331,17 @@ creation_date: 2011-03-30T04:07:07Z
 id: MP:0010989
 name: fused bronchial cartilage rings
 def: "fusion of the hyaline cartilaginous structures that support the bronchi" [MGI:anna]
+synonym: "bronchial cartilage ring fusion" EXACT []
 is_a: MP:0010988 ! abnormal bronchial cartilage morphology
 created_by: csmith
 creation_date: 2011-03-30T04:07:49Z
 
 [Term]
-id: MP:0010990
-name: increased production of surfactant
-def: "greater production of surfactant, a phospholipid present in the lungs that controls surface tension in the alveoli" [MGI:anna]
-is_a: MP:0004779 ! abnormal production of surfactant
-created_by: csmith
-creation_date: 2011-03-30T04:12:45Z
-
-[Term]
-id: MP:0010991
-name: decreased production of surfactant
-def: "reduced production of surfactant, a phospholipid present in the lungs that controls surface tension in the alveoli" [MGI:anna]
-synonym: "reduced production of surfactant" EXACT []
-is_a: MP:0004779 ! abnormal production of surfactant
-created_by: csmith
-creation_date: 2011-03-30T04:13:01Z
-
-[Term]
 id: MP:0010992
 name: increased surfactant secretion
-def: "greater release from pneumocytes of surfactant, a phospholipid present in the lungs that controls surface tension in the alveoli" [MGI:anna]
+alt_id: MP:0010990
+def: "greater production or release from pneumocytes of surfactant, a phospholipid present in the lungs that controls surface tension in the alveoli" [MGI:anna]
+synonym: "increased production of surfactant" EXACT []
 is_a: MP:0004780 ! abnormal surfactant secretion
 created_by: csmith
 creation_date: 2011-03-30T04:13:18Z
@@ -71277,7 +71349,10 @@ creation_date: 2011-03-30T04:13:18Z
 [Term]
 id: MP:0010993
 name: decreased surfactant secretion
-def: "decreased release from pneumocytes of surfactant, a phospholipid present in the lungs that controls surface tension in the alveoli" [MGI:anna]
+alt_id: MP:0010991
+def: "decreased production or release from pneumocytes of surfactant, a phospholipid present in the lungs that controls surface tension in the alveoli" [MGI:anna]
+synonym: "decreased production of surfactant" EXACT []
+synonym: "reduced production of surfactant" EXACT []
 synonym: "reduced surfactant secretion" EXACT []
 is_a: MP:0004780 ! abnormal surfactant secretion
 created_by: csmith
@@ -72384,7 +72459,7 @@ creation_date: 2011-04-26T03:56:08Z
 [Term]
 id: MP:0011111
 name: complete lethality during fetal growth through weaning
-def: "the appearance of lower than Mendelian ratios of organisms of a given genotype due to death of some, but not all of the organisms between the completion of organogenesis and weaning age (Mus: E14 to approximately 3 weeks of age)" [MGI:csmith]
+def: "death of all organisms of a given genotype in a population between the completion of organogenesis and weaning age (Mus: E14 to approximately 3 weeks of age)" [MGI:csmith]
 is_a: MP:0010832 ! lethality during fetal growth through weaning
 created_by: csmith
 creation_date: 2011-04-26T03:57:54Z
@@ -73090,7 +73165,7 @@ synonym: "abnormal hypoblast morphology" RELATED []
 synonym: "abnormal PE morphology" EXACT []
 synonym: "abnormal PrE morphology" EXACT []
 synonym: "abnormal primary endoderm morphology" EXACT []
-is_a: MP:0001672 ! abnormal embryogenesis/ development
+is_a: MP:0012103 ! abnormal embryonic disc morphology
 created_by: csmith
 creation_date: 2011-06-20T02:15:10Z
 
@@ -73828,7 +73903,7 @@ name: abnormal anterior visceral endoderm cell migration
 def: "any anomaly in the movement of the cells of the extraembryonic tissue that is responsible for the proper orientation of the anterior-posterior axis of the embryo and for appropriate patterning of adjacent embryonic tissue" [MGI:csmith, PMID:17078044]
 synonym: "abnormal AVE cell migration" EXACT []
 is_a: MP:0003091 ! abnormal cell migration
-is_a: MP:0004264 ! abnormal extraembryonic tissue physiology
+is_a: MP:0012028 ! abnormal visceral endoderm physiology
 created_by: csmith
 creation_date: 2011-09-12T02:42:33Z
 
@@ -75230,6 +75305,10 @@ creation_date: 2011-10-21T02:42:31Z
 id: MP:0011388
 name: absent heart
 def: "absence of the hollow, muscular organ that maintains the circulation of the blood" [MGI:smb]
+synonym: "absence of heart" EXACT []
+synonym: "acardia" EXACT []
+synonym: "cardiac agenesis" EXACT []
+synonym: "heart agenesis" EXACT []
 is_a: MP:0000266 ! abnormal heart morphology
 created_by: csmith
 creation_date: 2011-10-21T02:49:27Z
@@ -75929,6 +76008,7 @@ id: MP:0011458
 name: abnormal urine chloride ion level
 def: "any change in the amount of chloride ion in the urine" [MGI:csmith]
 is_a: MP:0009643 ! abnormal urine homeostasis
+is_a: MP:0012007 ! abnormal chloride level
 created_by: csmith
 creation_date: 2011-11-11T11:19:31Z
 
@@ -76623,6 +76703,8 @@ creation_date: 2011-12-09T03:57:36Z
 id: MP:0011530
 name: fused radius and ulna
 def: "anomaly of the radius and ulna resulting in some portion of or all the two bones being merged together" [MGI:csmith]
+synonym: "fusion of radius and ulna" EXACT []
+synonym: "radius and ulna fusion" EXACT []
 is_a: MP:0000552 ! abnormal radius morphology
 is_a: MP:0005108 ! abnormal ulna morphology
 created_by: csmith
@@ -78344,6 +78426,8 @@ creation_date: 2012-04-20T02:00:44Z
 id: MP:0011677
 name: abnormal olfactory sensory neuron physiology
 def: "any functional anomaly of cells that innervate the olfactory epithelium and are responsible for receiving and transmitting odorant signals" [MGI:csmith]
+synonym: "abnormal olfactory neuron physiology" EXACT []
+is_a: MP:0001983 ! abnormal olfactory system physiology
 is_a: MP:0010055 ! abnormal sensory neuron physiology
 created_by: csmith
 creation_date: 2012-04-20T03:00:44Z
@@ -78487,7 +78571,7 @@ creation_date: 2012-05-11T01:24:38Z
 id: MP:0011693
 name: absent chondrocytes
 def: "absence of polymorphic cells that form cartilage" [CL:0000138]
-is_a: MP:0000167 ! decreased chondrocyte cell number
+is_a: MP:0000167 ! decreased chondrocyte number
 created_by: csmith
 creation_date: 2012-05-11T01:25:06Z
 
@@ -78638,22 +78722,28 @@ creation_date: 2012-05-18T11:42:49Z
 
 [Term]
 id: MP:0011710
-name: increased osteoblast differentiation
+name: enhanced osteoblast differentiation
+def: "increased ability or increased rate of production of skeletogenic cells that secrete osteoid, are capable of producing mineralized (hydroxyapatite) matrix, are located adjacent to or within osteoid tissue, and arise from the transformation of a preosteoblast cell" [CL:0000062]
+synonym: "increased osteoblast differentiation" RELATED []
 is_a: MP:0008395 ! abnormal osteoblast differentiation
 created_by: csmith
 creation_date: 2012-05-18T11:56:40Z
 
 [Term]
 id: MP:0011711
-name: decreased osteoblast differentiation
+name: impaired osteoblast differentiation
+def: "reduced ability or inability to produce skeletogenic cells that secrete osteoid, are capable of producing mineralized (hydroxyapatite) matrix, are located adjacent to or within osteoid tissue, and arise from the transformation of a preosteoblast cell" [CL:0000062]
+synonym: "decreased osteoblast differentiation" RELATED []
 is_a: MP:0008395 ! abnormal osteoblast differentiation
 created_by: csmith
 creation_date: 2012-05-18T11:56:40Z
 
 [Term]
 id: MP:0011712
-name: absent osteoblast differentiation
-is_a: MP:0011711 ! decreased osteoblast differentiation
+name: arrested osteoblast differentiation
+def: "inability to produce skeletogenic cells that secrete osteoid, are capable of producing mineralized (hydroxyapatite) matrix, are located adjacent to or within osteoid tissue, and arise from the transformation of a preosteoblast cell, due to a block in the process to create a mature osteoblast" [CL:0000062]
+synonym: "absent osteoblast differentiation" RELATED []
+is_a: MP:0011711 ! impaired osteoblast differentiation
 created_by: csmith
 creation_date: 2012-05-18T11:56:40Z
 
@@ -78837,6 +78927,8 @@ creation_date: 2012-09-27T03:33:36Z
 id: MP:0011733
 name: fused somites
 def: "a defect in which there is an appearance of a single enlarged somite resulting from partial or complete fusion of the two somitic anlage" [MGI:smb]
+synonym: "fusion of somites" EXACT []
+synonym: "somite fusion" EXACT []
 is_a: MP:0001688 ! abnormal somite development
 created_by: csmith
 creation_date: 2012-09-27T03:34:50Z
@@ -80227,6 +80319,7 @@ creation_date: 2012-12-21T03:29:59Z
 id: MP:0011872
 name: absent xiphoid process
 def: "absence of the posterior tip of the sternum" [MGI:Colin_McKerlie]
+subset: IMPC
 is_a: MP:0000159 ! abnormal xiphoid process morphology
 created_by: csmith
 creation_date: 2012-12-21T03:45:48Z
@@ -80235,6 +80328,7 @@ creation_date: 2012-12-21T03:45:48Z
 id: MP:0011873
 name: enlarged uterine horn
 def: "increased size of the uterine horn" [MGI:Colin_McKerlie]
+subset: IMPC
 synonym: "enlarged metral horn" EXACT []
 is_a: MP:0009085 ! abnormal uterine horn morphology
 created_by: csmith
@@ -80244,6 +80338,7 @@ creation_date: 2012-12-21T03:50:19Z
 id: MP:0011874
 name: enlarged urinary bladder
 def: "increased size of the distensible musculomembranous organ that serves to collect and store urine excreted by the kidneys" [MGI:Colin_McKerlie]
+subset: IMPC
 is_a: MP:0000538 ! abnormal urinary bladder morphology
 created_by: csmith
 creation_date: 2012-12-21T03:51:32Z
@@ -80252,6 +80347,7 @@ creation_date: 2012-12-21T03:51:32Z
 id: MP:0011875
 name: absent stomach
 def: "absence of the sac-like structure of the digestive canal between the esophagus and the small intestine" [MGI:Colin_McKerlie]
+subset: IMPC
 is_a: MP:0000470 ! abnormal stomach morphology
 created_by: csmith
 creation_date: 2012-12-21T03:54:16Z
@@ -80260,6 +80356,7 @@ creation_date: 2012-12-21T03:54:16Z
 id: MP:0011876
 name: absent penis
 def: "absence of organ of copulation and urination in the male" [MGI:Colin_McKerlie]
+subset: IMPC
 is_a: MP:0005187 ! abnormal penis morphology
 created_by: csmith
 creation_date: 2012-12-21T03:56:30Z
@@ -80268,6 +80365,7 @@ creation_date: 2012-12-21T03:56:30Z
 id: MP:0011877
 name: absent liver
 def: "absence of the bile-secreting exocrine gland, which is important for detoxification; for fat, carbohydrate, and protein metabolism; and for glycogen storage" [MGI:Colin_McKerlie]
+subset: IMPC
 is_a: MP:0000598 ! abnormal liver morphology
 created_by: csmith
 creation_date: 2012-12-21T03:57:54Z
@@ -80276,6 +80374,7 @@ creation_date: 2012-12-21T03:57:54Z
 id: MP:0011878
 name: jejunum atresia
 def: "congenital blockage or absence of the lumen of the jejunum" [MGI:Colin_McKerlie]
+subset: IMPC
 is_a: MP:0004002 ! abnormal jejunum morphology
 created_by: csmith
 creation_date: 2012-12-21T03:59:18Z
@@ -80284,6 +80383,7 @@ creation_date: 2012-12-21T03:59:18Z
 id: MP:0011879
 name: ileum atresia
 def: "congenital blockage or absence of the lumen of the ileum" [MGI:Colin_McKerlie]
+subset: IMPC
 is_a: MP:0002581 ! abnormal ileum morphology
 created_by: csmith
 creation_date: 2012-12-21T03:59:53Z
@@ -80292,6 +80392,7 @@ creation_date: 2012-12-21T03:59:53Z
 id: MP:0011880
 name: absent duodenum
 def: "missing portion of the small intestine that extends from the pyloris to the junction with the jejunum" [MGI:Colin_McKerlie]
+subset: IMPC
 is_a: MP:0003271 ! abnormal duodenum morphology
 created_by: csmith
 creation_date: 2012-12-21T04:00:21Z
@@ -80300,6 +80401,7 @@ creation_date: 2012-12-21T04:00:21Z
 id: MP:0011881
 name: distended duodenum
 def: "an expansion in the volume of the portion of the small intestine that extends from the pyloris to the junction with the jejunum, as by stretching or distention" [MGI:Colin_McKerlie]
+subset: IMPC
 is_a: MP:0003271 ! abnormal duodenum morphology
 created_by: csmith
 creation_date: 2012-12-21T04:01:38Z
@@ -80308,6 +80410,7 @@ creation_date: 2012-12-21T04:01:38Z
 id: MP:0011882
 name: enlarged duodenum
 def: "increased size of the portion of the small intestine that extends from the pyloris to the junction with the jejunum" [MGI:Colin_McKerlie]
+subset: IMPC
 is_a: MP:0003271 ! abnormal duodenum morphology
 created_by: csmith
 creation_date: 2012-12-21T04:02:07Z
@@ -80316,6 +80419,7 @@ creation_date: 2012-12-21T04:02:07Z
 id: MP:0011883
 name: absent diaphragm
 def: "absence of the thin musculomebranous barrier that separates the abdominal and thoracic cavities; these muscles often used for breathing control" [MGI:Colin_McKerlie]
+subset: IMPC
 is_a: MP:0002279 ! abnormal diaphragm morphology
 created_by: csmith
 creation_date: 2012-12-21T04:03:25Z
@@ -80324,6 +80428,7 @@ creation_date: 2012-12-21T04:03:25Z
 id: MP:0011884
 name: absent colon
 def: "absence of the portion of the large intestine between the cecum and the rectum" [MGI:Colin_McKerlie]
+subset: IMPC
 is_a: MP:0000495 ! abnormal colon morphology
 created_by: csmith
 creation_date: 2012-12-21T04:04:14Z
@@ -80332,6 +80437,7 @@ creation_date: 2012-12-21T04:04:14Z
 id: MP:0011885
 name: abnormal circulating lipase level
 def: "any anomaly in the concentration of lipase in the blood, in particular the serum; the measurement of serum lipase activity is widely used for the diagnosis of acute pancreatitis" [MGI:csmith]
+subset: IMPC
 is_a: MP:0001570 ! abnormal circulating enzyme level
 created_by: csmith
 creation_date: 2013-02-05T12:38:38Z
@@ -80340,6 +80446,7 @@ creation_date: 2013-02-05T12:38:38Z
 id: MP:0011886
 name: increased circulating lipase level
 def: "elevated blood level of lipase in the blood, in particular the serum" [MGI:csmith]
+subset: IMPC
 is_a: MP:0011885 ! abnormal circulating lipase level
 created_by: csmith
 creation_date: 2013-02-05T12:39:39Z
@@ -80348,6 +80455,7 @@ creation_date: 2013-02-05T12:39:39Z
 id: MP:0011887
 name: decreased circulating lipase level
 def: "reduced blood level of lipase in the blood, in particular the serum" [MGI:csmith]
+subset: IMPC
 is_a: MP:0011885 ! abnormal circulating lipase level
 created_by: csmith
 creation_date: 2013-02-05T12:39:39Z
@@ -80356,6 +80464,7 @@ creation_date: 2013-02-05T12:39:39Z
 id: MP:0011888
 name: abnormal circulating total protein level
 def: "total serum protein concentration is outside the normal range" [RGD:cur]
+subset: IMPC
 is_a: MP:0005416 ! abnormal circulating protein level
 created_by: csmith
 creation_date: 2013-02-05T12:43:42Z
@@ -80364,6 +80473,7 @@ creation_date: 2013-02-05T12:43:42Z
 id: MP:0011889
 name: abnormal circulating ferritin level
 def: "deviation from the normal concentration of ferritin, a ubiquitous intracellular protein that stores iron and releases it in a controlled fashion; some ferritin is also found in the blood and is measured in tests for overall iron levels, anemia and chronic diseases" [MGI:csmith]
+subset: IMPC
 is_a: MP:0005416 ! abnormal circulating protein level
 created_by: csmith
 creation_date: 2013-02-05T12:48:53Z
@@ -80372,6 +80482,7 @@ creation_date: 2013-02-05T12:48:53Z
 id: MP:0011890
 name: increased circulating ferritin level
 def: "elevated concentration in the blood of ferritin, a ubiquitous intracellular protein that stores iron and releases it in a controlled fashion; some ferritin is also found in the blood and is measured in tests for overall iron levels, anemia and chronic diseases" [MGI:csmith]
+subset: IMPC
 is_a: MP:0011889 ! abnormal circulating ferritin level
 created_by: csmith
 creation_date: 2013-02-05T12:49:53Z
@@ -80380,6 +80491,7 @@ creation_date: 2013-02-05T12:49:53Z
 id: MP:0011891
 name: decreased circulating ferritin level
 def: "reduced concentration in the blood of ferritin, a ubiquitous intracellular protein that stores iron and releases it in a controlled fashion; some ferritin is also found in the blood and is measured in tests for overall iron levels, anemia and chronic diseases" [MGI:csmith]
+subset: IMPC
 is_a: MP:0011889 ! abnormal circulating ferritin level
 created_by: csmith
 creation_date: 2013-02-05T12:49:53Z
@@ -80388,6 +80500,7 @@ creation_date: 2013-02-05T12:49:53Z
 id: MP:0011892
 name: abnormal circulating transferrin level
 def: "deviation from the normal concentration in the blood of a plasma protein that reversibly binds and transports iron and other metal ions through the blood to the liver, spleen and bone marrow" [MGI:csmith]
+subset: IMPC
 is_a: MP:0005416 ! abnormal circulating protein level
 created_by: csmith
 creation_date: 2013-02-05T12:53:05Z
@@ -80396,6 +80509,7 @@ creation_date: 2013-02-05T12:53:05Z
 id: MP:0011893
 name: increased circulating transferrin level
 def: "elevated concentration in the blood of a plasma protein that reversibly binds and transports iron and other metal ions through the blood to the liver, spleen and bone marrow" [MGI:csmith]
+subset: IMPC
 is_a: MP:0011892 ! abnormal circulating transferrin level
 created_by: csmith
 creation_date: 2013-02-05T12:54:01Z
@@ -80404,6 +80518,7 @@ creation_date: 2013-02-05T12:54:01Z
 id: MP:0011894
 name: decreased circulating transferrin level
 def: "reduced concentration in the blood of a plasma protein that reversibly binds and transports iron and other metal ions through the blood to the liver, spleen and bone marrow" [MGI:csmith]
+subset: IMPC
 is_a: MP:0011892 ! abnormal circulating transferrin level
 created_by: csmith
 creation_date: 2013-02-05T12:54:01Z
@@ -80412,6 +80527,7 @@ creation_date: 2013-02-05T12:54:01Z
 id: MP:0011895
 name: abnormal circulating unsaturated transferrin level
 def: "any anomaly in the concentration of transferrin that is not saturated (bound) with iron; this represents the reserve capacity of transferrin and is often measured by the Unsaturated Iron Binding Capacity (UIBC) test" [MGI:csmith]
+subset: IMPC
 synonym: "abnormal unsaturated iron binding capacity" EXACT []
 is_a: MP:0011892 ! abnormal circulating transferrin level
 created_by: csmith
@@ -80421,6 +80537,7 @@ creation_date: 2013-02-05T01:52:06Z
 id: MP:0011896
 name: increased circulating unsaturated transferrin level
 def: "increase in the concentration of transferrin that is not saturated (bound) with iron; this represents the reserve capacity of transferrin and is often measured by the Unsaturated Iron Binding Capacity (UIBC) test" [MGI:csmith]
+subset: IMPC
 synonym: "increased unsaturated iron binding capacity" EXACT []
 is_a: MP:0011893 ! increased circulating transferrin level
 is_a: MP:0011895 ! abnormal circulating unsaturated transferrin level
@@ -80431,6 +80548,7 @@ creation_date: 2013-02-05T01:52:06Z
 id: MP:0011897
 name: decreased circulating unsaturated transferrin level
 def: "reduction in the concentration of transferrin that is not saturated (bound) with iron; this represents the reserve capacity of transferrin and is often measured by the Unsaturated Iron Binding Capacity (UIBC) test" [MGI:csmith]
+subset: IMPC
 synonym: "decreased unsaturated iron binding capacity" RELATED []
 is_a: MP:0011894 ! decreased circulating transferrin level
 is_a: MP:0011895 ! abnormal circulating unsaturated transferrin level
@@ -80441,7 +80559,9 @@ creation_date: 2013-02-05T01:52:06Z
 id: MP:0011898
 name: abnormal platelet cell number
 def: "anomaly in the normal numbers of the non-nucleated cells found in the blood and involved in blood coagulation" [MGI:csmith]
+subset: IMPC
 synonym: "abnormal thrombocyte cell number" EXACT []
+is_a: MP:0004720 ! abnormal platelet morphology
 is_a: MP:0011180 ! abnormal hematopoietic cell number
 created_by: csmith
 creation_date: 2013-02-05T02:12:57Z
@@ -80684,9 +80804,9 @@ creation_date: 2013-03-07T13:55:35Z
 
 [Term]
 id: MP:0011923
-name: abnormal urine volume
+name: abnormal bladder urine volume
 def: "any anomaly in the amount of space occupied by urine in the bladder" [MPD:Molly]
-is_a: MP:0009643 ! abnormal urine homeostasis
+is_a: MP:0010386 ! abnormal urinary bladder physiology
 created_by: csmith
 creation_date: 2013-03-07T13:56:46Z
 
@@ -80757,6 +80877,7 @@ creation_date: 2013-03-07T14:26:09Z
 [Term]
 id: MP:0011932
 name: abnormal endocrine pancreas development
+def: "anomaly in the formation of the smaller portion of the pancreas that secretes a number of hormones into the blood stream that are produced by the cells in the islets of Langerhans" [MGI:csmith]
 is_a: MP:0003934 ! abnormal pancreas development
 created_by: csmith
 creation_date: 2013-03-07T15:09:00Z
@@ -80764,6 +80885,7 @@ creation_date: 2013-03-07T15:09:00Z
 [Term]
 id: MP:0011933
 name: abnormal exocrine pancreas development
+def: "anomaly in the formation of the acinar gland portion of the pancreas that secretes digestive enzymes" [MGI:csmith]
 is_a: MP:0003934 ! abnormal pancreas development
 created_by: csmith
 creation_date: 2013-03-07T15:09:00Z
@@ -80812,6 +80934,7 @@ creation_date: 2013-03-08T13:36:36Z
 id: MP:0011939
 name: increased food intake
 def: "increase in the total number of calories/food amount taken in over time when compared to the normal state" [MGI:csmith]
+subset: IMPC
 is_a: MP:0005449 ! abnormal food intake
 created_by: csmith
 creation_date: 2013-03-11T12:35:34Z
@@ -80820,6 +80943,7 @@ creation_date: 2013-03-11T12:35:34Z
 id: MP:0011940
 name: decreased food intake
 def: "reduction in the total number of calories/food amount taken in over time when compared to the normal state" [MGI:csmith]
+subset: IMPC
 synonym: "hypophagia" EXACT []
 synonym: "reduced food intake" EXACT []
 is_a: MP:0005449 ! abnormal food intake
@@ -80830,6 +80954,7 @@ creation_date: 2013-03-11T12:35:34Z
 id: MP:0011941
 name: increased fluid intake
 def: "increase in the total amount of fluid taken in over time when compared to the normal state" [MGI:csmith]
+subset: IMPC
 synonym: "increased liquid intake" RELATED []
 is_a: MP:0011947 ! abnormal fluid intake
 created_by: csmith
@@ -80839,6 +80964,7 @@ creation_date: 2013-03-11T13:55:16Z
 id: MP:0011942
 name: decreased fluid intake
 def: "reduction in the total amount of fluid taken in over time when compared to the normal state" [MGI:csmith]
+subset: IMPC
 synonym: "decreased liquid intake" RELATED []
 is_a: MP:0011947 ! abnormal fluid intake
 created_by: csmith
@@ -80881,6 +81007,7 @@ creation_date: 2013-03-11T15:23:38Z
 id: MP:0011947
 name: abnormal fluid intake
 def: "significant anomaly in the total amount of fluid taken in over time when compared to the normal state" [MGI:csmith]
+subset: IMPC
 is_a: MP:0001422 ! abnormal drinking behavior
 created_by: csmith
 creation_date: 2013-03-11T15:26:07Z
@@ -80914,6 +81041,7 @@ creation_date: 2013-03-11T15:28:22Z
 id: MP:0011951
 name: increased cardiac stroke volume
 def: "increase in the volume of blood pushed into the aorta with each beat of the heart" [MGI:csmith]
+subset: IMPC
 is_a: MP:0000304 ! abnormal cardiac stroke volume
 created_by: csmith
 creation_date: 2013-03-11T15:46:38Z
@@ -80922,6 +81050,7 @@ creation_date: 2013-03-11T15:46:38Z
 id: MP:0011952
 name: decreased cardiac stroke volume
 def: "reduction in the volume of blood pushed into the aorta with each beat of the heart" [MGI:csmith]
+subset: IMPC
 is_a: MP:0000304 ! abnormal cardiac stroke volume
 created_by: csmith
 creation_date: 2013-03-11T15:46:38Z
@@ -80981,6 +81110,7 @@ creation_date: 2013-03-13T16:06:11Z
 id: MP:0011959
 name: abnormal eye posterior chamber depth
 def: "anomaly in the distance between the iris and the lens at the center plane (maximum distance) of the posterior chamber, compared to controls" [MGI:csmith]
+subset: IMPC
 synonym: "abnormal PCD" EXACT []
 is_a: MP:0005299 ! abnormal eye posterior chamber morphology
 created_by: csmith
@@ -80990,6 +81120,7 @@ creation_date: 2013-03-15T13:59:20Z
 id: MP:0011960
 name: abnormal eye anterior chamber depth
 def: "anomaly in the distance between the iris and the cornea at the center plane (maximum distance) of the anterior chamber, compared to controls" [MGI:csmith]
+subset: IMPC
 synonym: "abnormal ACD" EXACT []
 is_a: MP:0005205 ! abnormal eye anterior chamber morphology
 created_by: csmith
@@ -80999,6 +81130,7 @@ creation_date: 2013-03-15T14:25:09Z
 id: MP:0011961
 name: abnormal cornea thickness
 def: "increased or decreased width of the cornea in the center plane" [MGI:csmith]
+subset: IMPC
 synonym: "abnormal corneal thickness" EXACT []
 is_a: MP:0001312 ! abnormal cornea morphology
 created_by: csmith
@@ -81008,6 +81140,7 @@ creation_date: 2013-03-15T14:46:10Z
 id: MP:0011962
 name: increased cornea thickness
 def: "increased width of the cornea in the center plane" [MGI:csmith]
+subset: IMPC
 is_a: MP:0011961 ! abnormal cornea thickness
 created_by: csmith
 creation_date: 2013-03-15T14:53:47Z
@@ -81016,6 +81149,7 @@ creation_date: 2013-03-15T14:53:47Z
 id: MP:0011963
 name: abnormal total retina thickness
 def: "increased or decreased width of the retina through the center plane" [MGI:csmith]
+subset: IMPC
 synonym: "abnormal total retinal thickness" EXACT []
 is_a: MP:0001325 ! abnormal retina morphology
 created_by: csmith
@@ -81025,6 +81159,7 @@ creation_date: 2013-03-15T15:03:08Z
 id: MP:0011964
 name: increased total retina thickness
 def: "increased width of the retina through the center plane" [MGI:csmith]
+subset: IMPC
 synonym: "increased total retinal thickness" EXACT []
 is_a: MP:0011963 ! abnormal total retina thickness
 created_by: csmith
@@ -81034,6 +81169,7 @@ creation_date: 2013-03-15T15:04:09Z
 id: MP:0011965
 name: decreased total retina thickness
 def: "decreased width of the retina through the center plane" [MGI:csmith]
+subset: IMPC
 synonym: "decreased total retinal thickness" EXACT []
 synonym: "reduced total retina thickness" EXACT []
 is_a: MP:0011963 ! abnormal total retina thickness
@@ -81076,6 +81212,7 @@ creation_date: 2013-04-04T12:52:59Z
 id: MP:0011969
 name: abnormal circulating triglyceride level
 def: "abnormal concentration of naturally occurring esters of three fatty acids and glycerol in the blood; triglycerides are widespread in adipose tissue, commonly circulate in the blood in the form of lipoproteins, and are involved in the process of bidirectional transference of adipose fat and blood glucose with the liver" [MGI:csmith]
+subset: IMPC
 is_a: MP:0003949 ! abnormal circulating lipid level
 created_by: csmith
 creation_date: 2013-04-04T16:10:51Z
@@ -81084,6 +81221,7 @@ creation_date: 2013-04-04T16:10:51Z
 id: MP:0011970
 name: abnormal circulating lactate dehydrogenase level
 def: "abnormal blood level of the tetrameric enzyme that, along with the coenzyme NAD+, catalyzes the interconversion of lactate and pyruvate; measurements of circulating levels are used clinically as a diagnostic indicator of tissue breakdown, some forms of cancer or particular infection types" [MeSH:D08.811.682.047.551.400, MGI:csmith]
+subset: IMPC
 synonym: "abnormal circulating LDH level" EXACT []
 is_a: MP:0001570 ! abnormal circulating enzyme level
 is_a: MP:0002943 ! abnormal lactate dehydrogenase level
@@ -81094,6 +81232,7 @@ creation_date: 2013-04-05T12:37:05Z
 id: MP:0011971
 name: increased circulating lactate dehydrogenase level
 def: "elevated blood level of the tetrameric enzyme that, along with the coenzyme NAD+, catalyzes the interconversion of lactate and pyruvate; measurements of circulating levels are used clinically as a diagnostic indicator of tissue breakdown, some forms of cancer or particular infection types" [MeSH:D08.811.682.047.551.400, MGI:csmith]
+subset: IMPC
 synonym: "increased circulating LDH level" EXACT []
 is_a: MP:0002944 ! increased lactate dehydrogenase level
 is_a: MP:0011970 ! abnormal circulating lactate dehydrogenase level
@@ -81104,6 +81243,7 @@ creation_date: 2013-04-05T12:37:05Z
 id: MP:0011972
 name: decreased circulating lactate dehydrogenase level
 def: "reduced blood level of the tetrameric enzyme that, along with the coenzyme NAD+, catalyzes the interconversion of lactate and pyruvate; measurements of circulating levels are used clinically as a diagnostic indicator of tissue breakdown, some forms of cancer or particular infection types" [MeSH:D08.811.682.047.551.400, MGI:csmith]
+subset: IMPC
 synonym: "decreased circulating LDH level" EXACT []
 is_a: MP:0005571 ! decreased lactate dehydrogenase level
 is_a: MP:0011970 ! abnormal circulating lactate dehydrogenase level
@@ -81114,6 +81254,7 @@ creation_date: 2013-04-05T12:37:05Z
 id: MP:0011973
 name: abnormal circulating glycerol level
 def: "abnormal blood level of trihydroxy sugar alcohols that are precursors for synthesis of triacylglycerols, and of phospholipids and cellular glucose in the liver and adipose tissue; fat catabolism results in the release of glycerol and fatty acids into the bloodstream to be used as an energy source" [MGI:csmith]
+subset: IMPC
 is_a: MP:0003439 ! abnormal glycerol level
 is_a: MP:0003949 ! abnormal circulating lipid level
 created_by: csmith
@@ -81308,6 +81449,7 @@ creation_date: 2013-05-14T16:18:55Z
 id: MP:0011996
 name: abnormal retinal inner nuclear layer thickness
 def: "anomaly in the thickness of the retinal layer which contains the cell bodies of bipolar, horizontal, and amacrine cells" [MGI:csmith]
+subset: IMPC
 is_a: MP:0003733 ! abnormal retinal inner nuclear layer morphology
 created_by: csmith
 creation_date: 2013-05-14T16:24:04Z
@@ -81316,6 +81458,7 @@ creation_date: 2013-05-14T16:24:04Z
 id: MP:0011997
 name: abnormal retinal outer nuclear layer thickness
 def: "anomaly in the thickness of the retinal layer that contains the nuclei and cell bodies of rods and cones" [MGI:csmith]
+subset: IMPC
 is_a: MP:0003731 ! abnormal retinal outer nuclear layer morphology
 created_by: csmith
 creation_date: 2013-05-14T16:25:32Z
@@ -81330,6 +81473,1315 @@ synonym: "stubby embryonic cilia" EXACT []
 is_a: MP:0004131 ! abnormal embryonic cilium morphology
 created_by: csmith
 creation_date: 2013-05-14T16:44:48Z
+
+[Term]
+id: MP:0011999
+name: abnormal tail length
+def: "any anomaly in the length of tail relative to average of a given reference population" [MGI:csmith]
+subset: IMPC
+is_a: MP:0002111 ! abnormal tail morphology
+created_by: csmith
+creation_date: 2013-05-20T14:42:10Z
+
+[Term]
+id: MP:0012000
+name: abnormal limb position
+def: "anomaly in the location of the limbs on the body relative to other body parts or axes" [MGI:csmith]
+subset: IMPC
+is_a: MP:0002109 ! abnormal limb morphology
+created_by: csmith
+creation_date: 2013-05-20T14:45:09Z
+
+[Term]
+id: MP:0012001
+name: abnormal touch escape response
+def: "anomaly in the ability of an animal to respond to the approach of a human hand by fleeing from it" [PMID:10563494]
+subset: IMPC
+is_a: MP:0002067 ! abnormal sensory capabilities/reflexes/nociception
+created_by: csmith
+creation_date: 2013-05-20T15:38:46Z
+
+[Term]
+id: MP:0012002
+name: impaired touch escape response
+def: "impaired ability of an animal to respond to the approach of a human hand by fleeing from it, including fleeing only after a touch or stroke, or not responding to touch by fleeing" [MGI:csmith]
+subset: IMPC
+is_a: MP:0012001 ! abnormal touch escape response
+created_by: csmith
+creation_date: 2013-05-20T15:42:41Z
+
+[Term]
+id: MP:0012003
+name: abnormal septum of telencephalon morphology
+is_a: MP:0000787 ! abnormal telencephalon morphology
+created_by: csmith
+creation_date: 2013-06-10T16:02:44Z
+
+[Term]
+id: MP:0012004
+name: abnormal septum pellucidum morphology
+def: "any structural anomaly of the thin, triangular, vertical membrane separating the anterior horns of the left and righ of the septum, which has strong projections to hypothalamic and midbrain regions and receives projections from the hippocampus and amygdala" [MGI:csmith, MPD:Molly]
+synonym: "abnormal lateral septum morphology" EXACT []
+synonym: "abnormal septum lucidum morphology" EXACT []
+is_a: MP:0012003 ! abnormal septum of telencephalon morphology
+created_by: csmith
+creation_date: 2013-06-10T16:14:10Z
+
+[Term]
+id: MP:0012005
+name: abnormal septum pellucidum size
+def: "anomaly in the size of the thin, triangular, vertical membrane separating the anterior horns of the left and righ of the septum, which has strong projections to hypothalamic and midbrain regions and receives projections from the hippocampus and amygdala" [MGI:csmith, MPD:Molly]
+synonym: "abnormal lateral septum size" EXACT []
+synonym: "abnormal septum lucidum size" EXACT []
+is_a: MP:0012004 ! abnormal septum pellucidum morphology
+created_by: csmith
+creation_date: 2013-06-10T16:14:10Z
+
+[Term]
+id: MP:0012006
+name: abnormal hippocampus physiology
+def: "any functional anomaly related to processes in the deep lying structure of the cerebrum involved with memory storage and spatial navigation" [MPD:Molly]
+is_a: MP:0003633 ! abnormal nervous system physiology
+created_by: csmith
+creation_date: 2013-07-05T09:34:16Z
+
+[Term]
+id: MP:0012007
+name: abnormal chloride level
+def: "any change in the amount of chloride, the major extracellular anion in mammals; it plays roles in tissue fluid homeostasis and also helps maintain proper blood volume, blood pressure, and body fluid pH" [MGI:csmith]
+is_a: MP:0001765 ! abnormal ion homeostasis
+created_by: csmith
+creation_date: 2013-07-05T13:46:56Z
+
+[Term]
+id: MP:0012008
+name: delayed parturition
+def: "the process of labor and delivery in female animals occurs later in gestation than expected or lack of progress in a labor already initiated" [MGI:csmith]
+is_a: MP:0002907 ! abnormal parturition
+created_by: csmith
+creation_date: 2013-08-07T10:28:07Z
+
+[Term]
+id: MP:0012009
+name: early parturition
+def: "the process of labor and delivery in female animals occurs earlier in gestation than expected" [MGI:csmith]
+synonym: "preterm labor" RELATED []
+is_a: MP:0002907 ! abnormal parturition
+created_by: csmith
+creation_date: 2013-08-07T10:28:07Z
+
+[Term]
+id: MP:0012010
+name: parturition failure
+def: "the process of labor and delivery in female animals does not initiate or complete" [MGI:csmith]
+synonym: "failure of parturition" EXACT []
+is_a: MP:0002907 ! abnormal parturition
+created_by: csmith
+creation_date: 2013-08-07T10:28:07Z
+
+[Term]
+id: MP:0012011
+name: febrile seizures
+def: "a convulsion associated with a significant rise in body temperature (fever)" [MGI:csmith]
+synonym: "febrile convulsion" EXACT []
+is_a: MP:0002064 ! seizures
+created_by: csmith
+creation_date: 2013-08-07T15:08:40Z
+
+[Term]
+id: MP:0012012
+name: abnormal innate olfactory avoidance response
+def: "any anomaly in the naive behavioral response of an individual to an aversive olfactory stimulus, in which the tendency to act defensively is stronger than the tendency to attack" [MGI:smb]
+is_a: MP:0012013 ! abnormal innate avoidance response
+created_by: csmith
+creation_date: 2013-08-07T16:15:28Z
+
+[Term]
+id: MP:0012013
+name: abnormal innate avoidance response
+def: "any anomaly in the naive behavioral response of an individual to an aversive stimulus, in which the tendency to act defensively is stronger than the tendency to attack" [MGI:smb, NBO:0000635]
+xref: NBO:0000635
+is_a: MP:0002572 ! abnormal emotion/affect behavior
+created_by: csmith
+creation_date: 2013-08-07T16:17:37Z
+
+[Term]
+id: MP:0012014
+name: abnormal olfactory neuron innervation pattern
+def: "any changes in the placement, morphology or number of axons from olfactory neurons to an effector tissue or to olfactory glomeruli or olfactory bulb" [MGI:csmith]
+is_a: MP:0000968 ! abnormal sensory neuron innervation pattern
+created_by: csmith
+creation_date: 2013-08-08T09:21:55Z
+
+[Term]
+id: MP:0012015
+name: abnormal melanocyte eumelanin content
+def: "anomaly in the amount or distribution of black (or brown) pigment in the melanocyte" [MGI:llw2]
+is_a: MP:0002877 ! abnormal melanocyte morphology
+created_by: csmith
+creation_date: 2013-08-08T09:52:22Z
+
+[Term]
+id: MP:0012016
+name: abnormal hair follicle melanocyte eumelanin content
+def: "anomaly in the amount or distribution of black (or brown) pigment in the hair follicle melanocytes" [MGI:llw2]
+is_a: MP:0004381 ! abnormal hair follicle melanocyte morphology
+is_a: MP:0012015 ! abnormal melanocyte eumelanin content
+created_by: csmith
+creation_date: 2013-08-08T09:52:22Z
+
+[Term]
+id: MP:0012017
+name: grizzled coat color
+def: "amount and distribution of yellow pigment (phaeomelanin) relative to black or brown pigment (eumelanin) is decreased compared to wild-type agouti producing hair that is partly gray or streaked with gray" [MGI:llw2]
+synonym: "chinchilla effect" EXACT []
+is_a: MP:0002075 ! abnormal coat/hair pigmentation
+created_by: csmith
+creation_date: 2013-08-08T09:56:27Z
+
+[Term]
+id: MP:0012018
+name: abnormal oviduct physiology
+def: "any functional anomaly of the tube through which the ova pass from the ovary to the uterus" [MGI:smb]
+is_a: MP:0003699 ! abnormal female reproductive system physiology
+created_by: csmith
+creation_date: 2013-08-08T10:17:59Z
+
+[Term]
+id: MP:0012019
+name: abnormal oviduct epithelium motile cilium physiology
+def: "any functional anomaly of the multiple epithelial tiny, motile hair-like projections, which have a variable arrangement of axonemal microtubules, contains molecular motors, and beat with a characteristic whip-like pattern that promote transport of fluids and other cells across the epithelium of the oviduct" [MGI:smb]
+is_a: MP:0012018 ! abnormal oviduct physiology
+created_by: csmith
+creation_date: 2013-08-08T10:19:22Z
+
+[Term]
+id: MP:0012020
+name: abnormal olfactory epithelium physiology
+def: "any functional anomaly in the epithelial cells that line the interior of the nose" [MGI:smb]
+synonym: "abnormal nasal epithelium physiology" EXACT []
+is_a: MP:0001983 ! abnormal olfactory system physiology
+created_by: csmith
+creation_date: 2013-08-08T11:32:39Z
+
+[Term]
+id: MP:0012021
+name: abnormal melanocyte number
+def: "deviation from the average number of the cells that produce pigment" [MGI:llw2]
+is_a: MP:0002877 ! abnormal melanocyte morphology
+created_by: csmith
+creation_date: 2013-08-08T12:14:54Z
+
+[Term]
+id: MP:0012022
+name: increased melanocyte number
+def: "greater number of the cells that produce pigment" [MGI:llw2]
+is_a: MP:0012021 ! abnormal melanocyte number
+created_by: csmith
+creation_date: 2013-08-08T12:21:42Z
+
+[Term]
+id: MP:0012023
+name: decreased melanocyte number
+def: "reduced number of the cells that produce pigment" [MGI:llw2]
+is_a: MP:0012021 ! abnormal melanocyte number
+created_by: csmith
+creation_date: 2013-08-08T12:21:42Z
+
+[Term]
+id: MP:0012024
+name: abnormal nephron morphogenesis
+def: "any anomaly in the process in which the nephron is generated and organized; the nephron is the filtering unit of the kidney that includes the renal corpuscle, proximal and distal convoluted tubules, and loop of Henle" [MGI:csmith]
+is_a: MP:0003881 ! abnormal nephron morphology
+created_by: csmith
+creation_date: 2013-08-08T12:33:19Z
+
+[Term]
+id: MP:0012025
+name: abnormal comma shaped body morphology
+def: "any structural anomaly of precursor structure to the S-shaped body that contributes to the morphogenesis of the nephron" [GO:0072049]
+synonym: "abnormal CSB morphology" EXACT []
+is_a: MP:0012024 ! abnormal nephron morphogenesis
+created_by: csmith
+creation_date: 2013-08-08T12:33:51Z
+
+[Term]
+id: MP:0012026
+name: abnormal S-shaped body morphology
+def: "any structural anomaly of the successor of the comma-shaped body that contributes to the morphogenesis of the nephron" [GO:0072050]
+synonym: "abnormal SSB morphology" EXACT []
+synonym: "abnormal stage II nephron morphology" EXACT []
+is_a: MP:0012024 ! abnormal nephron morphogenesis
+created_by: csmith
+creation_date: 2013-08-08T12:34:05Z
+
+[Term]
+id: MP:0012027
+name: abnormal embryonic cilium location or orientation
+def: "embryonic cilia are displaced from the normal position and/or do not orient in a typical pattern" [MGI:csmith]
+synonym: "abnormal embryonic cilium polarization" RELATED []
+is_a: MP:0004131 ! abnormal embryonic cilium morphology
+created_by: csmith
+creation_date: 2013-08-08T12:47:46Z
+
+[Term]
+id: MP:0012028
+name: abnormal visceral endoderm physiology
+def: "any functional anomaly of the primitive endoderm-derived tissue which remains in contact with and surrounds the extra-embryonic ectoderm and the epiblast and provides signals for the differentiation and patterning of the epiblast; a small number of visceral endoderm cells also contribute to the endoderm of the embryonic gut" [MGI:csmith, PMID:21123814]
+is_a: MP:0001672 ! abnormal embryogenesis/ development
+created_by: csmith
+creation_date: 2013-08-08T13:32:10Z
+
+[Term]
+id: MP:0012029
+name: abnormal electroretinogram waveform feature
+def: "any anomaly in the pattern of the graphic record of the integrated ensemble response from many vision related neuronal and glial populations as a consequence of the serial processing within the retina, represented as changes in voltage over time after visual photonic stimulation" [MGI:csmith]
+synonym: "abnormal ERG waveform feature" EXACT []
+is_a: MP:0005253 ! abnormal eye physiology
+created_by: csmith
+creation_date: 2013-08-08T14:02:21Z
+
+[Term]
+id: MP:0012030
+name: abnormal a wave amplitude
+def: "anomaly in the size (height or maximum displacement) of the a wave" [MGI:csmith]
+is_a: MP:0012034 ! abnormal a wave shape
+created_by: csmith
+creation_date: 2013-08-08T14:07:48Z
+
+[Term]
+id: MP:0012031
+name: abnormal b wave amplitude
+def: "anomaly in the size (height or maximum displacement) of the b wave" [MGI:csmith]
+is_a: MP:0012035 ! abnormal b-wave shape
+created_by: csmith
+creation_date: 2013-08-08T14:08:11Z
+
+[Term]
+id: MP:0012032
+name: abnormal ERG latency
+def: "anomaly in the time from onset of stimulus to beginning of a waveform feature" [http://webvision.med.utah.edu, MGI:smb]
+is_a: MP:0012029 ! abnormal electroretinogram waveform feature
+created_by: csmith
+creation_date: 2013-08-08T14:11:57Z
+
+[Term]
+id: MP:0012033
+name: abnormal ERG implicit time
+def: "anomaly in the time from the onset of light stimulus to the peak of a waveform feature" [http://webvision.med.utah.edu, MGI:smb]
+is_a: MP:0012029 ! abnormal electroretinogram waveform feature
+created_by: csmith
+creation_date: 2013-08-08T14:12:39Z
+
+[Term]
+id: MP:0012034
+name: abnormal a wave shape
+def: "any anomaly in the graphical representation of the a wave in the electroretinogram; the a wave represents the general physiological health of the photoreceptors in the outer retina" [http://webvision.med.utah.edu, MGI:csmith]
+is_a: MP:0012029 ! abnormal electroretinogram waveform feature
+created_by: csmith
+creation_date: 2013-08-08T14:18:49Z
+
+[Term]
+id: MP:0012035
+name: abnormal b-wave shape
+def: "any anomaly in the graphical representation of the b wave in the electroretinogram; the b wave represents the health of the inner layers of the retina, including the ON bipolar cells and the Muller cells" [http://webvision.med.utah.edu, MGI:csmith]
+is_a: MP:0012029 ! abnormal electroretinogram waveform feature
+created_by: csmith
+creation_date: 2013-08-08T14:19:19Z
+
+[Term]
+id: MP:0012036
+name: abnormal a wave latency
+def: "anomaly in the time from onset of stimulus to beginning of the a wave" [http://webvision.med.utah.edu, MGI:smb]
+is_a: MP:0012032 ! abnormal ERG latency
+created_by: csmith
+creation_date: 2013-08-08T14:21:37Z
+
+[Term]
+id: MP:0012037
+name: abnormal b wave latency
+def: "anomaly in the time from onset of stimulus to beginning of the b wave" [http://webvision.med.utah.edu, MGI:smb]
+is_a: MP:0012032 ! abnormal ERG latency
+created_by: csmith
+creation_date: 2013-08-08T14:21:37Z
+
+[Term]
+id: MP:0012038
+name: abnormal a wave implicit time
+def: "anomaly in the time from the onset of light stimulus to the peak of the a wave" [http://webvision.med.utah.edu, MGI:smb]
+is_a: MP:0012033 ! abnormal ERG implicit time
+created_by: csmith
+creation_date: 2013-08-08T14:22:02Z
+
+[Term]
+id: MP:0012039
+name: abnormal b wave implicit time
+def: "anomaly in the time from the onset of light stimulus to the peak of the b wave" [http://webvision.med.utah.edu, MGI:smb]
+is_a: MP:0012033 ! abnormal ERG implicit time
+created_by: csmith
+creation_date: 2013-08-08T14:22:02Z
+
+[Term]
+id: MP:0012040
+name: abnormal c wave shape
+def: "any anomaly in the graphical representation of the c wave in the electroretinogram; the ERG c-wave can be used to assess the functional integrity of the photoreceptors, the pigment epithelial cells and the interactions between them." [http:webvision.med.utah.edu/book/electrophysiology/the-electroretinogram-erg/, MGI:csmith]
+is_a: MP:0012029 ! abnormal electroretinogram waveform feature
+created_by: csmith
+creation_date: 2013-08-08T14:51:43Z
+
+[Term]
+id: MP:0012041
+name: susceptible to pulmonary hyaline membrane formation
+def: "increased likelihood of the presence of an eosinophilic hyaline (glass-like) material composed of fibrin, proteinaceous exudate and cellular debris, and lining or filling the alveoli, alveolar ducts and bronchioles" [MGI:Nicole]
+is_a: MP:0011018 ! pulmonary hyaline membrane formation
+created_by: csmith
+creation_date: 2013-08-08T15:13:23Z
+
+[Term]
+id: MP:0012042
+name: low alcohol preference
+def: "decreased predilection to ingest alcohol over other substances" [MGI:Nicole]
+is_a: MP:0001425 ! abnormal alcohol consumption
+created_by: csmith
+creation_date: 2013-08-08T15:18:26Z
+
+[Term]
+id: MP:0012043
+name: increased myoepithelioma incidence
+def: "greater than the expected occurrence of a benign tumor of myoepithelial cells, occurring in a specific population in a given time period" [ISBN:0-683-40008-8]
+synonym: "increased benign myoepithelial tumor incidence" EXACT []
+synonym: "increased myoepithelial adenoma incidence" EXACT []
+is_a: MP:0010273 ! increased classified tumor incidence
+created_by: csmith
+creation_date: 2013-08-08T15:24:38Z
+
+[Term]
+id: MP:0012044
+name: abnormal phospholipase A2 level
+def: "anomaly in the amount of any of the enzymes that release fatty acids from the second carbon group of glycerol" [MGI:Nicole]
+is_a: MP:0005319 ! abnormal enzyme/ coenzyme level
+is_a: MP:0008469 ! abnormal protein level
+created_by: csmith
+creation_date: 2013-08-08T15:50:44Z
+
+[Term]
+id: MP:0012045
+name: increased susceptibility to hypertension
+def: "more likely than normal to develop sustained high blood pressure at a level that is likely to result in cardiovascular disease and/or other pathological states" [MGI:Nicole]
+is_a: MP:0000231 ! hypertension
+created_by: csmith
+creation_date: 2013-08-08T16:02:34Z
+
+[Term]
+id: MP:0012046
+name: decreased susceptibility to hypertension
+def: "less likely than normal to develop sustained high blood pressure at a level that is likely to result in cardiovascular disease and/or other pathological states" [MGI:Nicole]
+is_a: MP:0000231 ! hypertension
+created_by: csmith
+creation_date: 2013-08-08T16:02:34Z
+
+[Term]
+id: MP:0012047
+name: abnormal cholinesterase level
+def: "anomaly in the amount of any of the enzymes that catalyze the hydrolysis of the neurotransmitter acetylcholine into choline and acetic acid" [MGI:Nicole]
+is_a: MP:0005319 ! abnormal enzyme/ coenzyme level
+is_a: MP:0008469 ! abnormal protein level
+created_by: csmith
+creation_date: 2013-08-08T16:07:51Z
+
+[Term]
+id: MP:0012048
+name: altered response to retinal ischemic injury
+def: "altered response to lack of adequate blood flow, due to trauma or disease, to support the normal functioning of the retina" [MGI:csmith]
+is_a: MP:0005164 ! abnormal response to injury
+is_a: MP:0005253 ! abnormal eye physiology
+created_by: csmith
+creation_date: 2013-08-09T08:33:35Z
+
+[Term]
+id: MP:0012049
+name: increased susceptilbility to retinal ischemic injury
+def: "increased frequency or more severe response, such as necrotic tissue size, to lack of adequate blood flow, due to trauma or disease, to support the normal functioning of the retina" [MGI:csmith]
+synonym: "increased susceptilbility to retinal ischemia" RELATED []
+is_a: MP:0005165 ! increased susceptibility to injury
+is_a: MP:0012048 ! altered response to retinal ischemic injury
+created_by: csmith
+creation_date: 2013-08-09T08:35:35Z
+
+[Term]
+id: MP:0012050
+name: decreased susceptilbility to retinal ischemic injury
+def: "decreased frequency or less severe response, such as necrotic tissue size, to lack of adequate blood flow, due to trauma or disease, to support the normal functioning of the retina" [MGI:csmith]
+synonym: "decreased susceptilbility to retinal ischemia" RELATED []
+is_a: MP:0005166 ! decreased susceptibility to injury
+is_a: MP:0012048 ! altered response to retinal ischemic injury
+created_by: csmith
+creation_date: 2013-08-09T08:35:35Z
+
+[Term]
+id: MP:0012051
+name: spasticity
+def: "a motor disorder characterized by a velocity-dependent increase in tonic stretch reflexes with increased muscle tone, exaggerated (hyperexcitable) tendon reflexes and increased resistance to stretch" [HP:0001257, MGI:csmith]
+xref: HP:0001257
+xref: UMLS:C0026838
+is_a: MP:0003491 ! abnormal voluntary movement
+created_by: csmith
+creation_date: 2013-08-09T08:50:57Z
+
+[Term]
+id: MP:0012052
+name: hypertonicity
+def: "abnormally increased muscle tone or strength that impairs proper movement" [MGI:csmith]
+is_a: MP:0012051 ! spasticity
+created_by: csmith
+creation_date: 2013-08-09T08:53:14Z
+
+[Term]
+id: MP:0012053
+name: limb hypertonicity
+def: "limbs exhibit abnormally increased muscle tone; can be due to muscle genetic defects or some CNS disorders and may be evident in arm or leg deformities" [MGI:csmith]
+synonym: "limb hypertonia" EXACT []
+is_a: MP:0012052 ! hypertonicity
+created_by: csmith
+creation_date: 2013-08-09T08:53:46Z
+
+[Term]
+id: MP:0012054
+name: abnormal phrenic nerve innervation pattern
+def: "any changes in the placement, morphology or number of phrenic nerve fibers providing motor supply to the diaphragm as well as sensory fibers to the central tendon, or in the thorax, phrenic nerve sensory fibers to the mediastinal pleura and pericardium" [MGI:csmith]
+is_a: MP:0001078 ! abnormal phrenic nerve morphology
+is_a: MP:0002184 ! abnormal innervation
+created_by: csmith
+creation_date: 2013-08-09T09:08:34Z
+
+[Term]
+id: MP:0012055
+name: abnormal phrenic nerve innervation pattern to diaphragm
+def: "any changes in the placement, morphology or number of the portion of phrenic nerve fibers providing motor supply to the diaphragm" [MGI:csmith]
+is_a: MP:0000940 ! abnormal motor neuron innervation pattern
+is_a: MP:0001052 ! abnormal innervation pattern to muscle
+is_a: MP:0012054 ! abnormal phrenic nerve innervation pattern
+created_by: csmith
+creation_date: 2013-08-09T09:15:57Z
+
+[Term]
+id: MP:0012056
+name: abnormal polar trophectoderm morphology
+def: "any structural anomaly of the trophectoderm portion that surrounds the inner cell mass (ICM); unlike mural trophectoderm cells which stop proliferating and become large polyploid cells (the primary trophoblastic giant cells) by endoreduplication, polar trophectoderm cells remain diploid, continue to proliferate and give rise to both the ectoplacental cone and the extraembryonic ectoderm" [MGI:anna]
+is_a: MP:0005028 ! abnormal trophectoderm morphology
+created_by: csmith
+creation_date: 2013-08-09T09:21:13Z
+
+[Term]
+id: MP:0012057
+name: abnormal mural trophectoderm morphology
+def: "any structural anomaly of the trophectoderm portion distal to the ICM that overlays the blastocyst cavity and gives rise to polyploid trophoblast giant cells" [MGI:anna]
+is_a: MP:0005028 ! abnormal trophectoderm morphology
+created_by: csmith
+creation_date: 2013-08-09T09:21:13Z
+
+[Term]
+id: MP:0012058
+name: abnormal morula morphology
+def: "any structural anomaly of the globular solid mass of blastomeres formed by cleavage of a zygote that typically precedes the blastula, typically after the zygote has divided into 32 cells" [MGI:anna]
+is_a: MP:0001672 ! abnormal embryogenesis/ development
+created_by: csmith
+creation_date: 2013-08-09T09:32:07Z
+
+[Term]
+id: MP:0012059
+name: thick diaphragm muscle
+def: "increased thickness of the diaphragm muscle" [MGI:smb]
+is_a: MP:0002279 ! abnormal diaphragm morphology
+created_by: csmith
+creation_date: 2013-08-09T09:56:49Z
+
+[Term]
+id: MP:0012060
+name: diaphragm muscle hyperplasia
+is_a: MP:0002279 ! abnormal diaphragm morphology
+created_by: csmith
+creation_date: 2013-08-10T08:44:06Z
+
+[Term]
+id: MP:0012061
+name: abnormal central tendon morphology
+def: "any structural anomaly of the three-lobed cloverleaf-shaped aponeurosis situated at the center of the diaphragm; the central tendon is fused with the fibrous pericardium that provides attachment for the muscle fibers" [MGI:csmith]
+is_a: MP:0005503 ! abnormal tendon morphology
+created_by: csmith
+creation_date: 2013-08-10T08:47:07Z
+
+[Term]
+id: MP:0012062
+name: small tail bud
+def: "decreased size or area of the primordial region of the embryo that arises to form the tail of the adult" [MGI:anna]
+synonym: "decreased tail bud size" EXACT []
+synonym: "reduced tail bud size" EXACT []
+is_a: MP:0002861 ! abnormal tail bud morphology
+created_by: csmith
+creation_date: 2013-08-10T09:06:20Z
+
+[Term]
+id: MP:0012063
+name: absent tail bud
+def: "missing the primordial region of the embryo that arises to form the tail of the adult" [MGI:anna]
+is_a: MP:0002861 ! abnormal tail bud morphology
+created_by: csmith
+creation_date: 2013-08-10T09:06:20Z
+
+[Term]
+id: MP:0012064
+name: abnormal astrocyte number
+def: "anomaly in the number of the large neuroglial (macroglial) cells in the central nervous system - the largest and most numerous neuroglial cells in the brain and spinal cord" [CL:0000127, MGI:csmith]
+synonym: "abnormal astrocytic glia number" EXACT []
+synonym: "abnormal astroglia number" EXACT []
+synonym: "abnormal astroglial cell number" EXACT []
+is_a: MP:0002182 ! abnormal astrocyte morphology
+created_by: csmith
+creation_date: 2013-08-10T09:10:22Z
+
+[Term]
+id: MP:0012065
+name: increased astrocyte number
+def: "increase in the number of the large neuroglial (macroglial) cells in the central nervous system - the largest and most numerous neuroglial cells in the brain and spinal cord" [CL:0000127, MGI:csmith]
+synonym: "increased astrocytic glia number" EXACT []
+synonym: "increased astroglial cell number" EXACT []
+is_a: MP:0012064 ! abnormal astrocyte number
+created_by: csmith
+creation_date: 2013-08-10T09:10:22Z
+
+[Term]
+id: MP:0012066
+name: decreased astrocyte number
+def: "reduction in the number of the large neuroglial (macroglial) cells in the central nervous system - the largest and most numerous neuroglial cells in the brain and spinal cord" [CL:0000127, MGI:csmith]
+synonym: "decreased astrocytic glia number" EXACT []
+synonym: "decreased astroglia number" EXACT []
+synonym: "decreased astroglial cell number" EXACT []
+synonym: "reduced astrocyte number" EXACT []
+synonym: "reduced astrocytic glia number" EXACT []
+is_a: MP:0012064 ! abnormal astrocyte number
+created_by: csmith
+creation_date: 2013-08-10T09:10:22Z
+
+[Term]
+id: MP:0012067
+name: abnormal olfactory gland morphology
+def: "any structural anomaly of the Bowman's glands (aka glands of Bowman, olfactory glands), situated in the olfactory mucosa, beneath the olfactory epithelium, in the lamina propria, a connective tissue also containing fibroblasts, blood vessels, and bundles of fine axons from the olfactory neurons; Bowman's glands consists of an acinus in the lamina propria and a secretory duct going out through the olfactory epithelium" [UBERON:0002232]
+synonym: "abnormal Bowman's gland morphology" EXACT []
+synonym: "abnormal olfactory gland of Bowman morphology" EXACT []
+is_a: MP:0005499 ! abnormal olfactory system morphology
+created_by: csmith
+creation_date: 2013-08-10T10:39:49Z
+
+[Term]
+id: MP:0012068
+name: abnormal globose cell of olfactory epithelium morphology
+def: "any structural anomaly of the rounded or elliptical epithelial cells, with pale-staining open face nucleus and pale cytoplasm rich in free ribosomes and clusters of centrioles, that form a distinct basal zone spaced slightly from the basal surface of the olfactory epithelium" [CL:0002171]
+synonym: "abnormal globose basal cell morphology" EXACT []
+synonym: "abnormal globose cell morphology" BROAD []
+is_a: MP:0008789 ! abnormal olfactory epithelium morphology
+created_by: csmith
+creation_date: 2013-08-10T10:47:39Z
+
+[Term]
+id: MP:0012069
+name: abnormal horizontal basal cell morphology
+def: "any structural anomaly of the flat or angular epithelial cell with condensed nuclei and darkly staining cytoplasm containing numerous intermediate filaments inserted into desmosomes contacting surrounding supporting cells, that lie in contact with the basal lamina of olfactory epithelium" [CL:0002184]
+synonym: "abnormal basal proper cell of olfactory epithelium morphology" EXACT []
+synonym: "abnormal horizontal basal cells" BROAD []
+is_a: MP:0008789 ! abnormal olfactory epithelium morphology
+created_by: csmith
+creation_date: 2013-08-10T10:56:08Z
+
+[Term]
+id: MP:0012070
+name: altered susceptibility to osteoporosis
+def: "a change in the likelihood that an organism will develop a reduction in bone mass or atrophy of skeletal tissue, usually accompanied by gross changes to bone matrix, leading to bone fragility" [MGI:csmith]
+is_a: MP:0003795 ! abnormal bone structure
+created_by: csmith
+creation_date: 2013-08-10T11:23:30Z
+
+[Term]
+id: MP:0012071
+name: increased susceptibility to osteoporosis
+def: "greater likelihood that an organism will develop a reduction in bone mass or atrophy of skeletal tissue, usually accompanied by gross changes to bone matrix, leading to bone fragility" [MGI:csmith]
+synonym: "decreased resistance to osteoporosis" EXACT []
+synonym: "increased susceptibility to bone loss" RELATED []
+is_a: MP:0012070 ! altered susceptibility to osteoporosis
+created_by: csmith
+creation_date: 2013-08-10T11:24:33Z
+
+[Term]
+id: MP:0012072
+name: decreased susceptibility to osteoporosis
+def: "reduced likelihood that an organism will develop a reduction in bone mass or atrophy of skeletal tissue, usually accompanied by gross changes to bone matrix, leading to bone fragility" [MGI:csmith]
+synonym: "decreased susceptibility to bone loss" RELATED []
+synonym: "increased resistance to osteoporosis" EXACT []
+synonym: "reduced susceptibility to osteoporosis" EXACT []
+is_a: MP:0012070 ! altered susceptibility to osteoporosis
+created_by: csmith
+creation_date: 2013-08-10T11:24:33Z
+
+[Term]
+id: MP:0012073
+name: premature mammary gland growth during pregnancy
+def: "faster progression of the extensive and rapid branching of the mammary ducts, expansion of mammary epithelium in the stroma between the ducts with or without abnormalities in nipple maturation in preparation for lactation" [MGI:llw2]
+is_a: MP:0006269 ! abnormal mammary gland growth during pregnancy
+created_by: csmith
+creation_date: 2013-08-10T18:24:43Z
+
+[Term]
+id: MP:0012074
+name: failure of mammary gland growth during pregnancy
+def: "arrest, or failure ti initiate the extensive and rapid branching of the mammary ducts, expansion of mammary epithelium in the stroma between the ducts with or without abnormalities in nipple maturation in preparation for lactation" [MGI:llw2]
+synonym: "arrested mammary gland growth during pregnancy" NARROW []
+is_a: MP:0012075 ! impaired mammary gland growth during pregnancy
+created_by: csmith
+creation_date: 2013-08-10T18:24:43Z
+
+[Term]
+id: MP:0012075
+name: impaired mammary gland growth during pregnancy
+def: "defect in the extensive and rapid branching of the mammary ducts, expansion of mammary epithelium in the stroma between the ducts with or without abnormalities in nipple maturation in preparation for lactation" [MGI:llw2]
+is_a: MP:0006269 ! abnormal mammary gland growth during pregnancy
+created_by: csmith
+creation_date: 2013-08-10T18:24:43Z
+
+[Term]
+id: MP:0012076
+name: abnormal agouti pigmentation
+def: "amount and distribution of yellow pigment (phaeomelanin) relative to black or brown pigment (eumelanin) is variably increased or decreased compared with a wild-type agouti pattern resulting in a range of coat color from yellow to almost black" [MGI:llw2]
+comment: This term is rodent specific.
+is_a: MP:0002075 ! abnormal coat/hair pigmentation
+created_by: csmith
+creation_date: 2013-08-10T20:58:27Z
+
+[Term]
+id: MP:0012077
+name: webbed neck
+def: "the skin on the neck appears as loose folds that develop a web-like appearance from the ears to the shoulder during growth and maturation" [MGI:mnk]
+comment: Webbed neck describes a condition that occurs in patients with Turner syndrome, Noonan syndrome, and less frequently Klippel-Feil syndrome.
+synonym: "pterygium colli deformity" EXACT []
+is_a: MP:0001191 ! abnormal skin condition
+created_by: csmith
+creation_date: 2013-08-11T07:43:28Z
+
+[Term]
+id: MP:0012078
+name: abnormal tail ring morphology
+def: "any structural anomaly of the segmentally patterned skin ridges appearing on the tail of rodents" [MGI:csmith]
+synonym: "abnormal tail band morphology" EXACT []
+synonym: "abnormal tail ridge morphology" EXACT []
+is_a: MP:0001191 ! abnormal skin condition
+created_by: csmith
+creation_date: 2013-08-11T08:23:29Z
+
+[Term]
+id: MP:0012079
+name: abnormal spinal reflex
+def: "any anomaly in the reflexive action mediated by cells of the spinal cord, or the involuntary movement reaction caused by the application of a stimulus to an organism; these include signals originating from heat from burning, sharp sensations, and other painful feelings" [GO:0050883, MGI:csmith]
+xref: GO:0050883
+is_a: MP:0001961 ! abnormal reflex
+created_by: csmith
+creation_date: 2013-08-11T08:37:41Z
+
+[Term]
+id: MP:0012080
+name: chylous ascites
+def: "the extravasation of milky triglyceride-rich chyle into the peritoneal cavity; often a secondary symptom of neoplasms" [MGI:csmith]
+is_a: MP:0005324 ! ascites
+created_by: csmith
+creation_date: 2013-08-11T09:07:40Z
+
+[Term]
+id: MP:0012081
+name: absent heart tube
+def: "absence of the primitive epithelial cardiac tube before the division into the chambers of the mature heart" [MGI:anna]
+synonym: "absent cardiac tube" EXACT []
+synonym: "cardiac tube agenesis" EXACT []
+synonym: "heart tube agenesis" EXACT []
+synonym: "missing heart tube" EXACT []
+is_a: MP:0000270 ! abnormal heart tube morphology
+created_by: csmith
+creation_date: 2013-09-13T09:33:35Z
+
+[Term]
+id: MP:0012082
+name: delayed heart development
+def: "late onset of the induction and/or differentiation of the heart" [MGI:anna]
+synonym: "delayed cardiac development" EXACT []
+synonym: "delayed cardiogenesis" EXACT []
+is_a: MP:0000267 ! abnormal heart development
+created_by: csmith
+creation_date: 2013-09-13T09:40:56Z
+
+[Term]
+id: MP:0012083
+name: absent foregut
+def: "absence of the cephalic portion of the primitive digestive tube of the embryo" [MGI:anna]
+synonym: "foregut agenesis" EXACT []
+synonym: "missing foregut" EXACT []
+is_a: MP:0000474 ! abnormal foregut morphology
+created_by: csmith
+creation_date: 2013-09-13T09:54:53Z
+
+[Term]
+id: MP:0012084
+name: truncated foregut
+def: "shortened foregut that terminates abruptly as if having an end or point cut off" [MGI:anna]
+is_a: MP:0000474 ! abnormal foregut morphology
+created_by: csmith
+creation_date: 2013-09-13T09:57:13Z
+
+[Term]
+id: MP:0012085
+name: midface hypoplasia
+def: "underdevelopment of the midfacial region comprising the nasal, maxillary, and zygomatic bones, leading to a concave-looking face" [MGI:anna]
+synonym: "hypoplastic midface" EXACT []
+synonym: "mid-face hypoplasia" EXACT []
+synonym: "midfacial hypoplasia" EXACT []
+is_a: MP:0003743 ! abnormal facial morphology
+created_by: csmith
+creation_date: 2013-09-13T10:04:32Z
+
+[Term]
+id: MP:0012086
+name: absent hindgut
+def: "absence of the caudal portion of the primitive digestive tube of the embryo" [MGI:anna]
+synonym: "hindgut agenesis" EXACT []
+synonym: "missing hindgut" EXACT []
+is_a: MP:0008786 ! abnormal hindgut morphology
+created_by: csmith
+creation_date: 2013-09-13T10:20:48Z
+
+[Term]
+id: MP:0012087
+name: absent midbrain
+def: "absence of the brain region derived from the middle of the three cerebral vesicles of the embryo; this region controls sensory and motor functions in the adult, including eye movement and coordination of auditory and visual reflexes" [MGI:anna]
+synonym: "absent mesencephalon" EXACT []
+synonym: "mesencephalon agenesis" EXACT []
+synonym: "midbrain agenesis" EXACT []
+synonym: "missing mesencephalon" EXACT []
+synonym: "missing midbrain" EXACT []
+is_a: MP:0000897 ! abnormal midbrain morphology
+created_by: csmith
+creation_date: 2013-09-13T10:32:14Z
+
+[Term]
+id: MP:0012088
+name: abnormal midbrain size
+def: "deviation from the average range of midbrain size compared to normal" [MGI:anna]
+synonym: "abnormal mesencephalon size" EXACT []
+is_a: MP:0000771 ! abnormal brain size
+is_a: MP:0000897 ! abnormal midbrain morphology
+created_by: csmith
+creation_date: 2013-09-13T10:32:14Z
+
+[Term]
+id: MP:0012089
+name: decreased midbrain size
+def: "size reduction or truncation of the brain region derived from the middle of the three cerebral vesicles of the embryo; this region controls sensory and motor functions in the adult, including eye movement and coordination of auditory and visual reflexes" [MGI:anna, MGI:csmith]
+synonym: "decreased mesencephalon size" EXACT []
+synonym: "reduced mesencephalon size" EXACT []
+synonym: "reduced midbrain size" EXACT []
+synonym: "small mesencephalon" EXACT []
+synonym: "small midbrain" EXACT []
+synonym: "truncated mesencephalon" EXACT []
+synonym: "truncated midbrain" EXACT []
+is_a: MP:0000774 ! decreased brain size
+is_a: MP:0012088 ! abnormal midbrain size
+created_by: csmith
+creation_date: 2013-09-13T10:32:14Z
+
+[Term]
+id: MP:0012090
+name: midbrain hypoplasia
+def: "underdevelopment or reduced size, usually due to a reduced number of cells, of the brain region derived from the middle of the three cerebral vesicles of the embryo; this region controls sensory and motor functions in the adult, including eye movement and coordination of auditory and visual reflexes" [MGI:anna, MGI:csmith]
+synonym: "hypoplastic mesencephalon" EXACT []
+synonym: "hypoplastic midbrain" EXACT []
+synonym: "mesencephalon hypoplasia" EXACT []
+is_a: MP:0012089 ! decreased midbrain size
+created_by: csmith
+creation_date: 2013-09-13T10:32:14Z
+
+[Term]
+id: MP:0012091
+name: increased midbrain size
+def: "greater than average size of the brain region derived from the middle of the three cerebral vesicles of the embryo; this region controls sensory and motor functions in the adult, including eye movement and coordination of auditory and visual reflexes" [MGI:anna, MGI:csmith]
+synonym: "enlarged mesencephalon" EXACT []
+synonym: "enlarged midbrain" EXACT []
+synonym: "expanded mesencephalon" EXACT []
+synonym: "expanded midbrain" EXACT []
+synonym: "increased mesencephalon size" EXACT []
+is_a: MP:0005238 ! increased brain size
+is_a: MP:0012088 ! abnormal midbrain size
+created_by: csmith
+creation_date: 2013-09-13T10:32:14Z
+
+[Term]
+id: MP:0012092
+name: diencephalon hypoplasia
+def: "underdevelopment or decreased size, usually due an increased number of cells in the rostral portion of the brain stem" [MGI:rbabiuk]
+synonym: "hypoplastic diencephalon" EXACT []
+is_a: MP:0000830 ! abnormal diencephalon morphology
+created_by: csmith
+creation_date: 2013-09-13T12:57:11Z
+
+[Term]
+id: MP:0012093
+name: absent nodal flow
+def: "absence of the leftward movement of extra-embryonic fluid at the ventral node; nodal flow is autonomously generated by the rotation of cilia that are tilted toward the posterior on cells of the ventral node and is the central process in symmetry breaking on the left-right axis; when nodal cilia are immotile or absent, nodal flow does not occur" [MGI:anna]
+is_a: MP:0008933 ! abnormal embryonic cilium physiology
+created_by: csmith
+creation_date: 2013-09-23T11:05:41Z
+
+[Term]
+id: MP:0012094
+name: abnormal Reichert's membrane thickness
+def: "anomaly in the width of the extraembryonic basement membrane that forms on the inner surface of the trophectoderm during placenta morphogenesis and is secreted by the distal parietal endoderm" [MGI:anna]
+is_a: MP:0003954 ! abnormal Reichert's membrane morphology
+created_by: csmith
+creation_date: 2013-09-23T11:54:48Z
+
+[Term]
+id: MP:0012095
+name: increased Reichert's membrane thickness
+def: "increased width of the extraembryonic basement membrane that forms on the inner surface of the trophectoderm during placenta morphogenesis and is secreted by the distal parietal endoderm" [MGI:anna]
+synonym: "increased Reichert's membrane width" EXACT []
+synonym: "thick Reichert's membrane" EXACT []
+synonym: "thickened Reichert's membrane" EXACT []
+is_a: MP:0012094 ! abnormal Reichert's membrane thickness
+created_by: csmith
+creation_date: 2013-09-23T11:54:48Z
+
+[Term]
+id: MP:0012096
+name: decreased Reichert's membrane thickness
+def: "reduced width of the extraembryonic basement membrane that forms on the inner surface of the trophectoderm during placenta morphogenesis and is secreted by the distal parietal endoderm" [MGI:anna]
+synonym: "reduced Reichert's membrane width" EXACT []
+synonym: "thin Reichert's membrane" EXACT []
+synonym: "thinned Reichert's membrane" EXACT []
+is_a: MP:0012094 ! abnormal Reichert's membrane thickness
+created_by: csmith
+creation_date: 2013-09-23T11:54:48Z
+
+[Term]
+id: MP:0012097
+name: abnormal spongiotrophoblast size
+def: "anomaly in the size of the middle layer of the placenta between the outermost giant cells and the innermost labyrinth layer; it has a structural role and also produces several layer-specific secreted factors" [MGI:csmith]
+is_a: MP:0004255 ! abnormal spongiotrophoblast layer morphology
+created_by: csmith
+creation_date: 2013-09-23T13:28:44Z
+
+[Term]
+id: MP:0012098
+name: increased spongiotrophoblast size
+def: "greater size of the middle layer of the placenta between the outermost giant cells and the innermost labyrinth layer; it has a structural role and also produces several layer-specific secreted factors" [MGI:csmith]
+synonym: "enlarged spongiotrophoblast layer" EXACT []
+synonym: "expanded spongiotrophoblast layer" EXACT []
+is_a: MP:0012097 ! abnormal spongiotrophoblast size
+created_by: csmith
+creation_date: 2013-09-23T13:28:44Z
+
+[Term]
+id: MP:0012099
+name: decreased spongiotrophoblast size
+def: "reduction of the size of the middle layer of the placenta between the outermost giant cells and the innermost labyrinth layer; it has a structural role and also produces several layer-specific secreted factors" [MGI:csmith]
+synonym: "reduced spongiotrophoblast layer" EXACT []
+synonym: "reduced spongiotrophoblast size" EXACT []
+synonym: "small spongiotrophoblast layer" EXACT []
+is_a: MP:0012097 ! abnormal spongiotrophoblast size
+created_by: csmith
+creation_date: 2013-09-23T13:28:44Z
+
+[Term]
+id: MP:0012100
+name: absent spongiotrophoblast
+def: "absence of the middle layer of the placenta between the outermost giant cells and the innermost labyrinth layer; it has a structural role and also produces several layer-specific secreted factors" [MGI:csmith]
+is_a: MP:0004255 ! abnormal spongiotrophoblast layer morphology
+created_by: csmith
+creation_date: 2013-09-23T13:28:44Z
+
+[Term]
+id: MP:0012101
+name: acoria
+def: "absence of the pupil of the eye" [MGI:anna]
+synonym: "absent pupil(s)" EXACT []
+synonym: "pupil agenesis" EXACT []
+is_a: MP:0001317 ! abnormal pupil morphology
+created_by: csmith
+creation_date: 2013-09-23T13:51:03Z
+
+[Term]
+id: MP:0012102
+name: absent trophectoderm
+def: "absence of the outermost layer of cells in the blastodermic vesicle, which will develop into the trophoblast layer and then contact the endometrium and take part in establishing the embryo's means of nutrition" [MGI:anna]
+synonym: "absent trophectoderm layer" EXACT []
+synonym: "failure to form trophectoderm" RELATED []
+is_a: MP:0005028 ! abnormal trophectoderm morphology
+created_by: csmith
+creation_date: 2013-09-23T14:13:07Z
+
+[Term]
+id: MP:0012103
+name: abnormal embryonic disc morphology
+def: "any structural anomaly of the flattened, almost circular bilaminar plate of cells formed when the inner cell mass (aka embryoblast) forms two epithelial layers, each of a distinct lineage, separated by an extracellular basement membrane: the external (dorsal) layer is called the epiblast and the internal (ventral) layer is called the hypoblast (aka primitive endoderm); together, they compose the bilaminar embryonic disc" [MGI:anna]
+synonym: "abnormal bilaminar embryonic disc" EXACT []
+synonym: "abnormal bilaminar embryonic disk" EXACT []
+synonym: "abnormal embryonic disk morphology" EXACT []
+synonym: "abnormal embryonic shield morphology" EXACT []
+synonym: "abnormal germinal disc morphology" EXACT []
+synonym: "abnormal germinal disk morphology" EXACT []
+is_a: MP:0001672 ! abnormal embryogenesis/ development
+created_by: csmith
+creation_date: 2013-09-23T14:17:51Z
+
+[Term]
+id: MP:0012104
+name: small amniotic cavity
+def: "reduced size of the closed space between the embryo and the amnion which contains the amniotic fluid and is formed by the fusion of the parts of the anterior and posterior amniotic folds" [MGI:anna]
+synonym: "decreased amniotic cavity size" EXACT []
+synonym: "reduced amniotic cavity size" EXACT []
+is_a: MP:0011199 ! abnormal amniotic cavity morphology
+created_by: csmith
+creation_date: 2013-09-23T14:26:09Z
+
+[Term]
+id: MP:0012105
+name: delayed gastrulation
+def: "late onset of the development and invagination of the embryonic germ layers" [MGI:anna]
+comment: in the mouse, gastrulation initiates at E6.5, as cells of the primitive ectoderm (epiblast) delaminate at the posterior side of the embryo and ingress through the primitive streak in an epithelial-to-mesenchymal transition
+synonym: "retarded gastrulation" EXACT []
+is_a: MP:0001695 ! abnormal gastrulation
+created_by: csmith
+creation_date: 2013-09-23T14:28:59Z
+
+[Term]
+id: MP:0012106
+name: impaired exercise endurance
+def: "impaired performance during controlled physical activity" [MGI:smb]
+synonym: "decreased exercise endurance" RELATED []
+synonym: "reduced exercise endurance" RELATED []
+is_a: MP:0002332 ! abnormal exercise endurance
+is_a: MP:0002899 ! fatigue
+created_by: csmith
+creation_date: 2013-09-23T15:23:57Z
+
+[Term]
+id: MP:0012107
+name: enhanced exercise endurance
+def: "improved performance during controlled physical activity" [MGI:smb]
+synonym: "increased exercise endurance" RELATED []
+synonym: "prolonged exercise endurance" EXACT []
+is_a: MP:0002332 ! abnormal exercise endurance
+created_by: csmith
+creation_date: 2013-09-23T15:23:57Z
+
+[Term]
+id: MP:0012108
+name: increased trophoblast glycogen cell number
+def: "greater number of the glycogen-accumulating trophoblast cells that arise in the junctional zone of the placenta" [MGI:csmith]
+is_a: MP:0008958 ! abnormal trophoblast glycogen cell morphology
+created_by: csmith
+creation_date: 2013-09-26T15:36:32Z
+
+[Term]
+id: MP:0012109
+name: decreased trophoblast glycogen cell number
+def: "reduced number of the glycogen-accumulating trophoblast cells that arise in the junctional zone of the placenta" [MGI:csmith]
+synonym: "reduced trophoblast glycogen cell number" EXACT []
+is_a: MP:0008958 ! abnormal trophoblast glycogen cell morphology
+created_by: csmith
+creation_date: 2013-09-26T15:36:57Z
+
+[Term]
+id: MP:0012110
+name: increased hair follicle number
+def: "greater number of the epidermal invaginations from which the hair shaft develops" [MGI:monikat]
+is_a: MP:0000377 ! abnormal hair follicle morphology
+created_by: csmith
+creation_date: 2013-09-26T15:43:53Z
+
+[Term]
+id: MP:0012111
+name: failure of morula compaction
+def: "inability to initiate or maintain the first cell differentiation event in mammalian development, occurring at the late eight-cell stage in the mouse, whereby cells on the outer part of the morula become flattened and bound tightly together with the formation of desmosomes and gap junctions, becoming nearly indistinguishable" [MGI:anna]
+is_a: MP:0008932 ! abnormal embryonic tissue physiology
+created_by: csmith
+creation_date: 2013-09-26T15:58:08Z
+
+[Term]
+id: MP:0012112
+name: increased inner cell mass proliferation
+is_a: MP:0004966 ! abnormal inner cell mass proliferation
+created_by: csmith
+creation_date: 2013-09-26T16:07:00Z
+
+[Term]
+id: MP:0012113
+name: decreased inner cell mass proliferation
+is_a: MP:0004966 ! abnormal inner cell mass proliferation
+created_by: csmith
+creation_date: 2013-09-26T16:07:00Z
+
+[Term]
+id: MP:0012114
+name: absent inner cell mass proliferation
+is_a: MP:0004966 ! abnormal inner cell mass proliferation
+created_by: csmith
+creation_date: 2013-09-26T16:07:00Z
+
+[Term]
+id: MP:0012115
+name: abnormal trophectoderm cell proliferation
+is_a: MP:0004264 ! abnormal extraembryonic tissue physiology
+created_by: csmith
+creation_date: 2013-09-26T16:08:29Z
+
+[Term]
+id: MP:0012116
+name: increased trophectoderm cell proliferation
+is_a: MP:0012115 ! abnormal trophectoderm cell proliferation
+created_by: csmith
+creation_date: 2013-09-26T16:09:20Z
+
+[Term]
+id: MP:0012117
+name: decreased trophectoderm cell proliferation
+is_a: MP:0012115 ! abnormal trophectoderm cell proliferation
+created_by: csmith
+creation_date: 2013-09-26T16:09:20Z
+
+[Term]
+id: MP:0012118
+name: absent trophectoderm cell proliferation
+is_a: MP:0012115 ! abnormal trophectoderm cell proliferation
+created_by: csmith
+creation_date: 2013-09-26T16:09:20Z
+
+[Term]
+id: MP:0012119
+name: increased trophectoderm apoptosis
+def: "increase in the number of trophectoderm cells undergoing programmed cell death" [MGI:anna]
+is_a: MP:0004264 ! abnormal extraembryonic tissue physiology
+created_by: csmith
+creation_date: 2013-09-26T16:11:22Z
+
+[Term]
+id: MP:0012120
+name: trophectoderm cell degeneration
+def: "a retrogressive impairment of function or destruction of trophectoderm cells" [MGI:anna]
+is_a: MP:0004264 ! abnormal extraembryonic tissue physiology
+created_by: csmith
+creation_date: 2013-09-26T16:11:22Z
+
+[Term]
+id: MP:0012121
+name: sclerocornea
+def: "a congenital anomaly of the eye in which partial or complete corneal opacity is present and resembles the sclera, with no clear boundary between these structures" [MGI:csmith]
+subset: IMPC
+synonym: "corneal sclerization" EXACT []
+is_a: MP:0001314 ! corneal opacity
+created_by: csmith
+creation_date: 2013-10-08T13:42:26Z
+
+[Term]
+id: MP:0012122
+name: abnormal iris transillumination
+def: "any anomaly in the radial light dispersion pattern of the iris when a focused light beam is passed through it; particular dispersion pattern anomalies are indicative of abnormalities in iris pigment distribution and for the presence of glaucoma, atrophy and/or infection" [MGI:csmith]
+subset: IMPC
+is_a: MP:0001322 ! abnormal iris morphology
+created_by: csmith
+creation_date: 2013-10-08T13:46:24Z
+
+[Term]
+id: MP:0012123
+name: abnormal bronchoconstrictive response
+def: "anomaly in the expected bronchoconstrictive response to provocation challenge with lipopolysaccharide, bradykinin, histamine or other antigen/allergen or agent, often measured by plethysmography" [MGI:csmith]
+subset: IMPC
+synonym: "abnormal bronchoconstriction response" EXACT []
+is_a: MP:0002133 ! abnormal respiratory system physiology
+created_by: csmith
+creation_date: 2013-10-08T14:12:49Z
+
+[Term]
+id: MP:0012124
+name: increased bronchoconstrictive response
+def: "enhanced or greater than expected bronchoconstrictive response to provocation challenge with lipopolysaccharide, bradykinin, histamine or other antigen/allergen or agent, often measured by plethysmography" [MGI:csmith]
+subset: IMPC
+synonym: "enhanced bronchoconstrictive response" EXACT []
+synonym: "increased bronchoconstriction response" EXACT []
+is_a: MP:0012123 ! abnormal bronchoconstrictive response
+created_by: csmith
+creation_date: 2013-10-08T14:13:21Z
+
+[Term]
+id: MP:0012125
+name: decreased bronchoconstrictive response
+def: "reduction in the expected bronchoconstrictive response to provocation challenge with lipopolysaccharide, bradykinin, histamine or other antigen/allergen or agent, often measured by plethysmography" [MGI:csmith]
+subset: IMPC
+synonym: "decreased bronchoconstriction response" EXACT []
+synonym: "reduced bronchoconstrictive response" EXACT []
+is_a: MP:0012123 ! abnormal bronchoconstrictive response
+created_by: csmith
+creation_date: 2013-10-08T14:14:14Z
+
+[Term]
+id: MP:0012126
+name: abnormal placenta hemotrichorial membrane morphology
+def: "any structural anomaly of the three trophoblast cell layers found in rodent placentas between fetal blood vessels and maternal blood sinuses" [MGI:anna]
+comment: The human placenta is hemomonochorial, as this membrane consists of a single layer of synctiotrophoblast at term. In mice maternal blood bathes a perforated layer of cytotrophoblast cells that overlay two layers of syncytiotrophoblast, thus the murine placenta is hemotrichorial. Maternal blood has direct access to the murine synctiotrophoblast layer I via fenestrations in the murine cytotrophoblast layer.
+synonym: "abnormal placenta hemotrichorial barrier" EXACT []
+synonym: "abnormal placenta hemotrichorial layer" EXACT []
+is_a: MP:0001711 ! abnormal placenta morphology
+created_by: csmith
+creation_date: 2013-10-08T14:46:08Z
+
+[Term]
+id: MP:0012127
+name: absent placenta hemotrichorial membrane
+def: "absence of the three trophoblast cell layers found in rodent placentas between fetal blood vessels and maternal blood sinuses" [MGI:anna]
+comment: The human placenta is hemomonochorial, as this membrane consists of a single layer of synctiotrophoblast at term. In mice maternal blood bathes a perforated layer of cytotrophoblast cells that overlay two layers of syncytiotrophoblast, thus the murine placenta is hemotrichorial. Maternal blood has direct access to the murine synctiotrophoblast layer I via fenestrations in the murine cytotrophoblast layer.
+synonym: "absent placenta hemotrichorial barrier" EXACT []
+synonym: "absent placenta hemotrichorial layer" EXACT []
+is_a: MP:0012126 ! abnormal placenta hemotrichorial membrane morphology
+created_by: csmith
+creation_date: 2013-10-08T14:48:57Z
+
+[Term]
+id: MP:0012128
+name: abnormal blastocyst formation
+def: "atypical formation of a blastocyst from a solid ball of cells known as a morula, including anomalies in the formation of a fluid-filled cavity (blastocoele) and/or initiation of inner cell mass and trophectoderm differentiation" [MGI:anna]
+synonym: "abnormal blastulation" EXACT []
+is_a: MP:0004957 ! abnormal blastocyst morphology
+created_by: csmith
+creation_date: 2013-10-08T15:17:10Z
+
+[Term]
+id: MP:0012129
+name: failure of blastocyst formation
+def: "inability to form a blastocyst from a solid ball of cells known as a morula" [MGI:anna]
+synonym: "absent blastocyst" EXACT []
+is_a: MP:0012128 ! abnormal blastocyst formation
+created_by: csmith
+creation_date: 2013-10-08T15:18:40Z
+
+[Term]
+id: MP:0012130
+name: abnormal morula formation
+def: "atypical formation of the spherical embryonic mass of blastomeres formed before the blastula and resulting from cleavage of the fertilized ovum" [MGI:anna]
+synonym: "abnormal morulation" EXACT []
+is_a: MP:0012058 ! abnormal morula morphology
+created_by: csmith
+creation_date: 2013-10-08T15:44:16Z
+
+[Term]
+id: MP:0012131
+name: small visceral yolk sac
+def: "reduced size of the extraembryonic tissue membrane, formed from the visceral endoderm and the extraembryonic mesoderm, which is located ventral to the embryonic disc and is connected to the presumptive midgut of the embryo" [MGI:anna]
+synonym: "small secondary yolk sac " EXACT []
+synonym: "small umbilical vesicle" EXACT []
+synonym: "small vitelline sac" EXACT []
+synonym: "small yolk sac" EXACT []
+is_a: MP:0001718 ! abnormal visceral yolk sac morphology
+created_by: csmith
+creation_date: 2013-10-08T15:46:33Z
+
+[Term]
+id: MP:0012132
+name: abnormal midbrain-hindbrain boundary morphology
+alt_id: MP:0006174
+def: "any structural anomaly of the midbrain-hindbrain domain of the embryonic brain that is comprised of the mesencephalic vesicle and the first rhombencephalic vesicle at early somitogenesis stages; normally, an organizing center located at the boundary patterns the midbrain and hindbrain primordia of the neural plate" [MGI:anna]
+synonym: "abnormal isthmic organizer morphology" EXACT []
+synonym: "abnormal isthmomesencephalic boundary morphology" EXACT []
+synonym: "abnormal isthmus morphology" EXACT []
+synonym: "abnormal isthmus organizer morphology" EXACT []
+synonym: "abnormal MHB morphology" EXACT []
+synonym: "abnormal midbrain-hindbrain organizer morphology" EXACT []
+is_a: MP:0000913 ! abnormal brain development
+created_by: csmith
+creation_date: 2013-10-08T15:52:18Z
+
+[Term]
+id: MP:0012133
+name: absent midbrain-hindbrain boundary
+def: "absence of the midbrain-hindbrain domain of the embryonic brain that is comprised of the mesencephalic vesicle and the first rhombencephalic vesicle at early somitogenesis stages; normally, an organizing center located at the boundary patterns the midbrain and hindbrain primordia of the neural plate" [MGI:anna]
+synonym: "absent isthmic organizer" EXACT []
+synonym: "absent isthmomesencephalic boundary" EXACT []
+synonym: "absent isthmus" EXACT []
+synonym: "absent isthmus organizer" EXACT []
+synonym: "absent MHB" EXACT []
+synonym: "absent midbrain-hindbrain organizer" EXACT []
+is_a: MP:0012132 ! abnormal midbrain-hindbrain boundary morphology
+created_by: csmith
+creation_date: 2013-10-08T15:53:46Z
+
+[Term]
+id: MP:0012134
+name: absent umbilical cord
+def: "absence of or failure to form the connective stalk between the fetus and the placenta" [MGI:anna]
+synonym: "absent chorda umbilicalis" EXACT []
+synonym: "absent funiculus umbilicalis" EXACT []
+is_a: MP:0001725 ! abnormal umbilical cord morphology
+created_by: csmith
+creation_date: 2013-10-08T16:08:33Z
+
+[Term]
+id: MP:0012135
+name: embryonic-extraembryonic boundary constriction
+def: "an invagination or pinching in the visceral endoderm that is centered at the boundary between embryonic and extra-embryonic regions of the developing embryo, often resulting in physical separation of embryonic and extraembryonic ectoderm" [MGI:csmith]
+is_a: MP:0003890 ! abnormal embryonic-extraembryonic boundary morphology
+created_by: csmith
+creation_date: 2013-10-09T13:41:19Z
+
+[Term]
+id: MP:0012136
+name: absent forebrain
+def: "absence of the anterior of the three primary divisions of the developing chordate brain or the corresponding part of the adult brain (in vertebrates, includes especially the cerebral hemispheres, the thalamus, and the hypothalamus and especially in higher vertebrates is the main control center for sensory and associative information processing, visceral functions, and voluntary motor functions)" [GO:0048853]
+synonym: "absent prosencephalon" EXACT []
+synonym: "forebrain agenesis" EXACT []
+synonym: "missing forebrain" EXACT []
+synonym: "missing prosencephalon" EXACT []
+synonym: "prosencephalon agenesis" EXACT []
+is_a: MP:0000783 ! abnormal forebrain morphology
+created_by: csmith
+creation_date: 2013-10-09T15:20:00Z
+
+[Term]
+id: MP:0012137
+name: abnormal forebrain size
+def: "deviation from the average range of forebrain size compared to normal" [MGI:anna]
+synonym: "abnormal prosencephalon size" EXACT []
+is_a: MP:0000771 ! abnormal brain size
+is_a: MP:0000783 ! abnormal forebrain morphology
+created_by: csmith
+creation_date: 2013-10-09T15:20:00Z
+
+[Term]
+id: MP:0012138
+name: decreased forebrain size
+def: "size reduction or truncation of the anterior of the three primary divisions of the developing chordate brain or the corresponding part of the adult brain (in vertebrates, includes especially the cerebral hemispheres, the thalamus, and the hypothalamus and especially in higher vertebrates is the main control center for sensory and associative information processing, visceral functions, and voluntary motor functions)" [GO:0048853]
+is_a: MP:0000774 ! decreased brain size
+is_a: MP:0012137 ! abnormal forebrain size
+created_by: csmith
+creation_date: 2013-10-09T15:20:00Z
+
+[Term]
+id: MP:0012139
+name: increased forebrain size
+def: "greater than average size of the anterior of the three primary divisions of the developing chordate brain or the corresponding part of the adult brain (in vertebrates, includes especially the cerebral hemispheres, the thalamus, and the hypothalamus and especially in higher vertebrates is the main control center for sensory and associative information processing, visceral functions, and voluntary motor functions)" [GO:0048853]
+is_a: MP:0005238 ! increased brain size
+is_a: MP:0012137 ! abnormal forebrain size
+created_by: csmith
+creation_date: 2013-10-09T15:20:00Z
+
+[Term]
+id: MP:0012140
+name: forebrain hyperplasia
+def: "overdevelopment or increased size, usually due to a increased number of cells, of the anterior of the three primary divisions of the developing chordate brain or the corresponding part of the adult brain (in vertebrates, includes especially the cerebral hemispheres, the thalamus, and the hypothalamus and especially in higher vertebrates is the main control center for sensory and associative information processing, visceral functions, and voluntary motor functions)" [GO:0048853]
+is_a: MP:0012139 ! increased forebrain size
+created_by: csmith
+creation_date: 2013-10-09T15:20:00Z
 
 [Typedef]
 id: part_of
