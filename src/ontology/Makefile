@@ -39,14 +39,20 @@ fetch:
 
 mp.obo:
 	wget $(MP_URL) -O $@
+mp.owl: mp.obo
+	owltools $< -o $@
 
 
 hp.obo: external/hpo/human-phenotype-ontology.obo
 	echo remember to update external/hpo && \
 	cp $< $@
+hp.owl: hp.obo
+	owltools $< -o $@
 
 pato.obo:
 	cp $(HOME)/cvs/obo/ontology/phenotype/quality.obo $@
+pato.owl: pato.obo
+	owltools $< -o $@
 
 # todo - syntactic check
 #mp/mp-equivalence-axioms.obo: edit/mp-equivalence-axioms.obo
@@ -55,6 +61,9 @@ pato.obo:
 # todo - syntactic check
 hp/hp-equivalence-axioms.obo: external/hpo/human-phenotype-ontology_xp.obo
 	cp $< $@
+
+%-equivalence-axioms.owl: %-equivalence-axioms.obo
+	owltools $< -o $@
 
 #%.owl: %.obo
 #	owltools  $< -o file://`pwd`/$@
