@@ -1,0 +1,5546 @@
+format-version: 1.2
+remark: Status: ALPHA TESTING
+ontology: wbphenotype/wbphenotype-equivalent-axioms
+
+[Term]
+id: WBPhenotype:0000005 ! hyperactive_egg_laying
+intersection_of: PATO:0000912 ! increased rate
+intersection_of: inheres_in GO:0018991 ! oviposition
+
+[Term]
+id: WBPhenotype:0000006 ! egg_laying_defective
+intersection_of: PATO:0001558 ! lacking processual parts
+intersection_of: towards GO:0018991 ! oviposition
+
+[Term]
+id: WBPhenotype:0000008 ! anesthetic_hypersensitive
+intersection_of: PATO:0001551 ! increased sensitivity of a process
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:38867 ! anaesthetic
+
+[Term]
+id: WBPhenotype:0000009 ! anesthetic_resistant
+intersection_of: PATO:0001552 ! decreased sensitivity of a process
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:38867 ! anaesthetic
+
+[Term]
+id: WBPhenotype:0000010 ! drug_hypersensitive
+intersection_of: PATO:0001551 ! increased sensitivity of a process
+intersection_of: inheres_in GO:0042493 ! response to drug
+
+[Term]
+id: WBPhenotype:0000011 ! drug_resistant
+intersection_of: PATO:0001552 ! decreased sensitivity of a process
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:23888 ! drug
+
+[Term]
+id: WBPhenotype:0000013 ! dauer_defective
+intersection_of: PATO:0001558 ! lacking processual parts
+intersection_of: inheres_in GO:0043053 ! dauer entry
+
+[Term]
+id: WBPhenotype:0000015 ! positive_chemotaxis_defective
+intersection_of: PATO:0001558 ! lacking processual parts
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+
+[Term]
+id: WBPhenotype:0000016 ! aldicarb_hypersensitive
+intersection_of: PATO:0001551 ! increased sensitivity of a process
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:2555 ! aldicarb
+
+[Term]
+id: WBPhenotype:0000017 ! aldicarb_resistant
+intersection_of: PATO:0001552 ! decreased sensitivity of a process
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: towards CHEBI:2555 ! aldicarb
+
+[Term]
+id: WBPhenotype:0000018 ! pharyngeal_pumping_increased
+intersection_of: PATO:0000912 ! increased rate
+intersection_of: inheres_in GO:0043050 ! pharyngeal pumping
+
+[Term]
+id: WBPhenotype:0000019 ! pharyngeal_pumping_reduced
+intersection_of: PATO:0000911 ! decreased rate
+intersection_of: inheres_in GO:0043050 ! pharyngeal pumping
+
+[Term]
+id: WBPhenotype:0000020 ! pharyngeal_pumping_irregular
+intersection_of: PATO:0000161 ! rate
+intersection_of: inheres_in GO:0043050 ! pharyngeal pumping
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000022 ! long
+intersection_of: PATO:0000573 ! increased length
+intersection_of: inheres_in WBbt:0007833 ! organism
+
+[Term]
+id: WBPhenotype:0000023 ! serotonin_hypersensitive
+intersection_of: PATO:0001551 ! increased sensitivity of a process
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:28790 ! serotonin
+
+[Term]
+id: WBPhenotype:0000024 ! serotonin_resistant
+intersection_of: PATO:0001552 ! decreased sensitivity of a process
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:28790 ! serotonin
+
+[Term]
+id: WBPhenotype:0000025 ! blistered
+intersection_of: PATO:0001928 ! blistered
+intersection_of: inheres_in WBbt:0005755 ! cuticle
+
+[Term]
+id: WBPhenotype:0000028 ! RNA_processing_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0006396 ! RNA processing
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000030 ! growth_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0040007 ! growth
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000031 ! slow_growth
+intersection_of: PATO:0000911 ! decreased rate
+intersection_of: inheres_in GO:0040007 ! growth
+
+[Term]
+id: WBPhenotype:0000033 ! developmental_timing_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0040034 ! regulation of development, heterochronic
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000035 ! larval_body_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000023 ! larva
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000036 ! adult_body_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000037 ! egg_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in CL:0000025 ! egg
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000039 ! life_span_abnormal
+intersection_of: PATO:0000050 ! life span
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0007833 ! organism
+
+[Term]
+id: WBPhenotype:0000040 ! one_cell_arrest_early_emb
+intersection_of: PATO:0000297 ! arrested
+intersection_of: inheres_in GO:0007126 ! meiosis
+intersection_of: during WBls:0000006 ! 1-cell embryo
+
+[Term]
+id: WBPhenotype:0000042 ! slow_embryonic_development
+intersection_of: PATO:0000911 ! decreased rate
+intersection_of: inheres_in GO:0009790 ! embryonic development
+
+[Term]
+id: WBPhenotype:0000043 ! general_pace_of_development_abnormal
+intersection_of: PATO:0000161 ! rate
+intersection_of: inheres_in GO:0032502 ! developmental process
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000044 ! egg_size_abnormal_early_emb
+intersection_of: PATO:0000117 ! size
+intersection_of: inheres_in CL:0000025 ! egg
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0000047 ! gastrulation_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0007369 ! gastrulation
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000048 ! hatching_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0035188 ! hatching
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000049 ! postembryonic_development_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0009791 ! post-embryonic development
+
+[Term]
+id: WBPhenotype:0000050 ! embryonic_lethal
+intersection_of: PATO:0000718 ! lethal (sensu genetics)
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000003 ! embryo
+
+[Term]
+id: WBPhenotype:0000054 ! larval_lethal
+intersection_of: PATO:0000718 ! lethal (sensu genetics)
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000023 ! larva
+
+[Term]
+id: WBPhenotype:0000055 ! early_larval_arrest
+intersection_of: PATO:0000297 ! arrested
+intersection_of: inheres_in GO:0002164 ! larval development
+intersection_of: starts_during_or_after WBls:0000024 ! L1 larva
+intersection_of: ends_during_or_before WBls:0000027 ! L2 larva
+
+[Term]
+id: WBPhenotype:0000056 ! late_larval_arrest
+intersection_of: PATO:0000297 ! arrested
+intersection_of: inheres_in GO:0002164 ! larval development
+intersection_of: starts_during_or_after WBls:0000027 ! L3 larva
+intersection_of: ends_during_or_before WBls:0000024 ! L1 larva
+
+[Term]
+id: WBPhenotype:0000057 ! early_larval_lethal
+intersection_of: PATO:0000718 ! lethal (sensu genetics)
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: starts_during_or_after WBls:0000024 ! L1 larva
+intersection_of: ends_during_or_before WBls:0000027 ! L2 larva
+
+[Term]
+id: WBPhenotype:0000058 ! late_larval_lethal
+intersection_of: PATO:0000718 ! lethal (sensu genetics)
+intersection_of: starts_during_or_after WBls:0000027 ! L3 larva
+intersection_of: ends_during_or_before WBls:0000024 ! L1 larva
+
+[Term]
+id: WBPhenotype:0000059 ! larval_arrest
+intersection_of: PATO:0000297 ! arrested
+intersection_of: inheres_in GO:0002164 ! larval development
+
+[Term]
+id: WBPhenotype:0000060 ! adult_lethal
+intersection_of: PATO:0000718 ! lethal (sensu genetics)
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000041 ! adult
+
+[Term]
+id: WBPhenotype:0000061 ! extended_life_span
+intersection_of: PATO:0001603 ! increased life span
+intersection_of: inheres_in WBbt:0007833 ! organism
+
+[Term]
+id: WBPhenotype:0000062 ! lethal
+intersection_of: PATO:0000718 ! lethal (sensu genetics)
+intersection_of: inheres_in WBbt:0007833 ! organism
+
+!todo: use CARO?
+![Term]
+!id: WBPhenotype:0000065 ! X0_lethal
+!intersection_of: PATO:0000718 ! lethal (sensu genetics)
+!intersection_of: inheres_in WBls:0000056 ! adult male
+
+! TODO: use CARO?
+![Term]
+!id: WBPhenotype:0000066 ! XX_lethal
+!intersection_of: PATO:0000718 ! lethal (sensu genetics)
+!intersection_of: inheres_in WBbt:0007833 ! organism
+!intersection_of: during WBls:0000057 ! adult hermaphrodite
+
+[Term]
+id: WBPhenotype:0000068 ! oxidative_stress_response_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0006979 ! response to oxidative stress
+
+[Term]
+id: WBPhenotype:0000071 ! head_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005739 ! head
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000073 ! tail_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005741 ! tail
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000075 ! cuticle_attachment_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0040006 ! protein-based cuticle attachment to epithelium
+
+[Term]
+id: WBPhenotype:0000077 ! cuticle_shedding_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0018990 ! ecdysis, chitin-based cuticle
+
+[Term]
+id: WBPhenotype:0000079 ! branched_adult_alae
+intersection_of: PATO:0000402 ! branched
+intersection_of: inheres_in WBbt:0007832 ! ala
+
+[Term]
+id: WBPhenotype:0000081 ! L1_arrest
+intersection_of: PATO:0000297 ! arrested
+intersection_of: inheres_in GO:0002164 ! larval development
+intersection_of: during WBls:0000024 ! L1 larva
+
+[Term]
+id: WBPhenotype:0000082 ! L2_arrest
+intersection_of: PATO:0000297 ! arrested
+intersection_of: inheres_in GO:0002164 ! larval development
+intersection_of: during WBls:0000027 ! L2 larva
+
+[Term]
+id: WBPhenotype:0000083 ! L3_arrest
+intersection_of: PATO:0000297 ! arrested
+intersection_of: inheres_in GO:0002164 ! larval development
+intersection_of: during WBls:0000035 ! L3 larva
+
+[Term]
+id: WBPhenotype:0000084 ! L4_arrest
+intersection_of: PATO:0000297 ! arrested
+intersection_of: inheres_in GO:0002164 ! larval development
+intersection_of: during WBls:0000038 ! L4 larva
+
+[Term]
+id: WBPhenotype:0000085 ! swollen_intestine
+intersection_of: PATO:0001851 ! swollen
+intersection_of: inheres_in WBbt:0005772 ! intestine
+
+[Term]
+id: WBPhenotype:0000086 ! shrunken_intestine
+intersection_of: PATO:0000585 ! shrunken
+intersection_of: inheres_in WBbt:0005772 ! intestine
+
+![Term]
+!id: WBPhenotype:0000088 ! body_muscle_displaced
+!intersection_of: PATO:0001852 ! dislocated
+!intersection_of: inheres_in WBbt:0005330 ! body muscle OBSOLETE
+
+[Term]
+id: WBPhenotype:0000089 ! alpha_amanitin_resistant
+intersection_of: PATO:0001178 ! resistant to
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:37415 ! alpha-amanitin
+
+[Term]
+id: WBPhenotype:0000090! epidermis_cuticle_detached
+intersection_of: PATO:0001453 ! detached from
+intersection_of: inheres_in WBbt:0005733 ! hypodermis
+intersection_of: towards WBbt:0005755 ! cuticle
+
+[Term]
+id: WBPhenotype:0000091 ! epidermis_muscle_detached
+intersection_of: PATO:0001453 ! detached from
+intersection_of: inheres_in WBbt:0005733 ! hypodermis
+intersection_of: towards WBbt:0003675 ! muscle
+
+[Term]
+id: WBPhenotype:0000093 ! lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0000101 ! Lineage
+
+[Term]
+id: WBPhenotype:0000095 ! M_lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0004489 ! M
+
+[Term]
+id: WBPhenotype:0000097 ! AB_lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0004015 ! AB
+
+[Term]
+id: WBPhenotype:0000099 ! P_lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0005494 ! P lineage
+
+[Term]
+id: WBPhenotype:0000100 ! cell_UV_response_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0009411 ! response to UV
+intersection_of: inheres_in_part_of GO:0005623 ! cell
+
+[Term]
+id: WBPhenotype:0000104 ! cell_polarity_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0007163 ! establishment and/or maintenance of cell polarity
+
+[Term]
+id: WBPhenotype:0000111 ! pattern_of_gene_expression_abnormal
+intersection_of: PATO:0000060 ! pattern
+intersection_of: inheres_in GO:0003824 ! catalytic activity
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000113 ! RNA_expression_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0006350 ! transcription
+
+[Term]
+id: WBPhenotype:0000114 ! mRNA_expression_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0009299 ! mRNA transcription
+
+[Term]
+id: WBPhenotype:0000116 ! mid_larval_lethal
+intersection_of: PATO:0000718 ! lethal (sensu genetics)
+intersection_of: starts_during_or_after WBls:0000027 ! L2 larva
+intersection_of: ends_during_or_before WBls:0000027 ! L3 larva
+
+[Term]
+id: WBPhenotype:0000117 ! L1_lethal
+intersection_of: PATO:0000718 ! lethal (sensu genetics)
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000024 ! L1 larva
+
+[Term]
+id: WBPhenotype:0000118 ! L2_lethal
+intersection_of: PATO:0000718 ! lethal (sensu genetics)
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000027 ! L2 larva
+
+[Term]
+id: WBPhenotype:0000121 ! translation_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0006412 ! translation
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000124 ! enzyme_activity_reduced
+intersection_of: PATO:0000911 ! decreased rate
+intersection_of: inheres_in GO:0003824 ! catalytic activity
+
+[Term]
+id: WBPhenotype:0000125 ! enzyme_activity_increased
+intersection_of: PATO:0000912 ! increased rate
+intersection_of: inheres_in GO:0003824 ! catalytic activity
+
+[Term]
+id: WBPhenotype:0000126 ! general_pace_of_development_abnormal_early_emb
+intersection_of: PATO:0000161 ! rate
+intersection_of: inheres_in GO:0009790 ! embryonic development
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000127 ! dauer_recovery_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0043054 ! dauer exit
+
+[Term]
+id: WBPhenotype:0000134 ! gene_expression_level_reduced
+intersection_of: PATO:0000911 ! decreased rate
+intersection_of: inheres_in GO:0010467 ! gene expression
+
+[Term]
+id: WBPhenotype:0000135 ! gene_expression_level_high
+intersection_of: PATO:0000912 ! increased rate
+intersection_of: inheres_in GO:0010467 ! gene expression
+
+[Term]
+id: WBPhenotype:0000136 ! mRNA_levels_increased
+intersection_of: PATO:0000912 ! increased rate
+intersection_of: inheres_in GO:0009299 ! mRNA transcription
+
+[Term]
+id: WBPhenotype:0000137 ! mRNA_levels_reduced
+intersection_of: PATO:0000911 ! decreased rate
+intersection_of: inheres_in GO:0009299 ! mRNA transcription
+
+[Term]
+id: WBPhenotype:0000138 ! lipid_composition_abnormal
+intersection_of: PATO:0000025 ! composition
+intersection_of: inheres_in CHEBI:35366 ! fatty acid
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000142 ! cell_stress_response_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0033554 ! cellular response to stress
+
+[Term]
+id: WBPhenotype:0000145 ! fertility_abnormal
+intersection_of: PATO:0000274 ! fertility
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0007833 ! organism
+
+![Term]
+!id: WBPhenotype:0000154 ! reduced_brood_size
+!intersection_of: PATO:0000276 ! brood size
+!intersection_of: qualifier PATO:0001997 ! decreased
+
+[Term]
+id: WBPhenotype:0000155 ! cell_polarity_reversed
+intersection_of: PATO:0000625 ! inverted
+intersection_of: inheres_in GO:0007163 ! establishment and/or maintenance of cell polarity
+
+[Term]
+id: WBPhenotype:0000159 ! dauer_arrest_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0022611 ! dormancy process
+
+[Term]
+id: WBPhenotype:0000164 ! thin
+intersection_of: PATO:0000592 ! decreased thickness
+intersection_of: inheres_in WBbt:0007833 ! organism
+
+[Term]
+id: WBPhenotype:0000168 ! alae_secretion_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0046903 ! secretion
+intersection_of: during WBbt:0007832 ! ala
+
+[Term]
+id: WBPhenotype:0000170 ! precocious_alae
+intersection_of: PATO:0001754 ! predisplaced growth
+intersection_of: inheres_in WBbt:0007832 ! ala
+
+[Term]
+id: WBPhenotype:0000171 ! cell_proliferation_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0008283 ! cell proliferation
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000172 ! cell_proliferation_increased
+intersection_of: PATO:0000912 ! increased rate
+intersection_of: inheres_in GO:0008283 ! cell proliferation
+
+[Term]
+id: WBPhenotype:0000173 ! cell_proliferation_reduced
+intersection_of: PATO:0000911 ! decreased rate
+intersection_of: inheres_in GO:0008283 ! cell proliferation
+
+[Term]
+id: WBPhenotype:0000177! acetylcholinesterase_reduced
+intersection_of: PATO:0000911 ! decreased rate
+intersection_of: inheres_in GO:0003990 ! acetylcholinesterase activity
+
+[Term]
+id: WBPhenotype:0000178 ! cell_degeneration
+intersection_of: PATO:0000639 ! degenerate
+intersection_of: inheres_in CL:0000000 ! cell
+
+[Term]
+id: WBPhenotype:0000179 ! neuron_degeneration
+intersection_of: PATO:0000639 ! degenerate
+intersection_of: inheres_in WBbt:0003679 ! neuron
+
+[Term]
+id: WBPhenotype:0000180 ! axon_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0030424 ! axon
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000182 ! apoptosis_reduced
+intersection_of: PATO:0000911 ! decreased rate
+intersection_of: inheres_in GO:0006915 ! apoptosis
+
+[Term]
+id: WBPhenotype:0000183 ! apoptosis_increased
+intersection_of: PATO:0000912 ! increased rate
+intersection_of: inheres_in GO:0006915 ! apoptosis
+
+[Term]
+id: WBPhenotype:0000184 ! apoptosis_fails_to_occur
+intersection_of: PATO:0001511 ! functional failure
+intersection_of: inheres_in GO:0008219 ! cell death
+
+[Term]
+id: WBPhenotype:0000185 ! apoptosis_protracted
+intersection_of: PATO:0000498 ! prolonged period
+intersection_of: inheres_in GO:0008219 ! cell death
+
+[Term]
+id: WBPhenotype:0000186 ! oogenesis_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0048599 ! oocyte development
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000187 ! egg_round
+intersection_of: PATO:0000411 ! round
+intersection_of: inheres_in CL:0000025 ! egg
+
+[Term]
+id: WBPhenotype:0000189 ! hypodermis_disorganized
+intersection_of: PATO:0000937 ! disorganized
+intersection_of: inheres_in WBbt:0005733 ! hypodermis
+
+[Term]
+id: WBPhenotype:0000190 ! no_dauer_recovery
+intersection_of: PATO:0001558! lacking processual parts
+intersection_of: towards GO:0043053 ! dauer entry
+
+[Term]
+id: WBPhenotype:0000192 ! constitutive_enzyme_activity
+intersection_of: PATO:0000689 ! continuous
+intersection_of: inheres_in GO:0003824 ! catalytic activity
+
+[Term]
+id: WBPhenotype:0000196 ! distal_tip_cell_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in CL:0000661 ! distal tip cell (sensu Nematoda)
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000197 ! cell_induction_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0031129 ! inductive cell-cell signaling
+
+[Term]
+id: WBPhenotype:0000201 ! cuticle_development_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0042335 ! cuticle development
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000202 ! alae_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0007832 ! ala
+
+[Term]
+id: WBPhenotype:0000214 ! alpha_amanitin_hypersensitive
+intersection_of: PATO:0001192 ! hyperresponsive to
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:37415 ! alpha-amanitin
+
+[Term]
+id: WBPhenotype:0000215 ! no_germline
+intersection_of: PATO:0001557 ! lacking physical part
+intersection_of: towards WBbt:0005784 ! germ line
+intersection_of: inheres_in WBbt:0007833 ! organism
+
+[Term]
+id: WBPhenotype:0000216 ! cell_fate_specification_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0001708 ! cell fate specification
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000221 ! neurotransmitter_metabolism_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0042133 ! neurotransmitter metabolic process
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000222 ! serotonin_metabolism_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0042428 ! serotonin metabolic process
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000223 ! acetylcholine_metabolism_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0008291 ! acetylcholine metabolic process
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000224 ! serotonin_deficient
+intersection_of: PATO:0001163 ! decreased concentration
+intersection_of: inheres_in CHEBI:28790 ! serotonin
+
+[Term]
+id: WBPhenotype:0000225 ! serotonin_synthesis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0042427 ! serotonin biosynthetic process
+
+[Term]
+id: WBPhenotype:0000226 ! serotonin_catabolism_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0042429 ! serotonin catabolic process
+
+[Term]
+id: WBPhenotype:0000229 ! small
+intersection_of: PATO:0000587 ! decreased size
+intersection_of: inheres_in WBbt:0007833 ! organism
+
+[Term]
+id: WBPhenotype:0000230 ! tail_withered
+intersection_of: PATO:0000585 ! shrunken
+intersection_of: inheres_in WBbt:0005741 ! tail
+
+[Term]
+id: WBPhenotype:0000233 ! dopamine_metabolism_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0042417 ! dopamine metabolic process
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000234 ! dopamine_deficient
+intersection_of: PATO:0001163 ! decreased concentration
+intersection_of: inheres_in CHEBI:18243 ! dopamine
+
+[Term]
+id: WBPhenotype:0000235 ! dopamine_synthesis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0042416 ! dopamine biosynthetic process
+
+[Term]
+id: WBPhenotype:0000236 ! dopamine_catabolism_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0042420 ! dopamine catabolic process
+
+[Term]
+id: WBPhenotype:0000237 ! foraging_hyperactive
+intersection_of: PATO:0000912 ! increased rate
+intersection_of: inheres_in GO:0035177 ! larval foraging behavior
+
+[Term]
+id: WBPhenotype:0000238 ! foraging_reduced
+intersection_of: PATO:0000911 ! decreased rate
+intersection_of: inheres_in GO:0035177 ! larval foraging behavior
+
+[Term]
+id: WBPhenotype:0000239 ! vulval_cell_lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0004432 ! vulval cell
+
+[Term]
+id: WBPhenotype:0000244 ! apoptotic_arrest
+intersection_of: PATO:0000297 ! arrested
+intersection_of: inheres_in GO:0007140 ! male meiosis
+
+[Term]
+id: WBPhenotype:0000247 ! sodium_chemotaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:26708 ! sodium
+
+[Term]
+id: WBPhenotype:0000250 ! octopamine_metabolism_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0046333 ! octopamine metabolic process
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000251 ! octopamine_deficient
+intersection_of: PATO:0001163 ! decreased concentration
+intersection_of: inheres_in CHEBI:17134 ! octopamine
+
+[Term]
+id: WBPhenotype:0000252 ! caffeine_resistant
+intersection_of: PATO:0000513 ! insensitive toward
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:27732 ! caffeine
+
+[Term]
+id: WBPhenotype:0000253 ! movement_erratic
+intersection_of: PATO:0000330 ! irregular
+intersection_of: inheres_in GO:0007626 ! locomotory behavior
+
+[Term]
+id: WBPhenotype:0000254 ! chloride_chemotaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:17996 ! chloride
+
+[Term]
+id: WBPhenotype:0000256 ! amphid_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005394 ! amphid neuron
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000258 ! cell_secretion_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0032940 ! secretion by cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000262 ! axoneme_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0005930 ! axoneme
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000263 ! axoneme_short
+intersection_of: PATO:0000569 ! decreased height
+intersection_of: inheres_in GO:0005930 ! axoneme
+
+[Term]
+id: WBPhenotype:0000264 ! cAMP_chemotaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:17489 ! 3',5'-cyclic AMP
+
+! diff between cleavage and division?
+![Term]
+!id: WBPhenotype:0000266 ! cell_cleavage_abnormal
+!intersection_of: PATO:0000460 ! abnormal
+!intersection_of: inheres_in GO:0051301 ! cell division
+
+! diff between cleavage and division?
+![Term]
+!id: WBPhenotype:0000267 ! cell_cleavage_delayed
+!intersection_of: PATO:0000502 ! delayed
+!intersection_of: inheres_in GO:0051301 ! cell division
+
+[Term]
+id: WBPhenotype:0000272 ! egg_laying_irregular
+intersection_of: PATO:0000044 ! frequency
+intersection_of: inheres_in GO:0018991 ! oviposition
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000274 ! dead_eggs_laid
+intersection_of: PATO:0001422 ! dead
+intersection_of: inheres_in CL:0000025 ! egg
+
+[Term]
+id: WBPhenotype:0000277 ! rhythm_slow
+intersection_of: PATO:0000304 ! decreased speed
+intersection_of: inheres_in GO:0048511 ! rhythmic process
+
+[Term]
+id: WBPhenotype:0000278 ! body_region_pigmentation_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0043473 ! pigmentation
+intersection_of: inheres_in_part_of WBbt:0005738 ! body region
+
+[Term]
+id: WBPhenotype:0000279 ! spicule_insertion_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0034609 ! spicule insertion
+
+[Term]
+id: WBPhenotype:0000280 ! breaks_in_alae
+intersection_of: PATO:0001444 ! broken
+intersection_of: inheres_in WBbt:0007832 ! ala
+
+[Term]
+id: WBPhenotype:0000284 ! sperm_transfer_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0007320 ! insemination
+
+[Term]
+id: WBPhenotype:0000285! ray_tips_swollen
+intersection_of: PATO:0001851 ! swollen
+intersection_of: inheres_in WBbt:0006941 ! ray
+
+[Term]
+id: WBPhenotype:0000286 ! embryo_disorganized
+intersection_of: PATO:0000937 ! disorganized
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000003 ! embryo
+
+[Term]
+id: WBPhenotype:0000289 ! uterus_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0006760 ! uterus
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000290 ! sperm_absent
+intersection_of: PATO:0001557 ! lacking physical part
+intersection_of: towards WBbt:0006798 ! sperm
+
+[Term]
+id: WBPhenotype:0000291 ! no_oocytes
+intersection_of: PATO:0001557 ! lacking physical part
+intersection_of: towards WBbt:0006797 ! oocyte
+
+[Term]
+id: WBPhenotype:0000292 ! organ_system_pigmentation_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0043473 ! pigmentation
+intersection_of: during WBbt:0005746 ! Organ system
+
+[Term]
+id: WBPhenotype:0000293 ! alimentary_system_pigmentation_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0043473 ! pigmentation
+intersection_of: during WBbt:0005748 ! alimentary system
+
+[Term]
+id: WBPhenotype:0000294 ! intestine_dark
+intersection_of: PATO:0000327 ! dark
+intersection_of: inheres_in WBbt:0005772 ! intestine
+
+[Term]
+id: WBPhenotype:0000296 ! spicules_crumpled
+intersection_of: PATO:0001810 ! wrinkled
+intersection_of: inheres_in WBbt:0005312 ! copulatory spicule
+
+[Term]
+id: WBPhenotype:0000297 ! rays_fused
+intersection_of: PATO:0000642 ! fused with
+intersection_of: inheres_in WBbt:0006941 ! ray
+intersection_of: towards WBbt:0006941 ! ray
+
+[Term]
+id: WBPhenotype:0000298 ! rays_displaced
+intersection_of: PATO:0001852 ! dislocated
+intersection_of: inheres_in WBbt:0006941 ! ray
+
+[Term]
+id: WBPhenotype:0000299 ! sensillum_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0006929 ! sensillum
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000300 ! amphid_sheath_cell_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0006754 ! amphid sheath cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000302 ! benzaldehyde_chemotaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:22698 ! benzaldehydes
+
+[Term]
+id: WBPhenotype:0000303 ! diacetyl_chemotaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:16583 ! butane-2,3-dione
+
+[Term]
+id: WBPhenotype:0000304 ! isoamyl_alcohol_chemotaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:15837 ! isoamylol
+
+[Term]
+id: WBPhenotype:0000308 ! dauer_development_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0040024 ! dauer larval development
+
+[Term]
+id: WBPhenotype:0000310 ! cilia_absent
+intersection_of: PATO:0001557 ! lacking physical part
+intersection_of: towards WBbt:0006816 ! ciliated neuron
+
+[Term]
+id: WBPhenotype:0000688 ! semi_sterile
+intersection_of: PATO:0001767 ! semi-fertile
+intersection_of: inheres_in WBbt:0007833 ! organism
+
+[Term]
+id: WBPhenotype:0000312 ! dauer_pheromone_production_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0042810 ! pheromone metabolic process
+intersection_of: during WBls:0000032 ! dauer larva
+
+[Term]
+id: WBPhenotype:0000315 ! mechanosensation_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0001966 ! thigmotaxis
+
+[Term]
+id: WBPhenotype:0000318 ! cell_cycle_delayed
+intersection_of: PATO:0000502 ! delayed
+intersection_of: inheres_in GO:0007049 ! cell cycle
+
+[Term]
+id: WBPhenotype:0000319 ! large
+intersection_of: PATO:0000586 ! increased size
+intersection_of: inheres_in WBbt:0007833 ! organism
+
+[Term]
+id: WBPhenotype:0000323 ! head_swollen
+intersection_of: PATO:0001851 ! swollen
+intersection_of: inheres_in WBbt:0005739 ! head
+
+[Term]
+id: WBPhenotype:0000324 ! short
+intersection_of: PATO:0000574 ! decreased length
+intersection_of: inheres_in WBbt:0007833 ! organism
+
+[Term]
+id: WBPhenotype:0000331 ! inhibitors_of_na_k_atpase_resistant
+intersection_of: PATO:0001178 ! resistant to
+intersection_of: inheres_in CHEBI:7805 ! ouabain
+
+[Term]
+id: WBPhenotype:0000336 ! terminal_bulb_relaxation_abnormal
+intersection_of: PATO:0001582 ! relaxation
+intersection_of: inheres_in WBbt:0003732 ! terminal bulb
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000338 ! tail_swelling
+intersection_of: PATO:0001851 ! swollen
+intersection_of: inheres_in WBbt:0005741 ! tail
+
+[Term]
+id: WBPhenotype:0000340 ! imipramine_resistant
+intersection_of: PATO:0000513 ! insensitive toward
+intersection_of: inheres_in CHEBI:47499 ! imipramine
+
+[Term]
+id: WBPhenotype:0000341 ! imipramine_hypersensitive
+intersection_of: PATO:0001192 ! hyperresponsive to
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:47499 ! imipramine
+
+[Term]
+id: WBPhenotype:0000344 ! cloacal_structures_protrude
+intersection_of: PATO:0001598 ! protruding
+intersection_of: inheres_in WBbt:0005774 ! cloaca
+
+[Term]
+id: WBPhenotype:0000345 ! VPC_cell_division_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0051301 ! cell division
+intersection_of: inheres_in_part_of WBbt:0007809 ! vulval precursor cell
+
+[Term]
+id: WBPhenotype:0000350 ! hermaphrodite_tail_spike
+intersection_of: PATO:0001340 ! hermaphrodite
+intersection_of: inheres_in WBbt:0006979 ! tail spike
+
+[Term]
+id: WBPhenotype:0000351 ! failure_to_hatch
+intersection_of: PATO:0001511 ! functional failure
+intersection_of: inheres_in GO:0035188 ! hatching
+
+[Term]
+id: WBPhenotype:0000352 ! backing_uncoordinated
+intersection_of: PATO:0000770 ! uncoordinated
+intersection_of: inheres_in GO:0043057 ! backward locomotion
+
+[Term]
+id: WBPhenotype:0000353 ! backing_increased
+intersection_of: PATO:0000912 ! increased rate
+intersection_of: inheres_in GO:0043057 ! backward locomotion
+
+[Term]
+id: WBPhenotype:0000354 ! cell_differentiation_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0030154 ! cell differentiation
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000355 ! HSN_differentiation_precocious
+intersection_of: PATO:0000694 ! premature
+intersection_of: inheres_in GO:0030154 ! cell differentiation
+intersection_of: inheres_in_part_of WBbt:0006830 ! HSN
+
+[Term]
+id: WBPhenotype:0000356 ! spermatogenesis_delayed
+intersection_of: PATO:0000502 ! delayed
+intersection_of: inheres_in GO:0007283 ! spermatogenesis
+
+![Term]
+!id: WBPhenotype:0000358 ! extra_cell_division_postembryonic
+!intersection_of: PATO:0000460 ! abnormal
+!intersection_of: inheres_in GO:0051301 ! cell division
+!intersection_of: inheres_in_part_of WBbt:0007809 ! vulval precursor cell
+
+[Term]
+id: WBPhenotype:0000360 ! cytoplasmic_streaming_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0016482 ! cytoplasmic transport
+
+[Term]
+id: WBPhenotype:0000363 ! cell_division_slow
+intersection_of: PATO:0000304 ! decreased speed
+intersection_of: inheres_in GO:0051301 ! cell division
+
+[Term]
+id: WBPhenotype:0000370 ! egg_long
+intersection_of: PATO:0000573 ! increased length
+intersection_of: inheres_in CL:0000025 ! egg
+
+[Term]
+id: WBPhenotype:0000371 ! cell_division_incomplete
+intersection_of: PATO:0000297 ! arrested
+intersection_of: inheres_in GO:0051301 ! cell division
+
+[Term]
+id: WBPhenotype:0000373 ! egg_shape_variable
+intersection_of: PATO:0001930 ! variant shape
+intersection_of: inheres_in CL:0000025 ! egg
+
+[Term]
+id: WBPhenotype:0000378 ! pharyngeal_pumping_shallow
+intersection_of: PATO:0001692 ! shallow
+intersection_of: inheres_in GO:0043050 ! pharyngeal pumping
+
+[Term]
+id: WBPhenotype:0000379 ! head_notched
+intersection_of: PATO:0001495 ! notched
+intersection_of: inheres_in WBbt:0005739 ! head
+
+[Term]
+id: WBPhenotype:0000381 ! serotonin_reuptake_inhibitor_resistant
+intersection_of: PATO:0001178 ! resistant to
+intersection_of: inheres_in GO:0014076 ! response to fluoxetine
+
+![Term]
+!id: WBPhenotype:0000382 ! serotonin_reuptake_inhibitor_hypersensitive
+!intersection_of: PATO:0001192 ! hyperresponsive to
+!intersection_of: inheres_in GO:0014076 ! response to fluoxetine
+
+[Term]
+id: WBPhenotype:0000383 ! lipid_synthesis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0008610 ! lipid biosynthetic process
+
+[Term]
+id: WBPhenotype:0000384 ! axon_guidance_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0007411 ! axon guidance
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000385 ! sperm_excess
+intersection_of: PATO:0000470 ! increased number
+intersection_of: inheres_in WBbt:0006798 ! sperm
+
+[Term]
+id: WBPhenotype:0000386 ! genotoxic_induced_apoptosis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0008630 ! DNA damage response, signal transduction resulting in induction of apoptosis
+
+[Term]
+id: WBPhenotype:0000387 ! sperm_nonmotile
+intersection_of: PATO:0000300 ! immobile
+intersection_of: inheres_in WBbt:0006798 ! sperm
+
+[Term]
+id: WBPhenotype:0000388 ! sperm_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0006798 ! sperm
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000392 ! intestine_dark
+intersection_of: PATO:0001926 ! increased fluorescence
+intersection_of: inheres_in WBbt:0005772 ! intestine
+
+[Term]
+id: WBPhenotype:0000393 ! cell_migration_failure
+intersection_of: PATO:0001511 ! functional failure
+intersection_of: inheres_in GO:0016477 ! cell migration
+
+[Term]
+id: WBPhenotype:0000395 ! no_differentiated_gametes
+intersection_of: PATO:0001558! lacking processual parts
+intersection_of: towards GO:0007289 ! spermatid nuclear differentiation
+
+[Term]
+id: WBPhenotype:0000401 ! no_uterus
+intersection_of: PATO:0001557 ! lacking physical part
+intersection_of: towards WBbt:0006760 ! uterus
+
+[Term]
+id: WBPhenotype:0000404 ! delayed_hatching
+intersection_of: PATO:0000502 ! delayed
+intersection_of: inheres_in GO:0035188 ! hatching
+
+[Term]
+id: WBPhenotype:0000405 ! giant_oocytes
+intersection_of: PATO:0000584! hypertrophic
+intersection_of: inheres_in WBbt:0006797 ! oocyte
+
+[Term]
+id: WBPhenotype:0000407 ! ray_loss
+intersection_of: PATO:0001557 ! lacking physical part
+intersection_of: towards WBbt:0006941 ! ray
+
+[Term]
+id: WBPhenotype:0000408 ! dauer_recovery_inhibited
+intersection_of: PATO:0000911 ! decreased rate
+intersection_of: inheres_in GO:0043053 ! dauer entry
+
+[Term]
+id: WBPhenotype:0000409 ! organism_morphology_variable
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: has_quality PATO:0001227 ! variant
+
+[Term]
+id: WBPhenotype:0000411 ! rod_like_larval_lethal
+intersection_of: PATO:0000718 ! lethal (sensu genetics)
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000023 ! larva
+intersection_of: has_part PATO:0001873 ! rod-shaped
+
+[Term]
+id: WBPhenotype:0000412 ! octanol_chemotaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0050919 ! negative chemotaxis
+intersection_of: in_response_to CHEBI:37868 ! octanol
+
+[Term]
+id: WBPhenotype:0000415 ! necrotic_cell_death_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0012501 ! non-apoptotic programmed cell death
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000416 ! yolk_synthesis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0007296 ! vitellogenesis
+
+[Term]
+id: WBPhenotype:0000417 ! cell_division_failure
+intersection_of: PATO:0001511 ! functional failure
+intersection_of: inheres_in GO:0051301 ! cell division
+
+[Term]
+id: WBPhenotype:0000418 ! intestinal_cell_division_failure
+intersection_of: PATO:0001511 ! functional failure
+intersection_of: inheres_in GO:0051301 ! cell division
+intersection_of: during WBbt:0005772 ! intestine
+
+[Term]
+id: WBPhenotype:0000419 ! L3_lethal
+intersection_of: PATO:0000718 ! lethal (sensu genetics)
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000035 ! L3 larva
+
+[Term]
+id: WBPhenotype:0000427 ! no_cuticle
+intersection_of: PATO:0001557 ! lacking physical part
+intersection_of: towards WBbt:0005755 ! cuticle
+
+[Term]
+id: WBPhenotype:0000428 ! no_adult_cuticle
+intersection_of: PATO:0001557 ! lacking physical part
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: towards WBbt:0005755 ! cuticle
+
+[Term]
+id: WBPhenotype:0000433 ! DNA_synthesis_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0006260 ! DNA replication
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000436 ! protein_subcellular_localization_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0008104 ! protein localization
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000438 ! retarded_heterochronic_alterations
+intersection_of: PATO:0000304 ! decreased speed
+intersection_of: inheres_in GO:0040034 ! regulation of development, heterochronic
+
+[Term]
+id: WBPhenotype:0000439 ! precocious_heterochronic_alterations
+intersection_of: PATO:0000694 ! premature
+intersection_of: inheres_in GO:0040034 ! regulation of development, heterochronic
+
+[Term]
+id: WBPhenotype:0000440 ! long_excretory_canals
+intersection_of: PATO:0000573 ! increased length
+intersection_of: inheres_in WBbt:0005775 ! excretory canal
+
+[Term]
+id: WBPhenotype:0000441 ! tail_rounded
+intersection_of: PATO:0000411 ! round
+intersection_of: inheres_in WBbt:0005741 ! tail
+
+[Term]
+id: WBPhenotype:0000442 ! larval_development_retarded
+intersection_of: PATO:0000304 ! decreased speed
+intersection_of: inheres_in GO:0002164 ! larval development
+
+[Term]
+id: WBPhenotype:0000443 ! spicule_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005312 ! copulatory spicule
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000445 ! yolk_synthesis_in_males
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0007296 ! vitellogenesis
+intersection_of: during WBls:0000056 ! adult male
+
+[Term]
+id: WBPhenotype:0000447 ! adult_development_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0032502 ! developmental process
+intersection_of: during WBls:0000041 ! adult
+
+[Term]
+id: WBPhenotype:0000448 ! adult_cuticle_development_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0042335 ! cuticle development
+intersection_of: during WBls:0000041 ! adult
+
+[Term]
+id: WBPhenotype:0000451 ! head_protrusion
+intersection_of: PATO:0001598 ! protruding
+intersection_of: inheres_in WBbt:0005739 ! head
+
+[Term]
+id: WBPhenotype:0000454 ! head_twisted
+intersection_of: PATO:0001798 ! kinked
+intersection_of: inheres_in WBbt:0005739 ! head
+
+[Term]
+id: WBPhenotype:0000456 ! touch_resistant
+intersection_of: PATO:0001178 ! resistant to
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: towards GO:0001966 ! thigmotaxis
+
+[Term]
+id: WBPhenotype:0000461 ! paraquat_resistant
+intersection_of: PATO:0000513 ! insensitive toward
+intersection_of: inheres_in CHEBI:34905 ! paraquat
+
+[Term]
+id: WBPhenotype:0000463 ! metabolic_pathway_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0044237! cellular metabolic process
+
+[Term]
+id: WBPhenotype:0000473 ! progressive_paralysis
+intersection_of: PATO:0000763 ! paralysed
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: has_quality PATO:0001818 ! progressive
+
+[Term]
+id: WBPhenotype:0000474 ! muscle_attachment_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0016203 ! muscle attachment
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000475 ! muscle_detached
+intersection_of: PATO:0001453 ! detached from
+intersection_of: towards WBbt:0003675 ! muscle
+
+[Term]
+id: WBPhenotype:0000476 ! progressive_muscle_detachment
+intersection_of: PATO:0001453 ! detached from
+intersection_of: has_quality PATO:0001818 ! progressive
+intersection_of: towards WBbt:0003675 ! muscle
+
+[Term]
+id: WBPhenotype:0000478 ! isothermal_tracking_behavior_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0043052 ! thermotaxis
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000479 ! egg_pale
+intersection_of: PATO:0000328 ! pale
+intersection_of: inheres_in CL:0000025 ! egg
+
+[Term]
+id: WBPhenotype:0000480 ! pyrazine_chemotaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:30953 ! pyrazine
+
+[Term]
+id: WBPhenotype:0000481 ! negative_chemotaxis_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0050919 ! negative chemotaxis
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000484 ! embryo_small
+intersection_of: PATO:0000587 ! decreased size
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000003 ! embryo
+
+[Term]
+id: WBPhenotype:0000486 ! colchicine_hypersensitive
+intersection_of: PATO:0001192 ! hyperresponsive to
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:27882 ! Colchicine
+
+[Term]
+id: WBPhenotype:0000487 ! colchicine_resistant
+intersection_of: PATO:0001178 ! resistant to
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:27882 ! Colchicine
+
+[Term]
+id: WBPhenotype:0000490 ! pharynx_disorganized
+intersection_of: PATO:0000937 ! disorganized
+intersection_of: inheres_in WBbt:0003681 ! pharynx
+
+[Term]
+id: WBPhenotype:0000491 ! isthmus_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0003734 ! isthmus
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000492 ! corpus_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0003733 ! corpus
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000493 ! metacorpus_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0003711 ! metacorpus
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000495 ! ray_ectopic
+intersection_of: PATO:0000628 ! mislocalised (was ectopic)
+intersection_of: inheres_in WBbt:0006941 ! ray
+
+[Term]
+id: WBPhenotype:0000500 ! acetylcholinesterase_inhibitor_hypersensitive
+intersection_of: PATO:0001192 ! hyperresponsive to
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:38462 ! acetylcholinesterase inhibitor
+
+[Term]
+id: WBPhenotype:0000503 ! endoreduplication_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0042023 ! DNA endoreduplication
+
+[Term]
+id: WBPhenotype:0000504 ! nuclear_division_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0000280 ! nuclear division
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000505 ! male_ray_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0006941 ! ray
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000507 ! acetylcholine_levels_abnormal
+intersection_of: PATO:0000033 ! concentration
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: inheres_in CHEBI:15355 ! acetylcholine
+
+[Term]
+id: WBPhenotype:0000508 ! nonsense_mRNA_accumulation
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0000184 ! mRNA catabolic process, nonsense-mediated decay
+
+[Term]
+id: WBPhenotype:0000509! sperm_pseudopod_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0031143 ! pseudopodium
+intersection_of: part_of WBbt:0006798 ! sperm
+
+[Term]
+id: WBPhenotype:0000511 ! nuclear_positioning_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0051647 ! nucleus localization
+
+[Term]
+id: WBPhenotype:0000516 ! ventral_cord_disorganized
+intersection_of: PATO:0000937 ! disorganized
+intersection_of: inheres_in WBbt:0005829 ! ventral nerve cord
+
+[Term]
+id: WBPhenotype:0000517 ! behavior_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0007610 ! behavior
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000518 ! development_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0032502 ! developmental process
+
+[Term]
+id: WBPhenotype:0000519 ! physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000520 ! morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000521 ! pigmentation_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0043473 ! pigmentation
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000523 ! chemical_response_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0042221 ! response to chemical stimulus
+
+[Term]
+id: WBPhenotype:0000526 ! cell_pigmentation_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0033059 ! cellular pigmentation
+
+[Term]
+id: WBPhenotype:0000529 ! cell_development_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0048468 ! cell development
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000532 ! body_region_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005738 ! body region
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000533 ! cell_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in CL:0000000 ! cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000534 ! organ_system_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005746 ! Organ system
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000535 ! organism_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000536 ! cell_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in CL:0000000 ! cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000546 ! early_eggs_laid
+intersection_of: PATO:0000694 ! premature
+intersection_of: inheres_in GO:0018991 ! oviposition
+
+[Term]
+id: WBPhenotype:0000548 ! muscle_dystrophy
+intersection_of: PATO:0001780 ! dystrophic
+intersection_of: inheres_in WBbt:0003675 ! muscle
+
+[Term]
+id: WBPhenotype:0000549 ! head_muscle_dystrophy
+intersection_of: PATO:0001780 ! dystrophic
+intersection_of: inheres_in WBbt:0006761 ! head muscle
+
+![Term]
+!id: WBPhenotype:0000550 ! body_muscle_dystrophy
+!intersection_of: PATO:0001780 ! dystrophic
+!intersection_of: inheres_in WBbt:0005330 ! body muscle OBSOLETE
+
+[Term]
+id: WBPhenotype:0000552 ! GABA_levels_abnormal
+intersection_of: PATO:0000033 ! concentration
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: inheres_in CHEBI:16865 ! gamma-aminobutyric acid
+
+[Term]
+id: WBPhenotype:0000553 ! muscle_ultrastructure_disorganized
+intersection_of: PATO:0000937 ! disorganized
+intersection_of: inheres_in GO:0032982 ! myosin filament
+
+[Term]
+id: WBPhenotype:0000558 ! calcium_channel_modulator_response_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: in_response_to CHEBI:38808 ! calcium channel modulator
+
+[Term]
+id: WBPhenotype:0000559 ! calcium_channel_modulator_hypersensitive
+intersection_of: PATO:0001192 ! hyperresponsive to
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:38808 ! calcium channel modulator
+
+[Term]
+id: WBPhenotype:0000560 ! calcium_channel_modulator_resistant
+intersection_of: PATO:0001178 ! resistant to
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:38808 ! calcium channel modulator
+
+[Term]
+id: WBPhenotype:0000574 ! excretory_canal_short
+intersection_of: PATO:0000574 ! decreased length
+intersection_of: inheres_in WBbt:0005775 ! excretory canal
+
+[Term]
+id: WBPhenotype:0000575 ! organ_system_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0005746 ! Organ system
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000576 ! organism_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000581 ! body_axis_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005768 ! axis
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000584 ! synaptic_transmission_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0007268 ! synaptic transmission
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000594 ! cell_migration_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0016477 ! cell migration
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000598 ! alimentary_system_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005748 ! alimentary system
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000599 ! coelomic_system_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005749 ! coelomic system
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000600 ! epithelial_system_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005730 ! epithelial system
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000601 ! excretory_secretory_system_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0006850 ! excretory secretory system
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000602 ! excretory_system_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005736 ! excretory system
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000603 ! muscle_system_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005737 ! muscular system
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000604 ! nervous_system_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005735 ! nervous system
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000605 ! reproductive_system_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005747 ! reproductive system
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000606 ! alimentary_system_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0005748 ! alimentary system
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000607 ! coelomic_system_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0005749 ! coelomic system
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000608 ! epithelial_system_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0005730 ! epithelial system
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000609 ! excretory_secretory_system_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0006850 ! excretory secretory system
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000610 ! excretory_system_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0005736 ! excretory system
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000611 ! muscle_system_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0005737 ! muscular system
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000612 ! nervous_system_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0005735 ! nervous system
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000613 ! reproductive_system_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0005747 ! reproductive system
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000615 ! cilia_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0006816 ! ciliated neuron
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000616 ! synapse_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0045202 ! synapse
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000623 ! nervous_system_development_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0007399 ! nervous system development
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000625 ! synaptogenesis_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0007416 ! synaptogenesis
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000626 ! habituation_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0046959 ! habituation
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000627 ! anesthetic_response_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: in_response_to CHEBI:38867 ! anaesthetic
+
+[Term]
+id: WBPhenotype:0000628 ! spindle_assembly_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0051225 ! spindle assembly
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0000630 ! quinine_chemotaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0050919 ! negative chemotaxis
+intersection_of: in_response_to CHEBI:15854 ! quinine
+
+[Term]
+id: WBPhenotype:0000631 ! drug_response_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000632 ! axon_fasciculation_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0007413 ! axonal fasciculation
+
+[Term]
+id: WBPhenotype:0000634 ! pharyngeal_pumping_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0043050 ! pharyngeal pumping
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000635 ! positive_chemotaxis_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000636 ! neuron_degeneration_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0051402 ! neuron apoptosis
+
+[Term]
+id: WBPhenotype:0000640 ! egg_laying_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0018991 ! oviposition
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000642 ! hyperactive
+intersection_of: PATO:0000912 ! increased rate
+intersection_of: inheres_in GO:0040011 ! locomotion
+
+[Term]
+id: WBPhenotype:0000643 ! locomotion_abnormal
+intersection_of: PATO:0000770 ! uncoordinated
+intersection_of: inheres_in GO:0040011 ! locomotion
+
+[Term]
+id: WBPhenotype:0000644 ! paralyzed
+intersection_of: PATO:0000763 ! paralysed
+intersection_of: inheres_in WBbt:0007833 ! organism
+
+[Term]
+id: WBPhenotype:0000646 ! sluggish
+intersection_of: PATO:0000304 ! decreased speed
+intersection_of: inheres_in GO:0040011 ! locomotion
+
+[Term]
+id: WBPhenotype:0000647 ! copulation_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0007620 ! copulation
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000648 ! male_mating_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0060179 ! male mating behavior
+
+[Term]
+id: WBPhenotype:0000649 ! vulva_location_abnormal
+intersection_of: PATO:0000140 ! position
+intersection_of: inheres_in WBbt:0006748 ! vulva
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000650 ! defecation_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0030421 ! defecation
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000651 ! constipated
+intersection_of: PATO:0000502 ! delayed
+intersection_of: inheres_in GO:0030421 ! defecation
+
+[Term]
+id: WBPhenotype:0000654 ! synaptic_vesicle_exocytosis_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0016079 ! synaptic vesicle exocytosis
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000655 ! GABA_synaptic_transmission_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0051932 ! synaptic transmission, GABAergic
+
+[Term]
+id: WBPhenotype:0000656 ! acetylcholine_synaptic_transmission_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0007271 ! synaptic transmission, cholinergic
+
+[Term]
+id: WBPhenotype:0000658 ! neuromuscular_synaptic_transmission_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0007274 ! neuromuscular synaptic transmission
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000659 ! feeding_behavior_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0007631 ! feeding behavior
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000660 ! social_feeding_increased
+intersection_of: PATO:0002017 ! enhanced
+intersection_of: inheres_in GO:0035176 ! social behavior
+
+[Term]
+id: WBPhenotype:0000661 ! solitary_feeding_increased
+intersection_of: PATO:0000911 ! decreased rate
+intersection_of: inheres_in GO:0035176 ! social behavior
+
+[Term]
+id: WBPhenotype:0000662 ! foraging_behavior_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0035177 ! larval foraging behavior
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000666 ! ovulation_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0030728 ! ovulation
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000667 ! gonad_displaced
+intersection_of: PATO:0001852 ! dislocated
+intersection_of: inheres_in WBbt:0005347 ! somatic gonad
+
+[Term]
+id: WBPhenotype:0000670 ! spermatogenesis_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0007283 ! spermatogenesis
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000671 ! resistant_to_copper
+intersection_of: PATO:0001178 ! resistant to
+intersection_of: inheres_in CHEBI:28694 ! copper
+
+[Term]
+id: WBPhenotype:0000673 ! brood_size_abnormal
+intersection_of: PATO:0000276 ! brood size
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000674 ! slow_development
+intersection_of: PATO:0000911 ! decreased rate
+intersection_of: inheres_in GO:0009790 ! embryonic development
+
+[Term]
+id: WBPhenotype:0000675 ! zygotic_lethal
+intersection_of: PATO:0000718 ! lethal (sensu genetics)
+intersection_of: inheres_in CL:0000365 ! zygote
+
+[Term]
+id: WBPhenotype:0000676 ! growth_rate_abnormal
+intersection_of: PATO:0001492 ! growth rate
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000681 ! DMPP_response_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: in_response_to CHEBI:4290 ! 1,1-dimethyl-4-phenylpiperazinium iodide
+
+[Term]
+id: WBPhenotype:0000682 ! feminization_of_germline
+intersection_of: PATO:0000467 ! present
+intersection_of: inheres_in GO:0040022 ! feminization of hermaphroditic germ-line
+
+[Term]
+id: WBPhenotype:0000684 ! fewer_germ_cells
+intersection_of: PATO:0001997 ! decreased number
+intersection_of: inheres_in CL:0000586 ! germ cell
+
+[Term]
+id: WBPhenotype:0000688 ! sterile
+intersection_of: PATO:0000956 ! sterile
+intersection_of: inheres_in WBbt:0007833 ! organism
+
+[Term]
+id: WBPhenotype:0000690 ! gonad_migration_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: towards GO:0008354 ! germ cell migration
+
+[Term]
+id: WBPhenotype:0000691 ! gonad_development_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0008406 ! gonad development
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000692 ! male_sterile
+intersection_of: PATO:0000956 ! sterile
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000056 ! adult male
+
+[Term]
+id: WBPhenotype:0000694 ! hermaphrodite_sterile
+intersection_of: PATO:0000956 ! sterile
+intersection_of: inheres_in WBbt:0007849 ! hermaphrodite
+
+[Term]
+id: WBPhenotype:0000695 ! vulva_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0006748 ! vulva
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000696 ! everted_vulva
+intersection_of: PATO:0001597 ! everted
+intersection_of: inheres_in WBbt:0006748 ! vulva
+
+[Term]
+id: WBPhenotype:0000697 ! protruding_vulva
+intersection_of: PATO:0001598 ! protruding
+intersection_of: inheres_in WBbt:0006748 ! vulva
+
+[Term]
+id: WBPhenotype:0000698 ! vulvaless
+intersection_of: PATO:0001557 ! lacking physical parts
+intersection_of: towards WBbt:0006748 ! vulva
+intersection_of: inheres_in WBbt:0007833 ! organism
+
+[Term]
+id: WBPhenotype:0000699 ! vulva_development_variant
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0040025 ! vulval development
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000700 ! multivulva
+intersection_of: PATO:0000470 ! supernumerary
+intersection_of: towards WBbt:0006748 ! vulva
+intersection_of: inheres_in WBbt:0007833 ! organism
+
+[Term]
+id: WBPhenotype:0000703 ! epithelial_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005733 ! hypodermis
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000704 ! excretory_canal_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005775 ! excretory canal
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000706! gut_granule_biogenesis_reduced
+intersection_of: PATO:0000911 ! decreased rate
+intersection_of: inheres_in GO:0033363 ! secretory granule organization and biogenesis
+intersection_of: during WBbt:0005147 ! gut
+
+[Term]
+id: WBPhenotype:0000708 ! intestinal_development_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0048565 ! gut development
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000709 ! pharyngeal_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0003681 ! pharynx
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000710 ! intestinal_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005772 ! intestine
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000713 ! spermatocyte_division_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0048137 ! spermatocyte division
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000715 ! muscle_excess
+intersection_of: PATO:0000470 ! increased number
+intersection_of: inheres_in WBbt:0003675 ! muscle
+
+[Term]
+id: WBPhenotype:0000716 ! muscle_cell_attachment_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0016337 ! cell-cell adhesion
+intersection_of: inheres_in_part_of WBbt:0003675 ! muscle cell
+
+[Term]
+id: WBPhenotype:0000717 ! gene_expression_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0010467 ! gene expression
+
+[Term]
+id: WBPhenotype:0000718 ! dosage_compensation_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0007549 ! dosage compensation
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000722 ! nucleolus_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0005730 ! nucleolus
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000724 ! protein_secretion_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0009306 ! protein secretion
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000725 ! lipid_metabolism_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0006629 ! lipid metabolic process
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000726 ! ligand_binding_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0005102 ! receptor binding
+
+[Term]
+id: WBPhenotype:0000727 ! enzyme_activity_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0003824 ! catalytic activity
+
+[Term]
+id: WBPhenotype:0000728 ! exocytosis_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0006887 ! exocytosis
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000729 ! cell_death_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0008219 ! cell death
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000730 ! apoptosis_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0006915 ! apoptosis
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000731 ! germ_cell_hypersensitive_ionizing_radiation
+intersection_of: PATO:0000912 ! increased rate
+intersection_of: inheres_in GO:0010332 ! response to gamma radiation
+intersection_of: inheres_in_part_of WBbt:0006796 ! germ cell
+
+[Term]
+id: WBPhenotype:0000732 ! DNA_metabolism_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0006259 ! DNA metabolic process
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000733 ! catalysis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0003824 ! catalytic activity
+
+[Term]
+id: WBPhenotype:0000734 ! hypodermal_cell_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in CL:0000411 ! hypodermal cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000735 ! endoreduplication_of_hypodermal_nuclei_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0042023 ! DNA endoreduplication
+intersection_of: part_of CL:0000411 ! hypodermal cell
+
+[Term]
+id: WBPhenotype:0000736 ! autophagic_cell_death_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0048102 ! autophagic cell death
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000737 ! germ_cell_resistant_ionizing_radiation
+intersection_of: PATO:0000911 ! decreased rate
+intersection_of: inheres_in GO:0010332 ! response to gamma radiation
+intersection_of: inheres_in_part_of WBbt:0006796 ! germ cell
+
+[Term]
+id: WBPhenotype:0000738 ! organism_environmental_stimulus_response_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0050896 ! response to stimulus
+
+[Term]
+id: WBPhenotype:0000739 ! DNA_damage_response_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0006974 ! response to DNA damage stimulus
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000740 ! cell_cycle_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0007049 ! cell cycle
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000741 ! DNA_damage_checkpoint_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0000077 ! DNA damage checkpoint
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000742 ! DNA_recombination_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0006310 ! DNA recombination
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000746 ! cell_division_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0051301 ! cell division
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000748 ! asymmetric_cell_division_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0008356 ! asymmetric cell division
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0000749 ! embryonic_development_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0009790 ! embryonic development
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000750 ! larval_development_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0002164 ! larval development
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000751 ! L1_larval_development_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0002164 ! larval development
+intersection_of: during WBls:0000027 ! L2 larva
+
+[Term]
+id: WBPhenotype:0000752 ! L2_larval_development_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0002164 ! larval development
+intersection_of: during WBls:0000027 ! L2 larva
+
+[Term]
+id: WBPhenotype:0000753 ! L3_larval_development_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0002164 ! larval development
+intersection_of: during WBls:0000027 ! L3 larva
+
+[Term]
+id: WBPhenotype:0000754 ! L4_larval_development_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0002164 ! larval development
+intersection_of: during WBls:0000038 ! L4 larva
+
+[Term]
+id: WBPhenotype:0000756 ! L2_L3_molt_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBls:0000029 ! L2-L3 molt
+
+[Term]
+id: WBPhenotype:0000757 ! L3_L4_molt_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBls:0000037 ! L3-L4 molt
+
+[Term]
+id: WBPhenotype:0000758 ! L4_adult_molt_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBls:0000040 ! L4-adult molt
+
+[Term]
+id: WBPhenotype:0000759 ! spindle_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0005819 ! spindle
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0000760 ! spindle_orientation_abnormal_early_emb
+intersection_of: PATO:0000133 ! orientation
+intersection_of: inheres_in GO:0005819 ! spindle
+intersection_of: during WBls:0000004 ! proliferating embryo
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000762 ! spindle_position_abnormal_early_emb
+intersection_of: PATO:0000140 ! position
+intersection_of: towards GO:0005819 ! spindle
+intersection_of: during WBls:0000004 ! proliferating embryo
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000763 ! embryonic_cell_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0007028 ! embryonic cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000764 ! embryonic_cell_organization_biogenesis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0016043 ! cellular component organization and biogenesis
+intersection_of: inheres_in_part_of WBbt:0007028 ! embryonic cell
+
+[Term]
+id: WBPhenotype:0000765 ! spindle_elongation_integrity_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0051231 ! spindle elongation
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0000766 ! centrosome_pair_and_associated_pronuclear_rotation_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0035047 ! centrosomal and pronuclear rotation
+
+[Term]
+id: WBPhenotype:0000767 ! integrity_of_membranous_organelles_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0043227! membrane-bound organelle
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0000768 ! cytoplasmic_structure_abnormal_early_emb
+intersection_of: PATO:0000141 ! structure
+intersection_of: inheres_in GO:0005737 ! cytoplasm
+intersection_of: part_of CL:0000007 ! embryonic cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+
+[Term]
+id: WBPhenotype:0000769 ! cytoplasmic_appearance_abnormal_early_emb
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0005737 ! cytoplasm
+intersection_of: part_of CL:0000007 ! embryonic cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000770 ! embryonic_cell_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0007028 ! embryonic cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000771 ! centrosome_attachment_abnormal_early_emb
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0051642 ! centrosome localization
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000772 ! sister_chromatid_segregation_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0000819 ! sister chromatid segregation
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0000773 ! chromosome_segregation_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0007059 ! chromosome segregation
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000774 ! gametogenesis_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0007276 ! gamete generation
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000775 ! meiosis_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0007126 ! meiosis
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000776 ! passage_through_meiosis_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0033313 ! meiotic cell cycle checkpoint
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0000777 ! polar_body_extrusion_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0040038 ! polar body extrusion after meiotic divisions
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0000778 ! feeding_inefficient
+intersection_of: PATO:0001677 ! inefficient
+intersection_of: inheres_in GO:0007631 ! feeding behavior
+
+[Term]
+id: WBPhenotype:0000781 ! thin_filament_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0005884 ! actin filament
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+
+[Term]
+id: WBPhenotype:0000782 ! thick_filament_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0005863 ! striated muscle thick filament
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000783 ! M_line_absent
+intersection_of: PATO:0001557 ! lacking physical part
+intersection_of: inheres_in GO:0005863 ! striated muscle thick filament
+intersection_of: towards GO:0031430 ! M band
+
+[Term]
+id: WBPhenotype:0000784 ! male_fertility_abnormal
+intersection_of: PATO:0000279 ! male fertility
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000056 ! adult male
+
+[Term]
+id: WBPhenotype:0000785 ! body_part_pigmentation_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0043473 ! pigmentation
+intersection_of: during WBbt:0003760 ! Organ
+
+[Term]
+id: WBPhenotype:0000786 ! body_axis_pigmentation_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0043473 ! pigmentation
+intersection_of: inheres_in_part_of WBbt:0005768 ! axis
+
+[Term]
+id: WBPhenotype:0000790 ! fluoxetine_resistant
+intersection_of: PATO:0001178 ! resistant to
+intersection_of: inheres_in GO:0014076 ! response to fluoxetine
+intersection_of: towards CHEBI:5118 ! fluoxetine
+
+[Term]
+id: WBPhenotype:0000806 ! hermaphrodite_fertility_abnormal
+intersection_of: PATO:0000274 ! fertility
+intersection_of: inheres_in WBbt:0007849 ! hermaphrodite
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000807 ! G_lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0004780 ! G1
+
+[Term]
+id: WBPhenotype:0000808 ! K_lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0004499 ! K
+
+[Term]
+id: WBPhenotype:0000811 ! epithelial_cell_development_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0002064 ! epithelial cell development
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000812 ! germ_cell_development_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0007281 ! germ cell development
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000815 ! muscle_cell_development_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0055001 ! muscle cell development
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000816 ! neuron_development_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0048666 ! neuron development
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000818 ! adult_behavior_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0030534 ! adult behavior
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000822 ! sex_determination_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0007530 ! sex determination
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000825 ! postembryonic_cell_lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0000101 ! Lineage
+intersection_of: during WBls:0000022 ! postembryonic
+
+[Term]
+id: WBPhenotype:0000826 ! H_Lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0004778 ! H0L
+
+[Term]
+id: WBPhenotype:0000827 ! V_lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0005340 ! V lineage
+
+[Term]
+id: WBPhenotype:0000828 ! T_lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0004946 ! TL
+
+[Term]
+id: WBPhenotype:0000829 ! Q_lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0005426 ! Q lineage
+
+[Term]
+id: WBPhenotype:0000830 ! B_lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0003825 ! B
+
+[Term]
+id: WBPhenotype:0000831 ! Y_lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0004578 ! Y
+
+[Term]
+id: WBPhenotype:0000832 ! C_lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0003810 ! C
+
+[Term]
+id: WBPhenotype:0000833 ! U_lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0004942 ! U
+
+[Term]
+id: WBPhenotype:0000834 ! E_lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0004804 ! E
+
+[Term]
+id: WBPhenotype:0000835 ! F_lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0004799 ! F
+
+[Term]
+id: WBPhenotype:0000839 ! Z1_hermaphrodite_lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0005627 ! Z1.apppaaaa
+
+[Term]
+id: WBPhenotype:0000840 ! Z4_hermaphrodite_lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0000101 ! Lineage
+intersection_of: during WBls:0000003 ! embryo
+
+[Term]
+id: WBPhenotype:0000841 ! Z1_male_lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0005022 !
+
+[Term]
+id: WBPhenotype:0000842 ! Z4_male_lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0005024 ! gon_male_sves
+
+[Term]
+id: WBPhenotype:0000846 ! presynaptic_region_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in GO:0048786 ! presynaptic active zone
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000848 ! developmental_delay
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0007126 ! meiosis
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0000849 ! amphid_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0005394 ! amphid neuron
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000851 ! ciliated_neuron_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0006816 ! ciliated neuron
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000853 ! intraflagellar_transport_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0042073 ! intraflagellar transport
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000854 ! intraflagellar_transport_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0042073 ! intraflagellar transport
+
+[Term]
+id: WBPhenotype:0000861 ! body_wall_muscle_development_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0007525 ! somatic muscle development
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000863 ! male_fertility_reduced
+intersection_of: PATO:0001834 ! decreased fertility
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000056 ! adult male
+
+[Term]
+id: WBPhenotype:0000865 ! amphid_sheath_cell_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0006754 ! amphid sheath cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000867 ! embryonic_arrest
+intersection_of: PATO:0000297 ! arrested
+intersection_of: inheres_in GO:0009790 ! embryonic development
+
+[Term]
+id: WBPhenotype:0000868 ! paralyzed_body
+intersection_of: PATO:0000763 ! paralysed
+intersection_of: inheres_in WBbt:0005738 ! body region
+
+[Term]
+id: WBPhenotype:0000873 ! G1_checkpoint_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0031571 ! G1 DNA damage checkpoint
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000874 ! G2_checkpoint_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0031572 ! G2/M transition DNA damage checkpoint
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000875 ! S_phase_checkpoint_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0031573 ! intra-S DNA damage checkpoint
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000879 ! telomere_length_regulation_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0000723 ! telomere maintenance
+
+[Term]
+id: WBPhenotype:0000880 ! axon_development_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0007409 ! axonogenesis
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000881 ! cilia_mislocalized
+intersection_of: PATO:0000628 ! mislocalised (was ectopic)
+intersection_of: inheres_in WBbt:0006816 ! ciliated neuron
+
+[Term]
+id: WBPhenotype:0000882 ! dendrite_development_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0016358 ! dendrite development
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000884 ! morphology_AWB_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005671 ! AWB
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000885 ! engulfment_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0043652 ! engulfment of apoptotic cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000898 ! blast_cell_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0006783 ! blast cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000899 ! epithelial_cell_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0003672 ! epithelial cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000900 ! germ_cell_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0006796 ! germ cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000901 ! gland_cell_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0003670 ! gland cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000902 ! intestinal_cell_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005792 ! intestinal cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000903 ! marginal_cell_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0003673 ! marginal cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000904 ! muscle_cell_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0003675 ! muscle cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000905 ! neuron_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0003679 ! neuron
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000907 ! anus_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005364 ! anus
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000908 ! cloacal_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005774 ! cloaca
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000909! pharyngeal_intestinal_valve_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005767 ! pharyngeal-intestinal valve
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000910 ! rectal_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005773 ! rectum
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000911 ! coelomocyte_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005751 ! coelomocyte
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000913 ! basal_lamina_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005756 ! basal lamina
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000914 ! excretory_gland_cell_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005776 ! excretory gland cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000916 ! excretory_cell_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005812 ! excretory cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000917 ! excretory_duct_cell_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0004540 ! excretory duct cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000918 ! excretory_socket_cell_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0004534 ! excretory socket cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000921 ! striated_muscle_development_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0007519 ! striated muscle development
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000923 ! nonstriated_muscle_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005780 ! non-striated muscle
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000924 ! striated_muscle_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005779 ! striated muscle
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000926 ! body_wall_muscle_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0006804 ! body wall muscle cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000927 ! male_longitudinal_muscle_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0007028 ! longitudinal male muscle
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000928 ! male_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000056 ! adult male
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000929 ! hermaphrodite_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000057 ! adult hermaphrodite
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000931 ! bis_phenol_A_response_abnormal
+intersection_of: PATO:0000077 ! response to
+intersection_of: inheres_in GO:0042221 ! response to chemical stimulus
+intersection_of: towards CHEBI:33216 ! bisphenol A
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000932 ! bis_phenol_A_hypersensitive
+intersection_of: PATO:0001192 ! hyperresponsive to
+intersection_of: inheres_in GO:0042221 ! response to chemical stimulus
+intersection_of: towards CHEBI:33216 ! bisphenol A
+
+[Term]
+id: WBPhenotype:0000933 ! MS_lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0004458 ! MS
+
+[Term]
+id: WBPhenotype:0000934 ! developmental_morphology_abnormal
+intersection_of: PATO:0000574 ! decreased length
+intersection_of: inheres_in GO:0032502 ! developmental process
+
+[Term]
+id: WBPhenotype:0000935 ! D_lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0004873 ! D
+
+[Term]
+id: WBPhenotype:0000936 ! P4_lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0004421 ! Psub4
+
+[Term]
+id: WBPhenotype:0000937 ! W_lineage_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0004583 ! W
+
+[Term]
+id: WBPhenotype:0000944 ! neurite_development_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0031175 ! neurite development
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000948 ! cuticle_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005755 ! cuticle
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000949 ! pseudocoelom_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005745 ! pseudocoelom
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000963 ! male_pigmentation_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0048094 ! male pigmentation
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000964 ! DMPP_resistant
+intersection_of: PATO:0001178 ! resistant to
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:4290 ! 1,1-dimethyl-4-phenylpiperazinium iodide
+
+[Term]
+id: WBPhenotype:0000965 ! somatic_cell_death_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0008219 ! cell death
+intersection_of: inheres_in_part_of WBbt:0005407 ! somatic cell
+
+[Term]
+id: WBPhenotype:0000966 ! germline_mortal
+intersection_of: PATO:0000718 ! lethal (sensu genetics)
+intersection_of: inheres_in CL:0000586 ! germ cell
+
+[Term]
+id: WBPhenotype:0000967 ! male_tail_spike
+intersection_of: PATO:0000384 ! male
+intersection_of: inheres_in WBbt:0006979 ! tail spike
+
+[Term]
+id: WBPhenotype:0000969 ! accessory_cell_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005762 ! accessory cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000972 ! neuronal_sheath_cell_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005811 ! neuronal sheath cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000973 ! homologous_recombination_increased
+intersection_of: PATO:0000912 ! increased rate
+intersection_of: inheres_in GO:0006310 ! DNA recombination
+
+[Term]
+id: WBPhenotype:0000974 ! accessory_cell_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0005762 ! accessory cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000975 ! neuronal_sheath_cell_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0005811 ! neuronal sheath cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000976 ! ventral_cord_patterning_abnormal
+intersection_of: PATO:0000060 ! pattern
+intersection_of: inheres_in WBbt:0005829 ! ventral nerve cord
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000977 ! somatic_gonad_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005347 ! somatic gonad
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000978 ! spermatheca_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0005319 ! spermatheca
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000981 ! spermatocyte_meiosis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0007285 ! primary spermatocyte growth
+
+[Term]
+id: WBPhenotype:0000983 ! fertilization_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0009566 ! fertilization
+
+[Term]
+id: WBPhenotype:0000985 ! blast_cell_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in CL:0000000 ! cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000986 ! epithelial_cell_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in CL:0000066 ! epithelial cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000987 ! germ_cell_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in CL:0000586 ! germ cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000989 ! marginal_cell_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0003673 ! marginal cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000990 ! muscle_cell_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0003675 ! muscle cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000991 ! neuron_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0003679 ! neuron
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001003 ! L4_lethal
+intersection_of: PATO:0000718 ! lethal (sensu genetics)
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000038 ! L4 larva
+
+[Term]
+id: WBPhenotype:0001005 ! backward_locomotion_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0043057 ! backward locomotion
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001006 ! pharyngeal_pumping_rate_abnormal
+intersection_of: PATO:0000161 ! rate
+intersection_of: inheres_in GO:0043050 ! pharyngeal pumping
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001009 ! developmental_pigmentation_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0048066 ! pigmentation during development
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001015 ! developmental_growth_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0048589 ! developmental growth
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001017 ! adult_growth_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0040007 ! growth
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: during WBls:0000041 ! adult
+
+[Term]
+id: WBPhenotype:0001018 ! cytokinesis_abnormal_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0000910 ! cytokinesis
+intersection_of: during WBls:0000003 ! embryo
+
+[Term]
+id: WBPhenotype:0001019 ! mid_larval_arrest
+intersection_of: PATO:0000297 ! arrested
+intersection_of: inheres_in GO:0002164 ! larval development
+intersection_of: starts_during_or_after WBls:0000027 ! L2 larva
+intersection_of: ends_during_or_before WBls:0000027 ! L3 larva
+
+[Term]
+id: WBPhenotype:0001020 ! embryonic_lethal_late_emb
+intersection_of: PATO:0000718 ! lethal (sensu genetics)
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000021 ! fully-elongated embryo
+
+[Term]
+id: WBPhenotype:0001024 ! male_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000056 ! adult male
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001025 ! hermaphrodite_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0007849 ! hermaphrodite
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001026 ! nuclear_morphology_alteration_early_emb
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0005634 ! nucleus
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001027 ! nuclear_position_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0051647 ! nucleus localization
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001028 ! nuclear_appearance_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0005634 ! nucleus
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001031 ! pronuclear_migration_reduced_early_emb
+intersection_of: PATO:0000911 ! decreased rate
+intersection_of: inheres_in GO:0035046 ! pronuclear migration
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001032 ! larval_behavior_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0030537 ! larval behavior
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001034 ! pronuclear_nuclear_appearance_abnormal_early_emb
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0045120 ! pronucleus
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001036 ! sterile_F1
+intersection_of: PATO:0000906 ! f1 sterile
+intersection_of: inheres_in WBbt:0007833 ! organism
+
+![Term]
+!id: WBPhenotype:0001038 ! tumorous_germline
+!intersection_of: PATO:0001557 ! lacking physical part
+!intersection_of: towards MPATH:218 ! neoplasia
+!intersection_of: inheres_in WBbt:0005784 ! germ line
+
+[Term]
+id: WBPhenotype:0001040 ! chemosensory_response_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0007635 ! chemosensory behavior
+
+[Term]
+id: WBPhenotype:0001041 ! meiosis_abnormal_early_emb
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0007126 ! meiosis
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001042 ! neuron_function_reduced
+intersection_of: PATO:0001624 ! decreased functionality
+intersection_of: inheres_in WBbt:0003679 ! neuron
+
+[Term]
+id: WBPhenotype:0001043 ! interphase_entry_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0051318 ! G1 phase
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001046 ! nonstriated_muscle_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005451 ! pharyngeal muscle cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001049 ! chemosensory_behavior_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0007635 ! chemosensory behavior
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001053 ! cyclic_nucleotide_positive_chemotaxis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:23447 ! cyclic nucleotides
+
+[Term]
+id: WBPhenotype:0001054 ! cGMP_chemotaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:27682 ! 3',5'-cyclic dGMP
+
+[Term]
+id: WBPhenotype:0001055 ! bromide_chemotaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:15858 ! bromide
+
+[Term]
+id: WBPhenotype:0001056 ! iodide_chemotaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:16382 ! iodide
+
+[Term]
+id: WBPhenotype:0001057 ! lithium_chemotaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:30145 ! lithium
+
+[Term]
+id: WBPhenotype:0001058 ! potassium_chemotaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:26216 ! potassium
+
+[Term]
+id: WBPhenotype:0001059 ! magnesium_chemotaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:25107 ! magnesium
+
+[Term]
+id: WBPhenotype:0001068 ! egg_laying_serotonin_resistant
+intersection_of: PATO:0001552 ! decreased sensitivity of occurrent
+intersection_of: inheres_in GO:0018991 ! oviposition
+intersection_of: towards CHEBI:28790 ! serotonin
+
+[Term]
+id: WBPhenotype:0001072 ! response_to_food_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0032094 ! response to food
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001073 ! egg_laying_response_to_food_abnormal
+intersection_of: PATO:0001457 ! sensitivity of occurrent
+intersection_of: inheres_in GO:0018991 ! oviposition
+intersection_of: towards CHEBI:33290 ! food
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001074 ! vulval_muscle_unresponsive_to_serotonin
+intersection_of: PATO:0000488 ! unresponsive to
+intersection_of: inheres_in WBbt:0005821 ! vulval muscle
+intersection_of: towards CHEBI:28790 ! serotonin
+
+[Term]
+id: WBPhenotype:0001075 ! vulval_muscle_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0005821 ! vulval muscle
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001077 ! chromosome_segregation_abnormal_karyomeres_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0007059 ! chromosome segregation
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001078 ! cytokinesis_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0000910 ! cytokinesis
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001081 ! cytoplasmic_morphology_abnormal_early_emb
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0005737 ! cytoplasm
+intersection_of: part_of CL:0000007 ! embryonic cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001084 ! sodium_chloride_chemotaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:26710 ! sodium chloride
+
+[Term]
+id: WBPhenotype:0001085 ! butanone_chemotaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:22951 ! butanones
+
+[Term]
+id: WBPhenotype:0001087 ! acetone_chemotaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:15347 ! acetone
+
+[Term]
+id: WBPhenotype:0001088 ! pentanol_chemotaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:16133 ! cyclopentanol
+
+[Term]
+id: WBPhenotype:0001089 ! hexanol_chemotaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:18099 ! cyclohexanol
+
+[Term]
+id: WBPhenotype:0001093 ! intestinal_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0005772 ! intestine
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001098 ! no_rectum
+intersection_of: PATO:0001557 ! lacking physical part
+intersection_of: towards WBbt:0005773 ! rectum
+
+[Term]
+id: WBPhenotype:00011 ! cell_cycle_abnormal_early_emb
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0007049 ! cell cycle
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001100 ! early_embryonic_lethal
+intersection_of: PATO:0000718 ! lethal (sensu genetics)
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001101 ! egg_laying_response_to_drug_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0018991 ! oviposition
+intersection_of: in_response_to CHEBI:23888 ! drug
+
+[Term]
+id: WBPhenotype:0001102 ! mitotic_spindle_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0005819 ! spindle
+intersection_of: during WBls:0000004 ! proliferating embryo
+intersection_of: during GO:0007067 ! mitosis
+
+[Term]
+id: WBPhenotype:0001103 ! spindle_absent_early_emb
+intersection_of: PATO:0001557 ! lacking physical part
+intersection_of: towards GO:0005819 ! spindle
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001104! P0_spindle_absent_early_emb
+intersection_of: PATO:0001557 ! lacking physical part
+intersection_of: towards GO:0005819 ! spindle
+intersection_of: inheres_in WBbt:0004422 ! P0
+
+[Term]
+id: WBPhenotype:0001105 ! P0_spindle_position_abnormal_early_emb
+intersection_of: PATO:0000140 ! position
+intersection_of: towards GO:0005819 ! spindle
+intersection_of: part_of WBbt:0004422 ! P0
+
+[Term]
+id: WBPhenotype:0001110 ! aster_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0005818 ! aster
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001111 ! aster_AB_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0005818 ! aster
+intersection_of: part_of WBbt:0004015 ! AB
+
+[Term]
+id: WBPhenotype:0001113 ! P1_aster_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0005818 ! aster
+intersection_of: part_of WBbt:0006770 ! P1
+
+[Term]
+id: WBPhenotype:0001114 ! cell_cycle_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0007049 ! cell cycle
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001115 ! cell_cycle_timing_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0051726 ! regulation of cell cycle
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001117 ! cell_cell_contacts_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0007267 ! cell-cell signaling
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001118 ! cell_position_abnormal_early_emb
+intersection_of: PATO:0000140 ! position
+intersection_of: inheres_in CL:0000000 ! cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001119 ! cell_cycle_slow_early_emb
+intersection_of: PATO:0000911 ! decreased rate
+intersection_of: inheres_in GO:0051726 ! regulation of cell cycle
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001129 ! cleavage_furrow_abnormal_early_emb
+intersection_of: PATO:0001453 ! detached from
+intersection_of: towards GO:0032154 ! cleavage furrow
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001130 ! cytokinesis_fails_early_emb
+intersection_of: PATO:0001511 ! functional failure
+intersection_of: inheres_in GO:0000910 ! cytokinesis
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001135 ! embryonic_morphology_abnormal_early_emb
+intersection_of: PATO:0000051 ! morphology
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001137 ! embryos_small_early_emb
+intersection_of: PATO:0000587 ! decreased size
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000004 ! proliferating embryo
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001138 ! nucleus_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0005634 ! nucleus
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001139 ! nuclear_reassembly_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0031468 ! nuclear envelope reassembly
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001140 ! neuron_migration_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0001764 ! neuron migration
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001142 ! nuclear_number_abnormal_early_emb
+intersection_of: PATO:0000070 ! count
+intersection_of: inheres_in GO:0005634 ! nucleus
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001143 ! multiple_nuclei_early_emb
+intersection_of: PATO:0000470 ! supernumerary
+intersection_of: towards GO:0005634 ! nucleus
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001151 ! pronucleus_centrosomes_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0045120 ! pronucleus
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001152 ! pronuclear_migration_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0035046 ! pronuclear migration
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001153 ! pronuclear_migration_failure_early_emb
+intersection_of: PATO:0001511 ! functional failure
+intersection_of: inheres_in GO:0035046 ! pronuclear migration
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001154 ! paternal_pronucleus_migrates_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0018985 ! pronuclear envelope synthesis
+intersection_of: inheres_in_part_of GO:0001940 ! male pronucleus
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001156 ! pronuclear_size_abnormal_early_emb
+intersection_of: PATO:0000117 ! size
+intersection_of: inheres_in GO:0045120 ! pronucleus
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001159 !pronuclear_morphology_abnormal_early_emb
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0045120 ! pronucleus
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001162 ! pronuclear_number_abnormal_early_emb
+intersection_of: PATO:0000070 ! count
+intersection_of: inheres_in GO:0045120 ! pronucleus
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001164 ! excess_pronucleus_early_emb
+intersection_of: PATO:0000470 ! increased number
+intersection_of: inheres_in GO:0045120 ! pronucleus
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001165 ! excess_maternal_pronucleus_early_emb
+intersection_of: PATO:0000470 ! increased number
+intersection_of: inheres_in GO:0001939 ! female pronucleus
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001166 ! excess_paternal_pronucleus_abnormal_centrosome_early_emb
+intersection_of: PATO:0000470 ! increased number
+intersection_of: inheres_in GO:0001940 ! male pronucleus
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001167 ! pseudocleavage_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0030588 ! pseudocleavage
+
+[Term]
+id: WBPhenotype:0001168 ! pseudocleavage_absent_early_emb
+intersection_of: PATO:0001557 ! lacking physical part
+intersection_of: towards GO:0030588 ! pseudocleavage
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001169 ! pseudocleavage_exaggerated_early_emb
+intersection_of: PATO:0000586 ! increased size
+intersection_of: inheres_in GO:0030588 ! pseudocleavage
+
+[Term]
+id: WBPhenotype:0001170 ! sterile_F0_48_hours_post_injection
+intersection_of: PATO:0000956 ! sterile
+intersection_of: inheres_in WBbt:0004422 ! P0
+
+[Term]
+id: WBPhenotype:0001171 ! life_span_abnormal
+intersection_of: PATO:0001604 ! shortened_life_span
+intersection_of: inheres_in WBbt:0007833 ! organism
+
+[Term]
+id: WBPhenotype:0001172 ! programmed_cell_death_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0012501 ! programmed cell death
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001173 ! non_apoptotic_cell_death_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0012501 ! non-apoptotic programmed cell death
+
+[Term]
+id: WBPhenotype:0001176 ! one_cell_shape_abnormal_early_emb
+intersection_of: PATO:0000052 ! shape
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000006 ! 1-cell embryo
+
+[Term]
+id: WBPhenotype:0001178 ! egg_integrity_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in CL:0000025 ! egg
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001182 ! fat_content_abnormal
+intersection_of: PATO:0000033 ! concentration
+intersection_of: inheres_in CHEBI:35366 ! fatty acid
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001183 ! fat_content_reduced
+intersection_of: PATO:0001163 ! decreased concentration
+intersection_of: inheres_in CHEBI:35366 ! fatty acid
+
+[Term]
+id: WBPhenotype:0001184 ! fat_content_increased
+intersection_of: PATO:0001162 ! increased concentration
+intersection_of: inheres_in CHEBI:35366 ! fatty acid
+
+[Term]
+id: WBPhenotype:0001190 ! pharyngeal_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0003681 ! pharynx
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001191 ! pharyngeal_muscle_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0005451 ! pharyngeal muscle cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001192 ! calcium_signaling_pharynx_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0019722 ! calcium-mediated signaling
+intersection_of: during WBbt:0003681 ! pharynx
+
+[Term]
+id: WBPhenotype:0001194 ! ectopic_neuron
+intersection_of: PATO:0000628 ! mislocalised (was ectopic)
+intersection_of: inheres_in WBbt:0003679 ! neuron
+
+[Term]
+id: WBPhenotype:0001195 ! generation_calcium_signal_defective_pharynx
+intersection_of: PATO:0000912 ! increased rate
+intersection_of: inheres_in GO:0050848 ! regulation of calcium-mediated signaling
+intersection_of: during WBbt:0003681 ! pharynx
+
+[Term]
+id: WBPhenotype:0001196 ! synchronization_calcium_signal_defective_pharynx
+intersection_of: PATO:0000688 ! asynchronous
+intersection_of: inheres_in GO:0019722 ! calcium-mediated signaling
+intersection_of: during WBbt:0003681 ! pharynx
+
+[Term]
+id: WBPhenotype:0001197 ! somatic_gonad_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0005347 ! somatic gonad
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001198 ! somatic_sheath_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0005828 ! gonadal sheath cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001202 ! nicotine_hypersensitive
+intersection_of: PATO:0001192 ! hyperresponsive to
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:18723 ! nicotine
+
+[Term]
+id: WBPhenotype:0001203 ! nicotine_resistant
+intersection_of: PATO:0000513 ! insensitive toward
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:17688 ! nicotine
+
+[Term]
+id: WBPhenotype:0001206 ! movement_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0007626 ! locomotory behavior
+
+[Term]
+id: WBPhenotype:0001207 ! protein_signaling_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0007165 ! signal transduction
+
+[Term]
+id: WBPhenotype:0001208 ! RNAi_resistant
+intersection_of: PATO:0000513 ! insensitive toward
+intersection_of: inheres_in GO:0016246 ! RNA interference
+
+[Term]
+id: WBPhenotype:0001210 ! pericellular_component_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0005732 ! extracellular component
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001211 ! cuticle_integrity_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0005755 ! cuticle
+
+[Term]
+id: WBPhenotype:0001212 ! cuticle_fragile
+intersection_of: PATO:0001362 ! fragile
+intersection_of: inheres_in WBbt:0005755 ! cuticle
+
+[Term]
+id: WBPhenotype:0001213 ! locomotion_reduced
+intersection_of: PATO:0000911 ! decreased rate
+intersection_of: inheres_in GO:0040011 ! locomotion
+
+[Term]
+id: WBPhenotype:0001216 ! meiosis_metaphase_to_anaphase_transition_block
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0033316 ! meiotic spindle checkpoint
+
+[Term]
+id: WBPhenotype:0001224 ! axon_outgrowth_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0048846 ! axon extension involved in axon guidance
+
+[Term]
+id: WBPhenotype:0001225 ! phasmid_socket_absent
+intersection_of: PATO:0001557 ! lacking physical part
+intersection_of: towards WBbt:0004112 ! PHso1L
+
+[Term]
+id: WBPhenotype:0001228 ! alae_absent
+intersection_of: PATO:0001557 ! lacking physical part
+intersection_of: towards WBbt:0007832 ! ala
+
+[Term]
+id: WBPhenotype:0001229 ! abnormal_anterior_neuron_migration
+intersection_of: PATO:0001632 ! anterior to
+intersection_of: inheres_in_part_of GO:0001764 ! neuron migration
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001231 ! intraflagellar_transport_accelerated
+intersection_of: PATO:0000303 ! increased speed
+intersection_of: inheres_in GO:0042073 ! intraflagellar transport
+
+[Term]
+id: WBPhenotype:0001234 ! nonanone_chemotaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0050919 ! negative chemotaxis
+intersection_of: in_response_to CHEBI:25579 ! nonanones
+
+[Term]
+id: WBPhenotype:0001235 ! cell_division_polarity_abnormal
+intersection_of: PATO:0001769 ! polarity
+intersection_of: inheres_in GO:0051301 ! cell division
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001237 ! ectopic_axon_outgrowth
+intersection_of: PATO:0000628 ! mislocalised (was ectopic)
+intersection_of: inheres_in GO:0048846 ! axon extension involved in axon guidance
+
+[Term]
+id: WBPhenotype:0001241 ! ray_fusion
+intersection_of: PATO:0000642 ! fused with
+intersection_of: towards GO:0005739 ! WBbt:0006941 ! ray
+
+[Term]
+id: WBPhenotype:0001242 ! intraflagellar_transport_slow
+intersection_of: PATO:0000304 ! decreased speed
+intersection_of: inheres_in GO:0042073 ! intraflagellar transport
+
+[Term]
+id: WBPhenotype:0001243 ! intraflagellar_transport_distance_short
+intersection_of: PATO:0000375 ! decreased distance
+intersection_of: inheres_in GO:0042073 ! intraflagellar transport
+
+[Term]
+id: WBPhenotype:0001244 ! intraflagellar_transport_absent
+intersection_of: PATO:0001558! lacking processual parts
+intersection_of: towards GO:0042073 ! intraflagellar transport
+
+[Term]
+id: WBPhenotype:0001247 ! anterograde_transport_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0048490 ! anterograde synaptic vesicle transport
+
+[Term]
+id: WBPhenotype:0001258 ! RNAi_enhanced
+intersection_of: PATO:0002017 ! enhanced
+intersection_of: inheres_in GO:0016246 ! RNA interference
+
+[Term]
+id: WBPhenotype:0001260 ! oocyte_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0006797 ! oocyte
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001263 ! peroxisome_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0005777 ! peroxisome
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001264 ! peroxisome_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: towards GO:0005777 ! peroxisome
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001268 ! induced_cell_death_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0006917! induction of apoptosis
+
+[Term]
+id: WBPhenotype:0001281 ! stuffed_pharynx
+intersection_of: PATO:0001836 ! congested
+intersection_of: inheres_in WBbt:0003681 ! pharynx
+
+![Term]
+!id: WBPhenotype:0001282 ! mitochondrial_metabolism_abnormal
+!intersection_of: PATO:0000460 ! abnormal
+!intersection_of: inheres_in GO:0032042 ! mitochondrial DNA metabolic process
+
+[Term]
+id: WBPhenotype:0001283 ! organelle_metabolism_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0008152 ! metabolic process
+intersection_of: during GO:0043226 ! organelle
+
+[Term]
+id: WBPhenotype:0001213 ! movement_reduced
+intersection_of: PATO:0000911 ! decreased rate
+intersection_of: inheres_in GO:0007626 ! locomotory behavior
+
+[Term]
+id: WBPhenotype:0001289 ! acetylcholinesterase_inhibitor_resistant
+intersection_of: PATO:0001178 ! resistant to
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:38462 ! acetylcholinesterase inhibitor
+
+[Term]
+id: WBPhenotype:0001291 ! social_behavior_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0035176 ! social behavior
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001292 ! body_wall_muscle_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0006804 ! body wall muscle cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001293 ! larval_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000023 ! larva
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001294 ! head_bent
+intersection_of: PATO:0000617 ! bent
+intersection_of: inheres_in WBbt:0005739 ! head
+
+[Term]
+id: WBPhenotype:0001296 ! lannate_resistant
+intersection_of: PATO:0001178 ! resistant to
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: towards CHEBI:6835 ! methomyl
+
+[Term]
+id: WBPhenotype:0001299 ! cell_division_abnormal_male
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0051301 ! cell division
+intersection_of: during WBls:0000056 ! adult male
+
+[Term]
+id: WBPhenotype:0001300 ! germ_cell_cytoplasmic_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0005737 ! cytoplasm
+intersection_of: part_of WBbt:0006796 ! germ cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001301 ! P_granule_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0043186 ! P granule
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001303 ! ectopic_cell
+intersection_of: PATO:0000628 ! mislocalised (was ectopic)
+intersection_of: inheres_in CL:0000000 ! cell
+
+[Term]
+id: WBPhenotype:0001310 ! neuron_positioning_abnormal
+intersection_of: PATO:0000140 ! position
+intersection_of: inheres_in WBbt:0003679 ! neuron
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001312 ! neuron_number_abnormal
+intersection_of: PATO:0000070 ! count
+intersection_of: inheres_in WBbt:0003679 ! neuron
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001313 ! uterine_muscle_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in WBbt:0005342 ! uterine muscle
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001314 ! vulval_muscle_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in WBbt:0005821 ! vulval muscle
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001322 ! vesicle_number_reduced
+intersection_of: PATO:0001997 ! decreased number
+intersection_of: inheres_in GO:0031982 ! vesicle
+
+[Term]
+id: WBPhenotype:0001323 ! vesicle_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0031982 ! vesicle
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001324 ! cell_ionizing_radiation_response_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0010212! response to ionizing radiation
+intersection_of: inheres_in_part_of GO:0005623 ! cell
+
+[Term]
+id: WBPhenotype:0001325 ! backing_not_sustained
+intersection_of: PATO:0001570 ! having decreased processual parts
+intersection_of: towards GO:0043057 ! backward locomotion
+
+[Term]
+id: WBPhenotype:0001326 ! cell_gamma_ray_response_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0010332 ! response to gamma radiation
+intersection_of: inheres_in_part_of GO:0005623 ! cell
+
+[Term]
+id: WBPhenotype:0001327 ! cell_gamma_ray_hypersensitive
+intersection_of: PATO:0000912 ! increased rate
+intersection_of: inheres_in GO:0010332 ! response to gamma radiation
+intersection_of: inheres_in_part_of GO:0005623 ! cell
+
+[Term]
+id: WBPhenotype:0001330 ! egg_laying_event_infrequent
+intersection_of: PATO:0000381 ! decreased frequency
+intersection_of: inheres_in GO:0018991 ! oviposition
+
+[Term]
+id: WBPhenotype:0001331 ! motor_neuron_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005409 ! motor neuron
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001332 ! vesicle_number_abnormal
+intersection_of: PATO:0000070 ! count
+intersection_of: inheres_in GO:0031982 ! vesicle
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001337 ! adrenergic_receptor_antagonist_response_abnormal
+intersection_of: PATO:0001178 ! resistant to
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:37887 ! adrenergic antagonist
+
+[Term]
+id: WBPhenotype:0001340 ! egg_laying_imipramine_resistant
+intersection_of: PATO:0001552 ! decreased sensitivity of occurrent
+intersection_of: inheres_in GO:0018991 ! oviposition
+intersection_of: towards CHEBI:47499 ! imipramine
+
+[Term]
+id: WBPhenotype:0001342 ! egg_laying_imipramine_hypersensitive
+intersection_of: PATO:0001551 ! increased sensitivity of occurrent
+intersection_of: inheres_in GO:0018991 ! oviposition
+intersection_of: towards CHEBI:47499 ! imipramine
+
+[Term]
+id: WBPhenotype:0001343 ! meiotic_spindle_abnormal_early_emb
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0005819 ! spindle
+intersection_of: during WBls:0000004 ! proliferating embryo
+intersection_of: during GO:0007126 ! meiosis
+
+[Term]
+id: WBPhenotype:0001344 ! organelle_organization_biogenesis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0006996 ! organelle organization and biogenesis
+
+[Term]
+id: WBPhenotype:0001345 ! cytoskeleton_organization_biogenesis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0007010 ! cytoskeleton organization and biogenesis
+
+[Term]
+id: WBPhenotype:0001346 ! actin_cytoskeleton_dynamic_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0032956 ! regulation of actin cytoskeleton organization and biogenesis
+
+[Term]
+id: WBPhenotype:0001348 ! chromosome_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0005694 ! chromosome
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001349 ! protein_phosphorylation_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0006468 ! protein amino acid phosphorylation
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001350 ! protein_phosphorylation_increased
+intersection_of: PATO:0000912 ! increased rate
+intersection_of: inheres_in GO:0006468 ! protein amino acid phosphorylation
+
+[Term]
+id: WBPhenotype:0001351 ! protein_phosphorylation_reduced
+intersection_of: PATO:0000911 ! decreased rate
+intersection_of: inheres_in GO:0006468 ! protein amino acid phosphorylation
+
+[Term]
+id: WBPhenotype:0001352 ! endoplasmic_reticulum_metabolism_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0008152 ! metabolic process
+intersection_of: during GO:0005783 ! endoplasmic reticulum
+
+[Term]
+id: WBPhenotype:0001354 ! actin_cytoskeleton_filament_morphology_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0030037 ! actin filament reorganization during cell cycle
+
+[Term]
+id: WBPhenotype:0001355 ! gonad_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005175 ! gonad
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001357 ! male_gonad_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0006794 ! male gonad
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001359 ! proctodeum_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0006795 ! proctodeum
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001361 ! chromosome_condensation_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0030261 ! chromosome condensation
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001362 ! chromosome_condensation_failure
+intersection_of: PATO:0001511 ! functional failure
+intersection_of: inheres_in GO:0030261 ! chromosome condensation
+
+[Term]
+id: WBPhenotype:0001363 ! head_cavity
+intersection_of: PATO:0000649 ! perforated
+intersection_of: inheres_in WBbt:0005739 ! head
+
+[Term]
+id: WBPhenotype:0001365 ! male_bursa_development_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0048540 ! bursa development
+
+[Term]
+id: WBPhenotype:0001368 ! spermatheca_absent
+intersection_of: PATO:0001557 ! lacking physical part
+intersection_of: towards WBbt:0007816 ! spermathecal cell
+
+[Term]
+id: WBPhenotype:0001369 ! protein_interaction_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0065003 ! macromolecular complex assembly
+
+[Term]
+id: WBPhenotype:0001370 ! protein_protein_interaction_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0006461 ! protein complex assembly
+
+[Term]
+id: WBPhenotype:0001372 ! protein_DNA_interaction_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0065004 ! protein-DNA complex assembly
+
+[Term]
+id: WBPhenotype:0001373 ! protein_rna_interaction_abolished
+intersection_of: PATO:0001508 ! abolished
+intersection_of: inheres_in GO:0022618 ! protein-RNA complex assembly
+
+[Term]
+id: WBPhenotype:0001374 ! pronuclear_nuclear_appearance_abnormal_emb
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0045120 ! pronucleus
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: during WBls:0000003 ! embryo
+
+[Term]
+id: WBPhenotype:0001378 ! mitotic_chromosome_segregation_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0000070 ! mitotic sister chromatid segregation
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001382 ! protein_modification_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0006464 ! protein modification process
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001383 ! protein_methylation_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0006479 ! protein amino acid methylation
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001384 ! fertility_reduced
+intersection_of: PATO:0001834 ! decreased fertility
+intersection_of: inheres_in WBbt:0007833 ! organism
+
+[Term]
+id: WBPhenotype:0001385 ! precocious_oogenesis
+intersection_of: PATO:0000694 ! premature
+intersection_of: inheres_in GO:0048477 ! oogenesis
+
+[Term]
+id: WBPhenotype:0001387 ! fertilization_defect_male
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0009566 ! fertilization
+intersection_of: during WBls:0000056 ! adult male
+
+[Term]
+id: WBPhenotype:0001389 ! cell_gamma_ray_resistant
+intersection_of: PATO:0000911 ! decreased rate
+intersection_of: inheres_in GO:0010332 ! response to gamma radiation
+intersection_of: inheres_in_part_of GO:0005623 ! cell
+
+[Term]
+id: WBPhenotype:0001390 ! cell_UV_hypersensitive
+intersection_of: PATO:0000912 ! increased rate
+intersection_of: inheres_in GO:0009411 ! response to UV
+intersection_of: inheres_in_part_of GO:0005623 ! cell
+
+[Term]
+id: WBPhenotype:0001392 ! cell_cycle_arrest
+intersection_of: PATO:0000297 ! arrested
+intersection_of: inheres_in GO:0007049 ! cell cycle
+
+[Term]
+id: WBPhenotype:0001393 ! cell_acidification_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0051452 ! intracellular pH reduction
+
+[Term]
+id: WBPhenotype:0001394! cell_acidification_defective
+intersection_of: PATO:0001641 ! disfunctional
+intersection_of: inheres_in GO:0051452 ! intracellular pH reduction
+
+[Term]
+id: WBPhenotype:0001397 ! necrotic_cell_death_increased
+intersection_of: PATO:0000912 ! increased rate
+intersection_of: inheres_in GO:0012501 ! non-apoptotic programmed cell death
+
+[Term]
+id: WBPhenotype:0001398 ! neurite_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0043005 ! neuron projection
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001399 ! cell_membrane_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0005886 ! plasma membrane
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001401 ! mitochondria_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0005739 ! mitochondrion
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001402 ! connected_mitochondria
+intersection_of: PATO:0000642 ! fused with
+intersection_of: inheres_in GO:0005739 ! mitochondrion
+intersection_of: towards GO:0005739 ! mitochondrion
+
+[Term]
+id: WBPhenotype:0001405 ! protein_aggregation_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0051259 ! protein oligomerization
+
+[Term]
+id: WBPhenotype:0001412 ! alae_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0007832 ! ala
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001414 ! male_mating_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0060179 ! male mating behavior
+intersection_of: during WBls:0000056 ! adult male
+
+[Term]
+id: WBPhenotype:0001419 ! emetine_hypersensitive
+intersection_of: PATO:0001192 ! hyperresponsive to
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:4781 ! emetine
+
+[Term]
+id: WBPhenotype:0001421 ! endocytic_transport_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0006897 ! endocytosis
+
+[Term]
+id: WBPhenotype:0001422 ! endocytic_transport_defect
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0006897 ! endocytosis
+
+[Term]
+id: WBPhenotype:0001423 ! coelomocyte_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: inheres_in WBbt:0005751 ! coelomocyte
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001424 ! oocyte_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: towards WBbt:0006797 ! oocyte
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001425 ! receptor_mediated_endocytosis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0006898 ! receptor-mediated endocytosis
+
+[Term]
+id: WBPhenotype:0001426 ! coelomocyte_uptake_defective
+intersection_of: PATO:0001641 ! disfunctional
+intersection_of: inheres_in GO:0006897! endocytosis
+intersection_of: during WBbt:0005751 ! coelomocyte
+
+![Term]
+!id: WBPhenotype:0001427 ! cytoplasmic_appearance_abnormal
+!intersection_of: PATO:0000051 ! morphology
+!intersection_of: inheres_in GO:0005737 ! cytoplasm
+!intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001430 ! lysosome_organization_biogenesis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0007040 ! lysosome organization and biogenesis
+
+[Term]
+id: WBPhenotype:0001432 ! over_retracted_male_tail
+intersection_of: PATO:0001477 ! retracted
+intersection_of: inheres_in WBbt:0005741 ! tail
+
+[Term]
+id: WBPhenotype:0001434 ! chemotaxis_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0006935 ! chemotaxis
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001435 ! ammonium_chloride_chemotaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:31206 ! ammonium chloride
+
+
+[Term]
+id: WBPhenotype:0001437 ! octanol_chemotaxis_increased
+intersection_of: PATO:0000912 ! increased rate
+intersection_of: inheres_in GO:0050919 ! negative chemotaxis
+intersection_of: in_response_to CHEBI:37868 ! octanol
+
+[Term]
+id: WBPhenotype:0001442 ! sodium_acetate_chemotaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:32954 ! sodium acetate
+
+[Term]
+id: WBPhenotype:0001452 ! octanol_chemotaxis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0050919 ! negative chemotaxis
+intersection_of: in_response_to CHEBI:37868 ! octanol
+
+[Term]
+id: WBPhenotype:0001454 ! quinine_chemotaxis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0050919 ! negative chemotaxis
+intersection_of: in_response_to CHEBI:15854 ! quinine
+
+[Term]
+id: WBPhenotype:0001456 ! nonanone_chemotaxis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0050919 ! negative chemotaxis
+intersection_of: in_response_to CHEBI:25579 ! nonanones
+
+[Term]
+id: WBPhenotype:0001457 ! bromide_chemotaxis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:15858 ! bromide
+
+[Term]
+id: WBPhenotype:0001458 ! chloride_chemotaxis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:17996 ! chloride
+
+[Term]
+id: WBPhenotype:0001459 ! iodide_chemotaxis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:16382 ! iodide
+
+[Term]
+id: WBPhenotype:0001460 ! ammonium_chloride_chemotaxis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:31206 ! ammonium chloride
+
+[Term]
+id: WBPhenotype:0001461 ! sodium_acetate_chemotaxis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:32954 ! sodium acetate
+
+[Term]
+id: WBPhenotype:0001462 ! sodium_chloride_chemotaxis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:26710 ! sodium chloride
+
+[Term]
+id: WBPhenotype:0001463 ! cAMP_chemotaxis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:17489 ! 3',5'-cyclic AMP
+
+[Term]
+id: WBPhenotype:0001464 ! cGMP_chemotaxis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:27682 ! 3',5'-cyclic dGMP
+
+[Term]
+id: WBPhenotype:0001465 ! acetone_chemotaxis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:15347 ! acetone
+
+[Term]
+id: WBPhenotype:0001468 ! benzaldehyde_chemotaxis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:22698 ! benzaldehydes
+
+[Term]
+id: WBPhenotype:0001469 ! butanone_chemotaxis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:22951 ! butanones
+
+[Term]
+id: WBPhenotype:0001470 ! diacetyl_chemotaxis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:16583 ! butane-2,3-dione
+
+[Term]
+id: WBPhenotype:0001471 ! hexanol_chemotaxis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:18099 ! cyclohexanol
+
+[Term]
+id: WBPhenotype:0001472 ! isoamyl_alcohol_chemotaxis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:15837 ! isoamylol
+
+[Term]
+id: WBPhenotype:0001474 ! pyrazine_chemotaxis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:30953 ! pyrazine
+
+[Term]
+id: WBPhenotype:0001485 ! ER_stress_response_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0006983 ! ER overload response
+
+[Term]
+id: WBPhenotype:0001486 ! unfolded_protein_accumulation
+intersection_of: PATO:0000911 ! decreased rate
+intersection_of: inheres_in GO:0030968 ! unfolded protein response
+
+[Term]
+id: WBPhenotype:0001489 ! gubernaculum_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0006908 ! gubernaculum muscle
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001493 ! VPC_cell_division_precocious
+intersection_of: PATO:0000694 ! premature
+intersection_of: inheres_in GO:0051301 ! cell division
+intersection_of: inheres_in_part_of WBbt:0007809 ! vulval precursor cell
+
+[Term]
+id: WBPhenotype:0001495 ! cell_division_precocious
+intersection_of: PATO:0000694 ! premature
+intersection_of: inheres_in GO:0051301 ! cell division
+
+[Term]
+id: WBPhenotype:0001496 ! metaphase_to_anaphase_transition_defect
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0031577 ! spindle checkpoint
+
+[Term]
+id: WBPhenotype:0001497 ! mitotic_metaphase_to_anaphase_transition_defect
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0007091 ! mitotic metaphase/anaphase transition
+intersection_of: during CL:0000586 ! germ cell
+
+[Term]
+id: WBPhenotype:0001498 ! sperm_pseudopod_physiology_abnormal
+intersection_of: PATO:0001912 ! physiological state
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0031143 ! pseudopodium
+intersection_of: part_of WBbt:0006798 ! sperm
+
+[Term]
+id: WBPhenotype:0001499 ! meiotic_chromosome_segregation_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0045132 ! meiotic chromosome segregation
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001500 ! pentanedione_chemotaxis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:38366 ! trans-pent-2-enoic acid
+
+[Term]
+id: WBPhenotype:0001502 ! chemical_resistant
+intersection_of: PATO:0001178 ! resistant to
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: towards GO:0042221 ! response to chemical stimulus
+
+[Term]
+id: WBPhenotype:0001509 ! rays_missing
+intersection_of: PATO:0001557 ! lacking physical part
+intersection_of: towards WBbt:0006941 ! ray
+
+[Term]
+id: WBPhenotype:0001514 ! synaptic_vesicle_endocytosis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0048488 ! synaptic vesicle endocytosis
+
+[Term]
+id: WBPhenotype:0001515 ! struts_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0060109! medial layer of collagen and cuticulin-based cuticle extracellular matrix
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001517 ! annulae_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0060107 ! annuli extracellular matrix
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001519 ! abnormal_posterior_cell_migration
+intersection_of: PATO:0001633 ! posterior to
+intersection_of: inheres_in_part_of GO:0016477 ! cell migration
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001520 ! abnormal_posterior_neuron_migration
+intersection_of: PATO:0001633 ! posterior to
+intersection_of: inheres_in_part_of GO:0001764 ! neuron migration
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001523 ! extracellular_matrix_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0031012 ! extracellular matrix
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001524 ! quiescence_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0042639 ! telogen
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001525 ! terminal_bulb_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0003732 ! terminal bulb
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001526 ! ciliated_neuron_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in WBbt:0006816 ! ciliated neuron
+
+[Term]
+id: WBPhenotype:0001527 ! amphid_phasmid_sensillum_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005391 ! amphid sensillum
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001528 ! sensillum_accessory_cell_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005762 ! accessory cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: part_of WBbt:0006929 ! sensillum
+
+[Term]
+id: WBPhenotype:0001529 ! sensilium_sheath_cell_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in CL:0000618 ! sheath cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: part_of WBbt:0006929 ! sensillum
+
+[Term]
+id: WBPhenotype:0001530 ! cephalic_sensillum_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0006920 ! cephalic sensillum
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001531 ! labial_sensillum_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005107 ! labial sensillum
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001532! innerlabial_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005391 ! inner labial sensillum
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001533 ! outerlabial_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005501 ! outer labial sensillum
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001535 ! deirid_sensillum_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0006926 ! deirid sensillum
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001540 ! dauer_lifespan_abnormal
+intersection_of: PATO:0000050 ! life span
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000032 ! dauer larva
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001541 ! dauer_gonad_arrest_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0008406 ! gonad development
+
+[Term]
+id: WBPhenotype:0001545 ! dauer_body__morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000032 ! dauer larva
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001547 ! dauer_metabolism_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0008152 ! metabolic process
+intersection_of: during WBls:0000032 ! dauer larva
+
+[Term]
+id: WBPhenotype:0001550 ! dauer_buccal_cavity_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005255 ! buccal cavity
+intersection_of: during WBls:0000032 ! dauer larva
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001551 ! dauer_cuticle_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005755! cuticle
+intersection_of: during WBls:0000032 ! dauer larva
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001552 ! dauer_pharynx_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0003681 ! pharynx
+intersection_of: during WBls:0000032 ! dauer larva
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001553! dauer_excretory_gland_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005196 ! excretory gland
+intersection_of: during WBls:0000032 ! dauer larva
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001555 ! dauer_sensory_system_morphology_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0048880! sensory system development
+
+[Term]
+id: WBPhenotype:0001556 ! dauer_sensillum_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0006929 ! sensillum
+intersection_of: during WBls:0000032 ! dauer larva
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001557 ! dauer_labial_sensillum_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005107 ! labial sensillum
+intersection_of: during WBls:0000032 ! dauer larva
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001558 ! dauer_amphid_sensillum_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005391 ! amphid sensillum
+intersection_of: during WBls:0000032 ! dauer larva
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001561 ! dauer_inner_labial_sensillum_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005116 ! inner labial sensillum
+intersection_of: during WBls:0000032 ! dauer larva
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001562 ! dauer_outer_labial_sensillum_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005501 ! outer labial sensillum
+intersection_of: during WBls:0000032 ! dauer larva
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001563 ! dauer_cephalic_sensillum_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0006920 ! cephalic sensillum
+intersection_of: during WBls:0000032 ! dauer larva
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001565 ! lysine_chemotaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0050918 ! positive chemotaxis
+intersection_of: in_response_to CHEBI:25094 ! lysine
+
+[Term]
+id: WBPhenotype:0001567 ! nuclei_enlarged
+intersection_of: PATO:0000586 ! increased size
+intersection_of: inheres_in GO:0005634 ! nucleus
+
+[Term]
+id: WBPhenotype:0001568 ! mRNA_export_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0006406 ! mRNA export from nucleus
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001573 ! nicotine_response_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: in_response_to CHEBI:18723 ! nicotine
+
+[Term]
+id: WBPhenotype:0001574 ! ATP_levels_abnormal
+intersection_of: PATO:0000033 ! concentration
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: inheres_in CHEBI:15422 ! ATP
+
+[Term]
+id: WBPhenotype:0001575 ! ATP_levels_reduced
+intersection_of: PATO:0001163 ! decreased concentration
+intersection_of: inheres_in CHEBI:15422 ! ATP
+
+[Term]
+id: WBPhenotype:0001576 ! mitochondria_spacing_abnormal
+intersection_of: PATO:0000140 ! placement
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0005739 ! mitochondrion
+
+[Term]
+id: WBPhenotype:0001577 ! mitochondria_alignment_abnormal
+intersection_of: PATO:0001652 ! alignment
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0005739 ! mitochondrion
+intersection_of: towards GO:0005739 ! mitochondrion
+
+[Term]
+id: WBPhenotype:0001578 ! cholinergic_agonist_resistant
+intersection_of: PATO:0001178 ! resistant to
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:38324 ! cholinergic agonist
+
+[Term]
+id: WBPhenotype:0001579 ! cholinergic_agonist_hypersensitive
+intersection_of: PATO:0001192 ! hyperresponsive to
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:38324 ! cholinergic agonist
+
+[Term]
+id: WBPhenotype:0001580 ! nuclear_envelope_breakdown_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0051081 ! nuclear envelope disassembly
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001585 ! asymmetric_cell_division_abnormal
+intersection_of: PATO:0000616 ! asymmetrical
+intersection_of: inheres_in GO:0051301 ! cell division
+
+[Term]
+id: WBPhenotype:0001586 ! multiple_anchor_cells
+intersection_of: PATO:0000470 ! increased number
+intersection_of: inheres_in WBbt:0004522 ! anchor cell
+
+[Term]
+id: WBPhenotype:0001587 ! actin_organization_biogenesis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0030036 ! actin cytoskeleton organization and biogenesis
+
+[Term]
+id: WBPhenotype:0001588 ! microtubule_organization_biogenesis_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0000226 ! microtubule cytoskeleton organization and biogenesis
+
+[Term]
+id: WBPhenotype:0001589 ! microtubule_nucleation_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0007020 ! microtubule nucleation
+
+[Term]
+id: WBPhenotype:0001590 ! microtubule_depolymerization_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0007019 ! microtubule depolymerization
+
+[Term]
+id: WBPhenotype:0001591 ! microtubule_polymerization_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0007019 ! microtubule depolymerization
+
+[Term]
+id: WBPhenotype:0001593 ! transgene_silencing_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0016246 ! RNA interference
+
+[Term]
+id: WBPhenotype:0001594 ! germline_transgene_silencing_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0016246 ! RNA interference
+intersection_of: during CL:0000586 ! germ cell
+
+[Term]
+id: WBPhenotype:0001597 ! muscle_missing
+intersection_of: PATO:0002001 ! having decreased physical parts
+intersection_of: towards WBbt:0003675 ! muscle
+
+[Term]
+id: WBPhenotype:0001598 ! inhibitor_of_serotonin_uptake_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0014076 ! response to fluoxetine
+
+[Term]
+id: WBPhenotype:0001599 ! ouabain_resistant
+intersection_of: PATO:0001178 ! resistant to
+intersection_of: inheres_in CHEBI:7805 ! ouabain
+
+[Term]
+id: WBPhenotype:0001606 ! ethanol_hypersensitive
+intersection_of: PATO:0001192 ! hyperresponsive to
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:16236 ! ethanol
+
+[Term]
+id: WBPhenotype:0001608 ! enflurane_hypersensitive
+intersection_of: PATO:0001192 ! hyperresponsive to
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:4792 ! enflurane
+
+[Term]
+id: WBPhenotype:0001610 ! diethyl_ether_hypersensitive
+intersection_of: PATO:0001192 ! hyperresponsive to
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:35702 ! diethyl ether
+
+[Term]
+id: WBPhenotype:0001611 ! halothane_hypersensitive
+intersection_of: PATO:0001192 ! hyperresponsive to
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:5615 ! halothane
+
+[Term]
+id: WBPhenotype:0001612 ! ethanol_resistant
+intersection_of: PATO:0001178 ! resistant to
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:16236 ! ethanol
+
+[Term]
+id: WBPhenotype:0001614 ! anticonvulsant_response_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: in_response_to CHEBI:35623 ! anticonvulsant
+
+[Term]
+id: WBPhenotype:0001615 ! anticonvulsant_resistant
+intersection_of: PATO:0001178 ! resistant to
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:35623 ! anticonvulsant
+
+[Term]
+id: WBPhenotype:0001618 ! halothane_resistant
+intersection_of: PATO:0001178 ! resistant to
+intersection_of: inheres_in GO:0042493 ! response to drug
+intersection_of: towards CHEBI:5615 ! halothane
+
+[Term]
+id: WBPhenotype:0001619 ! isoflurane_resistant
+intersection_of: PATO:0001178 ! resistant to
+intersection_of: inheres_in CHEBI:6015 ! isoflurane
+
+[Term]
+id: WBPhenotype:0001622 ! egg_laying_serotonin_hypersensitive
+intersection_of: PATO:0001551 ! increased sensitivity of occurrent
+intersection_of: inheres_in GO:0018991 ! oviposition
+intersection_of: towards CHEBI:28790 ! serotonin
+
+[Term]
+id: WBPhenotype:0001626 ! locomotion_rate_serotonin_abnormal
+intersection_of: PATO:0001457 ! sensitivity of occurrent
+intersection_of: inheres_in GO:0007626 ! locomotory behavior
+intersection_of: towards CHEBI:28790 ! serotonin
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001628 ! locomotion_rate_serotonin_resistant
+intersection_of: PATO:0001551 ! increased sensitivity of occurrent
+intersection_of: inheres_in GO:0007626 ! locomotory behavior
+intersection_of: towards CHEBI:28790 ! serotonin
+
+[Term]
+id: WBPhenotype:0001629 ! egg_laying_serotonin_abnormal
+intersection_of: PATO:0001457 ! sensitivity of occurrent
+intersection_of: inheres_in GO:0018991 ! oviposition
+intersection_of: towards CHEBI:28790 ! serotonin
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001630 ! gut_obstructed
+intersection_of: PATO:0000648 ! obstructed
+intersection_of: inheres_in WBbt:0005147 ! gut
+
+[Term]
+id: WBPhenotype:0001633 ! lethal_gametes
+intersection_of: PATO:0000718 ! lethal (sensu genetics)
+intersection_of: inheres_in CL:0000300! gamete
+
+[Term]
+id: WBPhenotype:0001635 ! excess_pharyngeal_cells
+intersection_of: PATO:0002002 ! having extra physical parts
+intersection_of: inheres_in WBbt:0003681 ! pharynx
+intersection_of: towards GO:0005623 ! cell
+
+[Term]
+id: WBPhenotype:0001636 ! excess_intestinal cells
+intersection_of: PATO:0000470 ! increased number
+intersection_of: inheres_in WBbt:0005792 ! intestinal cell
+
+[Term]
+id: WBPhenotype:0001637 ! no_Intestine
+intersection_of: PATO:0001557 ! lacking physical part
+intersection_of: towards WBbt:0005772 ! intestine
+
+[Term]
+id: WBPhenotype:0001644 ! protein_metabolism_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in_part_of GO:0019538 ! protein metabolic process
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001645 ! protein_degradation_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in_part_of GO:0030163 ! protein catabolic process
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001649 ! Fluorouracil_resistant
+intersection_of: PATO:0001178 ! resistant to
+intersection_of: inheres_in CHEBI:46345 ! 5-fluorouracil
+
+[Term]
+id: WBPhenotype:0001654 ! resistant_to_cadmium
+intersection_of: PATO:0001178 ! resistant to
+intersection_of: inheres_in CHEBI:22977 ! cadmium
+
+[Term]
+id: WBPhenotype:0001657 ! cell_junction_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in_part_of GO:0030054 ! cell junction
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001658 ! intercellular_junction_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in_part_of GO:0005911 ! cell-cell junction
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001659 ! spermatheca_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005319 ! spermatheca
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001669 ! presynaptic_vesicle_number_abnormal
+intersection_of: PATO:0001555 ! has or lacks parts of type
+intersection_of: inheres_in GO:0008021 ! synaptic vesicle
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001674 ! telomere_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0000781 ! chromosome, telomeric region
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001675 ! male_gonad_development_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in_part_of GO:0008584 ! male gonad development
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001676 ! touch_receptor_cell_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in CL:0000200 ! touch receptor cell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001681 ! spindle_orientation_abnormal
+intersection_of: PATO:0000133 ! angular placement
+intersection_of: inheres_in GO:0005819 ! spindle
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001695 ! glycosyltransferase_activity_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in_part_of GO:0016757 ! transferase activity, transferring glycosyl groups
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001696 ! biosynthesis_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in_part_of GO:0009058 ! biosynthetic process
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001705 ! nucleocytoplasmic_transport_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in_part_of GO:0006913 ! nucleocytoplasmic transport
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001706 ! nuclear_export_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in_part_of GO:0051168 ! nuclear export
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001707 ! nuclear_import_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in_part_of GO:0051170 ! nuclear import
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001708 ! protein_export_from_nucleus_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in_part_of GO:0006611 ! protein export from nucleus
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001711 ! rhythmic_behavior_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in_part_of GO:0007622 ! rhythmic behavior
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001712 ! circadian_rhythm_behavior_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in_part_of GO:0048512 ! circadian behavior
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001719 ! unfolded_protein_response_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in_part_of GO:0030968 ! endoplasmic reticulum unfolded protein response
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001725 ! osmotic_stress_response_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in_part_of GO:0006970 ! response to osmotic stress
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001739 ! aging_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in_part_of GO:0007568 ! aging
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001740 ! organ_senescence_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in_part_of GO:0010260 ! organ senescence
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001742 ! lipid_synthesis_increased
+intersection_of: PATO:0000470 ! present in greater numbers in organism
+intersection_of: inheres_in GO:0008610 ! lipid biosynthetic process
+
+[Term]
+id: WBPhenotype:0001743 ! mitosis_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in_part_of GO:0007067 ! mitosis
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001744 ! cell_adhesion_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in_part_of GO:0007155 ! cell adhesion
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001745 ! adherens_junction_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in_part_of GO:0005912 ! adherens junction
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001746 ! tight_junction_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in_part_of GO:0005923 ! tight junction
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001752 ! vesicle_trafficking_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in_part_of GO:0016192 ! vesicle-mediated transport
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0004001 ! hermaphrodite_mating_abnormal
+intersection_of: PATO:0000460 ! abnormal
+intersection_of: inheres_in GO:0007617 ! mating behavior
+intersection_of: during WBls:0000057 ! adult hermaphrodite
+
+[Term]
+id: WBPhenotype:0004013 ! sperm_release_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0042713 ! sperm ejaculation
+
+[Term]
+id: WBPhenotype:0004017 ! locomotor_coordination_abnormal
+intersection_of: PATO:0000188 ! coordination
+intersection_of: inheres_in GO:0040011 ! locomotion
+
+[Term]
+id: WBPhenotype:0004022 ! amplitude_of_movement_abnormal
+intersection_of: PATO:0000080 ! amplitude
+intersection_of: inheres_in GO:0040011 ! locomotion
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0004024 ! wavelength_of_movement_abnormal
+intersection_of: PATO:0001242 ! wavelength
+intersection_of: inheres_in GO:0040011 ! locomotion
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0004025 ! velocity_of_movement_abnormal
+intersection_of: PATO:0000008 ! speed/velocity
+intersection_of: inheres_in GO:0040011 ! locomotion
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0010001 ! cell_growth_abnormal
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in GO:0016049 ! cell growth
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+![Term]
+!id: WBPhenotype:0010004 ! cell_corpse_degradation_abnormal
+!intersection_of: PATO:0000001 ! quality
+!intersection_of: inheres_in GO:0044248 ! cellular catabolic process
+!intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001136 ! embryonic_morphology_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000003 ! embryo
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001559 ! dauer_deirid_sensillum_abnormal
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0006926 ! deirid sensillum
+intersection_of: during WBls:0000032 ! dauer larva
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+! TODO: check
+[Term]
+id: WBPhenotype:0000181 ! axon_trajectory_variant
+intersection_of: PATO:0000133 ! angular placement
+intersection_of: inheres_in GO:0030424 ! axon
+
+[Term]
+id: WBPhenotype:0000165 ! cell_fusion_variant
+intersection_of: PATO:0001227 ! variant
+intersection_of: inheres_in GO:0000768 ! syncytium formation by plasma membrane fusion
+
+[Term]
+id: WBPhenotype:0000390 ! spermatid_activation_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0007286 ! spermatid development
+
+[Term]
+id: WBPhenotype:0000707 ! pharyngeal_development_variant
+intersection_of: PATO:0001227 ! variant
+intersection_of: inheres_in GO:0060465 ! pharynx development
+
+[Term]
+id: WBPhenotype:0000803 ! head_development_variant
+intersection_of: PATO:0001227 ! variant
+intersection_of: inheres_in GO:0060322 ! head development
+
+[Term]
+id: WBPhenotype:0001107 ! spindle_rotation_defective_early_emb
+intersection_of: PATO:0001599 ! rotated
+intersection_of: inheres_in GO:0005819 ! spindle
+intersection_of: qualifier PATO:0000460 ! abnormal
+intersection_of: during WBls:0000004 ! proliferating embryo
+
+[Term]
+id: WBPhenotype:0001262 ! vulval_development_incomplete
+intersection_of: PATO:0000297 ! arrested
+intersection_of: inheres_in GO:0040025 ! vulval development
+
+[Term]
+id: WBPhenotype:0001433 ! precocious_cell_fusion
+intersection_of: PATO:0000694 ! premature
+intersection_of: inheres_in GO:0000768 ! syncytium formation by plasma membrane fusion
+
+[Term]
+id: WBPhenotype:0001516 ! helical_cuticle
+intersection_of: PATO:0000404 ! coiled
+intersection_of: inheres_in WBbt:0005755 ! cuticle
+
+[Term]
+id: WBPhenotype:0001604 ! mianserin_resistant
+intersection_of: PATO:0001178 ! resistant to
+intersection_of: inheres_in CHEBI:51137 ! mianserin
+
+[Term]
+id: WBPhenotype:0001671 ! vesicle_organization_variant
+intersection_of: PATO:0001227 ! variant
+intersection_of: inheres_in GO:0016050 ! vesicle organization
+
+[Term]
+id: WBPhenotype:0001780 ! associative_learning_variant
+intersection_of: PATO:0001227 ! variant
+intersection_of: inheres_in GO:0008306 ! associative learning
+
+[Term]
+id: WBPhenotype:0001786 ! neuronal_ion_channel_clustering_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0045161 ! neuronal ion channel clustering
+
+[Term]
+id: WBPhenotype:0001787 ! phototaxis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0042331 ! phototaxis
+
+[Term]
+id: WBPhenotype:0001788 ! resistant_to_mutagens
+intersection_of: PATO:0001178 ! resistant to
+intersection_of: inheres_in CHEBI:25435 ! mutagen
+
+[Term]
+id: WBPhenotype:0001792 ! nuclei_small
+intersection_of: PATO:0000587 ! decreased size
+intersection_of: inheres_in CHEBI:33252 ! atomic nucleu
+
+[Term]
+id: WBPhenotype:0001794 ! cytoplasmic_processing_body_variant
+intersection_of: PATO:0000001 ! quality
+intersection_of: inheres_in_part_of GO:0000932 ! cytoplasmic mRNA processing body
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001798 ! inhibition_of_synaptogenesis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0051964 ! negative regulation of synaptogenesis
+
+[Term]
+id: WBPhenotype:0001799 ! inhibition_of_synaptogenesis_hyperactive
+intersection_of: PATO:0000760 ! hyperactive
+intersection_of: inheres_in GO:0051964 ! negative regulation of synaptogenesis
+
+[Term]
+id: WBPhenotype:0001806 ! protein_stabilization_variant
+intersection_of: PATO:0001227 ! variant
+intersection_of: inheres_in GO:0050821 ! protein stabilization
+
+[Term]
+id: WBPhenotype:0001809 ! organelle_fusion_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0048284 ! organelle fusion
+
+[Term]
+id: WBPhenotype:0001813 ! synapsis_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0007129 ! synapsis
+
+[Term]
+id: WBPhenotype:0001814 ! crossover_defective
+intersection_of: PATO:0001511 ! non-functional
+intersection_of: inheres_in GO:0005712 ! chiasma
+
+[Term]
+id: WBPhenotype:0001826 ! RNA_degradation_variant
+intersection_of: PATO:0001227 ! variant
+intersection_of: inheres_in GO:0006401 ! RNA catabolic process
+
+[Term]
+id: WBPhenotype:0001827 ! RNA_metabolism_variant
+intersection_of: PATO:0001227 ! variant
+intersection_of: inheres_in GO:0016070 ! RNA metabolic process
+
+[Term]
+id: WBPhenotype:0001832 ! nuclear_pore_variant
+intersection_of: PATO:0001227 ! variant
+intersection_of: inheres_in GO:0005643 ! nuclear pore
+
+[Term]
+id: WBPhenotype:0001834 ! mRNA_splicing_variant
+intersection_of: PATO:0001227 ! variant
+intersection_of: inheres_in GO:0000374 ! Group III intron splicing
+
+![Term]
+!id: WBPhenotype:0001839 ! phorbol_ester_resistant
+!intersection_of: PATO:0001178 ! resistant to
+!intersection_of: inheres_in CHEBI:37532 ! phorbol ester
+
+![Term]
+!id: WBPhenotype:0001840 ! response_to_injury_variant
+!intersection_of: PATO:0001227 ! variant
+!intersection_of: inheres_in GO:0042060 ! wound healing
+
+![Term]
+!id: WBPhenotype:0001841 ! second_messenger_mediated_signaling_variant
+!intersection_of: PATO:0001227 ! variant
+!intersection_of: inheres_in GO:0019932 ! second-messenger-mediated signaling
+
+[Term]
+id: WBPhenotype:0000034 ! embryonic_polarity_variant
+intersection_of: PATO:0001769 ! polarity
+intersection_of: inheres_in WBls:0000003 ! embryo
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000070 ! male_tail_morphology_variant
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in_part_of WBbt:0007850 ! male
+intersection_of: inheres_in WBbt:0005741 ! tail
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000161 ! nuclear_rotation_variant
+intersection_of: PATO:0001599 ! rotated
+intersection_of: inheres_in GO:0005634 ! nucleus
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000162 ! pale_larva
+intersection_of: PATO:0000328 ! low saturation
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000023 ! larva
+
+[Term]
+id: WBPhenotype:0000163 ! clear_larva
+intersection_of: PATO:0000964 ! transparent
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000023 ! larva
+
+[Term]
+id: WBPhenotype:0000459 ! pesticide_response_variant
+intersection_of: PATO:0000077 ! response to
+intersection_of: towards CHEBI:25944 ! pesticide
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000460 ! paraquat_response_variant
+intersection_of: PATO:0000077 ! response to
+intersection_of: towards CHEBI:34905 ! paraquat
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000462 ! paraquat_hypersensitive
+intersection_of: PATO:0000516 ! sensitive toward
+intersection_of: towards CHEBI:34905 ! paraquat
+
+[Term]
+id: WBPhenotype:0000464 ! oxygen_response_variant
+intersection_of: PATO:0000077 ! response to
+intersection_of: towards CHEBI:25805 ! oxygen
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000498 ! methyl_methanesulfonate_response_variant
+intersection_of: PATO:0000077 ! response to
+intersection_of: towards CHEBI:25255 ! methyl methanesulfonate
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000499 ! ethyl_methanesulfonate_response_variant
+intersection_of: PATO:0000077 ! response to
+intersection_of: towards CHEBI:23994 ! ethyl methanesulfonate
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000591 ! metal_response_variant
+intersection_of: PATO:0000077 ! response to
+intersection_of: towards CHEBI:33521 ! metal
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000592 ! copper_response_variant
+intersection_of: PATO:0000077 ! response to
+intersection_of: towards CHEBI:30052 ! copper(0)
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000593 ! copper_hypersensitive
+intersection_of: PATO:0000516 ! sensitive toward
+intersection_of: towards CHEBI:30052 ! copper(0)
+
+[Term]
+id: WBPhenotype:0000680 ! aldicarb_response_variant
+intersection_of: PATO:0000077 ! response to
+intersection_of: towards CHEBI:2555 ! aldicarb
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000743 ! RNAi_response_variant
+intersection_of: PATO:0000077 ! response to
+intersection_of: towards GO:0016246 ! RNA interference
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000789 ! fluoxetine_hypersensitive
+intersection_of: PATO:0000516 ! sensitive toward
+intersection_of: towards CHEBI:5118 ! fluoxetine
+
+[Term]
+id: WBPhenotype:0000869
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0005739 ! mitochondrion
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000870
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0005739 ! mitochondrion
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0000891 ! clear_adult
+intersection_of: PATO:0000964 ! transparent
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000041 ! adult
+
+[Term]
+id: WBPhenotype:0000915 ! pale_adult
+intersection_of: PATO:0000328 ! low saturation
+intersection_of: inheres_in WBbt:0007833 ! organism
+intersection_of: during WBls:0000041 ! adult
+
+[Term]
+id: WBPhenotype:0001004 ! pharyngeal_relaxation_variant
+intersection_of: PATO:0001582 ! relaxation
+intersection_of: inheres_in WBbt:0003681 ! pharynx
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001106 ! spindle_orientation_variant_AB_or_P1_early_emb
+intersection_of: PATO:0000133 ! angular placement
+intersection_of: inheres_in GO:0005819 ! spindle
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001230 ! anterior_cell_migration_defective
+intersection_of: PATO:0001632 ! anterior to
+intersection_of: inheres_in GO:0016477 ! cell migration
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001232 ! serotonin_response_variant
+intersection_of: PATO:0000077 ! response to
+intersection_of: towards CHEBI:28790 ! serotonin
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001238 ! male_mating_latency_variant
+intersection_of: PATO:0001005 ! latency
+intersection_of: inheres_in_part_of WBbt:0007850 ! male
+intersection_of: inheres_in GO:0007618 ! mating
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001290 ! acetylcholinesterase_inhibitor_response_variant
+intersection_of: PATO:0000077 ! response to
+intersection_of: towards CHEBI:38462 ! acetylcholinesterase inhibitor
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001306 ! male_reproductive_system_morphology_variant
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in_part_of WBbt:0007850 ! male
+intersection_of: inheres_in WBbt:0005747 ! reproductive system
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001335 ! hermaphrodite_reproductive_system_morphology_variant
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in_part_of WBbt:0007849 ! hermaphrodite
+intersection_of: inheres_in WBbt:0005747 ! reproductive system
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001358 ! male_nervous_system_morphology_variant
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in_part_of WBbt:0007850 ! male
+intersection_of: inheres_in WBbt:0005735 ! nervous system
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001584 ! chromosome_alignment_variant
+intersection_of: PATO:0001652 ! alignment
+intersection_of: inheres_in GO:0005694 ! chromosome
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001609 ! isoflurane_hypersensitive
+intersection_of: PATO:0000516 ! sensitive toward
+intersection_of: towards CHEBI:6015 ! isoflurane
+
+[Term]
+id: WBPhenotype:0001646 ! no_pharynx
+intersection_of: PATO:0001557 ! lacks all physical parts of type
+intersection_of: towards WBbt:0003681 ! pharynx
+
+[Term]
+id: WBPhenotype:0001653 ! cadmium_response_variant
+intersection_of: PATO:0000077 ! response to
+intersection_of: towards CHEBI:22977 ! cadmium
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001655 ! cadmium_hypersensitive
+intersection_of: PATO:0000516 ! sensitive toward
+intersection_of: towards CHEBI:22977 ! cadmium
+
+[Term]
+id: WBPhenotype:0001667 ! methyl_methanesulfonate_hypersensitive
+intersection_of: PATO:0000516 ! sensitive toward
+intersection_of: towards CHEBI:25255 ! methyl methanesulfonate
+
+[Term]
+id: WBPhenotype:0001747 ! zinc_response_variant
+intersection_of: PATO:0000077 ! response to
+intersection_of: towards CHEBI:30185 ! zinc(0)
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001749 ! zinc_toxicity_hypersensitive
+intersection_of: PATO:0000516 ! sensitive toward
+intersection_of: towards CHEBI:30185 ! zinc(0)
+
+[Term]
+id: WBPhenotype:0001750 ! zinc_toxicity_resistant
+intersection_of: PATO:0001178 ! resistant to
+intersection_of: towards CHEBI:30185 ! zinc(0)
+
+[Term]
+id: WBPhenotype:0001764 ! carbon_dioxide_response_variant
+intersection_of: PATO:0000077 ! response to
+intersection_of: towards CHEBI:16526 ! carbon dioxide
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001828 ! RNAi_persistence_variant
+intersection_of: PATO:0000082 ! persistence
+intersection_of: inheres_in GO:0016246 ! RNA interference
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+[Term]
+id: WBPhenotype:0001836 ! eggshell_morphology_variant
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in WBbt:0005843 ! eggshell
+intersection_of: qualifier PATO:0000460 ! abnormal
+
+! map this to 'depends on'
+[Typedef]
+id: towards
+name: towards
+xref: BFO:0000070
+
+[Typedef]
+id: part_of
+name: part of
+xref: BFO:0000050
+
+[Typedef]
+id: has_part
+name: has part
+xref: BFO:0000051
+
+[Typedef]
+id: has_granular_part
+name: has granular part
+xref: BFO:0000071
+
+[Typedef]
+id: results_in
+name: results in
+
+[Typedef]
+id: occurs_in
+name: occurs in
+xref: BFO:0000066
+
+[Typedef]
+id: inheres_in_part_of
+name: inheres in part of
+holds_over_chain: inheres_in part_of
+
+[Typedef]
+id: inheres_in
+name: inheres in
+is_a: inheres_in_part_of
+xref: BFO:0000052
+
+[Typedef]
+id: qualifier
+name: qualifier
+
+[Typedef]
+id: phenotype_of
+name: phenotype of
+xref: RO:0002201
+
+[Typedef]
+id: bearer_of
+name: bearer of
+xref: BFO:0000053
+
+[Typedef]
+id: has_participant
+name: has participant
+xref: BFO:0000057
+
+[Typedef]
+id: starts_during_or_after
+name: starts_during_or_after
+
+[Typedef]
+id: during
+name: during
+
+
+
+
+
