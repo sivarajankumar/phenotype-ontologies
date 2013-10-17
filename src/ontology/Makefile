@@ -27,7 +27,7 @@ all_obo : $(patsubst %,%.obo,$(ONTS))
 all_xp_obo : $(patsubst %,%-equivalence-axioms.obo,$(ONTS))
 all_owl : $(patsubst %,%.owl,$(ONTS))
 
-%-all:
+%-all: %.obo %.owl
 	make $*/$*-equivalence-axioms-subq-ubr.owl ONT=$*
 
 # ----------------------------------------
@@ -51,6 +51,8 @@ hp.owl: hp.obo
 
 zp.owl:
 	wget http://compbio.charite.de/hudson/job/hpo.ontology.uberpheno/lastStableBuild/artifact/data/dataForUberpheno/not_subsettable_ontologies/zp.owl
+zp.obo: zp.owl
+	owltools $< -o -f obo --no-check $@
 
 zp/zp-equivalence-axioms-subq.owl: zp.owl
 	cp $< $@

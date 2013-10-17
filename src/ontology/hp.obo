@@ -1,7 +1,8 @@
 format-version: 1.2
-date: 03:10:2013 10:27
+date: 17:10:2013 00:03
 saved-by: peter
 auto-generated-by: OBO-Edit 2.3
+subsetdef: hposlim_core "Core clinical terminology"
 subsetdef: secondary_consequence "Consequence of a disorder in another organ system."
 default-namespace: human_phenotype
 ontology: hp
@@ -1896,6 +1897,7 @@ id: HP:0000243
 name: Trigonocephaly
 def: "Wedge-shaped, or triangular head, with the apex of the triangle at the midline of the forehead and the base of the triangle at the occiput." [pmid:19125436]
 comment: This shape should be assessed from above, with the examiner looking down on the head of the patient. Trigonocephaly can be caused by premature fusion of the metopic suture.
+subset: hposlim_core
 xref: UMLS:C0265535 "Trigonocephaly"
 is_a: HP:0002648 ! Abnormality of calvarial morphology
 
@@ -1929,6 +1931,7 @@ alt_id: HP:0004479
 alt_id: HP:0008512
 def: "An `abnormality of skull shape` (HP:0002648) characterized by a `decreased anterior-posterior diameter` (PATO:0002042). That is, a cephalic index greater than 81%. Alternatively, an apparently shortened anteroposterior dimension (length) of the head compared to width." [HPO:probinson, pmid:19125436]
 comment: Cephalic index is the ratio of head width expressed as a percentage of head length. The normal range is 76-80.9%. Head length is measured between the glabella (the most prominent point on the frontal bone above the root of the nose) and the most prominent part of the occiput in the midline, using spreading calipers. Head width is measured between the most lateral points of the parietal bones on each side of the head, using spreading calipers. Cephalic index standards are derived from Caucasians and have limited relevance for other races and ethnicities. Current norms also have limited validity because of changes in infant sleeping position and consequent changes in head shape. New data should be developed. Brachycephaly is distinct from Flat occiput, but both can be present in the same individual and should be coded separately.
+subset: hposlim_core
 xref: UMLS:C0221356 "Brachycephaly"
 is_a: HP:0002648 ! Abnormality of calvarial morphology
 
@@ -1949,6 +1952,7 @@ alt_id: HP:0005489
 alt_id: HP:0005497
 def: "Occipito-frontal (head) circumference (OFC) less than -3 standard deviations compared to appropriate, age matched, normal standards (Ross JJ, Frias JL 1977,  PMID:9683597). Alternatively, decreased size of the `cranium` (FMA:46565)." [pmid:19125436, pmid:9683597]
 comment: Head circumference is measured from just above the glabella (the most prominent point on the frontal bone above the root of the nose) to the most posterior prominent point of the occipital bone using a tape measure. Some standard charts are organized by centiles [Hall et al. [2007]], others by standard deviations [Farkas, [1981]]. It is important to add an indication of how far below the normal standard the head circumference is if an accurate assessment of this can be made. Microcephaly is an absolute term. The term relative microcephaly can be used when the head size centile is less than the centile for height, for example, head size at the 3rd centile with height at the 75% for age and sex. On prenatal ultrasound, microcephaly is diagnosed if the head circumference or the biparietal diameter is more than three standard deviations below the mean.
+subset: hposlim_core
 synonym: "Decreased head circumference" EXACT []
 synonym: "Reduced head circumference" EXACT []
 synonym: "Small head circumference" EXACT []
@@ -1979,6 +1983,7 @@ alt_id: HP:0005491
 alt_id: HP:0005496
 def: "Occipitofrontal (head) circumference greater than 97th centile compared to appropriate, age matched, sex-matched normal standards. Alternatively, a apparently increased size of the `cranium` (FMA:46565)." [pmid:19125436]
 comment: Head circumference is measured from just above the glabella (the most prominent point on the frontal bone above the root of the nose) to the most posterior prominent point of the occipital bone using a tape measure. Some standard charts are organized by centiles [Hall et al. [2007]], others by standard deviations [Farkas, [1981]]. It is important to add an indication of how far above the normal standard the head circumference is if an accurate assessment of this can be made. Macrocephaly is an absolute term. The term relative macrocephaly can be used when the head size centile exceeds the centile for height, for example, head size at the 75th centile with height at the 5th centile for age and sex.
+subset: hposlim_core
 synonym: "Increased head circumference" EXACT []
 synonym: "Large head" EXACT []
 synonym: "Large head circumference" EXACT []
@@ -2007,6 +2012,7 @@ name: Turricephaly
 alt_id: HP:0001356
 def: "Tall head relative to width and length." [pmid:19125436]
 comment: Turricephaly is derived from the Latin word turris, meaning tall, and refers to a round, tall (tower-like) skull. This feature may have previously been considered to overlap with or include a tall forehead. Turricephaly is present when the head appears tall (subjective) and head length and width are reduced compared to normal age-related standards (objective). Head length is measured between the glabella (the most prominent point on the frontal bone above the root of the nose) and the most prominent part of the occiput in the midline, using spreading calipers. Head width is measured between the most lateral points of the parietal bones on each side of the head, using spreading calipers. The term acrocephaly (or oxycephaly) is used when there is turricephaly and the top of the skull assumes a cone shape.
+subset: hposlim_core
 xref: UMLS:C0030044 "Acrocephaly"
 is_a: HP:0002648 ! Abnormality of calvarial morphology
 
@@ -2021,7 +2027,8 @@ is_a: HP:0000262 ! Turricephaly
 [Term]
 id: HP:0000264
 name: Abnormality of the mastoid
-def: "An abnormality of the `mastoid process` (FMA:52872), which is the conical prominence projecting from the undersurface of the mastoid portion of the temporal bone." [HPO:curators]
+def: "An abnormality of the `mastoid process` (FMA:52872), which is the conical prominence projecting from the undersurface of the mastoid portion of the temporal bone." [HPO:pnrobinson]
+subset: hposlim_core
 is_a: HP:0000929 ! Abnormality of the skull
 
 [Term]
@@ -2045,6 +2052,7 @@ alt_id: HP:0000258
 alt_id: HP:0005440
 def: "An `abnormality of skull shape` (HP:0002648) characterized by a `increased anterior-posterior diameter` (PATO:0002043), i.e., an increased antero-posterior dimension of the skull. Cephalic index less than 76%. Alternatively, an apparently increased antero-posterior length of the head compared to width. Often due to premature closure of the sagittal suture." [HPO:probinson, pmid:19125436]
 comment: Cephalic index is the ratio of head width expressed as a percentage of head length. The normal range is 76-80.9%. Head length is measured between the glabella (the most prominent point on the frontal bone above the root of the nose) and the most prominent part of the occiput in the midline, using spreading calipers. Head width is measured between the most lateral points of the parietal bones on each side of the head, using spreading calipers. Cephalic index standards are derived from Caucasians and have limited relevance for other races and ethnicities. Current norms have limited validity because of changes in infant sleeping position and consequent changes in head shape. New data should be developed. Dolichocephaly is distinct from Prominent occiput, but both can be present in the same individual and should be coded separately. Scaphocephaly is a subtype of dolichocephaly where the anterior and posterior aspects of the cranial vault are pointed (boat-shaped).
+subset: hposlim_core
 synonym: "Large dolichocephalic skull" EXACT []
 synonym: "Scaphocephaly" EXACT []
 synonym: "Turridolichocephaly" EXACT []
@@ -2057,6 +2065,7 @@ name: Prominent occiput
 alt_id: HP:0004489
 def: "Increased convexity of the `occiput` (FMA:49187) (posterior part of the skull)." [pmid:19125436]
 comment: Increased convexity of the occiput gives an appearance of prominence. There are no objective measures for convexity of the occiput, and evaluation depends heavily on the experience of the observer. This finding may or may not be accompanied by Dolichocephaly, but this should be coded separately.
+subset: hposlim_core
 xref: UMLS:C1853737 "Prominent occiput"
 is_a: HP:0011217 ! Abnormal shape of the occiput
 
@@ -2084,6 +2093,7 @@ is_a: HP:0011329 ! Abnormality of cranial sutures
 id: HP:0000271
 name: Abnormality of the face
 def: "An abnormality of the `face` (FMA:24728)." [HPO:probinson]
+subset: hposlim_core
 is_a: HP:0000234 ! Abnormality of the head
 
 [Term]
@@ -2100,15 +2110,16 @@ alt_id: HP:0005455
 alt_id: HP:0100846
 def: "Underdevelopment of the malar (frontal) process of the maxilla, appreciated in profile and/or by palpation." [HPO:probinson, pmid:19125436]
 comment: The malar process is the most medial and superior portion of the maxilla, contiguous with the lateral boundary of the nasal bridge. The term malar hypoplasia is no longer preferred because surface examination cannot distinguish hypoplasia from hypotrophy.
+subset: hposlim_core
 synonym: "Depressed malar region" EXACT []
 synonym: "Flat midface" EXACT []
 synonym: "Malar hypoplasia" EXACT []
 synonym: "Mid-face hypoplasia" EXACT []
 synonym: "Midface hypoplasia" EXACT []
 xref: UMLS:C1836641 "Malar hypoplasia"
-is_a: HP:0000309 ! Abnormality of the midface
 is_a: HP:0001999 ! Abnormal facial shape
 is_a: HP:0005557 ! Abnormality of the zygomatic arch
+is_a: HP:0012369 ! Malar anomaly
 
 [Term]
 id: HP:0000273
@@ -2131,6 +2142,7 @@ name: Narrow face
 alt_id: HP:0000318
 def: "Bizygomatic (upper face) and bigonial (lower face) width are both more than 2 standard deviations below the mean (objective); or, an apparent reduction in the width of the upper and lower face (subjective)." [pmid:19125436]
 comment: Objective measurement of the upper facial width is made with spreading calipers. The tips of the calipers are passed over the zygomatic arches until the maximum width is determined. Objective measurement of the lower faces is made with spreading calipers, with the tips firmly pressed against the inferomedial surface of the angle of the mandible.
+subset: hposlim_core
 synonym: "Narrow facies" EXACT []
 synonym: "Thin face" RELATED []
 xref: UMLS:C1837463 "Narrow face"
@@ -2142,6 +2154,7 @@ name: Long face
 alt_id: HP:0000334
 def: "Facial height (length) is more than 2 standard deviations above the mean (objective); or, an apparent increase in the height (length) of the face (subjective)." [pmid:19125436]
 comment: Objective measurement of the face height is made with sliding calipers from the nasion, just above the depth of the nasal root, to the gnathion, the inferior border of the mandible, both in the midline. Note that long face is distinct from narrow face.
+subset: hposlim_core
 xref: UMLS:C1836047 "Long face"
 is_a: HP:0001999 ! Abnormal facial shape
 
@@ -2150,6 +2163,7 @@ id: HP:0000277
 name: Abnormality of the mandible
 alt_id: HP:0000209
 def: "Any abnormality of the `mandible` (FMA:52748), the bone of the lower jaw." [HPO:probinson]
+subset: hposlim_core
 is_a: HP:0011821 ! Abnormality of facial skeleton
 
 [Term]
@@ -2158,8 +2172,10 @@ name: Retrognathia
 alt_id: HP:0002053
 alt_id: HP:0002954
 def: "An abnormality in which the `mandible` (FMA:52748) is `mislocalised posteriorly` (PATO:0001922)." [HPO:probinson]
+subset: hposlim_core
 synonym: "Receding chin" EXACT []
 synonym: "Receding mandible" EXACT []
+xref: SNOMED-CT:109515000 "Congenital retrognathism"
 xref: UMLS:C0035353 "Retrognathia"
 xref: UMLS:C1850067 "Receding chin"
 is_a: HP:0000277 ! Abnormality of the mandible
@@ -2170,6 +2186,7 @@ name: Coarse facial features
 alt_id: HP:0000281
 alt_id: HP:0004640
 def: "Absence of fine and sharp appearance of brows, nose, lips, mouth, and chin, usually because of rounded and heavy features or thickened skin with or without thickening of subcutaneous and bony tissues." [pmid:19125436]
+subset: hposlim_core
 synonym: "Coarse face" EXACT []
 synonym: "Coarse facies" EXACT []
 xref: UMLS:C1854600 "Coarse facial features"
@@ -2187,6 +2204,7 @@ id: HP:0000283
 name: Broad face
 def: "Bizygomatic (upper face) and bigonial (lower face) width greater than 2 standard deviations above the mean (objective); or an apparent increase in the width of the face (subjective)." [pmid:19125436]
 comment: Note that broad face is distinct from round face.
+subset: hposlim_core
 xref: UMLS:C1859680 "Broad face"
 is_a: HP:0001999 ! Abnormal facial shape
 
@@ -2199,8 +2217,9 @@ is_a: HP:0000271 ! Abnormality of the face
 id: HP:0000286
 name: Epicanthus
 alt_id: HP:0000624
-def: "A fold of skin starting above the medial aspect of the upper eyelid and arching downward to cover, pass in front of and lateral to the medial canthus." [HPO:curators]
+def: "A fold of skin starting above the medial aspect of the upper eyelid and arching downward to cover, pass in front of and lateral to the medial canthus." [HPO:probinson]
 comment: In extreme cases, the skin fold can start as high as the eyebrow; this is called epicanthus superciliaris.
+subset: hposlim_core
 synonym: "Epicanthal fold" EXACT []
 synonym: "Epicanthal folds" EXACT []
 synonym: "Epicanthic folds" EXACT []
@@ -2237,6 +2256,8 @@ is_a: HP:0000288 ! Abnormality of the philtrum
 [Term]
 id: HP:0000290
 name: Abnormality of the forehead
+def: "An anomalyof the `forehead` (FMA:63864)." [HPO:probinson]
+subset: hposlim_core
 is_a: HP:0000271 ! Abnormality of the face
 
 [Term]
@@ -2259,6 +2280,7 @@ name: Full cheeks
 alt_id: HP:0002262
 alt_id: HP:0004427
 def: "Increased prominence or roundness of soft tissues between zygomata and mandible." [DDD:awilkie]
+subset: hposlim_core
 synonym: "Chubby cheeks" RELATED []
 synonym: "Puffy cheeks" RELATED []
 xref: UMLS:C0007966 "Cheek"
@@ -2270,6 +2292,7 @@ id: HP:0000294
 name: Low anterior hairline
 def: "Distance between the hairline (trichion) and the glabella (the most prominent point on the frontal bone above the root of the nose), in the midline, more than two SD below the mean. Alternatively, an apparently decreased distance between the hairline and the glabella." [pmid:19125436]
 comment: This feature gives the appearance of a short forehead. It is distinct from hirsutism of the forehead. In the latter, orientation of hair growth is lateral and texture and density of hair differs from scalp hair.
+subset: hposlim_core
 synonym: "Low frontal hairline" EXACT []
 synonym: "Low-set frontal hairline" EXACT []
 xref: UMLS:C1842366 "Low anterior hairline"
@@ -2324,6 +2347,7 @@ alt_id: HP:0004648
 alt_id: HP:0004656
 alt_id: HP:0008514
 def: "Abnormal prominence of the `chin` (FMA:46495) related to `increased length` (PATO:0000573) of the `mandible` (FMA:52748)." [HPO:probinson]
+subset: hposlim_core
 synonym: "Enlarged mandible" EXACT []
 synonym: "Large mandible" EXACT []
 synonym: "Mandible prognathism" EXACT []
@@ -2343,6 +2367,7 @@ is_a: HP:0000306 ! Abnormality of the chin
 id: HP:0000306
 name: Abnormality of the chin
 def: "An abnormality of the `chin` (FMA:46495), i.e., of the inferior portion of the face lying inferior to the lower lip and including the central prominence of the lower jaw." [HPO:probinson, pmid:19125436]
+subset: hposlim_core
 is_a: HP:0000271 ! Abnormality of the face
 
 [Term]
@@ -2351,6 +2376,7 @@ name: Pointed chin
 alt_id: HP:0005330
 def: "A marked tapering of the lower face to the chin." [pmid:19125436]
 comment: The two rami of the mandible meet at an acute angle.
+subset: hposlim_core
 synonym: "Small pointed chin" EXACT []
 xref: UMLS:C1842873 "Pointed chin"
 is_a: HP:0000306 ! Abnormality of the chin
@@ -2367,6 +2393,7 @@ is_a: HP:0000347 ! Micrognathia
 [Term]
 id: HP:0000309
 name: Abnormality of the midface
+def: "An anomaly of the midface, which is a region and not an anatomical term. It extends, superiorly, from the inferior orbital margin to, inferiorly, the level of nasal base. It is formed by the maxilla (upper jaw) and zygoma. Traditionally, the nose and premaxilla are not included in the midface." [HPO:probinson, pmid:19125436]
 is_a: HP:0000271 ! Abnormality of the face
 
 [Term]
@@ -2375,6 +2402,7 @@ name: Round face
 alt_id: HP:0000304
 alt_id: HP:0004653
 def: "The facial appearance is more circular than usual as viewed from the front." [pmid:19125436]
+subset: hposlim_core
 synonym: "Round facial appearance" EXACT []
 synonym: "Round facies" EXACT []
 synonym: "Round, full face" BROAD []
@@ -2393,9 +2421,11 @@ alt_id: HP:0002001
 alt_id: HP:0004657
 alt_id: HP:0007871
 def: "Interpupillary distance more than 2 SD above the mean (alternatively, the appearance of an increased interpupillary distance or widely spaced eyes)." [pmid:19125427]
+subset: hposlim_core
 synonym: "Increased interpupillary distance" EXACT []
 synonym: "Ocular hypertelorism" EXACT []
 synonym: "Wide-set eyes" EXACT []
+synonym: "Widely spaced eyes" EXACT []
 xref: MeSH:D006972 "Hypertelorism"
 xref: UMLS:C0020534 "Ocular hypertelorism"
 is_a: HP:0100886 ! Abnormality of globe location
@@ -2450,6 +2480,7 @@ id: HP:0000324
 name: Facial asymmetry
 alt_id: HP:0003775
 def: "An abnormal difference between the left and right sides of the face." [HPO:probinson]
+subset: hposlim_core
 synonym: "Asymmetric facies" EXACT []
 xref: MeSH:D005146 "Facial Asymmetry"
 xref: UMLS:C0546952 "Facial asymmetry"
@@ -2462,6 +2493,7 @@ alt_id: HP:0004645
 alt_id: HP:0004662
 alt_id: HP:0004668
 def: "Facial contour, as viewed from the front, triangular in shape, with breadth at the temples and tapering to a narrow chin." [DDD:jclayton-smith, pmid:19125436]
+subset: hposlim_core
 synonym: "Triangular facies" EXACT []
 xref: UMLS:C1835884 "Triangular face"
 is_a: HP:0001999 ! Abnormal facial shape
@@ -2470,6 +2502,7 @@ is_a: HP:0001999 ! Abnormal facial shape
 id: HP:0000326
 name: Abnormality of the maxilla
 def: "An abnormality of the `Maxilla` (FMA:9711) (upper jaw bone)." [HPO:probinson]
+subset: hposlim_core
 is_a: HP:0000309 ! Abnormality of the midface
 is_a: HP:0011821 ! Abnormality of facial skeleton
 
@@ -2478,6 +2511,7 @@ id: HP:0000327
 name: Hypoplasia of the maxilla
 alt_id: HP:0004644
 def: "Underdevelopment of the `Maxilla` (FMA:9711)." [HPO:probinson]
+subset: hposlim_core
 synonym: "Hypoplastic maxilla" EXACT []
 synonym: "Hypoplastic maxillary bones" EXACT []
 synonym: "Maxillar hypoplasia" EXACT []
@@ -2505,6 +2539,7 @@ is_a: HP:0000306 ! Abnormality of the chin
 id: HP:0000336
 name: Prominent supraorbital ridges
 def: "Greater than average forward and/or lateral protrusion of the supraorbital portion of the frontal bones." [pmid:19125436]
+subset: hposlim_core
 synonym: "Prominent supraorbital ridge" EXACT []
 xref: UMLS:C1842060 "Prominent supraorbital ridges"
 is_a: HP:0100538 ! Abnormality of the supraorbital ridges
@@ -2516,6 +2551,7 @@ alt_id: HP:0000352
 alt_id: HP:0000354
 def: "Width of the forehead or distance between the frontotemporales is more than two standard deviations above the mean (objective); or apparently increased distance between the two sides of the forehead." [pmid:19125436]
 comment: Frontotemporalis is a point lateral to the vertical component of the supraorbital ridge, where there is a hollowing. Spreading caliper tips are placed in the deepest part of that hollow. Note that this term should not be confused with prominent forehead.
+subset: hposlim_core
 synonym: "Wide forehead" EXACT []
 xref: UMLS:C1855408 "Broad forehead"
 is_a: HP:0000290 ! Abnormality of the forehead
@@ -2542,11 +2578,8 @@ alt_id: HP:0008493
 alt_id: HP:0008500
 def: "Inclination of the anterior surface of the forehead from the vertical more than two standard deviations above the mean (objective); or apparently excessive posterior sloping of the forehead in a lateral view." [pmid:19125436]
 comment: Measurement requires an angle meter, inclined on the anterior surface of the forehead, in the midline, along a line connecting the hairline to the glabella, compared to the vertical.
-synonym: "LOW SLOPING FOREHEAD" RELATED [HPO:skoehler]
-synonym: "Low, sloping forehead" EXACT []
+subset: hposlim_core
 synonym: "Receding forehead" EXACT []
-synonym: "Receding, small forehead" EXACT []
-synonym: "Sloping, narrow forehead" EXACT []
 xref: UMLS:C1857679 "Sloping forehead"
 is_a: HP:0000290 ! Abnormality of the forehead
 
@@ -2558,6 +2591,7 @@ alt_id: HP:0004674
 alt_id: HP:0004677
 def: "Width of the forehead or distance between the frontotemporales is more than two standard deviations below the mean (objective); or apparently narrow intertemporal region (subjective)." [pmid:19125436]
 comment: A reduced distance between the temporal regions (temples) on each side of the head to one another. Frontotemporalis is a point lateral to the vertical component of the supraorbital ridge, where there is a hollowing. Spreading caliper tips are placed in the deepest part of that hollow.
+subset: hposlim_core
 synonym: "Bitemporal narrowing" EXACT []
 synonym: "Bitemporal narrowness" EXACT []
 synonym: "Bitemporal skull narrowing" EXACT []
@@ -2594,11 +2628,14 @@ alt_id: HP:0005460
 alt_id: HP:0005470
 def: "`Developmental hypoplasia` (MPATH:10060) of the `mandible` (FMA:52748)." [HPO:probinson]
 comment: Mandibular hypoplasia, also known as micrognathia, is a term that describes an abnormally small lower jaw.
+subset: hposlim_core
 synonym: "Hypoplastic mandible" EXACT []
 synonym: "Hypoplastic mandible condyle" EXACT []
 synonym: "Mandibular hypoplasia" EXACT []
 synonym: "Small jaw" EXACT []
 synonym: "Small mandible" EXACT []
+xref: MeSH:D008844 "Micrognathism"
+xref: SNOMED-CT:32958008 "Congenital micrognathism"
 xref: UMLS:C0025990 "Micrognathia"
 is_a: HP:0009118 ! Aplasia/Hypoplasia of the mandible
 
@@ -2606,9 +2643,7 @@ is_a: HP:0009118 ! Aplasia/Hypoplasia of the mandible
 id: HP:0000348
 name: High forehead
 alt_id: HP:0000342
-def: "An abnormally increased height of the forehead." [HPO:curators]
-synonym: "High, protruding forehead" EXACT []
-synonym: "High, sloping forehead" EXACT []
+def: "An abnormally increased height of the forehead." [HPO:probinson]
 xref: UMLS:C0239676 "High forehead"
 is_a: HP:0000290 ! Abnormality of the forehead
 
@@ -3524,7 +3559,8 @@ is_a: HP:0000464 ! Abnormality of the neck
 [Term]
 id: HP:0000478
 name: Abnormality of the eye
-def: "Any abnormality of the `eye` (FMA:54448), including location, spacing, and intraocular abnormalities." [HPO:curators]
+def: "Any abnormality of the `eye` (FMA:54448), including location, spacing, and intraocular abnormalities." [HPO:probinson]
+subset: hposlim_core
 synonym: "Eye disease" RELATED []
 is_a: HP:0000118 ! Phenotypic abnormality
 
@@ -3532,12 +3568,15 @@ is_a: HP:0000118 ! Phenotypic abnormality
 id: HP:0000479
 name: Abnormality of the retina
 def: "An abnormality of the `retina` (FMA:58301)." [HPO:probinson]
+subset: hposlim_core
 synonym: "Retinal disease" RELATED []
 is_a: HP:0001098 ! Abnormality of the fundus
 
 [Term]
 id: HP:0000480
 name: Retinal coloboma
+def: "A notch or cleft of the retina." [HPO:probinson]
+subset: hposlim_core
 xref: UMLS:C0240896 "Retinal coloboma"
 is_a: HP:0000479 ! Abnormality of the retina
 is_a: HP:0000589 ! Coloboma
@@ -3548,6 +3587,7 @@ name: Abnormality of the cornea
 alt_id: HP:0007771
 alt_id: HP:0007972
 def: "Any abnormality of the `cornea` (FMA:58238), which is the transparent tissue at the front of the eye that covers the iris, pupil, and anterior chamber." [HPO:probinson]
+subset: hposlim_core
 synonym: "Corneal abnormalities" EXACT []
 synonym: "Corneal abnormality" EXACT []
 synonym: "Cornela disease" RELATED []
@@ -3560,6 +3600,7 @@ name: Microcornea
 alt_id: HP:0100688
 def: "A congenital abnormality of the `cornea` (FMA:58238) in which the cornea and the anterior segment of the eye are smaller than normal. The horizontal diameter of the cornea does not reach 10 mm even in adulthood." [HPO:probinson]
 comment: Note that the cornea's diameter is normally about 9.5-10.0 mm at birth and reaches 10.0-12-5 mm in adulthood.
+subset: hposlim_core
 synonym: "Decreased corneal diameter" EXACT []
 xref: UMLS:C0266544 "Microcornea"
 is_a: HP:0001120 ! Abnormality of corneal size
@@ -3569,6 +3610,7 @@ id: HP:0000483
 name: Astigmatism
 def: "Astigmatism describes a refractive error  characterized by a difference in the horizontal and vertical  curvature of the cornea." [DDD:ncarter, HPO:probinson]
 comment: The irregular curvature associated with astigmatism means that the optical system is not symmetric about the optical axis. Most commonly the cornea is affected such that the refractive power in one meridian is less than that of the perpendicular axis. Astigmatism of significant degree causes blurry vision.
+subset: hposlim_core
 xref: MeSH:D001251 "Astigmatism"
 xref: UMLS:C0004106 "Astigmatism"
 is_a: HP:0000539 ! Abnormality of refraction
@@ -3586,6 +3628,7 @@ id: HP:0000485
 name: Megalocornea
 alt_id: HP:0007660
 def: "An enlargement of the `cornea` (FMA:58238) with normal clarity and function. Megalocornea is diagnosed with a horizontal corneal diameter of 12 mm or more at birth or 13 mm or more after two years of age." [HPO:curators]
+subset: hposlim_core
 synonym: "Increased corneal diameter" EXACT []
 xref: UMLS:C0344530 "Keratoglobus"
 xref: UMLS:C1167712 "Increased corneal diameter"
@@ -3595,10 +3638,11 @@ is_a: HP:0001120 ! Abnormality of corneal size
 id: HP:0000486
 name: Strabismus
 def: "Strabismus (also known as squint) is a condition in which the eyes are not properly aligned with each other." [HPO:curators]
+subset: hposlim_core
 synonym: "Squint" EXACT []
 xref: MeSH:D013285 "Strabismus"
 xref: UMLS:C2020541 "strabismus"
-is_a: HP:0000478 ! Abnormality of the eye
+is_a: HP:0012373 ! Abnormal eye physiology
 
 [Term]
 id: HP:0000487
@@ -3609,6 +3653,8 @@ is_a: HP:0000486 ! Strabismus
 [Term]
 id: HP:0000488
 name: Retinopathy
+def: "Any noninflammatory disease of the retina. This nonspecific term is retained here because of its wide use in the literature, but if possible new annotations should indicate the precise type of retinal abnormality." [HPO:probinson]
+subset: hposlim_core
 xref: UMLS:C1962966 "Retinopathy"
 is_a: HP:0000479 ! Abnormality of the retina
 
@@ -3620,11 +3666,16 @@ is_obsolete: true
 [Term]
 id: HP:0000490
 name: Deeply set eye
+alt_id: HP:0000663
 def: "An `eye` (FMA:54448) that is more deeply recessed into the plane of the face than is typical." [pmid:19125427]
 comment: This finding should be distinguished from a prominent supraorbital ridge or inferior orbital margin. In Deeply set eyes, the globe is recessed in comparison to the overall prominence of the face. There is no known objective measurement, and diagnosing this feature depends heavily on the experience of the observer.
+subset: hposlim_core
 synonym: "Deep set eye" EXACT []
 synonym: "Deep-set eyes" EXACT []
+synonym: "Enophthalmos" EXACT []
 synonym: "Sunken eyes" EXACT []
+xref: MeSH:D015841 "Enophthalmos"
+xref: UMLS:C0014306 "Enophthalmos"
 xref: UMLS:C1860310 "Deep set eyes"
 is_a: HP:0100886 ! Abnormality of globe location
 
@@ -3632,6 +3683,7 @@ is_a: HP:0100886 ! Abnormality of globe location
 id: HP:0000491
 name: Keratitis
 def: "Inflammation of the cornea." [HPO:curators]
+subset: hposlim_core
 xref: MeSH:D007634 "Keratitis"
 xref: UMLS:C0022568 "Keratitis"
 is_a: HP:0000481 ! Abnormality of the cornea
@@ -3643,6 +3695,7 @@ id: HP:0000492
 name: Abnormality of the eyelid
 alt_id: HP:0000285
 def: "An abnormality of the `eyelids` (FMA:75178)." [HPO:probinson]
+subset: hposlim_core
 synonym: "Abnormality of the eyelids" EXACT []
 is_a: HP:0000284 ! Abnormality of the ocular region
 is_a: HP:0000606 ! Abnormality of the periorbital region
@@ -3661,6 +3714,7 @@ name: Downslanted palpebral fissures
 alt_id: HP:0007714
 alt_id: HP:0007908
 def: "The palpebral fissure inclination is more than two standard deviations below the mean." [pmid:19125427]
+subset: hposlim_core
 synonym: "Antimongoloid eye slant" EXACT []
 synonym: "Antimongoloid slant of palpebral fissures" EXACT []
 synonym: "Antimongoloid slanted palpebral fissures" EXACT []
@@ -3696,6 +3750,7 @@ id: HP:0000496
 name: Abnormality of eye movement
 alt_id: HP:0006860
 def: "An abnormality in voluntary or involuntary eye movements or their control." [HPO:probinson]
+subset: hposlim_core
 synonym: "Abnormal extraocular movement" EXACT []
 synonym: "Abnormal extraocular movements" EXACT []
 synonym: "Abnormal eye motility" EXACT []
@@ -3706,7 +3761,7 @@ synonym: "Eye movement abnormalities" EXACT []
 synonym: "Ocular movement abnormalities" EXACT []
 synonym: "Oculomotor abnormalities" EXACT []
 xref: UMLS:C1854374 "Eye movement abnormalities"
-is_a: HP:0000478 ! Abnormality of the eye
+is_a: HP:0012373 ! Abnormal eye physiology
 
 [Term]
 id: HP:0000497
@@ -3727,6 +3782,7 @@ id: HP:0000499
 name: Abnormality of the eyelashes
 alt_id: HP:0004530
 def: "An abnormality of the `eyelashes` (FMA:53669)." [HPO:probinson]
+subset: hposlim_core
 synonym: "Eyelash abnormality" EXACT []
 is_a: HP:0000492 ! Abnormality of the eyelid
 is_a: HP:0001595 ! Abnormality of the hair
@@ -3736,16 +3792,18 @@ id: HP:0000501
 name: Glaucoma
 def: "Glaucoma refers loss of retinal ganglion cells in a characteristic pattern of optic neuropathy usually associated with increased intraocular pressure." [HPO:probinson, pmid:11815354]
 comment: The feature that differentiates glaucoma from other causes of visual morbidity is a characteristic pattern of damage to the optic nerve head. This is most easily recognised at the superior and inferior poles of the optic disc. The vertical cup:disc ratio (VCDR) has proved to be a simple, relatively robust index of glaucomatous loss of the neuroretinal rim. As with intraocular pressure, VCDR is a continuous variable within the population.
+subset: hposlim_core
 xref: MeSH:D005901 "Glaucoma"
 xref: UMLS:C1962986 "Glaucoma"
-is_a: HP:0000478 ! Abnormality of the eye
+is_a: HP:0012373 ! Abnormal eye physiology
 
 [Term]
 id: HP:0000502
 name: Abnormality of the conjunctiva
 def: "An abnormality of the `conjunctiva` (FMA:59011)." [HPO:curators]
 comment: The conjunctiva is a thin, sparsely vascularized transparent membrane that covers and protects the sclera (the bulbar conjunctiva), and forms the inner lining of the eyelids (the tarsal conjunctiva).
-is_a: HP:0000478 ! Abnormality of the eye
+subset: hposlim_core
+is_a: HP:0012372 ! Abnormal eye morphology
 
 [Term]
 id: HP:0000503
@@ -3756,8 +3814,9 @@ is_a: HP:0008054 ! Abnormality of the vasculature of the conjunctiva
 [Term]
 id: HP:0000504
 name: Abnormality of vision
-def: "Abnormality of eyesight (visual perception)." [HPO:curators]
-is_a: HP:0000478 ! Abnormality of the eye
+def: "Abnormality of eyesight (visual perception)." [HPO:probinson]
+subset: hposlim_core
+is_a: HP:0012373 ! Abnormal eye physiology
 
 [Term]
 id: HP:0000505
@@ -3767,6 +3826,7 @@ alt_id: HP:0000566
 alt_id: HP:0007860
 alt_id: HP:0007983
 def: "Visual impairment (or vision impairment) is vision loss (of a person) to such a degree as to qualify as an additional support need through a significant limitation of visual capability resulting from either disease, trauma, or congenital or degenerative conditions that cannot be corrected by conventional means, such as refractive correction, medication, or surgery." [DDD:gblack]
+subset: hposlim_core
 synonym: "Decreased visual acuity" EXACT []
 synonym: "Impaired vision" EXACT []
 synonym: "Poor vision" EXACT []
@@ -3778,8 +3838,9 @@ is_a: HP:0000504 ! Abnormality of vision
 [Term]
 id: HP:0000506
 name: Telecanthus
-def: "Distance between the inner canthi more than two standard deviations above the mean (objective); or, apparently increased distance between the inner canthi." [HPO:curators]
+def: "Distance between the inner canthi more than two standard deviations above the mean (objective); or, apparently increased distance between the inner canthi." [HPO:probinson]
 comment: Dystopia canthorum (also called telecanthus) describes a subtle but unusual facial feature in which the inner corners of the eyes (canthi) are spaced farther apart than normal, yet the eyes (pupils) themselves are not necessarily widely spaced.
+subset: hposlim_core
 synonym: "Dystopia canthorum" EXACT []
 xref: UMLS:C0423113 "Telecanthus"
 is_a: HP:0000492 ! Abnormality of the eyelid
@@ -3788,16 +3849,18 @@ is_a: HP:0000492 ! Abnormality of the eyelid
 id: HP:0000508
 name: Ptosis
 def: "The upper eyelid margin is positioned 3 mm or more lower than usual and covers the superior portion of the iris (objective); or, the upper lid margin obscures at least part of the pupil (subjective)." [pmid:19125427]
+subset: hposlim_core
 synonym: "Blepharoptosis" EXACT []
 synonym: "EYELID PTOSIS" EXACT [HPO:skoehler]
 xref: MeSH:D001763 "Blepharoptosis"
 xref: UMLS:C0005745 "Ptosis"
-is_a: HP:0000478 ! Abnormality of the eye
+is_a: HP:0012373 ! Abnormal eye physiology
 
 [Term]
 id: HP:0000509
 name: Conjunctivitis
 def: "Inflammation of the  `conjunctiva` (FMA:59011)." [HPO:probinson]
+subset: hposlim_core
 synonym: "CONJUNCTIVITIS, RECURRENT" RELATED [HPO:skoehler]
 xref: MeSH:D003231 "Conjunctivitis"
 xref: UMLS:C0009763 "Conjunctivitis"
@@ -3815,7 +3878,8 @@ alt_id: HP:0007816
 alt_id: HP:0007826
 alt_id: HP:0007927
 def: "Hereditary degeneration and atrophy of the retina." [HPO:probinson]
-comment: Retinitis pigmentosa is a groupü of hereditary diseases of the eye. However, the term retinitis pigmentosa has also been used to describe the retinal findings characteristic of these diseases but also seen on other diseases such as Usher syndrome. It is preferable to describe the findings precisely if possible, but this term is kept for convenience.
+comment: Retinitis pigmentosa is a group of hereditary diseases of the eye. However, the term retinitis pigmentosa has also been used to describe the retinal findings characteristic of these diseases but also seen on other diseases such as Usher syndrome. It is preferable to describe the findings precisely if possible, but this term is kept for convenience.
+subset: hposlim_core
 xref: MeSH:D012174 "Retinitis Pigmentosa"
 xref: UMLS:C0035334 "Retinitis Pigmentosa"
 is_a: HP:0007703 ! Abnormal retinal pigmentation
@@ -3833,6 +3897,7 @@ name: Abnormal electroretinogram
 alt_id: HP:0003285
 def: "Any abnormality of the electrical responses of various cell types in the retina as measured by electroretinography." [HPO:probinson]
 comment: The electrical responses of the photoreceptors (rods and cones), inner retinal cells (bipolar and amacrine cells), and the ganglion cells can be assessed by ERG.
+subset: hposlim_core
 synonym: "Abnormal electroretinogram (ERG)" EXACT []
 synonym: "Abnormal electroretinography" EXACT []
 synonym: "Abnormal ERG" EXACT []
@@ -3846,6 +3911,7 @@ id: HP:0000514
 name: Slow saccadic eye movements
 def: "An abnormally slow velocity of the saccadic eye movements." [HPO:probinson]
 comment: Saccades are rapid eye movements that align the fovea with the target.
+subset: hposlim_core
 synonym: "Slow saccades" EXACT []
 xref: UMLS:C1321329 "Slow saccades"
 is_a: HP:0000570 ! Abnormality of saccadic eye movements
@@ -3862,6 +3928,7 @@ id: HP:0000518
 name: Cataract
 def: "A cataract is an opacity or clouding that develops in the crystalline `lens` (FMA:58241) of the eye or in its `capsule` (FMA:58881)." [HPO:probinson]
 comment: Note that some ophthalmologists call any opacity in the lens a cataract, while others restrict the term to lens opacities that impair vision. We use the term to refer to the first meaning (any lens opacity).
+subset: hposlim_core
 synonym: "Cataracts" EXACT []
 synonym: "Lens opacities" EXACT []
 synonym: "Lens opacity" EXACT []
@@ -3878,13 +3945,15 @@ alt_id: HP:0007726
 alt_id: HP:0007788
 def: "A congenital `cataract` (HP:0000518)." [HPO:probinson]
 comment: In general, congenital cataracts are bilateral and that is the assumption with the terms in this cataract subhierarchy.
+subset: hposlim_core
 synonym: "Bilateral cataracts" EXACT []
 synonym: "Bilateral congenital cataracts" EXACT []
 synonym: "Cataract, congenital" EXACT []
 synonym: "Cataracts, lenticular, bilateral" EXACT []
 synonym: "Congenital cataracts" EXACT []
 synonym: "Congenital cataracts, bilateral" EXACT []
-xref: UMLS:C0521707 "Bilateral cataracts"
+xref: SNOMED-CT:79410001 "Congenital cataract"
+xref: UMLS:C0009691 "Congenital cataract"
 is_a: HP:0000518 ! Cataract
 
 [Term]
@@ -3897,6 +3966,7 @@ alt_id: HP:0007711
 alt_id: HP:0007870
 def: "An eye that is protruding anterior to the plane of the face to a greater extent than is typical." [HPO:sdoelken, pmid:19125427]
 comment: Some sources define "exophthalmos" as a protrusion of the globe greater than 18 mm and "proptosis" as a protusion equal to or less than 18 mm. Others define "exophthalmos" as protusion secondary to endocrine dysfunction and "proptosis" as any non-endocrine-mediated protusion (Source: Wikipedia). This finding should be distinguished frm underdevelopment of the supraorbital ridge or maxilla/zygoma. In proptosis, the globe is anteriorly protuberant to the overall plane of the face.
+subset: hposlim_core
 synonym: "Anterior bulging of the globe" EXACT []
 synonym: "Exophthalmos" EXACT []
 synonym: "Ocular proptosis" EXACT []
@@ -3908,15 +3978,11 @@ xref: UMLS:C1862425 "Prominent globes"
 is_a: HP:0100886 ! Abnormality of globe location
 
 [Term]
-id: HP:0000521
-name: Abnormality of tear glands or tear production
-is_a: HP:0000478 ! Abnormality of the eye
-
-[Term]
 id: HP:0000522
 name: Alacrima
 def: "Absence of tear secretion." [HPO:probinson]
 comment: Alacrima is generally a congenital deficiency.
+subset: hposlim_core
 xref: UMLS:C0344505 "Alacrima"
 is_a: HP:0000633 ! Decreased lacrimation
 
@@ -3936,6 +4002,7 @@ is_a: HP:0010696 ! Polar cataract
 id: HP:0000524
 name: Conjunctival telangiectasia
 def: "The presence of small (ca. 0.5-1.0 mm) dilated blood vessels near the surface of the mucous membranes of the conjunctiva." [HPO:probinson]
+subset: hposlim_core
 synonym: "Conjunctival telangiectases" EXACT []
 synonym: "Telangiectasia, conjunctival" EXACT []
 xref: UMLS:C0239105 "Telangiectasia, conjunctival"
@@ -3945,7 +4012,8 @@ is_a: HP:0100579 ! Mucosal telangiectasiae
 [Term]
 id: HP:0000525
 name: Abnormality of the iris
-def: "An abnormality of the `iris` (FMA:58235), which is the pigmented muscular tissue between the cornea and the lens, that is perforated by an opening called the pupil." [HPO:curators]
+def: "An abnormality of the `iris` (FMA:58235), which is the pigmented muscular tissue between the cornea and the lens, that is perforated by an opening called the pupil." [HPO:probinson]
+subset: hposlim_core
 is_a: HP:0000553 ! Abnormality of the uvea
 is_a: HP:0004328 ! Abnormality of the anterior segment of the eye
 
@@ -3953,6 +4021,7 @@ is_a: HP:0004328 ! Abnormality of the anterior segment of the eye
 id: HP:0000526
 name: Aniridia
 def: "Congenital absence of the `iris` (FMA:58235)." [HPO:probinson]
+subset: hposlim_core
 xref: MeSH:D015783 "Aniridia"
 xref: UMLS:C0003076 "Aniridia"
 is_a: HP:0008053 ! Aplasia/Hypoplasia of the iris
@@ -3974,6 +4043,7 @@ name: Anophthalmia
 alt_id: HP:0001485
 alt_id: HP:0007664
 def: "Absence of the globe or eyeball." [DDD:ncarter]
+subset: hposlim_core
 synonym: "Anophthalmia, clinical" EXACT []
 synonym: "Clinical anophthalmia, unilateral/bilateral" EXACT []
 xref: UMLS:C0003119 "Anophthalmia"
@@ -3988,6 +4058,7 @@ alt_id: HP:0007735
 alt_id: HP:0007753
 alt_id: HP:0007967
 def: "A reduction of previously attained ability to see." [HPO:probinson]
+subset: hposlim_core
 synonym: "DECREASED VISUAL ACUITY, PROGRESSIVE" RELATED [HPO:skoehler]
 synonym: "Loss of visual acuity" EXACT []
 synonym: "Progressive loss of vision" EXACT []
@@ -4029,6 +4100,7 @@ is_a: HP:0000532 ! Chorioretinal abnormality
 id: HP:0000534
 name: Abnormality of the eyebrow
 def: "An abnormality of the `eyebrow` (FMA:54237)." [HPO:probinson]
+subset: hposlim_core
 is_a: HP:0000284 ! Abnormality of the ocular region
 is_a: HP:0000606 ! Abnormality of the periorbital region
 is_a: HP:0001595 ! Abnormality of the hair
@@ -4042,6 +4114,7 @@ alt_id: HP:0004520
 alt_id: HP:0004551
 def: "Decreased density/number and/or decreased diameter of eyebrow hairs." [pmid:19125427]
 comment: Sparseness can be regional (medial, central, lateral) or total. These modifiers should be incorporated into the term, when appropriate.
+subset: hposlim_core
 synonym: "Hypotrichosis of eyebrow" EXACT []
 synonym: "SPARSE EYEBROWS" RELATED [HPO:skoehler]
 synonym: "Thin eyebrows" EXACT []
@@ -4053,12 +4126,16 @@ is_a: HP:0100840 ! Aplasia/Hypoplasia of the eyebrow
 id: HP:0000537
 name: Epicanthus inversus
 def: "A fold of skin starting at or just below the medial aspect of the lower lid and arching upward to cover, extend in front of and lateral to the medial canthus." [pmid:19125427]
+subset: hposlim_core
 xref: UMLS:C1303003 "Epicanthus inversus"
 is_a: HP:0000492 ! Abnormality of the eyelid
 
 [Term]
 id: HP:0000538
 name: Pseudopapilledema
+def: "Apparent optic disc swelling in the absence of increased intracranial pressure." [HPO:probinson]
+comment: Papilledema is disc edema secondary to increased intracranial pressure.
+subset: hposlim_core
 xref: UMLS:C0155300 "Pseudopapilledema"
 is_a: HP:0000479 ! Abnormality of the retina
 
@@ -4066,12 +4143,13 @@ is_a: HP:0000479 ! Abnormality of the retina
 id: HP:0000539
 name: Abnormality of refraction
 def: "An abnormality in the process of focusing of light by the eye in order to produce a sharp image on the retina." [HPO:probinson]
-is_a: HP:0000478 ! Abnormality of the eye
+is_a: HP:0012373 ! Abnormal eye physiology
 
 [Term]
 id: HP:0000540
 name: Hypermetropia
 def: "An abnormality of refraction characterized by the ability to see objects in the distance clearly, while objects nearby appear blurry." [HPO:probinson]
+subset: hposlim_core
 synonym: "Farsightedness" EXACT []
 synonym: "Hyperopia" EXACT []
 synonym: "Long-sightedness." EXACT []
@@ -4085,6 +4163,7 @@ name: Retinal detachment
 alt_id: HP:0007864
 alt_id: HP:0008021
 def: "Separation of the inner layers of the retina (neural retina) from the pigment epithelium." [HPO:probinson]
+subset: hposlim_core
 synonym: "Detached retina" EXACT []
 xref: MeSH:D012163 "Retinal Detachment"
 xref: UMLS:C1963229 "Retinal detachment"
@@ -4103,6 +4182,7 @@ alt_id: HP:0001148
 alt_id: HP:0001484
 def: "A pale yellow discoloration of the optic disk (the area of the optic nerve head in the retina). The optic disc normally has a pinkish hue with a central yellowish depression." [HPO:probinson]
 comment: Optic disc pallor can be judged clinically with serial color photographs or by comparison to the other eye.
+subset: hposlim_core
 synonym: "DISC PALLOR" RELATED [HPO:skoehler]
 synonym: "OPTIC DISK PALLOR" RELATED [HPO:skoehler]
 synonym: "Pale optic disc" EXACT []
@@ -4126,6 +4206,7 @@ name: Myopia
 alt_id: HP:0001110
 alt_id: HP:0007847
 def: "An abnormality of refraction characterized by the ability to see objects nearby clearly, while objects in the distance appear blurry." [HPO:probinson]
+subset: hposlim_core
 xref: MeSH:D009216 "Myopia"
 xref: UMLS:C0027092 "Myopia"
 is_a: HP:0000539 ! Abnormality of refraction
@@ -4134,6 +4215,8 @@ is_a: HP:0000539 ! Abnormality of refraction
 id: HP:0000546
 name: Retinal degeneration
 alt_id: HP:0007632
+def: "A deterioration of the retina. This nonspecific term is retained here because of its wide use in the literature, but if possible new annotations should indicate the precise type of retinal abnormality." [HPO:probinson]
+subset: hposlim_core
 xref: MeSH:D012162 "Retinal Degeneration"
 xref: UMLS:C0035304 "Retinal Degeneration"
 is_a: HP:0000479 ! Abnormality of the retina
@@ -4194,13 +4277,14 @@ is_a: HP:0011519 ! Anomalous trichromacy
 id: HP:0000553
 name: Abnormality of the uvea
 def: "An abnormality of the `uvea` (FMA:58103), the vascular layer of the eyeball." [HPO:probinson]
-is_a: HP:0000478 ! Abnormality of the eye
+is_a: HP:0012374 ! Abnormality of the globe
 
 [Term]
 id: HP:0000554
 name: Uveitis
 def: "Inflammation of one or all portions of the uveal tract." [HPO:curators]
 comment: The uvea is the pigmented middle layer of the eye consisting of the iris and ciliary body together with the choroid.
+subset: hposlim_core
 xref: MeSH:D014605 "Uveitis"
 xref: UMLS:C1963266 "Uveitis"
 is_a: HP:0000553 ! Abnormality of the uvea
@@ -4225,8 +4309,8 @@ is_a: HP:0000479 ! Abnormality of the retina
 [Term]
 id: HP:0000557
 name: Buphthalmos
-def: "Buphthalmos refers to a congenital open-angle glaucoma of the eye. The term buphthalmos (from Greek 'bous' or ox and 'ophthalmos' or eye) is descriptive of an enlarged eyeglobe resulting from increased intraocular pressure. The eyeglobe is especially prone to distension in newborns and infants because its collagen filaments are not as rigid as in adults and may easily be stretched." [HPO:curators]
-xref: UMLS:C0020302 "Congenital glaucoma"
+def: "Buphthalmos refers to a congenital open-angle glaucoma of the eye. The term buphthalmos (from Greek 'bous' or ox and 'ophthalmos' or eye) is descriptive of an enlarged eyeglobe resulting from increased intraocular pressure. The eyeglobe is especially prone to distension in newborns and infants because its collagen filaments are not as rigid as in adults and may easily be stretched." [HPO:probinson]
+subset: hposlim_core
 is_a: HP:0001087 ! Congenital glaucoma
 
 [Term]
@@ -4242,7 +4326,7 @@ is_a: HP:0007700 ! Anterior segment dysgenesis
 id: HP:0000559
 name: Corneal scarring
 xref: UMLS:C0349702 "CORNEAL SCARRING"
-is_a: HP:0007957 ! Reduction of corneal clarity
+is_a: HP:0007957 ! Corneal opacity
 is_a: HP:0100699 ! Scarring
 
 [Term]
@@ -4263,6 +4347,7 @@ is_a: HP:0200102 ! Sparse/absent eyelashes
 id: HP:0000563
 name: Keratoconus
 def: "A cone-shaped deformity of the cornea." [HPO:probinson]
+subset: hposlim_core
 xref: MeSH:D007640 "Keratoconus"
 xref: UMLS:C0022578 "Keratoconus"
 is_a: HP:0100689 ! Decreased corneal thickness
@@ -4282,6 +4367,7 @@ is_a: HP:0011481 ! Abnormality of the lacrimal duct
 id: HP:0000565
 name: Esotropia
 def: "A form of strabismus with one or both eyes turned inward ('crossed')." [HPO:probinson]
+subset: hposlim_core
 synonym: "Convergent strabismus" EXACT []
 xref: MeSH:D004948 "Esotropia"
 xref: UMLS:C0014877 "Strabismus, Convergent"
@@ -4303,6 +4389,7 @@ id: HP:0000568
 name: Microphthalmos
 alt_id: HP:0007996
 def: "A developmental anomaly characterized by abnormal smallness of one or both eyes." [HPO:probinson]
+subset: hposlim_core
 synonym: "Microphthalmia" EXACT []
 synonym: "Nanophthalmos" RELATED []
 xref: MeSH:D008850 "Microphthalmos"
@@ -4339,6 +4426,7 @@ is_a: HP:0000505 ! Visual impairment
 id: HP:0000573
 name: Retinal hemorrhage
 def: "`Hemorrhage` (MPATH:119) occurring within the `retina` (FMA:58301)." [HPO:gcarletti]
+subset: hposlim_core
 synonym: "Retinal bleeding" EXACT []
 synonym: "Retinal hemorrhages" EXACT []
 xref: MeSH:D012166 "Retinal hemorrhage"
@@ -4353,7 +4441,7 @@ name: Thick eyebrow
 alt_id: HP:0004546
 def: "Increased density/number and/or increased diameter of eyebrow hairs." [pmid:19125427]
 comment: Thickness can be regional (medial, middle/central, lateral) or total.
-synonym: "Broad bushy eyebrows" EXACT []
+subset: hposlim_core
 synonym: "Bushy eyebrows" EXACT []
 synonym: "Dense eyebrow" EXACT []
 synonym: "Heavy eyebrows" EXACT []
@@ -4368,6 +4456,7 @@ is_a: HP:0000534 ! Abnormality of the eyebrow
 id: HP:0000575
 name: Scotoma
 def: "Scotoma refers to an area or island of loss or impairment of visual acuity surrounded by a field of normal or relatively well-preserved vision." [HPO:curators]
+subset: hposlim_core
 xref: MeSH:D012607 "Scotoma"
 is_a: HP:0001123 ! Visual field defect
 
@@ -4382,6 +4471,7 @@ is_a: HP:0000575 ! Scotoma
 id: HP:0000577
 name: Exotropia
 def: "A form of strabismus with one or both eyes deviated outward." [HPO:probinson]
+subset: hposlim_core
 xref: MeSH:D005099 "Exotropia"
 xref: UMLS:C0015310 "Exotropia"
 is_a: HP:0000486 ! Strabismus
@@ -4389,6 +4479,8 @@ is_a: HP:0000486 ! Strabismus
 [Term]
 id: HP:0000579
 name: Nasolacrimal duct obstruction
+def: "Blockage of the ` lacrimal duct` (FMA:61063)." [HPO:probinson]
+subset: hposlim_core
 synonym: "Lacrimal duct obstruction" EXACT []
 xref: MeSH:D007767 "Lacrimal Duct Obstruction"
 xref: UMLS:C1281931 "Nasolacrimal duct obstruction"
@@ -4407,6 +4499,7 @@ alt_id: HP:0000507
 alt_id: HP:0000513
 def: "A fixed reduction in the vertical distance between the upper and lower eyelids with short palpebral fissures." [pmid:19125427]
 comment: When the palpebral fissures are severely shortened, they cannot be widely separated, actively or passively.
+subset: hposlim_core
 synonym: "Narrow palpebral fissures" EXACT []
 synonym: "Short palpebral fissure" EXACT []
 synonym: "Short palpebral fissures" EXACT []
@@ -4418,6 +4511,7 @@ is_a: HP:0200007 ! Abnormal size of the palpebral fissures
 id: HP:0000582
 name: Upslanted palpebral fissure
 def: "The palpebral fissure inclination is more than two standard deviations above the mean for age (objective); or, the inclination of the palpebral fissure is greater than typical for age." [pmid:19125427]
+subset: hposlim_core
 synonym: "Mongoloid slant" EXACT []
 synonym: "UPSLANTED PALPEBRAL FISSURES" RELATED [HPO:skoehler]
 synonym: "Upslanting palpebral fissures" EXACT []
@@ -4437,8 +4531,10 @@ is_a: HP:0200020 ! Corneal erosions
 id: HP:0000585
 name: Band keratopathy
 def: "An `abnormality of the cornea` (HP:0000481) characterized by the deposition of calcium in a band across the central cornea, leading to decreased vision, foreign body sensation, and ocular irritation." [HPO:probinson]
+subset: hposlim_core
 synonym: "Calcific band keratopathy" EXACT []
-xref: UMLS:C1720530 "Calcific band keratopathy"
+xref: SNOMED-CT:35055000 "Band-shaped keratopathy"
+xref: UMLS:C0155120 "Band-shaped keratopathy"
 is_a: HP:0011493 ! Central opacification of the cornea
 
 [Term]
@@ -4455,6 +4551,7 @@ id: HP:0000587
 name: Abnormality of the optic nerve
 def: "Abnormality of the `optic nerve` (FMA:50863)." [HPO:probinson]
 comment: The optic nerve, which is also known as cranial nerve II, transmits visual information from the retina to the brain.
+subset: hposlim_core
 is_a: HP:0001098 ! Abnormality of the fundus
 
 [Term]
@@ -4463,6 +4560,7 @@ name: Optic nerve coloboma
 alt_id: HP:0007997
 def: "A cleft of the optic nerve that extends inferiorly." [HPO:probinson, pmid:16219745]
 comment: A congenital, unilateral or bilateral congenital condition caused by incomplete closure of the embryonic fissure.
+subset: hposlim_core
 synonym: "Coloboma of optic nerve" EXACT []
 synonym: "Optic disk coloboma" EXACT []
 xref: UMLS:C0155299 "Optic nerve coloboma"
@@ -4479,7 +4577,7 @@ synonym: "Ocular coloboma" EXACT []
 synonym: "Ocular colobomas" EXACT []
 xref: MeSH:D003103 "Coloboma"
 xref: UMLS:C0009363 "Colobomas"
-is_a: HP:0000478 ! Abnormality of the eye
+is_a: HP:0012372 ! Abnormal eye morphology
 
 [Term]
 id: HP:0000590
@@ -4495,12 +4593,14 @@ is_a: HP:0000544 ! External ophthalmoplegia
 id: HP:0000591
 name: Abnormality of the sclera
 def: "An abnormality of the `sclera` (FMA:58269)." [HPO:probinson]
-is_a: HP:0000478 ! Abnormality of the eye
+subset: hposlim_core
+is_a: HP:0012374 ! Abnormality of the globe
 
 [Term]
 id: HP:0000592
 name: Blue sclerae
 def: "An abnormal bluish coloration of the `sclera` (FMA:58269)." [HPO:probinson]
+subset: hposlim_core
 synonym: "Blue sclera" EXACT []
 synonym: "Bluish sclerae" EXACT []
 xref: UMLS:C0542514 "Blue sclerae"
@@ -4510,6 +4610,7 @@ is_a: HP:0000591 ! Abnormality of the sclera
 id: HP:0000593
 name: Abnormality of the anterior chamber
 def: "Abnormality of the `anterior chamber` (FMA:58078), which is the space in the eye that is behind the cornea and in front of the iris." [HPO:probinson]
+subset: hposlim_core
 synonym: "Anterior chamber anomalies" EXACT []
 synonym: "Ocular anterior chamber abnormality" EXACT []
 xref: UMLS:C0266546 "Anterior chamber anomalies"
@@ -4559,6 +4660,7 @@ id: HP:0000601
 name: Hypotelorism
 alt_id: HP:0007877
 def: "Interpupillary distance less than 2 SD above the mean (alternatively, the appearance of an decreased interpupillary distance or closely spaced eyes)." [HPO:probinson, pmid:19125427]
+subset: hposlim_core
 synonym: "Closely spaced eyes" EXACT []
 synonym: "Ocular hypotelorism" EXACT []
 xref: UMLS:C0424711 "Ocular hypotelorism"
@@ -4575,6 +4677,7 @@ is_a: HP:0000597 ! Ophthalmoparesis
 id: HP:0000603
 name: Central scotoma
 def: "An area of depressed vision located at the point of fixation and that interferes with central vision." [HPO:probinson]
+subset: hposlim_core
 synonym: "Central scotomata" EXACT []
 xref: UMLS:C0152191 "Central scotoma"
 is_a: HP:0000575 ! Scotoma
@@ -4616,6 +4719,7 @@ is_a: HP:0001103 ! Abnormality of the macula
 id: HP:0000609
 name: Optic nerve hypoplasia
 alt_id: HP:0007273
+def: "Underdevelopment of the `optic nerve` (FMA:50863)." [HPO:probinson]
 synonym: "Hypoplastic optic nerves" EXACT []
 xref: UMLS:C0338502 "Optic nerve hypoplasia"
 is_a: HP:0002977 ! Aplasia/Hypoplasia involving the central nervous system
@@ -4625,6 +4729,7 @@ is_a: HP:0008058 ! Aplasia/Hypoplasia of the optic nerve
 id: HP:0000610
 name: Abnormality of the choroid
 def: "An abnormality of the `choroid` (FMA:58298)." [HPO:probinson]
+subset: hposlim_core
 synonym: "Choroid disease" RELATED []
 is_a: HP:0000553 ! Abnormality of the uvea
 is_a: HP:0001098 ! Abnormality of the fundus
@@ -4644,6 +4749,7 @@ is_a: HP:0000610 ! Abnormality of the choroid
 id: HP:0000612
 name: Iris coloboma
 def: "A `coloboma` (HP:0000589) of the `iris` (FMA:58235)." [HPO:probinson, pmid:19369671]
+subset: hposlim_core
 synonym: "Coloboma of iris" EXACT []
 synonym: "Coloboma of the iris" EXACT []
 synonym: "Keyhole iris" EXACT []
@@ -4656,6 +4762,7 @@ id: HP:0000613
 name: Photophobia
 def: "Excessive sensitivity to light with the sensation of discomfort or pain in the eyes due to exposure to bright light." [HPO:probinson]
 comment: Note that the term photodysphoria is used to describe extreme photophobia.
+subset: hposlim_core
 synonym: "Photodysphoria" RELATED []
 xref: MeSH:D020795 "Photophobia"
 xref: UMLS:C0085636 "Photophobia"
@@ -4667,13 +4774,15 @@ id: HP:0000614
 name: Abnormality of the nasolacrimal system
 def: "An abnormality of the nasolacrimal drainage system, which serves as a conduit for tear flow from the external eye to the nasal cavity." [DDD:ncarter]
 comment: The nasolacrimal system consists of the puncta, canaliculi, lacrimal sac, and nasolacrimal duct.
-is_a: HP:0000521 ! Abnormality of tear glands or tear production
+subset: hposlim_core
+is_a: HP:0012372 ! Abnormal eye morphology
 
 [Term]
 id: HP:0000615
 name: Abnormality of the pupil
 alt_id: HP:0008018
 def: "An abnormality of the `pupil` (FMA:58252)." [HPO:probinson]
+subset: hposlim_core
 synonym: "Pupillary abnormalities" EXACT []
 xref: UMLS:C0154936 "Pupillary abnormalities"
 is_a: HP:0000525 ! Abnormality of the iris
@@ -4682,6 +4791,7 @@ is_a: HP:0000525 ! Abnormality of the iris
 id: HP:0000616
 name: Miosis
 def: "Abnormal (non-physiological) constriction of the pupil." [HPO:probinson]
+subset: hposlim_core
 xref: MeSH:D015877 "Miosis"
 xref: UMLS:C0728710 "Miosis"
 is_a: HP:0000615 ! Abnormality of the pupil
@@ -4703,7 +4813,9 @@ is_a: HP:0000496 ! Abnormality of eye movement
 [Term]
 id: HP:0000618
 name: Blindness
-def: "Blindness is the condition of lacking visual perception due to physiological or neurological factors. Various scales have been developed to describe the extent of vision loss and define blindness. Total blindness is the complete lack of form and visual light perception and is clinically recorded as NLP (no light perception). Blindness is frequently used to describe severe visual impairment with residual vision. Those described as having only light perception have no more sight than the ability to tell light from dark and the general direction of a light source." [DDD:gblack]
+def: "Blindness is the condition of lacking visual perception due to physiological or neurological factors." [DDD:gblack]
+comment: Various scales have been developed to describe the extent of vision loss and define blindness. Total blindness is the complete lack of form and visual light perception and is clinically recorded as NLP (no light perception). Blindness is frequently used to describe severe visual impairment with residual vision. Those described as having only light perception have no more sight than the ability to tell light from dark and the general direction of a light source.
+subset: hposlim_core
 xref: MeSH:D001766 "Blindness"
 xref: UMLS:C0376288 "Amaurosis"
 xref: UMLS:C0456909 "Blindness"
@@ -4738,13 +4850,14 @@ name: Blurred vision
 alt_id: HP:0007723
 def: "Lack of sharpness of vision resulting in the inability to see fine detail." [HPO:probinson]
 comment: This is a very nonspecific term and it is preferable to describe the correlates of blurred vision with the corresponding terms if possible.
-synonym: "BLURRED VISION, EPISODIC" RELATED [HPO:skoehler]
+subset: hposlim_core
 xref: UMLS:C0344232 "Blurred vision"
 is_a: HP:0000505 ! Visual impairment
 
 [Term]
 id: HP:0000623
 name: Supranuclear ophthalmoplegia
+subset: hposlim_core
 xref: UMLS:C1408507 "Supranuclear ophthalmoplegia"
 is_a: HP:0000602 ! Ophthalmoplegia
 
@@ -4753,6 +4866,7 @@ id: HP:0000625
 name: Cleft eyelid
 def: "A short discontinuity of the margin of the lower or upper eyelid." [pmid:19125427]
 comment: The lateral segment of the lower eyelid is most commonly involved. As the milder forms of this finding are clearly subjective and no boundary of subjective and objective is defined, the term is considered subjective. The term eyelid coloboma has been replaced because the word coloboma should be used only for defects at the site of fusion of embryologic structures, which is not the case here. Modifiers to designate the location of the cleft may be added, such as lower and lateral.
+subset: hposlim_core
 synonym: "Eyelid coloboma" EXACT []
 synonym: "Notched eyelid." EXACT []
 is_a: HP:0000492 ! Abnormality of the eyelid
@@ -4764,6 +4878,7 @@ name: Posterior embryotoxon
 alt_id: HP:0100740
 def: "A posterior embryotoxon is the presence of a prominent and anteriorly displaced `line of Schwalbe` (FMA:58422)." [HPO:probinson]
 comment: Schwalbe's line is the anatomical line found on the interior surface of the cornea, and delineates the outer limit of the corneal endothelium layer. Specifically, it represents the termination of Descemet's membrane. Up to 30% of the population has posterior embryotoxon as an isolated normal variant.
+subset: hposlim_core
 synonym: "Embryotoxon" EXACT []
 xref: UMLS:C0546967 "Posterior embryotoxon"
 is_a: HP:0008048 ! Abnormality of the line of Schwalbe
@@ -4787,6 +4902,7 @@ is_a: HP:0011004 ! Abnormality of the systemic arterial tree
 id: HP:0000631
 name: Retinal arterial tortuosity
 def: "The presence of an increased number of twists and turns of the retinal artery." [HPO:probinson]
+subset: hposlim_core
 xref: UMLS:C0423401 "Retinal arterial tortuosity"
 is_a: HP:0000630 ! Abnormality of retinal arteries
 is_a: HP:0005116 ! Arterial tortuosity
@@ -4794,7 +4910,10 @@ is_a: HP:0005116 ! Arterial tortuosity
 [Term]
 id: HP:0000632
 name: Lacrimation abnormality
-is_a: HP:0000521 ! Abnormality of tear glands or tear production
+alt_id: HP:0000521
+def: "Abnormality of tear production." [HPO:probinson]
+synonym: "Abnormality of tear production" EXACT []
+is_a: HP:0012373 ! Abnormal eye physiology
 
 [Term]
 id: HP:0000633
@@ -4841,6 +4960,7 @@ is_a: HP:0200007 ! Abnormal size of the palpebral fissures
 id: HP:0000639
 name: Nystagmus
 def: "Rhythmic, involuntary oscillations of one or both eyes related to abnormality in fixation, conjugate gaze, or vestibular mechanisms." [HPO:curators]
+subset: hposlim_core
 xref: UMLS:C1963184 "NYSTAGMUS"
 is_a: HP:0000496 ! Abnormality of eye movement
 
@@ -4854,6 +4974,8 @@ is_a: HP:0000639 ! Nystagmus
 id: HP:0000641
 name: Dysmetric saccades
 def: "The controller signal for saccadic eye movements has two components: the pulse that moves the eye rapidly from one point to the next, and the step that holds the eye in the new position. When both the pulse and the step are not the correct size, a dysmetric refixation eye movement results." [HPO:probinson, pmid:572501]
+subset: hposlim_core
+synonym: "Dysmetric eye saccades" EXACT []
 xref: UMLS:C1836392 "Dysmetric saccades"
 is_a: HP:0000570 ! Abnormality of saccadic eye movements
 
@@ -4880,7 +5002,9 @@ is_a: HP:0012179 ! Craniofacial dystonia
 [Term]
 id: HP:0000646
 name: Amblyopia
-def: "Reduced visual acuity that is uncorrectable by lenses in the absence of detectable anatomic defects in the eye or visual pathways. Ambylopia can result from visual deprivation during the critical period of development of visual abilities which lasts to about the age of 8 years. Thus, ambylopia can result from strabismus, anisometropia, or high hypermetropia in there is a failure to form a focused image in one or both eyes." [HPO:curators]
+def: "Reduced visual acuity that is uncorrectable by lenses in the absence of detectable anatomic defects in the eye or visual pathways." [HPO:probinson]
+comment: Ambylopia can result from visual deprivation during the critical period of development of visual abilities which lasts to about the age of 8 years. Thus, ambylopia can result from strabismus, anisometropia, or high hypermetropia in there is a failure to form a focused image in one or both eyes.
+subset: hposlim_core
 xref: MeSH:D000550 "Amblyopia"
 xref: UMLS:C0002418 "Amblyopia"
 is_a: HP:0000505 ! Visual impairment
@@ -4889,8 +5013,9 @@ is_a: HP:0000505 ! Visual impairment
 id: HP:0000647
 name: Sclerocornea
 def: "A congenital anomaly in which a part or the whole of the cornea acquires the characteristics of sclera, resulting in clouding of the cornea." [HPO:probinson]
+subset: hposlim_core
 xref: UMLS:C1853235 "SCLEROCORNEA"
-is_a: HP:0007957 ! Reduction of corneal clarity
+is_a: HP:0007957 ! Corneal opacity
 
 [Term]
 id: HP:0000648
@@ -4898,6 +5023,7 @@ name: Optic atrophy
 alt_id: HP:0007751
 alt_id: HP:0007855
 def: "`Atrophy` (MPATH:127) of the `optic nerve` (FMA:50863)." [HPO:probinson]
+subset: hposlim_core
 synonym: "Optic nerve atrophy" EXACT []
 synonym: "Optic-nerve degeneration" EXACT []
 xref: MeSH:D009896 "Optic Atrophy"
@@ -4907,6 +5033,9 @@ is_a: HP:0000587 ! Abnormality of the optic nerve
 [Term]
 id: HP:0000649
 name: Abnormality of vision evoked potentials
+def: "An anomaly of visually evoked potentials (VEP), which are electrical potentials, initiated by brief visual stimuli, which are recorded from the scalp overlying the visual cortex." [HPO:probinson]
+comment: The terms visually evoked potential (VEP), visually evoked response (VER) and visually evoked cortical potential (VECP) are equivalent.
+subset: hposlim_core
 synonym: "Abnormal visual evoked potential" EXACT []
 synonym: "Abnormal visual evoked potentials" EXACT []
 synonym: "Abnormal visual evoked responses" EXACT []
@@ -4924,6 +5053,7 @@ is_a: HP:0000649 ! Abnormality of vision evoked potentials
 id: HP:0000651
 name: Diplopia
 def: "Diplopia is a condition in which a single object is perceived as two images, it is also known as double vision." [HPO:probinson]
+subset: hposlim_core
 synonym: "Double vision" EXACT []
 xref: MeSH:D004172 "Diplopia"
 xref: UMLS:C0012569 "Diplopia"
@@ -4977,6 +5107,8 @@ is_a: HP:0000512 ! Abnormal electroretinogram
 [Term]
 id: HP:0000655
 name: Vitreoretinal degeneration
+def: "Gradual deterioration of the vitreous humor and retina." [HPO:probinson]
+subset: hposlim_core
 xref: UMLS:C0344290 "Vitreoretinal degeneration"
 is_a: HP:0000546 ! Retinal degeneration
 
@@ -4996,6 +5128,7 @@ alt_id: HP:0000628
 alt_id: HP:0007764
 def: "Inability to follow objects visually with compensatory head movements, decreased smooth pursuit, and cancellation of the vestibulo-ocular reflex." [HPO:probinson, pmid:20615230]
 comment: Oculomotor apraxia leads defective or absent horizontal voluntary eye movements with head thrusting to look at objects to the side as well as jerky, abnormal eye movements.
+subset: hposlim_core
 synonym: "Defective or absent horizontal voluntary eye movements" RELATED []
 synonym: "Ocular motor apraxia" EXACT []
 xref: UMLS:C0497202 "Abnormal eye movements"
@@ -5013,6 +5146,7 @@ is_a: HP:0002186 ! Apraxia
 id: HP:0000659
 name: Peters anomaly
 def: "A form of anterior segment dysgenesis in which abnormal cleavage of the anterior chamber occurs. Peters anomaly is characterized by central, paracentral, or complete corneal opacity." [HPO:probinson]
+subset: hposlim_core
 xref: UMLS:C0344559 "Peter's anomaly"
 is_a: HP:0007700 ! Anterior segment dysgenesis
 
@@ -5037,6 +5171,7 @@ alt_id: HP:0007725
 alt_id: HP:0007865
 alt_id: HP:0007895
 def: "Inability to see well at night or in poor light." [HPO:probinson]
+subset: hposlim_core
 synonym: "Difficulties with night vision" RELATED []
 synonym: "Nyctalopia" EXACT []
 xref: MeSH:D009755 "Night Blindness"
@@ -5044,27 +5179,22 @@ xref: UMLS:C0028077 "Night Blindness"
 is_a: HP:0000504 ! Abnormality of vision
 
 [Term]
-id: HP:0000663
-name: Enophthalmos
-xref: MeSH:D015841 "Enophthalmos"
-xref: UMLS:C0014306 "Enophthalmos"
-is_a: HP:0000490 ! Deeply set eye
-
-[Term]
 id: HP:0000664
 name: Synophrys
 alt_id: HP:0002210
 def: "Meeting of the medial `eyebrows` (FMA:54237) in the midline." [pmid:19125427]
+subset: hposlim_core
 synonym: "Synophris" EXACT []
 synonym: "Unibrow" EXACT []
 xref: UMLS:C0431447 "Synophrys"
+is_a: HP:0000534 ! Abnormality of the eyebrow
 is_a: HP:0002219 ! Facial hypertrichosis
-is_a: HP:0010747 ! Medial flaring of the eyebrow
 
 [Term]
 id: HP:0000666
 name: Horizontal nystagmus
 def: "Nystagmus consisting of horizontal to-and-fro eye movements." [HPO:probinson]
+subset: hposlim_core
 synonym: "Nystagmus, horizontal" EXACT []
 xref: UMLS:C0271385 "Horizontal Nystagmus"
 is_a: HP:0000639 ! Nystagmus
@@ -5072,10 +5202,11 @@ is_a: HP:0000639 ! Nystagmus
 [Term]
 id: HP:0000667
 name: Phthisis bulbi
-def: "Atrophy of the eyeball with blindness and decreased intraocular pressure due to end-stage intraocular disease." [HPO:curators]
+def: "Atrophy of the eyeball with blindness and decreased intraocular pressure due to end-stage intraocular disease." [HPO:probinson]
 comment: Phthisis bulbi refers to atrophy and degeneration of a blind eye.
+subset: hposlim_core
 xref: UMLS:C0271007 "Phthisis bulbi"
-is_a: HP:0000478 ! Abnormality of the eye
+is_a: HP:0012374 ! Abnormality of the globe
 
 [Term]
 id: HP:0000668
@@ -5094,6 +5225,7 @@ def: "Caries is a multifactorial bacterial infection affecting the structure of 
 comment: It should be noted that it is not always possible to rule out environmental influences and that reports of association between hereditary diseases and susceptibility to dental caries should be regarded with caution.
 synonym: "Caries" EXACT []
 synonym: "Dental caries" EXACT []
+synonym: "Dental decay" RELATED []
 synonym: "Early dental caries" EXACT []
 synonym: "Frequent caries" EXACT []
 xref: MeSH:D003731 "Dental Caries"
@@ -7805,7 +7937,7 @@ is_a: HP:0000991 ! Xanthomatosis
 id: HP:0001040
 name: Multiple pterygia
 xref: UMLS:C1867448 "Pterygia, multiple"
-is_a: HP:0001059 ! Pterygia
+is_a: HP:0001059 ! Pterygium
 
 [Term]
 id: HP:0001041
@@ -7943,8 +8075,11 @@ is_a: HP:0011354 ! Generalized abnormality of skin
 
 [Term]
 id: HP:0001059
-name: Pterygia
+name: Pterygium
 def: "Pterygia are 'winglike' triangular membranes occurring in the neck, eyes, knees, elbows, ankles or digits." [HPO:probinson]
+synonym: "Pterygia" RELATED []
+xref: SNOMED-CT:77489003 "Pterygium"
+xref: UMLS:C0033999 "Pterygium"
 is_a: HP:0001367 ! Abnormal joint morphology
 is_a: HP:0011356 ! Regional abnormality of skin
 
@@ -7952,7 +8087,7 @@ is_a: HP:0011356 ! Regional abnormality of skin
 id: HP:0001060
 name: Axillary pterygia
 xref: UMLS:C1844738 "Axillary pterygia"
-is_a: HP:0001059 ! Pterygia
+is_a: HP:0001059 ! Pterygium
 
 [Term]
 id: HP:0001061
@@ -8109,6 +8244,7 @@ alt_id: HP:0007637
 alt_id: HP:0007882
 alt_id: HP:0008016
 def: "Dislocation or malposition of the crystalline lens of the eye. A partial displacement (or dislocation) of the lens is described as a subluxation of the lens, while a complete displacement is termed luxation of the lens. A complete displacement occurs if the lens is completely outside the patellar fossa of the lens, either in the anterior chamber, in the vitreous, or directly on the retina. If the lens is partially displaced but still contained within the lens space, then it is termed subluxation." [HPO:probinson]
+subset: hposlim_core
 synonym: "Abnormality of lens position" EXACT []
 synonym: "Dislocated lens" EXACT []
 synonym: "Dislocated lenses" EXACT []
@@ -8138,6 +8274,7 @@ id: HP:0001085
 name: Papilledema
 alt_id: HP:0001130
 def: "Papilledema refers to edema (swelling) of the optic disc secondary to any factor which increases cerebral spinal fluid pressure." [HPO:probinson]
+subset: hposlim_core
 xref: MeSH:D010211 "Papilledema"
 xref: UMLS:C0155288 "Papilledema"
 is_a: HP:0000587 ! Abnormality of the optic nerve
@@ -8153,6 +8290,7 @@ id: HP:0001088
 name: Brushfield spots
 def: "The presence of whitish spots in a ring-like arrangement at the periphery of the iris." [HPO:probinson]
 comment: Brushfield spots are relatively common in the general population but opccur more frequently in persons with certain disorders (especially Down syndrome).
+subset: hposlim_core
 synonym: "Iris brushfield spots" EXACT []
 xref: UMLS:C1303007 "Brushfield spots"
 is_a: HP:0008034 ! Abnormal iris pigmentation
@@ -8167,6 +8305,8 @@ is_a: HP:0000525 ! Abnormality of the iris
 [Term]
 id: HP:0001090
 name: Large eyes
+alt_id: HP:0200093
+def: "Increased size of the  ocular globe (eyeball)." [HPO:probinson]
 xref: UMLS:C1855852 "Large eyes"
 is_a: HP:0100887 ! Abnormality of globe size
 
@@ -8176,6 +8316,7 @@ name: Absent lacrimal puncta
 alt_id: HP:0007977
 def: "No identifiable superior and/or inferior lacrimal punctum." [pmid:19125427]
 comment: The lacrimal puncta (openings of the tear ducts) are normally located at the medial margin of each eyelid. The opening on the lower eyelid border is more visible than the opening on the upper eyelid border.
+subset: hposlim_core
 synonym: "Absent lacrimal gland puncta" EXACT []
 synonym: "Absent lacrimal openings" EXACT []
 synonym: "Agenesis of the lacrimal punctum" RELATED []
@@ -8211,6 +8352,7 @@ is_a: HP:0000479 ! Abnormality of the retina
 id: HP:0001096
 name: Keratoconjunctivitis
 def: "Inflammation of the cornea and conjunctiva." [HPO:probinson]
+subset: hposlim_core
 xref: MeSH:D007637 "Keratoconjunctivitis"
 xref: UMLS:C0022573 "Keratoconjunctivitis"
 is_a: HP:0000491 ! Keratitis
@@ -8220,6 +8362,7 @@ is_a: HP:0000509 ! Conjunctivitis
 id: HP:0001097
 name: Keratoconjunctivitis sicca
 def: "Dryness of the eye related to deficiency of the tear film components (aqueous, mucin, or lipid), lid surface abnormalities, or epithelial abnormalities. Keratoconjunctivitis sicca often results in a scratchy or sandy sensation (foreign body sensation) in the eyes, and may also be associated with itching, inability to produce tears, photosensitivity, redness, pain, and difficulty in moving the eyelids." [HPO:probinson]
+subset: hposlim_core
 synonym: "Dry eye syndrome" RELATED []
 synonym: "Keratitis sicca" EXACT []
 synonym: "Xerophthalmia" EXACT []
@@ -8241,6 +8384,7 @@ is_a: HP:0001098 ! Abnormality of the fundus
 id: HP:0001100
 name: Heterochromia iridis
 def: "Heterochromia iridis is a difference in the color of the `iris` (FMA:58235) in the two eyes." [HPO:probinson]
+subset: hposlim_core
 synonym: "Heterochromia irides" EXACT []
 xref: UMLS:C0423318 "heterochromia"
 is_a: HP:0008034 ! Abnormal iris pigmentation
@@ -8268,6 +8412,7 @@ is_a: HP:0000479 ! Abnormality of the retina
 id: HP:0001103
 name: Abnormality of the macula
 def: "An abnormality of the `macula lutea` (FMA:58637) is an oval-shaped highly pigmented yellow spot near the center of the retina." [HPO:probinson]
+subset: hposlim_core
 synonym: "Macula abnormality" EXACT []
 synonym: "Macular abnormality" EXACT []
 xref: UMLS:C0730362 "Macula abnormality"
@@ -8276,6 +8421,8 @@ is_a: HP:0000479 ! Abnormality of the retina
 [Term]
 id: HP:0001104
 name: Macular hypoplasia
+def: "Underdevelopment of the `macula lutea` (FMA:58637)." [HPO:probinson]
+subset: hposlim_core
 xref: UMLS:C1849412 "Macular hypoplasia"
 is_a: HP:0008059 ! Aplasia/Hypoplasia of the macula
 
@@ -8362,6 +8509,7 @@ is_a: HP:0000518 ! Cataract
 id: HP:0001119
 name: Keratoglobus
 def: "Limbus-to-limbus corneal thinning, often greatest in the periphery, with globular protrusion of the cornea." [pmid:19667340]
+subset: hposlim_core
 xref: UMLS:C0344530 "Keratoglobus"
 is_a: HP:0100689 ! Decreased corneal thickness
 is_a: HP:0100692 ! Increased corneal curvature
@@ -8405,6 +8553,7 @@ name: Cryptophthalmos
 alt_id: HP:0008032
 def: "Cryptophthalmos is a condition of total absence of eyelids and the skin of forehead is continuous with that of cheek, in which the eyeball is completely concealed by the skin, which is stretched over the orbital cavity." [HPO:curators, pmid:19125427]
 comment: Failure of eyelid formation. Crypopthalmos is typically associated with a rudimentary or small globe. Frequently, a tuft of hair accompanies the aberrant skin.
+subset: hposlim_core
 xref: UMLS:C0311249 "Cryptophthalmos"
 is_a: HP:0100886 ! Abnormality of globe location
 is_a: HP:0100887 ! Abnormality of globe size
@@ -8428,6 +8577,7 @@ id: HP:0001131
 name: Corneal dystrophy
 alt_id: HP:0007775
 def: "An `abnormality of the cornea` (HP:0000481) that is characterized by opacity of one or parts of the cornea." [HPO:probinson]
+subset: hposlim_core
 xref: UMLS:C0010036 "Corneal dystrophy"
 is_a: HP:0000481 ! Abnormality of the cornea
 
@@ -8493,9 +8643,10 @@ is_a: HP:0000610 ! Abnormality of the choroid
 
 [Term]
 id: HP:0001140
-name: Epibulbar dermoids
+name: Epibulbar dermoid
 def: "An epibulbar dermoid is a benign tumor typically found at the junction of the cornea and sclera (limbal epibullar dermoid)." [HPO:probinson]
-synonym: "Epibulbar dermoid" EXACT []
+subset: hposlim_core
+synonym: "Epibulbar dermoids" RELATED []
 xref: UMLS:C1867616 "Epibulbar dermoids"
 is_a: HP:0000481 ! Abnormality of the cornea
 is_a: HP:0000502 ! Abnormality of the conjunctiva
@@ -8518,13 +8669,16 @@ id: HP:0001142
 name: Lenticonus
 def: "A conical projection of the anterior or posterior surface of the lens, occurring as a developmental anomaly." [DDD:ncarter]
 comment: A conical projection of the anterior or posterior surface of the lens.
+subset: hposlim_core
 xref: UMLS:C0239119 "Lenticonus"
 is_a: HP:0011526 ! Abnormality of lens shape
 
 [Term]
 id: HP:0001144
-name: Orbital cysts
-def: "Presence of cysts in the region of the orbita. Orbital cysts can be derived from epithelial or glandular tissue within or surrounding the orbit (lacrimal glands, salivary glands, conjunctival, oral, nasal, or sinus epithelium)." [HPO:curators]
+name: Orbital cyst
+def: "Presence of a cyst in the region of the orbita. Orbital cysts can be derived from epithelial or glandular tissue within or surrounding the orbit (lacrimal glands, salivary glands, conjunctival, oral, nasal, or sinus epithelium)." [HPO:probinson]
+synonym: "Orbital cysts" RELATED []
+xref: SNOMED-CT:31021007
 xref: UMLS:C0155285 "Orbital cysts"
 is_a: HP:0000315 ! Abnormality of the orbital region
 
@@ -9941,6 +10095,8 @@ name: Facial diplegia
 alt_id: HP:0005334
 alt_id: HP:0007085
 def: "Facial diplegia refers to bilateral facial palsy (bilateral facial palsy is much rarer than unilateral facial palsy)." [HPO:probinson]
+subset: hposlim_core
+synonym: "Bilateral facial palsy" EXACT []
 synonym: "Bilateral facial weakness" EXACT []
 synonym: "Facial paresis, bilateral" EXACT []
 xref: UMLS:C1836003 "Facial diplegia"
@@ -9961,10 +10117,9 @@ is_a: HP:0001311 ! Neurophysiological abnormality
 [Term]
 id: HP:0001355
 name: Megalencephaly
-def: "The presence of an unusually large, and usually malfunctioning brain." [HPO:curators]
+def: "Enlargement of all or parts of the cerebral hemispheres." [HPO:probinson]
 synonym: "Macrencephaly" EXACT []
-xref: UMLS:C0221355 "Macrocephaly"
-is_a: HP:0000256 ! Macrocephaly
+is_a: HP:0002060 ! Abnormality of the cerebrum
 
 [Term]
 id: HP:0001357
@@ -9972,6 +10127,7 @@ name: Plagiocephaly
 alt_id: HP:0001121
 def: "Asymmetric head shape, which is usually a combination of unilateral occipital flattening with ipsilateral frontal prominence, leading to rhomboid cranial shape." [pmid:19125436]
 comment: Plagiocephaly may affect the posterior skull alone. With plagiocephaly, one can see a combination of unilateral occipital flattening with ipsilateral frontal prominence, leading to rhomboid cranial shape or asymmetry of the posterior skull alone.
+subset: hposlim_core
 xref: MeSH:D059041 "Plagiocephaly"
 xref: UMLS:C0265529 "Plagiocephaly"
 is_a: HP:0002648 ! Abnormality of calvarial morphology
@@ -9997,7 +10153,7 @@ is_a: HP:0000639 ! Nystagmus
 [Term]
 id: HP:0001362
 name: Skull defect
-def: "A localized defect in the bone of the skull resulting from abnormal embryological development. The defect is covered by normal skin. In some cases, skull x-rays have shown underlying lytic bone lesions which have closed before the age of one year." [HPO:curators]
+def: "A localized defect in the bone of the skull resulting from abnormal embryological development. The defect is covered by normal skin. In some cases, skull x-rays have shown underlying lytic bone lesions which have closed before the age of one year." [HPO:probinson]
 is_a: HP:0002648 ! Abnormality of calvarial morphology
 
 [Term]
@@ -10011,6 +10167,7 @@ alt_id: HP:0005467
 alt_id: HP:0008492
 def: "Craniosynostosis refers to the premature closure of the cranial sutures. Primary craniosynostosis refers to the closure of one or more sutures due to abnormalities in skull development, and secondary craniosynostosis results from failure of brain growth." [HPO:probinson]
 comment: Skull deformity caused by the premature closure of the cranial sutures. Craniostenosis is a deformity of the skull caused by craniosynostosis, with consequent cessation of skull growth.
+subset: hposlim_core
 synonym: "Craniostenosis" RELATED []
 synonym: "Craniosyostosis" EXACT []
 synonym: "Early fusion of cranial sutures" EXACT []
@@ -10743,6 +10900,8 @@ is_a: HP:0004327 ! Abnormality of the vitreous humor
 [Term]
 id: HP:0001491
 name: Congenital fibrosis of extraocular muscles
+def: "Congenital non-progressive ophthalmoplegia with multiple extraocular muscle restrictions. Typically, there is ptosis and variable degrees of restriction of horizontal and vertical eye movements." [HPO:probinson]
+subset: hposlim_core
 synonym: "Congenital fibrosis of extraocular muscles (CFEOM)" EXACT []
 synonym: "Congenital fibrosis of the extraocular muscles" EXACT []
 is_a: HP:0008049 ! Abnormality of the extraocular muscles
@@ -10751,6 +10910,7 @@ is_a: HP:0008049 ! Abnormality of the extraocular muscles
 id: HP:0001492
 name: Axenfeld anomaly
 def: "Axenfeld's anomaly is a bilateral disorder characterized by a prominent, anteriorly displaced Schwalbe's line (posterior embryotoxon) and peripheral iris strands which span the anterior chamber angle to attach to Schwalbe's line." [HPO:probinson]
+subset: hposlim_core
 xref: UMLS:C0266548 "Axenfeld anomaly"
 is_a: HP:0007700 ! Anterior segment dysgenesis
 
@@ -11286,6 +11446,8 @@ is_a: HP:0000973 ! Cutis laxa
 id: HP:0001583
 name: Rotary nystagmus
 def: "A form of nystagmus in which the eyeball makes rotary motions around the axis." [HPO:probinson]
+subset: hposlim_core
+synonym: "Rotatory Nystagmus" EXACT []
 xref: UMLS:C0240595 "Rotary Nystagmus"
 is_a: HP:0000639 ! Nystagmus
 
@@ -12034,6 +12196,7 @@ is_a: HP:0011025 ! Abnormality of cardiovascular system physiology
 [Term]
 id: HP:0001694
 name: Right-to-left shunt
+def: "Pattern of blood flow in the heart that deviates from the normal circuit of the circulatory system from the right side of the heart to the left." [HPO:mhaendel]
 is_a: HP:0001693 ! Cardiac shunt
 
 [Term]
@@ -14148,6 +14311,7 @@ alt_id: HP:0004675
 alt_id: HP:0005124
 def: "An abnormal morphology (form) of the face or its components." [DDD:jclayton-smith]
 comment: This term now covers many of the historical inexact descriptions such as Bird-like facies that probably should be avoided in modern genetics. This portion of the Ontology should be revised.
+subset: hposlim_core
 synonym: "Craniofacial abnormalities" RELATED []
 synonym: "Craniofacial dysmorphism" EXACT []
 synonym: "Distinctive facies" EXACT []
@@ -14192,6 +14356,7 @@ is_a: HP:0000290 ! Abnormality of the forehead
 id: HP:0002006
 name: Facial cleft
 def: "A congenital malformation with a cleft (gap or opening) in the face." [HPO:probinson]
+subset: hposlim_core
 synonym: "FACIAL CLEFTS" RELATED [HPO:skoehler]
 xref: UMLS:C0685787 "Facial clefts"
 is_a: HP:0000271 ! Abnormality of the face
@@ -14205,6 +14370,7 @@ alt_id: HP:0001358
 alt_id: HP:0001359
 def: "Bilateral bulging of the lateral frontal bone prominences with relative sparing of the midline." [pmid:19125436]
 comment: This is not the same as prominent forehead.
+subset: hposlim_core
 xref: UMLS:C0221354 "Frontal bossing"
 is_a: HP:0000290 ! Abnormality of the forehead
 is_a: HP:0011218 ! Abnormal shape of the frontal region
@@ -14532,6 +14698,7 @@ id: HP:0002057
 name: Prominent glabella
 def: "Forward protrusion of the `glabella` (FMA:52851)." [HPO:probinson, pmid:19125436]
 comment: The glabella is the area of the forehead in the midline between the supraorbital ridges, just above the nasal root.
+subset: hposlim_core
 xref: UMLS:C1860247 "Prominent glabella"
 is_a: HP:0002056 ! Abnormality of the glabella
 
@@ -15766,6 +15933,7 @@ is_a: HP:0100134 ! Abnormality of the axillary hair
 id: HP:0002223
 name: Absent eyebrow
 def: "Absence of the `eyebrow` (FMA:54237)." [HPO:probinson]
+subset: hposlim_core
 synonym: "Absent eyebrows" EXACT []
 xref: UMLS:C1844604 "Scand-absent eyebrows"
 is_a: HP:0002298 ! Absent hair
@@ -15794,6 +15962,7 @@ name: White eyebrow
 alt_id: HP:0002228
 alt_id: HP:0004536
 def: "White color (lack of pigmentation) of the eyebrow." [HPO:probinson]
+subset: hposlim_core
 is_a: HP:0000534 ! Abnormality of the eyebrow
 is_a: HP:0009887 ! Abnormality of hair pigmentation
 
@@ -15854,6 +16023,7 @@ is_a: HP:0003328 ! Abnormal hair laboratory examination
 id: HP:0002236
 name: Frontal upsweep of hair
 def: "Upward and/or sideward growth of anterior hair." [pmid:19125436]
+subset: hposlim_core
 synonym: "Cowlick " EXACT []
 synonym: "Upswept frontal hair" EXACT []
 synonym: "UPSWEPT FRONTAL HAIR PATTERN" RELATED [HPO:skoehler]
@@ -17568,6 +17738,7 @@ alt_id: HP:0007804
 alt_id: HP:0008505
 def: "Increased height of the central portion of the eyebrow, forming a crescent, semicircular, or inverted U shape." [pmid:19125427]
 comment: Most eyebrows have some arch with downturning medially and laterally.
+subset: hposlim_core
 synonym: "Arched eyebrows" EXACT []
 synonym: "Bowed and upward slanting eyebrows" RELATED []
 synonym: "Broad, arched eyebrows" EXACT []
@@ -18169,6 +18340,7 @@ id: HP:0002645
 name: Wormian bones
 def: "The presence of extra bones within a cranial suture. Wormian bones are irregular isolated bones which appear in addition to the usual centers of ossification of the cranium." [HPO:probinson]
 comment: Irregular, solated bones in the lambdoidal suture or at the fontanelles.
+subset: hposlim_core
 synonym: "Extra sutural bones" EXACT []
 xref: UMLS:C0222716 "Wormian bones"
 is_a: HP:0011329 ! Abnormality of cranial sutures
@@ -18385,6 +18557,7 @@ alt_id: HP:0004477
 alt_id: HP:0005459
 def: "`Trilobar` (PATO:0002241) skull configuration when viewed from the front or behind." [pmid:19125436]
 comment: A deformity of the skull that resembles a cloverleaf and is characterized by very prominent temporal bones with constriction of the remainder of the cranium. Cloverleaf skull is commonly accompanied by hydrocephalus.
+subset: hposlim_core
 synonym: "Kleeblattschaedel" EXACT []
 xref: UMLS:C1860050 "Cloverleaf skull"
 is_a: HP:0002648 ! Abnormality of calvarial morphology
@@ -18392,7 +18565,12 @@ is_a: HP:0002648 ! Abnormality of calvarial morphology
 [Term]
 id: HP:0002677
 name: Small foramen magnum
-def: "An abnormal decrease in the size of the foramen magnum." [HPO:curators]
+alt_id: HP:0005468
+def: "An abnormal narrowing of the `foramen magnum` (FMA:75306)." [HPO:probinson]
+comment: The foramen magnum is the aperture through which the medulla oblongata enters and exits the skull. Stenosis of the foramen magnum can represent a risk for compression to the spinal cord.
+subset: hposlim_core
+synonym: "Foramen magnum stenosis" EXACT []
+xref: UMLS:C1535953 "Foramen magnum stenosis"
 xref: UMLS:C1861217 "Small foramen magnum"
 is_a: HP:0002699 ! Abnormality of the foramen magnum
 
@@ -18406,12 +18584,14 @@ is_a: HP:0002648 ! Abnormality of calvarial morphology
 id: HP:0002679
 name: Abnormality of the sella turcica
 def: "Abnormality of the `sella turcica` (FMA:54709), a saddle-shaped depression in the sphenoid bone at the base of the human skull." [HPO:probinson]
+subset: hposlim_core
 is_a: HP:0000929 ! Abnormality of the skull
 
 [Term]
 id: HP:0002680
 name: J-shaped sella turcica
-def: "A deformity of the sella turcica whereby the sella extends further anterior than normal such that the anterior clinoid process appears to overhang it, giving the appearance of the letter J on imaging of the skull." [HPO:curators]
+def: "A deformity of the sella turcica whereby the sella extends further anterior than normal such that the anterior clinoid process appears to overhang it, giving the appearance of the letter J on imaging of the skull." [HPO:pnrobinson]
+subset: hposlim_core
 synonym: "J-shaped sella" EXACT []
 is_a: HP:0002681 ! Deformed sella turcica
 
@@ -18484,6 +18664,7 @@ id: HP:0002690
 name: Large sella turcica
 alt_id: HP:0005444
 def: "An abnormal enlargement of the `sella turcica` (FMA:54709)." [HPO:probinson]
+subset: hposlim_core
 synonym: "Enlarged sella turcica" EXACT []
 synonym: "Prominent sella turcica" EXACT []
 xref: UMLS:C1843677 "Large sella turcica"
@@ -18494,6 +18675,7 @@ id: HP:0002691
 name: Platybasia
 def: "A developmental malformation of the occipital bone and upper end of the cervical spine, in which the latter appears to have pushed the floor of the occipital bone upward such that there is an  abnormal flattening of the skull base." [HPO:probinson]
 comment: Platybasia is malformation of the base of the skull due to softening of skull bones or a developmental anomaly, with bulging upwards of the floor of the posterior cranial fossa, upward displacement of the upper cervical vertebrae, and bony impingement on the brainstem. It results in abnormal obtuseness of the basal angle that can be demonstrated radiographically. If platybasia is associated with basilar invagination, compression of the brainstem and upper cervical cord can result.
+subset: hposlim_core
 xref: MeSH:D010985 "Platybasia"
 xref: UMLS:C0032209 "Platybasia"
 is_a: HP:0002648 ! Abnormality of calvarial morphology
@@ -18543,13 +18725,16 @@ is_a: HP:0002696 ! Abnormality of the parietal bone
 [Term]
 id: HP:0002699
 name: Abnormality of the foramen magnum
-def: "Any abnormality of the foramen magnum (the aperture through which the medulla oblongata enters and exits the skull)." [HPO:curators]
+def: "Any abnormality of the `foramen magnum` (FMA:75306)." [HPO:probinson]
+comment: The foramen magnum is the aperture through which the medulla oblongata enters and exits the skull.
+subset: hposlim_core
 is_a: HP:0000929 ! Abnormality of the skull
 
 [Term]
 id: HP:0002700
 name: Large foramen magnum
 def: "An abnormal increase in the size of the foramen magnum." [HPO:curators]
+subset: hposlim_core
 synonym: "Wide foramen magnum" EXACT []
 xref: UMLS:C1867128 "Large foramen magnum"
 is_a: HP:0002699 ! Abnormality of the foramen magnum
@@ -24976,6 +25161,7 @@ is_a: HP:0002867 ! Abnormality of the ilium
 id: HP:0003797
 name: Limb-girdle muscle atrophy
 def: "Muscular atrophy affecting the muscles of the limb girdle." [HPO:curators]
+synonym: "Limb-girdle myopathy" BROAD []
 xref: UMLS:C1842552 "Limb-girdle muscle atrophy"
 is_a: HP:0003202 ! Amyotrophy
 
@@ -27477,6 +27663,9 @@ creation_date: 2008-02-27T03:23:00Z
 [Term]
 id: HP:0004327
 name: Abnormality of the vitreous humor
+def: "An anomaly of the `vitreous body` (FMA:58827)." [HPO:probinson]
+comment: The vitreous humor is the clear gel that fills the space between the lens and the retina.
+subset: hposlim_core
 is_a: HP:0004329 ! Abnormality of the posterior segment of the eye
 created_by: peter
 creation_date: 2008-02-27T04:20:00Z
@@ -27486,7 +27675,7 @@ id: HP:0004328
 name: Abnormality of the anterior segment of the eye
 def: "An abnormality of the `anterior segment` (FMA:58865) of the eye." [HPO:probinson]
 comment: The anterior segment comprises the structures in front of the vitreous humour: the cornea, iris, ciliary body, and lens.
-is_a: HP:0000478 ! Abnormality of the eye
+is_a: HP:0012374 ! Abnormality of the globe
 created_by: peter
 creation_date: 2008-02-27T04:23:00Z
 
@@ -27494,14 +27683,15 @@ creation_date: 2008-02-27T04:23:00Z
 id: HP:0004329
 name: Abnormality of the posterior segment of the eye
 comment: The posterior segment comprises the anterior hyaloid membrane and all of the optical structures behind it: the vitreous humor, retina, choroid, and optic nerve.
-is_a: HP:0000478 ! Abnormality of the eye
+is_a: HP:0012374 ! Abnormality of the globe
 created_by: peter
 creation_date: 2008-02-27T04:25:00Z
 
 [Term]
 id: HP:0004330
 name: Increased skull ossification
-def: "An increase in the magnitude or amount of ossification of the skull." [HPO:curators]
+def: "An increase in the magnitude or amount of ossification of the skull." [HPO:probinson]
+subset: hposlim_core
 is_a: HP:0002703 ! Abnormality of skull ossification
 is_a: HP:0011001 ! Increased bone mineral density
 created_by: peter
@@ -27511,7 +27701,8 @@ creation_date: 2008-02-28T11:54:00Z
 id: HP:0004331
 name: Decreased skull ossification
 alt_id: HP:0003780
-def: "A reduction in the magnitude or amount of ossification of the skull." [HPO:curators]
+def: "A reduction in the magnitude or amount of ossification of the skull." [HPO:probinson]
+subset: hposlim_core
 synonym: "Deficient skull ossification" EXACT []
 synonym: "Ossification defect of skull" EXACT []
 synonym: "Poorly mineralized cranium" EXACT []
@@ -27923,7 +28114,7 @@ name: Abnormality of alkaline phosphatase activity
 def: "An abnormality of `alkaline phosphatase activity` (GO:0004035)." [HPO:probinson]
 comment: Note that the alkaline phosphatase family has four isoenzymes in humans, each of which additionally can have different isoforms. The primary clinical importance of measuring alkaline phosphatase is to check the possibility of bone disease or liver disease.
 synonym: "Alkaline phosphytase abnormal" RELATED []
-is_a: HP:0001939 ! Abnormality of metabolism/homeostasis
+is_a: HP:0012379 ! Abnormal enzyme/coenzyme activity
 created_by: peter
 creation_date: 2008-03-18T08:13:00Z
 
@@ -28315,6 +28506,8 @@ creation_date: 2008-03-18T09:42:00Z
 [Term]
 id: HP:0004428
 name: Elfin facies
+def: "This is a description previously used to describe a facial form characterized by a short, upturned nose, wide mouth, widely spaced eyes, and full cheeks. Because of the imprecision in this definition it is preferable to describe these features precisely. This term is retained because it was often used in the past, but it should not be used for new annotations." [HPO:probinson]
+subset: hposlim_core
 xref: UMLS:C0332606 "Elfin facies"
 is_a: HP:0001999 ! Abnormal facial shape
 created_by: peter
@@ -28416,6 +28609,8 @@ alt_id: HP:0002675
 alt_id: HP:0002685
 alt_id: HP:0002739
 alt_id: HP:0004441
+def: "Premature closure of the `coronal suture of skull` (FMA:52928)." [HPO:probinson]
+subset: hposlim_core
 synonym: "Craniosynostosis (coronal)" EXACT []
 xref: UMLS:C1856266 "Coronal craniosynostosis"
 is_a: HP:0001363 ! Craniosynostosis
@@ -28426,6 +28621,7 @@ creation_date: 2008-03-18T09:59:00Z
 id: HP:0004442
 name: Sagittal craniosynostosis
 def: "A kind of `craniosynostosis` (HP:0001363) affecting the `sagittal suture` (FMA:52929)." [HPO:probinson]
+subset: hposlim_core
 synonym: "Craniosynostosis, sagittal" EXACT []
 synonym: "Craniosynostosis, sagittal suture" EXACT []
 xref: UMLS:C0432123 "Sagittal craniosynostosis"
@@ -28438,6 +28634,7 @@ id: HP:0004443
 name: Lambdoidal craniosynostosis
 alt_id: HP:0004486
 def: "A kind of `craniosynostosis` (HP:0001363) affecting the lambdoidal suture." [HPO:probinson]
+subset: hposlim_core
 synonym: "Lambdoid craniosynostosis" EXACT []
 is_a: HP:0001363 ! Craniosynostosis
 created_by: peter
@@ -28696,7 +28893,9 @@ is_a: HP:0000248 ! Brachycephaly
 [Term]
 id: HP:0004488
 name: Macrocephaly at birth
-def: "The presence of an abnormally large skull with onset at birth." [HPO:curators]
+def: "The presence of an abnormally large skull with onset at birth." [HPO:probinson]
+subset: hposlim_core
+synonym: "Head circumference large for gestational age" EXACT []
 is_a: HP:0000256 ! Macrocephaly
 
 [Term]
@@ -28725,12 +28924,12 @@ comment: This term indicates that both the fontanelles and the sutures are widel
 synonym: "Widely patent fontanels and sutures" EXACT []
 is_a: HP:0000239 ! Large fontanelles
 is_a: HP:0010537 ! Wide cranial sutures
-is_a: HP:0011329 ! Abnormality of cranial sutures
 
 [Term]
 id: HP:0004493
 name: Craniofacial hyperostosis
-def: "This term is used for excessive growth of the craniofacial bones." [HPO:curators]
+def: "Excessive growth of the craniofacial bones." [HPO:probinson]
+subset: hposlim_core
 xref: UMLS:C1868085 "Craniofacial hyperostosis"
 is_a: HP:0000271 ! Abnormality of the face
 is_a: HP:0004437 ! Cranial hyperostosis
@@ -29247,6 +29446,7 @@ is_a: HP:0000329 ! Facial hemangioma
 [Term]
 id: HP:0004673
 name: Decreased facial expression
+def: "A reduced degree of voluntary and involuntary facial movements involved in responded to others or expressing emotions." [HPO:probinson]
 xref: UMLS:C1862474 "Decreased facial expression"
 is_a: HP:0005346 ! Abnormal facial expression
 
@@ -32002,6 +32202,7 @@ id: HP:0005272
 name: Prominent nasolabial fold
 def: "Exaggerated bulkiness of the crease or fold of skin running from the lateral margin of the nose, where nasal base meets the skin of the face, to a point just lateral to the corner of the mouth (cheilion, or commissure)." [pmid:19125428]
 comment: Increasing prominence of the nasolabial folds with age is usual. This is an abnormality of the `nasolabial sulcus` (FMA:75018).
+subset: hposlim_core
 synonym: "Nasolabial crease, prominent" EXACT []
 xref: UMLS:C1866487 "Prominent nasolabial folds"
 is_a: HP:0005289 ! Abnormality of the nasolabial region
@@ -32282,7 +32483,8 @@ is_a: HP:0000419 ! Abnormality of the nasal septum
 [Term]
 id: HP:0005323
 name: Hemifacial hypertrophy
-xref: UMLS:C0020564 "Hypertrophy"
+def: "Unilateral overgrowth of facial tissues, including muscles, bones and skin." [HPO:probinson]
+subset: hposlim_core
 is_a: HP:0000324 ! Facial asymmetry
 
 [Term]
@@ -32356,6 +32558,7 @@ alt_id: HP:0004521
 alt_id: HP:0009923
 def: "Decreased density/number and/or decreased diameter of lateral eyebrow hairs." [HPO:probinson]
 comment: Abnormal sparseness of the eyebrows laterally.
+subset: hposlim_core
 synonym: "Lateral hypoplasia of eyebrows " EXACT []
 synonym: "Lateral thinning of eyebrows" EXACT []
 synonym: "Laterally sparse eyebrow" EXACT []
@@ -32796,7 +32999,7 @@ name: Maxillozygomatic hypoplasia
 def: "Hypoplasia of the maxillozygomatic complex." [HPO:probinson]
 xref: UMLS:C1848908 "Maxillozygomatic hypoplasia"
 is_a: HP:0000327 ! Hypoplasia of the maxilla
-is_a: HP:0010669 ! Hypoplasia of the zygomatic bone
+is_a: HP:0010669 ! Cheekbone underdevelopment
 
 [Term]
 id: HP:0005441
@@ -32853,6 +33056,7 @@ is_a: HP:0002687 ! Abnormality of the frontal sinuses
 id: HP:0005453
 name: Absent/hypoplastic paranasal sinuses
 def: "Aplasia or hypoplasia of the `paranasal sinuses` (FMA:76587)." [HPO:probinson]
+subset: hposlim_core
 is_a: HP:0009120 ! Aplasia/Hypoplasia involving the sinuses
 
 [Term]
@@ -32898,6 +33102,7 @@ id: HP:0005465
 name: Facial hyperostosis
 alt_id: HP:0008508
 def: "Excessive growth (overgrowth) of the facial bones, that is of the `facial skeleton` (FMA:53673)." [HPO:probinson]
+subset: hposlim_core
 synonym: "Hyperostosis of facial bones" EXACT []
 is_a: HP:0004493 ! Craniofacial hyperostosis
 is_a: HP:0011821 ! Abnormality of facial skeleton
@@ -32913,19 +33118,13 @@ is_a: HP:0002692 ! Hypoplastic facial bones
 is_a: HP:0011218 ! Abnormal shape of the frontal region
 
 [Term]
-id: HP:0005468
-name: Foramen magnum stenosis
-def: "An abnormal narrowing of the foramen magnum." [HPO:curators]
-xref: UMLS:C1535953 "Foramen magnum stenosis"
-is_a: HP:0002677 ! Small foramen magnum
-
-[Term]
 id: HP:0005469
 name: Flat occiput
 alt_id: HP:0000247
 alt_id: HP:0000249
 def: "Reduced convexity of the `occiput` (FMA:49187) (posterior part of skull)." [pmid:19125436]
 comment: Reduced convexity of the occiput gives an appearance of flattening. There are no objective measures for convexity of the occiput, and evaluation depends heavily on the experience of the observer. This finding may or may not be accompanied by Brachycephaly (which should be coded separately), and may be observed more frequently when an infant is placed to sleep on his/her back. Occipital plagiocephaly can result from fusion or sclerosis of the lambdoid suture. If unilateral, this is accompanied by unilateral occipital flattening and bulging of the ispilateral frontal bone.
+subset: hposlim_core
 synonym: "Posterior flattening of the skull" EXACT []
 xref: UMLS:C1837402 "Flat occiput"
 is_a: HP:0011217 ! Abnormal shape of the occiput
@@ -33020,7 +33219,8 @@ is_a: HP:0000252 ! Microcephaly
 [Term]
 id: HP:0005486
 name: Small fontanelles
-def: "The presence of fontanelles that are smaller than age-dependent norms." [HPO:curators]
+def: "The presence of fontanelles that are smaller than age-dependent norms." [HPO:probinson]
+subset: hposlim_core
 xref: UMLS:C0456133 "Small fontanelles"
 is_a: HP:0011328 ! Abnormality of fontanelles
 
@@ -33031,6 +33231,7 @@ alt_id: HP:0005488
 alt_id: HP:0005751
 def: "Vertical bony ridge positioned in the midline of the forehead." [HPO:probinson, pmid:19125436]
 comment: The ridge may extend from the hairline to the glabella or may be partial. The frontal suture of the skull is a dense connective tissue structure that divides the two halves of the frontal bone of the skull in infants and children and usually undergoes closure by the age of six years. A persistent frontal suture is known as a metopic suture or sutura frontalis persistens. This can lead to a ridged appearance of the forehead.
+subset: hposlim_core
 synonym: "Prominent metopic suture" EXACT []
 synonym: "Ridging of metopic suture" EXACT []
 xref: UMLS:C1969876 "Prominent metopic suture"
@@ -34114,8 +34315,9 @@ is_a: HP:0010655 ! Epiphyseal stippling
 
 [Term]
 id: HP:0005758
-name: Foramen magnum lesion
-is_a: HP:0002699 ! Abnormality of the foramen magnum
+name: Basilar impression
+def: "Abnormal elevation of the floor of the posterior fossa including occipital condyles and foramen magnum." [HPO:probinson, pmid:10084535]
+is_a: HP:0000932 ! Abnormality of the posterior cranial fossa
 
 [Term]
 id: HP:0005759
@@ -34652,6 +34854,7 @@ is_a: HP:0010674 ! Abnormality of the curvature of the vertebral column
 id: HP:0005906
 name: Delayed pneumatization of the mastoid process
 def: "An abnormally reduced degree of pneumatization (i.e., formation of air cells) in the `mastoid process` (FMA:52872) with respect to age-dependent norms." [HPO:probinson]
+subset: hposlim_core
 synonym: "Mastoid processes poorly pneumatized" EXACT []
 is_a: HP:0000264 ! Abnormality of the mastoid
 
@@ -37780,6 +37983,7 @@ id: HP:0006633
 name: Glenoid fossa hypoplasia
 alt_id: HP:0006632
 def: "Underdevelopment of the `glenoid fossa` (FMA:23275), which is the cavity in the lateral part of the scapula which articulates with the head of the humerus." [HPO:probinson]
+subset: hposlim_core
 synonym: "Glenoid hypoplasia" EXACT []
 synonym: "Hypoplastic glenoid fossa" EXACT []
 xref: UMLS:C1833138 "Hypoplastic glenoid fossa"
@@ -39906,6 +40110,8 @@ is_a: HP:0002500 ! Abnormality of the cerebral white matter
 [Term]
 id: HP:0007206
 name: Hemimegalencephaly
+def: "Enlargement of all or parts of one cerebral hemisphere." [HPO:probinson, pmid:17416820]
+comment: The affected hemisphere may have focal or diffuse neuronal migration defects, with areas of polymicrogyria, pachygyria, and heterotopia.
 xref: UMLS:C0431391 "Hemimegalencephaly"
 is_a: HP:0001355 ! Megalencephaly
 
@@ -39923,12 +40129,14 @@ is_a: HP:0004336 ! Myelin outfoldings
 
 [Term]
 id: HP:0007209
-name: Facial paralysis due to cranial nerve VII compression
+name: Facial paralysis
 alt_id: HP:0007358
-def: "Facial nerve paralysis (facial palsy) caused by compression (with ensuing loss of function) of the facial nerve (i.e., the seventh cranial nerve)." [HPO:curators]
-synonym: "Facial palsy due to cranial nerve VII compression" EXACT []
+def: "Complete loss of ability to move facial muscles innervated by the facial nerve (i.e., the seventh cranial nerve)." [HPO:probinson]
+comment: Facial paralysis can be caused by compression of the facial nerve.
+subset: hposlim_core
+xref: MeSH:D005158 "Facial paralysis"
+is_a: HP:0000301 ! Abnormality of facial musculature
 is_a: HP:0001293 ! Cranial nerve compression
-is_a: HP:0010628 ! Facial palsy
 
 [Term]
 id: HP:0007210
@@ -40406,6 +40614,7 @@ is_a: HP:0007363 ! Aplasia/Hypoplasia of the pyramidal tract
 [Term]
 id: HP:0007349
 name: Distal motor neuropathy
+synonym: "Length dependent motor neuropathy" RELATED []
 xref: UMLS:C1854570 "Distal motor neuropathy"
 is_a: HP:0002450 ! Abnormality of the motor neurons
 
@@ -40667,7 +40876,9 @@ id: HP:0007385
 name: Aplasia cutis congenita of scalp
 alt_id: HP:0000994
 alt_id: HP:0007568
-def: "A developmental defect resulting in the congenital absence of skin on the scalp." [HPO:curators]
+def: "A developmental defect resulting in the congenital absence of skin on the scalp." [HPO:probinson]
+subset: hposlim_core
+synonym: "Defect of scalp" EXACT []
 synonym: "Scalp aplasia cutis congenita" EXACT []
 synonym: "Scalp defect" EXACT []
 xref: UMLS:C1865046 "Scalp defect"
@@ -41886,11 +42097,6 @@ synonym: "Abnormal vestibuloocular reflex" EXACT []
 is_a: HP:0001751 ! Vestibular dysfunction
 
 [Term]
-id: HP:0007672
-name: Congenital nuclear cataract in males
-is_a: HP:0008024 ! Congenital nuclear cataract
-
-[Term]
 id: HP:0007675
 name: Progressive night blindness
 is_a: HP:0000662 ! Night blindness
@@ -41902,6 +42108,7 @@ alt_id: HP:0000638
 alt_id: HP:0007724
 alt_id: HP:0007998
 def: "Congenital underdevelopment of the `iris` (FMA:58235)." [HPO:probinson]
+subset: hposlim_core
 synonym: "Hypoplastic iris" EXACT []
 synonym: "Iris hypoplasia" EXACT []
 xref: UMLS:C0344539 "Hypoplastic iris"
@@ -42102,9 +42309,9 @@ is_a: HP:0000509 ! Conjunctivitis
 
 [Term]
 id: HP:0007720
-name: Congenital cornea plana
-def: "Cornea plana is an abnormally flat shape of the cornea such that the normal protrusion of the cornea from the sclera is missing. The reduced corneal curvature can lead to hyperopia, and a hazy corneal limbus and arcus lipoides may develop at an early age." [HPO:curators]
-synonym: "Cornea plana congenita" EXACT []
+name: Flat cornea
+def: "Cornea plana is an abnormally flat shape of the cornea such that the normal protrusion of the cornea from the sclera is missing. The reduced corneal curvature can lead to hyperopia, and a hazy corneal limbus and arcus lipoides may develop at an early age." [HPO:probinson]
+synonym: "Cornea plana" EXACT []
 is_a: HP:0100691 ! Abnormality of the curvature of the cornea
 
 [Term]
@@ -42124,7 +42331,7 @@ name: Opacification of the corneal epithelium
 def: "Lack of transparency of the `corneal epithelium` (FMA:58263)." [DDD:gblack]
 synonym: "Superficial corneal opacities" EXACT []
 xref: UMLS:C1849198 "Superficial corneal opacities"
-is_a: HP:0007957 ! Reduction of corneal clarity
+is_a: HP:0007957 ! Corneal opacity
 
 [Term]
 id: HP:0007728
@@ -42237,6 +42444,7 @@ alt_id: HP:0007638
 alt_id: HP:0007914
 alt_id: HP:0007999
 def: "Macular dystrophy is a nonspecific term for premature retinal cell aging and cell death, generally confied to the macula in which no clear extrinsic cause is evident." [HPO:probinson]
+subset: hposlim_core
 xref: UMLS:C0730292 "Macular dystrophy"
 is_a: HP:0000608 ! Macular degeneration
 
@@ -42271,13 +42479,8 @@ alt_id: HP:0007896
 alt_id: HP:0007966
 def: "Reduced transparency of the `stroma of cornea` (FMA:58306)." [DDD:gblack]
 synonym: "Cloudy cornea" EXACT []
-synonym: "Corneal opacities" EXACT []
-synonym: "Corneal opacities on slit-lamp exam" EXACT []
-synonym: "Corneal opacity" EXACT []
 synonym: "Corneal stromal opacity" EXACT []
-xref: MeSH:D003318 "Corneal Opacity"
-xref: UMLS:C0010038 "Corneal Opacities"
-is_a: HP:0007957 ! Reduction of corneal clarity
+is_a: HP:0007957 ! Corneal opacity
 is_a: HP:0011492 ! Abnormality of corneal stroma
 
 [Term]
@@ -42296,6 +42499,8 @@ is_a: HP:0000575 ! Scotoma
 [Term]
 id: HP:0007763
 name: Retinal telangiectasia
+def: "Dilatation of small blood vessels of the retina." [HPO:probinson]
+subset: hposlim_core
 xref: UMLS:C0154835 "Retinal telangiectasia"
 is_a: HP:0001009 ! Telangiectasia
 is_a: HP:0008046 ! Abnormality of the retinal vasculature
@@ -42344,6 +42549,7 @@ id: HP:0007772
 name: Impaired smooth pursuit
 alt_id: HP:0008029
 def: "An impairment of the ability to track objects with the ocular smooth pursuit system, a class of rather slow eye movements that minimizes retinal target motion." [HPO:probinson]
+subset: hposlim_core
 synonym: "Abnormal visual pursuit" RELATED []
 xref: UMLS:C1837458 "Impaired smooth pursuit"
 xref: UMLS:C1848530 "Abnormal visual pursuit"
@@ -42720,6 +42926,7 @@ id: HP:0007858
 name: Chorioretinal lacunae
 def: "Punched out lesions in the pigmented layer of the retina." [HPO:probinson]
 comment: A chorioretinal lacuna can have the appearance of a pseudodisk in the retina.
+subset: hposlim_core
 xref: UMLS:C1844751 "Chorioretinal lacunae"
 is_a: HP:0000532 ! Chorioretinal abnormality
 
@@ -42792,6 +42999,7 @@ id: HP:0007874
 name: Almond-shaped palpebral fissure
 def: "A shape created by an acute downward arching of the upper eyelid and upward arching of the lower eyelid, toward the medial canthus, which gives the outline of the palpebral fissures the configuration of an almond. Thus, the maximum distance between the fissures is offset from, and medial to, the center point." [pmid:19125427]
 comment: The almond configuration tends to dissipate with time, as the surrounding tissues (e.g., eyelid, nasal bridge) grow.
+subset: hposlim_core
 is_a: HP:0200005 ! Abnormal shape of the palpebral fissure
 
 [Term]
@@ -42913,6 +43121,7 @@ is_a: HP:0000479 ! Abnormality of the retina
 id: HP:0007902
 name: Vitreous hemorrhage
 def: "Bleeding within the vitreous compartment of the eye." [DDD:akelly]
+subset: hposlim_core
 synonym: "Vitreous haemorrhage" RELATED []
 xref: MeSH:D014823 "Vitreous hemorrhage"
 xref: UMLS:C0042909 "Vitreous Hemorrhage"
@@ -43145,14 +43354,16 @@ is_a: HP:0000611 ! Choroid coloboma
 
 [Term]
 id: HP:0007957
-name: Reduction of corneal clarity
+name: Corneal opacity
 alt_id: HP:0007844
 alt_id: HP:0007883
 alt_id: HP:0008502
+def: "A reduction of corneal clarity." [HPO:probinson]
+subset: hposlim_core
 synonym: "Corneal clouding" EXACT []
-synonym: "White corneal opacification" EXACT []
-xref: UMLS:C1835567 "Anterior corneal lens opacities"
-xref: UMLS:C1854973 "Slight corneal clouding"
+synonym: "Reduction of corneal clarity" EXACT []
+xref: MeSH:D003318 "Corneal Opacity"
+xref: SNOMED-CT:64634000 "Corneal opacity"
 is_a: HP:0000481 ! Abnormality of the cornea
 
 [Term]
@@ -43192,6 +43403,7 @@ is_a: HP:0000649 ! Abnormality of vision evoked potentials
 id: HP:0007968
 name: Persistent hyperplastic primary vitreous
 def: "A failure of regression of the hyaloid vessel, which supplies the primary vitreous during embryogenesis and normally regresses in the third trimester of pregnancy, leading to a particular form of posterior cataract. This condition is known as Persistent Hyperplastic Primary Vitreous (PHPV)." [HPO:probinson]
+subset: hposlim_core
 synonym: "Persistent hyperplasia of primary vitreous" EXACT []
 synonym: "Persistent hypertrophic primary vitreous" EXACT []
 xref: MeSH:D054514 "Persistent Hyperplastic Primary Vitreous"
@@ -43217,6 +43429,7 @@ name: Retinal dysplasia
 alt_id: HP:0008022
 def: "The presence of `developmental dysplasia` (MPATH:64) of the `retina` (FMA:58301)." [HPO:probinson]
 comment: This feature is a  congenital developmental anomaly of the retina characterized by abnormal growth and differentiation. The retina contains numerous tubular structures and rosettes. Retinal dysplasia (synonym: retinal dysgenesis) is often accompanied by retinal detachment and micropthalmos, but the latter features should be coded separately.
+subset: hposlim_core
 synonym: "Retinal dysgenesis" EXACT []
 xref: MeSH:D015792 "Retinal Dysplasia"
 xref: UMLS:C0035313 "Retinal Dysplasia"
@@ -43329,6 +43542,10 @@ is_a: HP:0011481 ! Abnormality of the lacrimal duct
 [Term]
 id: HP:0007994
 name: Peripheral visual field loss
+def: "Loss of peripheral vision with retention of central vision, resulting in a constricted circular tunnel-like field of vision." [HPO:probinson]
+synonym: "Tunnel vision" RELATED []
+xref: SNOMED-CT:420990001 "Tunnel visual field constriction"
+xref: UMLS:C2937228 "Tunnel visual field constriction"
 is_a: HP:0001123 ! Visual field defect
 
 [Term]
@@ -43351,6 +43568,7 @@ is_a: HP:0008002 ! Abnormality of macular pigmentation
 id: HP:0008002
 name: Abnormality of macular pigmentation
 def: "Abnormality of macular or foveal pigmentation." [DDD:ncarter]
+subset: hposlim_core
 synonym: "Macular pigmentary changes" RELATED []
 is_a: HP:0001103 ! Abnormality of the macula
 
@@ -43430,9 +43648,9 @@ is_a: HP:0000546 ! Retinal degeneration
 [Term]
 id: HP:0008024
 name: Congenital nuclear cataract
+alt_id: HP:0007672
 alt_id: HP:0007781
 def: "A type of `congenital cataract` (HP:0000519) in which the opacities are confined to a small central area within the embryonic or fetal nuclei of the Iens. The remaining lens is clear." [HPO:probinson]
-synonym: "Bilateral nuclear cataract" EXACT []
 xref: UMLS:C0158551 "Congenital nuclear cataract"
 is_a: HP:0000519 ! Congenital cataract
 is_a: HP:0100018 ! Nuclear cataract
@@ -43475,6 +43693,7 @@ is_a: HP:0000577 ! Exotropia
 id: HP:0008034
 name: Abnormal iris pigmentation
 def: "Abnormal pigmentation of the `iris` (FMA:58235)." [HPO:probinson]
+subset: hposlim_core
 xref: UMLS:C1834387 "Abnormal iris pigmentation"
 is_a: HP:0000525 ! Abnormality of the iris
 
@@ -43547,8 +43766,8 @@ creation_date: 2008-04-02T12:09:00Z
 [Term]
 id: HP:0008047
 name: Abnormality of the vasculature of the eye
-is_a: HP:0000478 ! Abnormality of the eye
 is_a: HP:0002597 ! Abnormality of the vasculature
+is_a: HP:0012374 ! Abnormality of the globe
 created_by: peter
 creation_date: 2008-04-02T12:10:00Z
 
@@ -43566,7 +43785,7 @@ id: HP:0008049
 name: Abnormality of the extraocular muscles
 def: "An abnormality of an `extraocular muscle` (FMA:49033)." [HPO:probinson]
 comment: There are six extraocular muscles that control the movements of the eye.
-is_a: HP:0000478 ! Abnormality of the eye
+is_a: HP:0012372 ! Abnormal eye morphology
 created_by: peter
 creation_date: 2008-04-02T12:14:00Z
 
@@ -43625,7 +43844,7 @@ creation_date: 2008-04-02T03:24:00Z
 [Term]
 id: HP:0008056
 name: Aplasia/Hypoplasia affecting the eye
-is_a: HP:0000478 ! Abnormality of the eye
+is_a: HP:0012374 ! Abnormality of the globe
 created_by: peter
 creation_date: 2008-04-02T03:25:00Z
 
@@ -46380,6 +46599,7 @@ is_a: HP:0000811 ! Abnormal external genitalia
 id: HP:0008711
 name: Benign prostatic hyperplasia
 def: "The presence of `non-malignant` (PATO:0002096) `hyperplasia` (MPATH:134) of the `prostate` (FMA:9600)." [HPO:probinson]
+synonym: "Benign prostatic hypertrophy" EXACT []
 xref: UMLS:C1704272 "Benign Prostatic Hyperplasia"
 is_a: HP:0008775 ! Abnormality of the prostate
 
@@ -53692,7 +53912,8 @@ creation_date: 2009-01-30T07:26:24Z
 [Term]
 id: HP:0009711
 name: Retinal hemangioblastoma
-def: "Retinal hemangioblastoma is a benign vascular tumor of the retina without any neoplastic characteristics. They have been called \"retinal angiomas\" and \"retinal hemangiomas\" but hemangioblastoma is the preferred term since they are histologically identical to lesions found in the CNS." [HPO:curators]
+def: "Retinal hemangioblastoma is a benign vascular tumor of the retina without any neoplastic characteristics. They have been called \"retinal angiomas\" and \"retinal hemangiomas\" but hemangioblastoma is the preferred term since they are histologically identical to lesions found in the CNS." [HPO:probinson]
+subset: hposlim_core
 xref: UMLS:C1514915 "Retinal Hemangioblastoma"
 is_a: HP:0000479 ! Abnormality of the retina
 is_a: HP:0001028 ! Hemangioma
@@ -53883,7 +54104,7 @@ creation_date: 2009-01-31T10:54:01Z
 [Term]
 id: HP:0009731
 name: Cerebral hamartomata
-def: "The presence of a `hamartoma` of the `cerebrum` (FMA:62000)." [HPO:probinson]
+def: "The presence of a `hamartoma` (HP:0010566) of the `cerebrum` (FMA:62000)." [HPO:probinson]
 comment: Hamartomatous lesions (benign focal lesions composed of disorganized tissue elements) affecting and sometimes originating from the cerebrum.
 xref: UMLS:C0018552 "Hamartomas"
 is_a: HP:0010566 ! Hamartoma
@@ -53945,7 +54166,8 @@ creation_date: 2009-01-31T11:22:24Z
 [Term]
 id: HP:0009737
 name: Lisch nodules
-def: "The presence of pigmented, oval and dome-shaped raised hamartomatous nevi of the `iris` (FMA:58235).." [HPO:curators]
+def: "The presence of pigmented, oval and dome-shaped raised hamartomatous nevi of the `iris` (FMA:58235).." [HPO:probinson]
+subset: hposlim_core
 synonym: "Iris hamartomas" EXACT []
 xref: UMLS:C1860334 "Lisch nodules"
 is_a: HP:0000525 ! Abnormality of the iris
@@ -54082,6 +54304,7 @@ id: HP:0009754
 name: Fibrous syngnathia
 def: "Complete or nearly complete soft tissue fusion of the alveolar ridges." [pmid:19125428]
 comment: This finding is associated with severely reduced mobility, or lack of mobility, between the upper and lower jaws. This finding is the severe end of a spectrum that includes oral synechiae.
+subset: hposlim_core
 synonym: "Fusion of the alveolar ridges" EXACT []
 xref: UMLS:C1861546 "Syngnathia"
 is_a: HP:0000277 ! Abnormality of the mandible
@@ -54094,6 +54317,7 @@ id: HP:0009755
 name: Ankyloblepharon
 def: "Partial fusion of the upper and lower eyelid margins by single or multiple bands of tissue." [pmid:18125427]
 comment: A minimally expressed form, especially when located fully laterally, may be more difficult to ascertain and would be a subjective feature. A band may break and leave no evidence of its presence. Note that the term is distinct from cryptophthalmos.
+subset: hposlim_core
 synonym: "Ankyloblepharon filiforme adnatum" EXACT []
 synonym: "Eyelid synechiae" EXACT []
 xref: UMLS:C0339182 "Ankyloblepharon"
@@ -54106,7 +54330,7 @@ id: HP:0009756
 name: Popliteal pterygium
 def: "A pterygium (or pterygia) occuring in the popliteal region (the back of the knee)." [HPO:curators]
 xref: UMLS:C1861547 "Popliteal pterygium"
-is_a: HP:0001059 ! Pterygia
+is_a: HP:0001059 ! Pterygium
 created_by: peter
 creation_date: 2009-01-31T08:54:18Z
 
@@ -54115,7 +54339,7 @@ id: HP:0009757
 name: Intercrural pterygium
 def: "A pterygium (or pterygia) in the intercrural (groin) region." [HPO:curators]
 xref: UMLS:C1861548 "Intercrural pterygium"
-is_a: HP:0001059 ! Pterygia
+is_a: HP:0001059 ! Pterygium
 created_by: peter
 creation_date: 2009-01-31T08:58:49Z
 
@@ -54132,7 +54356,7 @@ id: HP:0009759
 name: Neck pterygia
 def: "Pterygia affecting the neck." [HPO:curators]
 xref: UMLS:C1849577 "Neck pterygia"
-is_a: HP:0001059 ! Pterygia
+is_a: HP:0001059 ! Pterygium
 created_by: peter
 creation_date: 2009-01-31T10:10:09Z
 
@@ -54142,7 +54366,7 @@ name: Antecubital pterygium
 def: "Pterygium affecting the elbow. This is a cutaneous web that can lead to severe flexion contracture of the elbow joint. Antecubital pterygium can be unilateral, bilateral, symmetric, or asysmmetric." [HPO:curators]
 synonym: "Pterygium cubitale" EXACT []
 synonym: "Webbed elbow" EXACT []
-is_a: HP:0001059 ! Pterygia
+is_a: HP:0001059 ! Pterygium
 created_by: peter
 creation_date: 2009-01-31T10:12:24Z
 
@@ -55273,14 +55497,15 @@ creation_date: 2009-04-30T06:34:27Z
 
 [Term]
 id: HP:0009891
-name: Hypoplasia of the supraorbital ridges
+name: Underdeveloped supraorbital ridges
 alt_id: HP:0004667
 alt_id: HP:0004672
 alt_id: HP:0005337
 def: "Flatness of the supraorbital portion of the frontal bones." [HPO:curators, pmid:19125436]
-synonym: "<new synonym>Underdeveloped supraorbital rdiges" EXACT []
+subset: hposlim_core
 synonym: "Depressed supraorbital ridge" EXACT []
 synonym: "Flat supraorbital ridge" EXACT []
+synonym: "Hypoplasia of the supraorbital ridges" EXACT []
 synonym: "Hypoplastic supraorbital ridge" EXACT []
 synonym: "Hypoplastic supraorbital ridges" EXACT []
 synonym: "Shallow orbital ridges" EXACT []
@@ -55402,8 +55627,10 @@ creation_date: 2009-04-30T10:52:45Z
 
 [Term]
 id: HP:0009903
-name: Conjunctival nodules
+name: Conjunctival nodule
 def: "Presence of nodules in the  `conjunctiva` (FMA:59011) of the eye." [HPO:probinson]
+subset: hposlim_core
+xref: SNOMED-CT:428477002 "Nodule of conjunctiva"
 xref: UMLS:C1996949 "Conjunctival nodule"
 is_a: HP:0000502 ! Abnormality of the conjunctiva
 created_by: peter
@@ -55485,6 +55712,7 @@ creation_date: 2009-05-01T03:26:53Z
 id: HP:0009911
 name: Abnormality of the temporal bone
 def: "Abnormality of the temporal bone of the skull, which is situated at the sides and base of the skull roughly underlying the region of the face known as the temple." [HPO:probinson]
+subset: hposlim_core
 is_a: HP:0000929 ! Abnormality of the skull
 created_by: peter
 creation_date: 2009-05-01T03:33:17Z
@@ -55510,6 +55738,7 @@ creation_date: 2009-05-01T03:43:12Z
 id: HP:0009914
 name: Cyclopia
 def: "Cyclopia is a congenital abnormality in which there is only one eye. That eye is centrally placed in the area normally occupied by the root of the nose." [DDD:ncarter]
+subset: hposlim_core
 xref: UMLS:C0266667 "Cyclopia"
 is_a: HP:0100886 ! Abnormality of globe location
 created_by: peter
@@ -55517,8 +55746,10 @@ creation_date: 2009-05-01T03:52:15Z
 
 [Term]
 id: HP:0009915
-name: Asymmetry of the corneas
-def: "The presence of a size difference between the left and right cornea." [HPO:curators]
+name: Corneal asymmetry
+def: "The presence of a size difference between the left and right cornea." [HPO:probinson]
+subset: hposlim_core
+synonym: "Asymmetry of the corneas" EXACT []
 is_a: HP:0001120 ! Abnormality of corneal size
 created_by: peter
 creation_date: 2009-05-02T05:06:20Z
@@ -55528,6 +55759,7 @@ id: HP:0009916
 name: Anisocoria
 def: "Anisocoria, or unequal pupil size, may represent a benign physiologic variant or a manifestation of disease." [HPO:probinson]
 comment: Pathologic anisocoria can reflect an abnormality of the musculature of the iris or of the sympathetic or prasympathetic innervation of the iris.
+subset: hposlim_core
 synonym: "Asymmetry of the pupils" EXACT []
 xref: MeSH:D015875 "Anisocoria"
 xref: UMLS:C0003079 "Anisocoria"
@@ -55549,6 +55781,7 @@ creation_date: 2009-05-02T05:51:28Z
 id: HP:0009918
 name: Ectopia pupillae
 def: "A malposition of the `pupil` (FMA:58252) owing to a developmental defect of the iris." [DDD:gblack, HPO:probinson]
+subset: hposlim_core
 synonym: "Corectopia" EXACT []
 xref: UMLS:C0271135 "Ectopia pupillae"
 is_a: HP:0000615 ! Abnormality of the pupil
@@ -55582,6 +55815,7 @@ id: HP:0009921
 name: Duane anomaly
 alt_id: HP:0001109
 def: "Duane anomaly is a congenital eye movement impairment with limitation of the ability to adduct or abduct the eye. When affected eyes are adducted (moved inwards towards the nose), the eyeball retracts and the palpebral fissure narrows." [HPO:probinson]
+subset: hposlim_core
 synonym: "Globe retraction and deviation on adduction" RELATED []
 xref: UMLS:C0013261 "Duane anomaly"
 is_a: HP:0000496 ! Abnormality of eye movement
@@ -55724,7 +55958,8 @@ creation_date: 2009-05-10T10:58:49Z
 [Term]
 id: HP:0009938
 name: Sunken cheeks
-xref: UMLS:C0007966 "Cheek"
+def: "Lack or loss of the soft tissues between the zygomata and mandible." [pmid:19125436]
+subset: hposlim_core
 is_a: HP:0004426 ! Abnormality of the cheeks
 created_by: peter
 creation_date: 2009-05-10T11:17:18Z
@@ -55740,6 +55975,8 @@ creation_date: 2009-05-10T11:27:14Z
 [Term]
 id: HP:0009940
 name: Asymmetry of the mandible
+def: "Lack of symmetry between the left and right `mandible` (FMA:52748)." [HPO:probinson]
+subset: hposlim_core
 is_a: HP:0000277 ! Abnormality of the mandible
 created_by: peter
 creation_date: 2009-05-10T11:28:02Z
@@ -61116,7 +61353,8 @@ creation_date: 2009-09-21T08:57:02Z
 [Term]
 id: HP:0010537
 name: Wide cranial sutures
-def: "An abnormally increased width of the cranial sutures for age-related norms (generally resulting from delayed closure)." [HPO:curators]
+def: "An abnormally increased width of the cranial sutures for age-related norms (generally resulting from delayed closure)." [HPO:probinson]
+subset: hposlim_core
 synonym: "Open cranial sutures" EXACT []
 synonym: "Persistent wide fontanel" EXACT []
 synonym: "Widened cranial sutures" EXACT []
@@ -61129,6 +61367,7 @@ creation_date: 2009-09-21T09:50:28Z
 id: HP:0010538
 name: Small sella turcica
 def: "An abnormally small sella turcica." [HPO:curators]
+subset: hposlim_core
 is_a: HP:0002679 ! Abnormality of the sella turcica
 created_by: peter
 creation_date: 2009-09-21T10:19:05Z
@@ -61136,7 +61375,8 @@ creation_date: 2009-09-21T10:19:05Z
 [Term]
 id: HP:0010539
 name: Thin calvarium
-def: "The presence of an abnormally thin calvarium." [HPO:curators]
+def: "The presence of an abnormally thin calvarium." [HPO:probinson]
+subset: hposlim_core
 xref: UMLS:C1856231 "Thin calvarium"
 is_a: HP:0002683 ! Abnormality of the calvaria
 created_by: peter
@@ -61145,7 +61385,7 @@ creation_date: 2009-09-21T10:21:29Z
 [Term]
 id: HP:0010540
 name: Advanced pneumatization of cranial sinuses
-def: "A degree of pneumatization that is increased compared to age-related norms." [HPO:curators]
+def: "A degree of pneumatization that is increased compared to age-related norms." [HPO:probinson]
 is_a: HP:0000245 ! Abnormality of the sinuses
 created_by: peter
 creation_date: 2009-09-23T10:04:21Z
@@ -61183,7 +61423,8 @@ creation_date: 2009-09-23T10:40:51Z
 [Term]
 id: HP:0010544
 name: Vertical nystagmus
-def: "Vertical nystagmus may present with either up-beating or down-beating eye movements or both. When present in the straight-ahead position of gaze it is referred to as upbeat nystagmus or downbeat nystagmus." [HPO:curators]
+def: "Vertical nystagmus may present with either up-beating or down-beating eye movements or both. When present in the straight-ahead position of gaze it is referred to as upbeat nystagmus or downbeat nystagmus." [HPO:probinson]
+subset: hposlim_core
 xref: UMLS:C0271386 "Vertical Nystagmus"
 is_a: HP:0000639 ! Nystagmus
 created_by: peter
@@ -61375,8 +61616,8 @@ creation_date: 2009-10-16T06:50:11Z
 id: HP:0010568
 name: Hamartoma of the eye
 def: "A hamartoma (disordered proliferation of mature tissues) which can originate from any tissue of the eye." [HPO:probinson]
-is_a: HP:0000478 ! Abnormality of the eye
 is_a: HP:0010566 ! Hamartoma
+is_a: HP:0012372 ! Abnormal eye morphology
 created_by: sandra1
 creation_date: 2009-10-17T12:57:24Z
 
@@ -61796,11 +62037,12 @@ name: Malar prominence
 alt_id: HP:0000310
 def: "Prominence of the malar process of the maxilla and infraorbital area appreciated in profile and from in front of the face." [DDD:jclayton-smith]
 comment: Increased prominence of the malar region (cheeks), as manifested by anterior positioning of the infraorbital and perialar regions or increased convexity of the face or increased naso-labial angle.
+subset: hposlim_core
 synonym: "Malar hyperplasia" EXACT []
 synonym: "Prominent malar region" EXACT []
 synonym: "Prominent midface" EXACT []
 xref: UMLS:C1858732 "Prominent midface"
-is_a: HP:0000309 ! Abnormality of the midface
+is_a: HP:0012369 ! Malar anomaly
 created_by: peter
 creation_date: 2009-11-02T07:53:02Z
 
@@ -61884,6 +62126,7 @@ alt_id: HP:0007212
 alt_id: HP:0200004
 def: "Facial nerve palsy is a dysfunction of cranial nerve VII (the facial nerve) that results in inability to control facial muscles on the affected side with weakness of the muscles of facial expression and eye closure. This can either be present in unilateral or bilateral form." [HPO:sdoelken]
 comment: Several conditions can cause a facial paralysis, e.g. brain tumor, stroke, and Lyme disease. However, if no specific cause can be identified, the condition is known as Bell's palsy. Named after Scottish anatomist Charles Bell, who first described it. Bell's palsy is the most common acute mononeuropathy (disease involving only one nerve) and is the most common cause of acute facial nerve paralysis.
+subset: hposlim_core
 synonym: "Bell's palsy" EXACT []
 synonym: "Cranial nerve VII palsy" EXACT []
 synonym: "Facial muscle weakness" RELATED []
@@ -61895,7 +62138,7 @@ synonym: "Facial paralysis" RELATED []
 synonym: "Facial weakness" RELATED []
 synonym: "Seventh cranial nerve palsy" EXACT []
 synonym: "VII th cranial nerve palsy " EXACT []
-xref: MeSH:D005158 "Facial Paralysis"
+xref: SNOMED-CT:280816001 "Facial palsy"
 xref: UMLS:C0015464 "Facial nerve palsy"
 is_a: HP:0000301 ! Abnormality of facial musculature
 is_a: HP:0001324 ! Muscle weakness
@@ -62083,8 +62326,10 @@ creation_date: 2010-02-25T10:01:47Z
 
 [Term]
 id: HP:0010650
-name: Hypoplasia of the premaxilla
-def: "Underdevelopment of the `Premaxilla` (FMA:76869), which is the embryonic structure that forms the anterior part of the maxilla." [HPO:probinson]
+name: Premaxillary underdevelopment
+def: "Reduction in size of the `Premaxilla` (FMA:76869), which is the embryonic structure that forms the anterior part of the maxilla." [HPO:probinson, pmid:19125436]
+subset: hposlim_core
+synonym: "Hypoplasia of the premaxilla" RELATED []
 synonym: "Hypoplastic_premaxilla" EXACT []
 is_a: HP:0010756 ! Aplasia/Hypoplasia of the premaxilla
 created_by: peter
@@ -62259,8 +62504,9 @@ creation_date: 2010-02-26T08:13:11Z
 
 [Term]
 id: HP:0010669
-name: Hypoplasia of the zygomatic bone
-def: "Underdevelopment of the `zygomatic bone` (FMA:52747)." [HPO:probinson]
+name: Cheekbone underdevelopment
+def: "Underdevelopment of the `zygomatic bone` (FMA:52747). That is, a reduction in size of the zygomatic process of the temporal bone of the skull, which forms the middle and lateral inferior orbital margin." [HPO:probinson, pmid:19125436]
+synonym: "Hypoplasia of the zygomatic bone" EXACT []
 is_a: HP:0010668 ! Abnormality of the zygomatic bone
 created_by: peter
 creation_date: 2010-02-26T08:14:04Z
@@ -62516,6 +62762,7 @@ creation_date: 2010-03-20T02:58:26Z
 id: HP:0010700
 name: Total cataract
 def: "A `Congenital cataract` (HP:0000519) characterized by an opacity of all the fibers of a lens." [HPO:probinson]
+subset: hposlim_core
 xref: UMLS:C0152257 "Total cataract"
 is_a: HP:0000518 ! Cataract
 created_by: peter
@@ -62734,6 +62981,7 @@ creation_date: 2010-04-20T10:17:01Z
 id: HP:0010724
 name: Advanced pneumatization of the mastoid process
 def: "An abnormally advanced degree of pneumatization (i.e., formation of air cells) in the `mastoid process` (FMA:52872) with respect to age-dependent norms." [HPO:probinson]
+subset: hposlim_core
 is_a: HP:0000264 ! Abnormality of the mastoid
 created_by: sdoelken
 creation_date: 2010-04-20T10:38:57Z
@@ -62751,7 +62999,8 @@ creation_date: 2010-04-20T10:52:24Z
 id: HP:0010727
 name: Spontaneous rupture of the globe
 def: "Rupture of the eyeball not due to trauma." [HPO:probinson]
-is_a: HP:0000478 ! Abnormality of the eye
+subset: hposlim_core
+is_a: HP:0012374 ! Abnormality of the globe
 created_by: sdoelken
 creation_date: 2010-04-20T11:05:28Z
 
@@ -62767,6 +63016,8 @@ creation_date: 2010-04-20T11:09:59Z
 id: HP:0010729
 name: Cherry red spot of the macula
 def: "Pallor of the perifoveal macula of the retina with appearance of a small circular reddish choroid shape as seen through the fovea centralis due to relative transparancy of the macula." [HPO:probinson]
+xref: SNOMED-CT:49473001 "Cherry red spot"
+xref: UMLS:C0278234 "Cherry red spot"
 is_a: HP:0001103 ! Abnormality of the macula
 created_by: sdoelken
 creation_date: 2010-04-20T11:14:11Z
@@ -62776,6 +63027,7 @@ id: HP:0010730
 name: Double eyebrow
 def: "This may present as a partial or complete duplication of the eyebrows." [HPO:sdoelken]
 comment: Double eyebrow is commonly a feature of Mowat Wilson syndrome.
+subset: hposlim_core
 xref: UMLS:C0431449 "Double eyebrow"
 is_a: HP:0000534 ! Abnormality of the eyebrow
 created_by: doelkens
@@ -62925,6 +63177,7 @@ creation_date: 2010-04-22T04:33:06Z
 id: HP:0010747
 name: Medial flaring of the eyebrow
 def: "An abnormal distribution of eyebrow hair growth in the medial direction." [HPO:probinson]
+subset: hposlim_core
 is_a: HP:0000534 ! Abnormality of the eyebrow
 created_by: sdoelken
 creation_date: 2010-04-23T09:29:58Z
@@ -62944,6 +63197,7 @@ id: HP:0010749
 name: Blepharochalasis
 def: "Blepharochalasis is characterized by recurrent, non-painful, nonerythematous episodes of eyelid edema. It has been divided into hypertrophic and atrophic forms. In the hypertrophic form recurrent edema results in orbital fat herniation through a weakened orbital septum. Most patients who have blepharochalasis present in an atrophic condition with atrophy of redundant eyelid skin and superior nasal fat pads." [PMID:3207663]
 comment: Most patients who have blepharochalasis present in an atrophic condition with atrophy of redundant eyelid skin and superior nasal fat pads. Most of these atrophic patients do not go through a hypertrophic phase. Multiple attacks of eyelid edema result in thinning, stretching, and atrophy of eyelid tissues. The eyelid skin becomes redundant, discolored, and atrophic, appearing like wrinkled cigarette paper. The upper eyelids are more commonly affected, but the lower eyelids may also be involved. Blepharochalasis is not synonymous with dermatochalasis.
+subset: hposlim_core
 xref: UMLS:C0005742 "Blepharochalasis"
 is_a: HP:0100540 ! Palpebral edema
 created_by: sdoelken
@@ -62962,6 +63216,7 @@ creation_date: 2010-04-23T10:07:56Z
 id: HP:0010751
 name: Chin dimple
 def: "A persistent midline depression of the skin over the fat pad of the `chin` (FMA:46495)." [pmid:19125436]
+subset: hposlim_core
 synonym: "CHIN DIMPLES" RELATED [HPO:skoehler]
 xref: UMLS:C1866963 "Chin dimples"
 is_a: HP:0000306 ! Abnormality of the chin
@@ -62972,6 +63227,8 @@ creation_date: 2010-04-23T10:29:03Z
 id: HP:0010752
 name: Cleft mandible
 def: "Midline deficiency of the mandible and some or all overlying tissues." [pmid:19125436]
+subset: hposlim_core
+xref: SNOMED-CT:92822004 "Cleft mandible"
 xref: UMLS:C0685786 "Cleft mandible"
 is_a: HP:0010753 ! Midline defect of mandible
 created_by: sdoelken
@@ -62995,6 +63252,7 @@ creation_date: 2010-04-23T10:36:28Z
 id: HP:0010755
 name: Asymmetry of the maxilla
 def: "Asymmetry between the left and right portions of the maxilla." [HPO:probinson]
+subset: hposlim_core
 is_a: HP:0000326 ! Abnormality of the maxilla
 created_by: sdoelken
 creation_date: 2010-04-23T10:38:44Z
@@ -63029,6 +63287,7 @@ id: HP:0010759
 name: Premaxillary Prominence
 def: "Prominent aspect of the `premaxilla` (FMA:76869)." [HPO:sdoelken, pmid:19125436]
 comment: As a consequence of prominence of the premaxilla, the overlying structures, the nose and philtrum, may appear prominent. There is increased convexity of the face and an increased nasolabial angle. In the presence of a normal sized mandible, retrognathia may be appreciated.
+subset: hposlim_core
 synonym: "Prominent premaxilla" EXACT []
 is_a: HP:0010758 ! Abnormality of the premaxilla
 created_by: sdoelken
@@ -63407,6 +63666,7 @@ creation_date: 2010-06-26T02:01:31Z
 id: HP:0010801
 name: Underdeveloped nasolabial fold
 def: "Reduced bulkiness of the crease or fold of skin running from the lateral margin of the nose, where nasal base meets the skin of the face, to a point just lateral to the corner of the mouth (cheilion or commissure)." [pmid:19125428]
+subset: hposlim_core
 synonym: "Nasolabial crease, hypoplastic" EXACT []
 synonym: "Nasolabial crease, underdeveloped" EXACT []
 synonym: "Nasolabial fold, hypoplastic" EXACT []
@@ -63475,6 +63735,7 @@ id: HP:0010807
 name: Open bite
 def: "Visible space between the dental arches in occlusion." [pmid:19125428]
 comment: An open bite produces an absence of vertical overlap of the two dental arches. It may be associated with malocclusion, but this should be coded separately. Open bite can be accompanied by malocclusion, which is a complex bundled term. The Angle classification of malocclusion (Classes I-III) is widely used in the orthodontics community [Moyers, [1973]] for the characterization of malocclusion.
+subset: hposlim_core
 xref: MeSH:D024343 "Open Bite"
 is_a: HP:0000692 ! Misalignment of teeth
 created_by: peter
@@ -63629,6 +63890,7 @@ creation_date: 2010-07-10T03:35:29Z
 id: HP:0010823
 name: Ridged cranial sutures
 def: "An overlap of the bony plates of the skull in an infant, with or without early closure." [HPO:probinson]
+subset: hposlim_core
 is_a: HP:0011329 ! Abnormality of cranial sutures
 created_by: peter
 creation_date: 2010-07-10T03:46:25Z
@@ -65214,6 +65476,7 @@ id: HP:0011003
 name: Severe Myopia
 alt_id: HP:0000569
 def: "A severe form of myopia with greater than -6.00 diopters." [DDD:ncarter]
+subset: hposlim_core
 synonym: "High myopia" EXACT []
 synonym: "Severe myopia" EXACT []
 synonym: "Severe myopia (> -6.00 diopters)" EXACT []
@@ -67082,6 +67345,7 @@ id: HP:0011219
 name: Short face
 def: "Facial height (length) is more than two standard deviations below the mean (objective); or an apparent decrease in the height (length) of the face (subjective)." [pmid:19125436]
 comment: Objective measurement of face height is made with sliding calipers from the nasion, just above the depth of the nasal root to the gnathion, the inferior border of the mandible, both in the midline. Note that short face is distinct from wide face.
+subset: hposlim_core
 is_a: HP:0001999 ! Abnormal facial shape
 created_by: peter
 creation_date: 2011-12-07T09:01:18Z
@@ -67092,6 +67356,7 @@ name: Prominent forehead
 alt_id: HP:0200061
 def: "Forward prominence of the entire forehead, due to protrusion of the frontal bone." [pmid:19125436]
 comment: Not to be confused with frontal bossing.
+subset: hposlim_core
 synonym: "Bulging forehead" RELATED []
 is_a: HP:0000290 ! Abnormality of the forehead
 created_by: peter
@@ -67101,6 +67366,7 @@ creation_date: 2011-12-07T09:49:36Z
 id: HP:0011221
 name: Vertical forehead creases
 def: "Vertical soft tissue creases in the midline of the forehead, often extending from the hairline to the brow, and seen with facial expression or when the face is at rest." [pmid:19125436]
+subset: hposlim_core
 is_a: HP:0000290 ! Abnormality of the forehead
 created_by: peter
 creation_date: 2011-12-07T09:55:15Z
@@ -67119,6 +67385,7 @@ creation_date: 2011-12-07T10:03:30Z
 id: HP:0011223
 name: Metopic depression
 def: "Linear vertical groove in the midline of the forehead, extending from hairline to glabella." [pmid:19125436]
+subset: hposlim_core
 is_a: HP:0005556 ! Abnormality of the metopic suture
 created_by: peter
 creation_date: 2011-12-07T10:34:38Z
@@ -67140,6 +67407,7 @@ id: HP:0011225
 name: Epiblepharon
 def: "Redundant eyelid skin pressing the eyelashes against the cornea and/or conjunctiva." [pmid:19125427]
 comment: Epiblepharon should be distinguished from entropion.
+subset: hposlim_core
 is_a: HP:0000492 ! Abnormality of the eyelid
 created_by: peter
 creation_date: 2011-12-13T08:28:48Z
@@ -67166,6 +67434,8 @@ creation_date: 2011-12-13T11:04:10Z
 id: HP:0011228
 name: Horizontal eyebrow
 def: "An eyebrow that extends straight across the brow, without curve." [pmid:19125427]
+subset: hposlim_core
+synonym: "Straight eyebrow" EXACT []
 is_a: HP:0000534 ! Abnormality of the eyebrow
 created_by: peter
 creation_date: 2011-12-14T08:18:29Z
@@ -67175,6 +67445,7 @@ id: HP:0011229
 name: Broad eyebrow
 def: "Regional increase in the width (height) of the eyebrow." [pmid:19125427]
 comment: Broadening or flaring can be medial or lateral. Flaring is used to describe a widening with a change in direction of the eyebrow hairs.
+subset: hposlim_core
 synonym: "Flared eyebrow" EXACT []
 synonym: "Flared eyebrows" RELATED [HPO:skoehler]
 is_a: HP:0000534 ! Abnormality of the eyebrow
@@ -67203,6 +67474,7 @@ id: HP:0011232
 name: Infra-orbital fold
 def: "Elevated ridge(s) of skin starting well below the medial aspect of the lower lid that curves gradually upward toward and/or across the nasal bridge." [pmid:19125427]
 comment: This term excludes epicanthus inversus.
+subset: hposlim_core
 is_a: HP:0000315 ! Abnormality of the orbital region
 created_by: peter
 creation_date: 2011-12-14T07:00:48Z
@@ -67675,6 +67947,7 @@ creation_date: 2011-12-30T03:35:18Z
 id: HP:0011282
 name: Abnormality of the hindbrain
 def: "An abnormality of the `hindbrain` (FMA:67687), also known as the rhombencephalon." [HPO:probinson]
+comment: The hindbrain consists of two main structures: The pons and the cerebellum.
 is_a: HP:0007319 ! Morphological abnormality of the central nervous system
 created_by: peter
 creation_date: 2012-01-01T01:22:36Z
@@ -68000,6 +68273,7 @@ creation_date: 2012-02-25T01:11:21Z
 id: HP:0011318
 name: Bicoronal synostosis
 def: "Synostosis affecting the right and the left coronal suture." [DDD:awilkie]
+subset: hposlim_core
 is_a: HP:0004440 ! Coronal craniosynostosis
 created_by: peter
 creation_date: 2012-02-25T01:11:41Z
@@ -68008,6 +68282,7 @@ creation_date: 2012-02-25T01:11:41Z
 id: HP:0011319
 name: Bilambdoid synostosis
 def: "Premature synostosis of both lambdoid sutures." [DDD:awilkie]
+subset: hposlim_core
 is_a: HP:0004443 ! Lambdoidal craniosynostosis
 created_by: peter
 creation_date: 2012-02-25T01:12:22Z
@@ -68016,6 +68291,7 @@ creation_date: 2012-02-25T01:12:22Z
 id: HP:0011320
 name: Unilambdoid synostosis
 def: "Premature synostosis of only one lambdoid suture." [DDD:awilkie]
+subset: hposlim_core
 is_a: HP:0004443 ! Lambdoidal craniosynostosis
 created_by: peter
 creation_date: 2012-02-25T01:13:20Z
@@ -68085,8 +68361,9 @@ creation_date: 2012-02-25T02:11:33Z
 [Term]
 id: HP:0011328
 name: Abnormality of fontanelles
-def: "An abnormality of the `fontanelle` (FMA:75438)." [HPO:probinson]
+def: "An abnormality of the `fontanelle` (FMA:75438)." [HPO:probinson, pmid:12825844]
 comment: The fontanelles are the regions in an infant's calvaria that are covered by a thick membrane that normally ossify in the first two years of life.
+subset: hposlim_core
 is_a: HP:0000235 ! Abnormality of the fontanelles and cranial sutures
 created_by: peter
 creation_date: 2012-02-25T02:34:36Z
@@ -68103,6 +68380,7 @@ creation_date: 2012-02-25T03:33:56Z
 id: HP:0011330
 name: Metopic synostosis
 def: "Premature fusion of the metopic suture." [DDD:awilkie]
+subset: hposlim_core
 is_a: HP:0005556 ! Abnormality of the metopic suture
 created_by: peter
 creation_date: 2012-02-25T03:52:01Z
@@ -68111,6 +68389,7 @@ creation_date: 2012-02-25T03:52:01Z
 id: HP:0011331
 name: Hemifacial atrophy
 def: "Unilateral atrophy of facial tissues, including muscles, bones and skin." [DDD:awilkie]
+subset: hposlim_core
 xref: MeSH:D005150 "Facial Hemiatrophy"
 is_a: HP:0000324 ! Facial asymmetry
 created_by: peter
@@ -69136,6 +69415,7 @@ creation_date: 2012-03-18T05:57:29Z
 id: HP:0011451
 name: Congenital microcephaly
 def: "Microcephaly (HP:0000252) that is present already at the time of birth." [HPO:probinson]
+synonym: "Head circumference small for gestational age" RELATED []
 is_a: HP:0000252 ! Microcephaly
 created_by: peter
 creation_date: 2012-03-18T06:50:36Z
@@ -69518,8 +69798,11 @@ creation_date: 2012-04-03T07:10:49Z
 
 [Term]
 id: HP:0011496
-name: Corneal vascularization
+name: Corneal neovascularization
 def: "Ingrowth of vessels into the corneal epithelium." [DDD:ncarter]
+synonym: "Corneal vascularization" EXACT []
+xref: SNOMED-CT:19161004 "Corneal neovascularization"
+xref: UMLS:C0085109 "Corneal Neovascularization"
 is_a: HP:0011495 ! Abnormality of corneal epithelium
 created_by: peter
 creation_date: 2012-04-03T07:15:37Z
@@ -69544,6 +69827,7 @@ creation_date: 2012-04-03T07:38:24Z
 id: HP:0011499
 name: Mydriasis
 def: "Abnormal dilatation of the iris." [DDD:ncarter]
+subset: hposlim_core
 xref: MeSH:D015878 "Mydriasis"
 xref: UMLS:C0026961 "Mydriasis"
 is_a: HP:0000615 ! Abnormality of the pupil
@@ -69786,6 +70070,7 @@ creation_date: 2012-04-06T09:16:11Z
 id: HP:0011527
 name: Lentiglobus
 def: "Exaggerated curvature of the lens of the eye, producing an anterior or posterior spherical bulging." [DDD:gblack]
+subset: hposlim_core
 is_a: HP:0011526 ! Abnormality of lens shape
 created_by: peter
 creation_date: 2012-04-06T09:17:01Z
@@ -69822,6 +70107,7 @@ creation_date: 2012-04-06T09:39:01Z
 id: HP:0011531
 name: Vitreitis
 def: "Inflammation of the vitreous body." [HPO:probinson]
+subset: hposlim_core
 is_a: HP:0004327 ! Abnormality of the vitreous humor
 created_by: peter
 creation_date: 2012-04-07T08:21:01Z
@@ -72092,6 +72378,7 @@ creation_date: 2012-04-23T07:27:57Z
 id: HP:0011800
 name: Midface retrusion
 def: "Posterior positions and/or vertical shortening of the infraorbital and perialar regions, or increased concavity of the face and/or reduced nasolabial angle." [DDD:jclayton-smith, pmid:19125436]
+subset: hposlim_core
 is_a: HP:0000309 ! Abnormality of the midface
 created_by: peter
 creation_date: 2012-04-24T07:46:05Z
@@ -72270,6 +72557,7 @@ creation_date: 2012-04-29T04:37:30Z
 id: HP:0011822
 name: Broad chin
 def: "Increased width of the midpoint of the mandible (mental protuberance) and overlying soft tissue." [pmid:19125436]
+subset: hposlim_core
 is_a: HP:0000306 ! Abnormality of the chin
 created_by: peter
 creation_date: 2012-04-30T08:23:35Z
@@ -72829,8 +73117,8 @@ name: Hemorrhage of the eye
 def: "Bleeding from vessels of the various tissues of the eye." [DDD:akelly]
 synonym: "Haemorrhage of the eye" RELATED []
 xref: MeSH:D005130 "Eye Hemorrhage"
-is_a: HP:0000478 ! Abnormality of the eye
 is_a: HP:0011029 ! Internal hemorrhage
+is_a: HP:0012373 ! Abnormal eye physiology
 created_by: peter
 creation_date: 2012-06-02T10:44:39Z
 
@@ -74449,6 +74737,7 @@ creation_date: 2012-08-11T09:46:03Z
 id: HP:0012074
 name: Tonic pupil
 def: "An abnormality of the pupillary light reaction characterized by a marked slowing of the light reaction of usually just one pupil. The pupil tends to be relatively dilated, and there is reduced accommodation." [HPO:probinson]
+subset: hposlim_core
 synonym: "Adie pupil" EXACT []
 synonym: "Adie's tonic pupil" EXACT []
 xref: MeSH:D015845 "Tonic pupil"
@@ -76968,6 +77257,169 @@ created_by: peter
 creation_date: 2013-10-03T10:25:06Z
 
 [Term]
+id: HP:0012366
+name: Basilar invagination
+def: "Projection of the tip of the dens more than 5 mm above a line joining the hard palate to the posterior lip of the foramen magnum (Chamberlain's line) or the tip of the dens is greater than 7 mm above McGregor's line (the back of the hard palate to the lowest point of the occipital squama)." [HPO:probinson, pmid:10084535]
+is_a: HP:0000932 ! Abnormality of the posterior cranial fossa
+created_by: peter
+creation_date: 2013-10-13T12:18:53Z
+
+[Term]
+id: HP:0012367
+name: Extra fontanelles
+def: "Bony defects situated along the cranial suture lines or at the junction of the bone plates of the skull." [HPO:probinson]
+comment: Extra fontanelles include glabellar, metopic, sagittal (parietal) and cerebellar fontanelles.
+subset: hposlim_core
+is_a: HP:0011328 ! Abnormality of fontanelles
+created_by: peter
+creation_date: 2013-10-13T12:27:03Z
+
+[Term]
+id: HP:0012368
+name: Flat face
+def: "Absence of concavity or convexity of the face when viewed in profile." [pmid:19125436]
+comment: A useful guide is to imagine that a line connecting the glabella to the anterior most part of the mandible touches the top of the philtrum where it meets the base of the columella. The glabella is the most prominent point on the frontal bone above the root of the nose. If the superior philtrum is anterior to this line the face is convex, if the superior philtrum is posterior to this line the face is concave.
+subset: hposlim_core
+is_a: HP:0001999 ! Abnormal facial shape
+created_by: peter
+creation_date: 2013-10-13T13:49:13Z
+
+[Term]
+id: HP:0012369
+name: Malar anomaly
+def: "An anomaly of `frontal process of maxilla` (FMA:52894)." [HPO:probinson, pmid:19125436]
+comment: The malar process (also known as the frontal process or processus frontalis of the maxilla) is the most medial and superior part of the maxilla. It forms the medial border of the inferior bony orbit, and is contiguous with the lateral boundary of the nasal bridge.
+is_a: HP:0000309 ! Abnormality of the midface
+created_by: peter
+creation_date: 2013-10-13T14:37:51Z
+
+[Term]
+id: HP:0012370
+name: Cheekbone prominence
+def: "Enlargement of the zygomatic process of the temporal bone of the skull, which forms the middle and lateral inferior orbital margin." [pmid:19125436]
+subset: hposlim_core
+synonym: "Zygomatic hyperplasia" EXACT []
+synonym: "Zygomatic prominence" EXACT []
+is_a: HP:0010668 ! Abnormality of the zygomatic bone
+created_by: peter
+creation_date: 2013-10-13T14:50:15Z
+
+[Term]
+id: HP:0012371
+name: Midface prominence
+def: "Anterior positioning of the infraorbital and perialar regions, or increased convexity of the face, or increased nasolabial angle." [pmid:19125436]
+comment: This term represents increased size of the maxilla (upper jaw) in length (increased midface height) or depth (midface prominence). In the presence of normal mandible size, maxillary prominence may give the appearance of retrognathia.
+subset: hposlim_core
+synonym: "Midface hyperplasia" EXACT []
+synonym: "Midface hypertrophy" EXACT []
+is_a: HP:0000309 ! Abnormality of the midface
+created_by: peter
+creation_date: 2013-10-13T14:55:54Z
+
+[Term]
+id: HP:0012372
+name: Abnormal eye morphology
+def: "A structural anomaly of the `eye` (FMA:54448)." [HPO:probinson]
+is_a: HP:0000478 ! Abnormality of the eye
+created_by: peter
+creation_date: 2013-10-13T15:44:43Z
+
+[Term]
+id: HP:0012373
+name: Abnormal eye physiology
+def: "A functional anomaly of the `eye` (FMA:54448)." [HPO:probinson]
+is_a: HP:0000478 ! Abnormality of the eye
+created_by: peter
+creation_date: 2013-10-13T15:45:37Z
+
+[Term]
+id: HP:0012374
+name: Abnormality of the globe
+def: "An anomaly of the `eyeball` (FMA:12513)." [HPO:probinson]
+comment: This term is used to separate anomalies of the eye proper from the ocular adnexa such as the eyelid and the tear glands.
+subset: hposlim_core
+is_a: HP:0012372 ! Abnormal eye morphology
+created_by: peter
+creation_date: 2013-10-13T15:50:35Z
+
+[Term]
+id: HP:0012375
+name: Chemosis
+def: "Edema (swelling) of the bulbar conjunctiva." [HPO:probinson]
+is_a: HP:0000502 ! Abnormality of the conjunctiva
+created_by: peter
+creation_date: 2013-10-13T17:45:45Z
+
+[Term]
+id: HP:0012376
+name: Microphakia
+def: "Abnormal smallness of the `lens` (FMA:58241)." [HPO:probinson]
+subset: hposlim_core
+is_a: HP:0008063 ! Aplasia/Hypoplasia of the lens
+created_by: peter
+creation_date: 2013-10-13T18:11:11Z
+
+[Term]
+id: HP:0012377
+name: Hemianopsia
+def: "Partial or complete loss of vision in one half of the visual field of one or both eyes." [HPO:probinson]
+synonym: "Hemianosia" RELATED []
+xref: MeSH:D006423 "Hemianopsia"
+is_a: HP:0000505 ! Visual impairment
+created_by: peter
+creation_date: 2013-10-13T19:55:21Z
+
+[Term]
+id: HP:0012378
+name: Fatigue
+def: "A subjective feeling of tiredness characterized by a decreased capacity for work and reduced efficiency to respond to stimuli." [HPO:probinson]
+comment: Fatigue is distinct from muscle weakness.
+xref: MeSH:D005221 "Fatigue"
+is_a: HP:0000708 ! Behavioural/Psychiatric Abnormality
+created_by: peter
+creation_date: 2013-10-15T08:52:04Z
+
+[Term]
+id: HP:0012379
+name: Abnormal enzyme/coenzyme activity
+def: "An altered ability of any enzyme or their cofactors to act as catalysts." [HPO:probinson, MP:0005584]
+is_a: HP:0001939 ! Abnormality of metabolism/homeostasis
+created_by: peter
+creation_date: 2013-10-15T08:58:55Z
+
+[Term]
+id: HP:0012380
+name: Reduced carnitine O-palmitoyltransferase activity
+def: "Reduced `carnitine O-palmitoyltransferase activity` (GO:0004095), i.e., reduced activity of the reaction: palmitoyl-CoA + L-carnitine = CoA + L-palmitoylcarnitine." [HPO:probinson]
+is_a: HP:0012379 ! Abnormal enzyme/coenzyme activity
+created_by: peter
+creation_date: 2013-10-15T09:00:17Z
+
+[Term]
+id: HP:0012381
+name: Delayed self-feeding during toddler years
+def: "A delay in the development of skills required to feed oneself in the toddler period (between one and three years of age)." [HPO:probinson]
+is_a: HP:0011968 ! Feeding difficulties
+created_by: peter
+creation_date: 2013-10-16T23:46:54Z
+
+[Term]
+id: HP:0012382
+name: Left-to-right shunt
+def: "Pattern of blood flow in the heart that deviates from the normal circuit of the circulatory system from the left side of the heart to the right." [HPO:mhaendel]
+is_a: HP:0001693 ! Cardiac shunt
+created_by: peter
+creation_date: 2013-10-16T23:54:21Z
+
+[Term]
+id: HP:0012383
+name: Bidirectional shunt
+def: "Pattern of blood flow in the heart that deviates from the normal circuit of the circulatory system from both right side of the heart to the left and vice versa." [HPO:mhaendel]
+is_a: HP:0001693 ! Cardiac shunt
+created_by: peter
+creation_date: 2013-10-16T23:54:45Z
+
+[Term]
 id: HP:0100000
 name: Early onset of puberty
 def: "An early onset of puberty, in this case early does not refer to precocious." [HPO:curators]
@@ -77091,8 +77543,8 @@ id: HP:0100012
 name: Neoplasm of the eye
 def: "The presence of a `neoplasm` (MPATH:218) of the eye." [HPO:probinson]
 synonym: "Neoplasia of the eye" RELATED []
-is_a: HP:0000478 ! Abnormality of the eye
 is_a: HP:0011793 ! Neoplasm by anatomical site
+is_a: HP:0012372 ! Abnormal eye morphology
 created_by: doelkens
 creation_date: 2010-05-14T09:43:34Z
 
@@ -77159,6 +77611,7 @@ creation_date: 2010-05-27T06:01:54Z
 id: HP:0100018
 name: Nuclear cataract
 def: "A nuclear cataract is an opacity or clouding that develops in the `lens nucleus` (FMA:58971). That is, a nuclear cataract is one that is located in the center of the lens. The nucleus tends to darken changing from clear to yellow and sometimes brown." [HPO:sdoelken]
+subset: hposlim_core
 xref: UMLS:C0392557 "Nuclear cataract"
 is_a: HP:0010920 ! Zonular cataract
 created_by: doelkens
@@ -77168,6 +77621,7 @@ creation_date: 2010-05-28T11:34:45Z
 id: HP:0100019
 name: Cortical cataract
 def: "A cataract which affects the layer of the lens surrounding the nucleus, i.e., the `lens cortex` (FMA:58970). It is identified by its unique wedge or spoke appearance." [HPO:sdoelken]
+subset: hposlim_core
 xref: UMLS:C0271160 "Cortical cataract"
 is_a: HP:0010920 ! Zonular cataract
 created_by: doelkens
@@ -81138,6 +81592,7 @@ id: HP:0100532
 name: Scleritis
 def: "Inflammation of the `sclera` (FMA:58269)." [HPO:probinson]
 comment: Scleritis may be accompanied by blurred vision, eye pain, redness of the (normally white) sclera, photophobia, and tearing.
+subset: hposlim_core
 xref: MeSH:D015423 "Scleritis"
 xref: UMLS:C0036416 "Scleritis"
 is_a: HP:0000591 ! Abnormality of the sclera
@@ -81151,7 +81606,7 @@ name: Inflammatory abnormality of the eye
 alt_id: HP:0007891
 def: "Inflammation of the eye, parts of the eye or the periorbital region." [HPO:sdoelken]
 synonym: "Ocular inflammation" EXACT []
-is_a: HP:0000478 ! Abnormality of the eye
+is_a: HP:0012373 ! Abnormal eye physiology
 created_by: doelkens
 creation_date: 2010-12-20T03:53:42Z
 
@@ -81159,6 +81614,7 @@ creation_date: 2010-12-20T03:53:42Z
 id: HP:0100534
 name: Episcleritis
 def: "Inflammation of the `episclera` (FMA:58362), a thin layer of tissue covering the white part (sclera) of the eye." [HPO:probinson]
+subset: hposlim_core
 is_a: HP:0000591 ! Abnormality of the sclera
 is_a: HP:0100533 ! Inflammatory abnormality of the eye
 created_by: doelkens
@@ -81193,6 +81649,7 @@ creation_date: 2010-12-20T05:59:18Z
 [Term]
 id: HP:0100538
 name: Abnormality of the supraorbital ridges
+def: "An anomaly of the supraorbital portion of the frontal bones." [HPO:probinson]
 is_a: HP:0000315 ! Abnormality of the orbital region
 created_by: doelkens
 creation_date: 2010-12-20T06:05:56Z
@@ -81537,6 +81994,7 @@ creation_date: 2010-12-21T05:18:44Z
 id: HP:0100576
 name: Amaurosis fugax
 def: "A transient visual disturbance that is typically caused by a circulatory, ocular or neurological underlying condition." [HPO:sdoelken]
+subset: hposlim_core
 xref: MeSH:D020757 "Amaurosis fugax"
 is_a: HP:0000505 ! Visual impairment
 created_by: doelkens
@@ -81990,6 +82448,7 @@ creation_date: 2010-12-29T02:22:08Z
 [Term]
 id: HP:0100629
 name: Midline facial cleft
+def: "A congenital malformation with a cleft (gap or opening) in the midline of the face." [HPO:probinson]
 is_a: HP:0002006 ! Facial cleft
 created_by: doelkens
 creation_date: 2010-12-29T02:23:01Z
@@ -82704,6 +83163,7 @@ creation_date: 2011-06-06T01:49:29Z
 id: HP:0100719
 name: Lens coloboma
 def: "A sectoral indentation of the crystalline lens, usually due to zonular weakness or absence." [HPO:probinson]
+subset: hposlim_core
 is_a: HP:0000589 ! Coloboma
 created_by: doelkens
 creation_date: 2011-06-06T02:16:53Z
@@ -83190,8 +83650,10 @@ creation_date: 2011-06-07T05:45:10Z
 
 [Term]
 id: HP:0100780
-name: Conjunctival hamartomas
-is_a: HP:0009903 ! Conjunctival nodules
+name: Conjunctival hamartoma
+def: "A hamartoma (disordered proliferation of mature tissues) of the conjunctiva." [HPO:probinson]
+is_a: HP:0000502 ! Abnormality of the conjunctiva
+is_a: HP:0010568 ! Hamartoma of the eye
 created_by: doelkens
 creation_date: 2011-06-07T05:50:21Z
 
@@ -83601,6 +84063,8 @@ synonym: "Flitting flies" EXACT []
 synonym: "Myiodeopsia" EXACT []
 synonym: "Myodeopsia" EXACT []
 synonym: "Myodesopsia" EXACT []
+synonym: "Vitreous floaters" EXACT []
+xref: UMLS:C0016242 "Vitreous floaters"
 is_a: HP:0000504 ! Abnormality of vision
 is_a: HP:0004327 ! Abnormality of the vitreous humor
 created_by: doelkens
@@ -83972,6 +84436,7 @@ name: Infra-orbital crease
 alt_id: HP:0007796
 def: "Skin crease extending from below the inner canthus laterally along the malar process of the maxilla and zygoma." [pmid:19125427]
 comment: This feature is often found in the presence of hypoplasia of the malar process of the maxilla or zygoma, but should be coded separately.
+subset: hposlim_core
 synonym: "Infraorbital creases" EXACT []
 synonym: "Underorbital skin creases" EXACT []
 xref: UMLS:C1857280 "Underorbital skin creases"
@@ -84063,10 +84528,10 @@ creation_date: 2011-12-01T03:16:02Z
 [Term]
 id: HP:0100886
 name: Abnormality of globe location
-def: "Arachnoid cyst between the lateral ventricles, whose walls exhibit lateral bowing and are 10 mm apart or greater." [HPO:sdoelken]
+def: "An abnormality in the placement of the ocular globe (eyeball)." [HPO:sdoelken]
 is_a: HP:0000284 ! Abnormality of the ocular region
 is_a: HP:0000315 ! Abnormality of the orbital region
-is_a: HP:0000478 ! Abnormality of the eye
+is_a: HP:0012374 ! Abnormality of the globe
 created_by: doelkens
 creation_date: 2011-12-13T04:25:29Z
 
@@ -84077,7 +84542,7 @@ alt_id: HP:0010725
 def: "An abnormality in the size of the ocular globe (eyeball)." [HPO:sdoelken]
 is_a: HP:0000284 ! Abnormality of the ocular region
 is_a: HP:0000315 ! Abnormality of the orbital region
-is_a: HP:0000478 ! Abnormality of the eye
+is_a: HP:0012374 ! Abnormality of the globe
 created_by: doelkens
 creation_date: 2011-12-13T04:25:29Z
 
@@ -84629,6 +85094,7 @@ creation_date: 2010-05-31T02:19:45Z
 id: HP:0200005
 name: Abnormal shape of the palpebral fissure
 def: "The presence of an abnormal shape of the `palpebral fissure` (FMA:59110)." [HPO:probinson]
+subset: hposlim_core
 is_a: HP:0008050 ! Abnormality of the palpebral fissures
 created_by: sebastiankohler
 creation_date: 2010-06-09T07:56:37Z
@@ -84728,6 +85194,7 @@ creation_date: 2010-06-16T12:55:24Z
 id: HP:0200020
 name: Corneal erosions
 def: "Erosions or abrasions of the cornea's outermost layer of epithelial cells." [HPO:sdoelken]
+subset: hposlim_core
 is_a: HP:0011495 ! Abnormality of corneal epithelium
 created_by: sebastiankohler
 creation_date: 2010-06-16T01:50:48Z
@@ -84818,7 +85285,7 @@ def: "Grey-green or brownish-pigmented ring in the deep epithelial layers at the
 synonym: "Fleischer's ring " EXACT [HPO:SKOEHLER]
 synonym: "Fleischer-Kayser ring" EXACT [HPO:SKOEHLER]
 synonym: "Fleischer-Struempell ring" EXACT [HPO:SKOEHLER]
-is_a: HP:0007957 ! Reduction of corneal clarity
+is_a: HP:0007957 ! Corneal opacity
 created_by: sebastiankohler
 creation_date: 2010-06-24T12:30:24Z
 
@@ -85129,14 +85596,6 @@ synonym: "THIN UPPER LIPS" RELATED [HPO:skoehler]
 is_a: HP:0000177 ! Abnormality of upper lip
 created_by: sebastiankohler
 creation_date: 2013-06-04T14:43:27Z
-
-[Term]
-id: HP:0200093
-name: Large prominent eyes
-is_a: HP:0000520 ! Proptosis
-is_a: HP:0001090 ! Large eyes
-created_by: sebastiankohler
-creation_date: 2013-06-04T15:01:36Z
 
 [Term]
 id: HP:0200094
