@@ -11,7 +11,7 @@
 # ----------------------------------------
 
 OBO=http://purl.obolibrary.org/obo
-ONTS = mp hp
+ONTS = mp hp wbphenotype zp
 ALL_ONTS = mp hp wbphenotype apo to
 MP_URL = ftp://ftp.informatics.jax.org/pub/reports/MPheno_OBO.ontology
 
@@ -28,7 +28,7 @@ all_xp_obo : $(patsubst %,%-equivalence-axioms.obo,$(ONTS))
 all_owl : $(patsubst %,%.owl,$(ONTS))
 
 %-all:
-	make $*/$*-equivalence-axioms.owl $*/$*-equivalence-axioms-tr.owl $*/$*-ext-merged-tr.owl ONT=$*
+	make $*/$*-equivalence-axioms-subq-ubr.owl ONT=$*
 
 # ----------------------------------------
 # PARSING, TRANSLATION AND REWRITING
@@ -48,6 +48,18 @@ hp.obo: external/hpo/human-phenotype-ontology.obo
 	cp $< $@
 hp.owl: hp.obo
 	owltools $< -o $@
+
+zp.owl:
+	wget http://compbio.charite.de/hudson/job/hpo.ontology.uberpheno/lastStableBuild/artifact/data/dataForUberpheno/not_subsettable_ontologies/zp.owl
+
+zp/zp-equivalence-axioms-subq.owl: zp.owl
+	cp $< $@
+
+fypo.owl:
+	wget $(OBO)/fypo.owl
+wbphenotype.owl:
+	wget $(OBO)/wbphenotype.owl
+
 
 pato.obo:
 	cp $(HOME)/cvs/obo/ontology/phenotype/quality.obo $@
@@ -111,7 +123,7 @@ $(ONT)/%-ext-merged-tr.owl: %.owl $(ONT)/%-equivalence-axioms-tr.owl
 
 # new
 all_merged: uberpheno-subq-full-merged.owl
-%-merged.owl: %-importer.owl mp/mp-equivalence-axioms-subq.owl hp/hp-equivalence-axioms-subq.owl mp.owl hp.owl
+%-merged.owl: %-importer.owl mp/mp-equivalence-axioms-subq-ubr.owl hp/hp-equivalence-axioms-subq-ubr.owl mp.owl hp.owl
 	owltools --use-catalog $< --merge-import-closure --ni graph-traversal-metadata.owl --merge-support-ontologies   --merge-equivalent-classes -f $(OBO)/MP_ -t $(OBO)/HP_ --merge-equivalent-classes -f $(OBO)/FMA_ -f $(OBO)/EMAPA_ -f $(OBO)/MA_ -t $(OBO)/UBERON_ --merge-equivalent-classes -f $(OBO)/FMA_ -t $(OBO)/CL_ -t $(OBO)/UBERON_ -o file://`pwd`/$@
 
 # ----------------------------------------
@@ -126,7 +138,8 @@ all_merged: uberpheno-subq-full-merged.owl
 
 %-subq.obo: %.obo
 	../tools/make-subq-model-from-obo.pl $< > $@
-
+%-subq.owl: %-subq.obo
+	owltools $M -o $@
 
 # temp hack:
 fixed-behavior_xp.obo: external/behavior-ontology/behavior_xp.obo
@@ -135,6 +148,9 @@ fixed-behavior_xp.obo: external/behavior-ontology/behavior_xp.obo
 # ----------------------------------------
 # Uberon
 # ----------------------------------------
+
+zp/zp-equivalence-axioms-subq-ubr.owl: zp.owl uberon-simple-vertebrate-bridge.obo
+	owltools $< uberon-simple-vertebrate-bridge.obo --add-imports-from-supports --merge-equivalent-classes -f ZFA  -t UBERON  --merge-equivalent-classes -f ZFA -t CL -o $@
 
 %-ubr.obo: %.obo uberon-simple-vertebrate-bridge.obo
 	owltools $< uberon-simple-vertebrate-bridge.obo --add-imports-from-supports --merge-equivalent-classes -f FMA -f MA -f ZFA  -t UBERON  --merge-equivalent-classes -f FMA -t CL -o -f obo --no-check $@.tmp && grep -v ^import $@.tmp > $@
@@ -185,9 +201,12 @@ KEEPRELS = BFO:0000050 BFO:0000051 RO:0002202 immediate_transformation_of
 # Create an import module using the OWLAPI module extraction code via OWLTools.
 # We use the standard catalog, but rewrite the import to X to be a local mirror of ALL of X.
 # After extraction, we further reduce the ontology by creating a "mingraph" (removes all annotations except label) and by 
+
+#imports/wbbt_import.owl: wbphenotype/wbphenotype-equivalence-axioms-subq-ubr.owl mirror/wbbt.owl
+#	owltools  $(USECAT) --map-ontology-iri $(UPHENO_IMPORTS_BASE_URI)/wbbt_import.owl mirror/wbbt.owl $< --merge-imports-closure mirror/$*.owl --add-imports-from-support  --extract-module -s $(OBO)/$*.owl -c --remove-axiom-annotations --make-subset-by-properties $(KEEPRELS) --set-ontology-id $(UPHENO_IMPORTS_BASE_URI)/$@ -o file://`pwd`/$@
+
 imports/%_import.owl: imports/upheno-preimporter.owl mirror/%.owl
 	owltools  $(USECAT) --map-ontology-iri $(UPHENO_IMPORTS_BASE_URI)/$*_import.owl mirror/$*.owl $< --merge-imports-closure mirror/$*.owl --add-imports-from-support  --extract-module -s $(OBO)/$*.owl -c --remove-axiom-annotations --make-subset-by-properties $(KEEPRELS) --set-ontology-id $(UPHENO_IMPORTS_BASE_URI)/$@ -o file://`pwd`/$@
-
 
 # clone remote ontology locally, perfoming some excision of relations and annotations
 mirror/%.owl:
@@ -195,6 +214,8 @@ mirror/%.owl:
 # this is actually uberon+cl
 mirror/uberon.owl:
 	owltools $(OBO)/uberon/ext.owl $(OBO)/cl.owl --merge-support-ontologies --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/uberon.owl -o $@
+mirror/wbbt.owl:
+	owltools $(OBO)/uberon/composite-metazoan.owl $(OBO)/cl.owl $(OBO)/wbls.owl --merge-support-ontologies --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/wbbt.owl -o $@
 ###	owltools $(OBO)/uberon/ext.owl --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --set-ontology-id $(OBO)/uberon.owl -o $@
 mirror/go.owl:
 	owltools $(OBO)/go.owl --merge-support-ontologies --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/go.owl -o $@
@@ -207,28 +228,6 @@ mirror/pr.owl: mirror/pr.obo
 imports/%_import.obo: imports/%_import.owl
 	owltools $< -o -f obo $@
 
-
-
-# ----------------------------------------
-# Oort
-# ----------------------------------------
-OBO=http://purl.obolibrary.org/obo
-#CORE= external/pato/quality.obo $(OBO)/go.owl external/cell/cl.owl $(OBO)/uberon/merged.owl $(OBO)/nbo.owl $(OBO)/mpath.owl
-CORE= external/pato/quality.obo $(OBO)/go.owl external/cell/cl.owl $(OBO)/uberon/merged.owl $(OBO)/mpath.owl
-
-merged-hp:
-	ontology-release-runner --allow-overwrite --outdir hp --repair-cardinality --no-subsets --no-reasoner --asserted --re-mireot hp.obo -b hp/hp-equivalence-axioms.obo $(CORE) $(OBO)/fma.owl $(OBO)/uberon/bridge/uberon-bridge-to-fma.owl
-
-#merged-mp:
-#	ontology-release-runner --allow-overwrite --outdir mp --repair-cardinality --no-subsets --no-reasoner --asserted --re-mireot mp.obo -b mp/mp-equivalence-axioms.obo $(CORE) $(OBO)/ma.owl $(OBO)/uberon/bridge/uberon-bridge-to-ma.owl
-
-# non-strict
-MP_OORT_OPTS = --allow-equivalent-pairs
-build-mp: mp/mp-equivalence-axioms-subq-ubr.owl mp.owl
-	ontology-release-runner $(MP_OORT_OPTS) --repair-cardinality --catalog-xml $(CATALOG) --no-subsets  --ignoreLock --skip-release-folder --skip-format obo --skip-format owx --outdir main --simple --allow-overwrite --reasoner elk mp.owl -b $<  $(OBO)/pato.owl $(OBO)/go.owl $(OBO)/uberon.owl $(OBO)/chebi.owl 
-
-merged-vt:
-	ontology-release-runner --catalog-xml $(CATALOG) --allow-overwrite --outdir vt/build  --no-subsets --reasoner elk --simple --asserted --re-mireot vt/vt.obo -b vt/vt-equivalence-axioms.obo $(CORE)
 
 
 # ----------------------------------------
@@ -280,6 +279,15 @@ all-ic.txt: mp-hp-ext-merged-uberon.owl phenotype-annotations.owl
 
 all-closure.txt: mp-hp-ext-merged-uberon.owl phenotype-annotations.owl
 	owltools  file:phenotype-annotations.owl --merge file:$< --monitor-memory --save-closure $@
+
+
+# ----------------------------------------
+# obo2owl
+# ----------------------------------------
+# this comes last (lowest precedence rule)
+%.owl: %.obo
+	owltools $< -o $@
+
 
 # ----------------------------------------
 # DEPLOY

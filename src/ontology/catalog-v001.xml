@@ -2,9 +2,17 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/chebi_import.owl" uri="imports/chebi_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/wbbt_import.owl" uri="imports/wbbt_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/pato_import.owl" uri="imports/pato_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/go_import.owl" uri="imports/go_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/mpath_import.owl" uri="imports/mpath_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/hp-mp/mp_hp-align-equiv.owl" uri="hp-mp/mp_hp-align-equiv.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/uberon/uberon-simple-vertebrate-bridge.owl" uri="uberon-simple-vertebrate-bridge.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mp/mp-importer.owl" uri="mp/mp-importer.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/hp/hp-importer.owl" uri="hp/hp-importer.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/zp/zp-importer.owl" uri="zp/zp-importer.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-importer.owl" uri="wbphenotype/wbphenotype-importer.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/wbphenotype.owl" uri="wbphenotype.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mp.owl" uri="mp.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mp/mp-equivalence-axioms.owl" uri="mp/mp-equivalence-axioms.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mp/mp-equivalence-axioms-subq.owl" uri="mp/mp-equivalence-axioms-subq.owl"/>
@@ -12,6 +20,11 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/hp/hp-equivalence-axioms.owl" uri="hp/hp-equivalence-axioms.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/hp/hp-equivalence-axioms-subq.owl" uri="hp/hp-equivalence-axioms-subq.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/hp/hp-equivalence-axioms-subq-ubr.owl" uri="hp/hp-equivalence-axioms-subq-ubr.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/zp/zp-equivalence-axioms-subq-ubr.owl" uri="zp/zp-equivalence-axioms-subq-ubr.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-equivalence-axioms-subq-ubr.owl" uri="wbphenotype/wbphenotype-equivalence-axioms-subq-ubr.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/zp/zp-equivalence-axioms-subq-ubr.owl" uri="zp.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-equivalence-axioms-subq-ubr.owl" uri="wbphenotype/wbphenotype-equivalence-axioms-subq-ubr.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/zp.owl" uri="zp.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/hp.owl" uri="hp.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/pato.owl" uri="pato.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl" uri="external/ncbitaxon-subsets/taxslim.owl"/>
