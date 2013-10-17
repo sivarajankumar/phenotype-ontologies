@@ -228,7 +228,12 @@ mirror/pr.owl: mirror/pr.obo
 imports/%_import.obo: imports/%_import.owl
 	owltools $< -o -f obo $@
 
+# ----------------------------------------
+# Pre-packaged
+# ----------------------------------------
 
+main/metazoa.owl: metazoa.owl hp.owl mp.owl
+	ontology-release-runner $(USECAT) --allow-overwrite --outdir main --no-subsets --reasoner elk --asserted --simple $<
 
 # ----------------------------------------
 # APPLICATION ONTOLOGIES AND ANNOTATIONS
