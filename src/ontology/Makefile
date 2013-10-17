@@ -61,6 +61,8 @@ fypo.owl:
 	wget $(OBO)/fypo.owl
 wbphenotype.owl:
 	wget $(OBO)/wbphenotype.owl
+wbphenotype.obo: wbphenotype.owl
+	owltools $< -o -f obo --no-check $@
 
 
 pato.obo:
