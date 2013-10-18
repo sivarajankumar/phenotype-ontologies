@@ -5,7 +5,7 @@
 This page describes how to get started with the OWL axioms
 
 
-= Details =
+= Opening OWL files in Protege =
 
 Unfortunately the full OWL axiomatization is not yet visible in OntoBee, the best way to view these is to look at them in Protege 4.
 
@@ -22,5 +22,6 @@ Loading over the web can be slow, so you may want to check files out locally. Cl
    * [http://phenotype-ontologies.googlecode.com/svn/trunk/src/ontology/hp/ hp]
    * ...
 
+If you open any of the importer files, Protege will be use the catalog XML to route requests to the local files
 
 }}}
