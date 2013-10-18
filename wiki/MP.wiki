@@ -1,18 +1,27 @@
+
 #summary Mouse Phenotype Ontology
 
-= About =
+= Links =
 
  * [http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2801442/ The Mammalian Phenotype Ontology: enabling robust annotation and comparative analysis] Smith CL, Eppig JT
  * [http://www.informatics.jax.org/searches/MP_form.shtml MP browser at MGI]
  * [http://www.ontobee.org/browser/index.php?o=MP MP in OntoBee]
+ * [http://ols.wordvis.com/q=MP:0000001 MP in OLSVis]
 
 = OWL Axiomatization =
 
-The OWL axioms for MP are in the [http://phenotype-ontologies.googlecode.com/svn/trunk/src/ontology/mp/ src/ontology/mp] directory on this site
+The OWL axioms for MP are in the [http://phenotype-ontologies.googlecode.com/svn/trunk/src/ontology/mp/ src/ontology/mp] directory on this site.
 
  * http://purl.obolibrary.org/obo/mp.owl - basic OWL version
  * http://purl.obolibrary.org/obo/mp/mp-importer.owl - imports additional axioms, including the following ones below:
-
+       * rdf:resource="http://purl.obolibrary.org/obo/mp.owl
+        * rdf:resource="http://purl.obolibrary.org/obo/upheno/imports/chebi_import.owl
+        * rdf:resource="http://purl.obolibrary.org/obo/upheno/imports/uberon_import.owl
+        * rdf:resource="http://purl.obolibrary.org/obo/upheno/imports/pato_import.owl
+        * rdf:resource="http://purl.obolibrary.org/obo/upheno/imports/go_import.owl
+        * rdf:resource="http://purl.obolibrary.org/obo/upheno/imports/mpath_import.owl
+        * rdf:resource="http://purl.obolibrary.org/obo/mp/mp-equivalence-axioms-subq-ubr.owl
+ 
 
 = Details =
 
