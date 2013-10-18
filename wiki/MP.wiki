@@ -11,7 +11,7 @@
 
 The OWL axioms for MP are in the [http://phenotype-ontologies.googlecode.com/svn/trunk/src/ontology/mp/ src/ontology/mp] directory on this site.
 
- * http://purl.obolibrary.org/obo/mp.owl - basic OWL version
+ * http://purl.obolibrary.org/obo/mp.owl - direct conversion of MGI-supplied obo file
  * http://purl.obolibrary.org/obo/mp/mp-importer.owl - imports additional axioms, including the following ones below:
         * http://purl.obolibrary.org/obo/mp.owl
         * http://purl.obolibrary.org/obo/upheno/imports/chebi_import.owl
