@@ -11,6 +11,7 @@
 # ----------------------------------------
 
 OBO=http://purl.obolibrary.org/obo
+UPHENO = $(OBO)/upheno
 ONTS = mp hp wbphenotype zp
 ALL_ONTS = mp hp wbphenotype apo to
 MP_URL = ftp://ftp.informatics.jax.org/pub/reports/MPheno_OBO.ontology
@@ -238,6 +239,9 @@ imports/%_import.obo: imports/%_import.owl
 
 main/metazoa.owl: metazoa.owl hp.owl mp.owl
 	ontology-release-runner $(USECAT) --allow-overwrite --outdir main --no-subsets --reasoner elk --asserted --simple $<
+
+%-merged.owl: %.owl hp.owl mp.owl
+	owltools $(USECAT) $<  --merge-imports-closure --use-reasoner elk --assert-inferred-subclass-axioms --removeRedundant --allowEquivalencies --set-ontology-id $(UPHENO)/metazoa-merged.owl -o $@
 
 # ----------------------------------------
 # APPLICATION ONTOLOGIES AND ANNOTATIONS
