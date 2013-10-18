@@ -22,10 +22,6 @@ The OWL axioms for MP are in the [http://phenotype-ontologies.googlecode.com/svn
         * http://purl.obolibrary.org/obo/mp/mp-equivalence-axioms-subq-ubr.owl
  
  
+= Status =
 
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+The OWL axiomatization is updated frequently to stay in sync with changes in the MP
