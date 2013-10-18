@@ -3,8 +3,7 @@
 = Links =
 
  * http://www.human-phenotype-ontology.org/
- * Robinson PN, Köhler S, Bauer S,Seelow D, Horn D, Mundlos S. (November 2008)&nbsp;  The Human Phenotype Ontology: A Tool for Annotating and Analyzing Human Hereditary Disease.<br>
-	<em>The</em> <em>American Journal of Human Genetics</em> <strong>83</strong><em>, </em>610-615 [<a href="http://www.ncbi.nlm.nih.gov/pubmed/18950739" onclick="window.open(this.href); return false;">pubmed</a>] 
+ * Robinson PN, Köhler S, Bauer S,Seelow D, Horn D, Mundlos S. (November 2008)&nbsp;  The Human Phenotype Ontology: A Tool for Annotating and Analyzing Human Hereditary Disease. <em>The</em> <em>American Journal of Human Genetics</em> <strong>83</strong><em>, </em>610-615 [<a href="http://www.ncbi.nlm.nih.gov/pubmed/18950739" onclick="window.open(this.href); return false;">pubmed</a>] 
 
  * [http://www.human-phenotype-ontology.org/hpoweb/showterm?id=HP:0000118 HPO browser]
  * [http://www.ontobee.org/browser/index.php?o=HP HP in OntoBee]
