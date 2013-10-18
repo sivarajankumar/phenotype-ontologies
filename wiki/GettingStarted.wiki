@@ -16,10 +16,10 @@ You can open any of the PURLs directly in Protege. For example
 
 Loading over the web can be slow, so you may want to check files out locally. Click on the link "source" above to see how to check out the repo using SVN. Once checked out, you should have a directory structure:
 
- * src
-  * ontology
-   * mp
-   * hp
+ * [http://phenotype-ontologies.googlecode.com/svn/trunk/src/ src]
+  * [http://phenotype-ontologies.googlecode.com/svn/trunk/src/ontology/ ontology]
+   * [http://phenotype-ontologies.googlecode.com/svn/trunk/src/ontology/mp/ mp]
+   * [http://phenotype-ontologies.googlecode.com/svn/trunk/src/ontology/hp/ hp]
    * ...
 
 
