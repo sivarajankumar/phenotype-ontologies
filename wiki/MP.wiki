@@ -1,0 +1,22 @@
+#summary Mouse Phenotype Ontology
+
+= About =
+
+ * [http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2801442/ The Mammalian Phenotype Ontology: enabling robust annotation and comparative analysis] Smith CL, Eppig JT
+ * [http://www.informatics.jax.org/searches/MP_form.shtml MP browser at MGI]
+ * [http://www.ontobee.org/browser/index.php?o=MP MP in OntoBee]
+
+= OWL Axiomatization =
+
+The OWL axioms for MP are in the [http://phenotype-ontologies.googlecode.com/svn/trunk/src/ontology/mp/ src/ontology/mp] directory on this site
+
+ * http://purl.obolibrary.org/obo/mp.owl - basic OWL version
+ * http://purl.obolibrary.org/obo/mp/mp-importer.owl - imports additional axioms, including the following ones below:
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
