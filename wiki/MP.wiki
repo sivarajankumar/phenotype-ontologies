@@ -25,3 +25,7 @@ The OWL axioms for MP are in the [http://phenotype-ontologies.googlecode.com/svn
 = Status =
 
 The OWL axiomatization is updated frequently to stay in sync with changes in the MP
+
+= Editing the axioms =
+
+Currently the source is mp/mp-equivalence-axioms.obo, the OWL is generated from here. We are considering switching this around, so the OWL is edited, using Protege.
