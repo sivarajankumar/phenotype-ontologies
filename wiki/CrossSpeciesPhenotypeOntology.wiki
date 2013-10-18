@@ -1,0 +1,9 @@
+#summary One-sentence summary of this page.
+
+= Download =
+
+ * [http://compbio.charite.de/hudson/job/hpo.ontology.uberpheno/lastSuccessfulBuild/artifact/data/uberphenoOut/crossSpeciesPheno.obo crossSpeciesPheno.obo]
+
+= Details =
+
+ * Sebastian Köhler, Sandra C Doelken, Barbara J Ruef, Sebastian Bauer, Nicole Washington, Monte Westerfield, George Gkoutos, Paul Schofield, Damian Smedley, Suzanna E Lewis, Peter N Robinson, Christopher J Mungall (2013) [http://f1000research.com/articles/2-30/v1 Construction and accessibility of a cross-species phenotype ontology along with gene annotations for biomedical research] F1000Research
