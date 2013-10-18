@@ -23,7 +23,7 @@ USECAT= --catalog-xml $(CATALOG)
 # TOP LEVEL TARGETS
 # ----------------------------------------
 
-all: $(patsubst %,%-all,$(ONTS))
+all: $(patsubst %,%-all,$(ONTS)) merged-mammal merged-vertebrate merged-metazoa
 all_obo : $(patsubst %,%.obo,$(ONTS))
 all_xp_obo : $(patsubst %,%-equivalence-axioms.obo,$(ONTS))
 all_owl : $(patsubst %,%.owl,$(ONTS))
