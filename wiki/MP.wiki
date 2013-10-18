@@ -1,4 +1,3 @@
-
 #summary Mouse Phenotype Ontology
 
 = Links =
@@ -14,13 +13,14 @@ The OWL axioms for MP are in the [http://phenotype-ontologies.googlecode.com/svn
 
  * http://purl.obolibrary.org/obo/mp.owl - basic OWL version
  * http://purl.obolibrary.org/obo/mp/mp-importer.owl - imports additional axioms, including the following ones below:
-       * rdf:resource="http://purl.obolibrary.org/obo/mp.owl
-        * rdf:resource="http://purl.obolibrary.org/obo/upheno/imports/chebi_import.owl
-        * rdf:resource="http://purl.obolibrary.org/obo/upheno/imports/uberon_import.owl
-        * rdf:resource="http://purl.obolibrary.org/obo/upheno/imports/pato_import.owl
-        * rdf:resource="http://purl.obolibrary.org/obo/upheno/imports/go_import.owl
-        * rdf:resource="http://purl.obolibrary.org/obo/upheno/imports/mpath_import.owl
-        * rdf:resource="http://purl.obolibrary.org/obo/mp/mp-equivalence-axioms-subq-ubr.owl
+        * http://purl.obolibrary.org/obo/mp.owl
+        * http://purl.obolibrary.org/obo/upheno/imports/chebi_import.owl
+        * http://purl.obolibrary.org/obo/upheno/imports/uberon_import.owl
+        * http://purl.obolibrary.org/obo/upheno/imports/pato_import.owl
+        * http://purl.obolibrary.org/obo/upheno/imports/go_import.owl
+        * http://purl.obolibrary.org/obo/upheno/imports/mpath_import.owl
+        * http://purl.obolibrary.org/obo/mp/mp-equivalence-axioms-subq-ubr.owl
+ 
  
 
 = Details =
