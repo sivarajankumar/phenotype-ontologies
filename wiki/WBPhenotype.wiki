@@ -4,7 +4,7 @@
 
  * Schindelman, Gary, et al. [http://www.biomedcentral.com/1471-2105/12/32/ Worm Phenotype Ontology: integrating phenotype data within and beyond the C. elegans community.] BMC bioinformatics 12.1 (2011): 32.
  * [http://www.ontobee.org/browser/index.php?o=WBPhenotype WBPhenotype in OntoBee]
- * [http://ols.wordvis.com/q=WBPhenotype:0000001 WBPhenotype in OLSVis]
+ * [http://ols.wordvis.com/q=WBPhenotype:0000886 WBPhenotype in OLSVis]
 
 = OWL Axiomatization =
 
