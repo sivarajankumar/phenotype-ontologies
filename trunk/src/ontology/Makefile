@@ -23,7 +23,7 @@ USECAT= --catalog-xml $(CATALOG)
 # TOP LEVEL TARGETS
 # ----------------------------------------
 
-all: $(patsubst %,%-all,$(ONTS)) mammal-reasoned.owl vertebrate-reasoned.owl metazoa-reasoned.owl
+all: $(patsubst %,%-all,$(ONTS)) mammal-reasoned.owl vertebrate-reasoned.owl metazoa-reasoned.owl upheno.owl
 all_obo : $(patsubst %,%.obo,$(ONTS))
 all_xp_obo : $(patsubst %,%-equivalence-axioms.obo,$(ONTS))
 all_owl : $(patsubst %,%.owl,$(ONTS))
@@ -66,6 +66,10 @@ wbphenotype.owl:
 wbphenotype.obo: wbphenotype.owl
 	owltools $< -o -f obo --no-check $@
 
+upheno.obo:
+	wget http://compbio.charite.de/hudson/job/hpo.ontology.uberpheno/lastStableBuild/artifact/data/uberphenoOut/crossSpeciesPheno.obo -O $@
+upheno.owl: upheno.obo
+	owltools $< -o $@
 
 pato.obo:
 	cp $(HOME)/cvs/obo/ontology/phenotype/quality.obo $@
