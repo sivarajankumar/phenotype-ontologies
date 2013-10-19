@@ -1,4 +1,5 @@
 #summary Mouse Phenotype Ontology
+#labels Featured
 
 = Links =
 
