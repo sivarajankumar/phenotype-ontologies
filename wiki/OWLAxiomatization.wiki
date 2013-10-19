@@ -1,0 +1,10 @@
+#summary Description of OWL axiomatization of phenotypes
+
+= Introduction =
+
+By encoding phenotypes in OWL we can leverage reasoners to automatically construct and verify ontologies, and we can use the axioms to connect data across different OBO library ontologies.
+
+The motivation and background for the OWL axiomatization of phenotypes can be found in:
+
+C J Mungall, Georgios Gkoutos, Cynthia Smith, Melissa Haendel, Suzanna Lewis, Michael Ashburner (2010) [http://genomebiology.com/2010/11/1/R2 Integrating phenotype ontologies across multiple species] _Genome Biology 11 (1)_
+
