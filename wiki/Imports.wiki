@@ -9,14 +9,14 @@ Imports directory:
 
 Currently the imports includes:
 
-* imports/chebi_import.owl
-* imports/doid_import.owl
-* imports/go_import.owl
-* imports/mpath_import.owl
-* imports/pato_import.owl
-* imports/pr_import.owl
-* imports/uberon_import.owl
-* imports/wbbt_import.owl
+ * imports/chebi_import.owl
+ * imports/doid_import.owl
+ * imports/go_import.owl
+ * imports/mpath_import.owl
+ * imports/pato_import.owl
+ * imports/pr_import.owl
+ * imports/uberon_import.owl
+ * imports/wbbt_import.owl
 
 = Anatomy =
 
