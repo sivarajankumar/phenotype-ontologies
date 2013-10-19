@@ -9,3 +9,22 @@
 = Details =
 
  * Sebastian Köhler, Sandra C Doelken, Barbara J Ruef, Sebastian Bauer, Nicole Washington, Monte Westerfield, George Gkoutos, Paul Schofield, Damian Smedley, Suzanna E Lewis, Peter N Robinson, Christopher J Mungall (2013) [http://f1000research.com/articles/2-30/v1 Construction and accessibility of a cross-species phenotype ontology along with gene annotations for biomedical research] F1000Research
+
+The cross-species phenotype ontologies is constructed using
+
+ * [HP]
+ * [MP]
+ * [ZP]
+
+And associated OWL axioms. Classes inferred to be equivalent are merged.
+
+Note that it is also possible to load individual sets by grouping taxon:
+
+ * http://purl.obolibrary.org/obo/upheno/mammal.owl ([MP] plus [HP])
+ * http://purl.obolibrary.org/obo/upheno/vertebrate.owl (above plus [ZP])
+ * http://purl.obolibrary.org/obo/upheno/metazoa.owl (above plus [WBPhenotype]) - todo: add [DPO]
+ * TODO - eukartote, all
+
+
+
+ 
