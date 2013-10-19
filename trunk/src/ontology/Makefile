@@ -201,7 +201,7 @@ uberon-simple-vertebrate-bridge.obo:
 UPHENO_IMPORTS_BASE_URI = $(OBO)/upheno/imports
 
 # Ontology dependencies. TODO - nbo
-IMPORTS = pato uberon chebi pr go doid mpath
+IMPORTS = pato uberon chebi pr go doid mpath nbo
 
 # Make this target to regenerate ALL
 all_imports: $(patsubst %, imports/%_import.owl,$(IMPORTS))
