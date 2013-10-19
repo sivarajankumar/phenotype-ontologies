@@ -23,7 +23,7 @@ USECAT= --catalog-xml $(CATALOG)
 # TOP LEVEL TARGETS
 # ----------------------------------------
 
-all: $(patsubst %,%-all,$(ONTS)) merged-mammal merged-vertebrate merged-metazoa
+all: $(patsubst %,%-all,$(ONTS)) mammal-reasoned.owl vertebrate-reasoned.owl metazoa-reasoned.owl
 all_obo : $(patsubst %,%.obo,$(ONTS))
 all_xp_obo : $(patsubst %,%-equivalence-axioms.obo,$(ONTS))
 all_owl : $(patsubst %,%.owl,$(ONTS))
@@ -35,7 +35,7 @@ all_owl : $(patsubst %,%.owl,$(ONTS))
 # PARSING, TRANSLATION AND REWRITING
 # ----------------------------------------
 
-fetch:
+refresh:
 	yes p | svn update && mv mp.obo mp.obo.old && make mp.obo && mv hp.obo hp.obo.old && make hp.obo
 
 mp.obo:
@@ -60,6 +60,7 @@ zp/zp-equivalence-axioms-subq.owl: zp.owl
 
 fypo.owl:
 	wget $(OBO)/fypo.owl
+
 wbphenotype.owl:
 	wget $(OBO)/wbphenotype.owl
 wbphenotype.obo: wbphenotype.owl
@@ -240,8 +241,8 @@ imports/%_import.obo: imports/%_import.owl
 main/metazoa.owl: metazoa.owl hp.owl mp.owl
 	ontology-release-runner $(USECAT) --allow-overwrite --outdir main --no-subsets --reasoner elk --asserted --simple $<
 
-%-merged.owl: %.owl hp.owl mp.owl
-	owltools $(USECAT) $<  --merge-imports-closure --use-reasoner elk --assert-inferred-subclass-axioms --removeRedundant --allowEquivalencies --set-ontology-id $(UPHENO)/metazoa-merged.owl -o $@
+%-reasoned.owl: %.owl hp.owl mp.owl
+	owltools $(USECAT) $<  --merge-imports-closure --use-reasoner elk --assert-inferred-subclass-axioms --removeRedundant --allowEquivalencies --set-ontology-id $(UPHENO)/$@ -o $@
 
 # ----------------------------------------
 # APPLICATION ONTOLOGIES AND ANNOTATIONS
