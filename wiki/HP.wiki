@@ -1,4 +1,5 @@
 #summary Human Phenotype Ontology
+#labels Featured
 
 = Links =
 
