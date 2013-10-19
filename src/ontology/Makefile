@@ -23,7 +23,7 @@ USECAT= --catalog-xml $(CATALOG)
 # TOP LEVEL TARGETS
 # ----------------------------------------
 
-all: $(patsubst %,%-all,$(ONTS)) mammal-reasoned.owl vertebrate-reasoned.owl metazoa-reasoned.owl upheno.owl
+all: $(patsubst %,%-all,$(ONTS)) all_imports mammal-reasoned.owl vertebrate-reasoned.owl metazoa-reasoned.owl upheno.owl
 all_obo : $(patsubst %,%.obo,$(ONTS))
 all_xp_obo : $(patsubst %,%-equivalence-axioms.obo,$(ONTS))
 all_owl : $(patsubst %,%.owl,$(ONTS))
@@ -215,7 +215,7 @@ KEEPRELS = BFO:0000050 BFO:0000051 RO:0002202 immediate_transformation_of
 #imports/wbbt_import.owl: wbphenotype/wbphenotype-equivalence-axioms-subq-ubr.owl mirror/wbbt.owl
 #	owltools  $(USECAT) --map-ontology-iri $(UPHENO_IMPORTS_BASE_URI)/wbbt_import.owl mirror/wbbt.owl $< --merge-imports-closure mirror/$*.owl --add-imports-from-support  --extract-module -s $(OBO)/$*.owl -c --remove-axiom-annotations --make-subset-by-properties $(KEEPRELS) --set-ontology-id $(UPHENO_IMPORTS_BASE_URI)/$@ -o file://`pwd`/$@
 
-imports/%_import.owl: imports/upheno-preimporter.owl mirror/%.owl
+imports/%_import.owl: imports/upheno-preimporter.owl mirror/%.owl mp/mp-equivalence-axioms.obo hp/hp-equivalence-axioms.obo
 	owltools  $(USECAT) --map-ontology-iri $(UPHENO_IMPORTS_BASE_URI)/$*_import.owl mirror/$*.owl $< --merge-imports-closure mirror/$*.owl --add-imports-from-support  --extract-module -s $(OBO)/$*.owl -c --remove-axiom-annotations --make-subset-by-properties $(KEEPRELS) --set-ontology-id $(UPHENO_IMPORTS_BASE_URI)/$@ -o file://`pwd`/$@
 
 # clone remote ontology locally, perfoming some excision of relations and annotations
