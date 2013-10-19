@@ -1,4 +1,5 @@
 #summary Worm Phenotype Ontology
+#labels Featured
 
 = Links =
 
