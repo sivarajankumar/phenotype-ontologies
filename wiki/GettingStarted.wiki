@@ -22,6 +22,8 @@ Loading over the web can be slow, so you may want to check files out locally. Cl
    * [http://phenotype-ontologies.googlecode.com/svn/trunk/src/ontology/hp/ hp]
    * ...
 
-If you open any of the importer files, Protege will be use the catalog XML to route requests to the local files
+If you open any of the importer files, Protege will be use the catalog XML to route requests to the local files.
 
-}}}
+If you are using [OWLTools], you can use the "--use-catalog" option to load ontologies using the catalog
+
+See also [Imports]
