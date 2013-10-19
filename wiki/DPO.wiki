@@ -1,0 +1,5 @@
+#summary Drosophila Phenotype Ontology
+
+ * [http://www.jbiomedsem.com/content/4/1/30/abstract The Drosophila phenotype ontology] Osumi-Sutherland et al, J Biomed Sem.
+
+Note that the OWL axioms for DPO are managed directly in the DPO project repo, we do not duplicate them here
