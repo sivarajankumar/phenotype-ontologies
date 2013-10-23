@@ -246,7 +246,7 @@ main/metazoa.owl: metazoa.owl hp.owl mp.owl
 	ontology-release-runner $(USECAT) --allow-overwrite --outdir main --no-subsets --reasoner elk --asserted --simple $<
 
 %-reasoned.owl: %.owl hp.owl mp.owl
-	owltools $(USECAT) $<  --merge-imports-closure --use-reasoner elk --assert-inferred-subclass-axioms --removeRedundant --markIsInferred --allowEquivalencies --set-ontology-id $(UPHENO)/$@ -o $@ >& $@.log
+	owltools $(USECAT) $<  --merge-imports-closure --use-reasoner elk --assert-inferred-subclass-axioms --removeRedundant --markIsInferred --allowEquivalencies --set-ontology-id $(UPHENO)/$@ -o $@ 
 
 %-reasoned.obo: %-reasoned.owl
 	owltools $< -o $@
