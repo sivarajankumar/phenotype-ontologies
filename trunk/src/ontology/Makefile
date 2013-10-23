@@ -248,6 +248,9 @@ main/metazoa.owl: metazoa.owl hp.owl mp.owl
 %-reasoned.owl: %.owl hp.owl mp.owl
 	owltools $(USECAT) $<  --merge-imports-closure --use-reasoner elk --assert-inferred-subclass-axioms --removeRedundant --markIsInferred --allowEquivalencies --set-ontology-id $(UPHENO)/$@ -o $@ >& $@.log
 
+%-reasoned.obo: %-reasoned.owl
+	owltools $< -o $@
+
 # ----------------------------------------
 # APPLICATION ONTOLOGIES AND ANNOTATIONS
 # ----------------------------------------
