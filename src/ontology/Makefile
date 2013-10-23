@@ -245,8 +245,8 @@ imports/%_import.obo: imports/%_import.owl
 main/metazoa.owl: metazoa.owl hp.owl mp.owl
 	ontology-release-runner $(USECAT) --allow-overwrite --outdir main --no-subsets --reasoner elk --asserted --simple $<
 
-%-reasoned.owl: %.owl hp.owl mp.owl 
-	owltools $(USECAT) $<  --merge-imports-closure --use-reasoner elk --assert-inferred-subclass-axioms --removeRedundant --allowEquivalencies --set-ontology-id $(UPHENO)/$@ -o $@
+%-reasoned.owl: %.owl hp.owl mp.owl
+	owltools $(USECAT) $<  --merge-imports-closure --use-reasoner elk --assert-inferred-subclass-axioms --removeRedundant --markIsInferred --allowEquivalencies --set-ontology-id $(UPHENO)/$@ -o $@ >& $@.log
 
 # ----------------------------------------
 # APPLICATION ONTOLOGIES AND ANNOTATIONS
