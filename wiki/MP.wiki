@@ -29,4 +29,10 @@ The OWL axiomatization is updated frequently to stay in sync with changes in the
 
 = Editing the axioms =
 
-Currently the source is mp/mp-equivalence-axioms.obo, the OWL is generated from here. We are considering switching this around, so the OWL is edited, using Protege.
+The edit file is currently:
+
+ * http://purl.obolibrary.org/obo/mp/mp-equivalence-axioms-edit.owl
+
+Edit this in protege.
+
+The file mp-equivalence-axioms.obo is DEPRECATED!
