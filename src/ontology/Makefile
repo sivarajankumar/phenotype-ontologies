@@ -43,6 +43,9 @@ mp.obo:
 mp.owl: mp.obo
 	owltools $< -o $@
 
+mp/mp-equivalent-classes-subq-ubr.owl: mp/mp-equivalent-classes-edit.owl
+	owltools --remove-imports-declarations $< -o $@
+
 
 hp.obo: external/hpo/human-phenotype-ontology.obo
 	echo remember to update external/hpo && \
