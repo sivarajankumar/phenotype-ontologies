@@ -23,10 +23,9 @@ Pipeline
 
 The pipeline is specified by the Makefile in this directory.
 
-* ONT.obo -- this is copied from source. Should be identical to http://purl.obolibrary.org/obo/ONT.obo
-* ONT.owl -- uses new [3] obo2owl translation. Should be identical to http://purl.obolibrary.org/obo/ONT.owl
-* ONT/ONT-equivalence-axioms-subq-ubr.owl -- external logical definitions with anatomy mapped to uberon where appropriate
-* ONT/ONT-importer.owl -- imports axioms, core ontology plus subsets of OBO ontologies
+ * mp-equivalence-axioms-edit.owl <-- EDIT THIS FILE. Protege 4 recommended
+ * mp-equivalence-axioms-edit.obo <-- DEPRECATED
+ * mp-equivalence-axioms-subq-ubr.owl <-- just the equivalence axioms, no imports. Derived from -edit.owl file
 
 
 Ontology URLs
