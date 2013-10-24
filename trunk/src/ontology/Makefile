@@ -90,10 +90,10 @@ pato.owl: pato.obo
 hp/hp-equivalence-axioms.obo: external/hpo/human-phenotype-ontology_xp.obo
 	cp $< $@
 
-mp/%.owl: mp/%.obo
-	owltools $< -o $@
-hp/%.owl: hp/%.obo
-	owltools $< -o $@
+#mp/%.owl: mp/%.obo
+#	owltools $< -o $@
+#hp/%.owl: hp/%.obo
+#	owltools $< -o $@
 
 #%.owl: %.obo
 #	owltools  $< -o file://`pwd`/$@
