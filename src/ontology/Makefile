@@ -31,6 +31,11 @@ all_owl : $(patsubst %,%.owl,$(ONTS))
 %-all: %.obo %.owl
 	make $*/$*-equivalence-axioms-subq-ubr.owl ONT=$*
 
+
+# OVERRIDES
+mp/mp-equivalence-axioms-subq-ubr.owl: mp/mp-equivalence-axioms-edit.owl
+	owltools $(USECAT) $< --remove-imports-declarations -o $@
+
 # ----------------------------------------
 # PARSING, TRANSLATION AND REWRITING
 # ----------------------------------------
@@ -43,8 +48,6 @@ mp.obo:
 mp.owl: mp.obo
 	owltools $< -o $@
 
-mp/mp-equivalent-classes-subq-ubr.owl: mp/mp-equivalent-classes-edit.owl
-	owltools --remove-imports-declarations $< -o $@
 
 
 hp.obo: external/hpo/human-phenotype-ontology.obo
