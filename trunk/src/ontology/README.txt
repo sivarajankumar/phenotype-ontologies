@@ -7,7 +7,12 @@ which allow them to be used for reasoning and multi-species data
 discovery.
 
 See the google code repo page for more details
-https://code.google.com/p/phenotype-ontologies/
+
+ * https://code.google.com/p/phenotype-ontologies/
+
+This directory:
+
+ * https://code.google.com/p/phenotype-ontologies/wiki/MP
 
 Ontologies
 ----------
