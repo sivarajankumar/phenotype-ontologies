@@ -245,27 +245,18 @@ main/metazoa.owl: metazoa.owl hp.owl mp.owl
 	owltools $< -o $@
 
 # ----------------------------------------
-# APPLICATION ONTOLOGIES AND ANNOTATIONS
-# ----------------------------------------
-
-# here we merge an uberon module with phenotype modules
-#  the uberon module currently makes use of: develops_from,part_of,continuous_with,capable_of
-
-MP_HP_U = external/uberon/uberon-with-isa-for-FMA-MA-ZFA.owl pato.owl mp/mp-ext-merged.owl hp/hp-ext-merged.owl hp-mp/mp_hp-align-equiv.owl external/behavior-ontology/behavior.owl
-# too large for svn?
-hp-mp/mp-hp-ext-merged-uberon.owl: $(MP_HP_U)
-	owltools $(patsubst %,file:%,$(MP_HP_U)) --merge-support-ontologies -o file://`pwd`/$@
-
-MP_HP_U_PSM = external/uberon/uberon-with-isa-for-FMA-MA-ZFA.owl pato.owl mp/mp-ext-merged-psm.owl hp/hp-ext-merged-psm.owl hp-mp/mp_hp-align-equiv.owl
-hp-mp/mp-hp-ext-merged-uberon-psm.owl: $(MP_HP_U_PSM)
-	owltools $(patsubst %,file:%,$(MP_HP_U_PSM)) --merge-support-ontologies -o file://`pwd`/$@
-
-phenotype-annotations.owl: external/annotations/MGI/genotype_phenotype.owl external/annotations/Human/disorder_phenotype.owl
-	owltools --create-ontology 'http://purl.obolibrary.org/obo/phenotype.owl' file:external/annotations/MGI/genotype_phenotype.owl file:external/annotations/Human/disorder_phenotype.owl --merge-support-ontologies -o file://`pwd`/$@
-
-# ----------------------------------------
 # EXPERIMENTAL
 # ----------------------------------------
+
+mp/mp-to-hp-match.tbl:
+	owltools $(USECAT) mammal.owl --make-default-abox --sim-compare-atts -p mp/mp-to-hp-sim.properties -o $@.tmp && mv $@.tmp $@
+mp/mp-to-hp-match-best.tbl:
+	owltools $(USECAT) mammal.owl --make-default-abox --sim-compare-atts -p mp/mp-to-hp-sim.properties --set bestOnly true -o $@.tmp && mv $@.tmp $@
+mp/mp-to-hp-match-best.owl:
+	owltools $(USECAT) mammal.owl --make-default-abox --sim-compare-atts -p mp/mp-to-hp-sim.properties --set bestOnly true --set outputFormat owl -o $@.tmp && mv $@.tmp $@
+
+wbphenotype/wbphenotype-to-%-match-best.owl:
+	owltools $(USECAT) metazoa.owl --make-default-abox --sim-compare-atts -p wbphenotype/wbphenotype-to-$*-sim.properties --set bestOnly true --set outputFormat owl -o $@.tmp && mv $@.tmp $@
 
 # ~~~
 # MAPPING TO GO

@@ -7,6 +7,7 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/go_import.owl" uri="../imports/go_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/wbphenotypeath_import.owl" uri="../imports/wbphenotypeath_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/wbphenotype.owl" uri="../wbphenotype.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-to-mp-match-best.owl" uri="wbphenotype-to-mp-match-best.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-equivalence-axioms.owl" uri="wbphenotype-equivalence-axioms.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-equivalence-axioms-subq.owl" uri="wbphenotype-equivalence-axioms-subq.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-equivalence-axioms-subq-ubr.owl" uri="wbphenotype-equivalence-axioms-subq-ubr.owl"/>
