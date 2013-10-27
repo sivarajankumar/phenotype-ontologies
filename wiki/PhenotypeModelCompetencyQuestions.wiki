@@ -16,13 +16,15 @@ Prefix: MP <http://purl.obolibrary.org/obo/MP_>
 
 Together with imports of relevant ontologies.
 
+We take existing phenotype ontologies as a kind of "gold standard" and assume that assertions provided are correct - of course it may be the case that further discussion will lead to some existing patterns being changed. However, this is expected to be unusual.
+
 = Details =
 
 == Core Competency Questions ==
 
 The model *must* be able to derive the desired entailments here.
 
-=== Basic Inheritance using E class hierarchy ===
+=== CQ: Basic Inheritance using E class hierarchy ===
 
 Example:
 {{{
@@ -30,7 +32,7 @@ Class: MP:0000550 ## abnormal forelimb morphology
 SubClassOf: MP:0002109 ## abnormal limb morphology
 }}}
 
-=== Basic Inheritance using Q class hierarchy ===
+=== CQ: Basic Inheritance using Q class hierarchy ===
 
 Example:
 
@@ -57,7 +59,7 @@ EquivalentTo: PATO:0001334  ## diameter
 }}}
 
 
-=== Basic Inheritance using E partonomy ===
+=== CQ: Basic Inheritance using E partonomy ===
 
 Example:
 {{{
@@ -151,6 +153,29 @@ Furthermore, this absence is typically one end of a spectrum of morphological va
 
 This is barely touching the subject, and is intended to illustrate that things may be more subtle than simply treating words like "absent" as equivalent to cardinality=0. An understanding of the medical, developmental and evolutionary contexts are absolutely required, together with an understanding of the logic.
 
-=== Absolute Absence ===
+==== CQ: Strict Logical Absence ====
 
-=== Absence of Some ===
+Example:
+{{{
+Class: 'lack of all hindlimbs'
+SubClassOf: 'lack of all femurs'
+}}}
+
+Please see the discussion above to see why the classes used in this example may not be equivalent to any existing MP class or why inferences of this sort may not be useful from a developmental phenotyping context.
+
+We assume background axioms:
+
+{{{
+Class: femur
+SubClassOf: part_of some hindlimb
+}}}
+
+
+=== CQ: Absence of Some ====
+
+Example:
+{{{
+Class: MP:0004790 ## absent upper incisors
+SubClassOf: MP:0000125 ## absent incisors
+}}}
+
