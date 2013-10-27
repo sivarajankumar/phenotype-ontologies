@@ -1,5 +1,7 @@
 #summary Competency questions to test a schema/pattern for modeling phenotypes
 
+<wiki:toc max_depth="1" />
+
 = Introduction =
 
 This is background material for discussion amongst OWL modelers concerning the consequences of modeling choices.
