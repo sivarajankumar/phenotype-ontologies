@@ -138,6 +138,15 @@ Class: MP:0000690 ## absent spleen
 SubClassOf: MP:0000689 ## abnormal spleen morphology
 }}}
 
+==== CQ: absence classifies under decreased number ====
+
+Example:
+{{{
+Class: MP:0011696 ## absent mast cells
+SubClassOf: MP:0000336 ## decreased mast cell number
+}}}
+
+
 === Developmental Competency Questions ===
 
 To see how MP is currently classified, see this example:
