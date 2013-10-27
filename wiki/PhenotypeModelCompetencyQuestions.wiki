@@ -1,0 +1,18 @@
+#summary Competency questions to test a schema/pattern for modeling phenotypes
+
+= Introduction =
+
+This is background material for discussion amongst OWL modelers concerning the consequences of modeling choices.
+
+Each competency question is stated in terms of an OWL axiom or axioms that should be entailed, given the existence of supporting axioms in external ontologies. This could be translated into a test suite (e.g. using junit) to objectively test a given model.
+
+= Details =
+
+=== Basic Inheritance using E class hierarchy ===
+
+Example:
+{{{
+Class: MP:0000550 ! abnormal forelimb morphology
+SubClassOf: MP:0002109 ## abnormal limb morphology
+}}}
+
