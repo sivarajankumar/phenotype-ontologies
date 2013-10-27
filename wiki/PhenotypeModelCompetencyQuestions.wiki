@@ -98,7 +98,7 @@ Some of these may simply be too hard. Others may be controversial w.r.t what the
 
 === Absence Reasoning ===
 
-Please read [[ModelingOfAbsence]]
+Note that there are many subtleties here. Please read [ModelingOfAbsence] as an introduction.
 
 ==== CQ: Strict Logical Absence ====
 
@@ -108,7 +108,7 @@ Class: 'lack of all hindlimbs'
 SubClassOf: 'lack of all femurs'
 }}}
 
-Please see the discussion above to see why the classes used in this example may not be equivalent to any existing MP class or why inferences of this sort may not be useful from a developmental phenotyping context.
+Please refer to [ModelingOfAbsence] see why the classes used in this example may not be equivalent to any existing MP class or why inferences of this sort may not be useful from a developmental phenotyping context.
 
 We assume background axioms:
 
@@ -118,10 +118,15 @@ SubClassOf: part_of some hindlimb
 }}}
 
 
-=== CQ: Absence of Some ====
+==== CQ: Absence of Some ====
 
 Example:
 {{{
 Class: MP:0004790 ## absent upper incisors
 SubClassOf: MP:0000125 ## absent incisors
 }}}
+
+Refer to [ModelingOfAbsence] for a discussion on why this is a desirable inference.
+
+==== CQ: absence classifies under morphology ====
+
