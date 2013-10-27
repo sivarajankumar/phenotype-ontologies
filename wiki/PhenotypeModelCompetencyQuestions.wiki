@@ -1,6 +1,6 @@
 #summary Competency questions to test a schema/pattern for modeling phenotypes
 
-<wiki:toc max_depth="1" />
+<wiki:toc max_depth="3" />
 
 = Introduction =
 
