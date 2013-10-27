@@ -1,6 +1,6 @@
 #summary Competency questions to test a schema/pattern for modeling phenotypes
 
-<wiki:toc max_depth="3" />
+<wiki:toc max_depth="4" />
 
 = Introduction =
 
@@ -129,4 +129,3 @@ SubClassOf: MP:0000125 ## absent incisors
 Refer to [ModelingOfAbsence] for a discussion on why this is a desirable inference.
 
 ==== CQ: absence classifies under morphology ====
-
