@@ -179,6 +179,18 @@ Class: MP:0000116 ## abnormal tooth development
 SubClassOf: MP:0002100 ## abnormal tooth morphology
 }}}
 
+==== CQ: morphology of developmental structure classifies under development ====
+
+See above - this is somewhat inverted from the previous example:
+
+{{{
+Class: MP:0005650 ## abnormal limb bud morphology
+SubClassOf: MP:0006279 ## abnormal limb development
+}}}
+
+
+
+See also: https://github.com/obophenotype/uberon/issues/346
 
 === Traits ===
 
