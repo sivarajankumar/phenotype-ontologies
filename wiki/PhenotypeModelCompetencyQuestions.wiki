@@ -157,4 +157,58 @@ To see how MP is currently classified, see this example:
 
 We could argue that the pattern should be switched here, and that abnormal tooth morphology generally arises through abnormal tooth development. However, it is of course possible for teeth to attain abnormal morphology post-development.
 
+Some of the justifications for the other relationships in the above example are more subtle.
+
 More input from biologists required to inform competency questions here.
+
+==== CQ: development classifies under morphology ====
+
+See above
+
+{{{
+Class: MP:0000116 ## abnormal tooth development 
+SubClassOf: MP:0002100 ## abnormal tooth morphology
+}}
+
+
+=== Traits ===
+
+For our purposes here a trait is a phenotype without a value specified. Various modeling choices can be justified.
+
+==== CQ: Traits connect to phenotypes ====
+
+Example:
+{{{
+Class: 'small hippocampus'
+SubClassOf: 'hippocampus size'
+}}}
+
+Note 1: here 'hippocampus size' refers to the size of the hippocampus in general. There is no assumption of abnormality
+
+Note 2: other relationships beyond SubClassOf can be justified. However, there should be *some* connection between trait and phenotype ontologies (e.g. VT and MP) that can be inferred.
+
+==== CQ: Traits are distinguishable ====
+
+Example:
+{{{
+Class: 'eye color'
+DisjointWith: 'eye shape'
+}}}
+
+Notes on E-centric approach:
+
+If we were to model traits as:
+{{{
+Class: 'eye color' EquivalentTo: eye and has_quality some color
+Class: 'eye shape' EquivalentTo: eye and has_quality some shape
+}}}
+
+Then given the background axioms:
+
+{{{
+Class: eye SubClassOf 'macroscopic material entity'
+Class: 'macroscopic material entity'
+  SubClassOf: has_quality some color, has_quality some shape
+}}}
+
+Then our two traits would collapse into (be entailed to be equivalent to) 'eye' leading to unsatisfiability of eye when the DisjointWith is added.
