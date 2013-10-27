@@ -94,6 +94,63 @@ The main challenge here is deciding which qualities should be propagated when. A
 
 Some of these may simply be too hard. Others may be controversial w.r.t what the intended meaning of the phenotype is, and what the expected entailment is.
 
+=== Absence Reasoning ===
+
+Much has been written on the subject of representing absence. Before diving into the logical issues it is worth examining patterns in existing phenotype ontologies to understand what user expectations may typically be for absence.
+
+It is not uncommon to see
+
+{{{
+ is_a MP:0000125 ! absent incisors
+     is_a MP:0004790 ! absent upper incisors
+     is_a MP:0004791 ! absent lower incisors
+}}}
+
+From a strict logical perspective, this is inverted. "absent incisors" surely means "absence of all incisors". It would be possible to have an animal with absent lower incisors and present upper incisors, yielding a contradiction.
+
+If the ontology were in fact modeling "absence of all S" then it would lead to a curious ontology structure, with the typical tree structure of the anatomy ontology representing S inverted into a polyhierarchical fan in the absent-S ontology.
+
+From this it can be cautiously inferred that the intent of the phenotype ontology curator and user is in fact to model "absence of some S" rather than "absence of all S". This may not be a universal rule, and may vary depending on whether we are talking about a serially repeated structure or one that typically occurs in isolation.
+
+It is also not uncommon to see patterns such as:
+
+{{{
+  is_a MP:0000689 ! abnormal spleen morphology
+     is_a MP:0000690 ! absent spleen
+}}}
+
+Again, from a strict logical perspective this is false. If the spleen is absent then what does the "morphology" of the parent refer to?
+
+However, this inference is clearly a desirable one from the point of view of the phenotype ontology editors and users, as it is common in ontologies for a variety of structures. For example:
+
+{{{
+     is_a HP:0001743 ! Abnormality of the spleen
+      is_a HP:0010451 ! Aplasia/Hypoplasia of the spleen
+       is_a HP:0001746 ! Asplenia *** 
+}}}
+
+And:
+
+{{{
+      is_a WBPhenotype:0001940 ! rachis morphology variant
+       is_a WBPhenotype:0001942 ! rachis absent *** 
+}}}
+
+These patterns can be defended on developmental biology grounds. "absence" here is not equivalent to logical absence. It refers specifically to developmental absence. It would be odd to include a worm under "spleen absent", because worms have not evolved spleens. 
+
+Similarly, if the strict cardinality interpretation were intended, we would expect to see:
+
+{{{
+Class: MP:0000557 ## absent hindlimb
+SubClassOf: MP:0004349 ## absent femur
+}}}
+
+i.e. if you're missing your hindlegs, you're necessarily missing your femurs. But this is definitely *not* how phenotype ontologies are classified.
+
+Furthermore, this absence is typically one end of a spectrum of morphological value space, and so it can be argued that placement under morphology is both useful and correct.
+
+This is barely touching the subject, and is intended to illustrate that things may be more subtle than simply treating words like "absent" as equivalent to cardinality=0. An understanding of the medical, developmental and evolutionary contexts are absolutely required, together with an understanding of the logic.
+
 === Absolute Absence ===
 
 === Absence of Some ===
