@@ -37,6 +37,23 @@ Class: MP:0008153 ## decreased diameter of fibula
 SubClassOf: MP:0002187 ## abnormal fibula morphology
 }}}
 
+Supporting axioms:
+{{{
+   is_a PATO:0000051 ! morphology
+    is_a PATO:0000117 ! size
+     is_a PATO:0000587 ! decreased size
+      is_a PATO:0000574 ! decreased length
+       is_a PATO:0001715 ! decreased diameter
+}}}
+
+And:
+
+{{{
+Class: PATO:0001715 ## decreased diameter
+EquivalentTo: PATO:0001334  ## diameter
+  and decreased_in_magnitude_relative_to some PATO:0000461 ## normal
+}}}
+
 
 === Basic Inheritance using E partonomy ===
 
