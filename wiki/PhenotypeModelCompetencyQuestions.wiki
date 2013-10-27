@@ -129,3 +129,11 @@ SubClassOf: MP:0000125 ## absent incisors
 Refer to [ModelingOfAbsence] for a discussion on why this is a desirable inference.
 
 ==== CQ: absence classifies under morphology ====
+
+Example:
+{{{
+Class: MP:0000690 ## absent spleen
+SubClassOf: MP:0000689 ## abnormal spleen morphology
+}}}
+
+=== Developmental Competency Questions ===
