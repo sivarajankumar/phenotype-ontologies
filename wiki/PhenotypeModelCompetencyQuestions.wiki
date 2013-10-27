@@ -168,7 +168,7 @@ See above
 {{{
 Class: MP:0000116 ## abnormal tooth development 
 SubClassOf: MP:0002100 ## abnormal tooth morphology
-}}
+}}}
 
 
 === Traits ===
