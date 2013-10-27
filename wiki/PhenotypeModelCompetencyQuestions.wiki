@@ -6,13 +6,50 @@ This is background material for discussion amongst OWL modelers concerning the c
 
 Each competency question is stated in terms of an OWL axiom or axioms that should be entailed, given the existence of supporting axioms in external ontologies. This could be translated into a test suite (e.g. using junit) to objectively test a given model.
 
+examples are given in Manchester syntax. We assume prefixes of the form
+
+{{{
+Prefix: MP <http://purl.obolibrary.org/obo/MP_>
+}}}
+
+Together with imports of relevant ontologies.
+
 = Details =
+
+== Core Competency Questions ==
+
+The model *must* be able to derive the desired entailments here.
 
 === Basic Inheritance using E class hierarchy ===
 
 Example:
 {{{
-Class: MP:0000550 ! abnormal forelimb morphology
+Class: MP:0000550 ## abnormal forelimb morphology
 SubClassOf: MP:0002109 ## abnormal limb morphology
 }}}
 
+=== Basic Inheritance using Q class hierarchy ===
+
+Example:
+
+{{{
+Class: MP:0008153 ## decreased diameter of fibula
+SubClassOf: MP:0002187 ## abnormal fibula morphology
+}}}
+
+
+=== Basic Inheritance using E partonomy ===
+
+Example:
+{{{
+Class: MP:0002110 ## abnormal digit morphology
+SubClassOf: MP:0000572 ## abnormal autopod morphology
+}}}
+
+== Advanced Competency Questions ==
+
+Some of these may simply be too hard. Others may be controversial w.r.t what the intended meaning of the phenotype is, and what the expected entailment is.
+
+=== Absolute Absence ===
+
+=== Absence of Some ===
