@@ -46,6 +46,31 @@ Class: MP:0002110 ## abnormal digit morphology
 SubClassOf: MP:0000572 ## abnormal autopod morphology
 }}}
 
+Existing approaches:
+
+The approach described in [http://genomebiology.com/2010/11/1/R2/#sec2 Mungall et al 2010] uses a new relation:
+
+{{{
+ObjectPorperty: inheres_in_part_of
+SubPropertyChain: inheres_in o part_of
+ObjectProperty: inheres_in SubPropertyOf: inheres_in_part_of
+}}}
+
+Then, assuming a basic Q-in-E model, we can write:
+
+{{{
+Class: MP:0002110 ## abnormal digit morphology
+EquivalentTo: morphology and inheres_in_part_of some digit and qualifier abnormal
+Class: MP:0000572 ## abnormal autopod morphology
+EquivalentTo: morphology and inheres_in_part_of some digit and qualifier abnormal
+}}}
+
+To obtain the desired inference (also works if the digit morphology term is restricted to inheres_in).
+
+Informally, we can think of this in terms of a weaker relation that permits propagation up the E partonomy (and subclass), and a stronger relation that only propagates up subclass.
+
+The main challenge here is deciding which qualities should be propagated when. An abnormal morphology of a nucleus of a muscle cell of digit 1 would satisfy the condition, but this would be an undesirable inference. To recapitulate the desired level of propagation will require a more sophisticated approach.
+
 == Advanced Competency Questions ==
 
 Some of these may simply be too hard. Others may be controversial w.r.t what the intended meaning of the phenotype is, and what the expected entailment is.
