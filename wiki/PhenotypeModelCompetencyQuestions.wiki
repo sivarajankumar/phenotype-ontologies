@@ -118,6 +118,8 @@ SubClassOf: part_of some hindlimb
 }}}
 
 
+
+
 ==== CQ: Absence of Some ====
 
 Example:
@@ -137,3 +139,22 @@ SubClassOf: MP:0000689 ## abnormal spleen morphology
 }}}
 
 === Developmental Competency Questions ===
+
+To see how MP is currently classified, see this example:
+
+{{{
+        is_a MP:0002100 ! abnormal tooth morphology
+         is_a MP:0000116 ! abnormal tooth development *** 
+          is_a MP:0000117 ! absent tooth primordium
+          is_a MP:0000118 ! arrest of tooth development
+          is_a MP:0000128 ! growth retardation of molars
+          is_a MP:0002650 ! abnormal ameloblast morphology
+          is_a MP:0002817 ! abnormal tooth mineralization
+          is_a MP:0005359 ! growth retardation of incisors
+          is_a MP:0010747 ! abnormal enamel organ morphology
+          is_a MP:0011165 ! abnormal tooth root development
+}}}
+
+We could argue that the pattern should be switched here, and that abnormal tooth morphology generally arises through abnormal tooth development. However, it is of course possible for teeth to attain abnormal morphology post-development.
+
+More input from biologists required to inform competency questions here.
