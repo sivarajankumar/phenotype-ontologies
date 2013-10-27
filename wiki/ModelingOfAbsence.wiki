@@ -59,7 +59,7 @@ Class: MP:0000557 ## absent hindlimb
 SubClassOf: MP:0004349 ## absent femur
 }}}
 
-i.e. if you're missing your hindlegs, you're necessarily missing your femurs. But this is definitely *not* how phenotype ontologies are classified.
+i.e. if you're missing your hindlegs, you're necessarily missing your femurs. But this is emphatically *not* how phenotype ontologies are classified. This goes for a wide range of structures and other relationship types. In MP, "absent limb buds" are not classified under "absent limbs", even though it is impossible for a mammal to have limbs without having had limb buds.
 
 Furthermore, this absence is typically one end of a spectrum of morphological value space, and so it can be argued that placement under morphology is both useful and correct.
 
