@@ -4,6 +4,8 @@
 
 Much has been written on the subject of representing absence. Before diving into the logical issues it is worth examining patterns in existing phenotype ontologies to understand what user expectations may typically be for absence.
 
+See also some (outdated) material on the old [http://obofoundry.org/wiki/index.php/PATO:Revised_2008#Absence_and_counting PATO wiki].
+
 = Details =
 
 == Strict logical absence vs absence of some ==
