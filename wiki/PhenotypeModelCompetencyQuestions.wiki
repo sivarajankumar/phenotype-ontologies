@@ -237,3 +237,7 @@ Class: 'macroscopic material entity'
 }}}
 
 Then our two traits would collapse into (be entailed to be equivalent to) 'eye' leading to unsatisfiability of eye when the DisjointWith is added.
+
+= See Also =
+
+ * [https://docs.google.com/spreadsheet/ccc?key=0AskRPmmvPJU3dC1pcjE5X1Y0UFJwVG1QRWhYYjdSRFE#gid=0 properties of phenotype ontology modeling schemas]
