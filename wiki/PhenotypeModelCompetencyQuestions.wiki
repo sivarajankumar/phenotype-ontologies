@@ -238,6 +238,28 @@ Class: 'macroscopic material entity'
 
 Then our two traits would collapse into (be entailed to be equivalent to) 'eye' leading to unsatisfiability of eye when the DisjointWith is added.
 
+=== Concentrations and populations ===
+
+==== CQ: iron levels in spleen ====
+
+Background: [http://www.jbiomedsem.com/content/3/S2/S5 Loebe et al] JBMS
+
+Both
+
+{{{
+     is_a MP:0001770 ! abnormal iron level
+       is_a MP:0008739 ! abnormal spleen iron level
+        is_a MP:0008809 ! increased spleen iron level *** 
+ }}}
+
+And
+
+{{{
+   is_a MP:0000689 ! abnormal spleen morphology
+     is_a MP:0008739 ! abnormal spleen iron level
+      is_a MP:0008809 ! increased spleen iron level ***
+}}}
+
 = See Also =
 
  * [https://docs.google.com/spreadsheet/ccc?key=0AskRPmmvPJU3dC1pcjE5X1Y0UFJwVG1QRWhYYjdSRFE#gid=0 properties of phenotype ontology modeling schemas]
