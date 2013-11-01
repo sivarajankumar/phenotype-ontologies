@@ -54,8 +54,8 @@ mp.owl: mp.obo
 mp/mp-equivalence-axioms-subq-ubr.owl: mp/mp-equivalence-axioms-edit.owl
 	owltools $(USECAT) $< --remove-imports-declarations -o $@
 
-mp/mp-equivalence-axioms-subq-ubr.obo: mp/mp-equivalence-axioms-subq-ubr.owl
-	owltools $< -o -f obo $@
+mp/mp-equivalence-axioms-subq-ubr.obo: mp/mp-equivalence-axioms-edit.owl
+	owltools $(USECAT) $< --add-support-from-imports --remove-imports-declarations -o -f obo $@
 # TODO - required??
 #mp/mp-equivalence-axioms-subq.obo: mp/mp-equivalence-axioms-subq-ubr.obo
 #	owltools $< -o -f obo $@
@@ -255,6 +255,8 @@ mp/mp-to-hp-match-best.tbl:
 mp/mp-to-hp-match-best.owl:
 	owltools $(USECAT) mammal.owl --make-default-abox --sim-compare-atts -p mp/mp-to-hp-sim.properties --set bestOnly true --set outputFormat owl -o $@.tmp && mv $@.tmp $@
 
+wbphenotype/wbphenotype-to-%-match.tbl:
+	owltools $(USECAT) metazoa.owl --make-default-abox --sim-compare-atts -p wbphenotype/wbphenotype-to-$*-sim.properties -o $@.tmp && mv $@.tmp $@
 wbphenotype/wbphenotype-to-%-match-best.owl:
 	owltools $(USECAT) metazoa.owl --make-default-abox --sim-compare-atts -p wbphenotype/wbphenotype-to-$*-sim.properties --set bestOnly true --set outputFormat owl -o $@.tmp && mv $@.tmp $@
 

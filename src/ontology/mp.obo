@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 09:10:2013 16:26
+date: 16:10:2013 15:14
 saved-by: csmith
 auto-generated-by: OBO-Edit 2.2
 subsetdef: CvDC_Terms "NHLBI Cardiovascular Development Consortium (CvDC) Terms"
@@ -5578,6 +5578,9 @@ is_a: MP:0000828 ! abnormal fourth ventricle morphology
 id: MP:0000830
 name: abnormal diencephalon morphology
 def: "any structural anomaly of the paired caudal parts of the prosencephalon from which the thalamus, hypothalamus, epithalamus and subthalamus are derived; these regions regulate autonomic, visceral and endocrine function, and process information directed to the cerebral cortex" [ISBN:0838580343, MESH:A08.186.211.730.317]
+synonym: "abnormal betweenbrain morphology" EXACT []
+synonym: "abnormal interbrain morphology" EXACT []
+synonym: "abnormal thalamencephalon morphology" EXACT []
 synonym: "diencephalon dysplasia" EXACT []
 is_a: MP:0000783 ! abnormal forebrain morphology
 
@@ -5585,7 +5588,10 @@ is_a: MP:0000783 ! abnormal forebrain morphology
 id: MP:0000831
 name: diencephalon hyperplasia
 def: "overdevelopment or increased size, usually due an increased number of cells in the rostral portion of the brain stem" [ISBN:0-683-40008-8, MGI:csmith]
+synonym: "betweenbrain hyperplasia" EXACT []
 synonym: "hyperplastic diencephalon" EXACT []
+synonym: "interbrain hyperplasia" RELATED []
+synonym: "thalamencephalon hyperplasia" EXACT []
 is_a: MP:0000830 ! abnormal diencephalon morphology
 
 [Term]
@@ -5661,7 +5667,7 @@ is_a: MP:0000830 ! abnormal diencephalon morphology
 [Term]
 id: MP:0000841
 name: abnormal hindbrain morphology
-def: "any structural anomaly of the caudal region of the brain; includes cerebellum, pons and medulla oblongata" [ISBN:0-683-40008-8, PMID:9362461]
+def: "any structural anomaly of the part of the brain developed from the posterior of the three primary brain vesicles of the embryonic neural tube from which the metencephalon and myelencephalon are derived; the metencephalon (anterior part of the embryonic hindbrain), gives rise to the cerebellum and pons while the myelencephalon (posterior portion of the embryonic hindbrain) gives rise to the medulla oblongata" [MGI:anna]
 synonym: "abnormal rhombencephalon morphology" RELATED []
 synonym: "hindbrain dysplasia" EXACT []
 is_a: MP:0002152 ! abnormal brain morphology
@@ -5707,6 +5713,7 @@ is_a: MP:0000841 ! abnormal hindbrain morphology
 id: MP:0000848
 name: abnormal pons morphology
 def: "any structural anomaly of the band of nerve fibers in the brain connecting the medulla oblongata and the mesencephalon; this region conveys information about movement from the cerebral hemisphere to the cerebellum" [ISBN:0-683-40008-8, ISBN:0838580343, PMID:1346922]
+synonym: "abnormal pons Varolii morphology" EXACT []
 synonym: "pons dysplasia" EXACT []
 is_a: MP:0000841 ! abnormal hindbrain morphology
 is_a: MP:0005277 ! abnormal brainstem morphology
@@ -21135,12 +21142,14 @@ id: MP:0003060
 name: increased aerobic running capacity
 def: "greater ability to run at defined speeds and/or distances compared to controls" [RGD:cur]
 is_a: MP:0000348 ! abnormal aerobic fitness
+is_a: MP:0012107 ! enhanced exercise endurance
 
 [Term]
 id: MP:0003061
 name: decreased aerobic running capacity
 def: "reduced ability to run at defined speeds and/or distances compared to controls" [RGD:cur]
 is_a: MP:0000348 ! abnormal aerobic fitness
+is_a: MP:0012106 ! impaired exercise endurance
 
 [Term]
 id: MP:0003062
@@ -23612,6 +23621,7 @@ id: MP:0003406
 name: failure of zygotic cell division
 def: "inability of a fertilized oocyte to initiate or complete early cell divisions" [MGI:csmith]
 is_a: MP:0001730 ! embryonic growth arrest
+is_a: MP:0009781 ! abnormal preimplantation embryo development
 
 [Term]
 id: MP:0003407
@@ -25667,7 +25677,7 @@ id: MP:0003693
 name: abnormal blastocyst hatching
 def: "any anomaly of the hatching of the cellular blastocyst from the zona pellucida, the thick solid transparent outer membrane that surrounds the developing ovum and embryo prior to implantation" [GO:0001835]
 synonym: "abnormal embryo hatching" RELATED []
-is_a: MP:0001672 ! abnormal embryogenesis/ development
+is_a: MP:0009781 ! abnormal preimplantation embryo development
 
 [Term]
 id: MP:0003694
@@ -28317,7 +28327,10 @@ is_a: MP:0003137 ! abnormal impulse conducting system conduction
 [Term]
 id: MP:0004073
 name: caudal body truncation
-def: "caudal part of body truncated; typically with the anterior portion of the body relatively normal" [MGI:csmith]
+def: "caudal part of body truncated; typically with the rostral portion of the body relatively normal" [MGI:csmith]
+synonym: "caudal truncation(s)" EXACT []
+synonym: "posterior body truncation" EXACT []
+synonym: "posterior truncation(s)" EXACT []
 is_a: MP:0005221 ! abnormal rostral-caudal axis patterning
 
 [Term]
@@ -29697,6 +29710,7 @@ name: enlarged placenta
 def: "increased size of the size or shape of the organ of metabolic interchange between fetus and mother" [MGI:csmith]
 synonym: "increased size of placenta" EXACT []
 synonym: "large placenta" RELATED []
+synonym: "placentomegaly" EXACT []
 is_a: MP:0004258 ! abnormal placenta size
 
 [Term]
@@ -31680,7 +31694,6 @@ id: MP:0004533
 name: fused inner hair cell stereocilia
 def: "coalescence of the nonmotile, actin-filled specialized microvilli (stereocilia) normally arrayed on cochlear inner hair cells, often resulting in giant stereocilia" [MGI:anna]
 synonym: "fused IHC stereocilia" EXACT []
-synonym: "fused inner hair cell stereocilia" EXACT []
 synonym: "fusion of inner hair cell stereocilia" EXACT []
 synonym: "giant IHC stereocilia" EXACT []
 is_a: MP:0004532 ! abnormal inner hair cell stereociliary bundle morphology
@@ -34909,7 +34922,7 @@ is_a: MP:0004954 ! abnormal thymus weight
 id: MP:0004957
 name: abnormal blastocyst morphology
 def: "any structural anomaly of the preimplantation embryo of mammals consisting of a hollow sphere of cells with an outer cell layer (trophoblast) that forms the placenta, a fluid-filled cavity (blastocoele), and a cluster of cells on the interior (the inner cell mass) that forms the embryo" [MGI:csmith]
-is_a: MP:0001672 ! abnormal embryogenesis/ development
+is_a: MP:0009781 ! abnormal preimplantation embryo development
 
 [Term]
 id: MP:0004958
@@ -37467,8 +37480,9 @@ is_a: MP:0005501 ! abnormal skin physiology
 [Term]
 id: MP:0005277
 name: abnormal brainstem morphology
-def: "any structural anomaly of the midbrain, pons, or medulla" [J:82670, MGI:pvb]
+def: "any structural anomaly of the stalk-like part of the brain that comprises the midbrain (aka mesencephalon), the pons (aka pons Varolii), and the medulla oblongata, and connects the cerebral hemispheres with the cervical spinal cord" [MGI:anna]
 synonym: "abnormal brain stem morphology" EXACT []
+synonym: "abnormal truncus encephali morphology" EXACT []
 synonym: "brainstem dysplasia" EXACT []
 is_a: MP:0002152 ! abnormal brain morphology
 
@@ -54977,7 +54991,8 @@ id: MP:0009266
 name: abnormal mesendoderm development
 def: "failure or abnormality in the formation of the embryonic cell layer that gives rise to both the endoderm and mesoderm" [MGI:smb]
 synonym: "abnormal endomesoderm development" EXACT []
-is_a: MP:0001674 ! abnormal triploblastic development
+is_a: MP:0001680 ! abnormal mesoderm development
+is_a: MP:0001685 ! abnormal endoderm development
 
 [Term]
 id: MP:0009267
@@ -59358,13 +59373,14 @@ is_a: MP:0008932 ! abnormal embryonic tissue physiology
 [Term]
 id: MP:0009845
 name: abnormal neural crest cell morphology
-def: "any structural anomaly of the transient and migratory group of cells that emerge from the dorsal region of the neural tube and disperse to many peripheral locations to form various tissues of the adult" [ISBN:0838580343, MGI:csmith]
+def: "any structural anomaly of the transient and highly migratory group of cells that delaminate in early embryonic development from the dorsal neural tube and give rise to a variety of differentiated cell types, including (1) the neurons and glial cells of the sensory, sympathetic, and parasympathetic nervous systems, (2) the epinephrine-producing (medulla) cells of the adrenal gland, (3) the pigment-containing cells of the epidermis, and (4) many of the skeletal and connective tissue components of the head" [MGI:anna]
 synonym: "abnormal NCC morphology" RELATED []
 is_a: MP:0009846 ! abnormal neural crest morphology
 
 [Term]
 id: MP:0009846
 name: abnormal neural crest morphology
+def: "any structural anomaly of the specialized region of ectoderm found between the neural ectoderm (neural plate) and non-neural ectoderm and composed of highly migratory pluripotent cells that delaminate in early embryonic development from the dorsal neural tube and give rise to an astounding variety of differentiated cell types" [MGI:anna]
 is_a: MP:0002151 ! abnormal neural tube morphology/development
 
 [Term]
@@ -64369,7 +64385,6 @@ id: MP:0010335
 name: fused first branchial arch
 def: "the first arch fails to fully divide along the midline" [MGI:smb]
 synonym: "first branchial arch fusion" EXACT []
-synonym: "fused first branchial arch" EXACT []
 synonym: "fused first pharyngeal arch" EXACT []
 is_a: MP:0006337 ! abnormal first branchial arch morphology
 created_by: csmith
@@ -69306,6 +69321,7 @@ creation_date: 2011-02-10T09:50:04Z
 id: MP:0010808
 name: right-sided stomach
 def: "stomach is present on the right side of the body instead of the left" [MGI:csmith]
+synonym: "dextrogastria" EXACT []
 is_a: MP:0004133 ! heterotaxia
 is_a: MP:0010807 ! abnormal stomach position or orientation
 created_by: csmith
@@ -73801,7 +73817,8 @@ creation_date: 2011-07-27T03:21:28Z
 [Term]
 id: MP:0011246
 name: abnormal fetal liver hematopoietic progenitor cell morphology
-def: "any structural anomaly of a hematopoietic stem cell that resides in the fetal liver; in mice, this cell type is first observed at E10.5" [CL:0002353]
+def: "any structural anomaly of a hematopoietic stem cell that resides in the fetal liver" [CL:0002353]
+comment: In mice, this cell type is first observed at E10.5.
 synonym: "abnormal fetal liver hematopoietic stem cell morphology" EXACT []
 xref: CL:0002353
 is_a: MP:0004808 ! abnormal hematopoietic stem cell morphology
@@ -81744,7 +81761,7 @@ creation_date: 2013-08-08T14:02:21Z
 [Term]
 id: MP:0012030
 name: abnormal a wave amplitude
-def: "anomaly in the size (height or maximum displacement) of the a wave" [MGI:csmith]
+def: "anomaly in the size (height or maximum displacement) of the a wave as measured in the electroretinogram" [MGI:csmith]
 is_a: MP:0012034 ! abnormal a wave shape
 created_by: csmith
 creation_date: 2013-08-08T14:07:48Z
@@ -81752,7 +81769,7 @@ creation_date: 2013-08-08T14:07:48Z
 [Term]
 id: MP:0012031
 name: abnormal b wave amplitude
-def: "anomaly in the size (height or maximum displacement) of the b wave" [MGI:csmith]
+def: "anomaly in the size (height or maximum displacement) of the b wave as measured in the electroretinogram" [MGI:csmith]
 is_a: MP:0012035 ! abnormal b-wave shape
 created_by: csmith
 creation_date: 2013-08-08T14:08:11Z
@@ -81984,7 +82001,7 @@ creation_date: 2013-08-09T09:21:13Z
 id: MP:0012058
 name: abnormal morula morphology
 def: "any structural anomaly of the globular solid mass of blastomeres formed by cleavage of a zygote that typically precedes the blastula, typically after the zygote has divided into 32 cells" [MGI:anna]
-is_a: MP:0001672 ! abnormal embryogenesis/ development
+is_a: MP:0009781 ! abnormal preimplantation embryo development
 created_by: csmith
 creation_date: 2013-08-09T09:32:07Z
 
@@ -82322,7 +82339,10 @@ creation_date: 2013-09-13T10:32:14Z
 id: MP:0012092
 name: diencephalon hypoplasia
 def: "underdevelopment or decreased size, usually due an increased number of cells in the rostral portion of the brain stem" [MGI:rbabiuk]
+synonym: "betweenbrain hypoplasia" EXACT []
 synonym: "hypoplastic diencephalon" EXACT []
+synonym: "interbrain hypoplasia" EXACT []
+synonym: "thalamencephalon hypoplasia" EXACT []
 is_a: MP:0000830 ! abnormal diencephalon morphology
 created_by: csmith
 creation_date: 2013-09-13T12:57:11Z
@@ -82432,7 +82452,7 @@ synonym: "abnormal embryonic disk morphology" EXACT []
 synonym: "abnormal embryonic shield morphology" EXACT []
 synonym: "abnormal germinal disc morphology" EXACT []
 synonym: "abnormal germinal disk morphology" EXACT []
-is_a: MP:0001672 ! abnormal embryogenesis/ development
+is_a: MP:0009781 ! abnormal preimplantation embryo development
 created_by: csmith
 creation_date: 2013-09-23T14:17:51Z
 
@@ -82507,6 +82527,7 @@ id: MP:0012111
 name: failure of morula compaction
 def: "inability to initiate or maintain the first cell differentiation event in mammalian development, occurring at the late eight-cell stage in the mouse, whereby cells on the outer part of the morula become flattened and bound tightly together with the formation of desmosomes and gap junctions, becoming nearly indistinguishable" [MGI:anna]
 is_a: MP:0008932 ! abnormal embryonic tissue physiology
+is_a: MP:0009781 ! abnormal preimplantation embryo development
 created_by: csmith
 creation_date: 2013-09-26T15:58:08Z
 
@@ -82611,6 +82632,7 @@ def: "enhanced or greater than expected bronchoconstrictive response to provocat
 subset: IMPC
 synonym: "enhanced bronchoconstrictive response" EXACT []
 synonym: "increased bronchoconstriction response" EXACT []
+is_a: MP:0008873 ! increased physiological sensitivity to xenobiotic
 is_a: MP:0012123 ! abnormal bronchoconstrictive response
 created_by: csmith
 creation_date: 2013-10-08T14:13:21Z
@@ -82622,6 +82644,7 @@ def: "reduction in the expected bronchoconstrictive response to provocation chal
 subset: IMPC
 synonym: "decreased bronchoconstriction response" EXACT []
 synonym: "reduced bronchoconstrictive response" EXACT []
+is_a: MP:0008874 ! decreased physiological sensitivity to xenobiotic
 is_a: MP:0012123 ! abnormal bronchoconstrictive response
 created_by: csmith
 creation_date: 2013-10-08T14:14:14Z
@@ -82761,6 +82784,13 @@ creation_date: 2013-10-09T15:20:00Z
 id: MP:0012138
 name: decreased forebrain size
 def: "size reduction or truncation of the anterior of the three primary divisions of the developing chordate brain or the corresponding part of the adult brain (in vertebrates, includes especially the cerebral hemispheres, the thalamus, and the hypothalamus and especially in higher vertebrates is the main control center for sensory and associative information processing, visceral functions, and voluntary motor functions)" [GO:0048853]
+synonym: "decreased prosencephalon size" EXACT []
+synonym: "reduced forebrain size" EXACT []
+synonym: "reduced prosencephalon size" EXACT []
+synonym: "small forebrain" EXACT []
+synonym: "small prosencephalon" EXACT []
+synonym: "truncated forebrain" EXACT []
+synonym: "truncated prosencephalon" EXACT []
 is_a: MP:0000774 ! decreased brain size
 is_a: MP:0012137 ! abnormal forebrain size
 created_by: csmith
@@ -82770,6 +82800,11 @@ creation_date: 2013-10-09T15:20:00Z
 id: MP:0012139
 name: increased forebrain size
 def: "greater than average size of the anterior of the three primary divisions of the developing chordate brain or the corresponding part of the adult brain (in vertebrates, includes especially the cerebral hemispheres, the thalamus, and the hypothalamus and especially in higher vertebrates is the main control center for sensory and associative information processing, visceral functions, and voluntary motor functions)" [GO:0048853]
+synonym: "enlarged forebrain" EXACT []
+synonym: "enlarged prosencephalon " EXACT []
+synonym: "expanded forebrain" EXACT []
+synonym: "expanded prosencephalon" EXACT []
+synonym: "increased prosencephalon size" EXACT []
 is_a: MP:0005238 ! increased brain size
 is_a: MP:0012137 ! abnormal forebrain size
 created_by: csmith
@@ -82779,9 +82814,211 @@ creation_date: 2013-10-09T15:20:00Z
 id: MP:0012140
 name: forebrain hyperplasia
 def: "overdevelopment or increased size, usually due to a increased number of cells, of the anterior of the three primary divisions of the developing chordate brain or the corresponding part of the adult brain (in vertebrates, includes especially the cerebral hemispheres, the thalamus, and the hypothalamus and especially in higher vertebrates is the main control center for sensory and associative information processing, visceral functions, and voluntary motor functions)" [GO:0048853]
+synonym: "hyperplastic forebrain" EXACT []
+synonym: "hyperplastic prosencephalon" EXACT []
+synonym: "prosencephalon hyperplasia" EXACT []
 is_a: MP:0012139 ! increased forebrain size
 created_by: csmith
 creation_date: 2013-10-09T15:20:00Z
+
+[Term]
+id: MP:0012141
+name: absent hindbrain
+def: "absence of the part of the brain developed from the posterior of the three primary brain vesicles of the embryonic neural tube from which the metencephalon and myelencephalon are derived; the metencephalon (anterior part of the embryonic hindbrain), gives rise to the cerebellum and pons while the myelencephalon (posterior portion of the embryonic hindbrain) gives rise to the medulla oblongata" [MGI:anna]
+synonym: "absent rhombencephalon" EXACT []
+is_a: MP:0000841 ! abnormal hindbrain morphology
+created_by: csmith
+creation_date: 2013-10-10T15:18:11Z
+
+[Term]
+id: MP:0012142
+name: absent amniotic cavity
+def: "absence of the closed space between the embryo and the amnion which contains the amniotic fluid and is formed by the fusion of the parts of the anterior and posterior amniotic folds" [MGI:anna]
+is_a: MP:0011199 ! abnormal amniotic cavity morphology
+created_by: csmith
+creation_date: 2013-10-10T16:03:38Z
+
+[Term]
+id: MP:0012143
+name: decreased a wave amplitude
+def: "reduction in the size (height or maximum displacement) of the a wave as measured in the electroretinogram" [MGI:csmith]
+synonym: "attenuated a wave amplitude" EXACT []
+synonym: "reduced a wave amplitude" EXACT []
+is_a: MP:0012030 ! abnormal a wave amplitude
+created_by: csmith
+creation_date: 2013-10-16T12:18:25Z
+
+[Term]
+id: MP:0012144
+name: decreased b wave amplitude
+def: "reduction in the size (height or maximum displacement) of the b wave as measured in the electroretinogram" [MGI:csmith]
+synonym: "attenuated b wave amplitude" EXACT []
+synonym: "reduced b wave amplitude" EXACT []
+is_a: MP:0012031 ! abnormal b wave amplitude
+created_by: csmith
+creation_date: 2013-10-16T12:19:51Z
+
+[Term]
+id: MP:0012145
+name: increased a wave amplitude
+def: "increase in the size (height or maximum displacement) of the a wave as measured in the electroretinogram" [MGI:csmith]
+is_a: MP:0012030 ! abnormal a wave amplitude
+created_by: csmith
+creation_date: 2013-10-16T12:26:15Z
+
+[Term]
+id: MP:0012146
+name: increased b wave amplitude
+def: "increase in the size (height or maximum displacement) of the b wave as measured in the electroretinogram" [MGI:csmith]
+is_a: MP:0012031 ! abnormal b wave amplitude
+created_by: csmith
+creation_date: 2013-10-16T12:26:32Z
+
+[Term]
+id: MP:0012147
+name: increased a wave implicit time
+def: "increase in the time from the onset of light stimulus to the peak of the a wave" [MGI:smb]
+synonym: "delayed a wave implicit time" EXACT []
+synonym: "prolonged a wave implicit time" EXACT []
+is_a: MP:0012038 ! abnormal a wave implicit time
+created_by: csmith
+creation_date: 2013-10-16T13:02:26Z
+
+[Term]
+id: MP:0012148
+name: decreased a wave implicit time
+def: "decrease in the time from the onset of light stimulus to the peak of the a wave" [MGI:smb]
+synonym: "faster a wave implicit time" EXACT []
+is_a: MP:0012038 ! abnormal a wave implicit time
+created_by: csmith
+creation_date: 2013-10-16T13:02:26Z
+
+[Term]
+id: MP:0012149
+name: decreased b wave implicit time
+def: "decrease in the time from the onset of light stimulus to the peak of the b wave" [MGI:smb]
+synonym: "faster b wave implicit time" EXACT []
+is_a: MP:0012039 ! abnormal b wave implicit time
+created_by: csmith
+creation_date: 2013-10-16T13:02:53Z
+
+[Term]
+id: MP:0012150
+name: increased b wave implicit time
+def: "increase in the time from the onset of light stimulus to the peak of the b wave" [MGI:smb]
+synonym: "delayed b wave implicit time" EXACT []
+synonym: "prolonged b wave implicit time" EXACT []
+is_a: MP:0012039 ! abnormal b wave implicit time
+created_by: csmith
+creation_date: 2013-10-16T13:02:53Z
+
+[Term]
+id: MP:0012151
+name: increased a wave latency
+def: "increase in the time from onset of stimulus to beginning of the a wave" [MGI:csmith]
+synonym: "prolonged a wave latency" EXACT []
+is_a: MP:0012036 ! abnormal a wave latency
+created_by: csmith
+creation_date: 2013-10-16T13:03:32Z
+
+[Term]
+id: MP:0012152
+name: decreased a wave latency
+def: "decrease in the time from onset of stimulus to beginning of the a wave" [MGI:csmith]
+synonym: "reduced a wave latency" EXACT []
+is_a: MP:0012036 ! abnormal a wave latency
+created_by: csmith
+creation_date: 2013-10-16T13:03:32Z
+
+[Term]
+id: MP:0012153
+name: increased b wave latency
+def: "increase in the time from onset of stimulus to beginning of the b wave" [MGI:csmith]
+synonym: "prolonged b wave latency" EXACT []
+is_a: MP:0012037 ! abnormal b wave latency
+created_by: csmith
+creation_date: 2013-10-16T13:04:09Z
+
+[Term]
+id: MP:0012154
+name: decreased b wave latency
+def: "decrease in the time from onset of stimulus to beginning of the b wave" [MGI:csmith]
+synonym: "reduced b wave latency" EXACT []
+is_a: MP:0012037 ! abnormal b wave latency
+created_by: csmith
+creation_date: 2013-10-16T13:04:09Z
+
+[Term]
+id: MP:0012155
+name: abnormal optic pit morphology
+def: "any structural anomaly of the depression found on each side of the end of the neural ectoderm (or neural tube) of the embryo; the pit deepens to form the optic vesicle" [MGI:anna]
+is_a: MP:0003935 ! abnormal craniofacial development
+created_by: csmith
+creation_date: 2013-10-16T14:04:04Z
+
+[Term]
+id: MP:0012156
+name: rostral-caudal axis duplication
+def: "partial or complete duplication of rostral-caudal axis structures" [MGI:anna]
+synonym: "A-P axis duplication" NARROW []
+synonym: "anterior-posterior axis duplication" NARROW []
+synonym: "head-tail axis duplication" EXACT []
+synonym: "rostro-caudal axis duplication" EXACT []
+is_a: MP:0005221 ! abnormal rostral-caudal axis patterning
+created_by: csmith
+creation_date: 2013-10-16T14:06:57Z
+
+[Term]
+id: MP:0012157
+name: rostral body truncation
+def: "rostral part of body truncated; typically with the caudal portion of the body relatively normal" [MGI:csmith]
+synonym: "anterior body truncation" NARROW []
+synonym: "anterior truncation(s)" EXACT []
+synonym: "rostral truncation(s)" EXACT []
+is_a: MP:0005221 ! abnormal rostral-caudal axis patterning
+created_by: csmith
+creation_date: 2013-10-16T14:08:13Z
+
+[Term]
+id: MP:0012158
+name: absent visceral endoderm
+def: "absence of the primitive endoderm-derived tissue which remains in contact with and surrounds the extra-embryonic ectoderm and the epiblast and provides signals for the differentiation and patterning of the epiblast; a small number of visceral endoderm cells also contribute to the endoderm of the embryonic gut" [MGI:anna]
+is_a: MP:0011186 ! abnormal visceral endoderm morphology
+created_by: csmith
+creation_date: 2013-10-16T14:18:43Z
+
+[Term]
+id: MP:0012159
+name: absent anterior visceral endoderm
+def: "absence of the extraembryonic tissue that is responsible for the proper orientation of the anterior-posterior axis of the embryo and for appropriate patterning of adjacent embryonic tissue" [MGI:anna]
+is_a: MP:0008533 ! abnormal anterior visceral endoderm morphology
+created_by: csmith
+creation_date: 2013-10-16T14:19:00Z
+
+[Term]
+id: MP:0012160
+name: expanded anterior visceral endoderm
+def: "the extraembryonic tissue that is responsible for the proper orientation of the anterior-posterior axis of the embryo and for appropriate patterning of adjacent embryonic tissue occupies a greater area in the extraembryonic region" [MGI:anna]
+synonym: "broad anterior visceral endoderm" EXACT []
+is_a: MP:0008533 ! abnormal anterior visceral endoderm morphology
+created_by: csmith
+creation_date: 2013-10-16T14:19:25Z
+
+[Term]
+id: MP:0012161
+name: absent distal visceral endoderm
+def: "absence of the precursors of the anterior visceral endoderm that arises at the distal tip of the embryo" [MGI:anna]
+is_a: MP:0010126 ! abnormal distal visceral endoderm morphology
+created_by: csmith
+creation_date: 2013-10-16T14:19:41Z
+
+[Term]
+id: MP:0012162
+name: absent parietal endoderm
+def: "absence of the primitive endoderm-derived tissue that lines the luminal surface of the mural trophectoderm" [MGI:anna]
+is_a: MP:0011187 ! abnormal parietal endoderm morphology
+created_by: csmith
+creation_date: 2013-10-16T14:20:03Z
 
 [Typedef]
 id: part_of
