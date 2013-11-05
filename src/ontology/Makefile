@@ -276,6 +276,8 @@ mp/mp-to-hp-match-best.owl:  mp.owl hp.owl
 
 wbphenotype/wbphenotype-to-%-match.tbl: wbphenotype.owl %.owl
 	$(BIGOWLTOOLS) $(USECAT) metazoa.owl --make-default-abox --fsim-compare-atts -p wbphenotype/wbphenotype-to-$*-sim.properties -o $@.tmp && mv $@.tmp $@
+wbphenotype/wbphenotype-to-%-match-best.tbl: wbphenotype.owl %.owl
+	$(BIGOWLTOOLS) $(USECAT) metazoa.owl --make-default-abox --fsim-att-top-simj -p wbphenotype/wbphenotype-to-$*-sim.properties -o $@.tmp > $@.log && mv $@.tmp $@
 wbphenotype/wbphenotype-to-%-match-best.owl: wbphenotype.owl %.owl
 	$(BIGOWLTOOLS) $(USECAT) metazoa.owl --make-default-abox --fsim-compare-atts -p wbphenotype/wbphenotype-to-$*-sim.properties --set bestOnly true --set outputFormat owl -o $@.tmp && mv $@.tmp $@
 
