@@ -29,7 +29,7 @@ If you are using [OWLTools], you can use the "--use-catalog" option to load onto
 = Multi-species importers =
 
  * http://purl.obolibrary.org/obo/upheno/mammal.owl
- * http://purl.obolibrary.org/obo/upheno/veretebrate.owl
+ * http://purl.obolibrary.org/obo/upheno/vertebrate.owl
  * http://purl.obolibrary.org/obo/upheno/metazoa.owl
  * http://purl.obolibrary.org/obo/upheno/eukaryote.owl
 
