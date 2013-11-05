@@ -98,6 +98,8 @@ zp/zp-equivalence-axioms-subq-ubr.owl: zp.owl uberon-simple-vertebrate-bridge.ob
 # TODO
 fypo.owl:
 	wget $(OBO)/fypo.owl
+fypo.obo: fypo.owl
+	owltools $< -o -f obo $@
 
 # ~~~
 # WBPhenotype
@@ -129,6 +131,16 @@ pato.owl: pato.obo
 all_merged: uberpheno-subq-full-merged.owl
 %-merged.owl: %-importer.owl mp/mp-equivalence-axioms-subq-ubr.owl hp/hp-equivalence-axioms-subq-ubr.owl mp.owl hp.owl
 	owltools --use-catalog $< --merge-import-closure --ni graph-traversal-metadata.owl --merge-support-ontologies   --merge-equivalent-classes -f $(OBO)/MP_ -t $(OBO)/HP_ --merge-equivalent-classes -f $(OBO)/FMA_ -f $(OBO)/EMAPA_ -f $(OBO)/MA_ -t $(OBO)/UBERON_ --merge-equivalent-classes -f $(OBO)/FMA_ -t $(OBO)/CL_ -t $(OBO)/UBERON_ -o file://`pwd`/$@
+
+# ----------------------------------------
+# Simple files
+# ----------------------------------------
+
+%-simple.owl: %.owl
+	owltools  $(USECAT) --use-reasoner elk $< --merge-imports-closure --assert-inferred-subclass-axioms --removeRedundant --allowEquivalencies -o $@.tmp --make-subset-by-properties // --extract-module -d HP:0000118 MP:0000001  WBPhenotype:0000886  --set-ontology-id $(OBO)/$@ -o $@
+
+%-simple.obo: %-simple.owl
+	owltools $< -o $@
 
 # ----------------------------------------
 # Subqualities model
@@ -248,17 +260,35 @@ main/metazoa.owl: metazoa.owl hp.owl mp.owl
 # EXPERIMENTAL
 # ----------------------------------------
 
-mp/mp-to-hp-match.tbl:
-	owltools $(USECAT) mammal.owl --make-default-abox --sim-compare-atts -p mp/mp-to-hp-sim.properties -o $@.tmp && mv $@.tmp $@
-mp/mp-to-hp-match-best.tbl:
-	owltools $(USECAT) mammal.owl --make-default-abox --sim-compare-atts -p mp/mp-to-hp-sim.properties --set bestOnly true -o $@.tmp && mv $@.tmp $@
-mp/mp-to-hp-match-best.owl:
-	owltools $(USECAT) mammal.owl --make-default-abox --sim-compare-atts -p mp/mp-to-hp-sim.properties --set bestOnly true --set outputFormat owl -o $@.tmp && mv $@.tmp $@
+PAIRS = mp-to-hp wbphenotype-to-mp fypo-to-mp
 
-wbphenotype/wbphenotype-to-%-match.tbl:
-	owltools $(USECAT) metazoa.owl --make-default-abox --sim-compare-atts -p wbphenotype/wbphenotype-to-$*-sim.properties -o $@.tmp && mv $@.tmp $@
-wbphenotype/wbphenotype-to-%-match-best.owl:
-	owltools $(USECAT) metazoa.owl --make-default-abox --sim-compare-atts -p wbphenotype/wbphenotype-to-$*-sim.properties --set bestOnly true --set outputFormat owl -o $@.tmp && mv $@.tmp $@
+BIGOWLTOOLS = OWLTOOLS_MEMORY=8G owltools
+
+mp/mp-to-hp-match.tbl: mp.owl hp.owl
+	$(BIGOWLTOOLS) $(USECAT) mammal.owl --make-default-abox --fsim-compare-atts -p mp/mp-to-hp-sim.properties -o $@.tmp && mv $@.tmp $@
+mp/mp-to-hp-match-best.tbl: mp.owl hp.owl
+	$(BIGOWLTOOLS) $(USECAT) mammal.owl --make-default-abox --fsim-att-top-simj -p mp/mp-to-hp-sim.properties -o $@.tmp > $@.log && mv $@.tmp $@
+mp/mp-to-hp-match-best.owl:  mp.owl hp.owl
+	$(BIGOWLTOOLS) $(USECAT) mammal.owl --make-default-abox --fsim-compare-atts -p mp/mp-to-hp-sim.properties --set bestOnly true --set scoringMetrics JACCARD --set outputFormat owl -o $@.tmp && mv $@.tmp $@
+
+wbphenotype/wbphenotype-to-%-match.tbl: wbphenotype.owl %.owl
+	$(BIGOWLTOOLS) $(USECAT) metazoa.owl --make-default-abox --fsim-compare-atts -p wbphenotype/wbphenotype-to-$*-sim.properties -o $@.tmp && mv $@.tmp $@
+wbphenotype/wbphenotype-to-%-match-best.owl: wbphenotype.owl %.owl
+	$(BIGOWLTOOLS) $(USECAT) metazoa.owl --make-default-abox --fsim-compare-atts -p wbphenotype/wbphenotype-to-$*-sim.properties --set bestOnly true --set outputFormat owl -o $@.tmp && mv $@.tmp $@
+
+zp/zp-to-%-match.tbl: zp.owl %.owl
+	$(BIGOWLTOOLS) $(USECAT) vertebrate.owl --make-default-abox --fsim-compare-atts -p zp/zp-to-$*-sim.properties -o $@.tmp > $@.log && mv $@.tmp $@
+zp/zp-to-%-match-best.tbl: zp.owl %.owl
+	$(BIGOWLTOOLS) $(USECAT) vertebrate.owl --make-default-abox --fsim-att-top-simj -p zp/zp-to-$*-sim.properties -o $@.tmp > $@.log && mv $@.tmp $@
+zp/zp-to-%-match-best.owl: zp.owl %.owl
+	$(BIGOWLTOOLS) $(USECAT) vertebrate.owl --make-default-abox --fsim-compare-atts -p zp/zp-to-$*-sim.properties --set bestOnly true --set outputFormat owl -o $@.tmp && mv $@.tmp $@
+
+fypo/fypo-to-%-match.tbl: fypo.owl %.owl
+	$(BIGOWLTOOLS) $(USECAT) eukaryote.owl --make-default-abox --fsim-compare-atts -p fypo/fypo-to-$*-sim.properties -o $@.tmp > $@.log && mv $@.tmp $@
+fypo/fypo-to-%-match-best.tbl: fypo.owl %.owl
+	$(BIGOWLTOOLS) $(USECAT) eukaryote.owl --make-default-abox --fsim-att-top-simj -p fypo/fypo-to-$*-sim.properties -o $@.tmp > $@.log && mv $@.tmp $@
+fypo/fypo-to-%-match-best.owl: fypo.owl %.owl
+	$(BIGOWLTOOLS) $(USECAT) eukaryote.owl --make-default-abox --fsim-compare-atts -p fypo/fypo-to-$*-sim.properties --set bestOnly true --set outputFormat owl -o $@.tmp && mv $@.tmp $@
 
 # ~~~
 # MAPPING TO GO
