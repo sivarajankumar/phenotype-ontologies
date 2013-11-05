@@ -260,7 +260,10 @@ main/metazoa.owl: metazoa.owl hp.owl mp.owl
 # EXPERIMENTAL
 # ----------------------------------------
 
-PAIRS = mp-to-hp wbphenotype-to-mp fypo-to-mp
+#PAIRS = mp/mp-to-hp wbphenotype/wbphenotype-to-mp fypo/fypo-to-mp
+PAIRS = mp/mp-to-hp wbphenotype/wbphenotype-to-mp 
+
+all_match_best: $(patsubst %,%-match-best.tbl,$(PAIRS))
 
 BIGOWLTOOLS = OWLTOOLS_MEMORY=8G owltools
 
