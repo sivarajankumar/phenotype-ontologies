@@ -11,8 +11,8 @@ Unfortunately the full OWL axiomatization is not yet visible in OntoBee, the bes
 
 You can open any of the PURLs directly in Protege. For example
 
- * http://purl.obolibrary.org/obo/mp/mp-importer.owl
- * http://purl.obolibrary.org/obo/hp/hp-importer.owl
+ * http://purl.obolibrary.org/obo/mp/mp-importer.owl - for [MP]
+ * http://purl.obolibrary.org/obo/hp/hp-importer.owl - for [HP]
 
 Loading over the web can be slow, so you may want to check files out locally. Click on the link "source" above to see how to check out the repo using SVN. Once checked out, you should have a directory structure:
 
@@ -25,5 +25,15 @@ Loading over the web can be slow, so you may want to check files out locally. Cl
 If you open any of the importer files, Protege will be use the catalog XML to route requests to the local files.
 
 If you are using [OWLTools], you can use the "--use-catalog" option to load ontologies using the catalog
+
+= Multi-species importers =
+
+ * http://purl.obolibrary.org/obo/upheno/mammal.owl
+ * http://purl.obolibrary.org/obo/upheno/veretebrate.owl
+ * http://purl.obolibrary.org/obo/upheno/metazoa.owl
+ * http://purl.obolibrary.org/obo/upheno/eukaryote.owl
+
+
+= See Also =
 
 See also [Imports]
