@@ -227,12 +227,12 @@ imports/%_import.owl: imports/upheno-preimporter.owl mirror/%.owl mp/mp-equivale
 mirror/%.owl:
 	owltools $(OBO)/$*.owl --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/$*.owl -o $@
 # this is actually uberon+cl
-mirror/uberon.owl:
+mirror/uberon.owl: external/uberon/uberon.owl
 	owltools $(OBO)/uberon/ext.owl $(OBO)/cl.owl --merge-support-ontologies --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/uberon.owl -o $@
 mirror/wbbt.owl:
 	owltools $(OBO)/uberon/composite-metazoan.owl $(OBO)/cl.owl $(OBO)/wbls.owl --merge-support-ontologies --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/wbbt.owl -o $@
 ###	owltools $(OBO)/uberon/ext.owl --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --set-ontology-id $(OBO)/uberon.owl -o $@
-mirror/go.owl:
+mirror/go.owl: external/go/go.owl
 	owltools $(OBO)/go.owl --merge-support-ontologies --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/go.owl -o $@
 mirror/pr.obo:
 	wget $(OBO)/pr.obo -O $@.tmp && obo-grep.pl -r 'id: PR:' $@.tmp > $@
@@ -240,8 +240,15 @@ mirror/pr.owl: mirror/pr.obo
 	owltools $< --remove-dangling --set-ontology-id $(OBO)/pr.owl -o $@
 .PRECIOUS: mirror/%.owl
 
+imports/ro_import.owl: mirror/ro.owl
+	owltools  $(USECAT) $< mp/mp-equivalence-axioms-edit.owl --extract-properties --set-ontology-id $(UPHENO_IMPORTS_BASE_URI)/upheno/$@ -o $@
+
 imports/%_import.obo: imports/%_import.owl
 	owltools $< -o -f obo $@
+
+external/uberon/%.owl:
+	echo $@
+
 
 # ----------------------------------------
 # Builds for multi-species importers
@@ -256,8 +263,15 @@ main/metazoa.owl: metazoa.owl hp.owl mp.owl
 %-reasoned.obo: %-reasoned.owl
 	owltools $< -o $@
 
+
 # ----------------------------------------
-# EXPERIMENTAL
+# AUTO QC
+# ----------------------------------------
+%-dv.txt: %.owl
+	owltools $(USECAT) $< --merge-imports-closure  --reasoner elk --check-disjointness-axioms > $@
+
+# ----------------------------------------
+# SEMANTIC SIMILARITY
 # ----------------------------------------
 
 #PAIRS = mp/mp-to-hp wbphenotype/wbphenotype-to-mp fypo/fypo-to-mp
