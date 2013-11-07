@@ -228,7 +228,10 @@ mirror/%.owl:
 	owltools $(OBO)/$*.owl --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/$*.owl -o $@
 # this is actually uberon+cl
 mirror/uberon.owl: external/uberon/uberon.owl
-	owltools $(OBO)/uberon/ext.owl $(OBO)/cl.owl --merge-support-ontologies --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/uberon.owl -o $@
+	owltools $(OBO)/uberon/ext.owl --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/uberon.owl -o $@
+##### need to sort sync issue
+#####	owltools $(OBO)/uberon/ext.owl $(OBO)/cl.owl --merge-support-ontologies --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/uberon.owl -o $@
+
 mirror/wbbt.owl:
 	owltools $(OBO)/uberon/composite-metazoan.owl $(OBO)/cl.owl $(OBO)/wbls.owl --merge-support-ontologies --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/wbbt.owl -o $@
 ###	owltools $(OBO)/uberon/ext.owl --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --set-ontology-id $(OBO)/uberon.owl -o $@
@@ -308,6 +311,11 @@ fypo/fypo-to-%-match-best.tbl: fypo.owl %.owl
 	$(BIGOWLTOOLS) $(USECAT) eukaryote.owl --make-default-abox --fsim-att-top-simj -p fypo/fypo-to-$*-sim.properties -o $@.tmp > $@.log && mv $@.tmp $@
 fypo/fypo-to-%-match-best.owl: fypo.owl %.owl
 	$(BIGOWLTOOLS) $(USECAT) eukaryote.owl --make-default-abox --fsim-compare-atts -p fypo/fypo-to-$*-sim.properties --set bestOnly true --set outputFormat owl -o $@.tmp && mv $@.tmp $@
+
+DATA = ../../data
+MM = $(DATA)/Mus_musculus
+owlsim.cache: upheno.obo
+	owltools $(USECAT)  upheno.obo --load-instances $(MM)/Mm-gene-to-phenotype-BF.txt --sim-compare-atts  -p mp/mp-to-hp-sim.properties --set minimumMaxIC 2.5 --set minimumSimJ 0.25 --set compare "" --save-lcs-cache $@
 
 # ~~~
 # MAPPING TO GO
