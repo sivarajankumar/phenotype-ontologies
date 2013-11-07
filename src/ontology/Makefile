@@ -315,7 +315,7 @@ fypo/fypo-to-%-match-best.owl: fypo.owl %.owl
 DATA = ../../data
 MM = $(DATA)/Mus_musculus
 owlsim.cache: upheno.obo
-	owltools $(USECAT)  upheno.obo --load-instances $(MM)/Mm-gene-to-phenotype-BF.txt --sim-compare-atts  -p mp/mp-to-hp-sim.properties --set minimumMaxIC 2.5 --set minimumSimJ 0.25 --set compare "" --sim-save-lcs-cache $@
+	owltools $(USECAT)  upheno.obo --load-instances $(MM)/Mm-gene-to-phenotype-BF.txt --sim-compare-atts  -p config/owlsim-cache.properties --sim-save-lcs-cache $@
 ic-cache.owl: upheno.obo
 	owltools $(USECAT)  upheno.obo --load-instances $(MM)/Mm-gene-to-phenotype-BF.txt --no-debug --sim-save-ic-cache $@
 
