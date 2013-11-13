@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:10:2013 15:14
+date: 31:10:2013 15:46
 saved-by: csmith
 auto-generated-by: OBO-Edit 2.2
 subsetdef: CvDC_Terms "NHLBI Cardiovascular Development Consortium (CvDC) Terms"
@@ -5039,6 +5039,7 @@ is_a: MP:0002106 ! abnormal muscle physiology
 id: MP:0000752
 name: dystrophic muscle
 def: "progressive weakness and wasting of muscle" [ISBN:0-683-40008-8, J:67994]
+synonym: "muscular dystrophy" BROAD []
 is_a: MP:0002269 ! muscular atrophy
 
 [Term]
@@ -5705,7 +5706,12 @@ is_a: MP:0005277 ! abnormal brainstem morphology
 [Term]
 id: MP:0000847
 name: abnormal metencephalon morphology
-def: "any structural anomaly of the anterior part of the rhombencephalon" [ISBN:0-683-40008-8, MESH:A08.186.211.132.810.428]
+def: "any structural anomaly of the anterior part of the developing vertebrate hindbrain or the corresponding part of the adult brain composed of the cerebellum and the pons Varolii" [MGI:anna]
+synonym: " abnormal rostral hindbrain morphology" EXACT []
+synonym: "abnormal anterior hindbrain morphology" EXACT []
+synonym: "abnormal anterior rhombencephalon morphology" EXACT []
+synonym: "abnormal epencephalon morphology" EXACT []
+synonym: "abnormal rostral rhombencephalon morphology" EXACT []
 synonym: "metencephalon dysplasia" EXACT []
 is_a: MP:0000841 ! abnormal hindbrain morphology
 
@@ -5715,7 +5721,7 @@ name: abnormal pons morphology
 def: "any structural anomaly of the band of nerve fibers in the brain connecting the medulla oblongata and the mesencephalon; this region conveys information about movement from the cerebral hemisphere to the cerebellum" [ISBN:0-683-40008-8, ISBN:0838580343, PMID:1346922]
 synonym: "abnormal pons Varolii morphology" EXACT []
 synonym: "pons dysplasia" EXACT []
-is_a: MP:0000841 ! abnormal hindbrain morphology
+is_a: MP:0000847 ! abnormal metencephalon morphology
 is_a: MP:0005277 ! abnormal brainstem morphology
 
 [Term]
@@ -21362,11 +21368,12 @@ is_a: MP:0005275 ! abnormal skin tensile strength
 
 [Term]
 id: MP:0003090
-name: abnormal muscle progenitor cell migration
+name: abnormal muscle precursor cell migration
 def: "defects in the movement of cells that will develop into muscle cells out of the somites and/or to the appropriate location in the body" [MGI:smb]
+synonym: "abnormal muscle progenitor cell migration" RELATED []
 synonym: "abnormal myogenic progenitor cell migration" EXACT []
-is_a: MP:0000729 ! abnormal myogenesis
 is_a: MP:0003091 ! abnormal cell migration
+is_a: MP:0012186 ! abnormal muscle precursor cell physiology
 
 [Term]
 id: MP:0003091
@@ -21579,12 +21586,14 @@ id: MP:0003122
 name: maternal imprinting
 def: "the establishment of heritable alterations in the activity of a gene that depend on whether it passed through the maternal germline, but that are not encoded by DNA itself" [MGI:csmith]
 is_a: MP:0003121 ! genetic imprinting
+is_a: MP:0012167 ! abnormal epigenetic regulation of gene expression
 
 [Term]
 id: MP:0003123
 name: paternal imprinting
 def: "establishment of heritable alterations in the activity of a gene that depend on whether it passed through the paternal germline, but that are not encoded by DNA itself" [MGI:csmith]
 is_a: MP:0003121 ! genetic imprinting
+is_a: MP:0012167 ! abnormal epigenetic regulation of gene expression
 
 [Term]
 id: MP:0003124
@@ -26316,7 +26325,7 @@ def: "defects in the establishment of heritable alterations in the activity of a
 synonym: "abnormal regulation of gene expression by DNA imprinting" EXACT []
 synonym: "abnormal regulation of gene expression by genetic imprinting" EXACT []
 is_a: MP:0003121 ! genetic imprinting
-is_a: MP:0005266 ! abnormal metabolism
+is_a: MP:0012167 ! abnormal epigenetic regulation of gene expression
 
 [Term]
 id: MP:0003788
@@ -27944,6 +27953,9 @@ is_a: MP:0001764 ! abnormal homeostasis
 id: MP:0004020
 name: polyhydramnios
 def: "abnormally high amniotic fluid volume; may result from maternal diabetes, chromosomal abnormalities or other congenital abnormalities" [MGI:monikat]
+synonym: "hydramnios" EXACT []
+synonym: "polyamnios" EXACT []
+synonym: "polyhydramnion" EXACT []
 is_a: MP:0001784 ! abnormal fluid regulation
 
 [Term]
@@ -37111,8 +37123,9 @@ is_a: MP:0001688 ! abnormal somite development
 
 [Term]
 id: MP:0005223
-name: abnormal anterior-posterior polarity of the somites
+name: abnormal dorsal-ventral polarity of the somites
 def: "anomalous development or formation of the pattern of somites along the axis that runs from the front (ventral) to the back (dorsal) surface of the body" [MGI:cwg, PMID:11641270]
+synonym: "abnormal anterior-posterior polarity of the somites" BROAD []
 synonym: "abnormal ventro-dorsal polarity of the somites" EXACT []
 is_a: MP:0001688 ! abnormal somite development
 
@@ -40277,7 +40290,7 @@ is_a: MP:0002061 ! abnormal aggression-related behavior
 [Term]
 id: MP:0005657
 name: abnormal neural plate morphology
-def: "any structural anomaly or absence of the flat, thickened layer of ectodermal cells in the neuroectodermal area of the embryo's dorsal surface that develops into the neural tube and neural crest" [ISBN:0-683-40008-8, MGI:hdene]
+def: "any structural anomaly of the flat, thickened layer of ectodermal cells in the neuroectodermal area of the embryo's dorsal surface that develops into the neural tube and neural crest" [ISBN:0-683-40008-8, MGI:hdene]
 is_a: MP:0002085 ! abnormal embryonic tissue morphology
 is_a: MP:0003861 ! abnormal nervous system development
 
@@ -43577,7 +43590,9 @@ is_a: MP:0002083 ! premature death
 [Term]
 id: MP:0008029
 name: abnormal paraxial mesoderm morphology
-def: "any structural anomaly of the mesoderm lying at either side of the midline embryonic notochord; on segmentation, paraxial mesoderm forms the paired somites" [MGI:anna]
+def: "any structural anomaly of the mesoderm located bilaterally adjacent to the notochord and neural tube; on segmentation, paraxial mesoderm forms the paired somites" [MGI:anna]
+synonym: "abnormal paraxial mesenchyme morphology" EXACT []
+synonym: "abnormal somitic mesoderm" EXACT []
 is_a: MP:0001680 ! abnormal mesoderm development
 
 [Term]
@@ -45436,8 +45451,8 @@ is_a: MP:0002075 ! abnormal coat/hair pigmentation
 [Term]
 id: MP:0008239
 name: epigenetic coat coloration
-def: "a range of wild-type and mutant allele coat coloration, from mouse to mouse or coat color mosaicism of an individual mouse, due to differential methylation of the mutation causing element" [MGI:llw2]
-is_a: MP:0005366 ! variegated coat color
+def: "OBSOLETE. a range of wild-type and mutant allele coat coloration, from mouse to mouse or coat color mosaicism of an individual mouse, due to differential methylation of the mutation causing element" [MGI:llw2]
+is_obsolete: true
 
 [Term]
 id: MP:0008240
@@ -51617,7 +51632,7 @@ is_a: MP:0008054 ! abnormal uterine NK cell morphology
 id: MP:0008877
 name: abnormal DNA methylation
 def: "any anomaly in the covalent transfer of a methyl group to either N-6 of adenine or C-5 or N-4 of cytosine of DNA" [GO:0006306]
-is_a: MP:0005621 ! abnormal cell physiology
+is_a: MP:0012167 ! abnormal epigenetic regulation of gene expression
 
 [Term]
 id: MP:0008878
@@ -64834,7 +64849,7 @@ creation_date: 2010-09-16T04:06:47Z
 id: MP:0010381
 name: abnormal dosage compensation
 def: "anomaly in the process of compensating for the two-fold variation in X:autosome chromosome ratios between sexes by a global activation or inactivation of all, or most of, genes on one or both of the X chromosomes" [GO:0007549]
-is_a: MP:0005621 ! abnormal cell physiology
+is_a: MP:0012167 ! abnormal epigenetic regulation of gene expression
 created_by: csmith
 creation_date: 2010-09-20T10:01:32Z
 
@@ -73972,7 +73987,7 @@ name: abnormal head mesenchyme morphology
 def: "any structural anomaly of the primordial embryonic connective tissue of the developing head, consisting of mesenchymal cells supported in interlaminar jelly, that derive mostly from the mesoderm and contribute to head connective tissue, bone and musculature in conjunction with cranial neural crest cells" [ISBN:0-683-40008-8]
 synonym: "abnormal cephalic mesenchyme morphology" EXACT []
 is_a: MP:0002085 ! abnormal embryonic tissue morphology
-is_a: MP:0003935 ! abnormal craniofacial development
+is_a: MP:0012176 ! abnormal head development
 created_by: csmith
 creation_date: 2011-09-13T11:23:04Z
 
@@ -83019,6 +83034,437 @@ def: "absence of the primitive endoderm-derived tissue that lines the luminal su
 is_a: MP:0011187 ! abnormal parietal endoderm morphology
 created_by: csmith
 creation_date: 2013-10-16T14:20:03Z
+
+[Term]
+id: MP:0012163
+name: abnormal dental mesenchyme morphology
+def: "any structural anomaly of the mesenchyme enclosed by dental organ" [MGI:anna]
+synonym: "abnormal dental organ mesenchyme morophology" EXACT []
+synonym: "abnormal enamel organ mesenchyme morophology" EXACT []
+synonym: "abnormal odontogenic mesenchyme morophology" EXACT []
+synonym: "abnormal tooth enamel organ mesenchyme morophology" EXACT []
+synonym: "abnormal tooth mesenchyme morophology" EXACT []
+is_a: MP:0011260 ! abnormal head mesenchyme morphology
+created_by: csmith
+creation_date: 2013-10-25T07:20:07Z
+
+[Term]
+id: MP:0012164
+name: abnormal conjunctiva goblet cell morphology
+def: "any structural anomaly of a goblet cell that is part of the epithelium of the conjunctiva, and is the source of tear mucins which are secreted from it" [MGI:csmith]
+synonym: "abnormal conjunctival goblet cell morphology" EXACT []
+is_a: MP:0004481 ! abnormal conjunctival epithelium morphology
+created_by: csmith
+creation_date: 2013-10-25T07:26:34Z
+
+[Term]
+id: MP:0012165
+name: absent neural folds
+def: "absence of the elevated margins of the neural groove" [MGI:csmith]
+is_a: MP:0011256 ! abnormal neural fold morphology
+created_by: csmith
+creation_date: 2013-10-25T08:10:21Z
+
+[Term]
+id: MP:0012166
+name: absent neural plate
+def: "absence of the flat, thickened layer of ectodermal cells in the neuroectodermal area of the embryo's dorsal surface that develops into the neural tube and neural crest" [MGI:anna]
+is_a: MP:0005657 ! abnormal neural plate morphology
+created_by: csmith
+creation_date: 2013-10-25T08:10:36Z
+
+[Term]
+id: MP:0012167
+name: abnormal epigenetic regulation of gene expression
+def: "any anomaly in the process that modulates the frequency, rate or extent of gene expression, in which the process is mitotically or meiotically heritable, or is stably self-propagated in the cytoplasm of a resting cell, and does not entail a change in DNA sequence" [GO:0040029]
+is_a: MP:0005621 ! abnormal cell physiology
+created_by: csmith
+creation_date: 2013-10-30T13:36:59Z
+
+[Term]
+id: MP:0012168
+name: abnormal optic placode morphology
+def: "any structural anomaly of the paired thickenings of surface ectoderm that become invaginated to form the embryonic lens vesicles" [MGI:anna]
+synonym: "abnormal lens placode morphology" EXACT []
+is_a: MP:0005545 ! abnormal lens development
+created_by: csmith
+creation_date: 2013-10-30T15:40:54Z
+
+[Term]
+id: MP:0012169
+name: optic placode degeneration
+def: "a retrogressive impairment of function or destruction of the paired thickenings of surface ectoderm that normally become invaginated to form the embryonic lens vesicles" [MGI:anna]
+synonym: "lens placode degeneration" EXACT []
+is_a: MP:0012168 ! abnormal optic placode morphology
+created_by: csmith
+creation_date: 2013-10-30T15:41:50Z
+
+[Term]
+id: MP:0012170
+name: absent optic placodes
+def: "absence of the paired thickenings of surface ectoderm that normally become invaginated to form the embryonic lens vesicles" [MGI:anna]
+synonym: "absent lens placodes" EXACT []
+is_a: MP:0012168 ! abnormal optic placode morphology
+created_by: csmith
+creation_date: 2013-10-30T15:41:50Z
+
+[Term]
+id: MP:0012171
+name: oligohydramnios
+def: "presence of an abnormally low amniotic fluid volume in the amniotic sac; the opposite of polyhydramnios" [MGI:anna]
+synonym: "hypamnion" EXACT []
+synonym: "hypamnios" EXACT []
+synonym: "oligamnios" EXACT []
+synonym: "oligoamnios" EXACT []
+is_a: MP:0001784 ! abnormal fluid regulation
+created_by: csmith
+creation_date: 2013-10-30T15:58:46Z
+
+[Term]
+id: MP:0012172
+name: abnormal amniotic fluid composition
+def: "any alteration in the expected chemical makeup of the watery liquid within the amnion that surrounds and cushions a growing fetus; normally, early in gestation, amniotic fluid is similar to maternal plasma, mainly water with electrolytes, and later in gestation, proteins, carbohydrates, lipids, phospholipids originating from the lungs, fetal cells, and urea are deposited in the fluid" [MGI:anna]
+synonym: "abnormal acqua amnii composition" EXACT []
+synonym: "abnormal liquor amnii composition" EXACT []
+is_a: MP:0001784 ! abnormal fluid regulation
+created_by: csmith
+creation_date: 2013-10-30T16:03:31Z
+
+[Term]
+id: MP:0012173
+name: short rostral-caudal axis
+def: "length reduction or truncation of the axis that runs from the head to the tail of the body" [MGI:anna]
+synonym: "short A-P axis" EXACT []
+synonym: "short anterior-posterior axis" EXACT []
+synonym: "short head-tail axis" EXACT []
+synonym: "short rostro-caudal axis" EXACT []
+synonym: "truncated A-P axis" EXACT []
+synonym: "truncated head-tail axis" EXACT []
+synonym: "truncated rostral-caudal axis" EXACT []
+synonym: "truncated rostro-caudal axis" EXACT []
+is_a: MP:0005221 ! abnormal rostral-caudal axis patterning
+created_by: csmith
+creation_date: 2013-10-31T11:51:35Z
+
+[Term]
+id: MP:0012174
+name: flat head
+def: "the appearance of a flattened surface outline or contour of a normally rounded head of an organism" [MGI:anna]
+synonym: " head flattening" EXACT []
+synonym: "flattened head" EXACT []
+is_a: MP:0011495 ! abnormal head shape
+created_by: csmith
+creation_date: 2013-10-31T12:00:29Z
+
+[Term]
+id: MP:0012175
+name: flat face
+def: "the appearance of a flattened surface outline or contour of a normally rounded face of an organism" [MGI:anna]
+synonym: "flattened face" EXACT []
+is_a: MP:0003743 ! abnormal facial morphology
+created_by: csmith
+creation_date: 2013-10-31T12:23:30Z
+
+[Term]
+id: MP:0012176
+name: abnormal head development
+def: "anomaly in the process in which the anatomical structures of the head are generated and organized" [GO:0060323]
+synonym: "abnormal cephalic development" EXACT []
+synonym: "abnormal cephalogenesis" EXACT []
+is_a: MP:0000432 ! abnormal head morphology
+created_by: csmith
+creation_date: 2013-10-31T12:31:22Z
+
+[Term]
+id: MP:0012177
+name: delayed head development
+def: "late onset of the induction and/or differentiation of the head" [MGI:anna]
+synonym: "delayed cephalic development" EXACT []
+synonym: "delayed cephalogenesis" EXACT []
+synonym: "retarded cephalic development" EXACT []
+synonym: "retarded cephalogenesis" EXACT []
+synonym: "retarded head development" EXACT []
+is_a: MP:0012176 ! abnormal head development
+created_by: csmith
+creation_date: 2013-10-31T12:37:57Z
+
+[Term]
+id: MP:0012178
+name: absent frontonasal prominence
+def: "absence of the unpaired embryonic prominence that is formed by the tissues surrounding the forebrain vesicle and develops into the forehead and bridge of the nose/snout" [MGI:anna]
+synonym: "absent forebrain process" EXACT []
+synonym: "absent forebrain prominence" EXACT []
+synonym: "absent frontonasal mass" EXACT []
+synonym: "absent frontonasal process " EXACT []
+is_a: MP:0009901 ! abnormal frontonasal prominence morphology
+created_by: csmith
+creation_date: 2013-10-31T12:47:28Z
+
+[Term]
+id: MP:0012179
+name: abnormal splanchnic mesoderm morphology
+def: "any structural abnormality of the inner layer of lateral plate mesoderm, located above (dorsally) the endoderm, which forms the circulatory system and future gut wall" [MGI:anna]
+synonym: "abnormal inner layer of lateral plate mesoderm" EXACT []
+synonym: "abnormal splanchnic layer of lateral plate mesoderm" EXACT []
+synonym: "abnormal visceral mesoderm morphology" EXACT []
+is_a: MP:0010117 ! abnormal lateral plate mesoderm morphology
+created_by: csmith
+creation_date: 2013-10-31T13:02:46Z
+
+[Term]
+id: MP:0012180
+name: abnormal somatic mesoderm morphology
+def: "any structural abnormality of the outer layer of lateral plate mesoderm, located under (ventrally) the ectoderm, which forms the future body wall" [MGI:anna]
+synonym: "abnormal outer layer of lateral plate mesoderm" EXACT []
+synonym: "abnormal parietal mesoderm morphology" EXACT []
+synonym: "abnormal somatic layer of lateral plate mesoderm" EXACT []
+is_a: MP:0010117 ! abnormal lateral plate mesoderm morphology
+created_by: csmith
+creation_date: 2013-10-31T13:02:46Z
+
+[Term]
+id: MP:0012181
+name: increased somite number
+def: "increase in the average number of somites formed relative to littermates or other controls" [MGI:anna]
+synonym: "additional somite row(s)" EXACT []
+synonym: "extra somite row(s)" EXACT []
+synonym: "supernumerary somites" EXACT []
+is_a: MP:0001688 ! abnormal somite development
+created_by: csmith
+creation_date: 2013-10-31T13:09:06Z
+
+[Term]
+id: MP:0012182
+name: abnormal presomitic mesoderm morphology
+def: "any structural anomaly of the unsegmented field of paraxial mesoderm present posterior to the most recently formed somite pair, from which somites will form" [MGI:anna]
+synonym: "abnormal presomitic paraxial mesoderm morphology " EXACT []
+synonym: "abnormal PSM morphology" EXACT []
+synonym: "abnormal segmental plate morphology" EXACT []
+synonym: "abnormal somitogenic mesoderm morphology" EXACT []
+synonym: "abnormal unsegmented paraxial mesoderm" EXACT []
+is_a: MP:0008029 ! abnormal paraxial mesoderm morphology
+created_by: csmith
+creation_date: 2013-10-31T13:13:54Z
+
+[Term]
+id: MP:0012183
+name: decreased paraxial mesoderm size
+def: "reduced size or deficiency of the mesoderm lying at either side of the midline embryonic notochord that, on segmentation, forms the paired somites" [MGI:anna]
+synonym: "decreased paraxial mesenchyme size" EXACT []
+synonym: "decreased somitic size" EXACT []
+is_a: MP:0008029 ! abnormal paraxial mesoderm morphology
+created_by: csmith
+creation_date: 2013-10-31T13:17:03Z
+
+[Term]
+id: MP:0012184
+name: absent paraxial mesoderm
+def: "absence or loss of the mesoderm normally found at either side of the midline embryonic notochord that, on segmentation, forms the paired somites." [MGI:anna]
+synonym: "absent paraxial mesenchyme morphology" EXACT []
+synonym: "absent somitic mesoderm" EXACT []
+is_a: MP:0008029 ! abnormal paraxial mesoderm morphology
+created_by: csmith
+creation_date: 2013-10-31T13:17:03Z
+
+[Term]
+id: MP:0012185
+name: abnormal muscle precursor cell morphology
+def: "any structural anomaly of cells that will develop into muscle cells" [MGI:mnk]
+synonym: "abnormal muscle progenitor cell morphology" EXACT []
+is_a: MP:0000729 ! abnormal myogenesis
+created_by: csmith
+creation_date: 2013-10-31T13:50:52Z
+
+[Term]
+id: MP:0012186
+name: abnormal muscle precursor cell physiology
+def: "anomaly in the function of cells that will develop into muscle cells" [MGI:mnk]
+synonym: "abnormal muscle progenitor cell physiology" RELATED []
+is_a: MP:0002106 ! abnormal muscle physiology
+created_by: csmith
+creation_date: 2013-10-31T13:51:34Z
+
+[Term]
+id: MP:0012187
+name: abnormal intraembryonic coelom morphology
+def: "any structural anomaly of the part of the coelom in the embryo between the somatopleuric and splanchnopleuric mesoderm; the principal body cavities of the trunk (thoracic, abdominal, and pelvic) arise from this embryonic part of the coelom" [MGI:anna]
+synonym: "abnormal intraembryonic celom morphology" EXACT []
+is_a: MP:0002085 ! abnormal embryonic tissue morphology
+created_by: csmith
+creation_date: 2013-10-31T14:13:33Z
+
+[Term]
+id: MP:0012188
+name: increased regulatory T cell apoptosis
+def: "increase in the number of regulatory T cells undergoing programmed cell death" [MGI:csmith]
+is_a: MP:0004946 ! abnormal regulatory T cell physiology
+is_a: MP:0006413 ! increased T cell apoptosis
+created_by: csmith
+creation_date: 2013-10-31T14:21:26Z
+
+[Term]
+id: MP:0012189
+name: decreased regulatory T cell apoptosis
+def: "decrease in the number of regulatory T cells undergoing programmed cell death" [MGI:csmith]
+is_a: MP:0004946 ! abnormal regulatory T cell physiology
+is_a: MP:0006414 ! decreased T cell apoptosis
+created_by: csmith
+creation_date: 2013-10-31T14:22:14Z
+
+[Term]
+id: MP:0012190
+name: increased cytotoxic T cell apoptosis
+def: "increase in the number of cytotoxic T cells undergoing programmed cell death" [MGI:csmith]
+is_a: MP:0005078 ! abnormal cytotoxic T cell physiology
+is_a: MP:0006413 ! increased T cell apoptosis
+created_by: csmith
+creation_date: 2013-10-31T14:25:11Z
+
+[Term]
+id: MP:0012191
+name: decreased cytotoxic T cell apoptosis
+def: "decrease in the number of cytotoxic T cells undergoing programmed cell death" [MGI:csmith]
+synonym: "reduced cytotoxic T cell apoptosis" EXACT []
+is_a: MP:0005078 ! abnormal cytotoxic T cell physiology
+is_a: MP:0006414 ! decreased T cell apoptosis
+created_by: csmith
+creation_date: 2013-10-31T14:25:11Z
+
+[Term]
+id: MP:0012192
+name: abnormal keratinocyte migration
+def: "anomaly in the movement of keratinocyes or their precursors to the appropriate location in the body" [MGI:csmith]
+is_a: MP:0003091 ! abnormal cell migration
+is_a: MP:0003453 ! abnormal keratinocyte physiology
+created_by: csmith
+creation_date: 2013-10-31T14:29:41Z
+
+[Term]
+id: MP:0012193
+name: increased keratinocyte migration
+def: "increased or faster movement of keratinocyes or their precursors to the appropriate location in the body" [MGI:csmith]
+is_a: MP:0011804 ! increased cell migration
+is_a: MP:0012192 ! abnormal keratinocyte migration
+created_by: csmith
+creation_date: 2013-10-31T14:30:01Z
+
+[Term]
+id: MP:0012194
+name: decreased keratinocyte migration
+def: "reduced or slower movement of keratinocyes or their precursors to the appropriate location in the body" [MGI:csmith]
+is_a: MP:0011805 ! decreased cell migration
+is_a: MP:0012192 ! abnormal keratinocyte migration
+created_by: csmith
+creation_date: 2013-10-31T14:30:10Z
+
+[Term]
+id: MP:0012195
+name: impaired neural crest cell differentiation
+is_a: MP:0009845 ! abnormal neural crest cell morphology
+created_by: csmith
+creation_date: 2013-10-31T14:38:34Z
+
+[Term]
+id: MP:0012196
+name: abnormal myofibroblast differentiation
+is_a: MP:0005076 ! abnormal cell differentiation
+created_by: csmith
+creation_date: 2013-10-31T14:41:46Z
+
+[Term]
+id: MP:0012197
+name: impaired myofibroblast differentiation
+is_a: MP:0012196 ! abnormal myofibroblast differentiation
+created_by: csmith
+creation_date: 2013-10-31T14:42:09Z
+
+[Term]
+id: MP:0012198
+name: absent interphalangeal joint
+is_a: MP:0012199 ! abnormal interphalangeal joint
+created_by: csmith
+creation_date: 2013-10-31T14:43:37Z
+
+[Term]
+id: MP:0012199
+name: abnormal interphalangeal joint
+is_a: MP:0002932 ! abnormal joint morphology
+created_by: csmith
+creation_date: 2013-10-31T14:43:37Z
+
+[Term]
+id: MP:0012200
+name: increased endothelial cell proliferation
+is_a: MP:0000351 ! increased cell proliferation
+is_a: MP:0012202 ! abnormal endothelial cell proliferation
+created_by: csmith
+creation_date: 2013-10-31T14:45:14Z
+
+[Term]
+id: MP:0012201
+name: decreased endothelial cell proliferation
+is_a: MP:0000352 ! decreased cell proliferation
+is_a: MP:0012202 ! abnormal endothelial cell proliferation
+created_by: csmith
+creation_date: 2013-10-31T14:45:14Z
+
+[Term]
+id: MP:0012202
+name: abnormal endothelial cell proliferation
+is_a: MP:0000350 ! abnormal cell proliferation
+created_by: csmith
+creation_date: 2013-10-31T14:45:14Z
+
+[Term]
+id: MP:0012203
+name: abnormal neuronal stem cell morphology
+def: "any structural anomaly of an undifferentiated cell that originates from the neuroectoderm and has the capacity both to perpetually self-renew without differentiating and to generate multiple types of lineage-restricted progenitors" [CL:0000047]
+synonym: "abnormal neural stem cell morphology" EXACT []
+is_a: MP:0003861 ! abnormal nervous system development
+created_by: csmith
+creation_date: 2013-10-31T14:55:58Z
+
+[Term]
+id: MP:0012204
+name: abnormal neuronal stem cell physiology
+def: "any functional anomaly of an undifferentiated cell that originates from the neuroectoderm and has the capacity both to perpetually self-renew without differentiating and to generate multiple types of lineage-restricted progenitors" [CL:0000047]
+synonym: "abnormal neural stem cell physiology " EXACT []
+is_a: MP:0003633 ! abnormal nervous system physiology
+created_by: csmith
+creation_date: 2013-10-31T14:57:22Z
+
+[Term]
+id: MP:0012205
+name: abnormal neuronal stem cell self-renewal
+def: "any anomaly in the process by which stem cells divide and proliferate to make more stem cells, perpetuating the stem cell pool; self-renewal is division with maintenance of the undifferentiated state" [PMID:19575646]
+synonym: "abnormal neural stem cell proliferation" EXACT []
+synonym: "abnormal neural stem cell self-renewal" EXACT []
+synonym: "abnormal neuronal stem cell proliferation" EXACT []
+is_a: MP:0012204 ! abnormal neuronal stem cell physiology
+created_by: csmith
+creation_date: 2013-10-31T14:58:23Z
+
+[Term]
+id: MP:0012206
+name: increased neuronal stem cell self-renewal
+def: "an increased rate in the process by which stem cells divide and proliferate to make more stem cells, perpetuating an increase in the stem cell pool; self-renewal is division with maintenance of the undifferentiated state" [PMID:19575646]
+synonym: "increased neural stem cell proliferation" EXACT []
+synonym: "increased neural stem cell self-renewal" EXACT []
+synonym: "increased neuronal stem cell proliferation" EXACT []
+is_a: MP:0012205 ! abnormal neuronal stem cell self-renewal
+created_by: csmith
+creation_date: 2013-10-31T14:58:23Z
+
+[Term]
+id: MP:0012207
+name: decreased neuronal stem cell self-renewal
+def: "an decreased rate in the process by which stem cells divide and proliferate to make more stem cells, perpetuating an decrease in the stem cell pool; self-renewal is division with maintenance of the undifferentiated state" [PMID:19575646]
+synonym: "decreased neural stem cell proliferation" EXACT []
+synonym: "decreased neural stem cell self-renewal" EXACT []
+synonym: "decreased neuronal stem cell proliferation" EXACT []
+is_a: MP:0012205 ! abnormal neuronal stem cell self-renewal
+created_by: csmith
+creation_date: 2013-10-31T14:58:23Z
 
 [Typedef]
 id: part_of
