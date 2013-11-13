@@ -82,7 +82,7 @@ hp/hp-equivalence-axioms.obo: external/hpo/human-phenotype-ontology_xp.obo
 # https://code.google.com/p/phenotype-ontologies/wiki/ZP
 
 zp.owl:
-	wget http://compbio.charite.de/hudson/job/hpo.ontology.uberpheno/lastStableBuild/artifact/data/dataForUberpheno/not_subsettable_ontologies/zp.owl
+	owltools http://compbio.charite.de/hudson/job/hpo.ontology.uberpheno/lastStableBuild/artifact/data/dataForUberpheno/not_subsettable_ontologies/zp.owl --set-ontology-id $(OBO)/upheno/$@ -o $@
 zp.obo: zp.owl
 	owltools $< -o -f obo --no-check $@
 
@@ -233,8 +233,9 @@ mirror/uberon.owl: external/uberon/uberon.owl
 #####	owltools $(OBO)/uberon/ext.owl $(OBO)/cl.owl --merge-support-ontologies --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/uberon.owl -o $@
 
 mirror/wbbt.owl:
-	owltools $(OBO)/uberon/composite-metazoan.owl $(OBO)/cl.owl $(OBO)/wbls.owl --merge-support-ontologies --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/wbbt.owl -o $@
+	owltools $(OBO)/uberon/basic.owl $(OBO)/cl.owl $(OBO)/wbls.owl $(OBO)/wbbt.owl $(OBO)/uberon/bridge/uberon-bridge-to-wbbt.owl $(OBO)/uberon/bridge/cl-bridge-to-wbbt.owl $(OBO)/ncbitaxon/subsets/taxslim.owl --merge-support-ontologies --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS)  --set-ontology-id $(OBO)/wbbt.owl -o $@
 ###	owltools $(OBO)/uberon/ext.owl --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --set-ontology-id $(OBO)/uberon.owl -o $@
+###	owltools  $(OBO)/wbls.owl $(OBO)/wbbt.owl --merge-support-ontologies --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS)  --set-ontology-id $(OBO)/wbbt.owl -o $@
 mirror/go.owl: external/go/go.owl
 	owltools $(OBO)/go.owl --merge-support-ontologies --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/go.owl -o $@
 mirror/pr.obo:
@@ -272,6 +273,8 @@ main/metazoa.owl: metazoa.owl hp.owl mp.owl
 # ----------------------------------------
 %-dv.txt: %.owl
 	owltools $(USECAT) $< --merge-imports-closure  --reasoner elk --check-disjointness-axioms > $@
+%-elk.rpt: %.owl
+	owltools $(USECAT) $< --merge-imports-closure  --reasoner elk -u > $@
 
 # ----------------------------------------
 # SEMANTIC SIMILARITY
