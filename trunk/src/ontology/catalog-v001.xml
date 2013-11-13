@@ -22,7 +22,7 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/uberon/uberon-simple-vertebrate-bridge.owl" uri="uberon-simple-vertebrate-bridge.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mp/mp-importer.owl" uri="mp/mp-importer.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/hp/hp-importer.owl" uri="hp/hp-importer.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/upheno/obo/zp/zp-importer.owl" uri="zp/zp-importer.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/zp/zp-importer.owl" uri="zp/zp-importer.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-importer.owl" uri="wbphenotype/wbphenotype-importer.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-to-mp-match-best.owl" uri="wbphenotype/wbphenotype-to-mp-match-best.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mp/mp-to-hp-match-best.owl" uri="mp/mp-to-hp-match-best.owl"/>
@@ -34,11 +34,11 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/hp/hp-equivalence-axioms.owl" uri="hp/hp-equivalence-axioms.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/hp/hp-equivalence-axioms-subq.owl" uri="hp/hp-equivalence-axioms-subq.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/hp/hp-equivalence-axioms-subq-ubr.owl" uri="hp/hp-equivalence-axioms-subq-ubr.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/upheno/obo/zp/zp-equivalence-axioms-subq-ubr.owl" uri="zp/zp-equivalence-axioms-subq-ubr.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/zp/zp-equivalence-axioms-subq-ubr.owl" uri="zp/zp-equivalence-axioms-subq-ubr.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-equivalence-axioms-subq-ubr.owl" uri="wbphenotype/wbphenotype-equivalence-axioms-subq-ubr.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/zp/zp-equivalence-axioms-subq-ubr.owl" uri="zp.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-equivalence-axioms-subq-ubr.owl" uri="wbphenotype/wbphenotype-equivalence-axioms-subq-ubr.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/upheno/obo/zp.owl" uri="zp.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/zp.owl" uri="zp.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/hp.owl" uri="hp.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/pato.owl" uri="pato.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/fypo.owl" uri="fypo.owl"/>
