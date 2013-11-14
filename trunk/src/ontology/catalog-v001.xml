@@ -44,13 +44,14 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/fypo.owl" uri="fypo.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl" uri="external/ncbitaxon-subsets/taxslim.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim-disjoint-over-in-taxon.owl" uri="external/ncbitaxon-subsets/taxslim-disjoint-over-in-taxon.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/cl-basic.owl" uri="external/cell-ontology/cl-basic.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/cl.owl" uri="external/cell-ontology/cl.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/cl/cl-basic.owl" uri="external/cell/cl-basic.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/cl.owl" uri="external/cell/cl.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/cl/imports/uberon_import.owl" uri="external/uberon/uberon.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ro.owl" uri="external/obo-relations/ro.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/uberon/composite-metazoan.owl" uri="external/uberon/composite-metazoan.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/uberon/merged.owl" uri="external/uberon/merged.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/uberon/ext.owl" uri="external/uberon/ext.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/uberon/basic.owl" uri="external/uberon/basic.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/uberon.owl" uri="external/uberon/uberon.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
     </group>
