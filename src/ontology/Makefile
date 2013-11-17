@@ -130,7 +130,7 @@ pato.owl: pato.obo
 #@Deprecated?
 all_merged: uberpheno-subq-full-merged.owl
 %-merged.owl: %-importer.owl mp/mp-equivalence-axioms-subq-ubr.owl hp/hp-equivalence-axioms-subq-ubr.owl mp.owl hp.owl
-	owltools --use-catalog $< --merge-import-closure --ni graph-traversal-metadata.owl --merge-support-ontologies   --merge-equivalent-classes -f $(OBO)/MP_ -t $(OBO)/HP_ --merge-equivalent-classes -f $(OBO)/FMA_ -f $(OBO)/EMAPA_ -f $(OBO)/MA_ -t $(OBO)/UBERON_ --merge-equivalent-classes -f $(OBO)/FMA_ -t $(OBO)/CL_ -t $(OBO)/UBERON_ -o file://`pwd`/$@
+	owltools --use-catalog $< --merge-import-closure --ni graph-traversal-metadata.owl --merge-support-ontologies   --merge-equivalent-classes -f $(OBO)/MP_ -t $(OBO)/HP_ --merge-equivalent-classes -f $(OBO)/FMA_ -f $(OBO)/EMAPA_ -f $(OBO)/MA_ -t $(OBO)/UBERON_ --merge-equivalent-classes -f $(OBO)/FMA_ -t $(OBO)/CL_ -t $(OBO)/UBERON_ -o $@
 
 # ----------------------------------------
 # Simple files
@@ -202,13 +202,16 @@ uberon-simple-vertebrate-bridge.obo:
 # this means that any one import will be larger than is strictly required for any one species, but there are advantages to sharing here
 
 # Base URI for local subset imports
-UPHENO_IMPORTS_BASE_URI = $(OBO)/upheno/imports
+##UPHENO = $(OBO)/upheno
 
 # Ontology dependencies. TODO - nbo
 IMPORTS = pato uberon chebi pr go doid mpath nbo
 
 # Make this target to regenerate ALL
 all_imports: $(patsubst %, imports/%_import.owl,$(IMPORTS))
+remove_all_imports: 
+	rm $(patsubst %, imports/%_import.owl,$(IMPORTS))
+refresh_all_imports: remove_all_imports all_imports
 
 KEEPRELS = BFO:0000050 BFO:0000051 RO:0002202 immediate_transformation_of
 
@@ -217,11 +220,11 @@ KEEPRELS = BFO:0000050 BFO:0000051 RO:0002202 immediate_transformation_of
 # After extraction, we further reduce the ontology by creating a "mingraph" (removes all annotations except label) and by 
 
 #imports/wbbt_import.owl: wbphenotype/wbphenotype-equivalence-axioms-subq-ubr.owl mirror/wbbt.owl
-#	owltools  $(USECAT) --map-ontology-iri $(UPHENO_IMPORTS_BASE_URI)/wbbt_import.owl mirror/wbbt.owl $< --merge-imports-closure mirror/$*.owl --add-imports-from-support  --extract-module -s $(OBO)/$*.owl -c --remove-axiom-annotations --make-subset-by-properties $(KEEPRELS) --set-ontology-id $(UPHENO_IMPORTS_BASE_URI)/$@ -o file://`pwd`/$@
+#	owltools  $(USECAT) --map-ontology-iri $(UPHENO)/wbbt_import.owl mirror/wbbt.owl $< --merge-imports-closure mirror/$*.owl --add-imports-from-support  --extract-module -s $(OBO)/$*.owl -c --remove-axiom-annotations --make-subset-by-properties $(KEEPRELS) --set-ontology-id $(UPHENO)/$@ -o $@
 
 # GENERIC:
 imports/%_import.owl: imports/upheno-preimporter.owl mirror/%.owl mp/mp-equivalence-axioms.obo hp/hp-equivalence-axioms.obo
-	owltools  $(USECAT) --map-ontology-iri $(UPHENO_IMPORTS_BASE_URI)/$*_import.owl mirror/$*.owl $< --merge-imports-closure mirror/$*.owl --add-imports-from-support  --extract-module -s $(OBO)/$*.owl -c --remove-axiom-annotations --make-subset-by-properties $(KEEPRELS) --set-ontology-id $(UPHENO_IMPORTS_BASE_URI)/$@ -o file://`pwd`/$@
+	owltools  $(USECAT) --map-ontology-iri $(UPHENO)/$*_import.owl mirror/$*.owl $< --merge-imports-closure mirror/$*.owl --add-imports-from-support  --extract-module -s $(OBO)/$*.owl -c --remove-axiom-annotations --make-subset-by-properties $(KEEPRELS) --set-ontology-id $(UPHENO)/$@ -o $@
 
 # clone remote ontology locally, perfoming some excision of relations and annotations
 mirror/%.owl:
@@ -245,7 +248,7 @@ mirror/pr.owl: mirror/pr.obo
 .PRECIOUS: mirror/%.owl
 
 imports/ro_import.owl: mirror/ro.owl
-	owltools  $(USECAT) $< mp/mp-equivalence-axioms-edit.owl --extract-properties --set-ontology-id $(UPHENO_IMPORTS_BASE_URI)/upheno/$@ -o $@
+	owltools  $(USECAT) $< mp/mp-equivalence-axioms-edit.owl --extract-properties --set-ontology-id $(UPHENO)/upheno/$@ -o $@
 
 imports/%_import.obo: imports/%_import.owl
 	owltools $< -o -f obo $@
