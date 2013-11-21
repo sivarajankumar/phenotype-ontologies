@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 08:11:2013 09:01
+date: 16:11:2013 08:40
 saved-by: peter
 auto-generated-by: OBO-Edit 2.3
 subsetdef: hposlim_core "Core clinical terminology"
@@ -965,6 +965,8 @@ is_a: HP:0011036 ! Abnormality of renal excretion
 [Term]
 id: HP:0000121
 name: Nephrocalcinosis
+def: "Nephrocalcinosis is the deposition of calcium salts in renal parenchyma." [HPO:probinson]
+comment: Nephrocalcinosis can be intratubular or interstitial, and can be diagnosed by means of a radiologic exam (plain radiographs, ultrasonograms, or computed tomography scans) or via microscopic examination of the renal tissues. The term nephrocalcinosis most often applies to a generalized increase in renal calcium content.
 xref: MeSH:D009397 "Nephrocalcinosis"
 xref: UMLS:C0027709 "Nephrocalcinosis"
 is_a: HP:0012210 ! Abnormal renal morphology
@@ -2482,6 +2484,7 @@ synonym: "Increased interpupillary distance" EXACT []
 synonym: "Ocular hypertelorism" EXACT []
 synonym: "Wide-set eyes" EXACT []
 synonym: "Widely spaced eyes" EXACT []
+synonym: "Widened interpupillary distance" EXACT []
 xref: MeSH:D006972 "Hypertelorism"
 xref: UMLS:C0020534 "Ocular hypertelorism"
 is_a: HP:0100886 ! Abnormality of globe location
@@ -3442,6 +3445,7 @@ subset: hposlim_core
 synonym: " Nasal bridge, thin" EXACT []
 synonym: "Narrow nasal root" EXACT []
 synonym: "Nasal Bridge, Narrow " EXACT []
+synonym: "Pinched nasal bridge" RELATED []
 is_a: HP:0000422 ! Abnormality of the nasal bridge
 
 [Term]
@@ -5588,9 +5592,13 @@ is_a: HP:0000684 ! Delayed eruption of teeth
 
 [Term]
 id: HP:0000698
-name: Conical teeth
-def: "An abnormal `conical` (PATO:0002021) form of the `teeth` (FMA:12516)." [HPO:ibailleulforestier]
+name: Conical tooth
+def: "An abnormal `conical` (PATO:0002021) form of the `teeth` (FMA:12516), that is, a tooth whose sides converge or taper together incisally." [HPO:ibailleulforestier]
 subset: hposlim_core
+synonym: "Conical teeth" RELATED []
+synonym: "Peg shaped teeth" EXACT []
+synonym: "Peg tooth" EXACT []
+synonym: "Peg-shaped teeth" EXACT []
 xref: SNOMEDCT:29553002 "Peg-shaped teeth"
 xref: UMLS:C0266037 "Conical teeth"
 is_a: HP:0006482 ! Abnormality of dental morphology
@@ -6519,6 +6527,8 @@ alt_id: HP:0004949
 alt_id: HP:0005126
 def: "The presence of `chronic` (PATO:0001863) `increased pressure` (PATO:0001576) in the `systemic arterial system` (FMA:45623)." [HPO:probinson]
 comment: Hypertension is sustained elevation of resting systolic BP (140 mm Hg or higher), diastolic BP (90 mm Hg or higher), or both.
+synonym: "Elevated blood pressure" RELATED []
+synonym: "Increased blood pressure" RELATED []
 synonym: "Systemic hypertension" EXACT []
 xref: MeSH:D006973 "Hypertension"
 xref: UMLS:C0020538 "Hypertension"
@@ -6569,7 +6579,7 @@ name: Precocious puberty
 def: "The onset of secondary sexual characteristics before a normal age. Although it is difficult to define normal age ranges because of the marked variation with which puberty begins in normal children, precocious puberty can be defined as the onset of puberty before the age of 8 years in girls or 9 years in boys." [HPO:probinson]
 xref: MeSH:D011629 "Puberty, Precocious"
 xref: UMLS:C0034013 "Precocious Puberty"
-is_a: HP:0008373 ! Puberty and gonadal disorders
+is_a: HP:0100000 ! Early onset of sexual maturation
 
 [Term]
 id: HP:0000828
@@ -12220,7 +12230,9 @@ id: HP:0001649
 name: Tachycardia
 alt_id: HP:0001720
 def: "A rapid heartrate that exceeds the range of the normal resting heartrate for age." [HPO:probinson]
-synonym: "Rapid heart beat" EXACT []
+synonym: "Elevated heart rate" RELATED []
+synonym: "Increased heart rate" RELATED []
+synonym: "Rapid heart beat" RELATED []
 xref: MeSH:D013610 "Tachycardia"
 xref: UMLS:C0039231 "Tachycardia"
 is_a: HP:0011675 ! Arrhythmia
@@ -12412,7 +12424,7 @@ is_a: HP:0001675 ! Rhythm disturbances associated with pheochromocytoma
 id: HP:0001677
 name: Coronary artery disease
 alt_id: HP:0005138
-def: "Reduction of the diamter of the coronary arteries as the result of an accumulation of atheromatous plaques within the walls of the coronary arteries, which increases the risk of myocardial ischemia." [HPO:probinson]
+def: "Reduction of the diameter of the coronary arteries as the result of an accumulation of atheromatous plaques within the walls of the coronary arteries, which increases the risk of myocardial ischemia." [HPO:probinson]
 synonym: "Coronary disease" EXACT []
 xref: MeSH:D003324 "Coronary Artery Disease"
 xref: UMLS:C0010068 "Coronary Artery Disease"
@@ -15458,6 +15470,7 @@ is_a: HP:0002795 ! Functional respiratory abnormality
 id: HP:0002094
 name: Dyspnea
 def: "Difficult or labored breathing." [HPO:probinson]
+synonym: "Shortness of breath" RELATED []
 xref: MeSH:D004417 "Dyspnea"
 xref: UMLS:C2024878 "dyspnea"
 is_a: HP:0002093 ! Respiratory insufficiency
@@ -16025,8 +16038,9 @@ is_a: HP:0001257 ! Spasticity
 id: HP:0002180
 name: Neurodegeneration
 def: "Progressive loss of neural cells and tissue." [HPO:probinson]
-synonym: "Neuro-degenerative disease" EXACT []
+synonym: "Neuro-degenerative disease" RELATED []
 synonym: "Neurodegenerative disease" RELATED []
+synonym: "Progressive neurodegenerative disorder" RELATED []
 is_a: HP:0007367 ! Atrophy/Degeneration affecting the central nervous system
 
 [Term]
@@ -17896,9 +17910,12 @@ is_a: HP:0001251 ! Ataxia
 [Term]
 id: HP:0002500
 name: Abnormality of the cerebral white matter
+alt_id: HP:0200100
 def: "An abnormality of the `cerebral white matter` (FMA:241998)." [HPO:probinson]
-comment: This finding can be demonstrated by magnetic resonance imaging, especially with t2 signalling.
+comment: This finding can be demonstrated by magnetic resonance imaging, especially with t2 signalling. The cerebral white matter is the region of the central nervous system that  consists mostly of glial cells and myelinated axons that interconnect the various regions of the cerebrum and the lower brain centers. It is located in the subcortex.
+synonym: "Abnormality of subcortical white matter" EXACT []
 synonym: "Cerebral white matter abnormalities" EXACT []
+synonym: "UBCORTICAL WHITE MATTER ABNORMALITIES SEEN ON MRI" RELATED [HPO:skoehler]
 synonym: "White matter abnormalities" EXACT []
 synonym: "White matter alterations" EXACT []
 xref: UMLS:C1866186 "White matter abnormalities"
@@ -18049,6 +18066,7 @@ alt_id: HP:0002428
 alt_id: HP:0002525
 def: "A sudden and transient episode of bilateral loss of muscle tone, often triggered by emotions." [HPO:probinson, pmid:21931493, pmid:22249574]
 comment: Cataplexy is a frequent feature of narcolepsy, a neurologic disorder characterized by excessive daytime sleepiness and manifestations of disrupted rapid eye movement sleep stage.
+synonym: "Narcolepsy" RELATED []
 xref: MeSH:D002385 "Cataplexy"
 xref: UMLS:C0007384 "Cataplexy"
 is_a: HP:0002011 ! Abnormality of the central nervous system
@@ -22721,6 +22739,7 @@ id: HP:0003234
 name: Decreased plasma carnitine
 def: "A decreased concentration of `carnitine` (CHEBI:17126) in the `blood` (FMA:9670)." [HPO:gcarletti]
 comment: Carnitine is responsible for the transport of fatty acids from the cytosol into the mitochondria.
+synonym: "Carnitine deficiency" RELATED []
 xref: UMLS:C1860067 "Decreased plasma carnitine"
 is_a: HP:0003287 ! Abnormality of mitochondrial metabolism
 is_a: HP:0010967 ! Abnormality of carnitine metabolism
@@ -22903,7 +22922,7 @@ is_a: HP:0010702 ! Hypergammaglobulinemia
 id: HP:0003262
 name: Smooth muscle antibody positivity
 def: "The presence in serum of antibodies against smooth muscle." [HPO:probinson]
-comment: Anti smooth muscle antibody (SMA) may be present in a number of conditions including chronic active hepatitis, autoimmune hepatatis, cirrhosis, and infectious mononucleosis.
+comment: Anti smooth muscle antibody (SMA) may be present in a number of conditions including chronic active hepatitis, autoimmune hepatitis, cirrhosis, and infectious mononucleosis.
 synonym: "Smooth muscle antibody positive" EXACT []
 xref: UMLS:C0241185 "SMOOTH MUSCLE ANTIBODY POSITIVE"
 is_a: HP:0002960 ! Autoimmunity
@@ -31447,7 +31466,6 @@ is_a: HP:0004414 ! Abnormality of the pulmonary artery
 id: HP:0004962
 name: Thoracic aorta calcification
 xref: UMLS:C1969292 "Thoracic aorta calcification"
-is_a: HP:0003207 ! Arterial calcification
 is_a: HP:0004963 ! Calcifications of the aorta
 
 [Term]
@@ -40386,7 +40404,7 @@ is_a: HP:0000763 ! Sensory neuropathy
 id: HP:0007068
 name: Inferior vermis hypoplasia
 alt_id: HP:0005724
-def: "Underdevelopment of the inferior portion of the `vermis of cerebellum` (FMA:76928)." [HPO:probinson]
+def: "Underdevelopment of the inferior portion of the `vermis of cerebellum` (FMA:76928)." [HPO:probinson, pmid:16580298]
 synonym: "Hypoplasia of inferior vermis" EXACT []
 xref: UMLS:C1855350 "Inferior vermis hypoplasia"
 is_a: HP:0001320 ! Cerebellar vermis hypoplasia
@@ -41499,7 +41517,8 @@ creation_date: 2008-04-01T10:48:00Z
 [Term]
 id: HP:0007376
 name: Abnormality of the choroid plexus
-def: "An abnormality of the `choroid plexus` (FMA:61934), which is the area in the cerebral ventricles in which cerebrospinal fluid is produced by modified ependymal cells." [HPO:curators]
+def: "An abnormality of the `choroid plexus` (FMA:61934), which is the area in the cerebral ventricles in which cerebrospinal fluid is produced by modified ependymal cells." [HPO:probinson]
+comment: The choroid plexus is a structure in the ventricles of the brain where cerebrospinal fluid (CSF) is produced.
 is_a: HP:0002118 ! Abnormality of the cerebral ventricles
 created_by: peter
 creation_date: 2008-04-01T10:52:00Z
@@ -45744,6 +45763,8 @@ is_a: HP:0004340 ! Abnormality of vitamin B metabolism
 [Term]
 id: HP:0008327
 name: Microscopic nephrocalcinosis
+def: "The presence of microscopic crystalline calcium precipitates in the form of oxalate and/or phosphate in the renal parenchyma." [HPO:probinson]
+comment: The qualifier microscopic is used to indicate that the nephrocalcinosis cannot be observed on visual or radiologic examination without further magnification (as can macroscopic nephrocalcinosis).
 xref: UMLS:C0403474 "Microscopic nephrocalcinosis"
 is_a: HP:0000121 ! Nephrocalcinosis
 
@@ -46137,6 +46158,7 @@ id: HP:0008419
 name: Intervertebral disc degeneration
 def: "The presence of `degenerative changes` (PATO:0002037) of `intervertebral disk` (FMA:10446)." [HPO:probinson]
 synonym: "Degeneration of intervertebral disks" EXACT []
+synonym: "Degenerative intervertebral disk" EXACT []
 xref: MeSH:D055959 "intervertebral disc degeneration"
 xref: UMLS:C0158266 "Intervertebral disc degeneration"
 is_a: HP:0005108 ! Abnormality of the intervertebral disk
@@ -60254,7 +60276,7 @@ creation_date: 2009-07-12T02:34:30Z
 [Term]
 id: HP:0010314
 name: Premature thelarche
-def: "Premature development of the breasts." [HPO:curators]
+def: "Premature development of the breasts." [HPO:probinson]
 xref: UMLS:C0425772 "Premature thelarche"
 is_a: HP:0000826 ! Precocious puberty
 created_by: peter
@@ -61566,7 +61588,7 @@ creation_date: 2009-09-15T08:42:35Z
 [Term]
 id: HP:0010465
 name: Precocious puberty in females
-def: "The onset of puberty before the age of 8 years in girls." [HPO:curators]
+def: "The onset of puberty before the age of 8 years in girls." [HPO:probinson]
 is_a: HP:0000826 ! Precocious puberty
 created_by: peter
 creation_date: 2009-09-15T08:48:42Z
@@ -66953,7 +66975,7 @@ synonym: "Conoid incisor" EXACT []
 synonym: "Peg-shaped incisors" EXACT []
 synonym: "Pointed incisor" RELATED []
 xref: UMLS:C1856136 "Peg-shaped incisors"
-is_a: HP:0000698 ! Conical teeth
+is_a: HP:0000698 ! Conical tooth
 is_a: HP:0011063 ! Abnormality of incisor morphology
 created_by: peter
 creation_date: 2011-03-10T02:14:34Z
@@ -70762,11 +70784,13 @@ creation_date: 2012-04-03T07:10:49Z
 [Term]
 id: HP:0011496
 name: Corneal neovascularization
-def: "Ingrowth of vessels into the corneal epithelium." [DDD:ncarter]
+def: "Ingrowth of new blood vessels into the cornea." [DDD:ncarter, pmid:22898649]
+comment: New blood vessels, which sprout from the capillaries and venules of the pericorneal plexus, may block light, compromise visual acuity, and lead to inflammation, corneal scarring, and edema. Corneal neovascularization may be a consequence of corneal hypoxia. Neovascular patterns can be separated into three clinical groups: deep neovascularization overlying Descemet's membrane (seen in herpetic and luetic interstitial keratitis), stromal neovascularization (as a result of stromal keratitis), and vascular pannus (from ocular surface disorders).
+synonym: "Corneal neovascularisation" EXACT []
 synonym: "Corneal vascularization" EXACT []
 xref: SNOMEDCT:19161004 "Corneal neovascularization"
 xref: UMLS:C0085109 "Corneal Neovascularization"
-is_a: HP:0011495 ! Abnormality of corneal epithelium
+is_a: HP:0000481 ! Abnormality of the cornea
 created_by: peter
 creation_date: 2012-04-03T07:15:37Z
 
@@ -76080,6 +76104,7 @@ creation_date: 2012-09-16T04:37:32Z
 id: HP:0012115
 name: Hepatitis
 def: "Inflammation of the liver." [HPO:probinson]
+synonym: "Liver inflammation" EXACT []
 xref: MeSH:D006505 "Hepatitis"
 is_a: HP:0001392 ! Abnormality of the liver
 created_by: hecht
@@ -76238,6 +76263,7 @@ creation_date: 2012-09-16T07:19:21Z
 id: HP:0012133
 name: Erythroid hypoplasia
 def: "Decreased count of erythroid precursor cells, that is,  `erythroid lineage cells` (CL:0000764) in the bone marrow." [DDD:akelly]
+synonym: "Erythroblastopenia" EXACT []
 synonym: "ERYTHROID HYPOPLASIA IN THE BONE MARROW" RELATED [HPO:skoehler]
 is_a: HP:0012131 ! Abnormal number of erythroid precursors
 created_by: peter
@@ -78355,7 +78381,7 @@ creation_date: 2013-10-13T07:55:21Z
 [Term]
 id: HP:0012378
 name: Fatigue
-def: "A subjective feeling of tiredness characterized by a decreased capacity for work and reduced efficiency to respond to stimuli." [HPO:probinson]
+def: "A subjective feeling of tiredness characterized by a lack of energy and motivation." [HPO:probinson]
 comment: Fatigue is distinct from muscle weakness.
 xref: MeSH:D005221 "Fatigue"
 is_a: HP:0000708 ! Behavioural/Psychiatric Abnormality
@@ -78551,9 +78577,307 @@ created_by: peter
 creation_date: 2013-11-08T08:49:52Z
 
 [Term]
+id: HP:0012400
+name: Abnormal aldolase level
+def: "An abnormal concentration of aldolase in the serum. Aldolase is an enzyme responsible for converting fructose 1,6-bisphosphate into the triose phosphates dihydroxyacetone phosphate and glyceraldehyde 3-phosphate." [HPO:probinson]
+comment: The reaction catalyzed by aldolase is a component of the glycolysis pathway.
+is_a: HP:0012379 ! Abnormal enzyme/coenzyme activity
+created_by: peter
+creation_date: 2013-11-09T15:35:35Z
+
+[Term]
+id: HP:0012401
+name: Abnormal urine alpha-ketoglutarate concentration
+def: "A deviation from normal of the concentration of  `2-oxoglutaric acid` (CHEBI:30915) in the urine." [HPO:probinson]
+comment: Note that alpha-ketoglutaric acid is also known as 2-ketoglutaric acid, alpha-ketoglutaric acid, 2-xxoglutaric acid, and oxoglutaric acid.
+synonym: "Abnormality of urine alpha ketoglutarate concentration" EXACT []
+is_a: HP:0011866 ! Abnormal urine anion concentration
+created_by: peter
+creation_date: 2013-11-09T15:45:40Z
+
+[Term]
+id: HP:0012402
+name: Increased urine alpha-ketoglutarate concentration
+def: "A greater than normal concentration of  `2-oxoglutaric acid` (CHEBI:30915) in the urine." [HPO:probinson]
+comment: Note that alpha-ketoglutaric acid is also known as 2-ketoglutaric acid, alpha-ketoglutaric acid, 2-xxoglutaric acid, and oxoglutaric acid.
+is_a: HP:0012401 ! Abnormal urine alpha-ketoglutarate concentration
+created_by: peter
+creation_date: 2013-11-09T15:48:37Z
+
+[Term]
+id: HP:0012403
+name: Decreased urine alpha-ketoglutarate concentration
+def: "A lower than normal concentration of  `2-oxoglutaric acid` (CHEBI:30915) in the urine." [HPO:probinson]
+comment: Note that alpha-ketoglutaric acid is also known as 2-ketoglutaric acid, alpha-ketoglutaric acid, 2-xxoglutaric acid, and oxoglutaric acid.
+is_a: HP:0012401 ! Abnormal urine alpha-ketoglutarate concentration
+created_by: peter
+creation_date: 2013-11-09T15:49:45Z
+
+[Term]
+id: HP:0012404
+name: Abnormal urine citrate concentration
+def: "A deviation from normal of the concentration of  `citrate(3-)` (CHEBI:16947) in the urine." [HPO:probinson]
+is_a: HP:0011866 ! Abnormal urine anion concentration
+created_by: peter
+creation_date: 2013-11-09T15:51:30Z
+
+[Term]
+id: HP:0012405
+name: Hypocitraturia
+def: "A lower than normal concentration of `citrate(3-)` (CHEBI:16947) in the urine." [HPO:probinson]
+synonym: "Decreased urine citrate concentration" EXACT []
+is_a: HP:0012404 ! Abnormal urine citrate concentration
+created_by: peter
+creation_date: 2013-11-09T15:54:41Z
+
+[Term]
+id: HP:0012406
+name: Hypercitraturia
+def: "A greater than normal concentration of `citrate(3-)` (CHEBI:16947) in the urine." [HPO:probinson]
+synonym: "Increased urine citrate concentration" EXACT []
+is_a: HP:0012404 ! Abnormal urine citrate concentration
+created_by: peter
+creation_date: 2013-11-09T15:56:26Z
+
+[Term]
+id: HP:0012407
+name: Scissor gait
+def: "A form of gait abnormality characterized by hypertonia and flexion in the legs, hips and pelvis accompanied by extreme adduction leading to the knees and thighs hitting, or sometimes even crossing, in a scissors-like movement. The opposing muscles (abductors) become comparatively weak from lack of use." [HPO:probinson]
+comment: Scissor gait is a form of gait abnormality primarily associated with spastic cerebral palsy.
+is_a: HP:0001288 ! Gait disturbance
+created_by: peter
+creation_date: 2013-11-09T16:15:36Z
+
+[Term]
+id: HP:0012408
+name: Medullary nephrocalcinosis
+def: "The deposition of calcium salts in the parenchyma of the renal medulla (innermost part of the kidney)." [ORDCID:0000-0001-5208-3432]
+is_a: HP:0000121 ! Nephrocalcinosis
+created_by: peter
+creation_date: 2013-11-10T10:45:27Z
+
+[Term]
+id: HP:0012409
+name: Cortical nephrocalcinosis
+def: "The deposition of calcium salts in the parenchyma of the renal cortex (the outer portion of the kidney between the renal capsule and the renal medulla)." [HPO:probinson]
+is_a: HP:0000121 ! Nephrocalcinosis
+created_by: peter
+creation_date: 2013-11-10T11:03:33Z
+
+[Term]
+id: HP:0012410
+name: Pure red cell aplasia
+def: "A type of anemia resuting from suppression of erythropoiesis with little or no abnormality of leukocyte or platelet production. Erythroblasts are virtually absent in bone marrow; however, leukocyte and platelet production show little or no reduction." [HPO:probinson]
+comment: Pure red cell aplasia results from a maturation arrest occurs in the formation of erythrocytes.
+synonym: "Red cell aplasia" EXACT []
+xref: MeSH:D012010 "Red-Cell Aplasia, Pure"
+is_a: HP:0012131 ! Abnormal number of erythroid precursors
+created_by: peter
+creation_date: 2013-11-10T11:36:59Z
+
+[Term]
+id: HP:0012411
+name: Premature pubarche
+def: "The onset of growth of pubic hair at an earlier age than normal." [HPO:probinson]
+is_a: HP:0000826 ! Precocious puberty
+created_by: peter
+creation_date: 2013-11-10T11:50:16Z
+
+[Term]
+id: HP:0012412
+name: Premature adrenarche
+def: "Onset of adrenarche at an earlier age than usual." [HPO:probinson]
+comment: Adrenarche is an early sexual maturation stage that typically occurs at around 6 to 8 years of age, during which the adrenal cortex begins to secrete increased levels of androgens resulting from the development of the zona reticularis in the adrenal cortex. Note that pubarche refers to the development of pubic hair, axillary hair, and adult sweat gland (apocrine) odor. The physical features associated with pubarche reflect the onset of adrenarche, which refers to the pubertal maturation of the adrenal and is associated with increased secretion of an adrenal hormone called dehydroepiandrosterone sulfate (DHEAS).
+is_a: HP:0100000 ! Early onset of sexual maturation
+created_by: peter
+creation_date: 2013-11-10T11:58:02Z
+
+[Term]
+id: HP:0012413
+name: Notched primary central incisor
+def: "The presence of a V-shaped indentation (notch) in the primary central incisor." [HPO:probinson]
+synonym: "Hutchinson's teeth" RELATED []
+is_a: HP:0011063 ! Abnormality of incisor morphology
+created_by: peter
+creation_date: 2013-11-10T12:07:34Z
+
+[Term]
+id: HP:0012414
+name: Duodenal atrophy
+def: "Wasting or decrease in size of all or part of the duodenum." [HPO:probinson]
+is_a: HP:0002246 ! Abnormality of the duodenum
+created_by: peter
+creation_date: 2013-11-10T12:20:19Z
+
+[Term]
+id: HP:0012415
+name: Abnormal blood gas level
+def: "An abnormality of the partial pressure of oxygen or carbon dioxide in the arterial blood." [HPO:probinson]
+is_a: HP:0002795 ! Functional respiratory abnormality
+created_by: peter
+creation_date: 2013-11-10T16:59:20Z
+
+[Term]
+id: HP:0012416
+name: Hypercapnia
+def: "Abnormally elevated blood carbon dioxide (CO2) level." [HPO:probinson]
+synonym: "Hypercarbia" EXACT []
+xref: MeSH:D006935 "Hypercapnia"
+is_a: HP:0012415 ! Abnormal blood gas level
+created_by: peter
+creation_date: 2013-11-10T17:04:49Z
+
+[Term]
+id: HP:0012417
+name: Hypocapnia
+def: "Abnormally reduced blood carbon dioxide (CO2) level." [HPO:probinson]
+xref: MeSH:D016857 "Hypocapnia"
+is_a: HP:0012415 ! Abnormal blood gas level
+created_by: peter
+creation_date: 2013-11-10T17:06:10Z
+
+[Term]
+id: HP:0012418
+name: Hypoxemia
+def: "An abnormally low level of blood oxygen." [HPO:probinson]
+comment: Note that hypoxemia is defined as a condition where arterial oxygen tension is below normal (80-100mmHg). Hypoxia is defined as the failure of oxygenation at the tissue level. Hypoxia is not measured directly by a standard laboratory value.
+is_a: HP:0012415 ! Abnormal blood gas level
+created_by: peter
+creation_date: 2013-11-10T17:07:07Z
+
+[Term]
+id: HP:0012419
+name: Hyperoxemia
+def: "An abnormally high level of blood oxygen." [HPO:probinson]
+comment: Note that hyperoxemia is defined as a condition where arterial oxygen tension is above normal (80-100mmHg). Hyperoxia is defined as increased oxygen tension at the tissue level. Hyperoxia is not measured directly by a standard laboratory value.
+xref: MeSH:Hyperoxia "D018496"
+is_a: HP:0012415 ! Abnormal blood gas level
+created_by: peter
+creation_date: 2013-11-10T17:09:04Z
+
+[Term]
+id: HP:0012420
+name: Meconium stained amniotic fluid
+def: "Amniotic fluid containing the earliest stools of a mammalian infant." [HPO:probinson]
+comment: Meconium may be expelled into the amniotic fluid before birth in response to fetal distress. If meconium is aspirated by the fetus, it may lead to meconium aspiration syndrome.
+synonym: "Meconium staining of amniotic fluid" EXACT []
+synonym: "Meconium-stained amniotic fluid" EXACT []
+is_a: HP:0001560 ! Abnormality of the amniotic fluid
+created_by: peter
+creation_date: 2013-11-10T18:01:40Z
+
+[Term]
+id: HP:0012421
+name: Congenital absence of foreskin
+def: "Congenital lack of the `skin of prepuce of penis` (FMA:27648), that is, of the double-layered fold of skin and mucous membrane that covers the glans penis." [HPO:probinson]
+is_a: HP:0100587 ! Abnormality of the preputium
+created_by: peter
+creation_date: 2013-11-10T18:17:21Z
+
+[Term]
+id: HP:0012422
+name: Villous hypertrophy of choroid plexus
+def: "Overgrowth of the `choroid plexus` (FMA:61934)." [HPO:probinson, pmid:16523225]
+comment: The most common location for overgrowth is the lateral ventricles. The choroid plexus folds into many villi around capillaries, creating frond-like processes that project into the ventricles. The terms choroid plexus hypertrophy or choroid plexus hyperplasia are used interchangeably to refer to an increase in size of these structures. Diffuse villous hyperplasia of choroid plexus (DVHCP) is a rare condition which is characterized by the presence of diffuse enlargement of the entire choroid plexus throughout the length of the choroidal fissure and overproduction of CSF.
+synonym: "Choroid plexus hypertrophy" EXACT []
+synonym: "Diffuse villous hypertrophy of choroid plexus" RELATED []
+is_a: HP:0007376 ! Abnormality of the choroid plexus
+created_by: peter
+creation_date: 2013-11-11T07:50:37Z
+
+[Term]
+id: HP:0012423
+name: Colonic inertia
+def: "The inability of the colon to modify stool to an acceptable consistency and move the stool from the cecum to the rectosigmoid area at least once every three days." [HPO:probinson, pmid:23449085]
+is_a: HP:0002250 ! Abnormality of the large intestine
+created_by: peter
+creation_date: 2013-11-11T08:04:46Z
+
+[Term]
+id: HP:0012424
+name: Chorioretinitis
+def: "An inflammation of the choroid and retina." [ORCID:0000-0001-5208-3432]
+comment: Chorioretinitis is a form of posterior uveitis. Choroiditis refers to inflammation that affects only the choroid and not the retina.
+is_a: HP:0000532 ! Chorioretinal abnormality
+created_by: peter
+creation_date: 2013-11-11T08:10:29Z
+
+[Term]
+id: HP:0012425
+name: Stercoral ulcer
+def: "An ulcer of the colon due to pressure and irritation from retained fecal masses." [ORCID:0000-0001-5208-3432, pmid:7065551]
+comment: Stercoral ulceration is the loss of bowel integrity from the pressure effects of inspissated feces. The lesion usually occurs in constipated, bedridden patients and presents as an isolated lesion in the rectosigmoid area.
+synonym: "Recto-sigmoid colon stercoral ulcer" RELATED []
+is_a: HP:0002250 ! Abnormality of the large intestine
+created_by: peter
+creation_date: 2013-11-12T22:28:18Z
+
+[Term]
+id: HP:0012426
+name: Optic disc drusen
+def: "Optic disc drusen are acellular, calcified deposits within the optic nerve head. Optic disc drusen are congenital and developmental anomalies of the optic nerve head, representing hyaline-containing bodies that, over time, appear as elevated, lumpy irregularities on the anterior portion of the optic nerve." [HPO:probinson, pmid:22787500, pmid:23658477]
+comment: Optic disc drusen can lead to an elevated disc and thus mimic disc swelling (pseudopapilledema).
+xref: MeSH:D015594 "Optic Disk Drusen"
+is_a: HP:0000587 ! Abnormality of the optic nerve
+created_by: peter
+creation_date: 2013-11-12T22:36:06Z
+
+[Term]
+id: HP:0012427
+name: Excessive femoral anteversion
+def: "An increased degree of  femoral version, which is defined as the angular difference between axis of femoral neck and transcondylar axis of the knee. Thus, femoral anteversion is an inward twisting of the femur that causes the knees and feet to turn inward." [HPO:probinson, ORCID:0000-0001-5208-3432]
+comment: Excessive femoral anteversion is a common cause of in-toeing that first presents in early childhood.
+is_a: HP:0002823 ! Abnormality of the femur
+created_by: peter
+creation_date: 2013-11-12T22:51:07Z
+
+[Term]
+id: HP:0012428
+name: Prominent calcaneus
+def: "Protruding heel bone, or `calcaneus`(FMA:24496)." [ORCID:0000-0001-5208-3432]
+synonym: "Prominent heel bone" EXACT []
+is_a: HP:0008364 ! Abnormality of the calcaneus
+created_by: peter
+creation_date: 2013-11-12T23:04:49Z
+
+[Term]
+id: HP:0012429
+name: Aplasia/Hypoplasia of the cerebral white matter
+def: "Absence or underdevelopment of the `cerebral white matter` (FMA:241998)." [HPO:probinson]
+is_a: HP:0002500 ! Abnormality of the cerebral white matter
+created_by: peter
+creation_date: 2013-11-13T07:39:37Z
+
+[Term]
+id: HP:0012430
+name: Cerebral white matter hypoplasia
+def: "Underdevelopment of the `cerebral white matter` (FMA:241998)." [HPO:probinson]
+synonym: "Paucity of cerebral white matter" RELATED []
+is_a: HP:0012429 ! Aplasia/Hypoplasia of the cerebral white matter
+created_by: peter
+creation_date: 2013-11-13T07:42:02Z
+
+[Term]
+id: HP:0012431
+name: Episodic fatigue
+def: "Intermittent and recurrent bouts of a subjective feeling of tiredness characterized by a lack of energy and motivation." [HPO:probinson]
+is_a: HP:0012378 ! Fatigue
+created_by: peter
+creation_date: 2013-11-13T07:45:40Z
+
+[Term]
+id: HP:0012432
+name: Chronic fatigue
+def: "Subjective feeling of tiredness characterized by a lack of energy and motivation that persists for six months or longer." [ORCID:0000-0001-5208-3432]
+comment: Note that chronic fatigue can be a symptom of chronic fatigue syndrome (CFS), which is characterized by profound fatigue that is not improved by bed rest and that may be worsened by physical or mental activity. Symptoms of CFS may include weakness, muscle pain, impaired memory, impaired mental concentration, and insomnia, which can result in reduced participation in daily activities.
+is_a: HP:0012378 ! Fatigue
+created_by: peter
+creation_date: 2013-11-13T07:49:08Z
+
+[Term]
 id: HP:0100000
-name: Early onset of puberty
-def: "An early onset of puberty, in this case early does not refer to precocious." [HPO:curators]
+name: Early onset of sexual maturation
+def: "An early onset of puberty, in this case early does not refer to precocious." [HPO:probinson]
 is_a: HP:0008373 ! Puberty and gonadal disorders
 created_by: doelkens
 creation_date: 2010-05-04T10:35:02Z
@@ -83002,6 +83326,8 @@ creation_date: 2010-12-21T04:01:48Z
 [Term]
 id: HP:0100559
 name: Lower limb asymmetry
+def: "A difference in length or diameter between the left and right leg." [HPO:probinson]
+synonym: "Leg length discrepancy" RELATED []
 is_a: HP:0002814 ! Abnormality of the lower limb
 is_a: HP:0100555 ! Asymmetric growth
 created_by: doelkens
@@ -84160,7 +84486,7 @@ creation_date: 2011-02-18T05:11:16Z
 [Term]
 id: HP:0100694
 name: Tibial torsion
-def: "Tibial torsion is inward twisting (`medial roation`)(PATO:0002155) of the `tibia` (FMA:24476)." [HPO:sdoelken]
+def: "Tibial torsion is inward twisting (`medial rotation`) (PATO:0002155) of the `tibia` (FMA:24476)." [HPO:sdoelken]
 comment: Normally, lateral rotation of the tibia increases from approximately 5º at birth to approximately 15º at maturity. Tibial torsion is the most common cause of intoeing. In a study by Mullaji et al to determine tibial torsion norms, individuals in India were found to have less tibial torsion than Caucasians but about the same amount as the Japanese population. The differences in normal tibial torsion values are expected to be caused by the different lifestyles and postures of the different populations, such as cross-legged sitting positions.
 is_a: HP:0002992 ! Abnormality of the tibia
 created_by: doelkens
@@ -86406,7 +86732,9 @@ creation_date: 2010-06-16T12:18:42Z
 [Term]
 id: HP:0200017
 name: White matter agenesis
-is_a: HP:0002500 ! Abnormality of the cerebral white matter
+def: "Congenital defect with failure of the development of the `cerebral white matter` (FMA:241998)." [HPO:probinson]
+synonym: "Agenesis of the cerebral white matter" EXACT []
+is_a: HP:0012429 ! Aplasia/Hypoplasia of the cerebral white matter
 created_by: sebastiankohler
 creation_date: 2010-06-16T12:37:37Z
 
@@ -86888,14 +87216,6 @@ created_by: sebastiankohler
 creation_date: 2013-06-05T10:24:46Z
 
 [Term]
-id: HP:0200100
-name: Abnormality of subcortical white matter
-synonym: "UBCORTICAL WHITE MATTER ABNORMALITIES SEEN ON MRI" RELATED [HPO:skoehler]
-is_a: HP:0002500 ! Abnormality of the cerebral white matter
-created_by: sebastiankohler
-creation_date: 2013-06-05T11:54:59Z
-
-[Term]
 id: HP:0200101
 name: Decreased/absent ankle reflexes
 synonym: "DECREASED OR ABSENT ANKLE REFLEXES" RELATED [HPO:skoehler]
@@ -87165,7 +87485,7 @@ creation_date: 2013-06-12T11:08:52Z
 id: HP:0200141
 name: Small, conical teeth
 is_a: HP:0000691 ! Microdontia
-is_a: HP:0000698 ! Conical teeth
+is_a: HP:0000698 ! Conical tooth
 created_by: sebastiankohler
 creation_date: 2013-06-13T11:59:54Z
 
