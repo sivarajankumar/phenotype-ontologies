@@ -11,7 +11,6 @@ USECAT = --catalog-xml $(ONT)/catalog-v001.xml
 
 all: caches
 
-
 all.owl:  $(ROOT) $(TRIGGERS)
 	owltools $(USECAT) $< --merge-imports-closure --load-instances $(MM_G2P) --load-labels $(MM_G2L) --merge-support-ontologies -o $@
 
@@ -19,7 +18,7 @@ caches: owlsim.cache ic-cache.owl
 
 
 owlsim.cache: all.owl
-	owltools $< --sim-compare-atts  -p owlsim-cache.properties -o $@.full --sim-save-lcs-cache $@
+	owltools $< --fsim-compare-atts  -p owlsim-cache.properties -o $@.full --sim-save-lcs-cache $@
 
 ic-cache.owl: all.owl
 	owltools $< --no-debug --sim-save-ic-cache $@
