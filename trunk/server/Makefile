@@ -1,9 +1,20 @@
 ONT = ../src/ontology/
 DATA = ../data
 MM = $(DATA)/Mus_musculus
+MM_G2P = $(MM)/Mm-gene-to-phenotype-BF.txt
+MM_G2L = $(MM)/Mm-gene-labels.txt
 
-owlsim.cache: upheno.obo
-	owltools $(USECAT)  upheno.obo --load-instances $(MM)/Mm-gene-to-phenotype-BF.txt --sim-compare-atts  -p config/owlsim-cache.properties -o $@.full --sim-save-lcs-cache $@
-ic-cache.owl: upheno.obo
-	owltools $(USECAT)  upheno.obo --load-instances $(MM)/Mm-gene-to-phenotype-BF.txt --no-debug --sim-save-ic-cache $@
+ROOT = $(ONT)/mammal.owl
+TRIGGERS = $(ONT)/mp.owl $(ONT)/hp.owl $(MM_G2P)
+
+USECAT = --catalog-xml $(ONT)/catalog-v001.xml 
+
+all.owl:  $(ROOT) $(TRIGGERS)
+	owltools $(USECAT) $< --merge-imports-closure --load-instances $(MM_G2P) --load-labels $(MM_G2L) --merge-support-ontologies -o $@
+
+owlsim.cache: all.owl
+	owltools all.owl --sim-compare-atts  -p owlsim-cache.properties -o $@.full --sim-save-lcs-cache $@
+
+ic-cache.owl: $(ROOT) $(TRIGGERS)
+	owltools $(USECAT) $< --merge-imports-closure --load-instances $(MM_G2P) --no-debug --sim-save-ic-cache $@
 
