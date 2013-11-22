@@ -13,8 +13,8 @@ all.owl:  $(ROOT) $(TRIGGERS)
 	owltools $(USECAT) $< --merge-imports-closure --load-instances $(MM_G2P) --load-labels $(MM_G2L) --merge-support-ontologies -o $@
 
 owlsim.cache: all.owl
-	owltools all.owl --sim-compare-atts  -p owlsim-cache.properties -o $@.full --sim-save-lcs-cache $@
+	owltools $< --sim-compare-atts  -p owlsim-cache.properties -o $@.full --sim-save-lcs-cache $@
 
-ic-cache.owl: $(ROOT) $(TRIGGERS)
-	owltools $(USECAT) $< --merge-imports-closure --load-instances $(MM_G2P) --no-debug --sim-save-ic-cache $@
+ic-cache.owl: all.owl
+	owltools $< --no-debug --sim-save-ic-cache $@
 
