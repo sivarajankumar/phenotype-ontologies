@@ -18,7 +18,7 @@ caches: owlsim.cache ic-cache.owl
 
 
 owlsim.cache: all.owl
-	owltools $< --fsim-compare-atts  -p owlsim-cache.properties -o $@.full --sim-save-lcs-cache $@
+	owltools $<  --sim-save-lcs-cache -m 2.5 $@
 
 ic-cache.owl: all.owl
 	owltools $< --no-debug --sim-save-ic-cache $@
