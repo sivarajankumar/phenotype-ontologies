@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:11:2013 08:40
+date: 24:11:2013 13:24
 saved-by: peter
 auto-generated-by: OBO-Edit 2.3
 subsetdef: hposlim_core "Core clinical terminology"
@@ -5879,7 +5879,7 @@ def: "Difficulty in social interactions related to an impairment of characterist
 synonym: "Impaired social interaction" EXACT []
 synonym: "Poor social interactions" EXACT []
 xref: UMLS:C1839794 "Poor social interactions"
-is_a: HP:0000708 ! Behavioural/Psychiatric Abnormality
+is_a: HP:0012433 ! Abnormal social behavior
 
 [Term]
 id: HP:0000736
@@ -8515,7 +8515,7 @@ comment: Gallstones range in size from as small as a grain of sand to as large a
 synonym: "Gallstones" EXACT []
 xref: MeSH:D002769 "Cholelithiasis"
 xref: UMLS:C0947622 "CHOLELITHIASIS"
-is_a: HP:0005264 ! Abnormality of the gallbladder
+is_a: HP:0012437 ! Abnormal gallbladder morphology
 
 [Term]
 id: HP:0001082
@@ -8523,7 +8523,7 @@ name: Cholecystitis
 def: "The presence of `inflammatory` (PATO:0002104) changes in the `gallbladder` (FMA:7202)." [HPO:probinson]
 xref: MeSH:D002764 "Cholecystitis"
 xref: UMLS:C1963083 "Cholecystitis"
-is_a: HP:0005264 ! Abnormality of the gallbladder
+is_a: HP:0012438 ! Abnormal gallbladder physiology
 
 [Term]
 id: HP:0001083
@@ -8964,7 +8964,7 @@ is_a: HP:0011526 ! Abnormality of lens shape
 
 [Term]
 id: HP:0001144
-name: 95433000
+name: Orbital cyst
 def: "Presence of a cyst in the region of the orbita. Orbital cysts can be derived from epithelial or glandular tissue within or surrounding the orbit (lacrimal glands, salivary glands, conjunctival, oral, nasal, or sinus epithelium)." [HPO:probinson]
 synonym: "Orbital cysts" RELATED []
 xref: SNOMEDCT:31021007 "Orbital cyst"
@@ -9517,7 +9517,6 @@ name: Wrist flexion contracture
 alt_id: HP:0006049
 alt_id: HP:0006137
 def: "A chronic loss of wrist joint motion due to structural changes in muscle, tendons, ligaments, or skin that prevent normal movement of the joints of the wrist." [HPO:probinson]
-synonym: "Finger and wrist contractures" EXACT []
 synonym: "Wrist contracture" EXACT []
 synonym: "Wrist flexion deformity" EXACT []
 xref: UMLS:C1850646 "Wrist contractures"
@@ -10785,7 +10784,7 @@ name: Bile duct proliferation
 def: "Proliferative changes of the `bile ducts` (FMA:9706)." [HPO:probinson]
 synonym: "Proliferation of bile canaliculi" EXACT []
 xref: UMLS:C0267818 "Bile duct proliferation"
-is_a: HP:0001080 ! Biliary tract abnormality
+is_a: HP:0012439 ! Abnormal biliary tract physiology
 
 [Term]
 id: HP:0001409
@@ -12708,7 +12707,7 @@ is_a: HP:0004309 ! Ventricular preexcitation
 [Term]
 id: HP:0001717
 name: Coronary artery calcification
-def: "`Calcification` (PATO:0001447) affecting  the `coronary arteries` (FMA:3800)." [HPO:probinson]
+def: "`Calcification` (PATO:0001447), that is, pathological  deposition of calcium salts, affecting  the `coronary arteries` (FMA:3800)." [HPO:probinson]
 xref: UMLS:C1611184 "Coronary artery calcification"
 is_a: HP:0003207 ! Arterial calcification
 is_a: HP:0006704 ! Abnormality of the coronary arteries
@@ -14685,7 +14684,10 @@ is_a: HP:0001941 ! Acidosis
 [Term]
 id: HP:0001996
 name: Chronic metabolic acidosis
+def: "Longstanding metabolic acidosis." [HPO:probinson, pmid:15882309]
+comment: Severe chronic metabolic acidosis has two well-recognized major systemic consequences. First, metabolic acidosis, or acidemia, induces increased protein catabolism, decreased protein synthesis, and negative nitrogen and total body protein balance, which improve upon bicarbonate supplementation. Second, metabolic acidosis causes physicochemical dissolution of bone and cell-mediated bone resorption by inhibition of osteoblast and stimulation of osteoclast function.
 is_a: HP:0001942 ! Metabolic acidosis
+is_a: HP:0012468 ! Chronic acidosis
 
 [Term]
 id: HP:0001997
@@ -14871,8 +14873,9 @@ id: HP:0002019
 name: Constipation
 alt_id: HP:0002241
 alt_id: HP:0003786
-def: "A chronic tendency to constipation." [HPO:probinson]
-synonym: "Chronic constipation" EXACT []
+def: "Infrequent or difficult evacuation of feces." [HPO:probinson]
+synonym: "Costiveness" EXACT []
+synonym: "Dyschezia" EXACT []
 xref: MeSH:D003248 "Constipation"
 xref: UMLS:C0009806 "Constipation"
 is_a: HP:0011458 ! Abdominal symptom
@@ -14883,6 +14886,7 @@ name: Gastroesophageal reflux
 alt_id: HP:0004793
 def: "A condition in which the stomach contents leak backwards from the stomach into the esophagus through the lower esophageal sphincter." [HPO:probinson]
 subset: hposlim_core
+synonym: "Acid reflux disease" EXACT []
 synonym: "Gastroesophageal reflux disease" EXACT []
 xref: MeSH:D005764 "Gastroesophageal Reflux"
 xref: SNOMEDCT:235595009 "Gastroesophageal reflux disease"
@@ -16102,8 +16106,8 @@ alt_id: HP:0007300
 def: "`Delayed` (PATO:0000502) `myelination` (GO:0042552) in the central nervous system." [HPO:probinson]
 comment: A delay in the process of myelination, which normally begins in the fifth fetal month and is about 90 percent complete at the age of two years. Myelination continues into early adulthood.
 synonym: "Delay in central nervous system myelination" EXACT []
-xref: UMLS:C1277241 "Delayed myelination"
 is_a: HP:0011400 ! Abnormal CNS myelination
+is_a: HP:0012448 ! Delayed myelination
 
 [Term]
 id: HP:0002189
@@ -16153,6 +16157,7 @@ is_a: HP:0001270 ! Motor delay
 id: HP:0002195
 name: Dysgenesis of the cerebellar vermis
 def: "Defective development of the `vermis of cerebellum` (FMA:76928)." [HPO:probinson]
+comment: Note that the term cerebellar dysgenesis is generally used to refer to a morphological abnormality of the cerebellum that is of presumed developmental (rather than acquired) origin,and is often diagnosed by means of magnetic resonance tomography.
 is_a: HP:0002334 ! Abnormality of the cerebellar vermis
 
 [Term]
@@ -16765,15 +16770,17 @@ is_a: HP:0002269 ! Abnormality of neuronal migration
 
 [Term]
 id: HP:0002283
-name: Diffuse brain atrophy
+name: Global brain atrophy
 alt_id: HP:0002369
 alt_id: HP:0002462
-def: "Diffuse unlocalized atrophy of the brain (cerebrum and cerebellum)." [HPO:sdoelken]
+def: "Unlocalized atrophy of the brain with decreased total brain matter volume and increased ventricular size." [HPO:sdoelken]
+comment: Global brain atrophy can be visualized and quantified by magnetic resonance imaging.
+synonym: "Diffuse brain atrophy " EXACT []
 synonym: "Generalized brain atrophy" EXACT []
 synonym: "Generalized cerebral atrophy" EXACT []
 xref: UMLS:C0241816 "Diffuse brain atrophy"
 is_a: HP:0002977 ! Aplasia/Hypoplasia involving the central nervous system
-is_a: HP:0007367 ! Atrophy/Degeneration affecting the central nervous system
+is_a: HP:0012444 ! Brain atrophy
 
 [Term]
 id: HP:0002286
@@ -17047,6 +17054,7 @@ is_a: HP:0001268 ! Mental deterioration
 id: HP:0002334
 name: Abnormality of the cerebellar vermis
 def: "An anomaly of the `vermis of cerebellum` (FMA:76928)." [HPO:probinson]
+comment: The cerebellar vermis is the unpaired, median portion of the cerebellum that connects the two hemispheres.
 is_a: HP:0002438 ! Cerebellar malformation
 
 [Term]
@@ -17056,7 +17064,7 @@ alt_id: HP:0007125
 def: "Congenital absence of the `vermis of cerebellum` (FMA:76928)." [HPO:probinson]
 synonym: "Cerebellar vermis aplasia" EXACT []
 xref: UMLS:C1861732 "CEREBELLAR VERMIS APLASIA"
-is_a: HP:0002334 ! Abnormality of the cerebellar vermis
+is_a: HP:0006817 ! Aplasia/Hypoplasia of the  cerebellar vermis
 
 [Term]
 id: HP:0002339
@@ -17548,8 +17556,9 @@ is_a: HP:0010576 ! Intracranial cystic lesion
 [Term]
 id: HP:0002418
 name: Abnormality of the midbrain
+def: "An abnormality of the `midbrain` (FMA:61993), which has as its parts the tectum, cerebral peduncle, midbrain tegmentum and cerebral aqueduct." [HPO:probinson]
 synonym: "Abnormality of the mesencephalon" EXACT []
-is_a: HP:0007319 ! Morphological abnormality of the central nervous system
+is_a: HP:0012443 ! Abnormality of the brain
 
 [Term]
 id: HP:0002419
@@ -17870,14 +17879,18 @@ is_a: HP:0001257 ! Spasticity
 [Term]
 id: HP:0002492
 name: Abnormality of the corticospinal tract
-def: "Abnormality of the corticospinal tract, which is the chief element of the pyramidal system (the principle motor tract) and is the only direct connection between the cerebrum and the spinal cord." [HPO:curators]
+alt_id: HP:0006912
+def: "Abnormality of the corticospinal tract, which is the chief element of the pyramidal system (the principle motor tract) and is the only direct connection between the cerebrum and the spinal cord." [HPO:probinson]
+synonym: "Involvement of the corticospinal pathways" RELATED []
 is_a: HP:0002062 ! Abnormality of the pyramidal tracts
 
 [Term]
 id: HP:0002493
 name: Corticospinal tract dysfunction
+def: "A functional deficit of the tract that conveys nervous impulses from the motor cortex of the brain to the spinal cord. The corticospinal tract mediates discrete voluntary skilled movements." [HPO:probinson]
+comment: Clinical features of corticospinal tract dysfunction may include spasticity and weakness, particularly affecting the lower limbs, as well as hyperreflexia, clonus at the ankles and knees, and extensor plantar responses (Babinski response).
 xref: UMLS:C1839042 "Corticospinal tract dysfunction"
-is_a: HP:0002492 ! Abnormality of the corticospinal tract
+is_a: HP:0007256 ! Abnormality of pyramidal motor function
 
 [Term]
 id: HP:0002494
@@ -17953,7 +17966,6 @@ alt_id: HP:0006954
 def: "Diffuse unlocalised atrophy affecting the cerebrum." [HPO:sdoelken]
 synonym: "Cerebral atrophy, diffuse" EXACT []
 is_a: HP:0002059 ! Cerebral atrophy
-is_a: HP:0002283 ! Diffuse brain atrophy
 
 [Term]
 id: HP:0002507
@@ -18626,7 +18638,7 @@ def: "Progressive destruction of the small-to-medium bile ducts of the `intrahep
 synonym: "Primary biliary cirrhosis" RELATED []
 xref: MeSH:D008105 "Liver Cirrhosis, Biliary"
 xref: UMLS:C0023892 "Biliary cirrhosis"
-is_a: HP:0001080 ! Biliary tract abnormality
+is_a: HP:0012440 ! Abnormal biliary tract morphology
 
 [Term]
 id: HP:0002614
@@ -22023,6 +22035,7 @@ def: "An abnormality of the myelination of peripheral neuronal axons and dendrit
 comment: This finding may be observed upon biopsy of the sural nerve. Myelination, i.e., the presence of a segmented lipid-rich sheath (myelin), enables faster and more energetically efficient conduction of electrical impulses. The sheath is formed by the cell membranes of Schwann cells in the peripheral nervous system (GO:0022011).
 xref: UMLS:C1843178 "Thin myelin sheaths"
 is_a: HP:0000759 ! Abnormality of the peripheral nervous system
+is_a: HP:0012447 ! Abnormal myelination
 
 [Term]
 id: HP:0003131
@@ -22547,7 +22560,7 @@ is_a: HP:0004358 ! Abnormality of superoxide metabolism
 [Term]
 id: HP:0003207
 name: Arterial calcification
-def: "Calcification affecting arteries." [HPO:curators]
+def: "Pathological deposition of calcium salts in one or more arteries." [HPO:probinson, pmid:18519861]
 xref: UMLS:C1168153 "Arterial calcification"
 is_a: HP:0004934 ! Vascular calcification
 is_a: HP:0011004 ! Abnormality of the systemic arterial tree
@@ -31258,6 +31271,7 @@ id: HP:0004925
 name: Chronic lactic acidosis
 def: "A `chronic` (PATO:0001863) form of `lactic acidemia` (HP:0003128)." [HPO:probinson]
 is_a: HP:0003128 ! Lactic acidosis
+is_a: HP:0012468 ! Chronic acidosis
 
 [Term]
 id: HP:0004926
@@ -31346,7 +31360,7 @@ is_a: HP:0005116 ! Arterial tortuosity
 id: HP:0004940
 name: Generalized arterial calcification
 alt_id: HP:0004967
-def: "`Calcification` (PATO:0001447) affecting arteries distributed throughout the body." [HPO:probinson]
+def: "`Calcification` (PATO:0001447), that is, pathological  deposition of calcium salts, affecting arteries distributed throughout the body." [HPO:probinson]
 is_a: HP:0003207 ! Arterial calcification
 
 [Term]
@@ -31465,12 +31479,15 @@ is_a: HP:0004414 ! Abnormality of the pulmonary artery
 [Term]
 id: HP:0004962
 name: Thoracic aorta calcification
+def: "`Calcification` (PATO:0001447), that is, pathological deposition of calcium salts in the `thoracic aorta` (FMA:3786)." [HPO:probinson]
 xref: UMLS:C1969292 "Thoracic aorta calcification"
-is_a: HP:0004963 ! Calcifications of the aorta
+is_a: HP:0004963 ! Calcification of the aorta
 
 [Term]
 id: HP:0004963
-name: Calcifications of the aorta
+name: Calcification of the aorta
+def: "`Calcification` (PATO:0001447), that is, pathological deposition of calcium salts in the `aorta` (FMA:3734)." [HPO:probinson]
+comment: Note that the phrase "aortic calcification" is mainly used to describe calcification of the aortic valve rather than of the aorta itself.
 is_a: HP:0001679 ! Abnormality of the aorta
 is_a: HP:0003207 ! Arterial calcification
 
@@ -31484,8 +31501,10 @@ is_a: HP:0004414 ! Abnormality of the pulmonary artery
 
 [Term]
 id: HP:0004966
-name: Medial calcification of medium-sized and major arteries
-is_a: HP:0003207 ! Arterial calcification
+name: Medial calcification of large arteries
+def: "`Calcification` (PATO:0001447), that is, pathological deposition of calcium salts in the tunica media of large (conduit) arteries." [HPO:probinson]
+is_a: HP:0012455 ! Large artery calcification
+is_a: HP:0012456 ! Medial arterial calcification
 
 [Term]
 id: HP:0004968
@@ -32624,7 +32643,7 @@ id: HP:0005230
 name: Biliary tract obstruction
 def: "`Obstruction` (MPATH:80) affecting the `biliary tree` (FMA:14665)." [HPO:probinson]
 xref: UMLS:C0400979 "Biliary Tract Obstruction"
-is_a: HP:0001080 ! Biliary tract abnormality
+is_a: HP:0012440 ! Abnormal biliary tract morphology
 
 [Term]
 id: HP:0005231
@@ -33046,6 +33065,7 @@ is_a: HP:0005344 ! Abnormality of the carotid arteries
 [Term]
 id: HP:0005303
 name: Aortic arch calcification
+def: "`Calcification` (PATO:0001447), that is, pathological deposition of calcium salts in the `arch of aorta` (FMA:3768)." [HPO:probinson]
 xref: UMLS:C1969291 "Aortic arch calcification"
 is_a: HP:0004962 ! Thoracic aorta calcification
 
@@ -33558,6 +33578,8 @@ is_a: HP:0005435 ! Impaired T cell function
 [Term]
 id: HP:0005411
 name: Chronic intestinal candidiasis
+def: "Persistent overgrowth of Candida albicans in the gastrointestinal tract." [HPO:probinson]
+synonym: "Candida overgrowth syndrome" RELATED []
 is_a: HP:0002728 ! Chronic mucocutaneous candidiasis
 
 [Term]
@@ -34527,13 +34549,13 @@ id: HP:0005608
 name: Bilobate gallbladder
 def: "The presence of a `bilobed` (PATO:0002214) `gallbladder` (FMA:7202)." [HPO:probinson]
 xref: UMLS:C1846422 "Bilobate gallbladder"
-is_a: HP:0005264 ! Abnormality of the gallbladder
+is_a: HP:0012437 ! Abnormal gallbladder morphology
 
 [Term]
 id: HP:0005609
 name: Gallbladder dysfunction
 xref: UMLS:C0232769 "Gallbladder dysfunction"
-is_a: HP:0005264 ! Abnormality of the gallbladder
+is_a: HP:0012438 ! Abnormal gallbladder physiology
 
 [Term]
 id: HP:0005611
@@ -35550,7 +35572,7 @@ def: "`Atresia` (PATO:0001819) in of the `biliary tree` (FMA:14665)." [HPO:probi
 synonym: "Biliary duct atresia" EXACT []
 xref: MeSH:D001656 "Biliary Atresia"
 xref: UMLS:C0005411 "Biliary Atresia"
-is_a: HP:0001080 ! Biliary tract abnormality
+is_a: HP:0012440 ! Abnormal biliary tract morphology
 created_by: peter
 creation_date: 2008-03-27T02:07:00Z
 
@@ -38355,7 +38377,7 @@ id: HP:0006560
 name: Biliary hyperplasia
 def: "`Hyperplasia` (MPATH:134) of the `biliary tree` (FMA:14665), as manifested by increased size of bile ducts, dilated lumen, and histologically by an increased number of epithelial cells or hyperplasia." [HPO:probinson]
 synonym: "Bile duct hyperplasia" EXACT []
-is_a: HP:0001080 ! Biliary tract abnormality
+is_a: HP:0012440 ! Abnormal biliary tract morphology
 
 [Term]
 id: HP:0006561
@@ -39831,11 +39853,6 @@ name: Congenital intracerebral calcification
 is_a: HP:0002514 ! Cerebral calcification
 
 [Term]
-id: HP:0006912
-name: Early involvement of the corticospinal pathways
-is_a: HP:0002492 ! Abnormality of the corticospinal tract
-
-[Term]
 id: HP:0006913
 name: Frontal cortical atrophy
 def: "Atrophy of the `frontal cortex` (FMA:61824)." [HPO:probinson]
@@ -40693,7 +40710,7 @@ is_a: HP:0007305 ! CNS demyelination
 [Term]
 id: HP:0007163
 name: Corticospinal tract disease in lower limbs
-is_a: HP:0002492 ! Abnormality of the corticospinal tract
+is_a: HP:0002493 ! Corticospinal tract dysfunction
 
 [Term]
 id: HP:0007164
@@ -40958,11 +40975,12 @@ alt_id: HP:0007225
 alt_id: HP:0007275
 alt_id: HP:0007324
 alt_id: HP:0007347
-def: "Functional neurological abnormalities related to dysfunction of the pyramidal tract." [HPO:probinson]
+def: "Functional neurological abnormalities related to dysfunction of the `pyramidal tract` (FMA:72634)." [HPO:probinson]
 synonym: "Corticospinal signs" EXACT []
 synonym: "Pyramidal tract dysfunction" EXACT []
 synonym: "Pyramidal tract signs" EXACT []
 xref: UMLS:C0234132 "Pyramidal signs"
+is_a: HP:0002062 ! Abnormality of the pyramidal tracts
 is_a: HP:0011442 ! Abnormality of central motor function
 
 [Term]
@@ -41326,6 +41344,8 @@ is_a: HP:0007363 ! Aplasia/Hypoplasia of the pyramidal tract
 [Term]
 id: HP:0007349
 name: Distal motor neuropathy
+def: "Progressive impairment of function of spinal nerve cells with muscle weakness, atrophy, and cramps. The deficits are length-dependent, meaning that muscles innervated by the longest nerves are affected first, so that for instance the arms are affected at a later age than the onset of deficits involving the lower leg." [HPO:probinson]
+comment: Distal motor neuropathy is a bundled term that should not be used if more detailed information about the phenotype is available.
 synonym: "Length dependent motor neuropathy" RELATED []
 xref: UMLS:C1854570 "Distal motor neuropathy"
 is_a: HP:0002450 ! Abnormality of the motor neurons
@@ -41437,7 +41457,7 @@ creation_date: 2008-04-01T10:22:00Z
 [Term]
 id: HP:0007367
 name: Atrophy/Degeneration affecting the central nervous system
-is_a: HP:0002011 ! Abnormality of the central nervous system
+is_a: HP:0007319 ! Morphological abnormality of the central nervous system
 created_by: peter
 creation_date: 2008-04-01T10:23:00Z
 
@@ -41447,7 +41467,7 @@ name: Atrophy/Degeneration affecting the cerebrum
 def: "The presence of atrophy (wasting) of the `cerebrum` (FMA:62000), also known as the telencephalon, the largest and most highly developed part of the human brain." [HPO:probinson]
 is_a: HP:0002060 ! Abnormality of the cerebrum
 is_a: HP:0002977 ! Aplasia/Hypoplasia involving the central nervous system
-is_a: HP:0007367 ! Atrophy/Degeneration affecting the central nervous system
+is_a: HP:0012444 ! Brain atrophy
 created_by: peter
 creation_date: 2008-04-01T10:28:00Z
 
@@ -41502,7 +41522,7 @@ creation_date: 2008-04-01T10:39:00Z
 id: HP:0007374
 name: Atrophy/Degeneration involving the caudate nucleus
 is_a: HP:0002339 ! Abnormality of the caudate nucleus
-is_a: HP:0007367 ! Atrophy/Degeneration affecting the central nervous system
+is_a: HP:0012444 ! Brain atrophy
 created_by: peter
 creation_date: 2008-04-01T10:47:00Z
 
@@ -46824,8 +46844,9 @@ is_a: HP:0000356 ! Abnormality of the outer ear
 
 [Term]
 id: HP:0008573
-name: Low-frequency sensorineural hearing loss
+name: Low-frequency sensorineural hearing impairment
 def: "A form of `sensorineural hearing impairment` (HP:0008538) that affects primarily the lower frequencies." [HPO:probinson]
+synonym: "Low-frequency sensorineural hearing loss" EXACT []
 is_a: HP:0000407 ! Sensorineural hearing impairment
 
 [Term]
@@ -66755,7 +66776,7 @@ creation_date: 2011-03-06T04:41:34Z
 id: HP:0011040
 name: Abnormality of the intrahepatic bile duct
 def: "An abnormality of the `intrahepatic bile duct` (FMA:15766)." [HPO:probinson]
-is_a: HP:0001080 ! Biliary tract abnormality
+is_a: HP:0012440 ! Abnormal biliary tract morphology
 created_by: peter
 creation_date: 2011-03-07T07:54:11Z
 
@@ -68920,7 +68941,7 @@ id: HP:0011282
 name: Abnormality of the hindbrain
 def: "An abnormality of the `hindbrain` (FMA:67687), also known as the rhombencephalon." [HPO:probinson]
 comment: The hindbrain consists of two main structures: The pons and the cerebellum.
-is_a: HP:0007319 ! Morphological abnormality of the central nervous system
+is_a: HP:0012443 ! Abnormality of the brain
 created_by: peter
 creation_date: 2012-01-01T01:22:36Z
 
@@ -69965,9 +69986,8 @@ alt_id: HP:0004335
 def: "An abnormality of `myelination` (GO:0042552) of nerves in the central nervous system." [DDD:fmuntoni]
 comment: MERGED COMMENT:\nTARGET COMMENT: In the CNS, myelin is the product of oligodendrocytes (and not of Schwann cells, as in the PNS).\n--------------------\nSOURCE COMMENT: An abnormality of the process in which myelin sheaths are formed and maintained around neurons or the result of such an abnormality.
 synonym: "Abnormal formation of myelin sheaths" EXACT []
-synonym: "Abnormal myelination" EXACT []
-xref: UMLS:C1857704 "Abnormal myelination"
 is_a: HP:0002011 ! Abnormality of the central nervous system
+is_a: HP:0012447 ! Abnormal myelination
 created_by: peter
 creation_date: 2012-03-12T07:24:42Z
 
@@ -69976,6 +69996,7 @@ id: HP:0011401
 name: Delayed peripheral myelination
 def: "`Delayed` (PATO:0000502) `myelination` (GO:0042552) in the peripheral nervous system." [HPO:probinson]
 is_a: HP:0003130 ! Abnormal peripheral myelination
+is_a: HP:0012448 ! Delayed myelination
 created_by: peter
 creation_date: 2012-03-12T08:08:41Z
 
@@ -70526,7 +70547,7 @@ creation_date: 2012-03-25T07:38:12Z
 id: HP:0011466
 name: Aplasia/Hypoplasia of the gallbladder
 def: "Absence or underdevelopment of the `gallbladder` (FMA:7202)." [HPO:probinson]
-is_a: HP:0005264 ! Abnormality of the gallbladder
+is_a: HP:0012437 ! Abnormal gallbladder morphology
 created_by: peter
 creation_date: 2012-03-25T07:40:20Z
 
@@ -77851,8 +77872,10 @@ creation_date: 2013-08-10T12:31:38Z
 [Term]
 id: HP:0012317
 name: Sacroiliac arthritis
-def: "Inflammation of the sacroiliac joint, generally accompanied by lower back pain." [HPO:probinson]
+def: "Inflammation of the `sacroiliac joint` (FMA:21440), generally accompanied by lower back pain." [HPO:probinson]
+xref: MeSH:C563037 "Arthritis, Sacroiliac"
 is_a: HP:0002758 ! Osteoarthritis
+is_a: HP:0100781 ! Abnormality of the sacroiliac joint
 created_by: peter
 creation_date: 2013-08-10T12:58:43Z
 
@@ -78540,7 +78563,9 @@ creation_date: 2013-11-07T07:51:48Z
 [Term]
 id: HP:0012396
 name: Biliary dyskinesia
-is_a: HP:0005264 ! Abnormality of the gallbladder
+def: "A motility disorder characterized by biliary colic in the absence of gallstones with a reduced gallbladder ejection fraction." [HPO:probinson, pmid:12095476]
+xref: MeSH:D001657 "Biliary dyskinesia"
+is_a: HP:0012439 ! Abnormal biliary tract physiology
 created_by: peter
 creation_date: 2013-11-07T07:56:55Z
 
@@ -78875,6 +78900,328 @@ created_by: peter
 creation_date: 2013-11-13T07:49:08Z
 
 [Term]
+id: HP:0012433
+name: Abnormal social behavior
+def: "An abnormality of  actions or reactions of a person taking place during interactions with others." [HPO:probinson]
+synonym: "Abnormal social behaviour" EXACT []
+synonym: "Abnormal social interactions" RELATED []
+is_a: HP:0100851 ! Abnormal emotion/affect behavior
+created_by: peter
+creation_date: 2013-11-23T08:37:01Z
+
+[Term]
+id: HP:0012434
+name: Delayed social development
+def: "A failure to meet one or more age-related milestones of social behavior." [HPO:probinson]
+comment: This term should be applied to describe a child whose social development is delayed compared to age-related norms. For instance, at the age of 3 months, a child smiles in response to social interaction, at the age of 7 months, a child responds to the facial expressions of others, and at the age of 12 months a child is shy around strangers.
+is_a: HP:0012433 ! Abnormal social behavior
+created_by: peter
+creation_date: 2013-11-23T08:40:29Z
+
+[Term]
+id: HP:0012435
+name: Ventral shortening of foreskin
+def: "Reduction in length of the ventral (lower) `skin of prepuce of penis` (FMA:27648)." [ORCID:0000-0001-5208-3432]
+is_a: HP:0100587 ! Abnormality of the preputium
+created_by: peter
+creation_date: 2013-11-23T08:45:20Z
+
+[Term]
+id: HP:0012436
+name: Nonocclusive coronary artery disease
+def: "Coronary disease that has not progressed to the point of causing significant occlusion (blockage) of the coronary arteries." [ORCID:0000-0001-5208-3432]
+synonym: "Non-occlusive coronary artery disease" EXACT []
+synonym: "Non-occlusive coronary artery stenosis" RELATED []
+synonym: "Nonocclusive coronary artery stenosis" RELATED []
+is_a: HP:0001677 ! Coronary artery disease
+created_by: peter
+creation_date: 2013-11-23T08:50:05Z
+
+[Term]
+id: HP:0012437
+name: Abnormal gallbladder morphology
+def: "A structural anomaly of the `gallbladder` (FMA:7202)." [HPO:probinson]
+is_a: HP:0005264 ! Abnormality of the gallbladder
+created_by: peter
+creation_date: 2013-11-23T13:13:40Z
+
+[Term]
+id: HP:0012438
+name: Abnormal gallbladder physiology
+def: "A functional anomaly of the `gallbladder` (FMA:7202)." [HPO:probinson]
+is_a: HP:0005264 ! Abnormality of the gallbladder
+created_by: peter
+creation_date: 2013-11-23T13:17:00Z
+
+[Term]
+id: HP:0012439
+name: Abnormal biliary tract physiology
+def: "A functional abnormality of the `biliary tree` (FMA:14665)." [HPO:probinson]
+is_a: HP:0001080 ! Biliary tract abnormality
+created_by: peter
+creation_date: 2013-11-23T14:14:51Z
+
+[Term]
+id: HP:0012440
+name: Abnormal biliary tract morphology
+def: "A structural abnormality of the `biliary tree` (FMA:14665)." [HPO:probinson]
+is_a: HP:0001080 ! Biliary tract abnormality
+created_by: peter
+creation_date: 2013-11-23T14:15:33Z
+
+[Term]
+id: HP:0012441
+name: Sphincter of Oddi dyskinesia
+def: "Reduced motility through the `sphincter of Oddi` (FMA:15077), resulting in impedance of bile and pancreatic juice flow from the common bile duct into the duodenum." [HPO:probinson]
+comment: The sphincter of Oddi (also known as sphincter of ampulla) is a muscular valve that controls the flow of bile and pancreatic juice through the ampulla of Vater into the second part of the duodenum. Increased tone of the sphincter or disturbance in the coordination of contraction of the biliary ducts prevents normal emptying of the biliary tree. This may result in biliary pain, common bile duct dilation and episodes of pancreatitis.
+synonym: "Sphincter of Oddi dysfunction" RELATED []
+is_a: HP:0012396 ! Biliary dyskinesia
+created_by: peter
+creation_date: 2013-11-23T14:21:59Z
+
+[Term]
+id: HP:0012442
+name: Gallbladder dyskinesia
+def: "Reduced motility of the gallbladder with reduced emptying fraction." [HPO:probinson, pmid:12095476, pmid:17761125]
+comment: Patients with this gallbladder dyskinesia present with biliary-type pain but no evidence of gallstones in the gallbladder. The diagnosis is made by performing a radionuclide investigation of the gallbladder ejection fraction. An abnormal gallbladder ejection fraction has a value less than 40 percent.
+is_a: HP:0012396 ! Biliary dyskinesia
+created_by: peter
+creation_date: 2013-11-23T14:28:07Z
+
+[Term]
+id: HP:0012443
+name: Abnormality of the brain
+def: "An abnormality of the `brain` (FMA:50801), which has as its parts the forebrain, midbrain, and hindbrain." [HPO:probinson]
+is_a: HP:0007319 ! Morphological abnormality of the central nervous system
+created_by: peter
+creation_date: 2013-11-23T14:38:00Z
+
+[Term]
+id: HP:0012444
+name: Brain atrophy
+def: "Partial or complete wasting (loss) of brain tissue that was once present." [HPO:probinson]
+is_a: HP:0007367 ! Atrophy/Degeneration affecting the central nervous system
+is_a: HP:0012443 ! Abnormality of the brain
+created_by: peter
+creation_date: 2013-11-23T14:46:15Z
+
+[Term]
+id: HP:0012445
+name: Morphological abnormality of the pyramidal tracts
+def: "Any structural abnormality of the `pyramidal tract` (FMA:72634)." [HPO:probinson]
+comment: The pyramidal tracts comprise both the corticospinal and corticobulbar tracts.
+is_a: HP:0002062 ! Abnormality of the pyramidal tracts
+created_by: peter
+creation_date: 2013-11-23T15:09:44Z
+
+[Term]
+id: HP:0012446
+name: Low CSF 5-methyltetrahydrofolate
+def: "A reduced concentration of `5-methyltetrahydrofolate(2-)` (CHEBI:18608) in the cerebrospinal fluid (CSF). 5-methyltetrahydrofolate is the active folate metabolite." [HPO:probinson]
+comment: A reduced concentration of `5-methyltetrahydrofolate(2-)`\n(CHEBI:18608) in the cerebrospinal fluid (CSF). 5-methyltetrahydrofolate is the active folate metabolite.
+synonym: "Cerebral folate deficiency" RELATED []
+is_a: HP:0002921 ! Abnormality of the cerebrospinal fluid
+created_by: peter
+creation_date: 2013-11-23T15:40:41Z
+
+[Term]
+id: HP:0012447
+name: Abnormal myelination
+def: "Any anomaly in the process by which myelin sheaths are formed and maintained around neurons." [HPO:probinson, MP:0000920]
+xref: UMLS:C1857704 "Abnormal myelination"
+is_a: HP:0007319 ! Morphological abnormality of the central nervous system
+created_by: peter
+creation_date: 2013-11-23T15:45:58Z
+
+[Term]
+id: HP:0012448
+name: Delayed myelination
+def: "`Delayed` (PATO:0000502) `myelination` (GO:0042552)." [ORCID:0000-0001-5208-3432]
+xref: UMLS:C1277241 "Delayed myelination"
+is_a: HP:0012447 ! Abnormal myelination
+created_by: peter
+creation_date: 2013-11-23T15:47:56Z
+
+[Term]
+id: HP:0012449
+name: Sacroiliac joint synovitis
+def: "Inflammation of the synovial membrane of the `sacroiliac joint` (FMA:21440)." [ORCID:0000-0001-5208-3432]
+is_a: HP:0100781 ! Abnormality of the sacroiliac joint
+created_by: peter
+creation_date: 2013-11-23T15:54:32Z
+
+[Term]
+id: HP:0012450
+name: Chronic constipation
+def: "Constipation for longer than three months with fewer than 3 bowel movements per week, straining, lumpy or hard stools, and a sensation of anorectal obstruction or incomplete defecation." [ORCID:0000-0001-5208-3432]
+is_a: HP:0002019 ! Constipation
+created_by: peter
+creation_date: 2013-11-23T16:03:43Z
+
+[Term]
+id: HP:0012451
+name: Acute constipation
+def: "Constipation of sudden onset and lasting for less than three months." [ORCID:0000-0001-5208-3432]
+is_a: HP:0002019 ! Constipation
+created_by: peter
+creation_date: 2013-11-23T16:06:37Z
+
+[Term]
+id: HP:0012452
+name: Restless legs
+def: "A feeling of uneasiness and restlessness in the legs after going to bed (sometimes causing insomnia)." [HPO:probinson]
+comment: Restless legs syndrome is a disorder characterized by aching or burning sensations in the legs that occur prior to sleep or may awaken the affected persons. Complying with an irresistible urge to move the affected limbs brings temporary relief. Sleep may become disrupted, resulting in excessive daytime hypersomnolence.
+synonym: "Restless legs syndrome" RELATED []
+synonym: "Willis-Ekbom disease" RELATED []
+synonym: "Wittmaack-Ekbom syndrome" RELATED []
+xref: MeSH:D012148 "Restless Legs Syndrome"
+is_a: HP:0002360 ! Sleep disturbance
+created_by: peter
+creation_date: 2013-11-23T19:42:59Z
+
+[Term]
+id: HP:0012453
+name: Bilateral wrist flexion contracture
+def: "A chronic loss of wrist joint motion on the right and left sides." [HPO:probinson]
+synonym: "Bilateral wrist contracture" RELATED []
+is_a: HP:0001239 ! Wrist flexion contracture
+created_by: peter
+creation_date: 2013-11-23T19:58:50Z
+
+[Term]
+id: HP:0012454
+name: Unilateral wrist flexion contracture
+def: "A chronic loss of wrist joint motion on one side only." [HPO:probinson]
+synonym: "Unilateral wrist contracture" RELATED []
+is_a: HP:0001239 ! Wrist flexion contracture
+created_by: peter
+creation_date: 2013-11-23T19:59:39Z
+
+[Term]
+id: HP:0012455
+name: Large artery calcification
+def: "`Calcification` (PATO:0001447), that is, pathological  deposition of calcium salts, of the large, conduit arteries (aorta, subclavian, carotid, iliac, renal, axillary, femoral, brachial)." [ORCID:0000-0001-5208-3432, pmid:20930091]
+is_a: HP:0003207 ! Arterial calcification
+created_by: peter
+creation_date: 2013-11-24T10:42:24Z
+
+[Term]
+id: HP:0012456
+name: Medial arterial calcification
+def: "`Calcification` (PATO:0001447), that is, pathological deposition of calcium salts in the tunica media of arteries." [HPO:probinson]
+comment: Medial arterial calcification causes stiffening and decreased compliance of the affected arteries.
+is_a: HP:0003207 ! Arterial calcification
+created_by: peter
+creation_date: 2013-11-24T10:50:45Z
+
+[Term]
+id: HP:0012457
+name: Medial calcification of medium-sized arteries
+def: "`Calcification` (PATO:0001447), that is, pathological deposition of calcium salts in the tunica media of medium-sized (muscular or distributive) arteries." [HPO:probinson]
+is_a: HP:0012456 ! Medial arterial calcification
+created_by: peter
+creation_date: 2013-11-24T11:11:13Z
+
+[Term]
+id: HP:0012458
+name: Medial calcification of small arteries
+def: "`Calcification` (PATO:0001447), that is, pathological deposition of calcium salts in the tunica media of small arteries." [HPO:probinson]
+comment: The general construction of small arteries is very similar to that of muscular arteries. The media is still muscular and has up to 8-10 layers of smooth muscle cells.
+is_a: HP:0012456 ! Medial arterial calcification
+created_by: peter
+creation_date: 2013-11-24T11:13:13Z
+
+[Term]
+id: HP:0012459
+name: Hypnic headache
+def: "A headache disorder that occurs exclusively at night, waking the affected individual from sleep." [HPO:probinson, pmid:20585827, pmid:23832130]
+comment: Hypnic headache can be unilateral or bilateral, and is often but not always described as throbbing. The pain begins abruptly and can last from 15 minutes to 6 hours, although typically it is about 30-60 minutes.
+synonym: "Alarm clock headache" EXACT []
+is_a: HP:0002315 ! Headache
+created_by: peter
+creation_date: 2013-11-24T11:20:18Z
+
+[Term]
+id: HP:0012460
+name: Dysmorphic inferior cerebellar vermis
+def: "A structural anomaly of the inferior portion of the `vermis of cerebellum` (FMA:76928)." [ORCID:0000-0001-5208-3432]
+is_a: HP:0002334 ! Abnormality of the cerebellar vermis
+created_by: peter
+creation_date: 2013-11-24T11:59:06Z
+
+[Term]
+id: HP:0012461
+name: Bacteriuria
+def: "The presence of bacteria in the urine." [ORCID:0000-0001-5208-3432]
+comment: The urine is normally bacteria-free. The term refers to bacteria from the urinary tract and not to bacteria found in the urine because of contamination from the surrounding tissues. Significant bacteriuria is a sign of urinary tract infection.
+xref: MeSH:D001437 "Bacteriuria"
+is_a: HP:0003110 ! Abnormality of urine homeostasis
+created_by: peter
+creation_date: 2013-11-24T12:15:47Z
+
+[Term]
+id: HP:0012462
+name: Chin myoclonus
+def: "Involuntary and irregular twitches of the chin." [HPO:probinson, pmid:16816905]
+synonym: "Chin spasms" RELATED []
+synonym: "Geniospasm" EXACT []
+is_a: HP:0001336 ! Myoclonus
+created_by: peter
+creation_date: 2013-11-24T12:26:38Z
+
+[Term]
+id: HP:0012463
+name: Elevated transferrin saturation 
+def: "An above normal level of saturation of serum transferrin with iron." [HPO:probinson]
+comment: Transferrins are iron-binding blood plasma glycoproteins that control the level of free iron in biological fluids. The transferrin saturation test (TSAT) refers to the ratio of serum iron to total iron-binding capacity, expressed as a percentage. Transferrin saturations of less than 20% indicate iron deficiency, while transferrin saturations of more than 50% suggest iron overload. Note that the results of the TSAT can be influenced by inflammation.
+is_a: HP:0011031 ! Abnormality of iron homeostasis
+created_by: peter
+creation_date: 2013-11-24T12:46:56Z
+
+[Term]
+id: HP:0012464
+name: Decreased transferrin saturation 
+def: "A below normal level of saturation of serum transferrin with iron." [HPO:probinson]
+comment: Transferrins are iron-binding blood plasma glycoproteins that control the level of free iron in biological fluids. The transferrin saturation test (TSAT) refers to the ratio of serum iron to total iron-binding capacity, expressed as a percentage. Transferrin saturations of less than 20% indicate iron deficiency, while transferrin saturations of more than 50% suggest iron overload. Note that the results of the TSAT can be influenced by inflammation.
+is_a: HP:0011031 ! Abnormality of iron homeostasis
+created_by: peter
+creation_date: 2013-11-24T12:51:51Z
+
+[Term]
+id: HP:0012465
+name: Elevated hepatic iron concentration
+def: "An increased level of iron in liver tissues." [HPO:probinson, pmid:10922422, pmid:14668426]
+comment: This abnormality can be measured by liver biopsy or by hepatic magnetic resonance imaging.
+is_a: HP:0011031 ! Abnormality of iron homeostasis
+created_by: peter
+creation_date: 2013-11-24T12:54:57Z
+
+[Term]
+id: HP:0012466
+name: Chronic respiratory acidosis
+def: "Longstanding impairment in ventilation such that the partial pressure of carbon dioxide (PaCO2) is elevated above the upper limit of the reference range (more than 45 mm Hg), with a normal or near-normal pH secondary to renal compensation and an elevated serum bicarbonate levels (more than30 mEq/L)." [HPO:probinson]
+is_a: HP:0005972 ! Respiratory acidosis
+is_a: HP:0012468 ! Chronic acidosis
+created_by: peter
+creation_date: 2013-11-24T13:11:15Z
+
+[Term]
+id: HP:0012467
+name: Acute respiratory acidosis
+def: "Sudden onset of impairment in ventilation such that the removal of carbon dioxide by the respiratory system is less than the production of carbon dioxide in the tissues, leading to an elevation of the partial pressure of carbon dioxide (PaCO2) above the normal limits (more than 45 mm Hg) with an accompanying acidemia (pH less than 7.35)." [HPO:probinson]
+is_a: HP:0005972 ! Respiratory acidosis
+created_by: peter
+creation_date: 2013-11-24T13:11:51Z
+
+[Term]
+id: HP:0012468
+name: Chronic acidosis
+def: "Longstanding abnormal acid accumulation or depletion of base." [ORCID:0000-0001-5208-3432]
+is_a: HP:0001941 ! Acidosis
+created_by: peter
+creation_date: 2013-11-24T13:16:31Z
+
+[Term]
 id: HP:0100000
 name: Early onset of sexual maturation
 def: "An early onset of puberty, in this case early does not refer to precocious." [HPO:probinson]
@@ -79135,7 +79482,7 @@ creation_date: 2010-05-28T05:32:35Z
 id: HP:0100025
 name: Overfriendliness
 def: "A form of hypersociability that presents as mostly inappropriate people-orientation and friendliness towards others on an inadequate level which might go as far as being dangerous considering for example young children following strangers without restriction." [HPO:sdoelken]
-is_a: HP:0100851 ! Abnormal emotion/affect behavior
+is_a: HP:0012433 ! Abnormal social behavior
 created_by: doelkens
 creation_date: 2010-05-28T05:42:06Z
 
@@ -81196,7 +81543,6 @@ name: Diffuse cerebellar atrophy
 alt_id: HP:0006928
 def: "Diffuse unlocalised atrophy affecting the cerebellum." [HPO:sdoelken]
 is_a: HP:0001272 ! Cerebellar atrophy
-is_a: HP:0002283 ! Diffuse brain atrophy
 created_by: doelkens
 creation_date: 2010-08-02T01:22:19Z
 
@@ -83226,7 +83572,7 @@ creation_date: 2010-12-21T01:31:46Z
 id: HP:0100547
 name: Abnormality of the forebrain
 def: "An abnormality of the `forebrain` (FMA:61992), which has as its parts the telencephalon, diencephalon, lateral ventricles and third ventricle." [HPO:probinson]
-is_a: HP:0007319 ! Morphological abnormality of the central nervous system
+is_a: HP:0012443 ! Abnormality of the brain
 created_by: doelkens
 creation_date: 2010-12-21T02:12:53Z
 
@@ -83452,8 +83798,8 @@ name: Biliary tract neoplasm
 def: "A `neoplasm` (MPATH:218) of the `biliary system` (FMA:79646)." [HPO:probinson]
 synonym: "Neoplasia of the biliary tract" RELATED []
 xref: MeSH:D001661 "Biliary Tract Neoplasms"
-is_a: HP:0001080 ! Biliary tract abnormality
 is_a: HP:0007378 ! Neoplasm of the gastrointestinal tract
+is_a: HP:0012440 ! Abnormal biliary tract morphology
 created_by: doelkens
 creation_date: 2010-12-21T05:18:27Z
 
@@ -83462,7 +83808,7 @@ id: HP:0100575
 name: Neoplasm of the gallbladder
 def: "The presence of a `neoplasm` (MPATH:218) of the `gallbladder` (FMA:7202)." [HPO:probinson]
 synonym: "Neoplasia of the gallbladder" RELATED []
-is_a: HP:0005264 ! Abnormality of the gallbladder
+is_a: HP:0012437 ! Abnormal gallbladder morphology
 is_a: HP:0100574 ! Biliary tract neoplasm
 created_by: doelkens
 creation_date: 2010-12-21T05:18:44Z
@@ -85029,7 +85375,7 @@ name: Hemobilia
 def: "Bleeding into the biliary tree." [HPO:sdoelken]
 synonym: "Haemobilia" EXACT []
 xref: MeSH:D006431 "Hemobilia"
-is_a: HP:0001080 ! Biliary tract abnormality
+is_a: HP:0012439 ! Abnormal biliary tract physiology
 created_by: doelkens
 creation_date: 2011-06-07T10:36:09Z
 
@@ -85183,6 +85529,7 @@ creation_date: 2011-06-07T05:50:21Z
 [Term]
 id: HP:0100781
 name: Abnormality of the sacroiliac joint
+def: "An anomaly of the `sacroiliac joint` (FMA:21440)." [HPO:probinson]
 is_a: HP:0001367 ! Abnormal joint morphology
 is_a: HP:0002867 ! Abnormality of the ilium
 is_a: HP:0005107 ! Abnormality of the sacrum
@@ -86116,7 +86463,7 @@ id: HP:0100889
 name: Abnormality of the ductus choledochus
 def: "An abnormality of the `Common bile duct` (FMA:14667), a tube-like anatomic structure in the human gastrointestinal tract, formed by the union of the `Common hepatic duct` (FMA:14668) and the `Cystic duct` (FMA:14539) from the gall bladder." [HPO:sdoelken]
 synonym: "Abnormality of the common bile duct" EXACT []
-is_a: HP:0001080 ! Biliary tract abnormality
+is_a: HP:0012440 ! Abnormal biliary tract morphology
 created_by: doelkens
 creation_date: 2011-12-01T04:52:13Z
 
@@ -86606,7 +86953,7 @@ id: HP:0100962
 name: Shyness
 def: "Discomfort and partial inhibition of the usual forms of behavior when in the presence of others." [MeSH:D012792]
 xref: MeSH:D012792 "Shyness"
-is_a: HP:0100851 ! Abnormal emotion/affect behavior
+is_a: HP:0012433 ! Abnormal social behavior
 created_by: doelkens
 creation_date: 2012-01-18T06:06:28Z
 
