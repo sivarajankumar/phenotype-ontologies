@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 24:11:2013 13:24
+date: 26:11:2013 23:00
 saved-by: peter
 auto-generated-by: OBO-Edit 2.3
 subsetdef: hposlim_core "Core clinical terminology"
@@ -1464,14 +1464,13 @@ name: Thick lower lip vermilion
 alt_id: HP:0000170
 def: "Increased thickness of the lower lip, leading to a prominent appearance of the lower lip. The height of the vermilion of the lower lip in the midline is more than 2 SD above the mean. Alternatively, an apparently increased height of the vermilion of the lower lip in the frontal view (subjective)." [HPO:curators, pmid:19125428]
 comment: Normal values for the height of the vermilion are available [Farkas, 1981] but measurements are not commonly used. Most clinicians determine this feature subjectively. The lower lip is typically thicker than the upper one. The height of the vermilion of the lower lip varies among ethnic groups, and the vermilion should\nbe compared to a population of same ethnic background. When the vermilion is thick, it is more convex and more everted than usual on profile view, but that should be assessed separately.
-synonym: "Full lips" RELATED []
 synonym: "Full lower lip" RELATED []
 synonym: "Prominent lower lip" EXACT []
-synonym: "Thick lips" RELATED []
 synonym: "Thick lower lip" RELATED []
 xref: UMLS:C1836543 "Thick lips"
 xref: UMLS:C1839739 "Prominent lower lip"
 is_a: HP:0000178 ! Abnormality of lower lip
+is_a: HP:0012471 ! Thick vermilion border
 
 [Term]
 id: HP:0000180
@@ -1677,13 +1676,6 @@ xref: UMLS:C0017566 "Gingival Hyperplasia"
 is_a: HP:0000168 ! Abnormality of the gingiva
 
 [Term]
-id: HP:0000213
-name: Thin lips
-def: "`Decreased thickness` (PATO:0000592) of the `lips` (FMA:59815)." [HPO:probinson]
-xref: UMLS:C0578038 "Thin lips"
-is_a: HP:0000159 ! Abnormality of the lip
-
-[Term]
 id: HP:0000214
 name: Lip telangiectasia
 def: "`Telangiectasia` (MPATH:476) (that is, the presence of small dilated superficial blood vessels) of the `lips` (FMA:59815)." [HPO:probinson]
@@ -1700,12 +1692,12 @@ alt_id: HP:0000231
 def: "Height of the vermilion of the upper lip in the midline more than 2 SD above the mean. Alternatively, an apparently increased height of the vermilion of the upper lip in the frontal view (subjective)." [pmid:19125428]
 comment: Normal values for the height of the vermilion are available [Farkas, 1981], but measurements are not commonly used. Most clinicians determine this feature subjectively or utilize the Likert scale of Astley and Clarren [2000] (Fig. 17). The vermilion of the upper lip varies considerably among ethnic groups, and the vermilion should be compared to a population of same ethnic background. The thickness of the upper lip vermilion is sensitive to the facial expression. On profile view, a thick vermilion is more convex than usual.
 subset: hposlim_core
-synonym: "Full lips" RELATED []
 synonym: "Prominent upper lip" EXACT []
 synonym: "Thick upper lip" EXACT [HPO:sdoelken]
 synonym: "Thick vermilion border of upper lip" EXACT []
 xref: UMLS:C1846423 "Prominent upper lip"
 is_a: HP:0011339 ! Abnormality of upper lip vermillion
+is_a: HP:0012471 ! Thick vermilion border
 
 [Term]
 id: HP:0000216
@@ -1752,12 +1744,14 @@ is_a: HP:0000174 ! Abnormality of the palate
 id: HP:0000219
 name: Thin upper lip vermilion
 alt_id: HP:0200062
+alt_id: HP:0200086
 def: "Height of the vermilion of the upper lip in the midline more than 2 SD below the mean. Alternatively, an apparently reduced height of the vermilion of the upper lip in the frontal view (subjective)." [pmid:19125428]
 comment: Normal values for the height of the vermilion are available [Farkas, 1981], but measurements are not commonly used. Most clinicians determine this feature subjectively or use the Likert scale for Caucasians and African Americans [Astley and Clarren, 2000]. The height of the vermilion of the upper lip varies among ethnic groups, and the vermilion should be compared to a population of same ethnic background. The thinness of the upper lip vermilion is sensitive to facial expression. On profile view, a thin vermilion is less convex than usual. A thin upper lip vermilion may be associated with a smooth philtrum and an absence of the Cupid's bow, but these should be assessed separately.
 subset: hposlim_core
+synonym: "Thin upper lip" EXACT [HPO:skoehler]
+synonym: "THIN UPPER LIPS" RELATED [HPO:skoehler]
 synonym: "Thin vermilion border of upper lip" EXACT []
 xref: UMLS:C1865017 "Thin upper lip"
-is_a: HP:0000213 ! Thin lips
 is_a: HP:0000233 ! Thin vermilion border
 is_a: HP:0011339 ! Abnormality of upper lip vermillion
 
@@ -1854,24 +1848,23 @@ def: "An abnormal configuration of the `lower lip` (FMA:59818) such that it is t
 comment: In frontal view, with the face relaxed, the apparent height of the lower lip vermilion is excessive and the lower incisors may be visible. On profile view, the vermilion is more convex than usual. An everted lower lip may be viewed as pouting, but this designation is a functional term.
 subset: hposlim_core
 synonym: "Drooping lower lip" EXACT []
-synonym: "Eclabion" EXACT []
-synonym: "Eclabium" RELATED []
 synonym: "Everted lower lip" EXACT []
 synonym: "Everted prominent lower lip" EXACT []
-synonym: "Prominent lips" RELATED []
 synonym: "Protruding lower lip" RELATED []
-xref: UMLS:C1848738 "Eclabion"
-xref: UMLS:C1863874 "Prominent lips"
 xref: UMLS:C1866234 "Protruding lower lip"
 is_a: HP:0000178 ! Abnormality of lower lip
+is_a: HP:0012472 ! Eclabion
 
 [Term]
 id: HP:0000233
 name: Thin vermilion border
+alt_id: HP:0000213
+def: "`Decreased thickness` (PATO:0000592) of the `lips` (FMA:59815)." [HPO:probinson]
 comment: The vermilion is the red part of the lips, and the vermilion border is the rim of paler skin that demarcates the vermilion from the rest of the skin of the face.
-synonym: "Thin vermilion border" RELATED [HPO:skoehler]
+synonym: "Thin lips" EXACT []
 synonym: "THIN VERMILION BORDERS" RELATED [HPO:skoehler]
 synonym: "Thin vermillion" EXACT []
+xref: UMLS:C0578038 "Thin lips"
 xref: UMLS:C1849947 "Thin vermillion border"
 is_a: HP:0000159 ! Abnormality of the lip
 
@@ -2171,7 +2164,6 @@ synonym: "Depressed malar region" EXACT []
 synonym: "Flat midface" EXACT []
 synonym: "Malar hypoplasia" EXACT []
 synonym: "Mid-face hypoplasia" EXACT []
-synonym: "Midface hypoplasia" EXACT []
 xref: UMLS:C1836641 "Malar hypoplasia"
 is_a: HP:0001999 ! Abnormal facial shape
 is_a: HP:0005557 ! Abnormality of the zygomatic arch
@@ -5212,11 +5204,8 @@ alt_id: HP:0004777
 alt_id: HP:0007853
 def: "Decreased density/number of eyelashes." [pmid:19125427]
 subset: hposlim_core
-synonym: "Partial to total absence of eyelashes" EXACT []
 synonym: "Scant eyelashes" EXACT []
-synonym: "Scant-absent eyelashes" EXACT []
 synonym: "Scanty eyelashes" EXACT []
-synonym: "Thin, sparse eyelashes" EXACT []
 xref: UMLS:C1835682 "Scant eyelashes"
 xref: UMLS:C1843300 "Sparse eyelashes"
 is_a: HP:0200102 ! Sparse/absent eyelashes
@@ -6699,6 +6688,7 @@ is_a: HP:0000847 ! Abnormality of renin-angiotensin system
 id: HP:0000842
 name: Hyperinsulinemia
 def: "An `increased concentration` (PATO:0001162) of `insulin` (PRO:000009054) in the `blood` (FMA:9670)." [HPO:probinson]
+synonym: "Elevated insulin level" EXACT []
 xref: MeSH:D006946 "Hyperinsulinism"
 xref: UMLS:C0020459 "Hyperinsulinaemia"
 is_a: HP:0003117 ! Abnormality of circulating hormone level
@@ -7531,7 +7521,6 @@ comment: The phrase cafe-au-lait comes from the French word for milk-coffee. A s
 synonym: "Cafe au lait spots" EXACT []
 synonym: "Cafe-au-lait macules" EXACT []
 synonym: "CAFE-AU-LAIT SPOTS" RELATED [HPO:skoehler]
-synonym: "Multiple cafe-au-lait spots" RELATED []
 xref: MeSH:D019080 "Cafe-au-Lait Spots"
 xref: UMLS:C0221263 "Cafe-au-Lait Spots"
 is_a: HP:0001034 ! Hypermelanotic macule
@@ -12020,6 +12009,8 @@ is_a: HP:0001608 ! Abnormality of the voice
 id: HP:0001621
 name: Weak voice
 def: "Reduced intensity (volume) of speech." [HPO:probinson]
+comment: Hypophonia refers to an abnormally weak voice due to incoordination of the muscles concerned in vocalization.
+synonym: "Hypophonia" RELATED []
 synonym: "Soft voice" EXACT []
 is_a: HP:0001608 ! Abnormality of the voice
 
@@ -13456,7 +13447,7 @@ synonym: "Hypoplastic toes" EXACT []
 synonym: "Short phalanges (feet)" EXACT []
 synonym: "Short toes" EXACT []
 xref: UMLS:C1835156 "Hypoplastic toes"
-is_a: HP:0001991 ! Aplasia/Hypoplasia of the toes
+is_a: HP:0001991 ! Aplasia/Hypoplasia of toe
 is_a: HP:0011927 ! Short digit
 
 [Term]
@@ -14643,8 +14634,8 @@ is_a: HP:0001558 ! Decreased fetal movement
 
 [Term]
 id: HP:0001991
-name: Aplasia/Hypoplasia of the toes
-def: "Absence or hypoplasia of toes." [HPO:curators]
+name: Aplasia/Hypoplasia of toe
+def: "Absence or hypoplasia of toes." [HPO:probinson]
 synonym: "ABSENT/HYPOPLASTIC TOES" RELATED [HPO:skoehler]
 synonym: "Aplastic/hypoplastic phalanges (feet)" EXACT []
 is_a: HP:0001780 ! Abnormality of toe
@@ -17223,6 +17214,7 @@ id: HP:0002360
 name: Sleep disturbance
 def: "An abnormality of sleep including such phenomena as 1) insomnia/hypersomnia, 2) non-restorative sleep, 3) sleep schedule disorder, 4) excessive daytime somnolence, 5) sleep apnea, and 6) restlessness." [HPO:curators]
 synonym: "Sleep disturbances" EXACT [HPO:skoehler]
+synonym: "Sleep dysfunction" EXACT []
 xref: UMLS:C0851578 "Sleep Disturbances"
 is_a: HP:0000708 ! Behavioural/Psychiatric Abnormality
 is_a: HP:0002011 ! Abnormality of the central nervous system
@@ -17565,10 +17557,9 @@ id: HP:0002419
 name: Molar tooth sign on MRI
 def: "An abnormal appearance of the midbrain in axial magnetic resonance imaging in which the elongated superior cerebellar peduncles give the midbrain an appearance reminiscent of a molar or wisdom tooth." [HPO:probinson, pmid:14657304]
 comment: Molar tooth appearance results from a lack of normal decussation of superior cerebellar peduncular fiber tracts which in turn leads to enlargement of the peduncles, which also follow a more horizontal course. The absence of crossing fibers also leads to a reduction in the anteroposterior diameter of the midbrain and deepening of the interpeduncular cistern.
-synonym: "'molar tooth sign'" EXACT []
 synonym: "'molar tooth sign' on brain imaging'" EXACT []
 synonym: "'molar tooth' sign on imaging" EXACT []
-synonym: "Molar tooth sign on mri" EXACT []
+synonym: "Molar tooth sign" EXACT []
 xref: UMLS:C1969141 "'Molar tooth sign'"
 is_a: HP:0002418 ! Abnormality of the midbrain
 
@@ -21040,7 +21031,7 @@ is_a: HP:0100238 ! Synostosis involving bones of the upper limbs
 id: HP:0002977
 name: Aplasia/Hypoplasia involving the central nervous system
 alt_id: HP:0001323
-synonym: "Brain atrophy" RELATED []
+def: "Absence or underdevelopment of tissue in the central nervous system." [HPO:probinson]
 is_a: HP:0007319 ! Morphological abnormality of the central nervous system
 created_by: peter
 creation_date: 2008-03-31T05:13:00Z
@@ -45920,7 +45911,7 @@ alt_id: HP:0008126
 def: "Absence or underdevelopment of the big toe." [HPO:curators]
 synonym: "Aplastic/hypoplastic halluces" EXACT []
 is_a: HP:0001844 ! Abnormality of the hallux
-is_a: HP:0011306 ! Aplasia of the toes
+is_a: HP:0010760 ! Absent toe
 created_by: peter
 creation_date: 2008-04-04T11:33:00Z
 
@@ -57852,7 +57843,6 @@ name: Short 4th metacarpal
 alt_id: HP:0005094
 def: "Short `fourth metacarpal bone` (FMA:23902)." [HPO:probinson]
 synonym: "Hypoplastic fourth metacarpal" EXACT []
-synonym: "short 4th metacarpal" EXACT []
 synonym: "Short 4th metacarpals" EXACT []
 synonym: "Short fourth metacarpals" EXACT []
 xref: UMLS:C1862312 "Short 4th metacarpal"
@@ -58469,7 +58459,6 @@ alt_id: HP:0004680
 def: "Short `first metatarsal bone`(FMA:24502)." [HPO:probinson]
 synonym: "First metatarsal hypoplasia" EXACT []
 synonym: "First metatarsals hypoplastic" EXACT []
-synonym: "short first metatarsal" EXACT []
 xref: UMLS:C1866003 "First metatarsal hypoplasia"
 is_a: HP:0010067 ! Aplasia/Hypoplasia of the 1st metatarsal
 is_a: HP:0010743 ! Short metatarsal
@@ -59130,7 +59119,7 @@ synonym: "Absent/hypoplastic terminal phalanges of toes" EXACT []
 synonym: "Hypoplasia/agenesis of distal phalanges of toes" RELATED []
 is_a: HP:0010173 ! Aplasia/Hypoplasia of the phalanges of the toes
 is_a: HP:0010182 ! Abnormality of the distal phalanges of the toes
-is_a: HP:0011306 ! Aplasia of the toes
+is_a: HP:0010760 ! Absent toe
 created_by: doelkens
 creation_date: 2009-05-29T01:52:41Z
 
@@ -59979,6 +59968,7 @@ comment: Normal values for the height of the vermilion are available [Farkas, 19
 synonym: "Thin lower lip" EXACT []
 xref: UMLS:C2053440 "thin lower lip"
 is_a: HP:0000178 ! Abnormality of lower lip
+is_a: HP:0000233 ! Thin vermilion border
 created_by: peter
 creation_date: 2009-07-12T10:17:22Z
 
@@ -60396,7 +60386,7 @@ creation_date: 2009-07-16T11:40:18Z
 id: HP:0010325
 name: Aplasia/Hypoplasia of the 2nd toe
 is_a: HP:0010319 ! Abnormality of the 2nd toe
-is_a: HP:0011306 ! Aplasia of the toes
+is_a: HP:0010760 ! Absent toe
 created_by: doelkens
 creation_date: 2009-07-16T11:40:18Z
 
@@ -60447,7 +60437,7 @@ name: Aplasia/Hypoplasia of the 3rd toe
 alt_id: HP:0008100
 synonym: "Absent/hypoplastic third toe" EXACT []
 is_a: HP:0010320 ! Abnormality of the 3rd toe
-is_a: HP:0011306 ! Aplasia of the toes
+is_a: HP:0010760 ! Absent toe
 created_by: doelkens
 creation_date: 2009-07-16T11:40:52Z
 
@@ -60496,7 +60486,7 @@ creation_date: 2009-07-16T11:41:21Z
 id: HP:0010337
 name: Aplasia/Hypoplasia of the 4th toe
 is_a: HP:0010321 ! Abnormality of the 4th toe
-is_a: HP:0011306 ! Aplasia of the toes
+is_a: HP:0010760 ! Absent toe
 created_by: doelkens
 creation_date: 2009-07-16T11:41:21Z
 
@@ -60545,7 +60535,7 @@ creation_date: 2009-07-16T11:41:49Z
 id: HP:0010343
 name: Aplasia/Hypoplasia of the 5th toe
 is_a: HP:0010322 ! Abnormality of the 5th toe
-is_a: HP:0011306 ! Aplasia of the toes
+is_a: HP:0010760 ! Absent toe
 created_by: doelkens
 creation_date: 2009-07-16T11:41:49Z
 
@@ -63063,7 +63053,6 @@ synonym: "Facial muscle weakness of muscles innervated by CN VII" RELATED []
 synonym: "Facial nerve palsy " EXACT []
 synonym: "Facial nerve paralysis" EXACT []
 synonym: "Facial palsy, unilateral or bilateral" EXACT []
-synonym: "Facial paralysis" RELATED []
 synonym: "Facial weakness" RELATED []
 synonym: "Seventh cranial nerve palsy" EXACT []
 synonym: "VII th cranial nerve palsy " EXACT []
@@ -64238,13 +64227,14 @@ id: HP:0010760
 name: Absent toe
 alt_id: HP:0008084
 alt_id: HP:0010108
+alt_id: HP:0011306
 def: "Aplasia of a `toe` (FMA:25046). That is, absence of all phalanges of a non-hallux digit of the foot and the associated soft tissues." [HPO:probinson]
 comment: This descriptor does NOT require absence of the metatarsal. The definition excludes partial absent hallux.
 subset: hposlim_core
 synonym: "ABSENT TOES" RELATED [HPO:skoehler]
 synonym: "Aplasia of the toes" RELATED []
 synonym: "Aplasia of toe" EXACT []
-is_a: HP:0011306 ! Aplasia of the toes
+is_a: HP:0001991 ! Aplasia/Hypoplasia of toe
 created_by: doelkens
 creation_date: 2010-04-23T03:58:25Z
 
@@ -64643,8 +64633,8 @@ name: Everted upper lip vermilion
 def: "Inner aspect of the upper lip vermilion (normally apposing the teeth) visible in a frontal view, i.e., the presence of an `everted` (PATO:0001597) `upper lip` (FMA:59817)." [HPO:probinson, pmid:19125428]
 comment: In frontal view, with the face relaxed, the apparent height of the upper lip vermilion is excessive and the upper incisors may be visible. On profile view, the vermilion is more convex than usual. An everted upper lip may be associated with a short philtrum, and may be secondary to protruded upper teeth, but these should be assessed and described separately.
 subset: hposlim_core
-synonym: "Eclabion" RELATED []
 is_a: HP:0011339 ! Abnormality of upper lip vermillion
+is_a: HP:0012472 ! Eclabion
 created_by: peter
 creation_date: 2010-06-26T02:30:13Z
 
@@ -66443,7 +66433,6 @@ alt_id: HP:0000569
 def: "A severe form of myopia with greater than -6.00 diopters." [DDD:ncarter]
 subset: hposlim_core
 synonym: "High myopia" EXACT []
-synonym: "Severe myopia" EXACT []
 synonym: "Severe myopia (> -6.00 diopters)" EXACT []
 xref: UMLS:C0271183 "Severe myopia"
 is_a: HP:0000545 ! Myopia
@@ -67293,7 +67282,6 @@ id: HP:0011097
 name: Epileptic spasms
 def: "A sudden flexion, extension or mixed extension-flexion of predominantly proximal and truncal muscles which is usually more sustained than a myoclonic movement but not as sustained as a tonic seizure." [HPO:jalbers]
 comment: The maximum age of onset is between 3 and 12 months, the peak being at 6 months. However, spasms may start from birth, or appear long after the age of 12 months, including into adulthood. Infantile spasms represent a specific type of seizure seen in an epilepsy syndrome of infancy and childhood known as West Syndrome. West Syndrome is characterized by infantile spasms, developmental regression, and hypsarrhythmia (as demonstrated by electroencephalography).
-synonym: "Infantile spasms" RELATED []
 synonym: "Salaam convulsions" EXACT []
 synonym: "Salaam seizures" EXACT []
 synonym: "West syndrome" RELATED []
@@ -69155,17 +69143,9 @@ name: Partial absence of toe
 def: "The absence of a phalangeal segment of a toe or hallux." [pmid:19125433]
 comment: The part that is absent may be specified. The "distal" modifier specifies the loss of the distal phalanx; clinically this is defined by the absence of the nail. The "proximal" modifier specifies the loss of the proximal or middle phalanx with the nail still present. It may be difficult to know which phalanx is absent without X-rays and even then, the missing bone may not be identified (note no attempt is made to distinguish missing middle from proximal phalanges). In this situation the location adjective should be removed. Note that this finding is distinct from Short toes, (which are reduced in length but have the normal number of phalangeal segments). Partial absence of the hallux is an alternative term that may be used for the first toe.
 synonym: "Hypophalangy of toes" EXACT []
-is_a: HP:0011306 ! Aplasia of the toes
+is_a: HP:0010760 ! Absent toe
 created_by: hecht
 creation_date: 2012-02-12T12:20:32Z
-
-[Term]
-id: HP:0011306
-name: Aplasia of the toes
-def: "Aplasia affecting the toes or any parts thereof." [HPO:probinson]
-is_a: HP:0001991 ! Aplasia/Hypoplasia of the toes
-created_by: hecht
-creation_date: 2012-02-12T12:36:21Z
 
 [Term]
 id: HP:0011307
@@ -73387,6 +73367,7 @@ id: HP:0011800
 name: Midface retrusion
 def: "Posterior positions and/or vertical shortening of the infraorbital and perialar regions, or increased concavity of the face and/or reduced nasolabial angle." [DDD:jclayton-smith, pmid:19125436]
 subset: hposlim_core
+synonym: "Midface hypoplasia" RELATED []
 is_a: HP:0000309 ! Abnormality of the midface
 created_by: peter
 creation_date: 2012-04-24T07:46:05Z
@@ -79171,7 +79152,7 @@ creation_date: 2013-11-24T12:26:38Z
 
 [Term]
 id: HP:0012463
-name: Elevated transferrin saturation 
+name: Elevated transferrin saturation
 def: "An above normal level of saturation of serum transferrin with iron." [HPO:probinson]
 comment: Transferrins are iron-binding blood plasma glycoproteins that control the level of free iron in biological fluids. The transferrin saturation test (TSAT) refers to the ratio of serum iron to total iron-binding capacity, expressed as a percentage. Transferrin saturations of less than 20% indicate iron deficiency, while transferrin saturations of more than 50% suggest iron overload. Note that the results of the TSAT can be influenced by inflammation.
 is_a: HP:0011031 ! Abnormality of iron homeostasis
@@ -79180,7 +79161,7 @@ creation_date: 2013-11-24T12:46:56Z
 
 [Term]
 id: HP:0012464
-name: Decreased transferrin saturation 
+name: Decreased transferrin saturation
 def: "A below normal level of saturation of serum transferrin with iron." [HPO:probinson]
 comment: Transferrins are iron-binding blood plasma glycoproteins that control the level of free iron in biological fluids. The transferrin saturation test (TSAT) refers to the ratio of serum iron to total iron-binding capacity, expressed as a percentage. Transferrin saturations of less than 20% indicate iron deficiency, while transferrin saturations of more than 50% suggest iron overload. Note that the results of the TSAT can be influenced by inflammation.
 is_a: HP:0011031 ! Abnormality of iron homeostasis
@@ -79220,6 +79201,55 @@ def: "Longstanding abnormal acid accumulation or depletion of base." [ORCID:0000
 is_a: HP:0001941 ! Acidosis
 created_by: peter
 creation_date: 2013-11-24T13:16:31Z
+
+[Term]
+id: HP:0012469
+name: Infantile spasms
+def: "Infantile spasms represent a subset of \"epileptic spasms\". Infantile Spasms are epileptic spasms starting in the first year of life (infancy)." [HPO:ihelbig]
+is_a: HP:0011097 ! Epileptic spasms
+created_by: peter
+creation_date: 2013-11-26T17:36:45Z
+
+[Term]
+id: HP:0012470
+name: Setting-sun eye phenomenon
+def: "An ophthalmologic sign in young children resulting from upward-gaze paresis. In this condition, the eyes appear driven downward, the sclera may be seen between the upper eyelid and the iris, and part of the lower pupil may be covered by the lower eyelid." [HPO:probinson, pmid:17030938]
+comment: Setting-sun eye phenomenon can also be transiently elicited in healthy infants up to 7 months of age by changes of position or removal of light (benign setting-sun phenomenon). When persistent, this sign is one of the most frequent markers of elevated intracranial pressure.
+synonym: "Eyes fixed downward" RELATED []
+synonym: "Sun setting eyes" EXACT []
+synonym: "Sunsetting eye" EXACT []
+is_a: HP:0000597 ! Ophthalmoparesis
+created_by: peter
+creation_date: 2013-11-26T17:40:01Z
+
+[Term]
+id: HP:0012471
+name: Thick vermilion border
+def: "Increased thickness of the `lips` (FMA:59815)." [HPO:probinson]
+synonym: "Full lips" EXACT []
+synonym: "Thick lips" EXACT []
+is_a: HP:0000159 ! Abnormality of the lip
+created_by: peter
+creation_date: 2013-11-26T21:07:51Z
+
+[Term]
+id: HP:0012472
+name: Eclabion
+def: "A turning outward of the lip or lips, that is, eversion of the lips." [HPO:probinson]
+synonym: "Eclabium" EXACT []
+xref: UMLS:C1848738 "Eclabion"
+is_a: HP:0000159 ! Abnormality of the lip
+created_by: peter
+creation_date: 2013-11-26T22:20:23Z
+
+[Term]
+id: HP:0012473
+name: Tongue atrophy
+def: "Wasting of the `tongue` (FMA:54640)." [ORCID:0000-0001-5208-3432]
+synonym: "Atrophy of the tongue" EXACT []
+is_a: HP:0000157 ! Abnormality of the tongue
+created_by: peter
+creation_date: 2013-11-26T22:32:31Z
 
 [Term]
 id: HP:0100000
@@ -87506,15 +87536,6 @@ synonym: "TREMOR OF LIMBS" RELATED [HPO:skoehler]
 is_a: HP:0001337 ! Tremor
 created_by: sebastiankohler
 creation_date: 2013-06-04T02:39:15Z
-
-[Term]
-id: HP:0200086
-name: Thin upper lip
-synonym: "Thin upper lip" RELATED [HPO:skoehler]
-synonym: "THIN UPPER LIPS" RELATED [HPO:skoehler]
-is_a: HP:0000177 ! Abnormality of upper lip
-created_by: sebastiankohler
-creation_date: 2013-06-04T02:43:27Z
 
 [Term]
 id: HP:0200094
