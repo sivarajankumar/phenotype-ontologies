@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 26:11:2013 23:00
+date: 15:12:2013 22:53
 saved-by: peter
 auto-generated-by: OBO-Edit 2.3
 subsetdef: hposlim_core "Core clinical terminology"
@@ -1055,6 +1055,7 @@ name: Menorrhagia
 def: "Abnormally heavy and prolonged menstrual period." [HPO:probinson]
 xref: UMLS:C0025323 "Menorrhagia"
 is_a: HP:0000140 ! Abnormality of the menstrual cycle
+is_a: HP:0001892 ! Abnormal bleeding
 
 [Term]
 id: HP:0000133
@@ -1809,6 +1810,7 @@ synonym: "Oral bleeding" EXACT []
 xref: UMLS:C0017565 "Gingival bleeding"
 xref: UMLS:C0029163 "Oral bleeding"
 is_a: HP:0000168 ! Abnormality of the gingiva
+is_a: HP:0001892 ! Abnormal bleeding
 
 [Term]
 id: HP:0000227
@@ -3282,6 +3284,7 @@ synonym: "nosebleed" EXACT []
 xref: MeSH:D004844 "Epistaxis"
 xref: UMLS:C2228238 "epistaxis"
 is_a: HP:0000366 ! Abnormality of the nose
+is_a: HP:0001892 ! Abnormal bleeding
 
 [Term]
 id: HP:0000422
@@ -3631,10 +3634,11 @@ is_a: HP:0000464 ! Abnormality of the neck
 
 [Term]
 id: HP:0000473
-name: Spasmodic torticollis
+name: Torticollis
 def: "Involuntary contractions of the `neck musculature` (FMA:71290) resulting in an abnormal posture of or abnormal movements of the head." [HPO:probinson]
 comment: The word torticollis comes from Latin words meaning twisted neck. Spasmodic torticollis is a focal dystonia that affects the neck and sometimes the shoulders, leading to involuntary contractions of the neck muscles, abnormal movements and postures of the head and neck. The abnormal movements can have both tonic and clonic components and can results in pain and discomfort. Spasmodic torticollis is the most common focal dystonia.
 synonym: "Cervical dystonia" EXACT []
+synonym: "Spasmodic torticollis" EXACT []
 xref: MeSH:D014103 "Torticollis"
 xref: UMLS:C0040485 "Torticollis"
 is_a: HP:0011006 ! Abnormality of the musculature of the neck
@@ -4301,7 +4305,7 @@ name: Optic disc pallor
 alt_id: HP:0001148
 alt_id: HP:0001484
 def: "A pale yellow discoloration of the optic disk (the area of the optic nerve head in the retina). The optic disc normally has a pinkish hue with a central yellowish depression." [HPO:probinson]
-comment: Optic disc pallor can be judged clinically with serial color photographs or by comparison to the other eye.
+comment: Optic disc pallor can be judged clinically with serial color photographs or by comparison to the other eye. The pallor reflects replacement of dead axons by glial tissue. The loss of the small capillaries within the nerve accounts for the shift from orange-pink to white.
 subset: hposlim_core
 synonym: "DISC PALLOR" RELATED [HPO:skoehler]
 synonym: "OPTIC DISK PALLOR" RELATED [HPO:skoehler]
@@ -6845,7 +6849,6 @@ name: Abnormality of the hypothalamus-pituitary axis
 alt_id: HP:0000838
 alt_id: HP:0000844
 def: "Abnormality of the pituitary gland (also known as hypophysis), which is an endocrine gland that protrudes from the bottom of the hypothalamus at the base of the brain. The pituitary gland secretes the hormones ACTH, TSH, PRL, GH, endorphins, FSH, LH, oxytocin, and antidiuretic hormone. The secretion of hormones from the anterior pituitary is under the strict control of hypothalamic hormones, and the posterior pituitary is essentially an extension of the hypothalamus, so that  hypothalamus and pituitary gland may be regarded as a functional unit." [DDD:spark]
-synonym: "Abnormality of the pituitary gland" EXACT []
 is_a: HP:0000818 ! Abnormality of the endocrine system
 
 [Term]
@@ -8753,7 +8756,7 @@ name: Xanthelasma
 def: "The presence of xanthomata in the skin of the eyelid." [HPO:curators]
 xref: UMLS:C0302314 "Xanthoma"
 is_a: HP:0000991 ! Xanthomatosis
-is_a: HP:0010604 ! Cysts of the eyelid
+is_a: HP:0010604 ! Cyst of the eyelid
 
 [Term]
 id: HP:0001115
@@ -10688,6 +10691,7 @@ name: Hepatic steatosis
 alt_id: HP:0002252
 alt_id: HP:0200121
 def: "The presence of `steatosis` (MPATH:622) in the `liver` (FMA:7197)." [eMedicine:175472, HPO:probinson]
+comment: Steatosis refers to an abnormal accumulation of lipids within a cell or tissue.
 synonym: "Fatty infiltration of liver" EXACT []
 synonym: "Fatty liver" EXACT []
 synonym: "Liver steatosis" EXACT []
@@ -11969,7 +11973,6 @@ id: HP:0001612
 name: Weak cry
 xref: UMLS:C0234860 "Weak cry"
 is_a: HP:0001608 ! Abnormality of the voice
-is_a: HP:0002795 ! Functional respiratory abnormality
 
 [Term]
 id: HP:0001613
@@ -13248,7 +13251,7 @@ name: Thick nail
 alt_id: HP:0001819
 alt_id: HP:0200088
 def: "Nail that appears thick when viewed on end." [pmid:19125433]
-comment: There is a build up of keratin causing the nail plate to lift away from the nail bed. The thickened nail plate is usually very hard.
+comment: There is a build up of keratin causing the nail plate to lift away from the nail bed. The thickened nail plate is usually very hard. Onychauxis and onychogryposis are dystrophic diseases of the nail in which the nail plate becomes decidedly hypertrophied. The differentiation of the two entities is only one of degree of severity.
 synonym: "Dystrophic thickened nails" EXACT []
 synonym: "Onychogryposis" EXACT []
 synonym: "Thickened nails" EXACT []
@@ -14583,7 +14586,7 @@ is_a: HP:0004332 ! Abnormality of lymphocytes
 [Term]
 id: HP:0001984
 name: Intolerance to protein
-is_a: HP:0001939 ! Abnormality of metabolism/homeostasis
+is_a: HP:0012537 ! Food intolerance
 
 [Term]
 id: HP:0001985
@@ -15653,7 +15656,6 @@ alt_id: HP:0007202
 alt_id: HP:0007284
 alt_id: HP:0007294
 def: "Seizures with sudden, brief (< 100 msec) involuntary single or multiple contraction(s) of muscles(s) or muscle groups of variable topography (axial, proximal limb, distal)." [HPO:jalbers]
-comment: This term should not be used for new annotations, instead annotate to the term Myoclonic seizures and use the annotation to state what proportion of affected patients have myoclonic seizures. This term will be obsoleted in the future.
 synonym: "Myoclonic epilepsy, progressive" RELATED []
 synonym: "Myoclonic seizures" BROAD []
 synonym: "Myoclonus seizures" EXACT []
@@ -15765,7 +15767,7 @@ is_a: HP:0001288 ! Gait disturbance
 [Term]
 id: HP:0002143
 name: Abnormality of the spinal cord
-def: "An abnormality of the spinal cord (myelon)." [HPO:probinson]
+def: "An abnormality of the `spinal cord` (FMA:7647) (myelon)." [HPO:probinson]
 synonym: "Spinal cord disease" RELATED []
 is_a: HP:0007319 ! Morphological abnormality of the central nervous system
 
@@ -17237,7 +17239,7 @@ is_a: HP:0001288 ! Gait disturbance
 id: HP:0002363
 name: Abnormality of the brainstem
 def: "An anomaly of the `brainstem` (FMA:79876)." [HPO:probinson]
-comment: Note: The term 'bulbar' refers to the brainstem.
+comment: The brainstem includes the `medulla oblongata` (FMA:62004), `pons` (FMA:67943), and `midbrain` (FMA:61993). Note that in clinical parlance, the term 'bulbar' refers to the brainstem.
 is_a: HP:0007319 ! Morphological abnormality of the central nervous system
 
 [Term]
@@ -18164,7 +18166,7 @@ name: Retrocollis
 def: "A form of `torticollis` (HP:0000473) in which the head is drawn back, either due to a permanent contractures of neck extensor muscles, or to a spasmodic contracture." [HPO:probinson, pmid:17917462]
 comment: Retrocollis is a spasmodic form of torticollis in which the head is drawn back.
 xref: UMLS:C0040485 "Torticollis"
-is_a: HP:0000473 ! Spasmodic torticollis
+is_a: HP:0000473 ! Torticollis
 
 [Term]
 id: HP:0002545
@@ -18701,6 +18703,7 @@ is_a: HP:0001679 ! Abnormality of the aorta
 [Term]
 id: HP:0002624
 name: Venous abnormality
+def: "An anomaly of `vein` (FMA:50723)." [HPO:probinson]
 xref: UMLS:C0241665 "VENOUS ABNORMALITY"
 is_a: HP:0002597 ! Abnormality of the vasculature
 
@@ -18787,7 +18790,7 @@ is_a: HP:0011004 ! Abnormality of the systemic arterial tree
 id: HP:0002637
 name: Cerebral ischemia
 xref: UMLS:C0007786 "Cerebral Ischemia"
-is_a: HP:0009145 ! Abnormalities of the cerebral arteries
+is_a: HP:0009145 ! Abnormality of cerebral artery
 is_a: HP:0100545 ! Arterial stenosis
 
 [Term]
@@ -20056,6 +20059,7 @@ is_a: HP:0006489 ! Abnormality of the femoral metaphysis
 [Term]
 id: HP:0002835
 name: Aspiration
+def: "Inspiration of a foreign object into the airway." [HPO:probinson]
 xref: UMLS:C0700198 "Aspiration"
 is_a: HP:0002795 ! Functional respiratory abnormality
 
@@ -20144,8 +20148,11 @@ is_a: HP:0005372 ! Abnormality of B cell physiology
 
 [Term]
 id: HP:0002848
-name: Moderately depressed antibody response to polysaccharide antigens
-is_a: HP:0004313 ! Hypogammaglobulinemia
+name: Specific anti-polysaccharide antibody deficiency
+def: "The presence of normal overall immunoglobulin levels with deficiency of specific immunoglobulins directed against bacterial polysaccharides." [HPO:probinson]
+comment: Specific anti-polysaccharide antibody deficiency is associated with an increased risk of infection with Streptococcus pneumoniae, Haemophilus influenzae type b, and Staphylococcus aureus.
+synonym: "Depressed antibody response to polysaccharide antigens" EXACT []
+is_a: HP:0012475 ! Specific antibody deficiency
 
 [Term]
 id: HP:0002849
@@ -22181,11 +22188,6 @@ xref: UMLS:C0151849 "Elevated alkaline phosphatase"
 is_a: HP:0004379 ! Abnormality of alkaline phosphatase activity
 
 [Term]
-id: HP:0003157
-name: Progressive axonal neuropathy with demyelinization on electroneurography
-is_a: HP:0000759 ! Abnormality of the peripheral nervous system
-
-[Term]
 id: HP:0003158
 name: Hyposthenuria
 def: "An abnormally low urinary specific gravity, i.e., reduced concentration of solutes in the urine." [HPO:probinson]
@@ -22476,8 +22478,11 @@ is_a: HP:0011805 ! Abnormality of muscle morphology
 [Term]
 id: HP:0003200
 name: Ragged-red muscle fibers
-def: "An abnormal appearance of muscle fibers observed on muscle biopsy. Ragged red fibers can be visualized with Gomori trichrome staining as irregular and intensely red subsarcolemmal zones, whereas the normal myofibrils are green. The margins of affect fibers appear red and ragged." [HPO:probinson]
-comment: This finding is demonstrated by muscle biopsy.
+alt_id: HP:0009076
+def: "An abnormal appearance of muscle fibers observed on muscle biopsy. Ragged red fibers can be visualized with Gomori trichrome staining as irregular and intensely red subsarcolemmal zones, whereas the normal myofibrils are green. The margins of affect fibers appear red and ragged. The ragged-red  is due to the accumulation of abnormal mitochondria below the plasma membrane of the muscle fiber, leading to the appearance of a red rim and speckled sarcoplasm." [HPO:probinson, pmid:12075011, pmid:16537564]
+comment: MERGED COMMENT:\nTARGET COMMENT: This finding is demonstrated by muscle biopsy. Note that additionally, muscle fibers with mitochondrial proliferation stain darkly for succinic dehydrogenase (SDH).\n--------------------\nSOURCE COMMENT: Respiratory chain complex IV activity can be assayed by immunofluorescence.
+synonym: "Mitochondrial proliferation in muscle tissue" EXACT []
+synonym: "Ragged red muscle fibers" EXACT []
 synonym: "Ragged-red fibers" EXACT []
 is_a: HP:0004303 ! Abnormality of muscle fibers
 
@@ -23091,6 +23096,8 @@ is_a: HP:0004339 ! Abnormality of sulfur amino acid metabolism
 [Term]
 id: HP:0003287
 name: Abnormality of mitochondrial metabolism
+def: "A functional anomaly of mitochondria." [ORCID:0000-0001-5208-3432]
+synonym: "Mitochondrial dysfunction" EXACT []
 is_a: HP:0012103 ! Abnormality of the mitochondrion
 
 [Term]
@@ -23781,6 +23788,7 @@ is_a: HP:0003398 ! Abnormality of the neuromuscular junction
 id: HP:0003398
 name: Abnormality of the neuromuscular junction
 def: "Any abnormality of the neuromuscular junction, which is the synapse between the motor end plate of a motor neuron and the skeletal muscle fibers." [HPO:probinson]
+synonym: "Abnormality of neuromuscular transmission" RELATED []
 is_a: HP:0000759 ! Abnormality of the peripheral nervous system
 
 [Term]
@@ -28502,6 +28510,7 @@ creation_date: 2008-03-11T07:50:00Z
 [Term]
 id: HP:0004347
 name: Weakness of muscles of respiration
+def: "Reduced function of the muscles required to generate subatmospheric pressure in the thoracic cavity during breathing: the diaphragm, the external intercostal and the interchondral part of the internal intercostal muscles." [HPO:probinson]
 is_a: HP:0001324 ! Muscle weakness
 is_a: HP:0002795 ! Functional respiratory abnormality
 created_by: peter
@@ -31112,12 +31121,6 @@ def: "A `continuous` (PATO:0000689) form of `lactic acidemia` (HP:0003128)." [HP
 is_a: HP:0003128 ! Lactic acidosis
 
 [Term]
-id: HP:0004899
-name: Chronic adult lactic acidosis
-def: "A chronic form of `lactic acidemia` (HP:0003128) with `adult onset` (HP:0003581)." [HPO:probinson]
-is_a: HP:0004925 ! Chronic lactic acidosis
-
-[Term]
 id: HP:0004900
 name: Severe lactic acidosis
 def: "A `severe` (PATO:0000396) form of `lactic acidemia` (HP:0003128)." [HPO:probinson]
@@ -31260,6 +31263,7 @@ is_a: HP:0001952 ! Abnormal glucose tolerance
 [Term]
 id: HP:0004925
 name: Chronic lactic acidosis
+alt_id: HP:0004899
 def: "A `chronic` (PATO:0001863) form of `lactic acidemia` (HP:0003128)." [HPO:probinson]
 is_a: HP:0003128 ! Lactic acidosis
 is_a: HP:0012468 ! Chronic acidosis
@@ -31305,6 +31309,7 @@ is_a: HP:0002634 ! Arteriosclerosis
 [Term]
 id: HP:0004933
 name: Ascending aortic dissection
+def: "A separation of the layers within the wall of the `ascending aorta` (FMA:3736). Tears in the intimal layer result in the propagation of dissection (proximally or distally) secondary to blood entering the intima-media space." [HPO:probinson]
 is_a: HP:0002647 ! Aortic dissection
 
 [Term]
@@ -31386,7 +31391,7 @@ synonym: "Intracranial aneurysm" EXACT []
 xref: MeSH:D002532 "Intracranial Aneurysm"
 xref: UMLS:C0917996 "Cerebral Aneurysm"
 is_a: HP:0002617 ! Aneurysm
-is_a: HP:0009145 ! Abnormalities of the cerebral arteries
+is_a: HP:0009145 ! Abnormality of cerebral artery
 
 [Term]
 id: HP:0004945
@@ -40200,6 +40205,11 @@ is_a: HP:0002275 ! Poor motor coordination
 [Term]
 id: HP:0007011
 name: Fourth cranial nerve palsy
+def: "Paralysis of the fourth cranial (trochlear) nerve manifested as weakness of the superior oblique muscle which causes vertical diplopia that is maximal when the affected eye is adducted and directed inferiorly." [ORCIRD:0000-0001-5208-3432]
+comment: The fourth cranial nerve crosses as it exits the midbrain dorsally and may be injured along its course through the intracranial space, cavernous sinus, superior orbital fissure, or orbit.
+synonym: "Superior oblique palsy" EXACT []
+synonym: "Trochlear nerve palsy" EXACT []
+xref: MeSH:D020432 "Trochlear Nerve Diseases"
 xref: UMLS:C0152176 "Fourth Cranial Nerve Palsy"
 is_a: HP:0006824 ! Cranial nerve paralysis
 
@@ -48811,11 +48821,6 @@ synonym: "Muscle weakness, progressive, proximal" EXACT []
 is_a: HP:0003701 ! Proximal muscle weakness
 
 [Term]
-id: HP:0009076
-name: Ragged-red fibers with decreased COX activity
-is_a: HP:0003200 ! Ragged-red muscle fibers
-
-[Term]
 id: HP:0009077
 name: Weakness of long finger extensor muscles
 is_a: HP:0001421 ! Abnormality of the musculature of the hand
@@ -49232,7 +49237,9 @@ creation_date: 2008-05-02T01:29:00Z
 
 [Term]
 id: HP:0009145
-name: Abnormalities of the cerebral arteries
+name: Abnormality of cerebral artery
+def: "An anomaly of a cerebral artery. The cerebral arteries comprise three main pairs of arteries and their branches, which supply the cerebrum of the brain. These are the `anterior cerebral artery` (FMA:50028), the `middle cerebral artery` (FMA:50079), and the `posterior cerebral artery` (FMA:50583)." [HPO:probinson]
+synonym: "Abnormality of the cerebral arteries" EXACT []
 is_a: HP:0011004 ! Abnormality of the systemic arterial tree
 is_a: HP:0100659 ! Abnormality of the cerebral vasculature
 created_by: peter
@@ -51360,30 +51367,30 @@ creation_date: 2009-01-12T11:42:37Z
 
 [Term]
 id: HP:0009370
-name: Type A Brachydactyly
+name: Type A brachydactyly
 is_a: HP:0001156 ! Brachydactyly syndrome
 created_by: doelkens
 creation_date: 2009-01-13T10:50:19Z
 
 [Term]
 id: HP:0009371
-name: Type A1 Brachydactyly
+name: Type A1 brachydactyly
 xref: UMLS:C1862151 "BRACHYDACTYLY, TYPE A1"
-is_a: HP:0009370 ! Type A Brachydactyly
+is_a: HP:0009370 ! Type A brachydactyly
 created_by: doelkens
 creation_date: 2009-01-13T10:50:19Z
 
 [Term]
 id: HP:0009372
-name: Type A2 Brachydactyly
+name: Type A2 brachydactyly
 xref: UMLS:C1832702 "BRACHYDACTYLY, TYPE A2"
-is_a: HP:0009370 ! Type A Brachydactyly
+is_a: HP:0009370 ! Type A brachydactyly
 created_by: doelkens
 creation_date: 2009-01-13T10:50:19Z
 
 [Term]
 id: HP:0009373
-name: Type C Brachydactyly
+name: Type C brachydactyly
 xref: UMLS:C1862103 "BRACHYDACTYLY, TYPE C"
 is_a: HP:0001156 ! Brachydactyly syndrome
 created_by: doelkens
@@ -55025,8 +55032,9 @@ creation_date: 2009-01-31T02:20:51Z
 
 [Term]
 id: HP:0009745
-name: Epidural arachnoid cysts of the spinal canal
-def: "Presence of arachnoid cysts of the spinal canal extradurally in the epidural space." [HPO:curators]
+name: Spinalarachnoid cyst
+def: "Presence of arachnoid cysts of the spinal canal extradurally in the epidural space." [HPO:probinson]
+synonym: "Epidural arachnoid cysts of the spinal canal" EXACT []
 is_a: HP:0010303 ! Abnormality of the spinal meninges
 is_a: HP:0100702 ! Arachnoid cyst
 created_by: peter
@@ -55176,7 +55184,7 @@ creation_date: 2009-02-01T03:12:09Z
 [Term]
 id: HP:0009763
 name: Limb pain
-def: "Chronic pain in the limbs with no clear focal etiology." [HPO:curators]
+def: "Chronic pain in the limbs with no clear focal etiology." [HPO:probinson]
 synonym: "Pain in extremities" RELATED []
 xref: UMLS:C0030196 "LIMB PAIN"
 is_a: HP:0011843 ! Abnormality of skeletal physiology
@@ -55856,6 +55864,7 @@ creation_date: 2009-02-23T05:17:25Z
 [Term]
 id: HP:0009830
 name: Peripheral neuropathy
+alt_id: HP:0003157
 alt_id: HP:0003407
 alt_id: HP:0007088
 alt_id: HP:0007235
@@ -62691,6 +62700,9 @@ creation_date: 2009-10-22T02:53:19Z
 [Term]
 id: HP:0010588
 name: Premature epimetaphyseal fusion
+def: "Stop of growth at the epiphyseal plate the hyaline cartilage plate in the metaphysis at each end of a long bone, at an earlier than normal age, resulting in growth arrest and shortening of the involved bone." [HPO:probinson, pmid:12624140]
+comment: The epiphysis is the rounded end of a long bone, at its joint with adjacent bone.
+synonym: "Premature closure of epiphyses" EXACT []
 is_a: HP:0005930 ! Abnormality of the epiphyses
 created_by: sandra1
 creation_date: 2009-10-22T02:53:19Z
@@ -62814,9 +62826,9 @@ creation_date: 2009-10-27T02:26:31Z
 
 [Term]
 id: HP:0010604
-name: Cysts of the eyelid
+name: Cyst of the eyelid
 is_a: HP:0010732 ! Nodular changes affecting the eyelids
-is_a: HP:0200040 ! Skin cysts
+is_a: HP:0200040 ! Epidermoid cyst
 created_by: sandra1
 creation_date: 2009-10-27T10:57:50Z
 
@@ -62827,7 +62839,7 @@ def: "A chronic epithelioid cell granulomatous inflammation of the meibomian gla
 synonym: "Meibomian gland lipogranuloma" EXACT [HPO:curators]
 xref: MeSH:D017043 "Chalazion"
 xref: UMLS:C1034112 "Chalazion"
-is_a: HP:0010604 ! Cysts of the eyelid
+is_a: HP:0010604 ! Cyst of the eyelid
 created_by: sandra1
 creation_date: 2009-10-27T10:58:24Z
 
@@ -62837,7 +62849,7 @@ name: Hordeolum
 def: "An acute purulent infection of the sebaceous glands of Zeis at the base of the eyelashes, of the apocrine sweat glands of Moll or the meibomian sebacious glands often caused by staphylococcus infections. Hordeola can either occur as Hordeola externa affecting the sebaceous glands of Zeis or the apocrine sweat glands of Moll or as Hordeola interna affecting the meibomian sebacious glands. In contrast to chalazia, hordeola are extremely painful and can cause extreme local swelling." [HPO:sdoelken]
 xref: MeSH:D006726 "Hordeolum"
 xref: UMLS:C0019917 "Hordeolum"
-is_a: HP:0010604 ! Cysts of the eyelid
+is_a: HP:0010604 ! Cyst of the eyelid
 created_by: sandra1
 creation_date: 2009-10-27T11:01:13Z
 
@@ -64172,7 +64184,8 @@ creation_date: 2010-04-23T10:32:46Z
 
 [Term]
 id: HP:0010754
-name: Abnormality of the temperomandibular joint
+name: Abnormality of the temporomandibular joint
+def: "An anomaly of the `temporomandibular joint` (FMA:54832)." [HPO:probinson]
 is_a: HP:0000277 ! Abnormality of the mandible
 created_by: sdoelken
 creation_date: 2010-04-23T10:36:28Z
@@ -67294,6 +67307,8 @@ id: HP:0011098
 name: Speech apraxia
 def: "A type of apraxia that is characterized by difficulty or inability to execute speech movements because of problems with coordination and motor problems, leading to incorrect articulation. An increase of errors with increasing word and phrase length may occur." [HPO:probinson]
 comment: Speech apraxia may co-occur with oral apraxia and limb apraxia.
+synonym: "Apraxia of speech" EXACT []
+synonym: "Verbal dyspraxia" EXACT []
 is_a: HP:0002186 ! Apraxia
 created_by: peter
 creation_date: 2011-05-15T08:57:11Z
@@ -70310,7 +70325,7 @@ id: HP:0011441
 name: Abnormality of the medulla oblongata
 def: "An abnormality of the `medulla oblongata` (FMA:62004), the lower half of the brainstem." [HPO:probinson]
 comment: The medulla oblongata, which is often referred to simply as the medulla, comprises the medullary reticular formation, inferior olivary complex and cochlear nuclear complex, among other structures.
-is_a: HP:0007319 ! Morphological abnormality of the central nervous system
+is_a: HP:0002363 ! Abnormality of the brainstem
 created_by: peter
 creation_date: 2012-03-18T01:51:24Z
 
@@ -72347,13 +72362,16 @@ creation_date: 2012-04-10T07:41:53Z
 [Term]
 id: HP:0011678
 name: Tetralogy of Fallot with pulmonary atresia and major aortopulmonary collateral arteries
-is_a: HP:0001636 ! Tetralogy of Fallot
+def: "A type of tetralogy of Fallot with pulmonary atresia in which all pulmonary blood flow is derived from major aortopulmonary collateral arteries (MAPCA)." [HPO:probinson, pmid:22368654]
+comment: Major aortopulmonary collateral arteries (MACPAs) are arteries that develop to supply blood to the lungs when native pulmonary circulation is underdeveloped. That is, the blood supply to the lungs derives from the aorta rather than from the pulmonary artery.
+is_a: HP:0012516 ! Tetralogy of Fallot with pulmonary atresia
 created_by: peter
 creation_date: 2012-04-10T07:43:01Z
 
 [Term]
 id: HP:0011679
 name: Tetralogy of Fallot with pulmonary stenosis
+def: "The commonest form of tetralogy of Fallot characterized by pulmonary stenosis, overriding aorta, ventricular septum defect, and right ventricular hypertrophy, without pulmonary atresia, absent pulmonary valve, atrioventricular canal defect or absent subarterial conus." [HPO:probinson]
 is_a: HP:0001636 ! Tetralogy of Fallot
 created_by: peter
 creation_date: 2012-04-10T07:44:06Z
@@ -72934,7 +72952,7 @@ id: HP:0011747
 name: Abnormality of the anterior pituitary
 def: "An abnormality of the `adenohypophysis` (FMA:74627), which is also known as the anterior lobe of the pituitary gland." [DDD:spark]
 synonym: "Pituitary disease" RELATED []
-is_a: HP:0000864 ! Abnormality of the hypothalamus-pituitary axis
+is_a: HP:0012503 ! Abnormality of the pituitary gland
 created_by: peter
 creation_date: 2012-04-22T11:17:00Z
 
@@ -72972,7 +72990,7 @@ creation_date: 2012-04-22T01:18:46Z
 id: HP:0011751
 name: Abnormality of the posterior pituitary
 def: "An abnormality of the `neurohypophysis` (FMA:74628), which is also known as the posterior lobe of the hypophysis." [DDD:spark, HPO:probinson]
-is_a: HP:0000864 ! Abnormality of the hypothalamus-pituitary axis
+is_a: HP:0012503 ! Abnormality of the pituitary gland
 created_by: peter
 creation_date: 2012-04-22T01:20:33Z
 
@@ -73676,10 +73694,10 @@ creation_date: 2012-05-01T07:42:15Z
 [Term]
 id: HP:0011834
 name: Moyamoya phenomenon
-def: "A noninflammatory, progressive occlusion of the intracranial carotid arteries owing to the formation of netlike collateral arteries arising from the circle of Willis." [HPO:probinson]
+def: "A noninflammatory, progressive occlusion of the intracranial carotid arteries owing to the formation of netlike collateral arteries arising from the `circle of Willis` (FMA:50454)." [HPO:probinson]
 comment: Cerebral angiography shows puff-of-smoke (moyamoya) collaterals at the base of the brain.
 xref: MeSH:D009072 "Moyamoya Disease"
-is_a: HP:0009145 ! Abnormalities of the cerebral arteries
+is_a: HP:0012518 ! Abnormality of circle of Willis
 created_by: peter
 creation_date: 2012-05-05T03:24:26Z
 
@@ -74058,7 +74076,7 @@ creation_date: 2012-05-31T03:58:17Z
 id: HP:0011878
 name: Abnormal platelet membrane protein expression
 def: "Presence of reduced amount of a membrane protein on the cell membrane of platelets. This feature is typically measured by flow cytometry." [DDD:wouwehand]
-is_a: HP:0011875 ! Abnormal platelet morphology
+is_a: HP:0011869 ! Abnormal platelet function
 created_by: peter
 creation_date: 2012-05-31T04:00:21Z
 
@@ -74100,7 +74118,8 @@ creation_date: 2012-06-02T09:18:58Z
 [Term]
 id: HP:0011883
 name: Abnormal platelet granules
-def: "An anomaly of alpha or dense granules or platelet lysososmes." [DDD:wouwehand]
+def: "An anomaly of alpha or dense granules or platelet lysosomes." [DDD:wouwehand, pmid:18041654]
+comment: Platelets contain two classes of granule: the alpha granules and the dense granules. During platelet activation, the contents of the granules are discharged into the lumen of the open canalicular system, from which they are then released to the extracellular space.
 is_a: HP:0011875 ! Abnormal platelet morphology
 created_by: peter
 creation_date: 2012-06-02T09:47:57Z
@@ -76001,6 +76020,7 @@ id: HP:0012103
 name: Abnormality of the mitochondrion
 def: "An anomaly of the `mitochondrion` (FMA:63835), the membranous cytoplasmic organelle the interior of which is subdivided by cristae. The `mitochondrion` (GO:0005739) is a self replicating organelle that is the site of tissue respiration." [HPO:probinson]
 synonym: "MITOCHONDRIAL ABNORMALITIES" RELATED [HPO:skoehler]
+xref: MeSH:D028361 "Mitochondrial Diseases"
 is_a: HP:0011017 ! Abnormality of cell physiology
 created_by: peter
 creation_date: 2012-09-08T11:05:06Z
@@ -76322,14 +76342,6 @@ def: "An anomaly of cells that originate from the `lymphoid lineage restricted p
 is_a: HP:0005561 ! Abnormality of bone marrow cell morphology
 created_by: peter
 creation_date: 2012-09-16T08:13:39Z
-
-[Term]
-id: HP:0012141
-name: Lymphocvtosis
-def: "Increase in the number or proportion of lymphocytes in the blood." [DDD:akelly]
-is_a: HP:0012140 ! Abnormality of cells of the lymphoid lineage
-created_by: peter
-creation_date: 2012-09-16T08:18:05Z
 
 [Term]
 id: HP:0012142
@@ -76741,8 +76753,11 @@ creation_date: 2013-02-24T09:58:18Z
 
 [Term]
 id: HP:0012189
-name: Hodgkin's lymphoma
+name: Hodgkin lymphoma
 def: "A typer of lymphoma characterized microscopically by multinucleated Reed-Sternberg cells." [HPO:probinson]
+synonym: "Hodgkin disease" EXACT []
+synonym: "Hodgkin's lymphoma" EXACT []
+xref: MeSH:D006689 "Hodgkin Disease"
 is_a: HP:0002665 ! Lymphoma
 created_by: peter
 creation_date: 2013-02-27T06:53:11Z
@@ -76753,7 +76768,7 @@ name: T-cell lymphoma
 def: "A type of lymphoma that originates in T-cells." [HPO:probinson]
 synonym: "T cell lymphoma" EXACT []
 xref: MeSH:D016399 "Lymphoma, T-Cell"
-is_a: HP:0002665 ! Lymphoma
+is_a: HP:0012539 ! Non-Hodgkin lymphoma
 created_by: peter
 creation_date: 2013-02-27T06:56:11Z
 
@@ -76763,7 +76778,7 @@ name: B-cell lymphoma
 def: "A type of lymphoma that originates in B-cells." [HPO:probinson]
 synonym: "B cell lymphoma" EXACT []
 xref: MeSH:D016393 "Lymphoma, B-Cell"
-is_a: HP:0002665 ! Lymphoma
+is_a: HP:0012539 ! Non-Hodgkin lymphoma
 created_by: peter
 creation_date: 2013-02-27T06:59:05Z
 
@@ -76779,7 +76794,7 @@ creation_date: 2013-02-27T07:03:19Z
 [Term]
 id: HP:0012193
 name: Anaplastic large-cell lymphoma
-def: "A type of T-cell lymphoma that is characterized by so-called hallmark cells with a pleomorphic appearance that expres the CD30 antigen, are lobulated, and have indented nuclei." [HPO:probinson]
+def: "A type of T-cell lymphoma that is characterized by so-called hallmark cells with a pleomorphic appearance that express the CD30 antigen, are lobulated, and have indented nuclei. These so-called hallmark cells have lobulated and indented nuclei." [HPO:probinson]
 xref: MeSH:D017728 "Lymphoma, Large-Cell, Anaplastic"
 is_a: HP:0012190 ! T-cell lymphoma
 created_by: peter
@@ -79250,6 +79265,596 @@ synonym: "Atrophy of the tongue" EXACT []
 is_a: HP:0000157 ! Abnormality of the tongue
 created_by: peter
 creation_date: 2013-11-26T22:32:31Z
+
+[Term]
+id: HP:0012474
+name: Carotid artery occlusion
+def: "Complete obstruction of a carotid artery." [ORCID:0000-0001-5208-3432]
+comment: Carotid artery occlusion is usually caused by caused by atherosclerosis.
+is_a: HP:0005344 ! Abnormality of the carotid arteries
+created_by: peter
+creation_date: 2013-11-27T22:11:40Z
+
+[Term]
+id: HP:0012475
+name: Specific antibody deficiency
+def: "The presence of normal overall immunoglobulin levels with deficiency of specific immunoglobulins directed against a specific antigen or microorganism." [HPO:probinson, pmid:17100769]
+is_a: HP:0010701 ! Abnormal immunoglobulin level
+created_by: peter
+creation_date: 2013-11-27T22:21:15Z
+
+[Term]
+id: HP:0012476
+name: Specific pneumococcal antibody deficiency
+def: "The presence of normal overall immunoglobulin levels with deficiency of specific immunoglobulins directed against pneumococci." [HPO:probinson]
+is_a: HP:0012475 ! Specific antibody deficiency
+created_by: peter
+creation_date: 2013-11-27T22:28:04Z
+
+[Term]
+id: HP:0012477
+name: Vocal tremor
+def: "A wavering, unsteady voice that reflects involuntary and approximately sinusoidal oscillation of motor unit firings of laryngeal muscles. Vocal tremor results in low frequency modulations of voice frequency or amplitude and intermittent voice instability." [HPO:probinson, pmid:22505778]
+is_a: HP:0001337 ! Tremor
+created_by: peter
+creation_date: 2013-11-28T07:11:37Z
+
+[Term]
+id: HP:0012478
+name: Temporomandibular joint ankylosis
+def: "Fusion of the mandibular condyle to the base of the skull, resulting in limitation of jaw opening." [ORCID:0000-0001-5208-3432]
+synonym: "Temporomandibular joint fusion" EXACT []
+is_a: HP:0010754 ! Abnormality of the temporomandibular joint
+created_by: peter
+creation_date: 2013-11-28T07:24:24Z
+
+[Term]
+id: HP:0012479
+name: Temporomandibular joint crepitus
+def: "Noises from the temporomandibular joint during mandibular movement (e.g., chewing). Temporomandibular joint crepitus is often described as a clicking,  popping, grating sound." [HPO:probinson]
+is_a: HP:0010754 ! Abnormality of the temporomandibular joint
+created_by: peter
+creation_date: 2013-11-28T07:28:13Z
+
+[Term]
+id: HP:0012480
+name: Abnormality of cerebral veins
+def: "An anomaly of `cerebral veins` (FMA:70861)." [HPO:probinson]
+is_a: HP:0100659 ! Abnormality of the cerebral vasculature
+created_by: peter
+creation_date: 2013-11-28T08:01:32Z
+
+[Term]
+id: HP:0012481
+name: Cerebral venous angioma
+def: "A congenital malformation of veins which drain normal brain characterized by a caput medusae or an umbrellalike convergence of multiple venules on a single, or occasionally multiple, enlarged parenchymal or medullary vein, like the trunk of a tree or the shank of an umbrella. This dilated terminal vein penetrates the cortex to drain either (a) superficially to cortical veins or sinuses, (b) deeply to subependymal veins of the lateral ventricle and then into the galenic system, (c) to the fourth ventricle and then to the pontomesencephalic vein, or (d) to the precentral cerebellar vein and into the galenic system." [HPO:probinson, pmid:8770251]
+comment: DVA is characterized by a caput medusae or an umbrellalike convergence of multiple venules on a single, or occasionally multiple, enlarged parenchymal or medullary vein, like the trunk of a tree or the shank of an umbrella. This dilated terminal vein penetrates the cortex to drain either (a) superficially to cortical veins or sinuses, (b) deeply to subependymal veins of the lateral ventricle and then into the galenic system, (c) to the fourth ventricle and then to the pontomesencephalic vein, or (d) to the precentral cerebellar vein and into the galenic system.
+synonym: "Developmental Venous Anomaly" EXACT []
+is_a: HP:0012480 ! Abnormality of cerebral veins
+created_by: peter
+creation_date: 2013-11-28T08:03:08Z
+
+[Term]
+id: HP:0012482
+name: Frontal venous angioma
+def: "A venous angioma of the frontal lobe of the brain." [HPO:probinson]
+is_a: HP:0012481 ! Cerebral venous angioma
+created_by: peter
+creation_date: 2013-11-28T08:12:07Z
+
+[Term]
+id: HP:0012483
+name: Abnormal alpha granules
+def: "Defective structure, size or content of alpha granules, platelet organelles that contain several growth factors destined for release during platelet activation at sites of vessel wall injury." [DDD:wouwehand, pmid:8467233]
+comment: This feature can be observed by electron microscopy. Alpha granules normally contain a number of proteins including von Willebrand factor, and fibrinogen.
+is_a: HP:0011883 ! Abnormal platelet granules
+created_by: peter
+creation_date: 2013-11-29T07:44:49Z
+
+[Term]
+id: HP:0012484
+name: Abnormal dense granules
+def: "Defective structure, size or content of dense granules, platelet organelles that  contain granules proaggregatory factors such as adenosine diphosphate (ADP), adenosine triphosphate (ATP), ionized calcium , histamine and serotonin." [DDD:wouwehand]
+comment: This feature can be observed by electron microscopy.
+is_a: HP:0011883 ! Abnormal platelet granules
+created_by: peter
+creation_date: 2013-11-29T07:48:08Z
+
+[Term]
+id: HP:0012485
+name: Abnormal surface-connected open canalicular system
+def: "An anomaly of the invaginations of the surface membrane that form the open canalicular system (OCS). The OCS serve as the pathway for transport of substances into the cells and as conduits for the discharge of alpha granule products secreted during the platelet release reaction." [HPO:probinson, pmid:1760557]
+is_a: HP:0011875 ! Abnormal platelet morphology
+created_by: peter
+creation_date: 2013-11-29T07:55:15Z
+
+[Term]
+id: HP:0012486
+name: Myelitis
+def: "Inflammation of the `spinal cord` (FMA:7647)." [HPO:probinson]
+xref: MeSH:D009187 "Myelitis"
+is_a: HP:0002143 ! Abnormality of the spinal cord
+created_by: peter
+creation_date: 2013-11-29T08:10:12Z
+
+[Term]
+id: HP:0012487
+name: Cerebellopontine angle arachnoid cyst
+def: "An arachnoid cyst located at the margin of the cerebellum and pons." [ORCID:0000-0001-5208-3432]
+is_a: HP:0100702 ! Arachnoid cyst
+created_by: peter
+creation_date: 2013-11-29T21:03:39Z
+
+[Term]
+id: HP:0012488
+name: Intraventricular arachnoid cyst
+def: "An arachnoid cyst located within the ventricular system." [HPO:probinson, pmid:8951893]
+comment: Arachnoid cysts very rarely occur within the ventricular system, where no arachnoid tissue exists.
+is_a: HP:0100702 ! Arachnoid cyst
+created_by: peter
+creation_date: 2013-11-29T21:08:46Z
+
+[Term]
+id: HP:0012489
+name: Suprasellar arachnoid cyst
+def: "An arachnoid cyst that progressively enlarges from an abnormality in the membrane of Liliequist or in the interpeduncular cistern, and typically, expands from the prepontine space, displacing the floor of the third ventricle upwards, the pituitary stalk and optic chiasm upwards and forwards, and the mammillary bodies upwards and backwards." [HPO:probinson, pmid:21586175]
+comment: As the cyst increases in size it fills and occludes the third ventricle, and distorts and blocks the aqueduct, which finally results in hydrocephalus.
+is_a: HP:0100702 ! Arachnoid cyst
+created_by: peter
+creation_date: 2013-11-29T21:11:20Z
+
+[Term]
+id: HP:0012490
+name: Panniculitis
+def: "Inflammation of `adipose tissue` (FMA)20110)." [HPO:probinson]
+comment: Panniculitis most commonly affects the skin and characterized by reddened subcutaneous nodules.
+xref: MeSH:D015434 "Panniculitis"
+is_a: HP:0009124 ! Abnormality of adipose tissue
+created_by: peter
+creation_date: 2013-11-29T21:28:11Z
+
+[Term]
+id: HP:0012491
+name: Abnormal dense tubular system
+def: "An anomaly of the intracellular membrane complexes known as the dense tubular system." [DDD:wouwehand, pmid:1322202]
+comment: The dense tubular system (DTS) functions to regulate platelet activation by sequestering or releasing calcium, similar to the sarcotubules of skeletal muscle. In resting platelets, the DTS exists as thin elongated membranes. Within 10 seconds of the addition of thrombin, platelets show a major ultrastructural change in their DTS: from the thin elongated form to a rounded vesicular form.
+is_a: HP:0011875 ! Abnormal platelet morphology
+created_by: peter
+creation_date: 2013-11-29T21:35:44Z
+
+[Term]
+id: HP:0012492
+name: Cerebral artery stenosis
+def: "Narrowing or constriction of the inner surface (lumen) of a cerebral artery." [ORCID:0000-0001-5208-3432]
+is_a: HP:0009145 ! Abnormality of cerebral artery
+created_by: peter
+creation_date: 2013-11-30T08:00:55Z
+
+[Term]
+id: HP:0012493
+name: Middle cerebral artery stenosis
+def: "Narrowing or constriction of the inner surface (lumen) of the `middle cerebral artery` (FMA:50079)." [HPO:probinson]
+is_a: HP:0012492 ! Cerebral artery stenosis
+created_by: peter
+creation_date: 2013-11-30T08:04:27Z
+
+[Term]
+id: HP:0012494
+name: Anterior cerebral artery stenosis
+def: "Narrowing or constriction of the inner surface (lumen) of the `anterior cerebral artery` (FMA:50028)." [HPO:probinson]
+is_a: HP:0012492 ! Cerebral artery stenosis
+created_by: peter
+creation_date: 2013-11-30T08:06:15Z
+
+[Term]
+id: HP:0012495
+name: Posterior cerebral artery stenosis
+def: "Narrowing or constriction of the inner surface (lumen) of the `posterior cerebral artery` (FMA:50583)." [HPO:probinson]
+is_a: HP:0012492 ! Cerebral artery stenosis
+created_by: peter
+creation_date: 2013-11-30T08:07:04Z
+
+[Term]
+id: HP:0012496
+name: Reduced maximal inspiratory pressure
+def: "A decrease in the maximum amount of negative pressure a person can generate during an inhalation." [ORCID:0000-0001-5208-3432]
+is_a: HP:0004347 ! Weakness of muscles of respiration
+created_by: peter
+creation_date: 2013-11-30T08:24:33Z
+
+[Term]
+id: HP:0012497
+name: Reduced maximal expiratory pressure
+def: "A decrease in the maximum amount of pressure of expired air achieved by a person after a full inspiration." [ORCID:0000-0001-5208-3432]
+is_a: HP:0004347 ! Weakness of muscles of respiration
+created_by: peter
+creation_date: 2013-11-30T08:28:49Z
+
+[Term]
+id: HP:0012498
+name: Nuchal cord
+def: "A complication of pregnancy and delivery in which the umbilical cord wraps around the fetal neck once or multiple times." [HPO:probinson]
+xref: MeSH:D053589 "Nuchal Cord"
+is_a: HP:0001787 ! Abnormal delivery
+created_by: peter
+creation_date: 2013-11-30T08:32:27Z
+
+[Term]
+id: HP:0012499
+name: Descending aortic dissection
+def: "A separation of the layers within the wall of the `descending aorta` (FMA:3784). Tears in the intimal layer result in the propagation of dissection (proximally or distally) secondary to blood entering the intima-media space." [HPO:probinson]
+is_a: HP:0002647 ! Aortic dissection
+created_by: peter
+creation_date: 2013-11-30T08:44:18Z
+
+[Term]
+id: HP:0012500
+name: Verrucous papule
+def: "A wartlike (with multiple small elevated projections) papule." [HPO:probinson]
+is_a: HP:0200034 ! Papule
+created_by: peter
+creation_date: 2013-11-30T09:03:16Z
+
+[Term]
+id: HP:0012501
+name: Abnormality of the brainstem white matter
+def: "An anomaly of the `white matter of brainstem` (FMA:282112)." [HPO:probinson]
+comment: White matter consists mostly of glial cells and myelinated axons that transmit signals through the nervous system. The brainstem includes the `medulla oblongata` (FMA:62004), `pons` (FMA:67943), and `midbrain` (FMA:61993).
+is_a: HP:0002363 ! Abnormality of the brainstem
+created_by: peter
+creation_date: 2013-11-30T09:19:46Z
+
+[Term]
+id: HP:0012502
+name: Abnormality of the internal capsule
+def: "An anomaly of the `internal capsule` (FMA:61950), which is an area of white matter in the brain that separates the caudate nucleus and the thalamus from the putamen and the globus pallidus." [HPO:probinson]
+is_a: HP:0002500 ! Abnormality of the cerebral white matter
+created_by: peter
+creation_date: 2013-11-30T09:29:18Z
+
+[Term]
+id: HP:0012503
+name: Abnormality of the pituitary gland
+def: "An anomaly of the `pituitary gland` (FMA:13889)." [HPO:probinson]
+is_a: HP:0000864 ! Abnormality of the hypothalamus-pituitary axis
+created_by: peter
+creation_date: 2013-11-30T09:34:21Z
+
+[Term]
+id: HP:0012504
+name: Abnormal size of pituitary gland
+def: "A deviation from the normal size of the `pituitary gland` (FMA:13889)." [HPO:probinson]
+is_a: HP:0012503 ! Abnormality of the pituitary gland
+created_by: peter
+creation_date: 2013-11-30T09:36:04Z
+
+[Term]
+id: HP:0012505
+name: Enlarged pituitary gland
+def: "An abnormally increased size of the `pituitary gland` (FMA:13889)." [ORCID:0000-0001-5208-3432]
+is_a: HP:0012504 ! Abnormal size of pituitary gland
+created_by: peter
+creation_date: 2013-11-30T09:36:45Z
+
+[Term]
+id: HP:0012506
+name: Small pituitary gland
+def: "An abnormally decreased size of the `pituitary gland` (FMA:13889)." [ORCID:0000-0001-5208-3432]
+is_a: HP:0012504 ! Abnormal size of pituitary gland
+created_by: peter
+creation_date: 2013-11-30T09:37:34Z
+
+[Term]
+id: HP:0012507
+name: Weakness of orbicularis oculi muscle
+def: "Reduced strength of the `orbicularis oculi` (FMA:46779), the circumorbital muscle in the face that closes the eyelid." [HPO:probinson]
+is_a: HP:0000301 ! Abnormality of facial musculature
+created_by: peter
+creation_date: 2013-12-08T08:12:54Z
+
+[Term]
+id: HP:0012508
+name: Metamorphopsia
+def: "A visual anomaly in which images appear distorted. A grid of straight lines appears wavy and parts of the grid may appear blank." [HPO:probinson]
+is_a: HP:0000504 ! Abnormality of vision
+created_by: peter
+creation_date: 2013-12-08T08:21:46Z
+
+[Term]
+id: HP:0012509
+name: Reduced thyroxin-binding globulin
+def: "An abnormally decreased amount of thyroxin-binding globulin (TBG) in blood. TBG is responsible for carrying the thyroid hormones thyroxine (T4) and 3,5,3'-triiodothyronine (T3) in the bloodstream." [HPO:probinson]
+comment: Thyroxin-binding globulin is known as serpin peptidase inhibitor, clade A (alpha-1 antiproteinase, antitrypsin), member 7 (SERPINA7), Entrez Gene ID 6906. Individuals with TBG deficiency are euthyroid.
+is_a: HP:0010876 ! Abnormality of circulating protein level
+created_by: peter
+creation_date: 2013-12-08T08:25:46Z
+
+[Term]
+id: HP:0012510
+name: Extra-axial cerebrospinal fluid accumulation
+def: "An increased amount of cerebrospinal fluid (CSF) in the subarachnoid space." [HPO:probinson, pmid:22327705, pmid:23838695]
+is_a: HP:0002921 ! Abnormality of the cerebrospinal fluid
+created_by: peter
+creation_date: 2013-12-08T08:37:34Z
+
+[Term]
+id: HP:0012511
+name: Temporal optic disc pallor
+def: "A pale yellow discoloration of the temporal (lateral) portion of the optic disc." [HPO:probinson, pmid:19668477]
+comment: Temporal pallor is seen in conditions that selectively affect the papillo-macular bundle. The word temporal refers to the temporal bone (FMA:52737) at the side of the head.
+is_a: HP:0000543 ! Optic disc pallor
+created_by: peter
+creation_date: 2013-12-08T08:55:48Z
+
+[Term]
+id: HP:0012512
+name: Diffuse optic disc pallor
+def: "A pale yellow discoloration of the entire optic disc." [HPO:probinson, pmid:19668477]
+comment: Temporal pallor is seen in conditions that selectively affect the papillo-macular bundle. The word temporal refers to the temporal bone (FMA:52737) at the side of the head.
+is_a: HP:0000543 ! Optic disc pallor
+created_by: peter
+creation_date: 2013-12-08T09:02:25Z
+
+[Term]
+id: HP:0012513
+name: Upper limb pain
+def: "Pain in the arm with no clear focal etiology." [ORCID:0000-0001-5208-3432]
+is_a: HP:0009763 ! Limb pain
+created_by: peter
+creation_date: 2013-12-08T09:07:11Z
+
+[Term]
+id: HP:0012514
+name: Lower limb pain
+def: "Pain in the leg with no clear focal etiology." [ORCID:0000-0001-5208-3432]
+is_a: HP:0009763 ! Limb pain
+created_by: peter
+creation_date: 2013-12-08T09:10:29Z
+
+[Term]
+id: HP:0012515
+name: Hip flexor weakness
+def: "Reduced ability to flex the femur, that is, to pull the knee upward." [ORCID:0000-0001-5208-3432]
+comment: Hip flexion is mediated by multiple muscles including the iliopsoas, the rectus femoris, the sartorius, and several muscles from the medial compartment of thigh.
+is_a: HP:0003749 ! Pelvic girdle muscle weakness
+created_by: peter
+creation_date: 2013-12-08T09:14:34Z
+
+[Term]
+id: HP:0012516
+name: Tetralogy of Fallot with pulmonary atresia
+def: "An extreme form of tetralogy of Fallot characterized by absence of flow from the right ventricle to the pulmonary arteries." [ORCID:0000-0001-5208-3432, pmid:22368654]
+comment: Tetralogy of Fallot with Pulmonary Atresia (TOF/PA) is a complex lesion with many different anatomic variants. The primary source of variability in this lesion is in the anatomy of the pulmonary arteries, with the spectrum ranging from well-formed, confluent pulmonary artery branches to completely absent native pulmonary arteries and major aorto-pulmonary collaterals (MAPCA's) providing all the pulmonary blood flow. The majority of cases fall somewhere in between these two ends of the spectrum, with the total pulmonary blood flow provided by a combination of diminutive native pulmonary arteries and multiple MAPCA.
+is_a: HP:0001636 ! Tetralogy of Fallot
+created_by: peter
+creation_date: 2013-12-08T09:44:24Z
+
+[Term]
+id: HP:0012517
+name: Reduced catalase activity
+def: "An abnormally decreased amount of `catalase activity` (GO:0004096)." [HPO:probinson]
+comment: Catalase catalyzes the decomposition of hydrogen peroxide to water and oxygen.
+is_a: HP:0012379 ! Abnormal enzyme/coenzyme activity
+created_by: peter
+creation_date: 2013-12-09T06:49:18Z
+
+[Term]
+id: HP:0012518
+name: Abnormality of circle of Willis
+def: "An anomaly of the `circle of Willis` (FMA:50454), also known as the cerebral arterial circle." [HPO:probinson]
+comment: The circle of Willis is a circulatory anastomosis in the brain comprised of the anterior cerebral arteries, the anterior communicating artery, the internal carotid arteries, the posterior cerebral arteries, and the posterior communicating arteries.
+is_a: HP:0009145 ! Abnormality of cerebral artery
+created_by: peter
+creation_date: 2013-12-09T07:03:02Z
+
+[Term]
+id: HP:0012519
+name: Hypoplastic posterior communicating artery
+def: "Underdeveloped `posterior communicating artery` (FMA:50084)." [ORCID:0000-0001-5208-3432]
+comment: The posterior communicating arteries connect the internal carotid artery just proximal to its bifurcation into the anterior cerebral artery and middle cerebral artery with the posterior cerebral artery. The posterior communicating artery is part of the circle of Willis.
+synonym: "Hypoplastic posterior communicating arteries" RELATED []
+is_a: HP:0012518 ! Abnormality of circle of Willis
+created_by: peter
+creation_date: 2013-12-09T07:06:12Z
+
+[Term]
+id: HP:0012520
+name: Perivascular spaces
+def: "Increased dimensions of the Virchow-Robin spaces (also known as perivascular spaces), which surround the walls of vessels as they course from the subarachnoid space through the brain parenchyma. Perivascular spaces are commonly microscopic, and not visible on conventional neuroimaging. This term refers to an increase of size of these spaces such that they are visible on neuroimaging (usually magnetic resonance imaging). The dilatations are regular cavities that always contain a patent artery." [ORCID:0000-0001-5208-3432, pmid:17620468, pmid:23867200]
+comment: Virchow-Robin spaces are commonly seen at magnetic resonance imaging. These perivascular spaces as fluid-filled spaces that follow the typical course of a vessel as it goes through grey or white matter. The spaces have signal intensity similar to that of cerebrospinal fluid (CSF) on all magnetic resonance sequences.
+synonym: "Dilatation of Virchow-Robin spaces " EXACT []
+synonym: "Dilated cerebral perivascular spaces" RELATED []
+synonym: "Dilated Virchow-Robin spaces" EXACT []
+is_a: HP:0100659 ! Abnormality of the cerebral vasculature
+created_by: peter
+creation_date: 2013-12-09T07:17:47Z
+
+[Term]
+id: HP:0012521
+name: Optic nerve aplasia
+def: "Congenital absence of the `optic nerve` (FMA:50863)." [HPO:probinson]
+synonym: "Aplastic optic nerve" EXACT []
+is_a: HP:0008058 ! Aplasia/Hypoplasia of the optic nerve
+created_by: peter
+creation_date: 2013-12-12T14:15:31Z
+
+[Term]
+id: HP:0012522
+name: Spider hemangioma
+def: "A form of telangiectasis characterized by a central elevated red dot the size of a pinhead, representing an arteriole, with numerous small blood vessels that radiate out thereby resembling the legs of a spider. Characteristically, compression of the central arteriole causes the entire lesion to blanch, and the lesion quickly refills once the compression is released." [HPO:probinson, pmid:22356347]
+comment: Spider hemangiomas are up to a few centimeters in diameter.
+is_a: HP:0100585 ! Teleangiectasia of the skin
+created_by: peter
+creation_date: 2013-12-14T08:31:15Z
+
+[Term]
+id: HP:0012523
+name: Oral aversion
+def: "Reluctance or refusal of a child to be breastfed or eat, manifested as gagging, vomiting, turning head away from food, or avoidance of sensation in or around the mouth (i.e. toothbrushing or face-washing)." [ORCID:0000-0001-5208-3432]
+is_a: HP:0100738 ! Abnormal eating behavior
+created_by: peter
+creation_date: 2013-12-14T09:18:51Z
+
+[Term]
+id: HP:0012524
+name: Abnormal platelet shape
+def: "A deviation from the normal discoid platelet shape." [DD:WHO]
+is_a: HP:0011875 ! Abnormal platelet morphology
+created_by: peter
+creation_date: 2013-12-15T08:55:03Z
+
+[Term]
+id: HP:0012525
+name: Abnormal alpha granule distribution
+def: "An anomalous location and arrangement of platelet alpha granules." [DDD:wouwehand]
+is_a: HP:0012483 ! Abnormal alpha granules
+created_by: peter
+creation_date: 2013-12-15T08:56:17Z
+
+[Term]
+id: HP:0012526
+name: Absence of alpha granules
+def: "A lack of platelet alpha granules." [HPO:probinson, pmid:3877532]
+is_a: HP:0012528 ! Abnormal number of alpha granules
+created_by: peter
+creation_date: 2013-12-15T08:57:46Z
+
+[Term]
+id: HP:0012527
+name: Abnormal alpha granule content
+def: "A deviation from the normal contents of the platelet alpha granules, which normally contain hemostatic proteins such as fibrinogen, von Willebrand factor, and growth factors such as platelet-derived growth factor." [HPO:probinson]
+comment: The alpha granules contain hemostatic proteins such as fibrinogen, von Willebrand factor, and growth factors such as platelet-derived growth factor.
+is_a: HP:0012483 ! Abnormal alpha granules
+created_by: peter
+creation_date: 2013-12-15T09:02:48Z
+
+[Term]
+id: HP:0012528
+name: Abnormal number of alpha granules
+def: "A deviation from the normal count of alpha granules per thrombocyte." [DDD:wouwehand]
+is_a: HP:0012483 ! Abnormal alpha granules
+created_by: peter
+creation_date: 2013-12-15T09:07:34Z
+
+[Term]
+id: HP:0012529
+name: Abnormal dense granule content
+def: "A deviation from the normal contents of the platelet alpha granules, which normally contain adenosine triphosphate (ATP), adenosine diphosphate (ADP), serotonin, calcium, and pyrophosphate, which are secreted when platelets are activated." [DDD:wouwehand]
+is_a: HP:0012484 ! Abnormal dense granules
+created_by: peter
+creation_date: 2013-12-15T09:12:44Z
+
+[Term]
+id: HP:0012530
+name: Abnormal number of dense granules
+def: "A deviation from the normal count of dense granules per thrombocyte." [DDD:wouwehand]
+is_a: HP:0012484 ! Abnormal dense granules
+created_by: peter
+creation_date: 2013-12-15T09:12:55Z
+
+[Term]
+id: HP:0012531
+name: Pain
+def: "An unpleasant sensory and emotional experience associated with actual or potential tissue damage, or described in terms of such damage." [ORCID:0000-0001-5208-3432]
+is_a: HP:0001311 ! Neurophysiological abnormality
+created_by: peter
+creation_date: 2013-12-15T09:38:08Z
+
+[Term]
+id: HP:0012532
+name: Chronic pain
+def: "Persistent pain, usually defined as pain that has laster longer than 3 to 6 months." [HPO:probinson, pmid:1875958]
+comment: Acute pain is provoked by a specific disease or injury, serves a useful biologic purpose, is associated with skeletal muscle spasm and sympathetic nervous system activation, and is self-limited. Chronic pain, in contrast, may be considered a disease state. It is pain that outlasts the normal time of healing.
+is_a: HP:0012531 ! Pain
+created_by: peter
+creation_date: 2013-12-15T09:46:55Z
+
+[Term]
+id: HP:0012533
+name: Allodynia
+def: "Pain due to a stimulus that does not normally provoke pain." [HPO:probinson]
+is_a: HP:0012531 ! Pain
+created_by: peter
+creation_date: 2013-12-15T09:47:40Z
+
+[Term]
+id: HP:0012534
+name: Dysesthesia
+def: "Abnormal sensations with no apparent physical cause that are painful or unpleasant." [ORCID:0000-0001-5208-3432]
+comment: Dysesthesia is a subclass of paresthesia in which the sensations are unpleasant or disagreeable.
+synonym: "Dysaesthesia" EXACT []
+is_a: HP:0003401 ! Paresthesia
+created_by: peter
+creation_date: 2013-12-15T09:59:55Z
+
+[Term]
+id: HP:0012535
+name: Abnormal synaptic transmission
+def: "An anomaly in the communication from a neuron to a target across a synapse. This is a four step process, comprising (i) synthesis and storage of neurotransmitters; (ii) neurotransmitter release; (iii) activation of postsynaptic receptors by the neurotransmitter; and (iv) inactivation of the neurotransmitter. Thus, this term is defined as an anomaly of `neurotransmitter metabolic process` (GO:0042133)." [HPO:probinson, MP:0003635]
+synonym: "Abnormality of neurotransmitter metabolism" EXACT []
+is_a: HP:0001311 ! Neurophysiological abnormality
+created_by: peter
+creation_date: 2013-12-15T10:12:31Z
+
+[Term]
+id: HP:0012536
+name: Maternal anticardiolipin antibody positive
+def: "The presence of circulating autoantibodies to anticardiolipin in the mother." [ORCID:0000-0001-5208-3432, pmid:1495720, pmid:9722063]
+comment: There have been reports of cerebral infarction in a newborns in association with elevated maternal anticardiolipin antibodies.
+is_a: HP:0011437 ! Maternal autoimmune disease
+created_by: peter
+creation_date: 2013-12-15T10:20:51Z
+
+[Term]
+id: HP:0012537
+name: Food intolerance
+def: "A detrimental reaction to a food, beverage, food additive, or compound found in foods that produces symptoms in one or more body organs and systems that is not mediated by an immune reaction." [HPO:probinson]
+synonym: "Non-allergic food hypersensitivity" EXACT []
+is_a: HP:0001939 ! Abnormality of metabolism/homeostasis
+created_by: peter
+creation_date: 2013-12-15T10:25:19Z
+
+[Term]
+id: HP:0012538
+name: Gluten intolerance
+def: "A detrimental reaction to the presence of gluten in food, which may include abdominal pain, fatigue, headaches and paresthesia, or celiac disease." [HPO:probinson]
+is_a: HP:0001984 ! Intolerance to protein
+created_by: peter
+creation_date: 2013-12-15T10:31:34Z
+
+[Term]
+id: HP:0012539
+name: Non-Hodgkin lymphoma
+def: "A typer of lymphoma characterized microscopically by the absence of multinucleated Reed-Sternberg cells." [HPO:probinson]
+is_a: HP:0002665 ! Lymphoma
+created_by: peter
+creation_date: 2013-12-15T10:45:49Z
+
+[Term]
+id: HP:0012540
+name: Axillary epidermoid cyst
+def: "An epidermoid cyst in the armpit." [ORCID:0000-0001-5208-3432]
+is_a: HP:0200040 ! Epidermoid cyst
+created_by: peter
+creation_date: 2013-12-15T22:35:39Z
+
+[Term]
+id: HP:0012541
+name: Cephalohematoma
+def: "Hemorrhage between the skull and periosteum of a newborn resulting from rupture of blood vessels that cross the periosteum." [ORCID:0000-0001-5208-3432]
+comment: Cephalohematoma is generally caused by trauma during labor.
+synonym: "Cephalohaematoma" EXACT []
+is_a: HP:0001787 ! Abnormal delivery
+created_by: peter
+creation_date: 2013-12-15T22:37:57Z
+
+[Term]
+id: HP:0012542
+name: Onychauxis
+def: "Thickened nails without deformity." [HPO:probinson]
+is_a: HP:0001805 ! Thick nail
+created_by: peter
+creation_date: 2013-12-15T22:49:45Z
 
 [Term]
 id: HP:0100000
@@ -83585,13 +84190,17 @@ creation_date: 2010-12-20T07:00:31Z
 [Term]
 id: HP:0100545
 name: Arterial stenosis
+def: "Narrowing or constriction of the inner surface (lumen) of an artery." [HPO:probinson]
 is_a: HP:0005114 ! Abnormalities of the peripheral arteries
 created_by: doelkens
 creation_date: 2010-12-21T01:30:07Z
 
 [Term]
 id: HP:0100546
-name: Carotid stenosis
+name: Carotid artery stenosis
+def: "Narrowing of the carotid arteries." [HPO:probinson]
+comment: Carotid artery stenosis is usually caused by caused by atherosclerosis.
+synonym: "Carotid stenosis" EXACT []
 xref: MeSH:D016893 "Carotid Stenosis"
 is_a: HP:0005344 ! Abnormality of the carotid arteries
 is_a: HP:0100545 ! Arterial stenosis
@@ -84383,6 +84992,7 @@ creation_date: 2010-12-29T05:12:37Z
 [Term]
 id: HP:0100635
 name: Carotid paraganglioma
+def: "A paraganglioma (a  neuroendocrine neoplasm) originating in a carotid artery." [HPO:probinson]
 is_a: HP:0002864 ! Paraganglioma of head and neck
 is_a: HP:0005344 ! Abnormality of the carotid arteries
 created_by: doelkens
@@ -84934,7 +85544,7 @@ creation_date: 2011-03-31T12:44:41Z
 [Term]
 id: HP:0100702
 name: Arachnoid cyst
-def: "Arachnoid cysts are filled with cerebrospinal fluid encased by arachnoidal cells." [HPO:sdoelken]
+def: "An extra-parenchymal and intra-arachnoidal collection of fluid with a composition similar to that of cerebrospinal fluid." [HPO:sdoelken]
 comment: Arachnoid cysts can be found on the brain, or on the spine. Intracranial arachnoid cysts usually occur adjacent to the arachnoidal cistern. Spinal arachnoid cysts may be extradural, intradural, or perineural.
 synonym: "ARACHNOID CYSTS" RELATED [HPO:skoehler]
 xref: MeSH:D016080 "Arachnoid Cysts"
@@ -85220,6 +85830,7 @@ creation_date: 2011-06-06T05:54:51Z
 [Term]
 id: HP:0100739
 name: Bulimia
+def: "A form of anomalous eating behavior characterized by binge eating is followed by self-induced vomiting or other compensatory behavior intended to prevent weight gain (purging, fasting or exercising or a combination of these)." [HPO:probinson, pmid:23346610]
 xref: MeSH:D002032 "Bulimia"
 is_a: HP:0100738 ! Abnormal eating behavior
 created_by: doelkens
@@ -85943,9 +86554,11 @@ creation_date: 2011-06-09T05:31:21Z
 [Term]
 id: HP:0100827
 name: Lymphocytosis
+alt_id: HP:0012141
 def: "Increase in the number or proportion of lymphocytes in the blood." [HPO:sdoelken]
 xref: MeSH:D008218 "Lymphocytosis"
 is_a: HP:0004332 ! Abnormality of lymphocytes
+is_a: HP:0012140 ! Abnormality of cells of the lymphoid lineage
 created_by: doelkens
 creation_date: 2011-06-09T05:32:57Z
 
@@ -87243,9 +87856,9 @@ creation_date: 2010-06-18T01:38:03Z
 
 [Term]
 id: HP:0200035
-name: skin plaques
-def: "A broad papule, or confluence of papules equal to or greater than 10 mm. Has also been defined as an elevated, plateau-like lesion that is greater in its diameter than in its depth." [HPO:SKOEHLER]
-is_a: HP:0200034 ! Papule
+name: Skin plaque
+def: "A plaque is a solid, raised, plateau-like (flat-topped) lesion greater than 1 cm in diameter." [HPO:skoehler]
+is_a: HP:0011355 ! Localized skin lesion
 created_by: sebastiankohler
 creation_date: 2010-06-18T01:39:28Z
 
@@ -87254,7 +87867,7 @@ id: HP:0200036
 name: Skin nodule
 def: "Morphologically similar to a papule, but greater than either 10mm in both width and depth, and most frequently centered in the dermis or subcutaneous fat." [HPO:skoehler]
 comment: The depth of involvement is what differentiates a nodule from a papule.
-is_a: HP:0200034 ! Papule
+is_a: HP:0011355 ! Localized skin lesion
 created_by: sebastiankohler
 creation_date: 2010-06-18T01:48:50Z
 
@@ -87282,9 +87895,12 @@ creation_date: 2010-06-18T02:03:24Z
 
 [Term]
 id: HP:0200040
-name: Skin cysts
+name: Epidermoid cyst
 def: "The presence of one or more `cysts` (MPATH:62) of the `skin` (FMA:7163)." [HPO:skoehler]
-comment: A cyst is a cavity containing liquid, semisolid, or solid material.
+comment: A cyst is a cavity containing liquid, semisolid, or solid material. An epidermoid cyst is a benign cyst that develops out of ectodermal tissue and consists of a thin layer of squamous epithelium. An epidermoid cyst may or may not be painful or release pus, and are usually noticed as a bump on the skin.
+synonym: "Epidermal inclusion cyst " EXACT []
+synonym: "Skin cyst" EXACT []
+xref: MeSH:D004814 "Epidermal Cyst"
 is_a: HP:0011355 ! Localized skin lesion
 created_by: sebastiankohler
 creation_date: 2010-06-18T02:08:02Z
