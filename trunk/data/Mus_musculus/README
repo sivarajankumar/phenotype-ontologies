@@ -1,5 +1,7 @@
-Data dumped from Monarch 2013.07.03
+Data dumped from Monarch 2013.11.06
+Data pulled from MGI 2013.11.01
 
-Basic Filter used here are single-gene genotypes.
+FILTERS
+BF: (Basic Filter) - single-gene genotypes, and groups together phenotypes observed under different environments
 
 
