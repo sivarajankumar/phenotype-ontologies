@@ -9,6 +9,10 @@ DR = $(DATA)/Danio_rerio
 DR_G2P = $(DR)/Dr-gene-to-phenotype-BF.txt
 DR_G2L = $(DR)/Dr-gene-labels.txt
 
+HS = $(DATA)/Homo_sapiens
+HS_D2P = $(HS)/Hs-disease-to-phenotype-O.txt
+HS_D2L = $(HS)/Hs-disease-labels.txt
+
 ##ROOT = $(ONT)/mammal.owl
 ROOT = $(ONT)/vertebrate.owl
 TRIGGERS = $(ONT)/mp.owl $(ONT)/hp.owl $(ONT)/zp.owl $(MM_G2P) $(DR_G2P)
@@ -18,7 +22,7 @@ USECAT = --catalog-xml $(ONT)/catalog-v001.xml
 all: caches
 
 all.owl:  $(ROOT) $(TRIGGERS)
-	owltools $(USECAT) $< --merge-imports-closure --load-instances $(MM_G2P) --load-labels $(MM_G2L) --load-instances $(DR_G2P) --load-labels $(DR_G2L) --merge-support-ontologies -o $@
+	owltools $(USECAT) $< --merge-imports-closure --load-instances $(MM_G2P) --load-labels $(MM_G2L) --load-instances $(DR_G2P) --load-labels $(DR_G2L) --load-instances $(HS_D2P) --load-labels $(HS_D2L) --merge-support-ontologies -o $@
 
 caches: owlsim.cache ic-cache.owl
 
