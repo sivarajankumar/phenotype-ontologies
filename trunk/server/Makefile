@@ -15,7 +15,7 @@ HS_D2L = $(HS)/Hs-disease-labels.txt
 
 ##ROOT = $(ONT)/mammal.owl
 ROOT = $(ONT)/vertebrate.owl
-TRIGGERS = $(ONT)/mp.owl $(ONT)/hp.owl $(ONT)/zp.owl $(MM_G2P) $(DR_G2P)
+TRIGGERS = $(ONT)/mp.owl $(ONT)/hp.owl $(ONT)/zp.owl $(MM_G2P) $(DR_G2P) $(HS_G2P)
 
 USECAT = --catalog-xml $(ONT)/catalog-v001.xml 
 
