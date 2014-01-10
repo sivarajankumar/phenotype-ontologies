@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 15:12:2013 22:53
+date: 08:01:2014 08:52
 saved-by: peter
 auto-generated-by: OBO-Edit 2.3
 subsetdef: hposlim_core "Core clinical terminology"
@@ -3757,12 +3757,12 @@ is_a: HP:0001120 ! Abnormality of corneal size
 [Term]
 id: HP:0000486
 name: Strabismus
-def: "Strabismus (also known as squint) is a condition in which the eyes are not properly aligned with each other." [HPO:curators]
+def: "Strabismus (also known as squint) is a condition in which the eyes are not properly aligned with each other." [HPO:probinson]
 subset: hposlim_core
 synonym: "Squint" EXACT []
 xref: MeSH:D013285 "Strabismus"
 xref: UMLS:C2020541 "strabismus"
-is_a: HP:0012373 ! Abnormal eye physiology
+is_a: HP:0000549 ! Abnormal conjugate eye movement
 
 [Term]
 id: HP:0000487
@@ -4009,7 +4009,9 @@ is_a: HP:0007703 ! Abnormal retinal pigmentation
 [Term]
 id: HP:0000511
 name: Vertical supranuclear gaze palsy
-def: "A supranuclear gaze palsy is an inability to look in a vertical direction as a result of cerebral impairment. There is a loss of the voluntary aspect of eye movements, but, as the brainstem is still intact, all the reflex conjugate eye movements are normal." [HPO:probinson]
+def: "A supranuclear gaze palsy is an inability to look in a vertical direction as a result of cerebral impairment. There is a loss of the voluntary aspect of eye movements, but, as the brainstem is still intact, all the reflex conjugate eye movements are normal." [HPO:probinson, pmid:20671861]
+synonym: "Upgaze palsy" EXACT []
+synonym: "Vertical gaze palsy" EXACT []
 xref: UMLS:C1843369 "Vertical supranuclear gaze palsy"
 is_a: HP:0000605 ! Supranuclear gaze palsy
 
@@ -4296,6 +4298,8 @@ is_a: HP:0000479 ! Abnormality of the retina
 [Term]
 id: HP:0000542
 name: Impaired ocular adduction
+def: "Reduced ability to move the eye in the direction of the nose." [HPO:probinson]
+comment: Contraction of the medial rectus pulls the eye towards the nose (adduction or medial movement).
 xref: UMLS:C1846463 "Impaired ocular adduction"
 is_a: HP:0000496 ! Abnormality of eye movement
 
@@ -4360,8 +4364,9 @@ is_a: HP:0000556 ! Retinal dystrophy
 
 [Term]
 id: HP:0000549
-name: Disconjugate eye movements
-synonym: "Abnormal conjugate eye movement" EXACT []
+name: Abnormal conjugate eye movement
+def: "Any deviation from the normal motor coordination of the eyes that allows for bilateral fixation on a single object." [HPO:probinson]
+synonym: "Disconjugate eye movements" EXACT []
 is_a: HP:0000496 ! Abnormality of eye movement
 
 [Term]
@@ -4814,7 +4819,7 @@ name: Supranuclear gaze palsy
 def: "A supranuclear gaze palsy is an inability to look in a particular direction as a result of cerebral impairment. There is a loss of the voluntary aspect of eye movements, but, as the brainstem is still intact, all the reflex conjugate eye movements are normal." [HPO:probinson]
 synonym: "Supranuclear gaze paralysis" EXACT []
 xref: UMLS:C1720037 "Supranuclear gaze palsy"
-is_a: HP:0000597 ! Ophthalmoparesis
+is_a: HP:0000496 ! Abnormality of eye movement
 
 [Term]
 id: HP:0000606
@@ -4950,8 +4955,11 @@ is_a: HP:0000505 ! Visual impairment
 [Term]
 id: HP:0000619
 name: Impaired convergence
+def: "Reduced ability to turn the eyes inward  in order to focus on a nearby object." [HPO:probinson]
+comment: Vergence alters the angle between the two eyes to adjust for changes in distance from the visual target.
+synonym: "Convergence insufficiency " EXACT []
 xref: UMLS:C1846466 "Impaired convergence"
-is_a: HP:0000496 ! Abnormality of eye movement
+is_a: HP:0000549 ! Abnormal conjugate eye movement
 
 [Term]
 id: HP:0000620
@@ -5090,7 +5098,7 @@ name: Nystagmus
 def: "Rhythmic, involuntary oscillations of one or both eyes related to abnormality in fixation, conjugate gaze, or vestibular mechanisms." [HPO:curators]
 subset: hposlim_core
 xref: UMLS:C1963184 "NYSTAGMUS"
-is_a: HP:0000496 ! Abnormality of eye movement
+is_a: HP:0012547 ! Abnormal involuntary eye movements
 
 [Term]
 id: HP:0000640
@@ -6346,9 +6354,9 @@ is_a: HP:0008669 ! Abnormal spermatogenesis
 
 [Term]
 id: HP:0000799
-name: Fatty kidney
+name: Renal steatosis
 def: "Abnormal fat accumulation in the kidneys." [HPO:probinson]
-xref: UMLS:C0022646 "Kidney"
+synonym: "Fatty kidney" EXACT []
 is_a: HP:0012210 ! Abnormal renal morphology
 
 [Term]
@@ -6534,6 +6542,7 @@ alt_id: HP:0008859
 alt_id: HP:0010466
 alt_id: HP:0010467
 def: "Passing the age when puberty normally occurs with no physical or hormonal signs of the onset of puberty." [HPO:probinson]
+comment: The age at which delayed puberty may be diagnosed in a person without signs of secondary sexual development is 13 years in a girl or 14 years in a boy.
 synonym: "Delalyed puberty" EXACT []
 synonym: "Delayed pubertal development" EXACT []
 synonym: "Delayed pubertal growth" EXACT []
@@ -6551,6 +6560,8 @@ alt_id: HP:0000861
 alt_id: HP:0008195
 alt_id: HP:0008206
 def: "Insufficient production of growth hormone, which is produced by the anterior pituitary gland. Growth hormone is a major participant in control of growth and metabolism." [HPO:probinson]
+comment: The effects of growth hormone are mediated almost exclusively by insulin-like growth factor 1(IGF-1), which is produced primarily in the liver. Growth hormone deficiency refers to inadequate levels of GH (and therefore IGF-1), resulting in growth retardation in children and metabolic disturbances in adults.
+xref: MeSH:D004393 "Dwarfism, Pituitary"
 xref: UMLS:C0013338 "growth hormone deficiency"
 xref: UMLS:C0271563 "Isolated growth hormone deficiency"
 is_a: HP:0000830 ! Anterior hypopituitarism
@@ -6923,6 +6934,7 @@ is_a: HP:0000822 ! Hypertension
 [Term]
 id: HP:0000876
 name: Oligomenorrhea
+def: "Infrequent periods (less than 6 per year)." [HPO:probinson]
 xref: MeSH:D009839 "Oligomenorrhea"
 xref: UMLS:C2057730 "oligomenorrhea"
 is_a: HP:0000140 ! Abnormality of the menstrual cycle
@@ -9062,7 +9074,8 @@ id: HP:0001159
 name: Syndactyly
 alt_id: HP:0001206
 alt_id: HP:0001236
-def: "Webbing or fusion of the fingers or toes, involving soft parts only or including bone structure. Bony fusions are revered to as \"bony\" Syndactyly if the fusion occurs in a radio-ulnar axis. Fusions of bones of the fingers or toes in a proximo-distal axis are refered to as \"Symphalangism\"." [HPO:probinson]
+def: "Webbing or fusion of the fingers or toes, involving soft parts only or including bone structure. Bony fusions are revered to as \"bony\" syndactyly if the fusion occurs in a radio-ulnar axis. Fusions of bones of the fingers or toes in a proximo-distal axis are refered to as \"symphalangism\"." [HPO:probinson]
+comment: Syndactyly may be partial or complete. In complete syndactyly, the skin is joined all the way to the fingertip. In partial (incomplete) syndactyly, the skin is only joined part of the distance to the fingertip.
 xref: MeSH:D013576 "Syndactyly"
 xref: UMLS:C0039075 "Syndactyly"
 is_a: HP:0011297 ! Abnormality of the digits
@@ -12205,7 +12218,7 @@ is_a: HP:0001654 ! Abnormality of the heart valves
 [Term]
 id: HP:0001647
 name: Bicuspid aortic valve
-def: "The presence of a bicuspid `aortic valve` (FMA:7236)." [HPO:probinson]
+def: "The presence of an `aortic valve` (FMA:7236) with two instead of the normal three cusps (flaps)." [HPO:probinson]
 comment: The aortic valve normally has three cusps (flaps), that is, it is normally tricuspid.
 xref: UMLS:C0149630 "Bicuspid aortic valve"
 is_a: HP:0001646 ! Abnormality of the aortic valve
@@ -13193,7 +13206,6 @@ subset: hposlim_core
 synonym: "Absent nails" EXACT []
 synonym: "Aplastic nails" EXACT []
 xref: UMLS:C0265998 "ANONYCHIA"
-is_a: HP:0001231 ! Abnormality of the fingernails
 is_a: HP:0008386 ! Aplasia/Hypoplasia of the nails
 
 [Term]
@@ -19424,6 +19436,9 @@ is_a: HP:0002841 ! Recurrent fungal infections
 [Term]
 id: HP:0002725
 name: Systemic lupus erythematosus
+def: "A chronic, relapsing, inflammatory, and often febrile multisystemic disorder of connective tissue, characterized principally by involvement of the skin, joints, kidneys, and serosal membranes." [HPO:probinson]
+comment: This is a bundled term that describes a disease rather than a phenotypic feature, but is left for convenience for annotations of lupus conceived of as a feature of another disease.
+xref: MeSH:D008180 "Lupus Erythematosus, Systemic"
 xref: UMLS:C0024141 "Lupus Erythematosus, Systemic"
 is_a: HP:0002960 ! Autoimmunity
 
@@ -25892,6 +25907,7 @@ name: Stillbirth
 alt_id: HP:0001624
 alt_id: HP:0001625
 def: "Death of the fetus in utero after at least 20 weeks of gestation." [HPO:probinson]
+synonym: "Fetal death" RELATED []
 synonym: "Stillborn" EXACT []
 xref: MeSH:D050497 "Stillbirth"
 xref: UMLS:C0595939 "Stillbirth"
@@ -27216,6 +27232,9 @@ is_a: HP:0011001 ! Increased bone mineral density
 [Term]
 id: HP:0004057
 name: Mitten deformity
+def: "Fusion of the hands and feet by a thin membrane of skin (scarring) seen in forms of dystrophic epidermolysis bullosa and leading to a \"mitten\" hand deformity." [HPO:probinson, pmid:20301304]
+comment: Mitten deformity is also referred to as pseudosyndactyly, which should not be confused with true syndactyly (actual and complete fusion of fingers). Antenatally, pseudosyndactyly can be misinterpreted as syndactyly.
+synonym: "Pseudosyndactyly" EXACT []
 is_a: HP:0005922 ! Abnormal hand morphology
 
 [Term]
@@ -30696,6 +30715,7 @@ is_a: HP:0001878 ! Hemolytic anemia
 id: HP:0004808
 name: Acute myeloid leukemia
 alt_id: HP:0001914
+alt_id: HP:0004843
 alt_id: HP:0005516
 alt_id: HP:0006724
 alt_id: HP:0006728
@@ -30867,11 +30887,6 @@ synonym: "Hageman factor deficiency" EXACT []
 xref: MeSH:D005175 "Factor XII Deficiency"
 xref: UMLS:C0015526 "Factor XII Deficiency"
 is_a: HP:0010989 ! Abnormality of the intrinsic pathway
-
-[Term]
-id: HP:0004843
-name: Familial acute myelogenous leukemia
-is_a: HP:0002488 ! Acute leukemia
 
 [Term]
 id: HP:0004844
@@ -32883,10 +32898,11 @@ is_a: HP:0001622 ! Premature birth
 [Term]
 id: HP:0005268
 name: Spontaneous abortion
-def: "The spontaneous loss of a fetus before the 20th week of pregnancy." [HPO:probinson]
+def: "A pregnancy that ends at a stage in which the fetus is incapable of surviving on its own, defined as the spontaneous loss of a fetus before the 20th week of pregnancy." [HPO:probinson]
 xref: MeSH:D000022 "Abortion, Spontaneous"
 xref: UMLS:C0000786 "Spontaneous abortion"
 is_a: HP:0001787 ! Abnormal delivery
+is_a: HP:0011420 ! Death
 
 [Term]
 id: HP:0005272
@@ -41140,7 +41156,7 @@ is_a: HP:0005765 ! Sacral meningocele
 [Term]
 id: HP:0007295
 name: Chaotic rapid conjugate ocular movements
-is_a: HP:0000496 ! Abnormality of eye movement
+is_a: HP:0012547 ! Abnormal involuntary eye movements
 
 [Term]
 id: HP:0007299
@@ -42987,7 +43003,7 @@ id: HP:0007704
 name: Paroxysmal involuntary eye movements
 def: "Sudden-onset episode of abnormal, involuntary eye movements." [HPO:probinson]
 synonym: "Abnormal eye movements, paroxysmal" EXACT []
-is_a: HP:0000496 ! Abnormality of eye movement
+is_a: HP:0012547 ! Abnormal involuntary eye movements
 
 [Term]
 id: HP:0007705
@@ -43143,7 +43159,7 @@ is_a: HP:0000580 ! Pigmentary retinopathy
 id: HP:0007738
 name: Uncontrolled eye movements
 xref: UMLS:C1854686 "Uncontrolled eye movements"
-is_a: HP:0000496 ! Abnormality of eye movement
+is_a: HP:0012547 ! Abnormal involuntary eye movements
 
 [Term]
 id: HP:0007739
@@ -46085,8 +46101,10 @@ is_a: HP:0001597 ! Abnormality of the nail
 [Term]
 id: HP:0008398
 name: Hypoplastic fifth fingernail
-def: "Underdeveloped nails of the fifth finger." [HPO:probinson]
+alt_id: HP:0200103
+def: "A nail of the fifth finger that is diminished in length and width, i.e., underdeveloped `nail of little finger` (FMA:54341)." [HPO:probinson]
 is_a: HP:0001804 ! Hypoplastic fingernail
+is_a: HP:0011937 ! Hypoplastic fifth toenail
 
 [Term]
 id: HP:0008399
@@ -62339,7 +62357,7 @@ id: HP:0010543
 name: Opsoclonus
 def: "Spontaneous, non-rhythmic, multi-directional, chaotic movements of the eyes, giving the appearance of agitation. There may be bursts of conjugate movement of the eyes in varying directions and of varying amplitude." [HPO:probinson]
 xref: UMLS:C0242567 "Opsoclonus"
-is_a: HP:0000496 ! Abnormality of eye movement
+is_a: HP:0012547 ! Abnormal involuntary eye movements
 created_by: peter
 creation_date: 2009-09-23T10:40:51Z
 
@@ -69684,14 +69702,6 @@ created_by: peter
 creation_date: 2012-03-01T09:52:58Z
 
 [Term]
-id: HP:0011366
-name: Absent fifth finger- and toenails
-def: "Absent nails of the fifth fingers and toes." [HPO:probinson]
-is_a: HP:0001798 ! Anonychia
-created_by: peter
-creation_date: 2012-03-03T11:51:17Z
-
-[Term]
 id: HP:0011367
 name: Yellow nails
 def: "Yellowish discoloration of the nails." [DDD:cmoss]
@@ -70375,6 +70385,7 @@ creation_date: 2012-03-18T04:23:59Z
 id: HP:0011447
 name: Hyposegmentation of neutrophil nuclei
 def: "Hyposegmented (hypolobulated) or bilobed neutrophil nuclei." [DDD:probinson]
+comment: Hyposegmented cells are neutrophils with fewer than three nuclear lobes.
 synonym: "Pelger-Huet anomaly" RELATED []
 is_a: HP:0011992 ! Abnormality of neutrophil morphology
 created_by: peter
@@ -73287,6 +73298,7 @@ creation_date: 2012-04-22T06:25:45Z
 [Term]
 id: HP:0011788
 name: Increased serum free triiodothyronine (fT3)
+def: "An elevated concentration of `3,3',5-triiodo-L-thyronine` (CHEBI:18258) in the blood." [HPO:probinson]
 is_a: HP:0002926 ! Abnormality of thyroid physiology
 created_by: peter
 creation_date: 2012-04-22T06:31:08Z
@@ -79857,6 +79869,246 @@ created_by: peter
 creation_date: 2013-12-15T22:49:45Z
 
 [Term]
+id: HP:0012543
+name: Hemosiderinuria
+def: "The presence of hemosiderin in the urine." [HPO:probinson]
+comment: Hemosiderinuria leads to a brown color of urine. It is a marker of chronic intravascular hemolysis, in which hemoglobin is released from RBCs into the bloodstream in excess of the binding capacity of haptoglobin.
+is_a: HP:0003110 ! Abnormality of urine homeostasis
+created_by: peter
+creation_date: 2013-12-21T09:09:38Z
+
+[Term]
+id: HP:0012544
+name: Elevated aldolase level
+def: "An increased concentration of  fructose 1,6-bisphosphate aldolase in the serum." [ORCID:0000-0001-5208-3432]
+comment: Aldolase is an enzyme responsible for converting fructose 1,6-bisphosphate into the triose phosphates dihydroxyacetone phosphate and glyceraldehyde 3-phosphate.
+is_a: HP:0012400 ! Abnormal aldolase level
+created_by: peter
+creation_date: 2013-12-21T09:18:43Z
+
+[Term]
+id: HP:0012545
+name: Reduced aldolase level
+def: "An decreased concentration of  fructose 1,6-bisphosphate aldolase in the serum." [ORCID:0000-0001-5208-3432]
+comment: Aldolase is an enzyme responsible for converting fructose 1,6-bisphosphate into the triose phosphates dihydroxyacetone phosphate and glyceraldehyde 3-phosphate.
+is_a: HP:0012400 ! Abnormal aldolase level
+created_by: peter
+creation_date: 2013-12-21T09:20:49Z
+
+[Term]
+id: HP:0012546
+name: Skewed maternal X inactivation
+def: "A deviation from equal (50%) inactivation of each parental X chromosome in maternal cells." [HPO:probinson, pmid:18097476]
+comment: X chromosome inactivation (XCI) is the process  by which one of the two copies of the X chromosome present in females is inactivated in order to achieves dosage equivalency for X-linked genes between XY males and XX females. An individual cell's decision to inactivate either the paternal or maternal X is made early in development, at approximately the time of implantation, such that normally there is a roughly equal distribution of either X being active. A deviation from equality is known as skewing, with common criteria for "skewed" inactivation being arbitrarily defined as the observation of inactivation of the same allele in 75% or 80% of cells (and very skewed inactivation resulting in 90% or 95% of cells with the same allele inactive). For some X-linked diseases there is strong selection in the heterozygous carrier in favor of cells bearing the mutation on the silenced inactive X, and thus, assessment of XCI skewing in female family members can be suggestive of carrier status.
+is_a: HP:0002686 ! Prenatal maternal abnormality
+created_by: peter
+creation_date: 2013-12-21T09:22:57Z
+
+[Term]
+id: HP:0012547
+name: Abnormal involuntary eye movements
+def: "Anomalous movements of the eyes that occur without the subject wanting them to happen." [HPO:probinson]
+is_a: HP:0000496 ! Abnormality of eye movement
+created_by: peter
+creation_date: 2013-12-21T10:37:42Z
+
+[Term]
+id: HP:0012548
+name: Skeletal muscle fatty infiltration
+def: "Deposition of fat within muscles." [HPO:probinson]
+comment: Fatty infiltration of muscle tissue can be observed on muscle biopsy as well as through imaging by computed tomography and magnetic resonance tomography.
+is_a: HP:0011805 ! Abnormality of muscle morphology
+created_by: peter
+creation_date: 2014-01-01T15:03:05Z
+
+[Term]
+id: HP:0012549
+name: Conjunctival lipoma
+def: "A lipoma (a benign tumor composed of adipose tissue) located in the conjunctiva." [HPO:probinson]
+comment: Conjunctival lipoma displays yellowish-pink stromal mass, histologically with large lipid vacuoles surrounded by stellate cells.
+is_a: HP:0000502 ! Abnormality of the conjunctiva
+created_by: peter
+creation_date: 2014-01-01T15:13:56Z
+
+[Term]
+id: HP:0012550
+name: Colonic varices
+def: "The presence of varices (enlarged and convoluted blood vessels) in the colon." [HPO:probinson, pmid:16688816]
+comment: Colonic varices are a rare cause of lower gastrointestinal bleeding, most commonly associated with portal hypertension nd more rarely with congestive heart failure, mesenteric vein thrombosis, pancreatitis with splenic vein thrombosis and adhesions, and mesenteric vein compression. Colonic varices are usually located in the rectosigmoid region and the cecum.
+is_a: HP:0002250 ! Abnormality of the large intestine
+created_by: peter
+creation_date: 2014-01-01T15:54:41Z
+
+[Term]
+id: HP:0012551
+name: Absent neutrophil specific granules
+def: "Lack of specific granules in neutrophils." [HPO:probinson, pmid:6155073]
+comment: Neutrophil polymorphonuclear leukocytes (PMNs) contain two principal types of granules. Azurophil granules appear early in neutrophil development and contain lysosomal enzymes, lysozyme, and myeloperoxidase (MPO). Specific granules are formed later, lack MPO and hydrolases, but contain lactoferrin and the remainder of the cell's complement of lysozyme. Consequently, specific granules may be conveniently detected at the electron-microscopic (EM) level by the cytochemical demonstration of their lack of MPO, while at the optical level their presence can be inferred from their positive immunocytochemical staining for lactoferrin with the use of specific antiserums.
+is_a: HP:0011992 ! Abnormality of neutrophil morphology
+created_by: peter
+creation_date: 2014-01-01T15:32:09Z
+
+[Term]
+id: HP:0012552
+name: Increased neutrophil nuclear projections
+def: "Presence of an elevanted number of projections from nuclei of neutrophils. Ths projections can have the shape of hooks, tags, or clubs." [HPO:probinson]
+is_a: HP:0011992 ! Abnormality of neutrophil morphology
+created_by: peter
+creation_date: 2014-01-01T15:41:24Z
+
+[Term]
+id: HP:0012553
+name: Hypoplastic thumbnail
+def: "A thumbnail that is diminished in length and width, i.e., underdeveloped `thumb nail` (FMA:54329)." [HPO:probinson]
+is_a: HP:0001804 ! Hypoplastic fingernail
+created_by: peter
+creation_date: 2014-01-04T12:57:28Z
+
+[Term]
+id: HP:0012554
+name: Absent thumbnail
+def: "Absence of `thumb nail` (FMA:54329)." [HPO:probinson]
+is_a: HP:0001817 ! Absent fingernail
+created_by: peter
+creation_date: 2014-01-04T13:05:52Z
+
+[Term]
+id: HP:0012555
+name: Absent nail of hallux
+def: "Absent `nail of big toe` (FMA:54344)." [HPO:probinson]
+synonym: "Absent big toe nail" EXACT []
+synonym: "Absent nail of big toe" EXACT []
+is_a: HP:0001802 ! Absent toenail
+created_by: peter
+creation_date: 2014-01-04T13:06:39Z
+
+[Term]
+id: HP:0012556
+name: Hyperbetaalaninemia
+def: "Increased concentration of `beta-alanine` (CHEBI:16958) in the blood." [HPO:probinson]
+synonym: "Hyperbeta-alaninemia" EXACT []
+is_a: HP:0004337 ! Abnormality of amino acid metabolism
+created_by: peter
+creation_date: 2014-01-04T13:37:23Z
+
+[Term]
+id: HP:0012557
+name: EEG with centrotemporal focal spike waves
+def: "EEG with focal sharp transient waves in the centrotemporal region of the brain (also known as the central sulcus), i.e., focal sharp waves of a duration less than 80 msec followed by a slow wave." [HPO:probinson]
+is_a: HP:0011197 ! EEG with focal spike waves
+created_by: peter
+creation_date: 2014-01-04T13:43:32Z
+
+[Term]
+id: HP:0012558
+name: Abnormal T3/T4 ratio
+def: "A ratio of serum triiodothyronine (T3) to thyroxine (T4) in the blood that deviates from normal." [HPO:probinson, pmid:16982586]
+is_a: HP:0002926 ! Abnormality of thyroid physiology
+created_by: peter
+creation_date: 2014-01-04T13:50:30Z
+
+[Term]
+id: HP:0012559
+name: Increased T3/T4 ratio
+def: "A ratio of serum triiodothyronine (T3) to thyroxine (T4) in the blood that is higher than normal." [HPO:probinson]
+is_a: HP:0012558 ! Abnormal T3/T4 ratio
+created_by: peter
+creation_date: 2014-01-04T13:52:59Z
+
+[Term]
+id: HP:0012560
+name: Decreased T3/T4 ratio
+def: "A ratio of serum triiodothyronine (T3) to thyroxine (T4) in the blood that is lower than normal." [HPO:probinson]
+is_a: HP:0012558 ! Abnormal T3/T4 ratio
+created_by: peter
+creation_date: 2014-01-04T13:54:13Z
+
+[Term]
+id: HP:0012561
+name: Unicuspid aortic valve
+def: "The presence of an `aortic valve` (FMA:7236) with one instead of the normal three cusps (flaps)." [HPO:probinson, pmid:18480095, pmid:20329493]
+comment: The aortic valve normally has three cusps (flaps), that is, it is normally tricuspid. Unicuspid aortic valve (UAV) shares many of the features of bicuspid aortic valve, including valvular dysfunction, aortic dilatation, aortic dissection, and dystrophic calcification, although these conditions develop at an earlier age and progress at a faster pace in UAV.
+xref: UMLS:C0149630 "Bicuspid aortic valve"
+is_a: HP:0001646 ! Abnormality of the aortic valve
+created_by: peter
+creation_date: 2014-01-08T08:14:15Z
+
+[Term]
+id: HP:0012562
+name: Premature epimetaphyseal fusion in hand
+def: "Stop of growth at the epiphyseal plate the hyaline cartilage plate in the metaphysis at one or more long bones in the hand, at an earlier than normal age, resulting in growth arrest and shortening of the involved bone." [HPO:probinson]
+is_a: HP:0010588 ! Premature epimetaphyseal fusion
+created_by: peter
+creation_date: 2014-01-04T14:02:35Z
+
+[Term]
+id: HP:0012563
+name: Premature epimetaphyseal fusion in foot
+def: "Stop of growth at the epiphyseal plate the hyaline cartilage plate in the metaphysis at one or more long bones in the foot, at an earlier than normal age, resulting in growth arrest and shortening of the involved bone." [HPO:probinson]
+is_a: HP:0010588 ! Premature epimetaphyseal fusion
+created_by: peter
+creation_date: 2014-01-04T14:05:25Z
+
+[Term]
+id: HP:0012564
+name: Premature epimetaphyseal fusion in tibia
+def: "Stop of growth at the epiphyseal plate the hyaline cartilage plate in the metaphysis at one or more long bones in the tibia, at an earlier than normal age, resulting in growth arrest and shortening of the involved bone." [HPO:probinson]
+is_a: HP:0010588 ! Premature epimetaphyseal fusion
+created_by: peter
+creation_date: 2014-01-04T14:07:34Z
+
+[Term]
+id: HP:0012565
+name: Premature epimetaphyseal fusion in fibula
+def: "Stop of growth at the epiphyseal plate the hyaline cartilage plate in the metaphysis at one or more long bones in the fibula, at an earlier than normal age, resulting in growth arrest and shortening of the involved bone." [HPO:probinson]
+is_a: HP:0010588 ! Premature epimetaphyseal fusion
+created_by: peter
+creation_date: 2014-01-04T14:08:23Z
+
+[Term]
+id: HP:0012566
+name: Premature epimetaphyseal fusion in radius
+def: "Stop of growth at the epiphyseal plate the hyaline cartilage plate in the metaphysis at one or more long bones in the radius, at an earlier than normal age, resulting in growth arrest and shortening of the involved bone." [HPO:probinson]
+is_a: HP:0010588 ! Premature epimetaphyseal fusion
+created_by: peter
+creation_date: 2014-01-04T14:09:50Z
+
+[Term]
+id: HP:0012567
+name: Premature epimetaphyseal fusion in ulna
+def: "Stop of growth at the epiphyseal plate the hyaline cartilage plate in the metaphysis at one or more long bones in the ulna, at an earlier than normal age, resulting in growth arrest and shortening of the involved bone." [HPO:probinson]
+is_a: HP:0010588 ! Premature epimetaphyseal fusion
+created_by: peter
+creation_date: 2014-01-04T14:10:05Z
+
+[Term]
+id: HP:0012568
+name: Lower eyelid edema
+def: "Edema in the region of the `Lower eyelid` (FMA:54442)." [ORCID:0000-0001-5208-3432]
+is_a: HP:0100540 ! Palpebral edema
+created_by: peter
+creation_date: 2014-01-04T14:25:56Z
+
+[Term]
+id: HP:0012569
+name: Delayed menarche
+def: "First period after the age of 15 years." [HPO:probinson]
+is_a: HP:0000140 ! Abnormality of the menstrual cycle
+is_a: HP:0000823 ! Delayed puberty
+created_by: peter
+creation_date: 2014-01-08T08:20:18Z
+
+[Term]
+id: HP:0012570
+name: Synovial sarcoma
+def: "A type of mesenchymal tissue cell tumor that exhibits epithelial differentiation, which most frequently arises in the extremities." [HPO:probinson]
+comment: Synovial sarcoma is a high-grade tumor that is associated with poor prognosis.
+xref: MeSH:D013584 "Sarcoma, Synovial"
+is_a: HP:0100242 ! Sarcoma
+created_by: peter
+creation_date: 2014-01-08T08:47:50Z
+
+[Term]
 id: HP:0100000
 name: Early onset of sexual maturation
 def: "An early onset of puberty, in this case early does not refer to precocious." [HPO:probinson]
@@ -84119,6 +84371,7 @@ name: Palpebral edema
 alt_id: HP:0000626
 def: "Edema in the region of the `eyelids` (FMA:75178)." [HPO:probinson]
 synonym: "Edema of the eyelids" EXACT []
+synonym: "Eyelid edema" EXACT []
 synonym: "Puffy eyelids" EXACT []
 synonym: "Puffy lids" EXACT []
 xref: UMLS:C0560024 "Puffy eyelids"
@@ -88218,17 +88471,11 @@ created_by: sebastiankohler
 creation_date: 2013-06-05T12:03:01Z
 
 [Term]
-id: HP:0200103
-name: Aplastic/hypoplastic fifth finger- and toenail
-synonym: "HYPOPLASTIC TO ABSENT FIFTH FINGER- AND TOENAILS" RELATED [HPO:skoehler]
-is_a: HP:0008398 ! Hypoplastic fifth fingernail
-is_a: HP:0011937 ! Hypoplastic fifth toenail
-created_by: sebastiankohler
-creation_date: 2013-06-05T12:10:12Z
-
-[Term]
 id: HP:0200104
 name: Absent fifth fingernail
+alt_id: HP:0011366
+def: "Absence of `nail of little finger` (FMA:54341)." [HPO:probinson]
+synonym: "Absent nail of fifth finger" EXACT []
 is_a: HP:0001817 ! Absent fingernail
 created_by: sebastiankohler
 creation_date: 2013-06-05T12:11:16Z
