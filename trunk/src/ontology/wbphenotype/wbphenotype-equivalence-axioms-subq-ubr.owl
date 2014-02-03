@@ -85,8 +85,8 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part of</rdfs:label>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000050</oboInOwl:hasDbXref>
-        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part_of</oboInOwl:shorthand>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part_of</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part_of</oboInOwl:shorthand>
     </owl:ObjectProperty>
     
 
@@ -96,8 +96,8 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has part</rdfs:label>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000051</oboInOwl:hasDbXref>
-        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part</oboInOwl:shorthand>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part</oboInOwl:shorthand>
     </owl:ObjectProperty>
     
 
@@ -107,8 +107,8 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000052">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inheres in</rdfs:label>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000052</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inheres_in</oboInOwl:id>
         <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inheres_in</oboInOwl:shorthand>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inheres_in</oboInOwl:id>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-equivalent-axioms-subq#inheres_in_part_of"/>
     </owl:ObjectProperty>
     
@@ -119,8 +119,8 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000053">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bearer of</rdfs:label>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000053</oboInOwl:hasDbXref>
-        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bearer_of</oboInOwl:shorthand>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bearer_of</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bearer_of</oboInOwl:shorthand>
     </owl:ObjectProperty>
     
 
@@ -130,8 +130,8 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000057">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has participant</rdfs:label>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000057</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_participant</oboInOwl:id>
         <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_participant</oboInOwl:shorthand>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_participant</oboInOwl:id>
     </owl:ObjectProperty>
     
 
@@ -141,8 +141,8 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000066">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occurs in</rdfs:label>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000066</oboInOwl:hasDbXref>
-        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occurs_in</oboInOwl:shorthand>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occurs_in</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occurs_in</oboInOwl:shorthand>
     </owl:ObjectProperty>
     
 
@@ -152,8 +152,8 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000070">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">towards</rdfs:label>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000070</oboInOwl:hasDbXref>
-        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">towards</oboInOwl:shorthand>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">towards</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">towards</oboInOwl:shorthand>
     </owl:ObjectProperty>
     
 
@@ -163,8 +163,8 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000071">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has granular part</rdfs:label>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000071</oboInOwl:hasDbXref>
-        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_granular_part</oboInOwl:shorthand>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_granular_part</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_granular_part</oboInOwl:shorthand>
     </owl:ObjectProperty>
     
 
@@ -174,8 +174,8 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002201">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phenotype of</rdfs:label>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002201</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phenotype_of</oboInOwl:id>
         <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phenotype_of</oboInOwl:shorthand>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phenotype_of</oboInOwl:id>
     </owl:ObjectProperty>
     
 
