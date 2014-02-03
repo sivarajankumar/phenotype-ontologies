@@ -53,14 +53,14 @@ mp.owl: mp.obo
 # Note that MP now uses an OWL -edit file as source - the obo is generated from this;
 # this reverses the standard direction of dependencies
 
-mp/mp-equivalence-axioms-subq-ubr.owl: mp/mp-equivalence-axioms-edit.owl
-	owltools $(USECAT) $< --remove-imports-declarations -o $@
+#mp/mp-equivalence-axioms-subq-ubr.owl: mp/mp-equivalence-axioms-edit.owl
+#	owltools $(USECAT) $< --remove-imports-declarations -o $@
 
-mp/mp-equivalence-axioms-subq-ubr.obo: mp/mp-equivalence-axioms-edit.owl
-	owltools $(USECAT) $< --add-support-from-imports --remove-imports-declarations -o -f obo $@
+#mp/mp-equivalence-axioms-subq-ubr.obo: mp/mp-equivalence-axioms-edit.owl
+#	owltools $(USECAT) $< --add-support-from-imports --remove-imports-declarations -o -f obo $@
 # TODO - required??
-#mp/mp-equivalence-axioms-subq.obo: mp/mp-equivalence-axioms-subq-ubr.obo
-#	owltools $< -o -f obo $@
+mp/mp-equivalence-axioms-subq.obo: mp/mp-equivalence-axioms-subq-ubr.obo
+	owltools $< -o -f obo $@
 mp/mp-equivalence-axioms.obo: mp/mp-equivalence-axioms-subq-ubr.obo
 	grep -v ^logical-definition-view-relation $< > $@
 
