@@ -23,7 +23,7 @@ USECAT= --catalog-xml $(CATALOG)
 # TOP LEVEL TARGETS
 # ----------------------------------------
 
-all: $(patsubst %,%-all,$(ONTS)) all_imports mammal-reasoned.owl vertebrate-reasoned.owl metazoa-reasoned.owl upheno.owl
+all: $(patsubst %,%-all,$(ONTS)) all_imports all_match_best_owl mammal-reasoned.owl vertebrate-reasoned.owl metazoa-reasoned.owl upheno.owl
 all_obo : $(patsubst %,%.obo,$(ONTS))
 all_xp_obo : $(patsubst %,%-equivalence-axioms.obo,$(ONTS))
 all_owl : $(patsubst %,%.owl,$(ONTS))
@@ -31,6 +31,8 @@ all_owl : $(patsubst %,%.owl,$(ONTS))
 %-all: %.obo %.owl
 	make $*/$*-equivalence-axioms-subq-ubr.owl ONT=$*
 
+clean:
+	rm mp.obo hp.obo wbphenotype.owl
 
 # ----------------------------------------
 # PARSING, TRANSLATION AND REWRITING
@@ -109,6 +111,21 @@ wbphenotype.owl:
 wbphenotype.obo: wbphenotype.owl
 	owltools $< -o -f obo --no-check $@
 
+# Note that WPO now uses an OWL -edit file as source - the obo is generated from this;
+# this reverses the standard direction of dependencies
+
+wbphenotype/wbphenotype-equivalence-axioms-subq-ubr.owl: wbphenotype/wbphenotype-equivalence-axioms-edit.owl
+	owltools $(USECAT) $< --remove-imports-declarations -o $@
+
+wbphenotype/wbphenotype-equivalence-axioms-subq-ubr.obo: wbphenotype/wbphenotype-equivalence-axioms-edit.owl
+	owltools $(USECAT) $< --add-support-from-imports --remove-imports-declarations -o -f obo $@
+
+# ~~~
+# Fly
+# ~~~
+dpo.owl:
+	wget $(OBO)/fbcv/dpo.owl
+
 # ~~~
 # Charite cross-species phenotype ontology
 # ~~~
@@ -137,10 +154,10 @@ all_merged: uberpheno-subq-full-merged.owl
 # ----------------------------------------
 
 %-simple.owl: %.owl
-	owltools  $(USECAT) --use-reasoner elk $< --merge-imports-closure --assert-inferred-subclass-axioms --removeRedundant --allowEquivalencies -o $@.tmp --make-subset-by-properties // --extract-module -d HP:0000118 MP:0000001  WBPhenotype:0000886  --set-ontology-id $(OBO)/$@ -o $@
+	owltools  $(USECAT) --use-reasoner elk $< --merge-imports-closure --assert-inferred-subclass-axioms --markIsInferred --removeRedundant --allowEquivalencies -o $@.tmp --make-subset-by-properties // --extract-module -d HP:0000118 MP:0000001  WBPhenotype:0000886  --set-ontology-id $(OBO)/$@ -o $@
 
 %-simple.obo: %-simple.owl
-	owltools $< -o $@
+	owltools $< -o -f obo $@
 
 # ----------------------------------------
 # Subqualities model
@@ -209,9 +226,6 @@ IMPORTS = pato uberon chebi pr go doid mpath nbo
 
 # Make this target to regenerate ALL
 all_imports: $(patsubst %, imports/%_import.owl,$(IMPORTS))
-remove_all_imports: 
-	rm $(patsubst %, imports/%_import.owl,$(IMPORTS))
-refresh_all_imports: remove_all_imports all_imports
 
 KEEPRELS = BFO:0000050 BFO:0000051 RO:0002202 immediate_transformation_of
 
@@ -223,15 +237,15 @@ KEEPRELS = BFO:0000050 BFO:0000051 RO:0002202 immediate_transformation_of
 #	owltools  $(USECAT) --map-ontology-iri $(UPHENO)/wbbt_import.owl mirror/wbbt.owl $< --merge-imports-closure mirror/$*.owl --add-imports-from-support  --extract-module -s $(OBO)/$*.owl -c --remove-axiom-annotations --make-subset-by-properties $(KEEPRELS) --set-ontology-id $(UPHENO)/$@ -o $@
 
 # GENERIC:
-imports/%_import.owl: imports/upheno-preimporter.owl mirror/%.owl mp/mp-equivalence-axioms.obo hp/hp-equivalence-axioms.obo
+imports/%_import.owl: imports/upheno-preimporter.owl mirror/%.owl mp/mp-equivalence-axioms-edit.owl hp/hp-equivalence-axioms.obo
 	owltools  $(USECAT) --map-ontology-iri $(UPHENO)/$*_import.owl mirror/$*.owl $< --merge-imports-closure mirror/$*.owl --add-imports-from-support  --extract-module -s $(OBO)/$*.owl -c --remove-axiom-annotations --make-subset-by-properties $(KEEPRELS) --set-ontology-id $(UPHENO)/$@ -o $@
 
 # clone remote ontology locally, perfoming some excision of relations and annotations
 mirror/%.owl:
 	owltools $(OBO)/$*.owl --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/$*.owl -o $@
 # this is actually uberon+cl
-mirror/uberon.owl: external/uberon/uberon.owl
-	owltools $(OBO)/uberon/ext.owl --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/uberon.owl -o $@
+mirror/uberon.owl: external/uberon/ext.owl
+	owltools $(OBO)/uberon/ext.owl --merge-imports-closure --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/uberon.owl -o $@
 ##### need to sort sync issue
 #####	owltools $(OBO)/uberon/ext.owl $(OBO)/cl.owl --merge-support-ontologies --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/uberon.owl -o $@
 
@@ -256,6 +270,15 @@ imports/%_import.obo: imports/%_import.owl
 external/uberon/%.owl:
 	echo $@
 
+# ----------------------------------------
+# Genes
+# ----------------------------------------
+# @Deprecated - moved to data directory
+
+DATA=../../data
+MM=$(DATA)/Mus_musculus
+mp/genes-as-phenotypes.owl:
+	owltools --create-ontology $(UPHENO)/$@ --load-instances $(MM)/Mm-gene-to-phenotype-BF.txt --load-labels $(MM)/Mm-gene-labels.txt -o $@
 
 # ----------------------------------------
 # Builds for multi-species importers
@@ -347,6 +370,13 @@ hp-patterns.txt: hp/hp-equivalence-axioms.obo
 	blip-findall -r HP -consult util/pattern.pro -i $< pattern_xs/2 -no_pred -label | perl -npe 's/,HP:/\t/g' | sort -u > $@
 
 # ----------------------------------------
+# Monarch ontology inferences
+# ----------------------------------------
+# include hacky step for removing pseudo-anon classes for now - these should be removed from base ontology
+monarch-inferred.owl: monarch.owl
+	owltools --use-catalog $< --run-reasoner -r elk --assert-implied -o -f ofn $@.tmp && grep -v '_#_' $@.tmp > $@ && owltools --use-catalog $@
+
+# ----------------------------------------
 # ANALYSIS @Deprecated
 # ----------------------------------------
 
@@ -365,6 +395,12 @@ all-closure.txt: mp-hp-ext-merged-uberon.owl phenotype-annotations.owl
 # generic transform (typically overwritten)
 %.owl: %.obo
 	owltools $< -o $@
+
+# ----------------------------------------
+# stats
+# ----------------------------------------
+%.stats: %.owl
+	owljs-owlstats -o $@ $<
 
 # ----------------------------------------
 # DEPLOY
