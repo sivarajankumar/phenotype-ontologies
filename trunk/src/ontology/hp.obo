@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 08:01:2014 08:52
+date: 01:02:2014 13:32
 saved-by: peter
 auto-generated-by: OBO-Edit 2.3
 subsetdef: hposlim_core "Core clinical terminology"
@@ -30,7 +30,7 @@ synonym: "Multicystic kidneys" EXACT []
 synonym: "Multicystic renal dysplasia." EXACT []
 xref: MeSH:D021782 "Multicystic Kidney Dysplasia"
 xref: UMLS:C0345335 "Multicystic Kidney Dysplasia"
-is_a: HP:0000107 ! Renal cysts
+is_a: HP:0000107 ! Renal cyst
 
 [Term]
 id: HP:0000004
@@ -85,6 +85,7 @@ is_a: HP:0010460 ! Abnormality of the female genitalia
 [Term]
 id: HP:0000009
 name: Functional abnormality of the bladder
+alt_id: HP:0004424
 alt_id: HP:0008731
 def: "`Dysfunction` (PATO:0001641) of the `urinary bladder` (FMA:15900)." [HPO:probinson]
 synonym: "Poor bladder function" EXACT []
@@ -142,8 +143,8 @@ is_a: HP:0010936 ! Abnormality of the lower urinary tract
 
 [Term]
 id: HP:0000015
-name: Bladder diverticula
-def: "The presence of one or more `diverticula` (MPATH:68) (sac or pouch) in the `wall of the urinary bladder` (FMA:15902)." [HPO:probinson]
+name: Bladder diverticulum
+def: "`Diverticulum` (MPATH:68) (sac or pouch) in the `wall of the urinary bladder` (FMA:15902)." [HPO:probinson]
 xref: UMLS:C0156273 "BLADDER DIVERTICULUM"
 is_a: HP:0000014 ! Abnormality of the bladder
 
@@ -152,6 +153,7 @@ id: HP:0000016
 name: Urinary retention
 def: "Inability to completely empty the `urinary bladder` (FMA:15900) during the process of `urination` (GO:0060073)." [HPO:probinson]
 comment: Urinary retention is the inability of the urinary bladder to empty. The cause may be neurologic or nonneurologic.
+synonym: "Increased post-void residual urine volume" EXACT []
 xref: MeSH:D016055 "Urinary Retention"
 is_a: HP:0000009 ! Functional abnormality of the bladder
 
@@ -185,10 +187,10 @@ is_a: HP:0000009 ! Functional abnormality of the bladder
 
 [Term]
 id: HP:0000021
-name: Lower urinary tract dilatation
+name: Megacystis
 alt_id: HP:0002838
-def: "Dilatation of the `lower urinary tract` (FMA:45659)." [HPO:probinson]
-is_a: HP:0010936 ! Abnormality of the lower urinary tract
+def: "Dilatation of the bladder postnatally." [HPO:probinson]
+is_a: HP:0010955 ! Dilatation of the bladder
 
 [Term]
 id: HP:0000022
@@ -535,7 +537,6 @@ name: Urethral atresia
 def: "Congenital anomaly characterized by closure or failure to develop an opening in the urethra." [HPO:probinson]
 xref: UMLS:C1610065 "Urethral atresia"
 is_a: HP:0000795 ! Abnormality of the urethra
-is_a: HP:0000809 ! Urinary tract atresia
 
 [Term]
 id: HP:0000069
@@ -561,7 +562,7 @@ id: HP:0000071
 name: Ureteral stenosis
 def: "The presence of a stenotic, i.e., `constricted` (PATO:0001847) `ureter` (FMA:9704)." [HPO:probinson]
 xref: UMLS:C0521618 "Ureteral stenosis"
-is_a: HP:0000069 ! Abnormality of the ureter
+is_a: HP:0006000 ! Ureteral obstruction
 
 [Term]
 id: HP:0000072
@@ -585,9 +586,10 @@ is_a: HP:0000069 ! Abnormality of the ureter
 [Term]
 id: HP:0000074
 name: Ureteropelvic junction obstruction
+def: "Blockage of urine flow from the renal pelvis to the proximal ureter." [Eurenomics:ewuehl]
 synonym: "Pelviureteric junction obstruction" EXACT []
 xref: UMLS:C0948710
-is_a: HP:0000069 ! Abnormality of the ureter
+is_a: HP:0000071 ! Ureteral stenosis
 
 [Term]
 id: HP:0000075
@@ -666,22 +668,6 @@ created_by: peter
 creation_date: 2008-02-25T12:45:00Z
 
 [Term]
-id: HP:0000082
-name: Abnormality of renal physiology
-alt_id: HP:0000087
-alt_id: HP:0005566
-alt_id: HP:0008646
-def: "An `abnormal` (PATO:0000460) `functionality` (PATO:0001509) of the `kidney` (FMA:7203)." [HPO:probinson]
-synonym: "Decreased renal function" EXACT []
-synonym: "Impaired renal function" EXACT []
-synonym: "Loss of renal function" EXACT []
-synonym: "Reduced renal function" EXACT []
-synonym: "Renal dysfunction" EXACT []
-synonym: "Renal functional abnormality" EXACT []
-xref: UMLS:C1848822 "Renal dysfunction"
-is_a: HP:0011277 ! Abnormality of the urinary system physiology
-
-[Term]
 id: HP:0000083
 name: Renal insufficiency
 alt_id: HP:0000084
@@ -691,7 +677,7 @@ synonym: "Renal failure" EXACT []
 synonym: "Renal failure in adulthood" EXACT []
 xref: MeSH:D051437 "Renal Insufficiency"
 xref: UMLS:C1963154 "Renal failure"
-is_a: HP:0000082 ! Abnormality of renal physiology
+is_a: HP:0012211 ! Abnormal renal physiology
 
 [Term]
 id: HP:0000085
@@ -699,23 +685,26 @@ name: Horseshoe kidney
 def: "A connection of the right and left kidney by an isthmus of functioning renal parenchyma or fibrous tissue that crosses the midline." [HPO:probinson]
 synonym: "Horseshoe kidneys" EXACT []
 xref: UMLS:C0221353 "Horseshoe kidney"
-is_a: HP:0100542 ! Abnormal localization of kidneys
+is_a: HP:0100542 ! Abnormal localization of kidney
 
 [Term]
 id: HP:0000086
 name: Ectopic kidney
 def: "A developmental defect in which a kidney is located in an abnormal anatomic position." [HPO:probinson]
+synonym: "Displaced kidney" EXACT []
 synonym: "Ectopic kidneys" EXACT []
 synonym: "Renal ectopia" EXACT []
 xref: UMLS:C0238207
-is_a: HP:0100542 ! Abnormal localization of kidneys
+is_a: HP:0100542 ! Abnormal localization of kidney
 
 [Term]
 id: HP:0000089
 name: Renal hypoplasia
 alt_id: HP:0001968
 alt_id: HP:0004741
+alt_id: HP:0008641
 def: "`Hypoplasia` (MPATH:133) of the `kidney` (FMA:7203)." [HPO:probinson]
+comment: Oligomeganephronic renal hypoplasia differs from simple hypoplasia, in which the renal mass is reduced but the number of nephrons is normal.
 synonym: "Hypoplastic kidney" EXACT []
 synonym: "Hypoplastic kidneys" EXACT []
 synonym: "Small kidneys" EXACT []
@@ -725,8 +714,12 @@ is_a: HP:0008678 ! Renal hypoplasia/aplasia
 [Term]
 id: HP:0000090
 name: Nephronophthisis
-comment: Progressive symmetrical destruction of the kidneys involving both the tubules and glomeruli.
+alt_id: HP:0004748
+def: "Presence of cysts at the corticomedullary junction of the kidney in combination with tubulointerstitial fibrosis." [Eurenomics:fschaefer]
+comment: Nephronophthisis is here regarded as a phenotypic feature. The disease of the same name results in progressive symmetrical destruction of the kidneys involving both the tubules and glomeruli.
+synonym: "juvenile nephronophthisis" EXACT []
 xref: UMLS:C0687120 "Medullary cystic disease NOS"
+xref: UMLS:C1855681 "Juvenile nephronophthisis"
 is_a: HP:0100957 ! Abnormality of the renal medulla
 
 [Term]
@@ -734,7 +727,7 @@ id: HP:0000091
 name: Abnormality of the renal tubule
 def: "An abnormality of the `renal tubules` (FMA:15627)." [HPO:probinson]
 comment: The renal tubules are reabsorptive canals that are involved in the secreting, collecting, and conducting of the urine.
-is_a: HP:0012210 ! Abnormal renal morphology
+is_a: HP:0012575 ! Abnormality of the nephron
 
 [Term]
 id: HP:0000092
@@ -755,21 +748,27 @@ is_a: HP:0003110 ! Abnormality of urine homeostasis
 
 [Term]
 id: HP:0000095
-name: Morphological abnormalities of the glomeruli
-is_a: HP:0012210 ! Abnormal renal morphology
+name: Abnormality of the glomerulus
+def: "A structural anomaly of the `glomerulus` (FMA:15624)." [Eurenomics:ewuehl]
+is_a: HP:0012575 ! Abnormality of the nephron
 
 [Term]
 id: HP:0000096
 name: Glomerulosclerosis
+def: "Accumulation of scar tissue within the glomerulus." [Eurenomics:fschaefer]
 xref: UMLS:C0178664 "glomerular sclerosis"
-is_a: HP:0000095 ! Morphological abnormalities of the glomeruli
+is_a: HP:0000095 ! Abnormality of the glomerulus
 
 [Term]
 id: HP:0000097
 name: Focal segmental glomerulosclerosis
+alt_id: HP:0004747
+def: "Segmental accumulation of scar tissue in individual (but not all) glomeruli." [Eurenomics:fschaefer]
 synonym: "Focal and segmental glomerular sclerosis" EXACT []
 synonym: "Focal and segmental glomerulosclerosis" EXACT []
+synonym: "focal glomerulosclerosis" EXACT []
 xref: MeSH:D005923 "Glomerulosclerosis, Focal Segmental"
+xref: UMLS:C0017668 "Focal glomerulosclerosis"
 is_a: HP:0000096 ! Glomerulosclerosis
 
 [Term]
@@ -795,7 +794,7 @@ def: "Inflammation of the renal glomeruli." [HPO:probinson]
 synonym: "Glomrulonephritis" EXACT []
 xref: MeSH:D005921 "Glomerulonephritis"
 xref: UMLS:C0017658 "Glomerulonephritis"
-is_a: HP:0000095 ! Morphological abnormalities of the glomeruli
+is_a: HP:0000095 ! Abnormality of the glomerulus
 is_a: HP:0000123 ! Nephritis
 
 [Term]
@@ -803,21 +802,24 @@ id: HP:0000100
 name: Nephrotic syndrome
 alt_id: HP:0000801
 alt_id: HP:0004718
+alt_id: HP:0008638
+alt_id: HP:0008727
 def: "Nephrotic syndrome is a collection of findings resulting from glomerular dysfunction with an increase in glomerular capillary wall permeability associated with pronounced proteinuria. Nephrotic syndrome refers to the constellation of clinical findings that result from severe renal loss of protein, with Proteinuria and hypoalbuminemia, edema, and hyperlipidemia." [HPO:probinson]
 comment: In adults, nephrotic syndrome is characterized by protein excretion of 3.5 g or more per day. In children, nephrotic syndrome is accompanied by protein excretion of more than 40 mg/m2/h.
 synonym: "Nephrosis" EXACT []
 xref: MeSH:D009404 "Nephrotic Syndrome"
-is_a: HP:0000082 ! Abnormality of renal physiology
-is_a: HP:0100820 ! Glomerulopathy
+is_a: HP:0012211 ! Abnormal renal physiology
 
 [Term]
 id: HP:0000103
 name: Polyuria
-def: "An `increased rate` (PATO:0000912) of `micturition` (GO:0060073)." [HPO:probinson]
+alt_id: HP:0200060
+def: "An `increased rate` (PATO:0000912) of urine production." [HPO:probinson]
 comment: An excessive volume of urination for an adult is more than 2.5 liters of urine per day.
+synonym: "Increased urine output" EXACT []
 xref: MeSH:D011141 "Polyuria"
 xref: UMLS:C0032617 "Polyuria"
-is_a: HP:0011036 ! Abnormality of renal excretion
+is_a: HP:0012590 ! Abnormal urine output
 
 [Term]
 id: HP:0000104
@@ -838,25 +840,17 @@ name: Enlarged kidneys
 def: "An abnormal increase in the size of the kidney." [HPO:probinson]
 comment: The main causes of large kidney are hydronephrosis, polycystic disease, renal cell carcinoma, nephroblastoma/Wilm's tumor (in children), and solitary cysts. If possible, a specific term should be used instead of this one.
 synonym: "Large kidneys" EXACT []
+synonym: "Nephromegaly" EXACT []
 synonym: "Renal enlargement" EXACT []
-xref: UMLS:C0542518
+xref: UMLS:C0542518 "Enlarged kidneys"
 is_a: HP:0012210 ! Abnormal renal morphology
 
 [Term]
-id: HP:0000106
-name: Progressive renal insufficiency
-alt_id: HP:0001918
-synonym: "Progressive renal failure" EXACT []
-synonym: "RENAL FAILURE, PROGRESSIVE" RELATED [HPO:skoehler]
-synonym: "Renal insufficiency, progressive" EXACT []
-xref: UMLS:C0748318 "Progressive renal failure"
-is_a: HP:0000083 ! Renal insufficiency
-
-[Term]
 id: HP:0000107
-name: Renal cysts
+name: Renal cyst
 alt_id: HP:0000088
 alt_id: HP:0000109
+def: "A fluid filled sac in the kidney." [Eurenomics:fschaefer]
 synonym: "Cystic kidney disease" RELATED []
 xref: UMLS:C0268800 "Renal cysts"
 is_a: HP:0012210 ! Abnormal renal morphology
@@ -868,7 +862,7 @@ def: "The presence of multiple cysts at the border between the renal cortex and 
 synonym: "Corticomedullary renal cysts" EXACT []
 synonym: "Renal corticomedullary cystic disease" EXACT []
 xref: UMLS:C1968619 "Corticomedullary renal cysts"
-is_a: HP:0000107 ! Renal cysts
+is_a: HP:0000107 ! Renal cyst
 is_a: HP:0011035 ! Abnormality of the renal cortex
 is_a: HP:0100957 ! Abnormality of the renal medulla
 
@@ -886,7 +880,8 @@ is_a: HP:0012210 ! Abnormal renal morphology
 [Term]
 id: HP:0000111
 name: Renal juxtaglomerular cell hypertrophy/hyperplasia
-is_a: HP:0000095 ! Morphological abnormalities of the glomeruli
+def: "Increased number and size of the juxtaglomerular cells." [Eurenomics:ewuehl]
+is_a: HP:0000095 ! Abnormality of the glomerulus
 
 [Term]
 id: HP:0000112
@@ -898,25 +893,30 @@ is_a: HP:0012211 ! Abnormal renal physiology
 [Term]
 id: HP:0000113
 name: Polycystic kidney dysplasia
+alt_id: HP:0004716
 alt_id: HP:0004739
 alt_id: HP:0004740
 alt_id: HP:0008645
+alt_id: HP:0008673
 alt_id: HP:0008699
 def: "The presence of multiple cysts in both kidneys." [HPO:probinson]
 comment: Polycystic kidney disease (PKD) is a leading cause of end-stage renal disease. Most commonly, PKD arises as an inherited trait. Tremendous enlargement of both kidneys is characteristic of the autosomal dominant form of PKD, with up to hundreds or thousands of renal cysts. This term does not refer to the disease entity but rather to the finding of numerous cysts in both kidneys.
+synonym: "Enlarged polycystic kidneys" EXACT []
 synonym: "Polycystic kidney disease" EXACT []
 synonym: "Polycystic kidneys" EXACT []
 xref: MeSH:D007690 "Polycystic kidney diseases"
-is_a: HP:0000107 ! Renal cysts
+is_a: HP:0000107 ! Renal cyst
 
 [Term]
 id: HP:0000114
 name: Proximal tubulopathy
+alt_id: HP:0000806
 def: "Dysfunction of the proximal tubule, which is the portion of the duct system of the nephron of the kidney which leads from Bowman's capsule to the loop of Henle." [HPO:probinson]
 synonym: "Proximal renal tubule defect" EXACT []
 synonym: "Proximal renal tubulopathy" EXACT []
 synonym: "Proximal tubular defect" EXACT []
 synonym: "Proximal tubule dysfunction" EXACT []
+synonym: "Selective proximal tubular damage" EXACT []
 xref: UMLS:C1859342
 is_a: HP:0000091 ! Abnormality of the renal tubule
 
@@ -929,7 +929,7 @@ synonym: "Decreased tubular maximum for phosphate reabsorption per glomerular fi
 synonym: "Decreased tubular maximum for phosphate reabsorption per glomerular filtration rate (TMP/GFR)" EXACT []
 synonym: "Tubular phosphate reabsorption low" EXACT []
 xref: UMLS:C1845169
-is_a: HP:0012365 ! Hypophosphaturia
+is_a: HP:0012599 ! Abnormal urine phosphate concentration
 
 [Term]
 id: HP:0000118
@@ -943,24 +943,20 @@ is_a: HP:0000001 ! All
 id: HP:0000119
 name: Abnormality of the genitourinary system
 alt_id: HP:0008658
+alt_id: HP:0008688
 alt_id: HP:0008704
+alt_id: HP:0008713
 def: "The presence of any abnormality of the `genitourinary system` (FMA:280610)." [HPO:curators]
 synonym: "Genitourinary abnormality" EXACT []
 synonym: "Genitourinary disease" RELATED []
+synonym: "Genitourinary dysplasia" RELATED []
 synonym: "Genitourinary tract anomalies" EXACT []
+synonym: "Genitourinary tract malformation" EXACT []
 synonym: "Urogenital abnormalities" EXACT []
 synonym: "Urogenital anomalies" EXACT []
 xref: MeSH:D014564 "Urogenital Abnormalities"
 xref: UMLS:C1844502 "GENITOURINARY TRACT ANOMALIES"
 is_a: HP:0000118 ! Phenotypic abnormality
-
-[Term]
-id: HP:0000120
-name: Reduced creatinine clearance
-def: "Renal clearance is defined as the volume of plasma per minute needed to excrete the quantity of a solute appearing in the urine in a minute. Normal values for adults are 97 to 137 ml/min (male) and 88 to 128 ml/min (female). This term refers to a reduction below normal limits in the ability of the kidney to clear creatinine from the bloodstream." [HPO:probinson]
-synonym: "Impaired renal creatinine clearance" EXACT []
-xref: UMLS:C1856356 "Reduced creatinine clearance"
-is_a: HP:0011036 ! Abnormality of renal excretion
 
 [Term]
 id: HP:0000121
@@ -982,6 +978,7 @@ is_a: HP:0000104 ! Renal agenesis
 [Term]
 id: HP:0000123
 name: Nephritis
+alt_id: HP:0008634
 def: "The presence of `inflammation` (MPATH:212) affecting the `kidney` (FMA:7203)." [HPO:probinson]
 xref: MeSH:D009393 "Nephritis"
 xref: UMLS:C0027697 "Nephritis"
@@ -993,7 +990,7 @@ name: Renal tubular dysfunction
 synonym: "Renal tubular defect" EXACT []
 synonym: "Renal tubular disease" EXACT []
 xref: UMLS:C0268709 "Renal tubular defect"
-is_a: HP:0000082 ! Abnormality of renal physiology
+is_a: HP:0012211 ! Abnormal renal physiology
 
 [Term]
 id: HP:0000125
@@ -1005,7 +1002,8 @@ is_a: HP:0000086 ! Ectopic kidney
 [Term]
 id: HP:0000126
 name: Hydronephrosis
-def: "Severe distention of the kidney with dilation of the renal pelvis and calyces, caused by retrograde pressure on the kidney when the flow of urine is obstructed." [HPO:probinson]
+def: "Severe distention of the kidney with dilation of the renal pelvis and calices." [HPO:probinson]
+comment: Hydronephrosis can be caused by reflux or by retrograde pressure on the kidney when the flow of urine is obstructed.
 xref: MeSH:D006869 "Hydronephrosis"
 xref: UMLS:C0020295 "Hydronephrosis"
 is_a: HP:0010946 ! Dilatation of the renal pelvis
@@ -1013,12 +1011,12 @@ is_a: HP:0010946 ! Dilatation of the renal pelvis
 [Term]
 id: HP:0000127
 name: Renal salt wasting
+def: "A high concentration of one or more electrolytes in the urine in the presence of low serum concentrations of the electrolyte(s)." [Eurenomics:fschaefer]
 synonym: "Renal salt-wasting" EXACT []
 synonym: "Salt wasting" EXACT []
 synonym: "Salt-wasting" EXACT []
 xref: UMLS:C1846347
-is_a: HP:0000082 ! Abnormality of renal physiology
-is_a: HP:0011865 ! Abnormal urine cation concentration
+is_a: HP:0012591 ! Abnormal urinary electrolyte concentration
 
 [Term]
 id: HP:0000128
@@ -1026,7 +1024,7 @@ name: Renal potassium wasting
 def: "High urine potassium in the presence of hypokalemia." [HPO:probinson]
 comment: A urine potassium assay can be used to determine the cause of reduced serum potassium (hypokalemia). Normally, the kidney will reabsorb more potassium in the presence of hypokalemia. Therefore, a low urine potassium can suggest gastrointestinal potassium loss, poor dietary intake, or a shift of potassium from the extracellular to the intracellular space. On the other hand, a high urine potassium in the face of low serum potassium indicated renal loss, referred to as renal potassium wasting.
 xref: UMLS:C1846348 "Renal potassium wasting"
-is_a: HP:0012364 ! Hypokaluria
+is_a: HP:0012598 ! Abnormal urine potassium concentration
 
 [Term]
 id: HP:0000130
@@ -1861,7 +1859,7 @@ is_a: HP:0012472 ! Eclabion
 id: HP:0000233
 name: Thin vermilion border
 alt_id: HP:0000213
-def: "`Decreased thickness` (PATO:0000592) of the `lips` (FMA:59815)." [HPO:probinson]
+def: "Reduced width of the \"skin of vermilion border region of upper lip\" (FMA:312645)." [HPO:probinson]
 comment: The vermilion is the red part of the lips, and the vermilion border is the rim of paler skin that demarcates the vermilion from the rest of the skin of the face.
 synonym: "Thin lips" EXACT []
 synonym: "THIN VERMILION BORDERS" RELATED [HPO:skoehler]
@@ -3502,7 +3500,7 @@ name: Broad nasal tip
 alt_id: HP:0004501
 alt_id: HP:0005269
 def: "Increase in width of the `nasal tip` (FMA:59518)." [HPO:probinson, pmid:19152422]
-comment: MERGED COMMENT:\nTARGET COMMENT: Nasal tip width is assessed at the anterior junction of the alae and the tip. This is easier in persons with a somewhat squared shape of the nasal tip. This may be best viewed from the inferior aspect of the nose. No objective measures are available. See Bulbous nose for a related term.\n--------------------\nSOURCE COMMENT: This bundled term will be made obsolete in future versions of the HPO and should not be used for new annotations.
+comment: Nasal tip width is assessed at the anterior junction of the alae and the tip. This is easier in persons with a somewhat squared shape of the nasal tip. This may be best viewed from the inferior aspect of the nose. No objective measures are available. See Bulbous nose for a related term.
 synonym: " Nasal tip, wide" EXACT []
 synonym: "BROAD UPTURNED NOSE" RELATED []
 synonym: "Broad, upturned nose" EXACT []
@@ -3782,6 +3780,8 @@ is_a: HP:0000479 ! Abnormality of the retina
 id: HP:0000489
 name: Abnormality of globe location or size
 is_obsolete: true
+consider: HP:0100886
+consider: HP:0100887
 
 [Term]
 id: HP:0000490
@@ -4199,6 +4199,7 @@ is_a: HP:0000572 ! Visual loss
 [Term]
 id: HP:0000531
 name: Corneal crystals
+synonym: "Corneal deposits" EXACT []
 xref: UMLS:C1857391 "Corneal crystals"
 is_a: HP:0007759 ! Opacification of the corneal stroma
 
@@ -6064,7 +6065,7 @@ def: "An abnormality of the `peripheral nervous system` (FMA:9903), which is com
 comment: The peripheral nervous system is divided into autonomic and somatic components, which both include afferent (sensory) and efferent (motor) nerves.
 synonym: "Peripheral nervous system disease" RELATED []
 xref: MeSH:D010523 "Peripheral Nervous System Diseases"
-is_a: HP:0000707 ! Abnormality of the nervous system
+is_a: HP:0012639 ! Abnormality of nervous system morphology
 
 [Term]
 id: HP:0000762
@@ -6277,7 +6278,6 @@ synonym: "Renal stones" EXACT []
 xref: MeSH:D053040 "Nephrolithiasis"
 xref: UMLS:C0392525 "Nephrolithiasis"
 is_a: HP:0012210 ! Abnormal renal morphology
-is_a: HP:0012211 ! Abnormal renal physiology
 
 [Term]
 id: HP:0000789
@@ -6292,8 +6292,8 @@ name: Hematuria
 def: "The presence of blood in the urine. Hematuria may be gross hematuria (visible to the naked eye) or microscopic hematuria (detected by dipstick or microscopic examination of the urine)." [HPO:curators]
 xref: MeSH:D006417 "Hematuria"
 xref: UMLS:C0221752 "hematuria"
-is_a: HP:0003110 ! Abnormality of urine homeostasis
 is_a: HP:0012211 ! Abnormal renal physiology
+is_a: HP:0012614 ! Abnormal urine cytology
 
 [Term]
 id: HP:0000791
@@ -6304,29 +6304,20 @@ xref: UMLS:C0403719 "Uric acid urolithiasis"
 is_a: HP:0000787 ! Nephrolithiasis
 
 [Term]
-id: HP:0000792
-name: Kidney malformation
-alt_id: HP:0004726
-alt_id: HP:0008712
-def: "A malformation of the `kidney` (FMA:7203)." [HPO:probinson]
-synonym: "Renal malformation" EXACT []
-synonym: "Structural kidney abnormalities" EXACT []
-synonym: "Structural renal anomalies" EXACT []
-xref: UMLS:C0266292 "Kidney malformation"
-is_a: HP:0012210 ! Abnormal renal morphology
-
-[Term]
 id: HP:0000793
 name: Membranoproliferative glomerulonephritis
+def: "Proliferation of mesangial cells, increase in the mesangial extracellular matrix, and a thickening of the glomerular capillary walls." [Eurenomics:fschaefer, MeSH:D015432]
 xref: MeSH:D015432 "Glomerulonephritis, Membranoproliferative"
 xref: UMLS:C0017662 "Glomerulonephritis, Membranoproliferative"
 is_a: HP:0000099 ! Glomerulonephritis
 
 [Term]
 id: HP:0000794
-name: IgA nephropathy
+name: IgA deposition in the glomerulus
+def: "The presence of immunoglobulin A deposits in the glomerulus." [Eurenomics:ewuehl]
+synonym: "IgA nephropathy" RELATED []
 xref: UMLS:C0017661 "Nephropathy, IGA"
-is_a: HP:0000099 ! Glomerulonephritis
+is_a: HP:0000095 ! Abnormality of the glomerulus
 
 [Term]
 id: HP:0000795
@@ -6362,11 +6353,12 @@ is_a: HP:0012210 ! Abnormal renal morphology
 [Term]
 id: HP:0000800
 name: Cystic renal dysplasia
+alt_id: HP:0008737
 synonym: "Bilateral cystic dysplasia" EXACT []
 synonym: "Renal cystic dysplasia" EXACT []
 synonym: "Renal dysplasia, cystic" EXACT []
 xref: UMLS:C1842693 "Cystic renal dysplasia"
-is_a: HP:0000107 ! Renal cysts
+is_a: HP:0000107 ! Renal cyst
 
 [Term]
 id: HP:0000802
@@ -6379,10 +6371,12 @@ is_a: HP:0100639 ! Erectile abnormalities
 [Term]
 id: HP:0000803
 name: Renal cortical cysts
+def: "Cysts of the `cortex of the kidney` (FMA:15581)." [Eurenomics:fschaefer]
 synonym: "Cortical cysts" EXACT []
 synonym: "Venal cortical cysts" EXACT []
 xref: UMLS:C1969144 "Cortical cysts"
-is_a: HP:0000107 ! Renal cysts
+is_a: HP:0000107 ! Renal cyst
+is_a: HP:0011035 ! Abnormality of the renal cortex
 
 [Term]
 id: HP:0000804
@@ -6400,11 +6394,6 @@ def: "Lack of the ability to control the urinary bladder leading to involuntary 
 xref: MeSH:D004775 "Enuresis"
 xref: UMLS:C0014394 "Enuresis"
 is_a: HP:0000009 ! Functional abnormality of the bladder
-
-[Term]
-id: HP:0000806
-name: Selective proximal tubular damage
-is_a: HP:0000114 ! Proximal tubulopathy
 
 [Term]
 id: HP:0000807
@@ -6446,11 +6435,6 @@ def: "The presence of a `bicornuate` (PATO:0002161) `uterus` (FMA:17558)." [HPO:
 comment: Uterus with two horn-shaped branches.
 xref: UMLS:C0266387 "Bicornuate uterus"
 is_a: HP:0000130 ! Abnormality of the uterus
-
-[Term]
-id: HP:0000814
-name: Multiple small renal cortical cysts
-is_a: HP:0000803 ! Renal cortical cysts
 
 [Term]
 id: HP:0000815
@@ -8761,6 +8745,7 @@ id: HP:0001113
 name: Early cataracts
 xref: UMLS:C1835120 "Early cataracts"
 is_obsolete: true
+replaced_by: HP:0000518
 
 [Term]
 id: HP:0001114
@@ -9623,7 +9608,7 @@ synonym: "Epilepsy" RELATED []
 synonym: "Seizure" EXACT []
 xref: MeSH:D012640 "Seizures"
 xref: UMLS:C0036572 "Seizure"
-is_a: HP:0002011 ! Abnormality of the central nervous system
+is_a: HP:0012638 ! Abnormality of nervous system physiology
 
 [Term]
 id: HP:0001251
@@ -10125,7 +10110,7 @@ alt_id: HP:0002531
 alt_id: HP:0003129
 synonym: "Neurophysiologic abnormalities" EXACT []
 synonym: "Neurophysiologic abnormalities (EEG, VEP, SEP)" EXACT []
-is_a: HP:0000707 ! Abnormality of the nervous system
+is_a: HP:0012638 ! Abnormality of nervous system physiology
 
 [Term]
 id: HP:0001312
@@ -10149,7 +10134,7 @@ synonym: "Hypoactive to absent deep tendon reflexes" EXACT []
 synonym: "Impaired tendon reflexes" EXACT []
 synonym: "Reduced/absent deep tendon reflexes" EXACT []
 synonym: "Weak or absent deep tendon reflexes" EXACT []
-is_a: HP:0000759 ! Abnormality of the peripheral nervous system
+is_a: HP:0012638 ! Abnormality of nervous system physiology
 
 [Term]
 id: HP:0001317
@@ -11490,14 +11475,6 @@ synonym: "Asthenic habitus" EXACT []
 xref: UMLS:C1861200 "Asthenic habitus"
 is_a: HP:0000098 ! Tall stature
 is_a: HP:0004325 ! Decreased body weight
-
-[Term]
-id: HP:0001534
-name: Genitourinary atresia
-is_a: HP:0000148 ! Vaginal atresia
-is_a: HP:0000809 ! Urinary tract atresia
-created_by: peter
-creation_date: 2008-02-27T04:00:00Z
 
 [Term]
 id: HP:0001537
@@ -13412,6 +13389,8 @@ is_a: HP:0004325 ! Decreased body weight
 [Term]
 id: HP:0001827
 name: Genital tract atresia
+alt_id: HP:0001534
+def: "Congenital occlusion of a tube in the genital tract." [HPO:probinson]
 is_a: HP:0012243 ! Abnormal genital system morphology
 created_by: peter
 creation_date: 2008-02-27T04:08:00Z
@@ -14107,10 +14086,10 @@ is_a: HP:0012210 ! Abnormal renal morphology
 
 [Term]
 id: HP:0001919
-name: Acute renal failure
+name: Acute kidney injury
 def: "Sudden loss of renal function, as manifested by decreased urine production, and a rise in serum creatinine or blood urea nitrogen concentration (azotemia)." [HPO:probinson]
 comment: Acute renal failure is usually classified into prerenal (response to severe volume depletion), intrinsic (response to acute cytotoxic, ischemic, or inflammatory insults) and postrenal (response to obstruction of the passage of urine) etiologies.
-synonym: "Acute kidney injury" EXACT []
+synonym: "Acute renal failure" EXACT []
 xref: MeSH:D058186 "Acute Kidney Injury"
 xref: UMLS:C0022660 "Renal Failure, Acute"
 is_a: HP:0000083 ! Renal insufficiency
@@ -14452,21 +14431,27 @@ is_a: HP:0000234 ! Abnormality of the head
 id: HP:0001966
 name: Mesangial abnormality
 def: "An abnormality of the `mesangium` (FMA:84139), i.e., of the central part of the renal glomerulus between capillaries." [HPO:probinson]
-is_a: HP:0012210 ! Abnormal renal morphology
+is_a: HP:0000095 ! Abnormality of the glomerulus
 
 [Term]
 id: HP:0001967
 name: Diffuse mesangial sclerosis
+alt_id: HP:0004728
 def: "Diffuse sclerosis of the `mesangium` (FMA:84139), as manifestated by diffuse mesangial matrix expansion." [HPO:probinson]
 comment: This finding can be demonstrated by renal biopsy.
+synonym: "Diffuse mesangial sclerosis glomerulopathy" EXACT []
 synonym: "Mesangial sclerosis" EXACT []
 xref: UMLS:C0268747 "Diffuse mesangial sclerosis"
+xref: UMLS:C1860271 "Diffuse mesangial sclerosis glomerulopathy"
 is_a: HP:0001966 ! Mesangial abnormality
 
 [Term]
 id: HP:0001969
 name: Tubulointerstitial abnormality
+alt_id: HP:0008654
 def: "An abnormality that involves the tubules and interstitial tissue of the kidney." [HPO:probinson]
+synonym: "Tubulointerstitial nephropathy" RELATED []
+xref: UMLS:C0027707 "Tubulointerstitial nephropathy"
 is_a: HP:0000091 ! Abnormality of the renal tubule
 
 [Term]
@@ -14813,7 +14798,7 @@ alt_id: HP:0002413
 alt_id: HP:0002481
 def: "An abnormality of the `central nervous system` (FMA:55675)." [HPO:curators]
 synonym: "Central nervous system disease" RELATED []
-is_a: HP:0000707 ! Abnormality of the nervous system
+is_a: HP:0012639 ! Abnormality of nervous system morphology
 
 [Term]
 id: HP:0002012
@@ -14855,8 +14840,8 @@ synonym: "Swallowing difficulty" EXACT []
 xref: MEDRA:10013950 "Dysphagia"
 xref: SNOMEDCT:288939007 "Difficulty swallowing"
 xref: UMLS:C0011168 "Dysphagia"
-is_a: HP:0000707 ! Abnormality of the nervous system
 is_a: HP:0002031 ! Abnormality of the esophagus
+is_a: HP:0012638 ! Abnormality of nervous system physiology
 
 [Term]
 id: HP:0002017
@@ -15112,6 +15097,7 @@ id: HP:0002048
 name: Renal cortical atrophy
 def: "`Atrophy` (MPATH:127) of the `cortex of the kidney` (FMA:15581)." [HPO:probinson]
 is_a: HP:0011035 ! Abnormality of the renal cortex
+is_a: HP:0012585 ! Renal atrophy
 
 [Term]
 id: HP:0002049
@@ -16712,7 +16698,7 @@ id: HP:0002270
 name: Abnormality of the autonomic nervous system
 def: "An abnormality of the `autonomic nervous system` (FMA:9905)." [HPO:probinson]
 comment: The autonomic nervous system is the part of the peripheral nervous system that controls visceral functions such as heart rate and digestion and functions largely below the level of consciousness.
-is_a: HP:0000707 ! Abnormality of the nervous system
+is_a: HP:0012639 ! Abnormality of nervous system morphology
 
 [Term]
 id: HP:0002271
@@ -16968,7 +16954,7 @@ comment: Headache is one of the most common types of recurrent pain as well as o
 synonym: "Headaches" EXACT []
 xref: MeSH:D006261 "Headache"
 xref: UMLS:C0018681 "Headache"
-is_a: HP:0002011 ! Abnormality of the central nervous system
+is_a: HP:0012638 ! Abnormality of nervous system physiology
 
 [Term]
 id: HP:0002317
@@ -17231,7 +17217,7 @@ synonym: "Sleep disturbances" EXACT [HPO:skoehler]
 synonym: "Sleep dysfunction" EXACT []
 xref: UMLS:C0851578 "Sleep Disturbances"
 is_a: HP:0000708 ! Behavioural/Psychiatric Abnormality
-is_a: HP:0002011 ! Abnormality of the central nervous system
+is_a: HP:0012638 ! Abnormality of nervous system physiology
 
 [Term]
 id: HP:0002361
@@ -17744,7 +17730,6 @@ synonym: "Muscle weakness, distal limbs, due to neuronopathy" EXACT []
 synonym: "Weakness of distal muscles" EXACT []
 xref: UMLS:C0427065 "Distal muscle weakness"
 is_a: HP:0001324 ! Muscle weakness
-is_a: HP:0002450 ! Abnormality of the motor neurons
 
 [Term]
 id: HP:0002461
@@ -18041,9 +18026,12 @@ is_a: HP:0001288 ! Gait disturbance
 id: HP:0002516
 name: Increased intracranial pressure
 def: "An increase of the pressure inside the cranium (skull) and thereby in the brain tissue and cerebrospinal fluid." [HPO:probinson]
-comment: Normal values of intracranial pressure in adults are around 7-15 mm Hg in the supine position.
+comment: Normal values of intracranial pressure in adults are around 7-15 mm Hg in the supine position. The term pseudotumor cerebri (also: idiopathic intracranial hypertension or benign intracranial hypertension) is the presence of increased intracranial pressure in the absence of a brain tumor or other identifiable cause. It should be coded using this term and negations of appropriate other HPO terms. Increased intracranial pressure can damage tissue, contribute to hydrocephalus, cause brain herniation, and restrict blood supply to the brain.
+synonym: "Intracranial hypertension" EXACT []
+synonym: "Intracranial pressure elevation" EXACT []
+xref: MeSH:D019586 "Intracranial Hypertension"
 xref: UMLS:C2364324 "Increased Intracranial Pressure"
-is_a: HP:0002118 ! Abnormality of the cerebral ventricles
+is_a: HP:0012640 ! Abnormality of intracranial pressure
 
 [Term]
 id: HP:0002518
@@ -18086,7 +18074,7 @@ comment: Cataplexy is a frequent feature of narcolepsy, a neurologic disorder ch
 synonym: "Narcolepsy" RELATED []
 xref: MeSH:D002385 "Cataplexy"
 xref: UMLS:C0007384 "Cataplexy"
-is_a: HP:0002011 ! Abnormality of the central nervous system
+is_a: HP:0012638 ! Abnormality of nervous system physiology
 
 [Term]
 id: HP:0002526
@@ -20561,9 +20549,9 @@ is_a: HP:0100529 ! Abnormality of phosphate homeostasis
 
 [Term]
 id: HP:0002907
-name: Microhematuria
+name: Microscopic hematuria
 def: "Microscopic hematuria detected by dipstick or microscopic examination of the urine." [HPO:sdoelken]
-synonym: "Microscopic hematuria" EXACT []
+synonym: "Microhematuria" EXACT []
 xref: UMLS:C0239937 "Microscopic haematuria"
 is_a: HP:0000790 ! Hematuria
 
@@ -20637,10 +20625,11 @@ is_a: HP:0003110 ! Abnormality of urine homeostasis
 
 [Term]
 id: HP:0002914
-name: Increased urinary chloride
+name: Hyperchloridura
 def: "An increased concentration of `chloride` (CHEBI:17996) in the `urine` (FMA:12274)." [HPO:probinson]
+synonym: "Increased urinary chloride" EXACT []
 xref: UMLS:C1846352 "Increased urinary chloride"
-is_a: HP:0011866 ! Abnormal urine anion concentration
+is_a: HP:0012600 ! Abnormal urine chloride concentration
 
 [Term]
 id: HP:0002916
@@ -20668,6 +20657,8 @@ is_a: HP:0004921 ! Abnormality of magnesium homeostasis
 id: HP:0002919
 name: Ketonuria
 def: "High levels of ketone bodies in the urine." [HPO:probinson]
+comment: Acetone is the main component of the ketone bodies.
+synonym: "Acetonuria" RELATED []
 synonym: "KETOACIDURIA" RELATED [HPO:skoehler]
 synonym: "Ketonaciduria" EXACT []
 xref: UMLS:C0162275 "Ketonuria"
@@ -21721,7 +21712,7 @@ id: HP:0003081
 name: Increased urinary potassium
 def: "An increased concentration of `potassium(1+)` (CHEBI:29103) in the `urine` (FMA:12274)." [HPO:probinson]
 xref: UMLS:C1846351 "Increased urinary potassium"
-is_a: HP:0011865 ! Abnormal urine cation concentration
+is_a: HP:0012598 ! Abnormal urine potassium concentration
 
 [Term]
 id: HP:0003083
@@ -21906,11 +21897,13 @@ alt_id: HP:0003266
 def: "An increased excretion of phosphates in the urine." [HPO:curators]
 synonym: "Phosphaturia" EXACT []
 xref: UMLS:C0268079 "Hyperphosphaturia"
-is_a: HP:0011866 ! Abnormal urine anion concentration
+is_a: HP:0012599 ! Abnormal urine phosphate concentration
 
 [Term]
 id: HP:0003110
 name: Abnormality of urine homeostasis
+alt_id: HP:0011865
+alt_id: HP:0011866
 def: "An abnormality of the composition of urine or the levels of its components." [HPO:probinson]
 is_a: HP:0001939 ! Abnormality of metabolism/homeostasis
 is_a: HP:0011277 ! Abnormality of the urinary system physiology
@@ -21942,6 +21935,7 @@ id: HP:0003114
 name: Abnormal cardiological findings
 comment: Consider abnormality of the cardiovascular system, HP:0001626.
 is_obsolete: true
+replaced_by: HP:0001113
 
 [Term]
 id: HP:0003115
@@ -22014,6 +22008,8 @@ is_a: HP:0010989 ! Abnormality of the intrinsic pathway
 [Term]
 id: HP:0003126
 name: Low-molecular-weight proteinuria
+def: "Excretion in urine of proteins of a size smaller than albumin (molecular weight 69 kD)." [pmid:95574]
+synonym: "Tubular proteinuria" EXACT []
 xref: UMLS:C1839606 "Low-molecular-weight proteinuria"
 is_a: HP:0000093 ! Proteinuria
 
@@ -22207,6 +22203,7 @@ id: HP:0003158
 name: Hyposthenuria
 def: "An abnormally low urinary specific gravity, i.e., reduced concentration of solutes in the urine." [HPO:probinson]
 comment: Hyposthenuria may occur with impaired renal concentrating power or upon abnormally low hormonal stimulation, as in diabetes insipidus.
+synonym: "Reduced urinary osmolality" EXACT []
 xref: UMLS:C0232831 "Hyposthenuria"
 is_a: HP:0003110 ! Abnormality of urine homeostasis
 
@@ -22216,7 +22213,7 @@ name: Hyperoxaluria
 def: "Increased excretion of  oxalates in the urine." [HPO:probinson]
 xref: MeSH:D006959 "Hyperoxaluria"
 xref: UMLS:C0020500 "Hyperoxaluria"
-is_a: HP:0011866 ! Abnormal urine anion concentration
+is_a: HP:0001992 ! Organic aciduria
 
 [Term]
 id: HP:0003160
@@ -22271,7 +22268,7 @@ is_a: HP:0100530 ! Abnormality of calcium-phosphate metabolism
 id: HP:0003166
 name: Increased urinary taurine
 def: "Increased concentration of `taurine` (CHEBI:15891) in the `urine` (FMA:12274)." [HPO:probinson]
-is_a: HP:0003110 ! Abnormality of urine homeostasis
+is_a: HP:0003355 ! Aminoaciduria
 
 [Term]
 id: HP:0003167
@@ -22631,8 +22628,8 @@ name: Dicarboxylic aciduria
 def: "An increased concentration of `dicarboxylic acid` (CHEBI:35692) in the `urine` (FMA:12274)." [HPO:gcarletti]
 comment: Dicarboxylic aciduria occurs during increased mobilization or inhibited beta-oxidation of fatty acids, where a number of 3-hydroxydicarboxylic acids are excreted in the urine.
 xref: UMLS:C1856432 "Dicarboxylic aciduria"
+is_a: HP:0001992 ! Organic aciduria
 is_a: HP:0010995 ! Abnormality of dicarboxylic acid metabolism
-is_a: HP:0012072 ! Aciduria
 
 [Term]
 id: HP:0003216
@@ -23453,6 +23450,7 @@ id: HP:0003340
 name: Abnormal dermatological laboratory findings
 comment: Consider integument abnormality, HP:0001574.
 is_obsolete: true
+consider: HP:0000951
 
 [Term]
 id: HP:0003341
@@ -23570,7 +23568,7 @@ id: HP:0003359
 name: Decreased urinary sulfate
 def: "Decreased concentration of `sulfate` (CHEBI:16189) in the urine." [HPO:probinson]
 is_a: HP:0004369 ! Decreased purine levels
-is_a: HP:0011866 ! Abnormal urine anion concentration
+is_a: HP:0012612 ! Abnormal urinary sulfate concentration
 
 [Term]
 id: HP:0003361
@@ -23737,8 +23735,8 @@ name: Easy fatigability
 def: "Increased susceptibility to fatigue." [HPO:probinson]
 comment: Fatigue describes the inability to continue performing a task after multiple repetitions.
 xref: UMLS:C1837098 "Easy fatigability"
-is_a: HP:0000707 ! Abnormality of the nervous system
 is_a: HP:0004302 ! Functional motor problems.
+is_a: HP:0012638 ! Abnormality of nervous system physiology
 
 [Term]
 id: HP:0003390
@@ -24243,8 +24241,8 @@ id: HP:0003472
 name: Hypocalcemic tetany
 def: "Hyperexcitability of the neuromuscular system related to abnormally low level of calcium in the blood, resulting in carpopedal or generalized spasms." [HPO:probinson]
 xref: UMLS:C0151940 "Hypocalcaemic tetany"
-is_a: HP:0000759 ! Abnormality of the peripheral nervous system
 is_a: HP:0002901 ! Hypocalcemia
+is_a: HP:0012638 ! Abnormality of nervous system physiology
 
 [Term]
 id: HP:0003473
@@ -24340,7 +24338,7 @@ is_a: HP:0004359 ! Abnormality of fatty-acid metabolism
 id: HP:0003491
 name: Elevated urine pyrophosphate
 def: "An abnormally increased `diphosphate(4-)` (CHEBI:18361)  concentration in the `urine` (FMA:12274). Diphosphate(4-), as ester with two phosphate groups, is also known as pyrophosphate." [HPO:probinson]
-is_a: HP:0011866 ! Abnormal urine anion concentration
+is_a: HP:0003110 ! Abnormality of urine homeostasis
 
 [Term]
 id: HP:0003492
@@ -24364,6 +24362,7 @@ is_a: HP:0002960 ! Autoimmunity
 id: HP:0003494
 name: Loss of heterozygosity, multiple chromosomes
 is_obsolete: true
+consider: HP:0001428
 
 [Term]
 id: HP:0003495
@@ -24499,7 +24498,9 @@ is_a: HP:0100530 ! Abnormality of calcium-phosphate metabolism
 
 [Term]
 id: HP:0003529
-name: Parathormone-independent renal tubular calcium reabsorption defect
+name: Parathormone-independent increased renal tubular calcium reabsorption
+def: "An increase in the reabsorption of calcium by the renal tubulus that is not associated with increased parathormone levels." [HPO:probinson, pmid:23802516]
+comment: This feature is seen with familial hypocalciuric hypercalcemia. This disease has three known genetic etiologies, in type 1 there is a loss of function mutation in the calcium-sensing receptor (encoded by CASR), in type 2 there is a gain of function mutation in GNA11, which is involved in calcium-sensing receptor signaling, and in type 3 there is a mutation in AP2S1, which encodes the adaptor-related protein complex 2, sigma 1 subunit, which alters calcium-sensing receptor endocytosis.
 is_a: HP:0003110 ! Abnormality of urine homeostasis
 
 [Term]
@@ -24893,13 +24894,6 @@ xref: UMLS:C0278026 "Aciduria"
 is_a: HP:0010996 ! Abnormality of monocarboxylic acid metabolism
 
 [Term]
-id: HP:0003608
-name: Increased urinary sodium
-def: "An increased concentration of `sodium(1+)` (CHEBI:29101) in the `urine` (FMA:12274)." [HPO:probinson]
-xref: UMLS:C0854101 "Increased urinary sodium"
-is_a: HP:0011865 ! Abnormal urine cation concentration
-
-[Term]
 id: HP:0003609
 name: Foam cells with lamellar inclusion bodies
 def: "The presence of foam cells that contain lamellar inclusion bodies." [HPO:probinson]
@@ -25092,7 +25086,7 @@ alt_id: HP:0008313
 def: "Recurring episodes of myoglobinuria, i.e., of the presence of myoglobin in the urine. This is usually a consequence of rhabdomyolysis, i.e., of the destruction of muscle tissue." [HPO:probinson]
 synonym: "Myoglobinuria, episodic" EXACT []
 synonym: "Myoglobinuria, recurrent" EXACT [HPO:skoehler]
-is_a: HP:0000093 ! Proteinuria
+is_a: HP:0002913 ! Myoglobinuria
 
 [Term]
 id: HP:0003653
@@ -25697,21 +25691,24 @@ is_a: HP:0006479 ! Abnormality of the dental pulp
 
 [Term]
 id: HP:0003774
-name: End stage renal disease
+name: Stage 5 chronic kidney disease
 alt_id: HP:0000101
+alt_id: HP:0004720
 alt_id: HP:0004725
 alt_id: HP:0004733
+alt_id: HP:0004738
+alt_id: HP:0005570
 def: "A degree of kidney failure severe enough to require dialysis or kidney transplantation for survival characterized by a severe reduction in glomerular filtration rate (less than 15 ml/min/1.73 m2) and other manifestations including increased serum creatinine." [HPO:probinson]
 comment: Equivalent with the National Kidney Foundation's definition of stage 5 chronic kidney disease.
 synonym: "Chronic renal failure" EXACT []
+synonym: "End stage renal disease" EXACT []
 synonym: "End stage renal failure" EXACT []
 synonym: "End-stage renal disease" EXACT []
 synonym: "End-stage renal failure" EXACT [HPO:skoehler]
 synonym: "RENAL FAILURE, ENDSTAGE" RELATED [HPO:skoehler]
-synonym: "Stage 5 chronic kidney disease" EXACT []
 xref: MeSH:D007676 "Kidney Failure, Chronic"
 xref: UMLS:C0022661 "Renal Failure, End-Stage"
-is_a: HP:0000083 ! Renal insufficiency
+is_a: HP:0012622 ! Chronic kidney disease
 
 [Term]
 id: HP:0003777
@@ -27264,16 +27261,19 @@ is_a: HP:0001167 ! Abnormality of finger
 id: HP:0004066
 name: Laterally deviated thumb phalanges
 is_obsolete: true
+consider: HP:0009602
 
 [Term]
 id: HP:0004083
 name: Laterally deviated terminal thumb phalanx
 is_obsolete: true
+consider: HP:0005895
 
 [Term]
 id: HP:0004090
 name: Advanced maturation/advanced ossification of terminal thumb phalanx epiphysis
 is_obsolete: true
+consider: HP:0009662
 
 [Term]
 id: HP:0004095
@@ -27314,6 +27314,7 @@ name: Radially deviated index finger phalanges
 alt_id: HP:0004111
 synonym: "Radially displaced index finger phalanges" EXACT []
 is_obsolete: true
+consider: HP:0009542
 
 [Term]
 id: HP:0004112
@@ -27327,6 +27328,7 @@ creation_date: 2009-01-21T04:59:08Z
 id: HP:0004121
 name: Radially displaced proximal index finger phalanx
 is_obsolete: true
+consider: HP:0009544
 
 [Term]
 id: HP:0004122
@@ -27349,21 +27351,25 @@ creation_date: 2009-01-21T05:05:55Z
 id: HP:0004138
 name: Metaphyseal abnormality of middle phalanx of the 2nd finger
 is_obsolete: true
+consider: HP:0009541
 
 [Term]
 id: HP:0004139
 name: Flared metaphysis of middle phalanx of index finger
 is_obsolete: true
+consider: HP:0009569
 
 [Term]
 id: HP:0004143
 name: Radially deviated terminal index finger phalanx
 is_obsolete: true
+consider: HP:0009542
 
 [Term]
 id: HP:0004144
 name: Duplication of terminal index finger phalanx
 is_obsolete: true
+replaced_by: HP:0009948
 
 [Term]
 id: HP:0004150
@@ -27376,26 +27382,31 @@ is_a: HP:0001167 ! Abnormality of finger
 id: HP:0004153
 name: Overgrowth of middle finger
 is_obsolete: true
+consider: HP:0009316
 
 [Term]
 id: HP:0004157
 name: Accessory middle-finger phalanges
 is_obsolete: true
+replaced_by: HP:0009963
 
 [Term]
 id: HP:0004161
 name: Periosteal new bone of middle finger phalanges
 is_obsolete: true
+consider: HP:0009316
 
 [Term]
 id: HP:0004162
 name: Radially pointed middle finger phalanges
 is_obsolete: true
+consider: HP:0009316
 
 [Term]
 id: HP:0004168
 name: Radially pointed proximal middle-finger phalanx
 is_obsolete: true
+consider: HP:0009316
 
 [Term]
 id: HP:0004172
@@ -27406,11 +27417,13 @@ is_a: HP:0009316 ! Abnormality of the phalanges of the 3rd finger
 id: HP:0004174
 name: Accessory middle phalanx of middle finger
 is_obsolete: true
+replaced_by: HP:0009963
 
 [Term]
 id: HP:0004175
 name: Periosteal new bone of middle phalanx of middle-finger
 is_obsolete: true
+consider: HP:0004172
 
 [Term]
 id: HP:0004180
@@ -27428,26 +27441,31 @@ is_a: HP:0009882 ! Short distal phalanx of finger
 id: HP:0004183
 name: Abnormality of the epiphyses of the terminal phalanx of the middle finger
 is_obsolete: true
+consider: HP:0009357
 
 [Term]
 id: HP:0004184
 name: Cone-shaped epiphysis of terminal phalanx of the middle finger
 is_obsolete: true
+consider: HP:0009423
 
 [Term]
 id: HP:0004185
 name: Fused epiphysis of terminal phalanx of the middle finger
 is_obsolete: true
+consider: HP:0009316
 
 [Term]
 id: HP:0004186
 name: Large epiphysis of terminal phalanx of the middle finger
 is_obsolete: true
+consider: HP:0009316
 
 [Term]
 id: HP:0004187
 name: Prematurely fused epiphysis of terminal phalanx of the middle finger
 is_obsolete: true
+consider: HP:0009316
 
 [Term]
 id: HP:0004188
@@ -27461,16 +27479,19 @@ name: Bracket epiphyses of the 4th finger
 def: "The epiphyses are normally located on the proximal surface of the phalanges. Bracket epiphysis refers to an abnormality in which the epiphysis surrounds the phalanx, having a bracket-like form and reaching from the proximal side of the phalanx to the distal side." [HPO:curators]
 synonym: "Bracket epiphyses of the ring finger" EXACT []
 is_obsolete: true
+replaced_by: HP:0009394
 
 [Term]
 id: HP:0004193
 name: Expanded phalanges of the ring finger
 is_obsolete: true
+consider: HP:0009172
 
 [Term]
 id: HP:0004194
 name: Hypoplastic phalanges of the ring finger
 is_obsolete: true
+consider: HP:0009408
 
 [Term]
 id: HP:0004195
@@ -27484,6 +27505,7 @@ is_a: HP:0009771 ! Osteolytic defects of the phalanges of the hand
 id: HP:0004196
 name: Short phalanges of the ring finger
 is_obsolete: true
+consider: HP:0009408
 
 [Term]
 id: HP:0004197
@@ -27498,21 +27520,25 @@ is_a: HP:0009773 ! Symphalangism affecting the phalanges of the hand
 id: HP:0004198
 name: Wide/broad phalanges of the ring finger
 is_obsolete: true
+consider: HP:0009172
 
 [Term]
 id: HP:0004201
 name: Expanded proximal phalanx of the ring finger
 is_obsolete: true
+replaced_by: HP:0009310
 
 [Term]
 id: HP:0004202
 name: Lytic defects of the proximal phalanx of the ring finger
 is_obsolete: true
+replaced_by: HP:0009312
 
 [Term]
 id: HP:0004203
 name: Short proximal phalanx of the ring finger
 is_obsolete: true
+replaced_by: HP:0009300
 
 [Term]
 id: HP:0004207
@@ -29175,15 +29201,6 @@ created_by: peter
 creation_date: 2008-03-18T09:37:00Z
 
 [Term]
-id: HP:0004424
-name: Micturition difficulties
-def: "Impairment of `urination` (GO:0060073)." [HPO:probinson]
-xref: UMLS:C0241705 "Micturition difficulties"
-is_a: HP:0000009 ! Functional abnormality of the bladder
-created_by: peter
-creation_date: 2008-03-18T09:39:00Z
-
-[Term]
 id: HP:0004425
 name: Flat forehead
 alt_id: HP:0004659
@@ -30292,14 +30309,7 @@ is_a: HP:0012210 ! Abnormal renal morphology
 id: HP:0004713
 name: Reversible renal failure
 def: "Acute renal failure with resolution of manifestations." [HPO:probinson]
-is_a: HP:0001919 ! Acute renal failure
-
-[Term]
-id: HP:0004716
-name: Enlarged polycystic kidneys
-xref: UMLS:C0542518 "Enlarged kidneys"
-is_a: HP:0000105 ! Enlarged kidneys
-is_a: HP:0000113 ! Polycystic kidney dysplasia
+is_a: HP:0000083 ! Renal insufficiency
 
 [Term]
 id: HP:0004717
@@ -30314,19 +30324,11 @@ def: "An increase in amplitude of waves returned in ultrasonography of the kidne
 is_a: HP:0012210 ! Abnormal renal morphology
 
 [Term]
-id: HP:0004720
-name: Childhood-onset end-stage renal disease
-alt_id: HP:0005570
-def: "A degree of kidney failure severe enough to require dialysis or kidney transplantation that manifests in childhood." [HPO:probinson]
-synonym: "Renal failure by age 3" EXACT []
-is_a: HP:0003774 ! End stage renal disease
-
-[Term]
 id: HP:0004722
 name: Thickening of the glomerular basement membrane
-def: "Increase in thickness of the basal lamina of the glomerlus of the kidney." [HPO:probinson]
+def: "Increase in thickness of the basal lamina of the glomerulus of the kidney." [HPO:probinson]
 comment: This finding is demonstrated on renal biopsy.
-is_a: HP:0000095 ! Morphological abnormalities of the glomeruli
+is_a: HP:0000095 ! Abnormality of the glomerulus
 
 [Term]
 id: HP:0004724
@@ -30349,12 +30351,6 @@ xref: UMLS:C1969145 "Urine concentration defect"
 is_a: HP:0011038 ! Abnormality of renal resorption
 
 [Term]
-id: HP:0004728
-name: Diffuse mesangial sclerosis glomerulopathy
-xref: UMLS:C1860271 "Diffuse mesangial sclerosis glomerulopathy"
-is_a: HP:0001967 ! Diffuse mesangial sclerosis
-
-[Term]
 id: HP:0004729
 name: Acute tubulointerstitial nephritis
 def: "Acute inflammation of the kidney affecting the interstitium of the kidneys surrounding the tubules." [HPO:probinson]
@@ -30370,15 +30366,13 @@ is_a: HP:0011036 ! Abnormality of renal excretion
 [Term]
 id: HP:0004734
 name: Renal cortical microcysts
+alt_id: HP:0000814
+def: "Cysts of microscopic size confined to the `cortex of the kidney` (FMA:15581)." [Eurenomics:ewuehl]
 synonym: "Cortical microcysts" EXACT []
 synonym: "Multiple renal cortical microcysts" EXACT []
+synonym: "Multiple small renal cortical cysts" EXACT []
 xref: UMLS:C1859232 "Renal cortical microcysts"
 is_a: HP:0000803 ! Renal cortical cysts
-
-[Term]
-id: HP:0004735
-name: Structural anomalies of the renal tract
-is_a: HP:0012210 ! Abnormal renal morphology
 
 [Term]
 id: HP:0004736
@@ -30389,16 +30383,11 @@ is_a: HP:0000086 ! Ectopic kidney
 
 [Term]
 id: HP:0004737
-name: global glomerulosclerosis
+name: Global glomerulosclerosis
+def: "Complete and diffuse scarring of glomerulus." [Eurenomics:ewuehl]
+comment: All portions of all glomeruli are affected.
 xref: UMLS:C1865276 "Global glomerulosclerosis"
 is_a: HP:0000096 ! Glomerulosclerosis
-
-[Term]
-id: HP:0004738
-name: Adult-onset end stage renal disease
-def: "A degree of kidney failure severe enough to require dialysis or kidney transplantation that manifests in adulthood." [HPO:probinson]
-synonym: "Adult-onset end stage renal failure" EXACT []
-is_a: HP:0003774 ! End stage renal disease
 
 [Term]
 id: HP:0004742
@@ -30419,21 +30408,11 @@ is_a: HP:0001970 ! Tubulointerstitial nephritis
 
 [Term]
 id: HP:0004746
-name: Membranoproliferative glomerulonephritis type II
+name: Dense deposit disease
+def: "A type of membranoproliferative glomerulonephritis characterized by electron dense deposits at the glomerular basement membrane." [Eurenomics:ewuehl, pmid:20301598]
+synonym: "Membranoproliferative glomerulonephritis type II" EXACT []
 xref: UMLS:C0268743 "Membranoproliferative glomerulonephritis type II"
 is_a: HP:0000099 ! Glomerulonephritis
-
-[Term]
-id: HP:0004747
-name: focal glomerulosclerosis
-xref: UMLS:C0017668 "Focal glomerulosclerosis"
-is_a: HP:0000096 ! Glomerulosclerosis
-
-[Term]
-id: HP:0004748
-name: juvenile nephronophthisis
-xref: UMLS:C1855681 "Juvenile nephronophthisis"
-is_a: HP:0000090 ! Nephronophthisis
 
 [Term]
 id: HP:0004749
@@ -33302,13 +33281,9 @@ def: "Abnormal bladder function (increased urge or frequency of urination or urg
 is_a: HP:0002459 ! Dysautonomia
 
 [Term]
-id: HP:0005342
-name: Bladder hypoplasia with no external orifice
-is_a: HP:0005343 ! Hypoplasia of the bladder
-
-[Term]
 id: HP:0005343
 name: Hypoplasia of the bladder
+alt_id: HP:0005342
 def: "Underdevelopment of the `urinary bladder` (FMA:15900)." [HPO:probinson]
 synonym: "Hypoplastic bladder" EXACT []
 xref: UMLS:C1855335 "Hypoplastic bladder"
@@ -34316,19 +34291,24 @@ creation_date: 2008-03-27T10:46:00Z
 [Term]
 id: HP:0005562
 name: Multiple renal cysts
+def: "The presence of many cysts in the kidney." [Eurenomics:ewuehl]
 xref: UMLS:C0431718 "Multiple renal cysts"
-is_a: HP:0000107 ! Renal cysts
+is_a: HP:0000107 ! Renal cyst
 
 [Term]
 id: HP:0005563
-name: Decreased numbers of glomeruli
-is_a: HP:0000095 ! Morphological abnormalities of the glomeruli
+name: Decreased numbers of nephrons
+def: "A reduction in the count of `nephrons` (FMA:17640) per kidney." [Eurenomics:ewuehl]
+synonym: "Decreased numbers of glomeruli" RELATED []
+synonym: "Oligonephronia" EXACT []
+is_a: HP:0012575 ! Abnormality of the nephron
 
 [Term]
 id: HP:0005564
 name: Absence of renal corticomedullary differentiation
 alt_id: HP:0005581
 def: "A lack of differentiation between renal cortex and medulla on diagnostic imaging." [HPO:probinson]
+synonym: "Absent renal corticomedullary differentiation" EXACT []
 synonym: "Loss of corticomedullary differentiation" EXACT []
 is_a: HP:0005932 ! Abnormal renal corticomedullary differentiation
 
@@ -34343,15 +34323,9 @@ is_a: HP:0005932 ! Abnormal renal corticomedullary differentiation
 [Term]
 id: HP:0005567
 name: Renal magnesium wasting
+def: "High urine magnesium in the presence of hypomagnesemia." [Eurenomics:ewuehl]
 xref: UMLS:C1835171 "Renal magnesium wasting"
-is_a: HP:0011038 ! Abnormality of renal resorption
-
-[Term]
-id: HP:0005569
-name: Medullary cystic disease
-xref: UMLS:C0687120 "Medullary cystic disease NOS"
-is_a: HP:0000107 ! Renal cysts
-is_a: HP:0100957 ! Abnormality of the renal medulla
+is_a: HP:0012607 ! Abnormal urine magnesium concentration
 
 [Term]
 id: HP:0005571
@@ -34404,15 +34378,6 @@ name: Duplication of renal pelvis
 def: "A duplication of the `renal pelvis` (FMA:15575)." [HPO:probinson]
 is_a: HP:0000075 ! Renal duplication
 is_a: HP:0010944 ! Abnormality of the renal pelvis
-
-[Term]
-id: HP:0005582
-name: Tubulointerstitial medullary cystic kidney disease
-synonym: "Tubulo-interstitial medullary cystic kidney disease" EXACT []
-xref: UMLS:C1865063 "Tubulointerstitial medullary cystic kidney disease"
-is_a: HP:0000107 ! Renal cysts
-is_a: HP:0001969 ! Tubulointerstitial abnormality
-is_a: HP:0100957 ! Abnormality of the renal medulla
 
 [Term]
 id: HP:0005583
@@ -35294,6 +35259,7 @@ is_a: HP:0001386 ! Joint swelling
 id: HP:0005834
 name: Thumbs hypo/aplastic
 is_obsolete: true
+replaced_by: HP:0009658
 
 [Term]
 id: HP:0005837
@@ -39733,6 +39699,7 @@ is_a: HP:0007262 ! Symmetric peripheral demyelination
 id: HP:0006877
 name: Mental retardation, in some
 is_obsolete: true
+replaced_by: HP:0001249
 
 [Term]
 id: HP:0006879
@@ -40551,9 +40518,10 @@ is_a: HP:0002119 ! Ventriculomegaly
 
 [Term]
 id: HP:0007103
-name: Hypodensity of cerebral white matter on MRI
+name: Hypointensity of cerebral white matter on MRI
 alt_id: HP:0006804
-synonym: "White matter hypodensities on MRI" EXACT []
+def: "A darker than expected signal on magnetic resonance imaging emanating from the cerebral white matter." [HPO:probinson]
+synonym: "White matter hypointensities on MRI" EXACT []
 is_a: HP:0002500 ! Abnormality of the cerebral white matter
 
 [Term]
@@ -40997,7 +40965,6 @@ synonym: "Corticospinal signs" EXACT []
 synonym: "Pyramidal tract dysfunction" EXACT []
 synonym: "Pyramidal tract signs" EXACT []
 xref: UMLS:C0234132 "Pyramidal signs"
-is_a: HP:0002062 ! Abnormality of the pyramidal tracts
 is_a: HP:0011442 ! Abnormality of central motor function
 
 [Term]
@@ -41234,8 +41201,9 @@ is_a: HP:0002011 ! Abnormality of the central nervous system
 [Term]
 id: HP:0007321
 name: Deep white matter hypodensities
+def: "Multiple areas of darker than expected signal on magnetic resonance imaging emanating from the deep cerebral white matter." [HPO:probinson]
 xref: UMLS:C1856979 "Deep white matter hypodensities"
-is_a: HP:0007103 ! Hypodensity of cerebral white matter on MRI
+is_a: HP:0007103 ! Hypointensity of cerebral white matter on MRI
 
 [Term]
 id: HP:0007325
@@ -43572,6 +43540,7 @@ is_a: HP:0000602 ! Ophthalmoplegia
 id: HP:0007825
 name: Cataracts develop in second or third decade
 is_obsolete: true
+replaced_by: HP:0000518
 
 [Term]
 id: HP:0007827
@@ -43907,6 +43876,7 @@ id: HP:0007906
 name: Increased intraocular pressure
 xref: UMLS:C0234708 "Increased intraocular pressure"
 is_a: HP:0000501 ! Glaucoma
+is_a: HP:0012632 ! Abnormal intraocular pressure
 
 [Term]
 id: HP:0007910
@@ -43942,6 +43912,7 @@ is_a: HP:0011491 ! Reduced number of corneal endothelial cells
 id: HP:0007916
 name: Small anterior lens surface opacities
 is_obsolete: true
+consider: HP:0007795
 
 [Term]
 id: HP:0007917
@@ -45672,7 +45643,7 @@ is_a: HP:0002154 ! Hyperglycinemia
 
 [Term]
 id: HP:0008290
-name: Partial complement factor h deficiency
+name: Partial complement factor H deficiency
 is_a: HP:0005369 ! Decreased serum complement factor H
 
 [Term]
@@ -46042,6 +46013,8 @@ is_a: HP:0001260 ! Dysarthria
 id: HP:0008383
 name: Slow-growing nails
 alt_id: HP:0008411
+def: "Nails whose growth is slower than normal." [HPO:probinson]
+synonym: "Abnormal nail growth" RELATED []
 xref: UMLS:C1835238 "Slow-growing nails"
 is_a: HP:0001597 ! Abnormality of the nail
 
@@ -47049,12 +47022,6 @@ name: Absent gonadal tissue
 is_a: HP:0000812 ! Abnormal internal genitalia
 
 [Term]
-id: HP:0008634
-name: Chronic nephritis
-xref: UMLS:C0027706 "Chronic hereditary nephritis"
-is_a: HP:0000123 ! Nephritis
-
-[Term]
 id: HP:0008635
 name: Hypertrophy of the urinary bladder
 def: "Abnormal enlargement of the `urinary bladder` (FMA:15900)." [HPO:probinson]
@@ -47064,12 +47031,7 @@ is_a: HP:0000014 ! Abnormality of the bladder
 [Term]
 id: HP:0008636
 name: Lobular glomerulopathy
-is_a: HP:0100820 ! Glomerulopathy
-
-[Term]
-id: HP:0008638
-name: Terminal nephrotic syndrome
-is_a: HP:0000100 ! Nephrotic syndrome
+is_a: HP:0000095 ! Abnormality of the glomerulus
 
 [Term]
 id: HP:0008639
@@ -47081,13 +47043,6 @@ is_a: HP:0000812 ! Abnormal internal genitalia
 id: HP:0008640
 name: Congenital macroorchidism
 is_a: HP:0000053 ! Macroorchidism
-
-[Term]
-id: HP:0008641
-name: Oligomeganephronic renal hypoplasia
-def: "A type of `Hypoplasia` (MPATH:133) of the `kidney` (FMA:7203) that results from a `decreased number` (PATO:0001999) of `nephrons` (FMA:17640)." [HPO:probinson]
-comment: Oligomeganephronic renal hypoplasia differs from simple hypoplasia, in which the renal mass is reduced but the number of nephrons is normal.
-is_a: HP:0000089 ! Renal hypoplasia
 
 [Term]
 id: HP:0008643
@@ -47119,15 +47074,10 @@ is_a: HP:0002459 ! Dysautonomia
 
 [Term]
 id: HP:0008653
-name: Necrotizing glomerulonephritis
+name: Crescentic glomerulonephritis
+def: "A type of extracapillary glomerulonephritis characterized by the formation of crescent-like cellular proliferation." [Eurenomics:ewuehl]
 xref: UMLS:C0268750 "Necrotising glomerulonephritis"
 is_a: HP:0000099 ! Glomerulonephritis
-
-[Term]
-id: HP:0008654
-name: Tubulointerstitial nephropathy
-xref: UMLS:C0027707 "Tubulointerstitial nephropathy"
-is_a: HP:0001969 ! Tubulointerstitial abnormality
 
 [Term]
 id: HP:0008655
@@ -47144,8 +47094,15 @@ is_a: HP:0000037 ! Male pseudohermaphroditism
 [Term]
 id: HP:0008659
 name: Multiple small medullary renal cysts
-is_a: HP:0005562 ! Multiple renal cysts
-is_a: HP:0005569 ! Medullary cystic disease
+alt_id: HP:0005569
+alt_id: HP:0100956
+def: "The presence of many cysts in the `medulla of the kidney` (FMA:15582)." [Eurenomics:ewuehl]
+comment: This feature is the cardinal sign of medullary cystic disease, also known as medullary sponge disease.
+synonym: "Medullary cystic disease" RELATED []
+synonym: "Medullary sponge kidney disease" RELATED []
+xref: UMLS:C0687120 "Medullary cystic disease NOS"
+is_a: HP:0000107 ! Renal cyst
+is_a: HP:0100957 ! Abnormality of the renal medulla
 
 [Term]
 id: HP:0008660
@@ -47160,7 +47117,7 @@ id: HP:0008661
 name: Urethral stenosis
 def: "Abnormal narrowing of the urethra." [HPO:probinson]
 xref: UMLS:C0041974 "Urethral Stenosis"
-is_a: HP:0000795 ! Abnormality of the urethra
+is_a: HP:0000796 ! Urethral obstruction
 
 [Term]
 id: HP:0008663
@@ -47210,22 +47167,14 @@ name: Partial vaginal septum
 is_a: HP:0001153 ! Septate vagina
 
 [Term]
-id: HP:0008671
-name: Rapid loss of renal function
-is_a: HP:0000083 ! Renal insufficiency
-
-[Term]
 id: HP:0008672
 name: Calcium oxalate nephrolithiasis
 alt_id: HP:0008700
+alt_id: HP:0008725
 def: "The presence of calcium- and oxalate-containing calculi (stones) in the kidneys." [HPO:probinson]
 synonym: "Calcium oxalate urolithiasis" RELATED []
+synonym: "Oxalate nephrolithiasis" EXACT []
 is_a: HP:0004724 ! Calcium nephrolithiasis
-
-[Term]
-id: HP:0008673
-name: Infantile polycystic kidneys
-is_a: HP:0000113 ! Polycystic kidney dysplasia
 
 [Term]
 id: HP:0008675
@@ -47235,16 +47184,18 @@ is_a: HP:0100879 ! Enlarged ovaries
 
 [Term]
 id: HP:0008676
-name: Congenital megaloureter
-def: "A developmental disturbance with extreme ureteral dilatation on a nonobstructive basis." [HPO:probinson]
+name: Congenital megaureter
+def: "A developmental disturbance with extreme ureteral dilatation." [HPO:probinson]
 comment: The cause of congenital megaloureter is thought to be aperistalsis of the distal ureter, leading to dilatation. The defect in peristalsis may be due to faulty development of muscle layers of ureter, that is, there is a functional, not a mechanical cause of obstruction.
-synonym: "Congenital primary megaureter" EXACT []
+synonym: "Congenital megaloureter" EXACT []
 xref: UMLS:C0266324 "Congenital megaloureter"
 is_a: HP:0000069 ! Abnormality of the ureter
 
 [Term]
 id: HP:0008677
-name: Congenital nephrosis
+name: Congenital nephrotic syndrome
+def: "Nephrotic syndrome with onset within the first three months of life." [Eurenomics:fschaefer]
+synonym: "Congenital nephrosis" EXACT []
 xref: UMLS:C0403399 "NEPHROSIS, CONGENITAL"
 is_a: HP:0000100 ! Nephrotic syndrome
 
@@ -47286,13 +47237,6 @@ xref: UMLS:C1844923 "Hypoplastic prostate"
 is_a: HP:0008775 ! Abnormality of the prostate
 
 [Term]
-id: HP:0008688
-name: Genitourinary dysplasia
-def: "`Developmental dysplasia` (MPATH:64) of the `genitourinary system` (FMA:280610)." [HPO:probinson]
-xref: UMLS:C1842054 "Genitourinary dysplasia"
-is_a: HP:0000119 ! Abnormality of the genitourinary system
-
-[Term]
 id: HP:0008689
 name: Bilateral cryptorchidism
 alt_id: HP:0008686
@@ -47303,7 +47247,8 @@ is_a: HP:0000028 ! Cryptorchidism
 [Term]
 id: HP:0008691
 name: Solitary bladder diverticulum
-is_a: HP:0000015 ! Bladder diverticula
+def: "Presence of a single `diverticulum` (MPATH:68) (sac or pouch) in the `wall of the urinary bladder` (FMA:15902)." [Eurenomics:fschaefer]
+is_a: HP:0000015 ! Bladder diverticulum
 
 [Term]
 id: HP:0008694
@@ -47379,12 +47324,6 @@ xref: UMLS:C1704272 "Benign Prostatic Hyperplasia"
 is_a: HP:0008775 ! Abnormality of the prostate
 
 [Term]
-id: HP:0008713
-name: Genitourinary tract malformation
-def: "A developmental anomaly leading to the presence of a `malformed` (PATO:0000646) structure of the `genitourinary system` (FMA:280610)." [HPO:probinson]
-is_a: HP:0000119 ! Abnormality of the genitourinary system
-
-[Term]
 id: HP:0008714
 name: Ureterovesical stenosis
 xref: UMLS:C1856935 "URETEROVESICAL STENOSIS"
@@ -47410,7 +47349,7 @@ id: HP:0008717
 name: Unilateral renal atrophy
 def: "A `unilateral` (PATO:0000634) form of `atrophy` (MPATH:127) of the `kidney` (FMA:7203)." [HPO:probinson]
 xref: UMLS:C1827184 "Unilateral renal atrophy"
-is_a: HP:0012210 ! Abnormal renal morphology
+is_a: HP:0012585 ! Renal atrophy
 
 [Term]
 id: HP:0008718
@@ -47455,12 +47394,6 @@ xref: UMLS:C1835452 "Hypoplastic ovary"
 is_a: HP:0010462 ! Aplasia/Hypoplasia of the ovary
 
 [Term]
-id: HP:0008725
-name: Oxalate nephrolithiasis
-def: "The presence of oxalate-containing calculi (stones) in the kidneys." [HPO:probinson]
-is_a: HP:0000787 ! Nephrolithiasis
-
-[Term]
 id: HP:0008726
 name: Hypoplasia of the vagina
 alt_id: HP:0011938
@@ -47469,12 +47402,6 @@ synonym: "Hypoplastic vagina" RELATED []
 synonym: "Rudimentary vagina" EXACT []
 xref: UMLS:C1861542 "Hypoplastic vagina"
 is_a: HP:0011026 ! Aplasia/Hypoplasia of the vagina
-
-[Term]
-id: HP:0008727
-name: Idiopathic nephrotic syndrome
-xref: UMLS:C0027721 "Idiopathic nephrotic syndrome"
-is_a: HP:0000100 ! Nephrotic syndrome
 
 [Term]
 id: HP:0008729
@@ -47520,16 +47447,10 @@ is_a: HP:0000036 ! Abnormality of the penis
 is_a: HP:0000050 ! Hypoplastic genitalia
 
 [Term]
-id: HP:0008737
-name: Nonsyndromal diffuse cystic renal dysplasia
-is_a: HP:0000800 ! Cystic renal dysplasia
-
-[Term]
 id: HP:0008738
-name: Partially duplicated displaced kidney
-def: "The presence of a partially duplicated kidney not localized in the normal position." [HPO:probinson]
+name: Partially duplicated kidney
+def: "The presence of a partially duplicated kidney." [HPO:probinson]
 is_a: HP:0000075 ! Renal duplication
-is_a: HP:0100542 ! Abnormal localization of kidneys
 
 [Term]
 id: HP:0008739
@@ -47744,7 +47665,8 @@ creation_date: 2008-04-04T06:01:00Z
 id: HP:0008776
 name: Abnormality of the renal artery
 def: "An abnormality of the `renal artery` (FMA:14751)." [HPO:probinson]
-is_a: HP:0000077 ! Abnormality of the kidney
+is_a: HP:0011004 ! Abnormality of the systemic arterial tree
+is_a: HP:0012210 ! Abnormal renal morphology
 created_by: peter
 creation_date: 2008-04-04T06:13:00Z
 
@@ -48518,7 +48440,6 @@ alt_id: HP:0002455
 alt_id: HP:0008941
 def: "A lack of strength of the proximal muscles of the legs." [HPO:probinson]
 synonym: "Muscle weakness, proximal, lower limbs" EXACT []
-is_a: HP:0002450 ! Abnormality of the motor neurons
 is_a: HP:0003701 ! Proximal muscle weakness
 
 [Term]
@@ -49413,6 +49334,7 @@ id: HP:0009163
 name: Abnormal form of the 5th finger
 def: "Abnormal form of the 5th finger." [HPO:curators]
 is_obsolete: true
+consider: HP:0004207
 created_by: peter
 creation_date: 2008-12-22T06:17:30Z
 
@@ -52131,6 +52053,7 @@ name: Aplasia of the phalanges of the 3rd finger
 alt_id: HP:0004156
 synonym: "Absent middle finger phalanges" EXACT []
 is_obsolete: true
+consider: HP:0009447
 created_by: doelkens
 creation_date: 2009-01-14T04:11:21Z
 
@@ -52144,6 +52067,7 @@ synonym: "Hypoplastic middle finger phalanges" EXACT []
 synonym: "Short middle finger phalanges" EXACT []
 synonym: "Small middle finger phalanges" EXACT []
 is_obsolete: true
+replaced_by: HP:0009447
 created_by: doelkens
 creation_date: 2009-01-14T04:11:21Z
 
@@ -53041,6 +52965,7 @@ def: "Abnormality of the phalanges of the 2nd (index) finger." [HPO:curators]
 synonym: "Abnormality of 2nd finger phalanges" EXACT []
 is_a: HP:0004100 ! Abnormality of the 2nd finger
 is_a: HP:0005918 ! Abnormality of phalanx of finger
+is_a: HP:0009774 ! Triangular shaped phalanges of the hand
 created_by: doelkens
 creation_date: 2009-01-21T10:15:07Z
 
@@ -53672,6 +53597,7 @@ def: "Abnormality of the phalanges of the thumb." [HPO:curators]
 synonym: "Abnormality of thumb phalanges" EXACT []
 is_a: HP:0001172 ! Abnormality of the thumb
 is_a: HP:0005918 ! Abnormality of phalanx of finger
+is_a: HP:0009774 ! Triangular shaped phalanges of the hand
 created_by: doelkens
 creation_date: 2009-01-29T01:10:39Z
 
@@ -53831,6 +53757,7 @@ name: Radial deviation of the thumb
 alt_id: HP:0004063
 synonym: "Radially deviated thumb" EXACT []
 is_obsolete: true
+consider: HP:0009602
 created_by: doelkens
 creation_date: 2009-01-29T04:35:09Z
 
@@ -53838,6 +53765,7 @@ creation_date: 2009-01-29T04:35:09Z
 id: HP:0009621
 name: Ulnar deviation of the thumb
 is_obsolete: true
+consider: HP:0009602
 created_by: doelkens
 creation_date: 2009-01-29T04:35:51Z
 
@@ -56278,6 +56206,7 @@ id: HP:0009885
 name: Prenatal short stature
 def: "Short stature with prenatal onset." [HPO:curators]
 is_obsolete: true
+consider: HP:0001511
 creation_date: 2009-04-30T05:29:10Z
 
 [Term]
@@ -56609,6 +56538,7 @@ name: Anisocoria
 def: "Anisocoria, or unequal pupil size, may represent a benign physiologic variant or a manifestation of disease." [HPO:probinson]
 comment: Pathologic anisocoria can reflect an abnormality of the musculature of the iris or of the sympathetic or prasympathetic innervation of the iris.
 subset: hposlim_core
+synonym: "Asymmetric pupil sizes" EXACT []
 synonym: "Asymmetry of the pupils" EXACT []
 xref: MeSH:D015875 "Anisocoria"
 xref: UMLS:C0003079 "Anisocoria"
@@ -61698,8 +61628,8 @@ id: HP:0010475
 name: Cloacal exstrophy
 def: "Cloacal exstrophy is a severe anterior abdominal wall defect in which the two hemibladders are visible and are separated by a midline intestinal plate, an omphalocele, and an imperforate anus." [HPO:probinson]
 xref: UMLS:C0345217 "Cloacal exstrophy"
-is_a: HP:0000014 ! Abnormality of the bladder
 is_a: HP:0010866 ! Abdominal wall defect
+is_a: HP:0012620 ! Cloacal abnormality
 is_a: HP:0100548 ! Exstrophy
 created_by: peter
 creation_date: 2009-09-15T10:08:32Z
@@ -61733,6 +61663,7 @@ creation_date: 2009-09-15T10:13:04Z
 id: HP:0010479
 name: Patent urachus
 def: "Persistence of the urachal canal resulting in a canal between the bladder and the umbilicus." [HPO:probinson]
+synonym: "Persistent urachus" EXACT []
 xref: SNOMEDCT:398316009 "Patent urachus"
 xref: UMLS:C0266357 "Patent urachus"
 is_a: HP:0010478 ! Abnormality of the urachus
@@ -65933,12 +65864,11 @@ creation_date: 2011-01-16T03:33:55Z
 
 [Term]
 id: HP:0010945
-name: Mild fetal pyelectasis
+name: Fetal pyelectasis
 def: "Mild pyelectasis is defined as a hypoechoic spherical or elliptical space within the renal pelvis that measures at least 5mm and not more than 10 mm. The measurement is taken on a transverse section through the fetal renal pelvis using the maximum anterior-to-posterior measurement." [HPO:probinson, pmid:16100637]
 comment: The renal pelvis is the part of the kidney that collects urine. Fetal pyelectasis is a prenatal ultrasound finding that is diagnosed with enlargement of the renal pelvis from 4 to 10 millimeters. In many cases, fetal pyelectasis resolves spontaneously. Note that dilatation of the renal pelvis to more than 10 mm is referred to as severe pyelectasis or hydronephrosis. Measurements less than 5mm are normal, should not be designated as pyelectasis, and should not be reported (pmid:16100637).
 synonym: "Fetal renal pelvic dilatation" EXACT []
 synonym: "Mild fetal hydronephrosis" EXACT []
-synonym: "Mild renal pelvic dilatation" EXACT []
 is_a: HP:0010946 ! Dilatation of the renal pelvis
 is_a: HP:0011425 ! Fetal ultrasound soft marker
 created_by: peter
@@ -66758,16 +66688,16 @@ id: HP:0011036
 name: Abnormality of renal excretion
 def: "An altered ability of the kidneys to void urine and/or specific substances." [HPO:probinson]
 xref: MP:0005555
-is_a: HP:0000082 ! Abnormality of renal physiology
+is_a: HP:0012211 ! Abnormal renal physiology
 created_by: peter
 creation_date: 2011-03-06T12:28:55Z
 
 [Term]
 id: HP:0011037
 name: Decreased urine output
-def: "A `decreased rate` (PATO:0000911) of `micturition` (GO:0060073)." [HPO:probinson]
+def: "A `decreased rate` (PATO:0000911) of urine production." [HPO:probinson]
 comment: A reduction in the overall amount of urine output.
-is_a: HP:0011036 ! Abnormality of renal excretion
+is_a: HP:0012590 ! Abnormal urine output
 created_by: peter
 creation_date: 2011-03-06T12:33:12Z
 
@@ -66775,7 +66705,7 @@ creation_date: 2011-03-06T12:33:12Z
 id: HP:0011038
 name: Abnormality of renal resorption
 def: "An abnormality of `renal absorption` (GO:0070293)." [HPO:probinson]
-is_a: HP:0000082 ! Abnormality of renal physiology
+is_a: HP:0012211 ! Abnormal renal physiology
 created_by: peter
 creation_date: 2011-03-06T12:38:04Z
 
@@ -67569,7 +67499,7 @@ id: HP:0011126
 name: Nephroptosis
 def: "A significant descent of the kidney as the patient moves from the supine to the erect position." [HPO:probinson, pmid:18990154]
 comment: Nephroptosis is diagnosed if the descent of the kidney is greater than 5 cm or two vertebral bodies on intravenous urogram. The kidney is capable of moving back to the normal position, which differentiates it from an ectopic kidney, which constantly remains in an abnormal position. Nephroptosis may be asymptomatic or may cause symptoms including pain and intermittent ureteric obstruction with hydronephrosis, and ischemia due to elongation, narrowing, or kinking of a renal artery.
-is_a: HP:0100542 ! Abnormal localization of kidneys
+is_a: HP:0100542 ! Abnormal localization of kidney
 created_by: peter
 creation_date: 2011-06-16T07:34:25Z
 
@@ -67594,14 +67524,14 @@ creation_date: 2011-06-18T08:48:53Z
 id: HP:0011129
 name: Bilateral fetal pyelectasis
 def: "A `bilateral` (PATO:0000618) form of `fetal pyelectasis` (HP:0010945)." [HPO:probinson]
-is_a: HP:0010945 ! Mild fetal pyelectasis
+is_a: HP:0010945 ! Fetal pyelectasis
 created_by: peter
 creation_date: 2011-06-19T10:00:34Z
 
 [Term]
 id: HP:0011130
 name: Abnormality of renal calyx morphology
-def: "Any< abnormality of the morphology of the `major calices` (FMA:15613) or `minor calices` (FMA:15614) of the kidney." [HPO:probinson]
+def: "Any abnormality of the morphology of the `major calices` (FMA:15613) or `minor calices` (FMA:15614) of the kidney." [HPO:probinson]
 is_a: HP:0012210 ! Abnormal renal morphology
 created_by: peter
 creation_date: 2011-06-19T10:06:45Z
@@ -68935,7 +68865,7 @@ creation_date: 2011-12-31T07:43:28Z
 id: HP:0011279
 name: Abnormality of urine bicarbonate concentration
 def: "An abnormality of the concentration of `hydrogencarbonate` (CHEBI:17544) in the `urine` (FMA:12274)." [HPO:probinson]
-is_a: HP:0011866 ! Abnormal urine anion concentration
+is_a: HP:0003110 ! Abnormality of urine homeostasis
 created_by: peter
 creation_date: 2011-12-30T02:57:55Z
 
@@ -68943,7 +68873,7 @@ creation_date: 2011-12-30T02:57:55Z
 id: HP:0011280
 name: Abnormality of urine calcium concentration
 def: "An abnormality of `calcium` (CHEBI:29108) concentration in the urine (FMA:12274)." [HPO:probinson]
-is_a: HP:0011865 ! Abnormal urine cation concentration
+is_a: HP:0012591 ! Abnormal urinary electrolyte concentration
 created_by: peter
 creation_date: 2011-12-30T03:27:02Z
 
@@ -69396,6 +69326,7 @@ id: HP:0011330
 name: Metopic synostosis
 def: "Premature fusion of the metopic suture." [DDD:awilkie]
 subset: hposlim_core
+synonym: "Metopic suture craniosynostosis" EXACT []
 is_a: HP:0005556 ! Abnormality of the metopic suture
 created_by: peter
 creation_date: 2012-02-25T03:52:01Z
@@ -70343,7 +70274,7 @@ creation_date: 2012-03-18T01:51:24Z
 id: HP:0011442
 name: Abnormality of central motor function
 def: "An anomaly of the control or production of movement in the central nervous system." [HPO:probinson]
-is_a: HP:0002011 ! Abnormality of the central nervous system
+is_a: HP:0012638 ! Abnormality of nervous system physiology
 created_by: peter
 creation_date: 2012-03-18T02:29:04Z
 
@@ -70377,7 +70308,7 @@ creation_date: 2012-03-18T03:53:04Z
 id: HP:0011446
 name: Abnormality of higher mental function
 def: "Cognitive, psychiatric or memory anomaly." [DDD:ajackson]
-is_a: HP:0002011 ! Abnormality of the central nervous system
+is_a: HP:0012638 ! Abnormality of nervous system physiology
 created_by: peter
 creation_date: 2012-03-18T04:23:59Z
 
@@ -72815,7 +72746,7 @@ creation_date: 2012-04-18T07:09:28Z
 id: HP:0011730
 name: Abnormality of central sensory function
 def: "An abnormality of cortical sensation. Assuming the primary sensory modalities are intact and the patient is alert and cooperative, the presence of an abnormality of sensory function usually indicates a lesion of a parietal cortex or of the thalamocortical projections to the parietal cortex." [HPO:probinson]
-is_a: HP:0002011 ! Abnormality of the central nervous system
+is_a: HP:0012638 ! Abnormality of nervous system physiology
 created_by: peter
 creation_date: 2012-04-19T07:44:18Z
 
@@ -73979,20 +73910,6 @@ created_by: peter
 creation_date: 2012-05-28T06:05:24Z
 
 [Term]
-id: HP:0011865
-name: Abnormal urine cation concentration
-is_a: HP:0003110 ! Abnormality of urine homeostasis
-created_by: peter
-creation_date: 2012-05-28T06:10:33Z
-
-[Term]
-id: HP:0011866
-name: Abnormal urine anion concentration
-is_a: HP:0003110 ! Abnormality of urine homeostasis
-created_by: peter
-creation_date: 2012-05-28T06:11:07Z
-
-[Term]
 id: HP:0011867
 name: Abnormality of the wing of the ilium
 def: "An anomaly of the `ilium ala` (FMA:42826). This is the large expanded portion of the ilum which bounds the greater pelvis laterally." [HPO:probinson]
@@ -74580,7 +74497,7 @@ name: Decreased urinary urate
 def: "Decreased concentration of `urate` (CHEBI:46819) in the urine." [HPO:probinson]
 comment: Xanthine oxidase oxidizes oxypurines such as xanthine and hypoxanthine to uric acid. Uric acid is the final oxidation product of purine catabolism.
 is_a: HP:0004369 ! Decreased purine levels
-is_a: HP:0011866 ! Abnormal urine anion concentration
+is_a: HP:0012610 ! Abnormality of urinary uric acid concentration
 created_by: peter
 creation_date: 2012-06-10T02:19:49Z
 
@@ -74631,8 +74548,8 @@ creation_date: 2012-06-10T06:10:08Z
 id: HP:0011942
 name: Increased urinary sulfite
 def: "Increased concentration of `sulfate` (CHEBI:17359) in the urine." [HPO:probinson]
+is_a: HP:0003110 ! Abnormality of urine homeostasis
 is_a: HP:0004369 ! Decreased purine levels
-is_a: HP:0011866 ! Abnormal urine anion concentration
 created_by: peter
 creation_date: 2012-06-11T07:36:01Z
 
@@ -74640,8 +74557,8 @@ creation_date: 2012-06-11T07:36:01Z
 id: HP:0011943
 name: Increased urinary thiosulfate
 def: "Increased concentration of `thiosulfate(2-)` (CHEBI:16094) in the urine." [HPO:probinson]
+is_a: HP:0003110 ! Abnormality of urine homeostasis
 is_a: HP:0004369 ! Decreased purine levels
-is_a: HP:0011866 ! Abnormal urine anion concentration
 created_by: peter
 creation_date: 2012-06-11T07:37:29Z
 
@@ -75877,7 +75794,7 @@ creation_date: 2012-08-20T03:19:54Z
 id: HP:0012085
 name: Pyuria
 def: "Presence of an increased number of neutrophils in the urine." [HPO:probinson]
-is_a: HP:0003110 ! Abnormality of urine homeostasis
+is_a: HP:0012614 ! Abnormal urine cytology
 created_by: peter
 creation_date: 2012-08-20T09:10:26Z
 
@@ -76951,7 +76868,17 @@ creation_date: 2013-03-12T12:27:41Z
 [Term]
 id: HP:0012210
 name: Abnormal renal morphology
+alt_id: HP:0000792
+alt_id: HP:0004726
+alt_id: HP:0004735
+alt_id: HP:0008712
 def: "Any structural anomaly of the `kidney` (FMA:7203)." [HPO:probinson]
+synonym: "Kidney malformation" EXACT []
+synonym: "Renal malformation" EXACT []
+synonym: "Structural anomalies of the renal tract" EXACT []
+synonym: "Structural kidney abnormalities" EXACT []
+synonym: "Structural renal anomalies" EXACT []
+xref: UMLS:C0266292 "Kidney malformation"
 is_a: HP:0000077 ! Abnormality of the kidney
 created_by: peter
 creation_date: 2013-03-14T07:41:11Z
@@ -76959,8 +76886,21 @@ creation_date: 2013-03-14T07:41:11Z
 [Term]
 id: HP:0012211
 name: Abnormal renal physiology
-def: "Any functional anomaly of the `kidney` (FMA:7203)." [HPO:probinson]
+alt_id: HP:0000082
+alt_id: HP:0000087
+alt_id: HP:0005566
+alt_id: HP:0008646
+def: "An `abnormal` (PATO:0000460) `functionality` (PATO:0001509) of the `kidney` (FMA:7203)." [HPO:probinson]
+synonym: "Abnormality of renal physiology" EXACT []
+synonym: "Decreased renal function" EXACT []
+synonym: "Impaired renal function" EXACT []
+synonym: "Loss of renal function" EXACT []
+synonym: "Reduced renal function" EXACT []
+synonym: "Renal dysfunction" EXACT []
+synonym: "Renal functional abnormality" EXACT []
+xref: UMLS:C1848822 "Renal dysfunction"
 is_a: HP:0000077 ! Abnormality of the kidney
+is_a: HP:0011277 ! Abnormality of the urinary system physiology
 created_by: peter
 creation_date: 2013-03-14T07:43:34Z
 
@@ -76975,7 +76915,12 @@ creation_date: 2013-03-14T07:49:53Z
 [Term]
 id: HP:0012213
 name: Decreased glomerular filtration rate
+alt_id: HP:0000120
 def: "An abnormal reduction in the volume of water filtered out of plasma through glomerular capillary walls into Bowman's capsules per unit of time." [HP:probinson]
+comment: Renal clearance is defined as the volume of plasma per minute needed to excrete the quantity of a solute appearing in the urine in a minute. Normal values for adults are 97 to 137 ml/min (male) and 88 to 128 ml/min (female). This term refers to a reduction below normal limits in the ability of the kidney to clear creatinine from the bloodstream.
+synonym: "Impaired renal creatinine clearance" EXACT []
+synonym: "Reduced creatinine clearance" EXACT []
+xref: UMLS:C1856356 "Reduced creatinine clearance"
 is_a: HP:0012212 ! Abnormal glomerular filtration rate
 created_by: peter
 creation_date: 2013-03-14T07:54:30Z
@@ -78281,10 +78226,10 @@ creation_date: 2013-09-15T10:36:43Z
 
 [Term]
 id: HP:0012364
-name: Hypokaluria
+name: Decreased urinary potassium
 def: "A decreased concentration of `potassium(1+)` (CHEBI:29103) in the `urine` (FMA:12274)." [HPO:probinson]
-synonym: "Decreased urinary potassium" EXACT []
-is_a: HP:0011865 ! Abnormal urine cation concentration
+synonym: "Hypokaluria" EXACT []
+is_a: HP:0012598 ! Abnormal urine potassium concentration
 created_by: peter
 creation_date: 2013-10-03T10:21:51Z
 
@@ -78292,7 +78237,7 @@ creation_date: 2013-10-03T10:21:51Z
 id: HP:0012365
 name: Hypophosphaturia
 def: "An abnormally decreased `phosphate` (CHEBI:18367) concentration in the urine." [HPO:probinson]
-is_a: HP:0011865 ! Abnormal urine cation concentration
+is_a: HP:0012599 ! Abnormal urine phosphate concentration
 created_by: peter
 creation_date: 2013-10-03T10:25:06Z
 
@@ -78624,7 +78569,7 @@ name: Abnormal urine alpha-ketoglutarate concentration
 def: "A deviation from normal of the concentration of  `2-oxoglutaric acid` (CHEBI:30915) in the urine." [HPO:probinson]
 comment: Note that alpha-ketoglutaric acid is also known as 2-ketoglutaric acid, alpha-ketoglutaric acid, 2-xxoglutaric acid, and oxoglutaric acid.
 synonym: "Abnormality of urine alpha ketoglutarate concentration" EXACT []
-is_a: HP:0011866 ! Abnormal urine anion concentration
+is_a: HP:0003110 ! Abnormality of urine homeostasis
 created_by: peter
 creation_date: 2013-11-09T15:45:40Z
 
@@ -78650,7 +78595,7 @@ creation_date: 2013-11-09T15:49:45Z
 id: HP:0012404
 name: Abnormal urine citrate concentration
 def: "A deviation from normal of the concentration of  `citrate(3-)` (CHEBI:16947) in the urine." [HPO:probinson]
-is_a: HP:0011866 ! Abnormal urine anion concentration
+is_a: HP:0003110 ! Abnormality of urine homeostasis
 created_by: peter
 creation_date: 2013-11-09T15:51:30Z
 
@@ -79252,7 +79197,7 @@ creation_date: 2013-11-26T17:40:01Z
 [Term]
 id: HP:0012471
 name: Thick vermilion border
-def: "Increased thickness of the `lips` (FMA:59815)." [HPO:probinson]
+def: "Increased width of the \"skin of vermilion border region of upper lip\" (FMA:312645)." [HPO:probinson]
 synonym: "Full lips" EXACT []
 synonym: "Thick lips" EXACT []
 is_a: HP:0000159 ! Abnormality of the lip
@@ -80109,6 +80054,688 @@ created_by: peter
 creation_date: 2014-01-08T08:47:50Z
 
 [Term]
+id: HP:0012571
+name: Ureter fissus
+def: "A partial duplication of the ureter such that the duplicated ureters fuse to a single ureter before their insertion into the bladder." [Eurenomics:ewuehl]
+comment: This anomaly is only seen in the presence of renal duplication.
+synonym: "Partially duplicated ureter" EXACT []
+xref: ICD-10:Q62.5 "Duplication of ureter"
+is_a: HP:0000081 ! Duplicated collecting system
+created_by: peter
+creation_date: 2014-01-16T11:38:41Z
+
+[Term]
+id: HP:0012572
+name: Ureter duplex
+def: "A complete duplication of the ureter such that the duplicated ureters with separate insertions into the bladder." [Eurenomics:fschaefer]
+xref: ICD-10:Q62.5 "Duplication of ureter"
+is_a: HP:0000081 ! Duplicated collecting system
+created_by: peter
+creation_date: 2014-01-16T11:42:00Z
+
+[Term]
+id: HP:0012573
+name: Global proximal tubulopathy
+def: "A type of proximal renal tubulopathy characterized by resorption defects leading to glycosuria, aminoaciduria, tubular proteinuria, renal hypophosphatemia, and urate tubular hyporeabsorption with bicarbonate loss and resulting acidosis." [HPO:probinson]
+synonym: "Renal Fanconi syndrome" RELATED []
+is_a: HP:0000114 ! Proximal tubulopathy
+created_by: peter
+creation_date: 2014-01-16T12:27:40Z
+
+[Term]
+id: HP:0012574
+name: Mesangial proliferation
+def: "Increased numbers of mesangial cells per glomerulus." [Eurenomics:fschaefer]
+is_a: HP:0001966 ! Mesangial abnormality
+created_by: peter
+creation_date: 2014-01-16T12:43:25Z
+
+[Term]
+id: HP:0012575
+name: Abnormality of the nephron
+def: "A structural anomaly of the `nephron` (FMA:17640)." [Eurenomics:fschaefer]
+is_a: HP:0012210 ! Abnormal renal morphology
+created_by: peter
+creation_date: 2014-01-16T12:49:04Z
+
+[Term]
+id: HP:0012576
+name: C3 nephropathy
+def: "The presence of complement 3 deposits in the glomerulus." [Eurenomics:ewuehl]
+is_a: HP:0000095 ! Abnormality of the glomerulus
+created_by: peter
+creation_date: 2014-01-16T13:08:21Z
+
+[Term]
+id: HP:0012577
+name: Thin glomerular basement membrane
+def: "Reduction in thickness of the basal lamina of the glomerulus of the kidney." [HPO:probinson]
+comment: This finding is demonstrated on renal biopsy.
+is_a: HP:0000095 ! Abnormality of the glomerulus
+created_by: peter
+creation_date: 2014-01-16T13:21:17Z
+
+[Term]
+id: HP:0012578
+name: Membranous nephropathy
+def: "A type of glomerulonephropathy characterized by thickening of the basement membrane and deposition of immune complexes in the subepithelial space." [Eurenomics:fschaefer]
+synonym: "Membranous glomerulonephritis" EXACT []
+xref: MeSH:D015433 "Glomerulonephritis, Membranous"
+is_a: HP:0000099 ! Glomerulonephritis
+created_by: peter
+creation_date: 2014-01-16T13:22:41Z
+
+[Term]
+id: HP:0012579
+name: Minimal change glomerulonephritis
+def: "The presence of minimal changes visible by light microscopy but flattened and fused podocyte foot processes on electron microscopy in a person with nephrotic range proteinuria." [Eurenomics:fschaefer]
+synonym: "Minimal change disease" EXACT []
+synonym: "Minimal change nephropathy" EXACT []
+is_a: HP:0000099 ! Glomerulonephritis
+created_by: peter
+creation_date: 2014-01-16T13:26:20Z
+
+[Term]
+id: HP:0012580
+name: Calcium phosphate nephrolithiasis
+def: "The presence of calcium- and phosphate-containing calculi (stones) in the kidneys." [HPO:probinson]
+synonym: "Calcium oxalate urolithiasis" RELATED []
+is_a: HP:0004724 ! Calcium nephrolithiasis
+created_by: peter
+creation_date: 2014-01-16T13:34:27Z
+
+[Term]
+id: HP:0012581
+name: Solitary renal cyst
+def: "An isolated cyst of the kidney." [Eurenomics:ewuehl]
+is_a: HP:0000107 ! Renal cyst
+created_by: peter
+creation_date: 2014-01-16T15:06:37Z
+
+[Term]
+id: HP:0012582
+name: Bilateral renal dysplasia
+def: "A bilateral form of `developmental dysplasia` (MPATH:64) of the `kidney` (FMA:7203)." [HPO:probinson]
+xref: UMLS:C0431697 "Unilateral renal dysplasia"
+is_a: HP:0000110 ! Renal dysplasia
+created_by: peter
+creation_date: 2014-01-16T15:14:35Z
+
+[Term]
+id: HP:0012583
+name: Unilateral renal hypoplasia
+def: "One sided `hypoplasia` (MPATH:133) of the `kidney` (FMA:7203)." [Eurenomics:fschaefer]
+is_a: HP:0000089 ! Renal hypoplasia
+created_by: peter
+creation_date: 2014-01-16T15:15:30Z
+
+[Term]
+id: HP:0012584
+name: Bilateral renal hypoplasia
+def: "Two sided `hypoplasia` (MPATH:133) of the `kidney` (FMA:7203)." [Eurenomics:fschaefer]
+is_a: HP:0000089 ! Renal hypoplasia
+created_by: peter
+creation_date: 2014-01-16T15:16:03Z
+
+[Term]
+id: HP:0012585
+name: Renal atrophy
+def: "`Atrophy` (MPATH:127) of the `kidney` (FMA:7203)." [HPO:probinson]
+is_a: HP:0012210 ! Abnormal renal morphology
+created_by: peter
+creation_date: 2014-01-16T15:21:19Z
+
+[Term]
+id: HP:0012586
+name: Bilateral renal atrophy
+def: "A two-sided form of `atrophy` (MPATH:127) of the `kidney` (FMA:7203)." [HPO:probinson]
+is_a: HP:0012585 ! Renal atrophy
+created_by: peter
+creation_date: 2014-01-16T15:21:55Z
+
+[Term]
+id: HP:0012587
+name: Macroscopic hematuria
+def: "Hematuria that is visible upon inspection of the urine." [HPO:sdoelken]
+is_a: HP:0000790 ! Hematuria
+created_by: peter
+creation_date: 2014-01-16T15:31:44Z
+
+[Term]
+id: HP:0012588
+name: Steroid-resistant nephrotic syndrome
+def: "A form of nephrotic syndrome that does not respond to treatment with steroid medication." [Eurenomics:ewuehl]
+is_a: HP:0000100 ! Nephrotic syndrome
+created_by: peter
+creation_date: 2014-01-16T15:47:57Z
+
+[Term]
+id: HP:0012589
+name: Multidrug-resistant nephrotic syndrome
+def: "A form of nephrotic syndrome that does not respond to any immunosuppresive treatment." [Eurenomics:ewuehl]
+is_a: HP:0000100 ! Nephrotic syndrome
+created_by: peter
+creation_date: 2014-01-16T15:48:49Z
+
+[Term]
+id: HP:0012590
+name: Abnormal urine output
+def: "Ab abnormal amount of urine production." [Eurenomics:ewuehl]
+is_a: HP:0011036 ! Abnormality of renal excretion
+created_by: peter
+creation_date: 2014-01-16T15:59:33Z
+
+[Term]
+id: HP:0012591
+name: Abnormal urinary electrolyte concentration
+is_a: HP:0003110 ! Abnormality of urine homeostasis
+created_by: peter
+creation_date: 2014-01-16T17:44:11Z
+
+[Term]
+id: HP:0012592
+name: Albuminuria
+def: "Increased concentration of albumin in the urine." [Eurenomics:fschaefer]
+is_a: HP:0000093 ! Proteinuria
+created_by: peter
+creation_date: 2014-01-16T17:49:16Z
+
+[Term]
+id: HP:0012593
+name: Nephrotic range proteinuria
+def: "Severely increased amount of excretion of protein in the urine, defined as 3.5 grams per day or more in adults and 40 mg per meter-squared body surface area per hour in children." [Eurenomics:ewuehl]
+is_a: HP:0000093 ! Proteinuria
+created_by: peter
+creation_date: 2014-01-16T17:50:21Z
+
+[Term]
+id: HP:0012594
+name: Microalbuminuria
+def: "The presence of mildly increased concentrations of albumin in the urine (in adults, 30-150 mg per day)." [Eurenomics:fschaefer]
+is_a: HP:0012592 ! Albuminuria
+created_by: peter
+creation_date: 2014-01-16T17:54:41Z
+
+[Term]
+id: HP:0012595
+name: Mild proteinuria
+def: "Mildly increased levels of protein in the urine (150-500 mg per day in adults)." [Eurenomics:eweuehl]
+is_a: HP:0000093 ! Proteinuria
+created_by: peter
+creation_date: 2014-01-16T17:55:47Z
+
+[Term]
+id: HP:0012596
+name: Moderate proteinuria
+def: "Moderately increased levels of protein in the urine (500-1000 mg per day in adults)." [Eurenomics:fschaefer]
+is_a: HP:0000093 ! Proteinuria
+created_by: peter
+creation_date: 2014-01-16T17:56:26Z
+
+[Term]
+id: HP:0012597
+name: Heavy proteinuria
+def: "Severely increased levels of protein in the urine (1000-3000 mg per day in adults)." [Eurenomics:ewuehl]
+is_a: HP:0000093 ! Proteinuria
+created_by: peter
+creation_date: 2014-01-16T17:56:38Z
+
+[Term]
+id: HP:0012598
+name: Abnormal urine potassium concentration
+def: "An abnormal concentration of `potassium(1+)` (CHEBI:29103) in the `urine` (FMA:12274)." [Eurenomics:fschaefer]
+is_a: HP:0012591 ! Abnormal urinary electrolyte concentration
+created_by: peter
+creation_date: 2014-01-16T18:11:59Z
+
+[Term]
+id: HP:0012599
+name: Abnormal urine phosphate concentration
+def: "An abnormal `phosphate` (CHEBI:18367) concentration in the urine." [Eurenomics:ewuehl]
+is_a: HP:0012591 ! Abnormal urinary electrolyte concentration
+created_by: peter
+creation_date: 2014-01-16T18:14:49Z
+
+[Term]
+id: HP:0012600
+name: Abnormal urine chloride concentration
+def: "An abnormal concentration of `chloride` (CHEBI:17996) in the `urine` (FMA:12274)." [Eurenomics:fschaefer]
+is_a: HP:0012591 ! Abnormal urinary electrolyte concentration
+created_by: peter
+creation_date: 2014-01-16T18:16:24Z
+
+[Term]
+id: HP:0012601
+name: Hypochloriduria
+def: "An decreased concentration of `chloride` (CHEBI:17996) in the `urine` (FMA:12274)." [HPO:probinson]
+synonym: "Decreased urinary chloride" EXACT []
+is_a: HP:0012600 ! Abnormal urine chloride concentration
+created_by: peter
+creation_date: 2014-01-16T18:17:06Z
+
+[Term]
+id: HP:0012602
+name: Renal chloride wasting
+def: "High urine chloride in the presence of hypochloridemia." [Eurenomics:ewuehl]
+is_a: HP:0012600 ! Abnormal urine chloride concentration
+created_by: peter
+creation_date: 2014-01-16T18:18:11Z
+
+[Term]
+id: HP:0012603
+name: Abnormal urine sodium concentration
+def: "An abnormal concentration of sodium in the `urine` (FMA:12274)." [Eurenomics:fschaefer]
+is_a: HP:0012591 ! Abnormal urinary electrolyte concentration
+created_by: peter
+creation_date: 2014-01-16T18:19:27Z
+
+[Term]
+id: HP:0012604
+name: Hyponatriuria
+def: "An abnormally decreased sodium concentration in the urine." [Eurenomics:ewuehl]
+is_a: HP:0012603 ! Abnormal urine sodium concentration
+created_by: peter
+creation_date: 2014-01-16T18:22:09Z
+
+[Term]
+id: HP:0012605
+name: Hypernatriuria
+alt_id: HP:0003608
+def: "An increased concentration of `sodium(1+)` (CHEBI:29101) in the `urine` (FMA:12274)." [Eurenomics:ewuehl]
+synonym: "Increased urinary sodium" EXACT []
+xref: UMLS:C0854101 "Increased urinary sodium"
+is_a: HP:0012603 ! Abnormal urine sodium concentration
+created_by: peter
+creation_date: 2014-01-16T18:22:44Z
+
+[Term]
+id: HP:0012606
+name: Renal sodium wasting
+def: "An abnormally increased sodium concentration in the urine in the presence of hyponatremia." [Eurenomics:ewuehl]
+is_a: HP:0012603 ! Abnormal urine sodium concentration
+created_by: peter
+creation_date: 2014-01-16T18:23:16Z
+
+[Term]
+id: HP:0012607
+name: Abnormal urine magnesium concentration
+def: "An abnormal concentration of magnesium the `urine` (FMA:12274)." [Eurenomics:ewuehl]
+is_a: HP:0012591 ! Abnormal urinary electrolyte concentration
+created_by: peter
+creation_date: 2014-01-17T11:37:50Z
+
+[Term]
+id: HP:0012608
+name: Hypermagnesiuria
+def: "An increased concentration of magnesium the `urine` (FMA:12274)." [Eurenomics:fschaefer]
+is_a: HP:0012607 ! Abnormal urine magnesium concentration
+created_by: peter
+creation_date: 2014-01-17T11:38:51Z
+
+[Term]
+id: HP:0012609
+name: Hypomagnesiuria
+def: "An decreased concentration of magnesium the `urine` (FMA:12274)." [Eurenomics:fschaefer]
+synonym: "Decreased urine magnesium" EXACT []
+is_a: HP:0012607 ! Abnormal urine magnesium concentration
+created_by: peter
+creation_date: 2014-01-17T11:39:31Z
+
+[Term]
+id: HP:0012610
+name: Abnormality of urinary uric acid concentration
+def: "Abnormal concentration of `urate` (CHEBI:46819) in the urine." [HPO:probinson]
+comment: Xanthine oxidase oxidizes oxypurines such as xanthine and hypoxanthine to uric acid. Uric acid is the final oxidation product of purine catabolism.
+is_a: HP:0003110 ! Abnormality of urine homeostasis
+is_a: HP:0004369 ! Decreased purine levels
+created_by: peter
+creation_date: 2014-01-17T11:56:43Z
+
+[Term]
+id: HP:0012611
+name: Increased urinary urate
+def: "Elevanted concentration of `urate` (CHEBI:46819) in the urine." [HPO:probinson]
+comment: Xanthine oxidase oxidizes oxypurines such as xanthine and hypoxanthine to uric acid. Uric acid is the final oxidation product of purine catabolism.
+is_a: HP:0004369 ! Decreased purine levels
+is_a: HP:0012610 ! Abnormality of urinary uric acid concentration
+created_by: peter
+creation_date: 2014-01-17T11:57:29Z
+
+[Term]
+id: HP:0012612
+name: Abnormal urinary sulfate concentration
+def: "Abnormal concentration of `sulfate` (CHEBI:16189) in the urine." [HPO:probinson]
+is_a: HP:0003110 ! Abnormality of urine homeostasis
+is_a: HP:0004369 ! Decreased purine levels
+created_by: peter
+creation_date: 2014-01-17T11:58:23Z
+
+[Term]
+id: HP:0012613
+name: Increased urinary sulfate
+def: "Elevated concentration of `sulfate` (CHEBI:16189) in the urine." [HPO:probinson]
+is_a: HP:0004369 ! Decreased purine levels
+is_a: HP:0012612 ! Abnormal urinary sulfate concentration
+created_by: peter
+creation_date: 2014-01-17T11:58:51Z
+
+[Term]
+id: HP:0012614
+name: Abnormal urine cytology
+def: "An anomalous finding in the examination of the urine for cells." [Eurenomics:ewuehl]
+is_a: HP:0003110 ! Abnormality of urine homeostasis
+created_by: peter
+creation_date: 2014-01-17T12:01:16Z
+
+[Term]
+id: HP:0012615
+name: Cylindruria
+def: "The presence of renal casts (cylindrical structures produced by the kidney in certain disease states) in the urine." [Eurenomics:ewuehl]
+is_a: HP:0012614 ! Abnormal urine cytology
+created_by: peter
+creation_date: 2014-01-17T12:03:19Z
+
+[Term]
+id: HP:0012616
+name: Leukocyte cylindruria
+def: "Presence of leukocyte casts (cylindrical structures produced by the kidney in certain disease states) in the urine." [Eurenomics:fschaefer]
+is_a: HP:0012615 ! Cylindruria
+created_by: peter
+creation_date: 2014-01-17T12:05:08Z
+
+[Term]
+id: HP:0012617
+name: Erythrocyte cylindruria
+def: "Presence of erythrocyte casts (cylindrical structures produced by the kidney in certain disease states) in the urine." [Eurenomics:fschaefer]
+is_a: HP:0012615 ! Cylindruria
+created_by: peter
+creation_date: 2014-01-17T12:06:50Z
+
+[Term]
+id: HP:0012618
+name: Urachal cyst
+def: "A cyst located along the allantois canal." [Eurenomics:fschaefer]
+is_a: HP:0010478 ! Abnormality of the urachus
+created_by: peter
+creation_date: 2014-01-17T12:15:15Z
+
+[Term]
+id: HP:0012619
+name: Multiple bladder diverticula
+def: "Presence of a many `diverticula` (MPATH:68) (sac or pouch) in the `wall of the urinary bladder` (FMA:15902)." [Eurenomics:fschaefer]
+is_a: HP:0000015 ! Bladder diverticulum
+created_by: peter
+creation_date: 2014-01-17T12:21:05Z
+
+[Term]
+id: HP:0012620
+name: Cloacal abnormality
+def: "A developmental anomaly associated with the failure of rectum, vagina, and bladder to separate." [HPO:probinson]
+is_a: HP:0000119 ! Abnormality of the genitourinary system
+is_a: HP:0010866 ! Abdominal wall defect
+created_by: peter
+creation_date: 2014-01-17T12:27:06Z
+
+[Term]
+id: HP:0012621
+name: Persistent cloaca
+def: "Developmental anomaly in which the vagina, bladder, and rectum fuse resulting in a common channel." [HPO:probinson]
+is_a: HP:0010866 ! Abdominal wall defect
+is_a: HP:0012620 ! Cloacal abnormality
+created_by: peter
+creation_date: 2014-01-17T12:28:30Z
+
+[Term]
+id: HP:0012622
+name: Chronic kidney disease
+alt_id: HP:0000106
+alt_id: HP:0001918
+alt_id: HP:0008671
+def: "Functional anomaly of the kidney persisting for at least three months." [Eurenomics:ewuehl]
+synonym: "Loss of renal function" RELATED []
+synonym: "Progressive renal failure" RELATED []
+synonym: "Progressive renal insufficiency" RELATED []
+synonym: "RENAL FAILURE, PROGRESSIVE" RELATED [HPO:skoehler]
+synonym: "Renal insufficiency, progressive" RELATED []
+xref: UMLS:C0748318 "Progressive renal failure"
+is_a: HP:0000083 ! Renal insufficiency
+created_by: peter
+creation_date: 2014-01-17T13:14:52Z
+
+[Term]
+id: HP:0012623
+name: Stage 1 chronic kidney disease
+def: "A type of chronic kidney disease with normal or increased glomerular filtration rate (GFR at least 90 mL/min/1.73 m2)." [Eurenomics:fschaefer]
+comment: Proteinuria is commonly seen in stage 1 chronic kidney disease.
+is_a: HP:0012622 ! Chronic kidney disease
+created_by: peter
+creation_date: 2014-01-17T13:20:48Z
+
+[Term]
+id: HP:0012624
+name: Stage 2 chronic kidney disease
+def: "A type of chronic kidney disease with mildly reduced glomerular filtration rate (GFR 60-89 mL/min/1.73 m2)." [Eurenomics:fschaefer]
+is_a: HP:0012622 ! Chronic kidney disease
+created_by: peter
+creation_date: 2014-01-17T13:22:13Z
+
+[Term]
+id: HP:0012625
+name: Stage 3 chronic kidney disease
+def: "A type of chronic kidney disease with moderately reduced glomerular filtration rate (GFR 30-59 mL/min/1.73 m2)." [Eurenomics:fschaefer]
+is_a: HP:0012622 ! Chronic kidney disease
+created_by: peter
+creation_date: 2014-01-17T13:22:43Z
+
+[Term]
+id: HP:0012626
+name: Stage 4 chronic kidney disease
+def: "A type of chronic kidney disease with severely reduced glomerular filtration rate (GFR 15-29 mL/min/1.73 m2)." [Eurenomics:fschaefer]
+is_a: HP:0012622 ! Chronic kidney disease
+created_by: peter
+creation_date: 2014-01-17T13:23:43Z
+
+[Term]
+id: HP:0012627
+name: Pseudoexfoliation
+def: "Deposition of fibrillar material that can be found on all anterior segment structures bathed by aqueous humor." [HPO:probinson, pmid:23157966]
+comment: In the eye, pseudoexfoliation syndrome is characterized by the deposition of fibrillar material that can be found on all anterior segment structures bathed by aqueous humor. PXM can be observed in vivo during slit lamp examination. It appears as 'dandruff-like' material in the anterior chamber or most characteristically on the anterior lens capsule deposited in a double concentric ring pattern. The rings are separated by a clear zone presumably created because of the movement of the iris on the anterior lens surface. The central ring is located at the area of the iris sphincter, while the peripheral ring is only visible after pupil dilation. PXM is also often observed by slit lamp examination at the pupillary margin, on the lens zonules and on the trabecular meshwork. The site of production of this material which is a complex of various glycoproteins is unclear, but PXM can potentially originate from the iris, lens epithelium, ciliary body, or the trabecular meshwork.
+is_a: HP:0004328 ! Abnormality of the anterior segment of the eye
+created_by: peter
+creation_date: 2014-01-17T22:50:32Z
+
+[Term]
+id: HP:0012628
+name: Abnormality of the suspensory ligament of lens
+def: "An anomaly of the `suspensory ligament of lens` (FMA:58838), also known as the ciliary zonule. These ligaments represent a series of fibers connecting the ciliary body and lens of the eye, holding the lens in place." [HPO:probinson]
+synonym: "Ciliary zonule abnormality" EXACT []
+is_a: HP:0012374 ! Abnormality of the globe
+created_by: peter
+creation_date: 2014-01-17T22:59:37Z
+
+[Term]
+id: HP:0012629
+name: Phacodonesis
+def: "Tremulousness (trembling) of the lens of the eye." [HPO:probinson]
+comment: Phacodonesis results from lesions of some or most of the zonular fibres are broken.
+is_a: HP:0000517 ! Abnormality of the lens
+created_by: peter
+creation_date: 2014-01-17T23:03:09Z
+
+[Term]
+id: HP:0012630
+name: Abnormality of the trabecular meshwork
+def: "An anomaly of the trabecular meshwork, which is the porelike structure surrounding the entire circumference of the anterior chamber at the base of the cornea and near the ciliary body. The trabecular mesh work is responsible for draining the aqueous humor into the canal of Schlemm." [HPO:probinson]
+is_a: HP:0000593 ! Abnormality of the anterior chamber
+created_by: peter
+creation_date: 2014-01-17T23:12:27Z
+
+[Term]
+id: HP:0012631
+name: Pigment deposition in the trabecular meshwork
+def: "Accumulation of abnormal amounts of pigment within the trabecular meshwork." [HPO:probinson]
+comment: Gonioscopy can be used to reveal pigment deposition on the trabecular meshwork.
+is_a: HP:0012630 ! Abnormality of the trabecular meshwork
+created_by: peter
+creation_date: 2014-01-17T23:15:03Z
+
+[Term]
+id: HP:0012632
+name: Abnormal intraocular pressure
+def: "An anomaly in the amount of force per unit area exerted by the intraocular fluid within the eye." [HPO:probinson]
+xref: MP:0005257 "abnormal intraocular pressure"
+is_a: HP:0012373 ! Abnormal eye physiology
+created_by: peter
+creation_date: 2014-01-17T23:20:17Z
+
+[Term]
+id: HP:0012633
+name: Asymmetry of intraocular pressure
+def: "A difference in the amount of intraocular pressure in the right and left eye." [HPO:probinson]
+is_a: HP:0012632 ! Abnormal intraocular pressure
+created_by: peter
+creation_date: 2014-01-17T23:21:18Z
+
+[Term]
+id: HP:0012634
+name: Iris pigment dispersion
+def: "Shedding of the pigment granules that normally adhere to the back of the iris into the aqueous humor." [HPO:probinson]
+comment: These pigment granules can accumulate in the trabucular meshwork and lead to increased intraocular pressure. That is coded separately as HP:001263.
+is_a: HP:0008034 ! Abnormal iris pigmentation
+created_by: peter
+creation_date: 2014-01-17T23:30:02Z
+
+[Term]
+id: HP:0012635
+name: Iris hypoperfusion
+def: "Reduction in the amount of blood flow to the iris." [HPO:probinson]
+comment: This feature can be diagnosed by iris angiography.
+is_a: HP:0007905 ! Abnormal iris vasculature
+created_by: peter
+creation_date: 2014-01-17T23:41:07Z
+
+[Term]
+id: HP:0012636
+name: Retinal vein occlusion
+def: "Blockage of the retinal vein." [HPO:probinson]
+comment: Retinal vein occlusion can lead to edema and ischemia of the retina.
+is_a: HP:0008046 ! Abnormality of the retinal vasculature
+created_by: peter
+creation_date: 2014-01-17T23:43:32Z
+
+[Term]
+id: HP:0012637
+name: Renal calcium wasting
+def: "High urine calcium in the presence of hypocalcemia." [HPO:probinson]
+is_a: HP:0004363 ! Abnormality of calcium homeostasis
+is_a: HP:0011280 ! Abnormality of urine calcium concentration
+created_by: peter
+creation_date: 2014-01-18T16:46:41Z
+
+[Term]
+id: HP:0012638
+name: Abnormality of nervous system physiology
+def: "A functional anomaly of the `nervous system` (FMA:7157)." [HPO:probinson]
+is_a: HP:0000707 ! Abnormality of the nervous system
+created_by: peter
+creation_date: 2014-01-19T20:02:46Z
+
+[Term]
+id: HP:0012639
+name: Abnormality of nervous system morphology
+def: "A structural anomaly of the `nervous system` (FMA:7157)." [HPO:probinson]
+is_a: HP:0000707 ! Abnormality of the nervous system
+created_by: peter
+creation_date: 2014-01-19T20:03:08Z
+
+[Term]
+id: HP:0012640
+name: Abnormality of intracranial pressure
+def: "A deviation from the norm of the intracranial pressure." [HPO:probinson]
+comment: Intracranial pressure (i.e., the pressure inside the skull) represents the pressue in the brain tissue and in the cerebrospinal fluid (CSF). Deviations from normal are generally identified by measuring the pressure of the CSF.
+is_a: HP:0012638 ! Abnormality of nervous system physiology
+created_by: peter
+creation_date: 2014-01-19T20:06:51Z
+
+[Term]
+id: HP:0012641
+name: Decreased intracranial pressure
+def: "A reduction of the pressure inside the cranium (skull) and thereby in the brain tissue and cerebrospinal fluid." [HPO:probinson]
+synonym: "Intracranial hypotension" EXACT []
+xref: MeSH:D019585 "Intracranial Hypotension"
+is_a: HP:0012640 ! Abnormality of intracranial pressure
+created_by: peter
+creation_date: 2014-01-19T20:15:01Z
+
+[Term]
+id: HP:0012642
+name: Cerebellar agenesis
+def: "Lack of development of the cerebellum." [HPO:probinson, pmid:20305277]
+comment: Usually, small remnants of the cerebellum are present; therefore the term subtotal cerebellar agenesis is also used in the literature.
+is_a: HP:0007360 ! Aplasia/Hypoplasia of the cerebellum
+created_by: peter
+creation_date: 2014-01-22T20:14:57Z
+
+[Term]
+id: HP:0012643
+name: Foveal hypopigmentation
+def: "Decreased amount of pigmentation in the `fovea centralis` (FMA:58658)." [HPO:probinson]
+is_a: HP:0000493 ! Abnormality of the fovea
+is_a: HP:0008002 ! Abnormality of macular pigmentation
+created_by: peter
+creation_date: 2014-01-22T21:25:34Z
+
+[Term]
+id: HP:0012644
+name: Increased caudate lactate level
+def: "An elevated concentration of lactate in the caudate nucleus. This finding can be elicited by magnetic resonance spectroscopy imaging." [HPO:probinson, pmid:23810640]
+is_a: HP:0002339 ! Abnormality of the caudate nucleus
+created_by: peter
+creation_date: 2014-01-28T08:19:22Z
+
+[Term]
+id: HP:0012645
+name: Enlarged peripheral nerve
+def: "Increase in size of a peripheral nerve. This finding can be appreciated by palpation along the axis of the nerve." [HPO:probinson]
+comment: The differential diagnosis of enlarged peripheral nerves includes leprosy, eredi-\ntary motor and sensory neuropathy type 1 (about 30% of patients), but not type 2 (the axonal form), some other polyneuropathies, neurofibromatosis, and nerve tumors. A good review is available in Practical Neurology, 2003,3:40-45 by Michael Donaghy (no pubmed id).
+is_a: HP:0000759 ! Abnormality of the peripheral nervous system
+created_by: peter
+creation_date: 2014-02-01T12:44:16Z
+
+[Term]
+id: HP:0012646
+name: Retractile testis
+def: "A testis that is located at the upper scrotum or lower inguinal canal and that can be made to descend completely into the scrotum without resistance by manual reduction but returns to its original position by the cremasteric reflex." [HPO:probinson, pmid:23061004, pmid:4380054]
+synonym: "Retractile testicle" EXACT []
+is_a: HP:0000035 ! Abnormality of the testis
+created_by: peter
+creation_date: 2014-02-01T12:57:41Z
+
+[Term]
+id: HP:0012647
+name: Abnormal inflammatory response
+def: "Any anomaly of the `inflammatory response` (GO:0006954), a response to injury or infection characterized by local vasodilation, extravasation of plasma into intercellular spaces and accumulation of white blood cells and macrophages." [MONARCH:mhaendel]
+is_a: HP:0010978 ! Abnormality of immune system physiology
+created_by: peter
+creation_date: 2014-02-01T13:25:42Z
+
+[Term]
+id: HP:0012648
+name: Decreased inflammatory response
+def: "An abnormal reduction in the `inflammatory response` (GO:0006954) to injury or infection." [MONARCH:mhaendel]
+is_a: HP:0012647 ! Abnormal inflammatory response
+created_by: peter
+creation_date: 2014-02-01T13:29:24Z
+
+[Term]
+id: HP:0012649
+name: Increased inflammatory response
+def: "A abnormal increase in the `inflammatory response` (GO:0006954) to injury or infection." [MONARCH:mhaendel]
+is_a: HP:0012647 ! Abnormal inflammatory response
+created_by: peter
+creation_date: 2014-02-01T13:29:58Z
+
+[Term]
 id: HP:0100000
 name: Early onset of sexual maturation
 def: "An early onset of puberty, in this case early does not refer to precocious." [HPO:probinson]
@@ -80343,7 +80970,7 @@ alt_id: HP:0001294
 def: "An abnormality of movement with a neurological basis characterized by changes in coordination and speed of voluntary movements." [HPO:probinson]
 comment: Movement disorders are characterized by the phenotypic abnormalities including abnormal involuntary movements, akathisia, akinesia, athetosis, ataxia, ballismus, bradykinesia, chorea, dyskinesia, dystonia, and myoclonus tics, tremor, spasms, and stereotypy.
 synonym: "Movement disorder" EXACT []
-is_a: HP:0000707 ! Abnormality of the nervous system
+is_a: HP:0012638 ! Abnormality of nervous system physiology
 created_by: doelkens
 creation_date: 2010-05-28T11:48:50Z
 
@@ -84134,7 +84761,7 @@ creation_date: 2010-12-17T06:20:30Z
 id: HP:0100515
 name: Pollakisuria
 def: "Increased frequency of urination." [HPO:probinson]
-is_a: HP:0000082 ! Abnormality of renal physiology
+is_a: HP:0000009 ! Functional abnormality of the bladder
 created_by: doelkens
 creation_date: 2010-12-20T10:34:28Z
 
@@ -84231,6 +84858,7 @@ creation_date: 2010-12-20T11:32:41Z
 [Term]
 id: HP:0100525
 name: Urachus fistula
+def: "Persistence of the urachal canal with drainage of urine from the bladder through the persistent allantois canal to the umbilicus." [Eurenomics:ewuehl]
 is_a: HP:0010478 ! Abnormality of the urachus
 created_by: doelkens
 creation_date: 2010-12-20T11:40:58Z
@@ -84397,7 +85025,7 @@ creation_date: 2010-12-20T06:16:40Z
 
 [Term]
 id: HP:0100542
-name: Abnormal localization of kidneys
+name: Abnormal localization of kidney
 def: "An abnormal site of the `kidney` (FMA:7203)." [HPO:probinson]
 synonym: "Abnormal localisation of kidneys" EXACT []
 is_a: HP:0012210 ! Abnormal renal morphology
@@ -84720,7 +85348,7 @@ id: HP:0100577
 name: Urinary bladder inflammation
 def: "`Inflammation`(MPATH:212) of the `urinary bladder` (FMA:15900)." [HPO:probinson]
 synonym: "Cystitis of the urinary bladder " EXACT []
-is_a: HP:0000009 ! Functional abnormality of the bladder
+is_a: HP:0000014 ! Abnormality of the bladder
 created_by: doelkens
 creation_date: 2010-12-27T12:49:16Z
 
@@ -84834,7 +85462,7 @@ creation_date: 2010-12-27T03:13:30Z
 id: HP:0100589
 name: Urogenital fistula
 def: "The presence of a `fistula` (MPATH:70) affecting the `genitourinary system` (FMA:280610)." [HPO:probinson]
-is_a: HP:0008713 ! Genitourinary tract malformation
+is_a: HP:0000119 ! Abnormality of the genitourinary system
 created_by: doelkens
 creation_date: 2010-12-27T04:09:23Z
 
@@ -85014,8 +85642,10 @@ creation_date: 2010-12-27T06:17:13Z
 
 [Term]
 id: HP:0100611
-name: Hypoplastic glomerulocystic kidney disease
-is_a: HP:0000095 ! Morphological abnormalities of the glomeruli
+name: Multiple glomerular cysts
+def: "The presence of many cysts in the glomerulus of the kidney related to dilatation of the Bowman's capsule." [Eurenomics:fschaefer, pmid:20091054]
+synonym: "Glomerulocystic kidney disease" RELATED []
+is_a: HP:0000095 ! Abnormality of the glomerulus
 created_by: doelkens
 creation_date: 2010-12-28T10:23:07Z
 
@@ -86720,7 +87350,7 @@ comment: Renal artery stenosis can lead to hypertension and chronic kidney disea
 synonym: "Hypertension due to renal artery hyperplasia" EXACT []
 xref: MeSH:D006978 "Hypertension, Renovascular"
 is_a: HP:0000822 ! Hypertension
-is_a: HP:0008776 ! Abnormality of the renal artery
+is_a: HP:0012211 ! Abnormal renal physiology
 created_by: doelkens
 creation_date: 2011-06-09T04:48:35Z
 
@@ -86751,7 +87381,7 @@ creation_date: 2011-06-09T04:57:15Z
 id: HP:0100820
 name: Glomerulopathy
 def: "Inflammatory or noninflammatory diseases affecting the glomeruli of the nephron." [HPO:sdoelken]
-is_a: HP:0012211 ! Abnormal renal physiology
+is_a: HP:0000095 ! Abnormality of the glomerulus
 created_by: doelkens
 creation_date: 2011-06-09T04:59:55Z
 
@@ -87252,7 +87882,8 @@ def: "Cystic, urine-containing intrarenal cavities lined with transitional cell 
 synonym: "Caliceal diverticulum" EXACT []
 synonym: "Pelvic diverticulum" EXACT []
 synonym: "Renal pelvic diverticulum" EXACT []
-is_a: HP:0000107 ! Renal cysts
+is_a: HP:0000107 ! Renal cyst
+is_a: HP:0004742 ! Abnormality of the renal collecting system
 created_by: doelkens
 creation_date: 2011-12-01T02:29:09Z
 
@@ -87274,7 +87905,8 @@ creation_date: 2011-12-01T02:33:12Z
 id: HP:0100880
 name: Nephrogenic rest
 def: "Abnormally persistent clusters of embryonal cells, representing microscopic malformations (dysplasias) of the developing kidney." [HPO:sdoelken]
-comment: Though NR are best known as precursors of Wilms tumor (WT), many alternative fates are observed, and most rests are destined for eventual atresia.
+comment: Though NR are best known as precursors of Wilms tumor (WT), many alternative fates are observed, and most rests are destined for eventual atresia. Nephroblastomatosis refers to the presence of multifocal or diffuse nephrogenic rests.
+synonym: "Nephroblastomatosis" RELATED []
 is_a: HP:0012210 ! Abnormal renal morphology
 created_by: doelkens
 creation_date: 2011-12-01T02:41:34Z
@@ -87793,16 +88425,9 @@ created_by: doelkens
 creation_date: 2011-12-02T04:57:10Z
 
 [Term]
-id: HP:0100956
-name: Medullary sponge kidney disease
-is_a: HP:0000107 ! Renal cysts
-is_a: HP:0100957 ! Abnormality of the renal medulla
-created_by: doelkens
-creation_date: 2011-12-12T10:00:07Z
-
-[Term]
 id: HP:0100957
 name: Abnormality of the renal medulla
+alt_id: HP:0005582
 def: "An abnormality of the `medulla of the kidney` (FMA:15582)." [HPO:probinson]
 comment: The renal medulla is composed mainly of renal tubules.
 is_a: HP:0012210 ! Abnormal renal morphology
@@ -88297,13 +88922,6 @@ id: HP:0200059
 name: Metastatic angiosarcoma
 is_a: HP:0200058 ! Angiosarcoma
 created_by: sebastiankohler
-
-[Term]
-id: HP:0200060
-name: Increased urine output
-is_a: HP:0011036 ! Abnormality of renal excretion
-created_by: sebastiankohler
-creation_date: 2013-01-14T02:18:04Z
 
 [Term]
 id: HP:0200063

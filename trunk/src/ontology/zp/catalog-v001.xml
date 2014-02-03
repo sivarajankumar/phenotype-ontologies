@@ -6,9 +6,11 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/go_import.owl" uri="../imports/go_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/mpath_import.owl" uri="../imports/mpath_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/zp.owl" uri="../zp.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mp/mp-equivalence-axioms.owl" uri="mp-equivalence-axioms.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mp/mp-equivalence-axioms-subq.owl" uri="mp-equivalence-axioms-subq.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mp/mp-equivalence-axioms-subq-ubr.owl" uri="mp-equivalence-axioms-subq-ubr.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/zp/zp-to-mp-match-best.owl" uri="zp-to-mp-match-best.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/zp/zp-to-hp-match-best.owl" uri="zp-to-hp-match-best.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/zp/zp-equivalence-axioms.owl" uri="zp-equivalence-axioms.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/zp/zp-equivalence-axioms-subq.owl" uri="zp-equivalence-axioms-subq.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/zp/zp-equivalence-axioms-subq-ubr.owl" uri="zp-equivalence-axioms-subq-ubr.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
     </group>
 </catalog>
