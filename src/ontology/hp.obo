@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 01:02:2014 13:32
+date: 06:02:2014 20:55
 saved-by: peter
 auto-generated-by: OBO-Edit 2.3
 subsetdef: hposlim_core "Core clinical terminology"
@@ -2047,6 +2047,7 @@ name: Wide anterior fontanel
 def: "Enlargement of the `anterior fontanelle` (FMA:75439) with respect to age-dependent norms." [HPO:curators]
 synonym: "Large anterior fontanel" EXACT []
 synonym: "Large anterior fontanelle" EXACT []
+synonym: "LARGE ANTERIOR FONTANELS" RELATED [HPO:skoehler]
 synonym: "Large open anterior fontanel" EXACT []
 synonym: "Large open anterior fontanelle" EXACT []
 synonym: "Wide anterior fontanelle" EXACT []
@@ -3210,6 +3211,7 @@ def: "Absence or failure to form of the external auditory canal." [HPO:probinson
 subset: hposlim_core
 synonym: "Absent auditory canals" EXACT []
 synonym: "Absent external auditory canals" EXACT []
+synonym: "ATRESIA OF THE EXTERNAL AUDITORY CANALS" RELATED [HPO:skoehler]
 synonym: "Atretic auditory canal" EXACT []
 synonym: "Atretic auditory canals" EXACT []
 synonym: "Atretic external auditory canal" EXACT []
@@ -15663,7 +15665,8 @@ is_a: HP:0002197 ! Generalized seizures
 [Term]
 id: HP:0002126
 name: Polymicrogyria
-def: "A congenital abnormality of the cerebral hemisphere characterized by an excessive number of small gyri (convolutions) on the surface of the brain." [HPO:curators]
+def: "A congenital abnormality of the cerebral hemisphere characterized by an excessive number of small gyri (convolutions) on the surface of the brain." [HPO:probinson]
+comment: Polymicrogyria, one of the most common malformations of cortical development, is characterized histologically by the appearance of an excessive number of small cortical folds, often fused together, with disordered cortical lamination.
 xref: UMLS:C0266464 "Polymicrogyria"
 is_a: HP:0002536 ! Abnormal cortical gyration
 
@@ -17947,7 +17950,7 @@ is_a: HP:0004934 ! Vascular calcification
 [Term]
 id: HP:0002505
 name: Progressive inability to walk
-is_a: HP:0001288 ! Gait disturbance
+is_a: HP:0002540 ! Inability to walk
 
 [Term]
 id: HP:0002506
@@ -18147,7 +18150,8 @@ is_a: HP:0002538 ! Abnormality of the cerebral cortex
 [Term]
 id: HP:0002540
 name: Inability to walk
-synonym: "Abasia" RELATED []
+def: "Incapability to ambulate." [HPO:probinson]
+synonym: "Non-ambulatory" EXACT []
 is_a: HP:0001288 ! Gait disturbance
 
 [Term]
@@ -20027,6 +20031,7 @@ name: Arthralgia
 def: "Joint pain." [HPO:probinson]
 synonym: "Arthralgias" EXACT []
 synonym: "Joint pain" EXACT []
+synonym: "JOINT PAINS" RELATED [HPO:skoehler]
 xref: MeSH:D018771 "Arthralgia"
 xref: UMLS:C0003862 "Arthralgia"
 is_a: HP:0001367 ! Abnormal joint morphology
@@ -30220,6 +30225,7 @@ id: HP:0004689
 name: Short fourth metatarsal
 def: "Short `fourth metatarsal bone` (FMA:24505)." [HPO:probinson]
 synonym: "Bilateral fourth metatarsal shortening" EXACT []
+synonym: "SHORT FOURTH METATARSALS" RELATED [HPO:skoehler]
 synonym: "Short fourth metatarsus" EXACT []
 xref: UMLS:C1848514 "Short fourth metatarsals"
 is_a: HP:0010743 ! Short metatarsal
@@ -43208,6 +43214,7 @@ alt_id: HP:0007896
 alt_id: HP:0007966
 def: "Reduced transparency of the `stroma of cornea` (FMA:58306)." [DDD:gblack]
 synonym: "Cloudy cornea" EXACT []
+synonym: "CLOUDY CORNEAS" RELATED [HPO:skoehler]
 synonym: "Corneal stromal opacity" EXACT []
 is_a: HP:0007957 ! Corneal opacity
 is_a: HP:0011492 ! Abnormality of corneal stroma
@@ -56156,7 +56163,6 @@ alt_id: HP:0006076
 alt_id: HP:0006132
 alt_id: HP:0006199
 alt_id: HP:0006223
-alt_id: HP:0010279
 def: "Short distance from the end of the finger to the most distal interphalangeal crease or the distal interphalangeal joint flexion point. That is, hypoplasia of one or more of the `distal phalanx of finger` (FMA:75818)." [HPO:probinson, pmid:19125433]
 comment: This term differs from Partial absence of the finger because in that term, the phalanx must be missing, whereas in this term it may be small, but present. Distal phalangeal lengths can be assessed subjectively by comparing that digit segment to the rest of the digit, to other normal digits in that patient, or to typical patients of that age or build. Regarding the subjective definition, for individuals who do not have flexion creases, one may determine this by flexing the DIP joint and estimating the length of the terminal segment of the digit. Alternatively, one may be able to palpate the joint.
 subset: hposlim_core
@@ -79740,6 +79746,7 @@ name: Dysesthesia
 def: "Abnormal sensations with no apparent physical cause that are painful or unpleasant." [ORCID:0000-0001-5208-3432]
 comment: Dysesthesia is a subclass of paresthesia in which the sensations are unpleasant or disagreeable.
 synonym: "Dysaesthesia" EXACT []
+synonym: "DYSESTHESIAS" RELATED [HPO:skoehler]
 is_a: HP:0003401 ! Paresthesia
 created_by: peter
 creation_date: 2013-12-15T09:59:55Z
@@ -80698,6 +80705,7 @@ id: HP:0012645
 name: Enlarged peripheral nerve
 def: "Increase in size of a peripheral nerve. This finding can be appreciated by palpation along the axis of the nerve." [HPO:probinson]
 comment: The differential diagnosis of enlarged peripheral nerves includes leprosy, eredi-\ntary motor and sensory neuropathy type 1 (about 30% of patients), but not type 2 (the axonal form), some other polyneuropathies, neurofibromatosis, and nerve tumors. A good review is available in Practical Neurology, 2003,3:40-45 by Michael Donaghy (no pubmed id).
+synonym: "ENLARGED PERIPHERAL NERVES" RELATED [HPO:skoehler]
 is_a: HP:0000759 ! Abnormality of the peripheral nervous system
 created_by: peter
 creation_date: 2014-02-01T12:44:16Z
@@ -80734,6 +80742,22 @@ def: "A abnormal increase in the `inflammatory response` (GO:0006954) to injury 
 is_a: HP:0012647 ! Abnormal inflammatory response
 created_by: peter
 creation_date: 2014-02-01T13:29:58Z
+
+[Term]
+id: HP:0012650
+name: Perisylvian polymicrogyria
+def: "An excessive number of small gyri (convolutions) on the surface of the brain in the region surrounding the sylvian fissures." [HPO:probinson, pmid:15159468]
+is_a: HP:0002126 ! Polymicrogyria
+created_by: peter
+creation_date: 2014-02-06T19:47:51Z
+
+[Term]
+id: HP:0012651
+name: Abasia
+def: "Ay severe form of gait ataxia such that an affected person cannot walk at all." [HPO:probinson]
+is_a: HP:0002066 ! Gait ataxia
+created_by: peter
+creation_date: 2014-02-06T19:52:50Z
 
 [Term]
 id: HP:0100000
@@ -88777,6 +88801,7 @@ name: Epidermoid cyst
 def: "The presence of one or more `cysts` (MPATH:62) of the `skin` (FMA:7163)." [HPO:skoehler]
 comment: A cyst is a cavity containing liquid, semisolid, or solid material. An epidermoid cyst is a benign cyst that develops out of ectodermal tissue and consists of a thin layer of squamous epithelium. An epidermoid cyst may or may not be painful or release pus, and are usually noticed as a bump on the skin.
 synonym: "Epidermal inclusion cyst " EXACT []
+synonym: "EPIDERMOID CYSTS" RELATED [HPO:skoehler]
 synonym: "Skin cyst" EXACT []
 xref: MeSH:D004814 "Epidermal Cyst"
 is_a: HP:0011355 ! Localized skin lesion
@@ -88888,6 +88913,7 @@ id: HP:0200055
 name: Small hand
 def: "Disproportionately small hand." [HPO:probinson]
 synonym: "Disproportionately small hands" EXACT []
+synonym: "SMALL HANDS" RELATED [HPO:skoehler]
 xref: SNOMEDCT:299032009 "Small hand"
 xref: UMLS:C0575802 "Small hand"
 is_a: HP:0005927 ! Aplasia/Hypoplasia involving bones of the hand
