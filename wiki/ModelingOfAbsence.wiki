@@ -13,7 +13,7 @@ Much has been written on the subject of representing absence. Before diving into
 
 == Strict logical absence vs absence of some ==
 
-It is not uncommon to see
+It is not uncommon to see patterns such as
 
 {{{
  is_a MP:0000125 ! absent incisors
@@ -21,7 +21,7 @@ It is not uncommon to see
      is_a MP:0004791 ! absent lower incisors
 }}}
 
-From a strict logical perspective, this is inverted. "absent incisors" surely means "absence of all incisors". It would be possible to have an animal with *absent* lower incisors and *present* upper incisors, yielding what seems a contradiction.
+From a strict logical perspective, this is inverted. "absent incisors" surely means "absence of all incisors", or put another way "the animal has no incisors". Yet it would be possible to have an animal with *absent* lower incisors and *present* upper incisors, yielding what seems a contradiction (because the subClass axiom would say this partial-incisor animal lacked all incisors).
 
 If the ontology were in fact truly modeling "absence of *all* S" then it would lead to a curious ontology structure, with the typical tree structure of the anatomy ontology representing S inverted into a polyhierarchical fan in the absent-S ontology.
 
