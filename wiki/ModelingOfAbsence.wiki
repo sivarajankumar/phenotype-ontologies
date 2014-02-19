@@ -64,7 +64,9 @@ And:
        is_a WBPhenotype:0001942 ! rachis absent *** 
 }}}
 
-These patterns can be defended on developmental biology grounds. "absence" here is not equivalent to logical absence. It refers specifically to developmental absence. It would be odd to include a worm under "spleen absent", because worms have not evolved spleens. 
+These patterns can be formally defended on developmental biology grounds. "absence" here is _not_ equivalent to logical absence. It refers specifically to developmental absence.
+
+Furthermore, strict logical absence leads to undesirable inferences. It would be odd to include a nematode worm as having the phenotype "spleen absent", because worms have not evolved spleens. But the logical description of not having a spleen as part fets a worm. 
 
 Similarly, if the strict cardinality interpretation were intended, we would expect to see:
 
@@ -73,8 +75,12 @@ Class: MP:0000557 ## absent hindlimb
 SubClassOf: MP:0004349 ## absent femur
 }}}
 
-i.e. if you're missing your hindlegs, you're necessarily missing your femurs. But this is emphatically *not* how phenotype ontologies are classified. This goes for a wide range of structures and other relationship types. In MP, "absent limb buds" are not classified under "absent limbs", even though it is impossible for a mammal to have limbs without having had limb buds.
+i.e. if you're missing your entire hindlegs, you're *necessarily* missing your femurs. But it must be emphatisized that this is *not* how phenotype ontologies are classified. This goes for a wide range of structures and other relationship types. In MP, "absent limb buds" are *not* classified under "absent limbs", even though it is impossible for a mammal to have limbs without having had limb buds.
 
-Furthermore, this absence is typically one end of a spectrum of morphological value space, and so it can be argued that placement under morphology is both useful and correct.
+The existing treatment of absence can be formally defended morphologically by conceiving of a morphological value space, with "large" at one end and "small" at the other. As we get continuously smaller, there may come an arbitrary point whereby we say "surely this is no longer a limb" (and of course, we are not talking about a pure geometrical size transformation here - as a limb reaches extreme edges of a size range various other morphological changes necessarily happen). But this cutoff is arguably arbitrary, and the resulting discontinuity causes problems. It is simpler to treat absence as being one end of a size scale.
 
-This is barely touching the subject, and is intended to illustrate that things may be more subtle than simply treating words like "absent" as equivalent to cardinality=0. An understanding of the medical, developmental and evolutionary contexts are absolutely required, together with an understanding of the logic.
+== Summary ==
+
+This is barely touching the subject, and is intended to illustrate that things may be more subtle than naively treating words like "absent" as precisely equivalent to cardinality=0. An understanding of the medical, developmental and evolutionary contexts are absolutely required, together with an understanding of the entailments of different logical formulations.
+
+Even though existing phenotype ontologies may not be conceived of formally, it is implicit than they do not model absence as being equivalent to cardinality=0 / not(has_part), because the structure of these ontologies would look radically different.
