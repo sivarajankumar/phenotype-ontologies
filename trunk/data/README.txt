@@ -13,5 +13,7 @@
 ## Filter codes
 
  * NOFILTER
- * BF - Basic filter. Single affected gene genotypes.
+ * BF - Basic filter. Single affected gene genotypes, only w.t. environments.
+
+##All files are ABNORMAL phenotypes only; all "normal" phenotypes are removed.
  
