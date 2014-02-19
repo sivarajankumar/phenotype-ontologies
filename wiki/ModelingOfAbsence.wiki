@@ -21,9 +21,20 @@ It is not uncommon to see
      is_a MP:0004791 ! absent lower incisors
 }}}
 
-From a strict logical perspective, this is inverted. "absent incisors" surely means "absence of all incisors". It would be possible to have an animal with absent lower incisors and present upper incisors, yielding a contradiction.
+From a strict logical perspective, this is inverted. "absent incisors" surely means "absence of all incisors". It would be possible to have an animal with *absent* lower incisors and *present* upper incisors, yielding what seems a contradiction.
 
-If the ontology were in fact modeling "absence of all S" then it would lead to a curious ontology structure, with the typical tree structure of the anatomy ontology representing S inverted into a polyhierarchical fan in the absent-S ontology.
+If the ontology were in fact truly modeling "absence of *all* S" then it would lead to a curious ontology structure, with the typical tree structure of the anatomy ontology representing S inverted into a polyhierarchical fan in the absent-S ontology.
+
+{{{
+
+     A(U/L)I
+       /\
+      /  \
+    AUI  ALI
+      \  /
+       \/
+     A(U+L)I
+}}}
 
 From this it can be cautiously inferred that the intent of the phenotype ontology curator and user is in fact to model "absence of some S" rather than "absence of all S". This may not be a universal rule, and may vary depending on whether we are talking about a serially repeated structure or one that typically occurs in isolation.
 
