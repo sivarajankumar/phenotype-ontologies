@@ -36,7 +36,7 @@ If the ontology were in fact truly modeling "absence of *all* S" then it would l
      A(U+L)I
 }}}
 
-From this it can be cautiously inferred that the intent of the phenotype ontology curator and user is in fact to model "absence of *some* S" rather than "absence of *all* S". This is not necessarily a universal rule, and the intent may vary depending on whether we are talking about a serially repeated structure or one that typically occurs in isolation.
+From this it can be cautiously inferred that the intent of the phenotype ontology curator and user is in fact to model "absence of *some* S" rather than "absence of *all* S". This is not necessarily a universal rule, and the intent may vary depending on whether we are talking about a serially repeated structure or one that typically occurs in isolation. The intent may also be to communicate that a *significant number* of S is missing.
 
 == Absence as a type of morphology ==
 
