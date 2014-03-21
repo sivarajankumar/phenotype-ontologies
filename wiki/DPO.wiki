@@ -25,6 +25,12 @@ Which imports dpo plus auto-generated fbbt phenotypes.
 
 The dpo-importer is included in the [MetazoanImporter]
 
+== Additional Notes ==
+
+We create a local copy of fbbt that has "Drosophila " prefixed to all labels. This gives us a hierarchy:
+
+ * neuron phenotype
+  * drosophila neuron phenotype
 
 == TODO ==
 
