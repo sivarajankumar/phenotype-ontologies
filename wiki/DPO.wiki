@@ -29,8 +29,9 @@ The dpo-importer is included in the [MetazoanImporter]
 
 We create a local copy of fbbt that has "Drosophila " prefixed to all labels. This gives us a hierarchy:
 
- * neuron phenotype
-  * drosophila neuron phenotype
+ * eye phenotype (defined using Uberon)
+  * compound eye phenotype  (defined using Uberon)
+   * drosophila eye phenotype (defined using FBbt)
 
 == TODO ==
 
