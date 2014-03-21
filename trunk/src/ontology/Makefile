@@ -124,14 +124,17 @@ wbphenotype/wbphenotype-equivalence-axioms-subq-ubr.obo: wbphenotype/wbphenotype
 # Fly
 # ~~~
 dpo.owl:
-	wget $(OBO)/fbcv/dpo.owl
+	owltools $(OBO)/fbcv/dpo.owl --remove-annotation-assertions -l -d --set-ontology-id $(UPHENO)/$@ -o -f omn $@
+
+imports/fbbt_import.owl:
+	owltools $(OBO)/fbbt.owl --extract-mingraph --set-ontology-id $(UPHENO)/$@ -o -f omn $@
 
 # ~~~
 # Charite cross-species phenotype ontology
 # ~~~
-upheno.obo:
+crossSpeciesPheno.obo:
 	wget http://compbio.charite.de/hudson/job/hpo.ontology.uberpheno/lastStableBuild/artifact/data/uberphenoOut/crossSpeciesPheno.obo -O $@
-upheno.owl: upheno.obo
+crossSpeciesPheno.owl: upheno.obo
 	owltools $< -o $@
 
 # ~~~
@@ -236,16 +239,18 @@ KEEPRELS = BFO:0000050 BFO:0000051 RO:0002202 immediate_transformation_of
 #imports/wbbt_import.owl: wbphenotype/wbphenotype-equivalence-axioms-subq-ubr.owl mirror/wbbt.owl
 #	owltools  $(USECAT) --map-ontology-iri $(UPHENO)/wbbt_import.owl mirror/wbbt.owl $< --merge-imports-closure mirror/$*.owl --add-imports-from-support  --extract-module -s $(OBO)/$*.owl -c --remove-axiom-annotations --make-subset-by-properties $(KEEPRELS) --set-ontology-id $(UPHENO)/$@ -o $@
 
+
 # GENERIC:
-imports/%_import.owl: imports/upheno-preimporter.owl mirror/%.owl mp/mp-equivalence-axioms-edit.owl hp/hp-equivalence-axioms.obo
-	owltools  $(USECAT) --map-ontology-iri $(UPHENO)/$*_import.owl mirror/$*.owl $< --merge-imports-closure mirror/$*.owl --add-imports-from-support  --extract-module -s $(OBO)/$*.owl -c --remove-axiom-annotations --make-subset-by-properties $(KEEPRELS) --set-ontology-id $(UPHENO)/$@ -o $@
+###imports/%_import.owl: metazoa.owl mirror/%.owl mp/mp-equivalence-axioms-edit.owl hp/hp-equivalence-axioms.obo zp.owl
+imports/%_import.owl: imports/upheno-preimporter.owl mirror/%.owl mp.owl hp.owl zp.owl
+	owltools  $(USECAT) --map-ontology-iri $(UPHENO)/$*_import.owl mirror/$*.owl $< --merge-imports-closure mirror/$*.owl --add-imports-from-support  --extract-module -s $(OBO)/$*.owl -c --remove-axiom-annotations --make-subset-by-properties -f $(KEEPRELS) -o $@.tmp && owltools $@.tmp --set-ontology-id $(UPHENO)/$@ -o $@
 
 # clone remote ontology locally, perfoming some excision of relations and annotations
 mirror/%.owl:
 	owltools $(OBO)/$*.owl --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/$*.owl -o $@
 # this is actually uberon+cl
 mirror/uberon.owl: external/uberon/ext.owl
-	owltools $(OBO)/uberon/ext.owl --merge-imports-closure --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/uberon.owl -o $@
+	owltools $(OBO)/uberon/ext.owl --merge-imports-closure --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties -n $(KEEPRELS)  --extract-mingraph --set-ontology-id $(OBO)/uberon.owl -o $@
 ##### need to sort sync issue
 #####	owltools $(OBO)/uberon/ext.owl $(OBO)/cl.owl --merge-support-ontologies --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/uberon.owl -o $@
 
@@ -254,7 +259,7 @@ mirror/wbbt.owl:
 ###	owltools $(OBO)/uberon/ext.owl --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --set-ontology-id $(OBO)/uberon.owl -o $@
 ###	owltools  $(OBO)/wbls.owl $(OBO)/wbbt.owl --merge-support-ontologies --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS)  --set-ontology-id $(OBO)/wbbt.owl -o $@
 mirror/go.owl: 
-	owltools $(OBO)/go.owl --merge-support-ontologies --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/go.owl -o $@
+	owltools $(OBO)/go/extensions/go-plus.owl   --merge-imports-closure --merge-support-ontologies --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/go.owl -o $@
 mirror/pr.obo:
 	wget $(OBO)/pr.obo -O $@.tmp && obo-grep.pl -r 'id: PR:' $@.tmp > $@
 mirror/pr.owl: mirror/pr.obo
@@ -350,6 +355,16 @@ ic-cache.owl: upheno.obo
 	owltools $(USECAT)  upheno.obo --load-instances $(MM)/Mm-gene-to-phenotype-BF.txt --no-debug --sim-save-ic-cache $@
 
 # ~~~
+# MP/VT
+# ~~~
+mp/mpdmap.csv:
+	wget http://phenome.jax.org/download/ontology_mappings.csv -O $@
+mp/mpdmap.tsv: mp/mpdmap.csv
+	perl -npe 's/,/\t/g' $< > $@.tmp && cut -f1,2 $@.tmp > $@
+mp/mpdmap.groups: mp/mpdmap.tsv
+	blip-findall -r MA -r MP -r vt -i mp/mpdmap.tsv "setof(C,mpdmap(X,C),Cs),length(Cs,Len),Len>1" -select "x(X,Len,Cs)" -label -no_pred > $@
+
+# ~~~
 # MAPPING TO GO
 # ~~~
 
@@ -362,6 +377,15 @@ mp/mp-map2go.tbl: mp/mp-equivalence-axioms-subq-ubr.obo
 # ~~~
 %-names.obo: %.obo
 	obo-filter-tags.pl  -t id -t name  $< > $@
+
+# ----------------------------------------
+# GROUPINGS
+# ----------------------------------------
+util/blacklist.js:
+	owljs -i util/make-blacklist.js
+
+imports/%_phenotype.owl: imports/%_import.owl util/blacklist.js 
+	owljs -i util/make-grouping-classes.js
 
 # ----------------------------------------
 # DEFINITION PATTERNS
@@ -393,8 +417,8 @@ all-closure.txt: mp-hp-ext-merged-uberon.owl phenotype-annotations.owl
 # obo2owl
 # ----------------------------------------
 # generic transform (typically overwritten)
-%.owl: %.obo
-	owltools $< -o $@
+#%.owl: %.obo
+#	owltools $< -o $@
 
 # ----------------------------------------
 # stats
