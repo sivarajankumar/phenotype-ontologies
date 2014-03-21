@@ -124,7 +124,7 @@ wbphenotype/wbphenotype-equivalence-axioms-subq-ubr.obo: wbphenotype/wbphenotype
 # Fly
 # ~~~
 dpo.owl:
-	owltools $(OBO)/fbcv/dpo.owl --remove-annotation-assertions -l -d --set-ontology-id $(UPHENO)/$@ -o -f omn $@
+	owltools $(OBO)/fbcv/dpo.owl --remove-axioms -t SubObjectPropertyOf --remove-annotation-assertions -l -d --set-ontology-id $(UPHENO)/$@ -o -f omn $@
 
 imports/fbbt_import.owl:
 	owltools $(OBO)/fbbt.owl --extract-mingraph --set-ontology-id $(UPHENO)/$@ -o -f omn $@
