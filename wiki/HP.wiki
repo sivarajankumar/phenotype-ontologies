@@ -23,4 +23,8 @@ The OWL axiomatization is updated frequently to stay in sync with changes in the
 
 = Editing the axioms =
 
-Currently the source is of the axioms is in the Charite SVN repo - editors should edit them here
+The edit file is currently:
+
+ * http://purl.obolibrary.org/obo/hp/hp-equivalence-axioms-edit.owl
+
+Edit this in protege.
