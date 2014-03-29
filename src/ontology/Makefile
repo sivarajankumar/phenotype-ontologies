@@ -127,7 +127,7 @@ dpo.owl:
 	owltools $(OBO)/fbcv/dpo.owl --remove-axioms -t SubObjectPropertyOf --remove-annotation-assertions -l -d --set-ontology-id $(UPHENO)/$@ -o -f omn $@
 
 imports/fbbt_import.owl:
-	owltools $(OBO)/fbbt.owl --extract-mingraph --set-ontology-id $(UPHENO)/$@ -o -f omn $@
+	owltools $(OBO)/fbbt.owl --extract-mingraph --set-ontology-id $(UPHENO)/$@ -o -f omn $@.tmp && owljs-sed -o $@ 'function(ax,owl){if (owl.isLabelAssertion(ax) && ax.getSubject().toString().indexOf("FBbt") > -1) {return owl.labelAssertion(ax.getSubject(),"Drosophila "+ax.getValue().getLiteral())}}' $@.tmp
 
 # ~~~
 # Charite cross-species phenotype ontology
@@ -148,19 +148,23 @@ pato.owl: pato.obo
 
 
 #@Deprecated?
-all_merged: uberpheno-subq-full-merged.owl
-%-merged.owl: %-importer.owl mp/mp-equivalence-axioms-subq-ubr.owl hp/hp-equivalence-axioms-subq-ubr.owl mp.owl hp.owl
-	owltools --use-catalog $< --merge-import-closure --ni graph-traversal-metadata.owl --merge-support-ontologies   --merge-equivalent-classes -f $(OBO)/MP_ -t $(OBO)/HP_ --merge-equivalent-classes -f $(OBO)/FMA_ -f $(OBO)/EMAPA_ -f $(OBO)/MA_ -t $(OBO)/UBERON_ --merge-equivalent-classes -f $(OBO)/FMA_ -t $(OBO)/CL_ -t $(OBO)/UBERON_ -o $@
+###all_merged: uberpheno-subq-full-merged.owl
+
+%-merged.owl: %.owl
+	owltools --use-catalog $< --merge-import-closure --reasoner elk  --merge-equivalence-sets -s HP 9 -s MP 8 -s ZP 7 -l MP 9 -l HP 8 -l ZP 7 -d HP 9 -d MP 8 -d ZP 7 -o $@
+##	owltools --use-catalog $< --merge-import-closure   --merge-equivalent-classes -f $(OBO)/MP_ -t $(OBO)/HP_ --merge-equivalent-classes -f $(OBO)/FMA_ -f $(OBO)/EMAPA_ -f $(OBO)/MA_ -t $(OBO)/UBERON_ --merge-equivalent-classes -f $(OBO)/FMA_ -t $(OBO)/CL_ -t $(OBO)/UBERON_ -o $@
+%-merged.obo: %-merged.owl
+	owltools $< -o -f obo --no-check $@.tmp && grep -v ^owl-axioms $@.tmp > $@
 
 # ----------------------------------------
 # Simple files
 # ----------------------------------------
 
 %-simple.owl: %.owl
-	owltools  $(USECAT) --use-reasoner elk $< --merge-imports-closure --assert-inferred-subclass-axioms --markIsInferred --removeRedundant --allowEquivalencies -o $@.tmp --make-subset-by-properties // --extract-module -d HP:0000118 MP:0000001  WBPhenotype:0000886  --set-ontology-id $(OBO)/$@ -o $@
+	owltools  $(USECAT) --use-reasoner elk $< --merge-imports-closure --assert-inferred-subclass-axioms --markIsInferred --removeRedundant --allowEquivalencies -o $@.tmp --make-subset-by-properties -f // --extract-module  -d HP:0000118 MP:0000001  WBPhenotype:0000886  --set-ontology-id $(OBO)/$@ -o $@
 
 %-simple.obo: %-simple.owl
-	owltools $< -o -f obo $@
+	owltools $< -o -f obo --no-check $@.tmp && grep -v ^owl-axioms $@.tmp > $@
 
 # ----------------------------------------
 # Subqualities model
@@ -379,6 +383,11 @@ mp/mp-map2go.tbl: mp/mp-equivalence-axioms-subq-ubr.obo
 	obo-filter-tags.pl  -t id -t name  $< > $@
 
 # ----------------------------------------
+# MERGED-SIMPLE
+# ----------------------------------------
+#...
+
+# ----------------------------------------
 # GROUPINGS
 # ----------------------------------------
 util/blacklist.js:
@@ -399,6 +408,12 @@ hp-patterns.txt: hp/hp-equivalence-axioms.obo
 # include hacky step for removing pseudo-anon classes for now - these should be removed from base ontology
 monarch-inferred.owl: monarch.owl
 	owltools --use-catalog $< --run-reasoner -r elk --assert-implied -o -f ofn $@.tmp && grep -v '_#_' $@.tmp > $@ && owltools --use-catalog $@
+
+
+#%-merged.owl: %.owl
+#	owltools --merge-imports-closure --use-catalog $< --run-reasoner -r elk --assert-implied --extract-mingraph --set-ontology-id $(UPHENO)/$@ -o -f omn $@
+#%-merged.obo: %-merged.owl
+#	owltools $< -o --merge-equivalence-sets -s HP 9 -s MP 8 -s ZP 1 -f obo --no-check $@
 
 # ----------------------------------------
 # ANALYSIS @Deprecated
