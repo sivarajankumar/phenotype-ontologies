@@ -25,6 +25,6 @@ The OWL axiomatization is updated frequently to stay in sync with changes in the
 
 The edit file is currently:
 
- * http://purl.obolibrary.org/obo/hp/hp-equivalence-axioms-edit.owl
+ * http://purl.obolibrary.org/obo/hp/hp-equivalence-axioms-subq-ubr.owl
 
 Edit this in protege.
