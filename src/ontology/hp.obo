@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 06:02:2014 20:55
+date: 30:03:2014 19:46
 saved-by: peter
 auto-generated-by: OBO-Edit 2.3
 subsetdef: hposlim_core "Core clinical terminology"
@@ -15,6 +15,7 @@ comment: Root of all terms in the Human Phenotype Ontology.
 [Term]
 id: HP:0000002
 name: Abnormality of body height
+def: "Deviation from the norm of height with respect to that which is expected according to age and gender norms." [HPO:probinson]
 is_a: HP:0001507 ! Growth abnormality
 created_by: peter
 creation_date: 2008-02-27T02:20:00Z
@@ -259,7 +260,7 @@ is_a: HP:0000035 ! Abnormality of the testis
 id: HP:0000029
 name: Testicular atrophy
 xref: UMLS:C0156312 "Testicular atrophy"
-is_a: HP:0008734 ! Decreased testicular size
+is_a: HP:0000035 ! Abnormality of the testis
 
 [Term]
 id: HP:0000030
@@ -303,6 +304,8 @@ is_a: HP:0000035 ! Abnormality of the testis
 [Term]
 id: HP:0000035
 name: Abnormality of the testis
+def: "An anomaly of the testicle (the male gonad)." [HPO:probinson]
+synonym: "Anomaly of the testes" EXACT []
 is_a: HP:0000022 ! Abnormality of male internal genitalia
 
 [Term]
@@ -2445,6 +2448,7 @@ is_a: HP:0000347 ! Micrognathia
 id: HP:0000309
 name: Abnormality of the midface
 def: "An anomaly of the midface, which is a region and not an anatomical term. It extends, superiorly, from the inferior orbital margin to, inferiorly, the level of nasal base. It is formed by the maxilla (upper jaw) and zygoma. Traditionally, the nose and premaxilla are not included in the midface." [HPO:probinson, pmid:19125436]
+synonym: "Anomaly of the midface" EXACT []
 is_a: HP:0000271 ! Abnormality of the face
 
 [Term]
@@ -3689,6 +3693,7 @@ id: HP:0000479
 name: Abnormality of the retina
 def: "An abnormality of the `retina` (FMA:58301)." [HPO:probinson]
 subset: hposlim_core
+synonym: "Anomaly of the retina" EXACT []
 synonym: "Retinal disease" RELATED []
 is_a: HP:0001098 ! Abnormality of the fundus
 
@@ -4634,8 +4639,6 @@ def: "A fixed reduction in the vertical distance between the upper and lower eye
 comment: When the palpebral fissures are severely shortened, they cannot be widely separated, actively or passively.
 subset: hposlim_core
 synonym: "Narrow palpebral fissures" EXACT []
-synonym: "Short palpebral fissure" EXACT []
-synonym: "Short palpebral fissures" EXACT []
 xref: MeSH:D016569 "Blepharophimosis"
 xref: UMLS:C0005744 "Blepharophimosis"
 is_a: HP:0200007 ! Abnormal size of the palpebral fissures
@@ -4947,9 +4950,11 @@ is_a: HP:0000496 ! Abnormality of eye movement
 [Term]
 id: HP:0000618
 name: Blindness
+alt_id: HP:0007839
 def: "Blindness is the condition of lacking visual perception due to physiological or neurological factors." [DDD:gblack]
 comment: Various scales have been developed to describe the extent of vision loss and define blindness. Total blindness is the complete lack of form and visual light perception and is clinically recorded as NLP (no light perception). Blindness is frequently used to describe severe visual impairment with residual vision. Those described as having only light perception have no more sight than the ability to tell light from dark and the general direction of a light source.
 subset: hposlim_core
+synonym: "Legal blindness" RELATED []
 xref: MeSH:D001766 "Blindness"
 xref: UMLS:C0376288 "Amaurosis"
 xref: UMLS:C0456909 "Blindness"
@@ -5079,6 +5084,7 @@ is_a: HP:0008034 ! Abnormal iris pigmentation
 id: HP:0000636
 name: Upper eyelid coloboma
 def: "A short discontinuity of the margin of the `upper eyelid` (FMA:54439)." [HPO:probinson]
+synonym: "Coloboma of the upper eyelid" EXACT []
 synonym: "Upper eyelid colobomas" EXACT []
 xref: UMLS:C1863872 "Upper eyelid colobomas"
 is_a: HP:0000625 ! Cleft eyelid
@@ -5786,10 +5792,11 @@ is_a: HP:0100851 ! Abnormal emotion/affect behavior
 
 [Term]
 id: HP:0000722
-name: Obsessive-compulsive disorder
+name: Obsessive-compulsive behavior
 def: "Recurrent obsessions or compulsions that are severe enough to be time consuming (i.e., they take more than 1 hour a day) or cause marked distress or significant impairment (DSM-IV)." [HPO:probinson]
+synonym: "Obsessive compulsive behavior" EXACT []
 synonym: "Obsessive compulsive disorder" EXACT []
-synonym: "Obsessive-compulsive behavior" EXACT []
+synonym: "Obsessive-compulsive disorder" EXACT []
 xref: MeSH:D009771 "Obsessive-Compulsive Disorder"
 xref: UMLS:C0028768 "Obsessive-Compulsive Disorder"
 is_a: HP:0000708 ! Behavioural/Psychiatric Abnormality
@@ -5798,6 +5805,7 @@ is_a: HP:0000708 ! Behavioural/Psychiatric Abnormality
 id: HP:0000723
 name: Restrictive behavior
 def: "Behavior characterized by an abnormal limitation to few interests and activities." [HPO:probinson]
+synonym: "Restricted behavior" EXACT []
 synonym: "RESTRICTIVE BEHAVIOR, INTERESTS, AND ACTIVITIES" RELATED [HPO:skoehler]
 synonym: "Restrictive behaviour" EXACT []
 is_a: HP:0100851 ! Abnormal emotion/affect behavior
@@ -5928,7 +5936,7 @@ name: Apathy
 def: "Lack of emotion or emotional expression; a disorder of motivation that persists over time." [MeSH:D057565]
 xref: MeSH:D057565 "Apathy"
 xref: UMLS:C0085632 "Apathy"
-is_a: HP:0100851 ! Abnormal emotion/affect behavior
+is_a: HP:0000745 ! Diminished motivation
 
 [Term]
 id: HP:0000742
@@ -5955,7 +5963,9 @@ is_a: HP:0100851 ! Abnormal emotion/affect behavior
 
 [Term]
 id: HP:0000745
-name: Lack of motivation
+name: Diminished motivation
+def: "A reduction in goal-directed behavior, that is, motivation, the determinant of behavior and adaptation that allows individuals to get started, be energized to perform a sustained and directed action." [HPO:probinson, pmid:16030444]
+synonym: "Lack of motivation" EXACT []
 is_a: HP:0100851 ! Abnormal emotion/affect behavior
 
 [Term]
@@ -6086,7 +6096,7 @@ synonym: "Reduced nerve conduction velocities" EXACT []
 synonym: "Slow nerve conduction velocity" EXACT []
 synonym: "Slowed nerve conduction velocities" EXACT []
 xref: UMLS:C0234090 "Abnormal nerve conduction"
-is_a: HP:0003134 ! Abnormality of peripheral nerve conduction
+is_a: HP:0001311 ! Abnormal nervous system electrophysiology
 
 [Term]
 id: HP:0000763
@@ -6114,6 +6124,7 @@ is_a: HP:0000759 ! Abnormality of the peripheral nervous system
 [Term]
 id: HP:0000765
 name: Abnormality of the thorax
+alt_id: HP:0100655
 def: "Any abnormality of the thorax (the region of the body formed by the sternum, the thoracic vertebrae and the ribs)." [HPO:curators]
 is_a: HP:0009121 ! Abnormal axial skeleton morphology
 
@@ -7524,7 +7535,7 @@ synonym: "Cafe-au-lait macules" EXACT []
 synonym: "CAFE-AU-LAIT SPOTS" RELATED [HPO:skoehler]
 xref: MeSH:D019080 "Cafe-au-Lait Spots"
 xref: UMLS:C0221263 "Cafe-au-Lait Spots"
-is_a: HP:0001034 ! Hypermelanotic macule
+is_a: HP:0011355 ! Localized skin lesion
 
 [Term]
 id: HP:0000958
@@ -7846,11 +7857,14 @@ is_a: HP:0011355 ! Localized skin lesion
 
 [Term]
 id: HP:0000995
-name: Pigmented nevi
-def: "The presence of increased numbers of pigmented nevi, that is, of small, dark spots on the skin. Pigmented nevi are also known as melanocytic nevi or moles." [HPO:probinson]
+name: Melanocytic nevus
+def: "A oval and round, colored (usually medium-to dark brown, reddish brown, or flesh colored) lesion. Typically, a melanocytic nevus is less than 6 mm in diameter, but may be much smaller or larger." [HPO:probinson]
+comment: Melanocytic nevi are commonly known as moles. The majority of moles appear during the first 20 to 30 years of a person's life, however, some may be present when the baby is born. The average human has from 10 to 14 moles. Moles can develop on the scalp, under the nails, armpits, virtually anywhere on the body. The total number of moles a person can have usually varies during his or her lifetime.
+synonym: "Melanocytic naevus" EXACT []
 synonym: "Melanocytic nevi" EXACT []
 synonym: "Nevocellular nevi" EXACT []
 synonym: "Pigmented naevi" EXACT []
+synonym: "Pigmented nevi" EXACT []
 xref: MeSH:D009508 "Nevus, Pigmented"
 is_a: HP:0001000 ! Abnormality of skin pigmentation
 is_a: HP:0003764 ! Nevus
@@ -8172,7 +8186,7 @@ synonym: "Hyperpigmented skin patches" EXACT []
 synonym: "Hyperpigmented spots" EXACT []
 xref: UMLS:C1842774 "Hyperpigmented macules"
 is_a: HP:0007400 ! Irregular hyperpigmentation
-is_a: HP:0011355 ! Localized skin lesion
+is_a: HP:0012733 ! Macule
 
 [Term]
 id: HP:0001036
@@ -9073,6 +9087,7 @@ name: Hand polydactyly
 def: "A kind of `polydactyly` (HP:0010442) characterized by the presence of a supernumerary finger or fingers." [HPO:probinson]
 subset: hposlim_core
 synonym: "Polydactyly (hands)" EXACT []
+synonym: "Polydactyly of the hand" EXACT []
 xref: MEDRA:10036064 "Polydactyly of fingers"
 xref: SNOMEDCT:81793007 "Polydactyly of fingers"
 xref: UMLS:C0158733 "Hand polydactyly"
@@ -9102,6 +9117,7 @@ is_a: HP:0100259 ! Postaxial polydactyly
 id: HP:0001163
 name: Abnormality of the metacarpal bones
 def: "An abnormality of the `metacarpal bones`(FMA:71336)." [HPO:probinson]
+synonym: "Anomaly of the metacarpal bones" EXACT []
 is_a: HP:0001155 ! Abnormality of the hand
 
 [Term]
@@ -9149,6 +9165,7 @@ synonym: "Claw hand deformities" EXACT []
 synonym: "Claw hands" EXACT []
 synonym: "Claw-hand deformities" EXACT []
 synonym: "Ectrodactyly (hands)" EXACT []
+synonym: "Ectrodactyly of the hand" EXACT []
 synonym: "Split-hand" EXACT []
 xref: SNOMEDCT:13624003 "Congenital cleft hand"
 xref: UMLS:C1842987 "Claw hand deformities"
@@ -9911,10 +9928,10 @@ is_a: HP:0012332 ! Abnormal autonomic nervous system physiology
 [Term]
 id: HP:0001279
 name: Syncope
-def: "Syncope refers to a generalized weakness of muscles with loss of postural tone, inability to stand upright, and loss of consciousness. Once the patient is in a horizontal position, blood flow to the brain is no longer hindered by gravitation and consciousness is regained. Unconsciousness usually lasts for seconds to minutes. Headache and drowsiness (which usually follow seizures) do not follow a syncopal attack. Syncope results from a sudden impairment of brain metabolism usually due to a reduction in cerebral blood flow. This term refers to an abnormally increased disposition to syncope." [HPO:probinson]
+def: "Syncope refers to a generalized weakness of muscles with loss of postural tone, inability to stand upright, and loss of consciousness. Once the patient is in a horizontal position, blood flow to the brain is no longer hindered by gravitation and consciousness is regained. Unconsciousness usually lasts for seconds to minutes. Headache and drowsiness (which usually follow seizures) do not follow a syncopal attack. Syncope results from a sudden impairment of brain metabolism usually due to a reduction in cerebral blood flow." [HPO:probinson]
 xref: MeSH:D013575 "Syncope"
 xref: UMLS:C0039070 "Syncope"
-is_a: HP:0001626 ! Abnormality of the cardiovascular system
+is_a: HP:0011025 ! Abnormality of cardiovascular system physiology
 created_by: peter
 creation_date: 2008-02-25T10:37:00Z
 
@@ -10107,11 +10124,12 @@ is_a: HP:0001251 ! Ataxia
 
 [Term]
 id: HP:0001311
-name: Neurophysiological abnormality
+name: Abnormal nervous system electrophysiology
 alt_id: HP:0002531
 alt_id: HP:0003129
+def: "An abnormality of the function of the electrical signals with which nerve cells communicate with each other or with muscles." [HPO:probinson]
 synonym: "Neurophysiologic abnormalities" EXACT []
-synonym: "Neurophysiologic abnormalities (EEG, VEP, SEP)" EXACT []
+synonym: "Neurophysiologic abnormality" EXACT []
 is_a: HP:0012638 ! Abnormality of nervous system physiology
 
 [Term]
@@ -10415,7 +10433,7 @@ is_a: HP:0011443 ! Abnormality of coordination
 [Term]
 id: HP:0001351
 name: Jerk-locked premyoclonus spikes
-is_a: HP:0001311 ! Neurophysiological abnormality
+is_a: HP:0001311 ! Abnormal nervous system electrophysiology
 
 [Term]
 id: HP:0001355
@@ -10486,6 +10504,7 @@ id: HP:0001367
 name: Abnormal joint morphology
 def: "An abnormal structure or form of the `joints` (FMA:73023), i.e., one or more of the articulations where two bones join." [HPO:probinson]
 synonym: "Abnormality of the joints" EXACT []
+synonym: "Anomaly of the joints" EXACT []
 synonym: "Joint disease" RELATED []
 is_a: HP:0011842 ! Abnormality of skeletal morphology
 
@@ -11852,6 +11871,7 @@ name: Abnormality of the nail
 def: "Abnormality of the `nail` (FMA:54326)." [HPO:probinson]
 comment: Abnormality of the fingernails and/or toenails.
 synonym: "Nail disease" RELATED []
+xref: MeSH:D009260 "Nail Diseases"
 is_a: HP:0011138 ! Abnormality of skin adnexa
 
 [Term]
@@ -12042,11 +12062,11 @@ is_a: HP:0000118 ! Phenotypic abnormality
 
 [Term]
 id: HP:0001627
-name: Abnormality of the heart
+name: Abnormality of cardiac morphology
 def: "An abnormality of the `heart` (FMA:7088)." [HPO:probinson]
+synonym: "Abnormality of the heart" EXACT []
 synonym: "Cardiac abnormality" EXACT []
 synonym: "Cardiac anomalies" EXACT []
-xref: UMLS:C0018798 "Congenital Heart Defects"
 is_a: HP:0001626 ! Abnormality of the cardiovascular system
 
 [Term]
@@ -12136,12 +12156,13 @@ name: Cardiomegaly
 def: "`Increased size` (PATO:0000586) of the `heart` (FMA:7088)." [HPO:probinson]
 xref: MeSH:D006332 "Cardiomegaly"
 xref: UMLS:C0018800 "Cardiomegaly"
-is_a: HP:0001627 ! Abnormality of the heart
+is_a: HP:0001627 ! Abnormality of cardiac morphology
 
 [Term]
 id: HP:0001641
 name: Abnormality of the pulmonary valve
 def: "An abnormality of the `pulmonary valve` (FMA:7246)." [HPO:probinson]
+synonym: "Anomaly of the pulmonary valve" EXACT []
 is_a: HP:0001654 ! Abnormality of the heart valves
 
 [Term]
@@ -12373,6 +12394,8 @@ is_a: HP:0001639 ! Hypertrophic cardiomyopathy
 id: HP:0001671
 name: Abnormality of the cardiac septa
 alt_id: HP:0001690
+def: "An anomaly of the intra-atrial or intraventricular septum." [HPO:probinson]
+synonym: "Heart septal defect" EXACT []
 synonym: "Septal defects" EXACT []
 is_a: HP:0002564 ! Malformation of the heart and great vessels
 
@@ -12425,13 +12448,11 @@ alt_id: HP:0005142
 alt_id: HP:0006672
 def: "Delayed or lack of conduction of atrial depolarizations through the atrioventricular node to the ventricles." [HPO:probinson]
 synonym: "Atrioventricular nodal disease" RELATED []
-synonym: "Congenital heart block" EXACT []
-synonym: "Heart block" EXACT []
 xref: MeSH:D054537 "Atrioventricular Block"
 xref: UMLS:C0004245 "Atrioventricular Block"
-xref: UMLS:C0018794 "Heart Block"
 xref: UMLS:C1841659 "Atrioventricular nodal disease"
 is_a: HP:0005150 ! Abnormal atrioventricular conduction
+is_a: HP:0012722 ! Heart block
 
 [Term]
 id: HP:0001679
@@ -12460,11 +12481,11 @@ is_a: HP:0001677 ! Coronary artery disease
 
 [Term]
 id: HP:0001682
-name: Subvalvular aortic stenosis
+name: Subaortic stenosis
 def: "A fixed form of obstruction to blood flow across the `left-ventricular outflow tract` (FMA:9473) related to stenosis (narrowing) below the level of the aortic valve." [HPO:probinson]
 comment: Narrowing of the left ventricle of the heart just below the aortic valve through which blood must pass on its way up into the aorta.
-synonym: "Subaortic stenosis" EXACT []
-xref: MeSH:D001020
+synonym: "Subvalvular aortic stenosis" EXACT []
+xref: MeSH:D001020 "Aortic Stenosis, Subvalvular"
 xref: UMLS:C0340375 "Subaortic stenosis"
 is_a: HP:0011103 ! Abnormality of the left ventricular outflow tract
 
@@ -12511,7 +12532,7 @@ name: Muscular subvalvular aortic stenosis
 def: "A type of subvalvular aortic stenosis resulting from thickening of the musculature of the interventricular septum, which results in obstruction to blood flow though the left-ventricular outflow tract." [HPO:probinson]
 synonym: "Muscular subaortic stenosis" EXACT []
 xref: UMLS:C0700053 "MUSCULAR SUBAORTIC STENOSIS"
-is_a: HP:0001682 ! Subvalvular aortic stenosis
+is_a: HP:0001682 ! Subaortic stenosis
 
 [Term]
 id: HP:0001692
@@ -12584,6 +12605,7 @@ is_a: HP:0001637 ! Abnormality of the myocardium
 [Term]
 id: HP:0001701
 name: Pericarditis
+def: "Inflammation of the sac-like covering around the heart (pericardium)." [HPO:probinson]
 xref: MeSH:D010493 "Pericarditis"
 xref: UMLS:C0031046 "Pericarditis"
 is_a: HP:0001697 ! Abnormality of the pericardium
@@ -13203,7 +13225,7 @@ name: Hypoplastic toenails
 def: "Underdevelopment of the `toenail`(FMA:54328)." [HPO:probinson]
 xref: UMLS:C1837279 "Hypoplastic toenails"
 is_a: HP:0001792 ! Small nail
-is_a: HP:0010624 ! Aplastic/hypoplastic toenails
+is_a: HP:0010624 ! Aplastic/hypoplastic toenail
 
 [Term]
 id: HP:0001802
@@ -13215,7 +13237,7 @@ synonym: "ABSENT TOENAILS (ANONYCHIA)" RELATED [HPO:skoehler]
 synonym: "ANONYCHIA OF TOENAILS" RELATED [HPO:skoehler]
 xref: UMLS:C1844555 "Absent toenails"
 is_a: HP:0001798 ! Anonychia
-is_a: HP:0010624 ! Aplastic/hypoplastic toenails
+is_a: HP:0010624 ! Aplastic/hypoplastic toenail
 
 [Term]
 id: HP:0001803
@@ -13299,10 +13321,13 @@ is_a: HP:0002164 ! Nail dysplasia
 
 [Term]
 id: HP:0001810
-name: Dystrophic toenails
+name: Dystrophic toenail
 alt_id: HP:0007558
+def: "Toenail changes apart from changes of the color of the toenail (nail dyschromia) that involve partial or complete disruption of the various keratinous layers of the nail plate." [HPO:probinson]
 synonym: "Dystrophic toenail changes" EXACT []
+synonym: "Dystrophic toenails" RELATED []
 xref: UMLS:C1858546 "Dystrophic toenails"
+is_a: HP:0008388 ! Abnormality of the toenail
 is_a: HP:0008404 ! Nail dystrophy
 
 [Term]
@@ -13405,6 +13430,7 @@ def: "A kind of `polydactyly` (HP:0010442) characterized by the presence of a su
 subset: hposlim_core
 synonym: "Duplication of bones of the toes" EXACT []
 synonym: "Polydactyly (feet)" EXACT []
+synonym: "Polydactyly of the foot" EXACT []
 is_a: HP:0001780 ! Abnormality of toe
 is_a: HP:0009136 ! Duplication involving bones of the feet
 is_a: HP:0010442 ! Polydactyly
@@ -13482,11 +13508,11 @@ is_a: HP:0001780 ! Abnormality of toe
 
 [Term]
 id: HP:0001838
-name: Vertical talus
+name: Rocker bottom foot
 alt_id: HP:0001835
 alt_id: HP:0004693
 alt_id: HP:0010218
-def: "This foot deformity is also known as rocker bottom feet and is characterized by the presence of both a prominent heel and a convex contour of the sole." [HPO:probinson]
+def: "The presence of both a prominent heel and a convex contour of the sole." [HPO:probinson, pmid:19125433]
 comment: Congenital vertical talus is characterized by pes valgus, a rigid flatfoot deformity (as opposed to a flexible calcaneovalgus foot) caused by a malpositioned navicular bone at the neck of the talus; the ankle is in severe equinus and the forefoot in dorsiflexion, rocker bottom-like, accompanied by contraction of the talonavicular, deltoid and calcaneal cuboidal ligaments. The foot examination usually reveals a rigid foot with a "reversed" arch, a convex plantar surface, and a deep crease on the lateral dorsal side of the foot. The ankle joint is plantarflexed, while the midfoot and forefoot are extended upward. Lateral foot radiographs are helpful in confirming the diagnosis.
 subset: hposlim_core
 synonym: "Congenital vertical talus" EXACT []
@@ -14179,6 +14205,7 @@ id: HP:0001931
 name: Hypochromic anemia
 def: "A type of anemia characterized by an abnormally low concentration of hemoglobin in the erythrocytes." [HPO:probinson]
 comment: The low concentration of hemoglobin in the erythrocytes causes them to be abnormally pale, i.e., to have less color (be hypochromic).
+synonym: "Hypochromic anaemia" EXACT []
 xref: MeSH:D000747 "Anemia, Hypochromic"
 xref: UMLS:C0002884 "Hypochromic anaemia, NOS"
 is_a: HP:0010972 ! Anemia of inadequate production
@@ -14953,7 +14980,8 @@ is_a: HP:0002014 ! Diarrhea
 id: HP:0002031
 name: Abnormality of the esophagus
 def: "An abnormality of the `esophagus` (FMA:7131)." [HPO:probinson]
-is_a: HP:0011024 ! Abnormality of the gastrointestinal tract
+synonym: "Anomaly of the esophagus" EXACT []
+is_a: HP:0012718 ! Morphological abnormality of the gastrointestinal tract
 
 [Term]
 id: HP:0002032
@@ -14976,7 +15004,9 @@ is_a: HP:0008872 ! Feeding difficulties in infancy
 id: HP:0002034
 name: Abnormality of the rectum
 def: "An abnormaltiy of the `rectum` (FMA:14544), the final segment of the large intestine that stores solid waste until it passes through the anus." [HPO:probinson]
+synonym: "Anomaly of the rectum" EXACT []
 is_a: HP:0002250 ! Abnormality of the large intestine
+is_a: HP:0012732 ! Anorectal anomaly
 
 [Term]
 id: HP:0002035
@@ -15030,10 +15060,11 @@ is_a: HP:0011458 ! Abdominal symptom
 
 [Term]
 id: HP:0002040
-name: Esophageal varices
+name: Esophageal varix
 def: "Extreme dilation of the submucusoal veins in the lower portion of the esophagus." [HPO:probinson]
 comment: Esophageal varices are most often a consequence of portal hypertension.
 subset: hposlim_core
+synonym: "Esophageal varices" RELATED []
 xref: MEDRA:10056091 "Varices oesophageal"
 xref: SNOMEDCT:28670008 "Esophageal varices"
 xref: UMLS:C0014867 "Esophageal Varices"
@@ -15492,8 +15523,9 @@ is_a: HP:0002094 ! Dyspnea
 id: HP:0002099
 name: Asthma
 alt_id: HP:0002112
-def: "Asthma is characterized by increased responsiveness of the tracheobronchial tree to multiple stimuli, leading to narrowing of the air passages with resultant dyspnea, cough, and wheezing." [HPO:curators]
+def: "Asthma is characterized by increased responsiveness of the tracheobronchial tree to multiple stimuli, leading to narrowing of the air passages with resultant dyspnea, cough, and wheezing." [HPO:probinson]
 synonym: "Bronchial asthma" EXACT []
+synonym: "Reactive airway disease" RELATED []
 xref: MeSH:D001249 "Asthma"
 xref: UMLS:C0004096 "Asthma"
 is_a: HP:0002088 ! Abnormality of the lung
@@ -15708,6 +15740,7 @@ alt_id: HP:0006952
 alt_id: HP:0007257
 def: "Abnormality of the `basal ganglia` (FMA:84013)." [HPO:probinson]
 comment: The basal ganglia are a group of nuclei (striatum, pallidum substantia nigra, and the subthalamic nucleus) at the base of the forebrain that are connected to the cerebral cortex, the thalamus, and other areas. The basal ganglia subserve motor functions that are distinct from those of the pyramidal (corticospinal) tract, for which reason neurologic abnormalities caused by lesions to the basal ganglia are often referred to as extrapyramidal.
+synonym: "Anomaly of the basal ganglia" EXACT []
 synonym: "Basal ganglia disease" EXACT []
 is_a: HP:0010993 ! Abnormality of the cerebral subcortex
 
@@ -15742,6 +15775,7 @@ synonym: "Subarachnoid haemorrhage" EXACT []
 xref: MeSH:D013345 "Subarachnoid Hemorrhage"
 xref: UMLS:C0038525 "SUBARACHNOID HAEMORRHAGE"
 is_a: HP:0002170 ! Intracranial hemorrhage
+is_a: HP:0012703 ! Abnormality of the subarachnoid space
 
 [Term]
 id: HP:0002139
@@ -16491,8 +16525,8 @@ synonym: "GI haemorrhage" EXACT []
 synonym: "GI hemorrhage" EXACT []
 xref: MeSH:D006471 "Gastrointestinal Hemorrhage"
 xref: UMLS:C1880931 "Hemorrhage, GI"
-is_a: HP:0011024 ! Abnormality of the gastrointestinal tract
 is_a: HP:0011029 ! Internal hemorrhage
+is_a: HP:0012719 ! Functional abnormality of the gastrointestinal tract
 
 [Term]
 id: HP:0002240
@@ -16514,7 +16548,7 @@ def: "An abnormality of the `intestine` (FMA:7199). The closely related term ent
 comment: The intestine (also known as bowel) is comprised of the `small intestine` (FMA:7200) and the `large intestine` (FMA:7201).
 synonym: "Enteropathy" EXACT []
 xref: UMLS:C0021831 "Enteropathy"
-is_a: HP:0011024 ! Abnormality of the gastrointestinal tract
+is_a: HP:0012718 ! Morphological abnormality of the gastrointestinal tract
 
 [Term]
 id: HP:0002243
@@ -17165,7 +17199,7 @@ synonym: "Abnormal electroencephalogram" EXACT []
 synonym: "Electroencephalogram abnormal" EXACT []
 synonym: "Electroencephalogram abnormalities" EXACT []
 xref: UMLS:C0151611 "ABNORMAL ELECTROENCEPHALOGRAM"
-is_a: HP:0001311 ! Neurophysiological abnormality
+is_a: HP:0001311 ! Abnormal nervous system electrophysiology
 
 [Term]
 id: HP:0002354
@@ -17241,7 +17275,7 @@ id: HP:0002363
 name: Abnormality of the brainstem
 def: "An anomaly of the `brainstem` (FMA:79876)." [HPO:probinson]
 comment: The brainstem includes the `medulla oblongata` (FMA:62004), `pons` (FMA:67943), and `midbrain` (FMA:61993). Note that in clinical parlance, the term 'bulbar' refers to the brainstem.
-is_a: HP:0007319 ! Morphological abnormality of the central nervous system
+is_a: HP:0012443 ! Abnormality of the brain
 
 [Term]
 id: HP:0002365
@@ -17251,6 +17285,7 @@ comment: This finding can be demonstrated by magnetic resonance imaging.
 synonym: "Brainstem hypoplasia" EXACT []
 synonym: "Hypoplastic brain stem" EXACT []
 synonym: "Hypoplastic brainstem" EXACT []
+synonym: "Small brainstem" EXACT []
 xref: UMLS:C1837232 "Hypoplastic brainstem"
 is_a: HP:0007362 ! Aplasia/Hypoplasia of the brainstem
 
@@ -17553,7 +17588,7 @@ id: HP:0002418
 name: Abnormality of the midbrain
 def: "An abnormality of the `midbrain` (FMA:61993), which has as its parts the tectum, cerebral peduncle, midbrain tegmentum and cerebral aqueduct." [HPO:probinson]
 synonym: "Abnormality of the mesencephalon" EXACT []
-is_a: HP:0012443 ! Abnormality of the brain
+is_a: HP:0002363 ! Abnormality of the brainstem
 
 [Term]
 id: HP:0002419
@@ -17799,7 +17834,7 @@ id: HP:0002476
 name: Primitive reflexes (palmomental, snout, glabellar)
 synonym: "Primitive reflexes" EXACT []
 xref: UMLS:C0422895 "Primitive reflexes"
-is_a: HP:0002060 ! Abnormality of the cerebrum
+is_a: HP:0100022 ! Abnormality of movement
 
 [Term]
 id: HP:0002478
@@ -17969,7 +18004,11 @@ is_a: HP:0001360 ! Holoprosencephaly
 
 [Term]
 id: HP:0002508
-name: Malformation of brainstem structures
+name: Brainstem dysplasia
+alt_id: HP:0006991
+def: "A developmental structural anomaly of the stalk-like part of the brain that comprises the midbrain (aka mesencephalon), the pons (aka pons Varolii), and the medulla oblongata, and connects the cerebral hemispheres with the cervical spinal cord." [HPO:probinson]
+synonym: "Brainstem hypoplasia/dysplasia" EXACT []
+synonym: "Malformation of brainstem structures" EXACT []
 is_a: HP:0002363 ! Abnormality of the brainstem
 
 [Term]
@@ -18283,6 +18322,7 @@ is_a: HP:0004404 ! Abnormality of the nipple
 [Term]
 id: HP:0002563
 name: Constrictive pericarditis
+def: "Presence of a thickened, fibrotic pericardium that forms a non-compliant shell around the heart, and resulting from chronic inflammation of the pericardium." [HPO:probinson]
 xref: MeSH:D010494 "Pericarditis, Constrictive"
 xref: UMLS:C0031048 "Pericarditis, Constrictive"
 is_a: HP:0001701 ! Pericarditis
@@ -18299,7 +18339,7 @@ synonym: "Congenital heart defect" EXACT []
 synonym: "Congenital heart defects" EXACT []
 synonym: "Congenital heart disease" EXACT []
 xref: UMLS:C0018798 "Congenital Heart Defects"
-is_a: HP:0001627 ! Abnormality of the heart
+is_a: HP:0001627 ! Abnormality of cardiac morphology
 
 [Term]
 id: HP:0002566
@@ -18327,6 +18367,7 @@ name: Achalasia
 def: "A disorder of esophageal motility characterized by the inability of the lower esophageal sphincter to relax during swallowing and by inadequate or lacking peristalsis in the lower half of the body of the esophagus." [HPO:probinson]
 comment: Achalasia may lead to regurgitation of food, chest pain, cough, and difficulty swallowing.
 subset: hposlim_core
+synonym: "Achalasia of the esophagus" EXACT []
 xref: MEDRA:10030136 "Oesophageal achalasia"
 xref: SNOMEDCT:48531003 "Achalasia"
 xref: UMLS:C0014848 "Achalasia"
@@ -18392,7 +18433,7 @@ id: HP:0002577
 name: Abnormality of the stomach
 def: "An abnormality of the `stomach` (FMA:7148)." [HPO:probinson]
 comment: The stomach the hollow, muscular organ of the gastrointestinal tract between the esophagus and the small intestine.
-is_a: HP:0011024 ! Abnormality of the gastrointestinal tract
+is_a: HP:0012718 ! Morphological abnormality of the gastrointestinal tract
 
 [Term]
 id: HP:0002578
@@ -18408,7 +18449,7 @@ id: HP:0002579
 name: Gastrointestinal dysmotility
 subset: hposlim_core
 xref: UMLS:C1836923 "Gastrointestinal dysmotility"
-is_a: HP:0011024 ! Abnormality of the gastrointestinal tract
+is_a: HP:0012719 ! Functional abnormality of the gastrointestinal tract
 
 [Term]
 id: HP:0002580
@@ -18478,7 +18519,7 @@ is_a: HP:0002246 ! Abnormality of the duodenum
 [Term]
 id: HP:0002589
 name: Gastrointestinal atresia
-is_a: HP:0011024 ! Abnormality of the gastrointestinal tract
+is_a: HP:0012718 ! Morphological abnormality of the gastrointestinal tract
 
 [Term]
 id: HP:0002590
@@ -18605,7 +18646,7 @@ synonym: "Encopresis" EXACT []
 synonym: "Fecal incontinence" EXACT []
 xref: MeSH:D004688 "Encopresis"
 xref: UMLS:C0015732 "Bowel incontinence"
-is_a: HP:0002250 ! Abnormality of the large intestine
+is_a: HP:0012700 ! Abnormal large intestine physiology
 
 [Term]
 id: HP:0002608
@@ -18751,8 +18792,9 @@ is_a: HP:0002244 ! Abnormality of the small intestine
 [Term]
 id: HP:0002631
 name: Ascending aortic aneurysm
-is_a: HP:0004942 ! Aortic aneurysm
+def: "A bulging, weakened area in the wall of the ascending thoracic aorta." [HPO:probinson]
 is_a: HP:0005111 ! Dilatation of the ascending aorta
+is_a: HP:0012727 ! Thoracic aortic aneurysm
 
 [Term]
 id: HP:0002632
@@ -19098,6 +19140,7 @@ id: HP:0002679
 name: Abnormality of the sella turcica
 def: "Abnormality of the `sella turcica` (FMA:54709), a saddle-shaped depression in the sphenoid bone at the base of the human skull." [HPO:probinson]
 subset: hposlim_core
+synonym: "Anomaly of the sella turcica" EXACT []
 is_a: HP:0000929 ! Abnormality of the skull
 
 [Term]
@@ -19775,9 +19818,11 @@ is_a: HP:0002780 ! Bronchomalacia
 
 [Term]
 id: HP:0002787
-name: Tracheal ectopic calcification
-def: "Calcification (abnormal deposits of calcium) in the tracheal tissues." [HPO:probinson]
+name: Tracheal calcification
+def: "Calcification (abnormal deposits of calcium) in the tracheal tissues." [HPO:probinson, pmid:18663210]
+synonym: "Calcification  of the trachea" EXACT []
 synonym: "Tracheal calcifications" EXACT []
+synonym: "Tracheal ectopic calcification" EXACT []
 xref: UMLS:C0264324 "Tracheal calcifications"
 is_a: HP:0002778 ! Abnormality of the trachea
 is_a: HP:0010766 ! Ectopic calcification
@@ -19865,7 +19910,8 @@ is_a: HP:0003330 ! Abnormal bone structure
 
 [Term]
 id: HP:0002803
-name: Congenital contractures
+name: Congenital contracture
+def: "One or more flexion contractures (a bent joint that cannot be straightened actively or passively) that are present at birth." [HPO:probinson]
 synonym: "Congenital joint contractures" EXACT []
 xref: UMLS:C0332878 "Congenital contractures"
 is_a: HP:0001371 ! Flexion contracture
@@ -19887,7 +19933,7 @@ synonym: "Arthrogryposis multiplex" EXACT []
 synonym: "Arthrogryposis, congenital" EXACT []
 synonym: "Multiple congenital contractures" EXACT []
 xref: UMLS:C1832739 "Arthrogryposis multiplex"
-is_a: HP:0002803 ! Congenital contractures
+is_a: HP:0002803 ! Congenital contracture
 
 [Term]
 id: HP:0002805
@@ -20199,7 +20245,6 @@ alt_id: HP:0004999
 def: "The legs angle inward, such that the knees are close together and the ankles far apart." [HPO:probinson]
 subset: hposlim_core
 synonym: "Genu valga" EXACT []
-synonym: "genu valgum or genu varum" EXACT []
 synonym: "Genu valgus" EXACT []
 synonym: "Genua valga" EXACT []
 synonym: "Knee joint valgus deformity" EXACT []
@@ -21106,7 +21151,7 @@ subset: hposlim_core
 xref: MEDRA:10027546 "Micromelia"
 xref: SNOMEDCT:74370006 "Micromelia"
 xref: UMLS:C0025995 "Micromelia"
-is_a: HP:0009826 ! Hypoplasia involving bones of the extremities
+is_a: HP:0009826 ! Limb undergrowth
 
 [Term]
 id: HP:0002984
@@ -21131,7 +21176,7 @@ xref: UMLS:C0685381 "Congenital hypoplasia of radius"
 xref: UMLS:C1401779 "Short radii"
 xref: UMLS:C1840087 "Radial ray hypoplasia"
 is_a: HP:0006501 ! Aplasia/Hypoplasia of the radius
-is_a: HP:0009821 ! Hypoplasia involving forearm bones
+is_a: HP:0009821 ! Forearm undergrowth
 
 [Term]
 id: HP:0002986
@@ -21360,7 +21405,7 @@ xref: SNOMEDCT:93300007 "Congenital hypoplasia of ulna"
 xref: UMLS:C0685391 "Congenital hypoplasia of ulna"
 xref: UMLS:C1860614 "ULNAR HYPOPLASIA"
 is_a: HP:0006495 ! Aplasia/Hypoplasia of the ulna
-is_a: HP:0009821 ! Hypoplasia involving forearm bones
+is_a: HP:0009821 ! Forearm undergrowth
 
 [Term]
 id: HP:0003023
@@ -21426,7 +21471,7 @@ synonym: "Mesomelic limb shortening" EXACT []
 synonym: "Mesomelic shortening of limbs" EXACT []
 synonym: "Symmetric mesomelic limb shortness" EXACT []
 xref: UMLS:C0549306 "Mesomelia"
-is_a: HP:0009826 ! Hypoplasia involving bones of the extremities
+is_a: HP:0009826 ! Limb undergrowth
 
 [Term]
 id: HP:0003028
@@ -21951,8 +21996,11 @@ is_a: HP:0011025 ! Abnormality of cardiovascular system physiology
 [Term]
 id: HP:0003116
 name: Abnormal echocardiogram
+def: "An abnormality detectable by sonography of the heart (echocardiography)." [HPO:probinson]
+comment: Note that while structural heart anomalies can cause abnormal echocardiograpy findings, structural abnormalities are detectable by multiple imaging modalities and should be coded using terms from the hierarchy under 'Abnormality of cardiac morphology' (HP:0001627).
+synonym: "Abnormal echocardiography" EXACT []
 xref: UMLS:C0476369 "Abnormal echocardiogram"
-is_a: HP:0001627 ! Abnormality of the heart
+is_a: HP:0011025 ! Abnormality of cardiovascular system physiology
 
 [Term]
 id: HP:0003117
@@ -22316,6 +22364,7 @@ name: Abnormality of the ischium
 def: "An anomaly of the `ischium` (FMA:16592), which forms the lower and back part of the hip bone." [HPO:probinson]
 comment: The ischium, together with the ilium and the pubis, forms the hip bone (os coxae).
 synonym: "Abnormality of the ischial bones" EXACT []
+synonym: "Anomaly of the ischium" EXACT []
 is_a: HP:0003272 ! Abnormality of the hip bone
 
 [Term]
@@ -23441,7 +23490,7 @@ is_a: HP:0012200 ! Abnormality of prothrombin
 [Term]
 id: HP:0003338
 name: Focal necrosis of right ventricular muscle cells
-is_a: HP:0001627 ! Abnormality of the heart
+is_a: HP:0001627 ! Abnormality of cardiac morphology
 
 [Term]
 id: HP:0003339
@@ -23962,8 +24011,8 @@ is_a: HP:0002460 ! Distal muscle weakness
 
 [Term]
 id: HP:0003429
-name: Hypomyelination
-def: "Reduced amount of myelin in the nervous system resulting from defective myelinogenesis." [HPO:probinson]
+name: CNS hypomyelination
+def: "Reduced amount of myelin in the central nervous system resulting from defective myelinogenesis." [HPO:probinson]
 xref: UMLS:C0544820 "Hypomyelination"
 is_a: HP:0011400 ! Abnormal CNS myelination
 
@@ -23983,7 +24032,6 @@ synonym: "Decreased motor nerve conduction velocity (NCV)" EXACT []
 synonym: "Reduced motor nerve conduction velocity" EXACT []
 xref: UMLS:C1854030 "Reduced motor nerve conduction velocity"
 is_a: HP:0000762 ! Decreased nerve conduction velocity
-is_a: HP:0002450 ! Abnormality of the motor neurons
 
 [Term]
 id: HP:0003434
@@ -24832,14 +24880,9 @@ alt_id: HP:0003598
 alt_id: HP:0003627
 alt_id: HP:0003662
 alt_id: HP:0003669
-def: "Onset of disease manifestations in adulthood, defined here as at the age of 20 years or later." [HPO:probinson]
-synonym: "Adult onset has been reported" EXACT []
-synonym: "Onset before age 40 years" EXACT []
+def: "Onset of disease manifestations in adulthood, defined here as at the age of 16 years or later." [HPO:probinson]
 synonym: "Onset in adulthood" EXACT []
 synonym: "Onset in early adulthood" EXACT []
-synonym: "Onset in third decade" EXACT []
-synonym: "Onset in third or fourth decade" EXACT []
-synonym: "ONSET IN THIRD OR FOURTH DECADES" RELATED [HPO:skoehler]
 is_a: HP:0011007 ! Age of onset
 
 [Term]
@@ -25683,6 +25726,7 @@ is_a: HP:0011123 ! Inflammatory abnormality of the skin
 [Term]
 id: HP:0003768
 name: Periodic paralysis
+def: "Episodes of muscle weakness." [HPO:probinson]
 synonym: "Episodic paralysis" EXACT []
 xref: UMLS:C0030443 "Periodic paralysis"
 is_a: HP:0003470 ! Paralysis
@@ -26077,24 +26121,24 @@ is_a: HP:0009809 ! Abnormality of upper limb metaphysis
 [Term]
 id: HP:0003858
 name: Cortical diaphyseal irregularity of the upper limbs
-is_a: HP:0009808 ! Abnormality involving the diaphyses of the upper limbs
+is_a: HP:0009808 ! Anomaly of the upper limb diaphyses
 
 [Term]
 id: HP:0003859
 name: Cortical diaphyseal thickening of the upper limbs
-is_a: HP:0009808 ! Abnormality involving the diaphyses of the upper limbs
+is_a: HP:0009808 ! Anomaly of the upper limb diaphyses
 
 [Term]
 id: HP:0003860
 name: Diaphyseal sclerosis of the upper limbs
 is_a: HP:0003034 ! Diaphyseal sclerosis
-is_a: HP:0009808 ! Abnormality involving the diaphyses of the upper limbs
+is_a: HP:0009808 ! Anomaly of the upper limb diaphyses
 
 [Term]
 id: HP:0003861
 name: Broad diaphyses of the upper limbs
 synonym: "Wide diaphyses of the upper limbs" EXACT []
-is_a: HP:0009808 ! Abnormality involving the diaphyses of the upper limbs
+is_a: HP:0009808 ! Anomaly of the upper limb diaphyses
 
 [Term]
 id: HP:0003862
@@ -26477,7 +26521,7 @@ id: HP:0003926
 name: Abnormality of the humeral diaphysis
 def: "An anomaly of the `humeral diaphysis` (FMA:13305)." [HPO:probinson]
 is_a: HP:0003063 ! Abnormality of the humerus
-is_a: HP:0006504 ! Abnormality involving the diaphyses of the limbs
+is_a: HP:0009808 ! Anomaly of the upper limb diaphyses
 
 [Term]
 id: HP:0003927
@@ -27062,8 +27106,9 @@ is_a: HP:0004015 ! Abnormality of radial metaphyses
 [Term]
 id: HP:0004027
 name: Abnormality of radial diaphysis
+def: "An anomaly of the `radial diaphysis` (FMA:33782)." [HPO:probinson]
 is_a: HP:0002818 ! Abnormality of the radius
-is_a: HP:0006504 ! Abnormality involving the diaphyses of the limbs
+is_a: HP:0009808 ! Anomaly of the upper limb diaphyses
 
 [Term]
 id: HP:0004028
@@ -28103,7 +28148,7 @@ creation_date: 2008-02-20T11:12:00Z
 [Term]
 id: HP:0004296
 name: Abnormality of gastrointestinal vasculature
-is_a: HP:0011024 ! Abnormality of the gastrointestinal tract
+is_a: HP:0012718 ! Morphological abnormality of the gastrointestinal tract
 created_by: peter
 creation_date: 2008-02-20T11:24:00Z
 
@@ -28178,7 +28223,7 @@ name: Abnormality of the endocardium
 alt_id: HP:0005260
 def: "An abnormality of the `endocardium` (FMA:7280)." [HPO:probinson]
 synonym: "Abnormality of the endomycoardium" EXACT []
-is_a: HP:0001627 ! Abnormality of the heart
+is_a: HP:0001627 ! Abnormality of cardiac morphology
 created_by: peter
 creation_date: 2008-02-20T01:23:00Z
 
@@ -28333,7 +28378,8 @@ creation_date: 2008-02-27T03:19:00Z
 id: HP:0004323
 name: Abnormality of body weight
 alt_id: HP:0010718
-synonym: "Abnormality of habitus" EXACT []
+def: "An abnormal increase or decrease of weight or an abnormal distribution of mass in the body." [HPO:probinson]
+synonym: "Abnormality of habitus" RELATED []
 is_a: HP:0001507 ! Growth abnormality
 created_by: peter
 creation_date: 2008-02-27T03:21:00Z
@@ -28818,7 +28864,7 @@ id: HP:0004378
 name: Abnormality of the anus
 def: "Abnormality of the `anal canal` (FMA:15703)." [HPO:probinson]
 comment: The anal canal is continuous proximally with the rectum and distally terminates with the anus.
-is_a: HP:0011024 ! Abnormality of the gastrointestinal tract
+is_a: HP:0012732 ! Anorectal anomaly
 created_by: peter
 creation_date: 2008-03-18T08:11:00Z
 
@@ -28892,7 +28938,7 @@ creation_date: 2008-03-18T09:00:00Z
 [Term]
 id: HP:0004386
 name: Gastrointestinal inflammation
-is_a: HP:0011024 ! Abnormality of the gastrointestinal tract
+is_a: HP:0012719 ! Functional abnormality of the gastrointestinal tract
 created_by: peter
 creation_date: 2008-03-18T09:01:00Z
 
@@ -28936,7 +28982,7 @@ def: "Polyp-like protrusions which are histologically hamartomas. These can occu
 comment: Patients with Cowden-Syndrom for example often have multiple hamartomatous gastrointestinal polyps.
 synonym: "GASTROINTESTINAL HAMARTOMATOUS POLYPS" RELATED [HPO:skoehler]
 xref: UMLS:C0334092 "Hamartomatous polyps"
-is_a: HP:0005266 ! Intestinal polyps
+is_a: HP:0005266 ! Intestinal polyp
 is_a: HP:0010566 ! Hamartoma
 created_by: peter
 creation_date: 2008-03-18T09:04:00Z
@@ -28993,7 +29039,7 @@ def: "An `ulcer` (MPATH:579) of the `gastrointestinal tract` (FMA:71132)." [HPO:
 comment: A peptic ulcer is defined as an erosion of the mucosa of the gastrointestinal tract, and can occur as esophageal ulcer, gastric ulcer, duodenal ulcer, and Meckel's Diverticulum ulcer.
 xref: MeSH:D010437 "Peptic Ulcer"
 xref: UMLS:C0030920 "Peptic Ulcer"
-is_a: HP:0011024 ! Abnormality of the gastrointestinal tract
+is_a: HP:0012719 ! Functional abnormality of the gastrointestinal tract
 created_by: peter
 creation_date: 2008-03-18T09:14:00Z
 
@@ -30032,16 +30078,18 @@ is_a: HP:0003298 ! Spina bifida occulta
 
 [Term]
 id: HP:0004616
-name: Cleft vertebral arches
+name: Cleft vertebral arch
+def: "A discontinuity of the vertebral arch (FMA:11946), i.e., of the posterior part of a vertebra." [HPO:probinson]
+synonym: "Cleft vertebral arches" RELATED []
 xref: UMLS:C1859458 "Cleft vertebral arches"
-is_a: HP:0008438 ! Vertebral arch abnormalities
+is_a: HP:0008438 ! Vertebral arch anomaly
 
 [Term]
 id: HP:0004617
 name: Butterfly vertebral arch
-def: "Butterfly vertebrae have a cleft through the body of the vertebrae and a funnel shape at the ends." [HPO:curators]
+def: "Butterfly vertebrae have a cleft through the body of the vertebrae and a funnel shape at the ends." [HPO:probinson]
 xref: UMLS:C1861627 "Butterfly vertebral arch"
-is_a: HP:0008438 ! Vertebral arch abnormalities
+is_a: HP:0008438 ! Vertebral arch anomaly
 
 [Term]
 id: HP:0004618
@@ -30058,10 +30106,10 @@ is_a: HP:0008454 ! Lumbar kyphosis
 
 [Term]
 id: HP:0004621
-name: Enlarged vetebral pedicles
+name: Enlarged vertebral pedicles
 def: "Increased size of the `vertebral pedicle` (FMA:11950)." [HPO:probinson]
 comment: The vertebral pedicales are the two short, thick processes, which connect the body of the spinal vertebra to the arch.
-is_a: HP:0003468 ! Abnormality of the vertebrae
+is_a: HP:0008438 ! Vertebral arch anomaly
 
 [Term]
 id: HP:0004622
@@ -30153,7 +30201,7 @@ is_a: HP:0010940 ! Aplasia/Hypoplasia of the nasal bone
 
 [Term]
 id: HP:0004660
-name: hypoplasia of facial musculature
+name: Hypoplasia of facial musculature
 is_a: HP:0000301 ! Abnormality of facial musculature
 
 [Term]
@@ -30572,6 +30620,7 @@ is_a: HP:0200008 ! Intestinal polyposis
 [Term]
 id: HP:0004785
 name: Malrotation of colon
+def: "An anatomical anomaly that results from an abnormal rotation of the gut as it returns to the abdominal cavity during embryogenesis." [HPO:probinson]
 is_a: HP:0002250 ! Abnormality of the large intestine
 is_a: HP:0002566 ! Intestinal malrotation
 
@@ -30631,6 +30680,7 @@ id: HP:0004794
 name: Malrotation of small bowel
 def: "A deviation from the normal rotation of the midgut during embryologic development with mislocalization of the small bowel." [HPO:probinson]
 comment: Malrotation results not only in the malposition of the bowel but also in the malfixation of the mesentery. The normally broad mesenteric attachment is shortened to a narrow pedicle that predisposes the patient to the complication of midgut volvulus.
+synonym: "Malrotation of the small intestine" EXACT []
 is_a: HP:0002244 ! Abnormality of the small intestine
 is_a: HP:0002566 ! Intestinal malrotation
 
@@ -30646,7 +30696,7 @@ is_a: HP:0006753 ! Neoplasm of the stomach
 id: HP:0004796
 name: Gastrointestinal obstruction
 xref: UMLS:C0236124 "Gastrointestinal obstruction"
-is_a: HP:0011024 ! Abnormality of the gastrointestinal tract
+is_a: HP:0012719 ! Functional abnormality of the gastrointestinal tract
 
 [Term]
 id: HP:0004797
@@ -30664,7 +30714,7 @@ synonym: "GASTROINTESTINAL INFECTIONS, RECURRENT" RELATED [HPO:skoehler]
 synonym: "Recurrent gastrointestinal infections" EXACT []
 xref: UMLS:C1264613 "Gastrointestinal infections"
 is_a: HP:0002719 ! Recurrent infections
-is_a: HP:0011024 ! Abnormality of the gastrointestinal tract
+is_a: HP:0012719 ! Functional abnormality of the gastrointestinal tract
 
 [Term]
 id: HP:0004799
@@ -31439,8 +31489,10 @@ is_a: HP:0005112 ! Dilatation of the abdominal aorta
 [Term]
 id: HP:0004954
 name: Descending aortic aneurysm
-is_a: HP:0004942 ! Aortic aneurysm
+def: "A bulging, weakened area in the wall of the descending thoracic aorta." [HPO:probinson]
+synonym: "Descending thoracic aortic aneurysm" EXACT []
 is_a: HP:0004959 ! Dilatation of the descending thoracic aorta
+is_a: HP:0012727 ! Thoracic aortic aneurysm
 
 [Term]
 id: HP:0004955
@@ -32326,7 +32378,7 @@ name: Membranous subvalvular aortic stenosis
 def: "Subvalvular stenosis is caused by a diaphragm-like membrane. The stenosis is clinically manifested like any other form of aortic stenosis but is often associated with some aortic insufficiency." [HPO:probinson, pmid:5817839]
 comment: An important feature in the differential diagnosis between valvular and subvalvular aortic stenosis is the fact that no ejection sound is present in the latter.
 xref: UMLS:C1848978 "Membranous subvalvular aortic stenosis"
-is_a: HP:0001682 ! Subvalvular aortic stenosis
+is_a: HP:0001682 ! Subaortic stenosis
 
 [Term]
 id: HP:0005176
@@ -32692,7 +32744,7 @@ is_a: HP:0001392 ! Abnormality of the liver
 id: HP:0005238
 name: Discrete intestinal polyps
 xref: UMLS:C0021846 "Intestinal Polyps"
-is_a: HP:0005266 ! Intestinal polyps
+is_a: HP:0005266 ! Intestinal polyp
 
 [Term]
 id: HP:0005240
@@ -32723,7 +32775,7 @@ is_a: HP:0010318 ! Aplasia/Hypoplasia of the abdominal wall musculature
 [Term]
 id: HP:0005244
 name: Gastrointestinal infarctions
-is_a: HP:0011024 ! Abnormality of the gastrointestinal tract
+is_a: HP:0012719 ! Functional abnormality of the gastrointestinal tract
 
 [Term]
 id: HP:0005245
@@ -32853,6 +32905,7 @@ creation_date: 2008-03-26T04:32:00Z
 id: HP:0005264
 name: Abnormality of the gallbladder
 def: "An abnormality of the `gallbladder` (FMA:7202)." [HPO:probinson]
+synonym: "Anomaly of the gallbladder" EXACT []
 is_a: HP:0004297 ! Abnormality of the biliary system
 created_by: peter
 creation_date: 2008-03-26T04:40:00Z
@@ -32867,7 +32920,9 @@ creation_date: 2008-03-26T04:44:00Z
 
 [Term]
 id: HP:0005266
-name: Intestinal polyps
+name: Intestinal polyp
+def: "A discrete abnormal tissue mass that protrudes into the lumen of the intestine and is attached to the intestinal wall either by a stalk, pedunculus, or a broad base." [HPO:probinson]
+synonym: "Intestinal polyps" RELATED []
 xref: MeSH:D007417 "Intestinal Polyps"
 xref: UMLS:C0021846 "Intestinal Polyps"
 is_a: HP:0002242 ! Abnormality of the intestine
@@ -32887,7 +32942,6 @@ def: "A pregnancy that ends at a stage in which the fetus is incapable of surviv
 xref: MeSH:D000022 "Abortion, Spontaneous"
 xref: UMLS:C0000786 "Spontaneous abortion"
 is_a: HP:0001787 ! Abnormal delivery
-is_a: HP:0011420 ! Death
 
 [Term]
 id: HP:0005272
@@ -34289,6 +34343,7 @@ creation_date: 2008-03-27T10:44:00Z
 id: HP:0005561
 name: Abnormality of bone marrow cell morphology
 def: "An anomaly of the form or number of cells in the `bone marrow` (FMA:9608)." [DDD:wouwehand, HPO:probinson]
+synonym: "Anomaly of the bone marrow cells" EXACT []
 synonym: "Bone marrow disease" RELATED []
 is_a: HP:0001871 ! Abnormality of  blood and blood-forming tissues
 created_by: peter
@@ -34492,7 +34547,7 @@ def: "The giant congenital nevus is greater than 8 cm in size, pigmented and oft
 comment: Between 4% and 6% of these lesions will develop into a malignant melanoma.
 synonym: "Giant pigmented hairy nevus" EXACT []
 synonym: "Giant pigmented nevus" EXACT []
-is_a: HP:0000995 ! Pigmented nevi
+is_a: HP:0000995 ! Melanocytic nevus
 
 [Term]
 id: HP:0005602
@@ -34504,7 +34559,7 @@ is_a: HP:0001045 ! Vitiligo
 id: HP:0005603
 name: Numerous congenital melanocytic nevi
 xref: UMLS:C1855307 "Numerous congenital melanocytic nevi"
-is_a: HP:0000995 ! Pigmented nevi
+is_a: HP:0000995 ! Melanocytic nevus
 
 [Term]
 id: HP:0005605
@@ -34516,7 +34571,7 @@ is_a: HP:0001034 ! Hypermelanotic macule
 [Term]
 id: HP:0005606
 name: Hyperpigmented nevi and streak
-is_a: HP:0000995 ! Pigmented nevi
+is_a: HP:0000995 ! Melanocytic nevus
 
 [Term]
 id: HP:0005607
@@ -34792,7 +34847,7 @@ id: HP:0005684
 name: Distal arthrogryposis
 def: "A form of arthrogryposis primarily affecting the hands and the feet." [HPO:probinson]
 xref: UMLS:C0265213 "Distal arthrogryposis"
-is_a: HP:0002803 ! Congenital contractures
+is_a: HP:0002803 ! Congenital contracture
 
 [Term]
 id: HP:0005686
@@ -34959,7 +35014,7 @@ is_a: HP:0000939 ! Osteoporosis
 [Term]
 id: HP:0005745
 name: Congenital foot contractures
-is_a: HP:0002803 ! Congenital contractures
+is_a: HP:0002803 ! Congenital contracture
 is_a: HP:0005750 ! Contractures of the joints of the lower limbs
 
 [Term]
@@ -35052,7 +35107,7 @@ is_a: HP:0006493 ! Aplasia/Hypoplasia involving bones of the lower limbs
 id: HP:0005773
 name: Short forearm
 def: "Underdevelopment of both forearm bones, the ulna and the radius, resulting in a shortened forearm." [HPO:probinson]
-is_a: HP:0009821 ! Hypoplasia involving forearm bones
+is_a: HP:0009821 ! Forearm undergrowth
 
 [Term]
 id: HP:0005775
@@ -35315,7 +35370,7 @@ is_a: HP:0001377 ! Limited elbow extension
 [Term]
 id: HP:0005853
 name: Congenital foot contraction deformities
-is_a: HP:0002803 ! Congenital contractures
+is_a: HP:0002803 ! Congenital contracture
 
 [Term]
 id: HP:0005855
@@ -35433,7 +35488,7 @@ name: Congenital finger flexion contractures
 def: "Multiple bent (flexed) finger joints that cannot be straightened actively or passively." [HPO:probinson]
 synonym: "Congenital finger contractures" EXACT []
 xref: UMLS:C1393871 "Congenital finger contractures"
-is_a: HP:0002803 ! Congenital contractures
+is_a: HP:0002803 ! Congenital contracture
 is_a: HP:0100490 ! Camptodactyly of finger
 
 [Term]
@@ -35667,7 +35722,7 @@ creation_date: 2008-03-27T02:28:00Z
 id: HP:0005925
 name: Abnormalities of the diaphyses of the hand
 is_a: HP:0001155 ! Abnormality of the hand
-is_a: HP:0009808 ! Abnormality involving the diaphyses of the upper limbs
+is_a: HP:0009808 ! Anomaly of the upper limb diaphyses
 created_by: peter
 creation_date: 2008-03-27T02:28:00Z
 
@@ -35709,6 +35764,8 @@ creation_date: 2008-03-27T02:34:00Z
 id: HP:0005930
 name: Abnormality of the epiphyses
 alt_id: HP:0000936
+def: "An anomaly of epiphysis, which is the expanded articular end of a long bone that developes from a secondary ossification center, and which during the period of growth is either entirely cartilaginous or is separated from the shaft by a cartilaginous disk." [HPO:probinson]
+synonym: "Anomaly of the epiphyses" EXACT []
 synonym: "Epiphyseal abnormality" EXACT []
 is_a: HP:0011314 ! Abnormality of long bone morphology
 created_by: peter
@@ -36769,6 +36826,7 @@ id: HP:0006248
 name: Limited wrist movement
 def: "An abnormal limitation of the mobility of the wrist." [HPO:probinson]
 subset: hposlim_core
+synonym: "Limited movement of the wrist" EXACT []
 xref: UMLS:C1840088 "Limited wrist movement"
 is_a: HP:0001376 ! Limitation of joint mobility
 is_a: HP:0003019 ! Abnormality of the wrist
@@ -37287,6 +37345,7 @@ is_a: HP:0006289 ! Agenesis of central incisor
 id: HP:0006357
 name: Premature loss of permanent teeth
 def: "`Premature` (PATO:0000694) loss of the permanent teeth." [HPO:ibailleulforestier]
+synonym: "Premature  loss of secondary teeth" EXACT []
 is_a: HP:0006480 ! Premature loss of teeth
 
 [Term]
@@ -37348,7 +37407,7 @@ is_a: HP:0010655 ! Epiphyseal stippling
 id: HP:0006371
 name: Broad long bone diaphyses
 def: "Increased width of the diaphysis of long bones." [HPO:probinson]
-is_a: HP:0006504 ! Abnormality involving the diaphyses of the limbs
+is_a: HP:0006504 ! Anomaly of the limb diaphyses
 
 [Term]
 id: HP:0006375
@@ -37386,6 +37445,7 @@ synonym: "Contractures of the knees" EXACT []
 synonym: "Flexion contracture of knees" EXACT []
 synonym: "FLEXION CONTRACTURES AT BOTH KNEES" EXACT [HPO:skoehler]
 synonym: "Flexion contractures of knees" EXACT []
+synonym: "Flexion deformity of the knee" EXACT []
 synonym: "Knee contracture" EXACT []
 synonym: "Knee contractures" EXACT []
 synonym: "Knee flexion contractures" EXACT []
@@ -37424,7 +37484,7 @@ subset: hposlim_core
 synonym: "Short legs" EXACT []
 xref: UMLS:C0426901 "Short legs"
 xref: UMLS:C1855192 "Short lower limbs"
-is_a: HP:0009816 ! Hypoplasia involving bones of the lower limbs
+is_a: HP:0009816 ! Lower limb undergrowth
 
 [Term]
 id: HP:0006386
@@ -37496,7 +37556,7 @@ is_a: HP:0010577 ! Absent epiphyses
 [Term]
 id: HP:0006402
 name: Distal shortening of limbs
-is_a: HP:0009815 ! Aplasia/Hypoplasia of the extremities
+is_a: HP:0009826 ! Limb undergrowth
 
 [Term]
 id: HP:0006406
@@ -37643,7 +37703,7 @@ is_a: HP:0003059 ! Abnormality of the radioulnar joints
 id: HP:0006440
 name: Increased density of long bone diaphyses
 is_a: HP:0006392 ! Increased density of long bones
-is_a: HP:0006504 ! Abnormality involving the diaphyses of the limbs
+is_a: HP:0006504 ! Anomaly of the limb diaphyses
 
 [Term]
 id: HP:0006441
@@ -37776,8 +37836,10 @@ is_a: HP:0003043 ! Abnormality of the shoulder
 
 [Term]
 id: HP:0006470
-name: Thin diaphyses of long bones
-is_a: HP:0006504 ! Abnormality involving the diaphyses of the limbs
+name: Thin long bone diaphyses
+def: "Decreased width of the diaphysis of long bones." [HPO:probinson]
+synonym: "Thin diaphyses of long bones" EXACT []
+is_a: HP:0006504 ! Anomaly of the limb diaphyses
 
 [Term]
 id: HP:0006471
@@ -37904,7 +37966,7 @@ synonym: "Bowing of long bones" EXACT []
 synonym: "Camptomelia" EXACT []
 synonym: "Diaphyseal bowing" EXACT []
 synonym: "Diaphyseal bowing of long bones" EXACT []
-is_a: HP:0006504 ! Abnormality involving the diaphyses of the limbs
+is_a: HP:0006504 ! Anomaly of the limb diaphyses
 is_a: HP:0011314 ! Abnormality of long bone morphology
 created_by: peter
 creation_date: 2008-03-28T05:56:00Z
@@ -38067,7 +38129,9 @@ creation_date: 2008-03-28T06:45:00Z
 
 [Term]
 id: HP:0006504
-name: Abnormality involving the diaphyses of the limbs
+name: Anomaly of the limb diaphyses
+def: "A structural abnormality of a diaphysis of the arm or leg." [HPO:probinson]
+synonym: "Abnormality involving the diaphyses of the limbs" EXACT []
 is_a: HP:0000940 ! Abnormal diaphysis morphology
 is_a: HP:0002813 ! Abnormality of limb bone morphology
 created_by: peter
@@ -39482,6 +39546,7 @@ name: Abnormality of the anterior horn cell
 def: "Any anomaly of the `anterior horn cell` (CL:0000100)." [HPO:probinson]
 comment: Anterior horn cells are efferent neurons that passes from the central nervous system or a ganglion toward or to a muscle. They conduct nerve impulses that lead to movement of muscles.
 synonym: "Abnormality of the anterior horn cells" EXACT []
+synonym: "Anomaly of the anterior horn cells" EXACT []
 synonym: "Anterior horn cell disease" EXACT []
 xref: UMLS:C0154681 "Anterior Horn Cell Disease"
 is_a: HP:0000759 ! Abnormality of the peripheral nervous system
@@ -39503,7 +39568,7 @@ id: HP:0006808
 name: Cerebral hypomyelination
 def: "Reduced amount of myelin in the nervous system resulting from defective myelinogenesis in the white matter of the central nervous system." [HPO:probinson]
 synonym: "Hypomyelination of the brain" EXACT []
-is_a: HP:0011400 ! Abnormal CNS myelination
+is_a: HP:0003429 ! CNS hypomyelination
 
 [Term]
 id: HP:0006812
@@ -40007,7 +40072,7 @@ def: "An abnormality of the auditory evoked potentials, which are used to trace 
 comment: Auditory brainstem response audiometry typically uses a click stimulus that generates a response from the basilar region of the cochlea.
 synonym: "Abnormal brainstem auditory-evoked potentials" EXACT []
 xref: UMLS:C0522216 "Abnormal auditory evoked potentials"
-is_a: HP:0001311 ! Neurophysiological abnormality
+is_a: HP:0001311 ! Abnormal nervous system electrophysiology
 
 [Term]
 id: HP:0006959
@@ -40118,11 +40183,6 @@ id: HP:0006990
 name: Myelin-dependent gliosis
 def: "A type of gliosis that occurs in the vicinity of injured neurons." [HPO:probinson]
 is_a: HP:0002171 ! Gliosis
-
-[Term]
-id: HP:0006991
-name: Brainstem hypoplasia/dysplasia
-is_a: HP:0002365 ! Hypoplasia of the brainstem
 
 [Term]
 id: HP:0006992
@@ -40343,6 +40403,7 @@ is_a: HP:0100321 ! Abnormality of the dentate nucleus
 [Term]
 id: HP:0007048
 name: Large basal ganglia
+def: "Increased size of the `basal ganglia` (FMA:84013)." [HPO:probinson]
 xref: UMLS:C1859470 "Large basal ganglia"
 is_a: HP:0002134 ! Abnormality of the basal ganglia
 
@@ -40763,8 +40824,10 @@ is_a: HP:0003130 ! Abnormal peripheral myelination
 
 [Term]
 id: HP:0007183
-name: Hyperintense lesions in the basal ganglia on MRI
-is_a: HP:0002134 ! Abnormality of the basal ganglia
+name: Focal T2 hyperintense basal ganglia lesion
+def: "A lighter than expected T2 signal on magnetic resonance imaging (MRI) of the basal ganglia. This term refers to a localized hyperintensity affecting a particular region of the basal ganglia." [HPO:probinson]
+synonym: "Hyperintense lesions in the basal ganglia on MRI" RELATED []
+is_a: HP:0012751 ! Abnormal basal ganglia MRI signal intensity
 
 [Term]
 id: HP:0007185
@@ -41401,6 +41464,7 @@ id: HP:0007361
 name: Abnormality of the pons
 def: "An abnormality of the `pons` (FMA:67943)." [HPO:probinson]
 comment: The pons is the portion of the brainstem superior to the medulla oblongata.
+is_a: HP:0002363 ! Abnormality of the brainstem
 is_a: HP:0011283 ! Abnormality of the metencephalon
 created_by: peter
 creation_date: 2008-03-31T05:32:00Z
@@ -41539,7 +41603,7 @@ id: HP:0007377
 name: Abnormality of somatosensory evoked potentials
 def: "An abnormality of somatosensory evoked potentials (SSEP), i.e., of the electrical signals of sensation going from the body to the brain in response to a defined stimulus. Recording electrodes are placed over the scalp, spine, and peripheral nerves proximal to the stimulation site. Clinical studies generally use electrical stimulation of peripheral nerves to elicit potentials. SSEP testing determines whether peripheral sensory nerves are able to transmit sensory information like pain, temperature, and touch to the brain. Abnormal SSEPs can result from dysfunction at the level of the peripheral nerve, plexus, spinal root, spinal cord, brain stem, thalamocortical projections, or primary somatosensory cortex." [HPO:curators]
 synonym: "Abnormality of SSEPs" EXACT []
-is_a: HP:0001311 ! Neurophysiological abnormality
+is_a: HP:0001311 ! Abnormal nervous system electrophysiology
 created_by: peter
 creation_date: 2008-04-01T11:23:00Z
 
@@ -41862,7 +41926,7 @@ is_a: HP:0000953 ! Hyperpigmentation of the skin
 id: HP:0007441
 name: Hyperpigmented/hypopigmented macules
 is_a: HP:0009123 ! Mixed hypo- and hyperpigmentation of the skin
-is_a: HP:0011355 ! Localized skin lesion
+is_a: HP:0012733 ! Macule
 
 [Term]
 id: HP:0007443
@@ -42076,7 +42140,7 @@ is_a: HP:0000966 ! Hypohidrosis
 id: HP:0007481
 name: Hyperpigmented nevi
 xref: UMLS:C0746889 "Hyperpigmented nevi"
-is_a: HP:0000995 ! Pigmented nevi
+is_a: HP:0000995 ! Melanocytic nevus
 
 [Term]
 id: HP:0007482
@@ -43607,11 +43671,6 @@ def: "A `progressive` (PATO:0001818) form of `ptosis` (HP:0000508)." [HPO:probin
 is_a: HP:0000508 ! Ptosis
 
 [Term]
-id: HP:0007839
-name: Blindness in infancy or very early childhood
-is_a: HP:0000618 ! Blindness
-
-[Term]
 id: HP:0007840
 name: Long upper eyelashes
 def: "Increased length of the upper eyelashes." [HPO:probinson]
@@ -44703,6 +44762,7 @@ subset: hposlim_core
 synonym: "Dermatological tumors " EXACT [HPO:sdoelken]
 synonym: "Neoplasia of the skin" RELATED []
 synonym: "Skin tumors" EXACT []
+synonym: "Tumor of the skin" EXACT []
 xref: SNOMEDCT:126488004 "Neoplasm of skin"
 xref: UMLS:C0037286 "SKIN TUMORS"
 is_a: HP:0000951 ! Abnormality of the skin
@@ -44956,6 +45016,7 @@ is_a: HP:0008368 ! Tarsal synostosis
 [Term]
 id: HP:0008124
 name: Talipes calcaneovarus
+def: "A congenital deformity characterized by a dorsiflexed, inverted, and adducted foot, i.e., a combination of talipes calcaneus and talipes varus." [HPO:probinson]
 xref: UMLS:C0265646 "Talipes calcaneovarus"
 is_a: HP:0001883 ! Talipes
 
@@ -45055,6 +45116,7 @@ is_a: HP:0012200 ! Abnormality of prothrombin
 id: HP:0008153
 name: Periodic hypokalemic paresis
 def: "Episodes of muscle weakness associated with reduced levels of potassium in the blood." [HPO:probinson]
+synonym: "Hypokalemic periodic paresis" EXACT []
 is_a: HP:0003768 ! Periodic paralysis
 
 [Term]
@@ -46036,8 +46098,9 @@ is_a: HP:0001597 ! Abnormality of the nail
 
 [Term]
 id: HP:0008388
-name: Abnormality of the toenails
+name: Abnormality of the toenail
 def: "An anomaly of the `toenail`(FMA:54328)." [HPO:probinson]
+synonym: "Abnormality of the toenails" EXACT []
 is_a: HP:0001597 ! Abnormality of the nail
 
 [Term]
@@ -46065,7 +46128,7 @@ is_a: HP:0009723 ! Abnormality of the subungual region
 [Term]
 id: HP:0008393
 name: Congenital curved nail of fourth toe
-is_a: HP:0008388 ! Abnormality of the toenails
+is_a: HP:0008388 ! Abnormality of the toenail
 
 [Term]
 id: HP:0008394
@@ -46278,7 +46341,10 @@ is_a: HP:0003312 ! Abnormal form of the vertebral bodies
 
 [Term]
 id: HP:0008438
-name: Vertebral arch abnormalities
+name: Vertebral arch anomaly
+def: "A morphological abnormality of the `vertebral arch` (FMA:11946), i.e., of the  posterior part of a vertebra." [HPO:probinson]
+comment: A vertebral arch is the posterior part of a vertebra and forms the canal through which the spinal cord passes. A vetebral arch consists of (i) a pair of vertebral pedicles (FMA:11950), which are short thick processes that extend from the vertebral body to connect the body to the vertebral arch; (ii) a pari of vertebral laminae (broad plates that extending dorsally and medially from the pedicles fusing with one another to complete the roof of the vertebral arch); (iii) the spinous process (a process that is directed backward and downward from the junction of the laminae and to which muscles and ligaments attach); (iv) two superior articular processes and two inferior articular processes that articulate between two adjacent vertebrae); and (v) two transverse processes that extend at either side from the point where the lamina joins the pedicle, between the superior and inferior articular processes and allow the attachment of muscles and ligaments.
+synonym: "Vertebral arch abnormalities" EXACT []
 xref: UMLS:C1835764 "Vertebral arch abnormalities"
 is_a: HP:0003312 ! Abnormal form of the vertebral bodies
 
@@ -46351,13 +46417,13 @@ name: Narrow vertebral interpedicular distance
 alt_id: HP:0008426
 alt_id: HP:0008448
 alt_id: HP:0008474
-def: "A narrowing of the distance between vertebral pedicles, which are the two short, thick processes, which project backward, one on either side, from the upper part of the verterbral body, at the junction of its posterior and lateral surfaces." [HPO:probinson]
+def: "A reduction of the distance between vertebral pedicles, which are the two short, thick processes, which project backward, one on either side, from the upper part of the vertebral body, at the junction of its posterior and lateral surfaces." [HPO:probinson]
 subset: hposlim_core
 synonym: "Interpedicular narrowing" EXACT []
 synonym: "Narrow interpedicular space" EXACT []
 synonym: "Narrow interpediculate distances" EXACT []
 synonym: "Narrowing of interpediculate distances" EXACT []
-is_a: HP:0003312 ! Abnormal form of the vertebral bodies
+is_a: HP:0008438 ! Vertebral arch anomaly
 
 [Term]
 id: HP:0008451
@@ -46401,7 +46467,9 @@ is_a: HP:0003308 ! Cervical subluxation
 
 [Term]
 id: HP:0008457
-name: Caudal narrowing of interpedicular distances
+name: Caudal interpedicular narrowing
+def: "Narrowing (becoming gradually narrower) of the distance between vertebral pedicles that gets progressively more severe towards to caudal (lower) end of the vertebral column. Note that normally, the interpedicular distances get progressively wider as one proceeds down the spine." [HPO:probinson]
+synonym: "Caudal narrowing of interpedicular distances" EXACT []
 is_a: HP:0008450 ! Narrow vertebral interpedicular distance
 
 [Term]
@@ -46473,7 +46541,9 @@ is_a: HP:0003319 ! Abnormality of the cervical spine
 
 [Term]
 id: HP:0008470
-name: Narrowness of interpediculate distances in lower thoracic regions
+name: Lower thoracic interpediculate narrowness
+def: "A reduction of the distance between the lower thoracic vertebral pedicles." [HPO:probinson]
+synonym: "Narrowness of interpediculate distances in lower thoracic regions" EXACT []
 is_a: HP:0008450 ! Narrow vertebral interpedicular distance
 
 [Term]
@@ -46539,14 +46609,18 @@ is_a: HP:0003319 ! Abnormality of the cervical spine
 
 [Term]
 id: HP:0008484
-name: Narrow thoracolumbar interpediculate distance
+name: Thoracolumbar interpediculate narrowness
+def: "A reduction of the distance between thoracolumbar vertebral pedicles." [HPO:probinson]
+synonym: "Narrow thoracolumbar interpediculate distance" EXACT []
 xref: UMLS:C1864364 "Narrow thoracolumbar interpediculate distance"
 is_a: HP:0008450 ! Narrow vertebral interpedicular distance
 
 [Term]
 id: HP:0008486
-name: Decreasing lumbar vertebrae interpediculate distance
-is_a: HP:0008450 ! Narrow vertebral interpedicular distance
+name: Lumbar interpedicular narrowing
+def: "Narrowing (becoming gradually narrower) of the distance between lumbar vertebral pedicles that gets progressively more severe towards to caudal (lower) end of the vertebral column." [HPO:probinson]
+synonym: "Decreasing lumbar vertebrae interpediculate distance" EXACT []
+is_a: HP:0008457 ! Caudal interpedicular narrowing
 
 [Term]
 id: HP:0008488
@@ -46618,6 +46692,7 @@ name: Moderate sensorineural hearing impairment
 def: "The presence of a `moderate` (PATO:0000395) form of `sensorineural hearing impairment` (HP:0000407)." [HPO:probinson]
 synonym: "Moderate neural deafness" RELATED []
 is_a: HP:0000407 ! Sensorineural hearing impairment
+is_a: HP:0012713 ! Moderate hearing impairment
 
 [Term]
 id: HP:0008507
@@ -46878,6 +46953,7 @@ def: "The presence of a `mild` (PATO:0000394) form of `sensorineural hearing imp
 comment: A neurosensory hearing loss with a deficit of 21-40 dB.
 synonym: "Mild neurosensory hearing loss" EXACT []
 is_a: HP:0000407 ! Sensorineural hearing impairment
+is_a: HP:0012712 ! Mild hearing impairment
 
 [Term]
 id: HP:0008588
@@ -46924,6 +47000,7 @@ def: "A `mild` (PATO:0000394) form of `conductive hearing impairment` (HP:000040
 comment: Conductive hearing impairment with 21-40 dB deficit.
 synonym: "Conductive hearing loss, mild" EXACT []
 is_a: HP:0000405 ! Conductive hearing impairment
+is_a: HP:0012712 ! Mild hearing impairment
 
 [Term]
 id: HP:0008605
@@ -47001,6 +47078,7 @@ alt_id: HP:0008574
 def: "A `severe` (PATO:0000396) form of `sensorineural hearing impairment` (HP:0000407)." [HPO:probinson]
 synonym: "Severe sensorineural hearing loss" EXACT []
 is_a: HP:0000407 ! Sensorineural hearing impairment
+is_a: HP:0012714 ! Severe hearing impairment
 
 [Term]
 id: HP:0008628
@@ -47116,6 +47194,7 @@ id: HP:0008660
 name: Renotubular dysgenesis
 def: "A developmental defect characterized by absence or poor development of proximal renal tubules." [HPO:probinson]
 comment: Renotubular dysgenesis is generally accompanied by early onset and persistent oligohydramnios that leads to the Potter sequence.
+synonym: "Renal tubular dysgenesis" EXACT []
 xref: UMLS:C0266313 "Renotubular dysgenesis"
 is_a: HP:0000091 ! Abnormality of the renal tubule
 
@@ -47247,6 +47326,7 @@ is_a: HP:0008775 ! Abnormality of the prostate
 id: HP:0008689
 name: Bilateral cryptorchidism
 alt_id: HP:0008686
+def: "Absence of both testes from the scrotum owing to failure of the testis or testes to descend through the inguinal canal to the testis." [HPO:probinson]
 synonym: "Cryptorchidism, bilateral" EXACT []
 xref: UMLS:C0431663 "Bilateral Cryptorchidism"
 is_a: HP:0000028 ! Cryptorchidism
@@ -47438,8 +47518,10 @@ is_a: HP:0000035 ! Abnormality of the testis
 id: HP:0008734
 name: Decreased testicular size
 alt_id: HP:0000043
+def: "Reduced volume of the testicle (the male gonad)." [HPO:probinson]
 synonym: "Hypoplastic testes" EXACT []
 synonym: "Small testes" EXACT []
+synonym: "Small testis" EXACT []
 synonym: "Testicular hypoplasia" EXACT []
 xref: UMLS:C1860124 "Decreased testicular size"
 is_a: HP:0000050 ! Hypoplastic genitalia
@@ -47619,7 +47701,7 @@ alt_id: HP:0008761
 def: "The presence of one or more obsessive-compulsive personality traits. Obsessions refer to persistent intrusive thoughts, and compulsions to intrusive behaviors, which the affected person experiences as involuntary, senseless, or repugnant." [HPO:curators]
 synonym: "Obsessive-compulsive traits" EXACT []
 xref: UMLS:C1834433 "Obsessive-compulsive trait"
-is_a: HP:0000722 ! Obsessive-compulsive disorder
+is_a: HP:0000722 ! Obsessive-compulsive behavior
 
 [Term]
 id: HP:0008771
@@ -48138,7 +48220,7 @@ xref: UMLS:C1837079 "Rhizomelic shortening"
 xref: UMLS:C1856771 "Rhizomelic dwarfism"
 xref: UMLS:C1866730 "Short stature, rhizomelic"
 is_a: HP:0008873 ! Disproportionate short-limb short stature
-is_a: HP:0009826 ! Hypoplasia involving bones of the extremities
+is_a: HP:0009826 ! Limb undergrowth
 
 [Term]
 id: HP:0008909
@@ -48458,6 +48540,8 @@ is_a: HP:0003701 ! Proximal muscle weakness
 [Term]
 id: HP:0008998
 name: Pectoralis hypoplasia
+def: "Underdevelopment of the pectoral muscle." [HPO:probinson]
+synonym: "Hypoplastic pectoral muscle" EXACT []
 xref: UMLS:C1846477 "Pectoralis hypoplasia"
 is_a: HP:0005258 ! Pectoral muscle hypoplasia/aplasia
 
@@ -54720,7 +54804,7 @@ id: HP:0009719
 name: Hypomelanotic macules
 def: "Hypomelanotic macules (\"ash leaf spots\") are white or lighter patches of skin that may appear anywhere on the body and are caused by a lack of melanin. White ash leaf-shaped macules are considered to be characteristic of tuberous sclerosis." [HPO:probinson, pmid:10695583]
 is_a: HP:0001010 ! Hypopigmentation of the skin
-is_a: HP:0011355 ! Localized skin lesion
+is_a: HP:0012733 ! Macule
 created_by: peter
 creation_date: 2009-01-31T12:16:52Z
 
@@ -54730,6 +54814,7 @@ name: Adenoma sebaceum
 def: "The presence of a `sebaceous adenoma` (MPATH:230) with origin in the `sebum secreting cells` (CL:000031) of the `skin` (FMA:7163)." [HPO:probinson]
 comment: Facial angiofibromas, also known as adenoma sebaceum, are reddish papillary lesions (fibrous skin tumors) that are found around the nose, cheeks, and chin and considered to be characteristic of tuberous sclerosis.
 synonym: "Facial angiofibromas" EXACT []
+synonym: "Sebaceous adenoma" EXACT []
 xref: UMLS:C0265319 "Adenoma sebaceum"
 is_a: HP:0008069 ! Neoplasm of the skin
 is_a: HP:0010615 ! Angiofibromas
@@ -55019,6 +55104,7 @@ alt_id: HP:0004456
 def: "Increased volume of the earlobe, that is, abnormally prominent `ear lobules` (FMA:60984)." [HPO:probinson, pmid:19152421]
 comment: All gradations in size of the earlobe may be seen from absent to clearly enlarged compared to average. This finding is highly variable. Lobe size increases throughout adulthood.
 subset: hposlim_core
+synonym: "Fleshy earlobe" EXACT []
 synonym: "Fleshy earlobes" EXACT []
 synonym: "Prominent ear lobes" EXACT []
 synonym: "prominent ear lobules" EXACT []
@@ -55153,6 +55239,7 @@ synonym: "Columella extends below the ala nasi" RELATED []
 synonym: "Columella, low" EXACT []
 synonym: "Columella, low hanging" EXACT []
 synonym: "Extension of the columella below the ala nasi" EXACT []
+synonym: "Low-hanging columella" EXACT []
 is_a: HP:0009929 ! Abnormality of the columella
 created_by: peter
 creation_date: 2009-02-01T11:01:14Z
@@ -55591,11 +55678,13 @@ creation_date: 2009-02-16T11:23:28Z
 
 [Term]
 id: HP:0009808
-name: Abnormality involving the diaphyses of the upper limbs
+name: Anomaly of the upper limb diaphyses
 alt_id: HP:0003857
+def: "A structural abnormality of a diaphysis of the arm." [UToronto:htrang]
+synonym: "Abnormality involving the diaphyses of the upper limbs" EXACT []
 synonym: "Diaphyseal abnormality of the upper limbs" EXACT []
 is_a: HP:0002817 ! Abnormality of the upper limb
-is_a: HP:0006504 ! Abnormality involving the diaphyses of the limbs
+is_a: HP:0006504 ! Anomaly of the limb diaphyses
 created_by: doelkens
 creation_date: 2009-02-23T04:55:36Z
 
@@ -55672,13 +55761,15 @@ creation_date: 2009-02-23T05:06:40Z
 
 [Term]
 id: HP:0009816
-name: Hypoplasia involving bones of the lower limbs
+name: Lower limb undergrowth
 alt_id: HP:0003087
 alt_id: HP:0005884
 alt_id: HP:0006399
+def: "Leg shortening because of underdevelopment of one or more bones of the lower extremity." [HPO:probinson]
+synonym: "Hypoplasia involving bones of the lower limbs" EXACT []
 synonym: "Hypoplasia of the lower limbs" EXACT []
 is_a: HP:0006493 ! Aplasia/Hypoplasia involving bones of the lower limbs
-is_a: HP:0009826 ! Hypoplasia involving bones of the extremities
+is_a: HP:0009826 ! Limb undergrowth
 created_by: doelkens
 creation_date: 2009-02-23T05:09:32Z
 
@@ -55719,17 +55810,19 @@ creation_date: 2009-02-23T05:11:07Z
 
 [Term]
 id: HP:0009821
-name: Hypoplasia involving forearm bones
+name: Forearm undergrowth
 alt_id: HP:0003024
 alt_id: HP:0003968
 alt_id: HP:0006405
+def: "Forearm shortening because of underdevelopment of one or more bones of the forearm." [HPO:probinson]
+synonym: "Hypoplasia involving forearm bones" EXACT []
 synonym: "Short forearm bones" EXACT []
 synonym: "Short forearms" EXACT []
 synonym: "Shortened forearm" EXACT []
 xref: UMLS:C1855299 "Short forearms"
 is_a: HP:0003026 ! Short long bones
 is_a: HP:0006503 ! Aplasia/Hypoplasia involving forearm bones
-is_a: HP:0009826 ! Hypoplasia involving bones of the extremities
+is_a: HP:0009824 ! Upper limb undergrowth
 created_by: doelkens
 creation_date: 2009-02-23T05:11:42Z
 
@@ -55750,14 +55843,16 @@ creation_date: 2009-02-23T05:13:20Z
 
 [Term]
 id: HP:0009824
-name: Hypoplasia involving bones of the upper limbs
+name: Upper limb undergrowth
 alt_id: HP:0003056
 alt_id: HP:0006364
+def: "Arm shortening because of underdevelopment of one or more bones of the upper extremity." [HPO:probinson]
+synonym: "Hypoplasia involving bones of the upper limbs" EXACT []
 synonym: "Short arms" EXACT []
 synonym: "Shortening of the arms" EXACT []
 xref: UMLS:C0426857 "Short arms"
 is_a: HP:0006496 ! Aplasia/Hypoplasia involving bones of the upper limbs
-is_a: HP:0009826 ! Hypoplasia involving bones of the extremities
+is_a: HP:0009826 ! Limb undergrowth
 created_by: doelkens
 creation_date: 2009-02-23T05:13:20Z
 
@@ -55770,11 +55865,13 @@ creation_date: 2009-02-23T05:16:44Z
 
 [Term]
 id: HP:0009826
-name: Hypoplasia involving bones of the extremities
+name: Limb undergrowth
 alt_id: HP:0003058
 alt_id: HP:0005049
 alt_id: HP:0005057
 def: "Limb shortening because of underdevelopment of one or more bones of the extremities." [HPO:probinson]
+synonym: "Hypoplasia involving bones of the extremities" EXACT []
+synonym: "Short limb" EXACT []
 xref: UMLS:C0239399 "Short limbs"
 is_a: HP:0009815 ! Aplasia/Hypoplasia of the extremities
 created_by: doelkens
@@ -56769,6 +56866,7 @@ creation_date: 2009-05-10T11:17:18Z
 id: HP:0009939
 name: Mandibular aplasia
 def: "Absence of the mandible." [HPO:curators]
+synonym: "Absent mandible" EXACT []
 is_a: HP:0009118 ! Aplasia/Hypoplasia of the mandible
 created_by: peter
 creation_date: 2009-05-10T11:27:14Z
@@ -61545,6 +61643,7 @@ creation_date: 2009-09-15T08:38:35Z
 id: HP:0010463
 name: Aplasia of the ovary
 def: "`Aplasia` (MPATH:58), that is failure to develop, of the `ovary` (FMA:7209)." [HPO:probinson]
+synonym: "Absent ovary" EXACT []
 synonym: "Aplasia of the ovaries" RELATED []
 is_a: HP:0010462 ! Aplasia/Hypoplasia of the ovary
 created_by: peter
@@ -62391,12 +62490,11 @@ alt_id: HP:0006220
 def: "A soft tissue continuity in the A/P axis between two fingers that extends distally to at least the level of the proximal interphalangeal joints, or a soft tissue continuity in the A/P axis between two fingers that lies significantly distal to the flexion crease that overlies the metacarpophalangeal joint of the adjacent fingers." [pmid:19125433]
 comment: We have set an arguably arbitrary threshold to distinguish the object form the subjective finding. While severe degrees of cutaneous syndactyly are clearly objective, more subtle degrees are subjective. We set this threshold to distinguish these two situations. The digits (or parts of) are joined together by tissue that is not normally present between the digits at that point in the P/D axis. A modifier of "complete" may be used if the cutaneous syndactyly extends to the distal end of the nail bed of the digits. The affected digits should be specified. Note that the unqualified term "syndactyly" is no longer allowed as it is unclear whether this refers to bony or cutaneous syndactyly.
 subset: hposlim_core
-synonym: "Cutaneous syndactyly" EXACT []
 synonym: "Cutaneous syndactyly (hands)" EXACT []
 synonym: "Cutaneous syndactyly of fingers" EXACT []
-synonym: "Syndactyly, cutaneous" EXACT []
 xref: UMLS:C1846072 "Partial cutaneous syndactyly"
 is_a: HP:0006101 ! Finger syndactyly
+is_a: HP:0012725 ! Cutaneous syndactyly
 created_by: sandra1
 creation_date: 2009-10-07T10:59:57Z
 
@@ -62943,6 +63041,7 @@ synonym: "Cutaneous syndactyly (feet)" EXACT []
 synonym: "soft tissue syndactyly of toes" EXACT []
 synonym: "Syndactyly, cutaneous (feet)" EXACT []
 is_a: HP:0001770 ! Toe syndactyly
+is_a: HP:0012725 ! Cutaneous syndactyly
 created_by: doelkens
 creation_date: 2009-11-18T10:32:21Z
 
@@ -62958,14 +63057,15 @@ creation_date: 2010-06-25T08:54:46Z
 
 [Term]
 id: HP:0010624
-name: Aplastic/hypoplastic toenails
+name: Aplastic/hypoplastic toenail
 alt_id: HP:0008381
 alt_id: HP:0008389
 def: "Absence or underdevelopment of the `toenail`(FMA:54328)." [HPO:probinson]
+synonym: "Aplastic/hypoplastic toenails" EXACT []
 synonym: "Hypoplastic-absent toenails" EXACT []
 xref: UMLS:C1856749 "Hypoplastic-absent toenails"
 is_a: HP:0008386 ! Aplasia/Hypoplasia of the nails
-is_a: HP:0008388 ! Abnormality of the toenails
+is_a: HP:0008388 ! Abnormality of the toenail
 created_by: doelkens
 creation_date: 2009-11-20T05:55:11Z
 
@@ -64008,6 +64108,7 @@ id: HP:0010741
 name: Edema of the lower limbs
 def: "An abnormal accumulation of fluid beneath the skin of the legs." [HPO:probinson]
 synonym: "Leg edema" EXACT []
+synonym: "Peripheral edema of lower extremity" EXACT []
 is_a: HP:0000969 ! Edema
 created_by: doelkens
 creation_date: 2010-04-22T02:16:54Z
@@ -64334,6 +64435,7 @@ creation_date: 2010-04-29T10:07:24Z
 id: HP:0010775
 name: Vascular ring
 def: "A developmental defect of the aortic arch system in which the trachea and esophagus are completely encircled by connected segments of the aortic arch and its branches. This occurs if the normal process of regression and persistence of the bilateral embryonic aortic arches fails." [HPO:probinson]
+synonym: "Vascular ring of aorta" EXACT []
 xref: UMLS:C0221214 "Vascular ring"
 is_a: HP:0011587 ! Abnormal branching pattern of the aortic arch
 created_by: sdoelken
@@ -64558,6 +64660,7 @@ id: HP:0010799
 name: Pinealoma
 def: "A `neoplasm` (MPATH:218) of the `pineal gland` (FMA:62033)." [HPO:probinson]
 xref: MeSH:D010871 "Pinealoma"
+is_a: HP:0100568 ! Neoplasm of the endocrine system
 is_a: HP:0100835 ! Benign neoplasm of the central nervous system
 is_a: HP:0100836 ! Malignant neoplasm of the central nervous system
 created_by: peter
@@ -65193,7 +65296,6 @@ name: Abdominal wall defect
 def: "An `incomplete closure` (PATO:0000609) of the `abdominal wall` (FMA:259054)." [HPO:probinson]
 synonym: "Congenital anterior abdominal wall defect" EXACT []
 is_a: HP:0004298 ! Abnormality of the abdominal wall
-is_a: HP:0100656 ! Thoracoabdominal wall defects
 created_by: peter
 creation_date: 2010-08-03T09:55:15Z
 
@@ -66373,8 +66475,8 @@ alt_id: HP:0005741
 alt_id: HP:0010738
 def: "An abnormal increase of bone mineral density, that is, of the amount of matter per cubic centimeter of bones which is often refered to as osteosclerosis. Osteosclerosis can be detected on radiological examination as an increased whiteness (density) of affected bones." [HPO:probinson]
 comment: This term may be merged with Increased bone density in the future or made obsolete.
+synonym: " Osteosclerosis" EXACT []
 synonym: "Increased bone density" EXACT []
-synonym: "Osteosclerosis" EXACT []
 synonym: "Osteosclerosis of bones" EXACT []
 xref: MeSH:D010026 "Osteosclerosis"
 xref: UMLS:C1865344 "Increased bone mineral density"
@@ -66851,6 +66953,7 @@ creation_date: 2011-03-10T11:40:37Z
 id: HP:0011054
 name: Agenesis of molar
 def: "`Agenesis` (MPATH:57) of `molar tooth` (FMA:55638)." [HPO:ibailleulforestier]
+synonym: "Absent molars" EXACT []
 is_a: HP:0001592 ! Selective tooth agenesis
 is_a: HP:0011077 ! Abnormality of molar
 created_by: peter
@@ -67439,6 +67542,7 @@ id: HP:0011119
 name: Abnormality of the nasal dorsum
 def: "An abnormality of the `nasal dorsum` (FMA:59517), also known as the nasal ridge." [HPO:probinson, pmid:19152422]
 comment: The nasal ridge is the midline prominence of the nose, extending from the nasal root to the tip.
+synonym: "Anomaly of the nasal ridge" EXACT []
 is_a: HP:0010938 ! Abnormality of the external nose
 created_by: peter
 creation_date: 2011-06-12T09:37:47Z
@@ -67627,7 +67731,7 @@ creation_date: 2011-06-25T08:57:09Z
 id: HP:0011140
 name: Gastrointestinal duplication
 def: "A spherical hollow structure with a smooth muscle coat, lined by a mucous membrane, and attached to any part of the gastrointestinal tract, from the base of the tongue to the anus." [HPO:probinson, pmid:21218094]
-is_a: HP:0011024 ! Abnormality of the gastrointestinal tract
+is_a: HP:0012718 ! Morphological abnormality of the gastrointestinal tract
 created_by: peter
 creation_date: 2011-06-25T09:02:50Z
 
@@ -69225,6 +69329,7 @@ id: HP:0011318
 name: Bicoronal synostosis
 def: "Synostosis affecting the right and the left coronal suture." [DDD:awilkie]
 subset: hposlim_core
+synonym: "Bilateral coronal craniosynostosis" EXACT []
 is_a: HP:0004440 ! Coronal craniosynostosis
 created_by: peter
 creation_date: 2012-02-25T01:11:41Z
@@ -69315,6 +69420,7 @@ name: Abnormality of fontanelles
 def: "An abnormality of the `fontanelle` (FMA:75438)." [HPO:probinson, pmid:12825844]
 comment: The fontanelles are the regions in an infant's calvaria that are covered by a thick membrane that normally ossify in the first two years of life.
 subset: hposlim_core
+synonym: "Anomaly of the fontanelles" RELATED []
 is_a: HP:0000235 ! Abnormality of the fontanelles and cranial sutures
 created_by: peter
 creation_date: 2012-02-25T02:34:36Z
@@ -69453,7 +69559,6 @@ creation_date: 2012-02-29T11:20:28Z
 id: HP:0011344
 name: Severe global developmental delay
 def: "A severe delay in the achievement of motor or mental milestones in the domains of development of a child." [DDD:hvfirth]
-synonym: "PSYCHOMOTOR RETARDATION, PROFOUND" RELATED [HPO:skoehler]
 synonym: "SEVERE PSYCHOMOTOR RETARDATION" RELATED [HPO:skoehler]
 is_a: HP:0001263 ! Global developmental delay
 created_by: peter
@@ -70455,7 +70560,7 @@ creation_date: 2012-03-25T06:58:21Z
 [Term]
 id: HP:0011462
 name: Young adult onset
-def: "Onset of disease at the age of between 15 and 40 years." [DDD:hfirth]
+def: "Onset of disease at the age of between 16 and 40 years." [DDD:hfirth]
 is_a: HP:0003581 ! Adult onset
 created_by: peter
 creation_date: 2012-03-25T07:01:15Z
@@ -70583,6 +70688,7 @@ id: HP:0011476
 name: Profound sensorineural hearing impairment
 def: "Complete loss of hearing related to a sensorineural defect." [DDD:dfitzpatrick]
 is_a: HP:0000407 ! Sensorineural hearing impairment
+is_a: HP:0012715 ! Profound hearing impairment
 created_by: peter
 creation_date: 2012-03-31T10:21:17Z
 
@@ -72529,6 +72635,7 @@ name: Sick sinus syndrome
 xref: MeSH:D012804 "Sick sinus syndrome"
 xref: UMLS:C0037052 "Sick sinus syndrome"
 is_a: HP:0011702 ! Abnormal electrophysiology of sinoatrial node origin
+is_a: HP:0012722 ! Heart block
 created_by: peter
 creation_date: 2012-04-10T11:31:17Z
 
@@ -72584,9 +72691,11 @@ id: HP:0011710
 name: Bundle branch block
 def: "Block of conduction of electrical impulses along the Bundle of His or along one of its bundle branches." [DDD:dbrown, HPO:probinson]
 comment: The Bundle of His conducts the electrical impulse from the atrioventricular node into the ventricles. THe Bundle of His divides into right and left bundle branches. A universal feature of a bundle branch block is a prolongation of the time required for depolarization of a portion of the ventricles, reflected in an abnormality of the QRS complex.
+synonym: "Bundle-branch block" EXACT []
 xref: MeSH:D002037 "Bundle-Branch Block"
 xref: UMLS:C0006384 "Bundle branch block"
 is_a: HP:0005150 ! Abnormal atrioventricular conduction
+is_a: HP:0012722 ! Heart block
 created_by: peter
 creation_date: 2012-04-11T07:55:50Z
 
@@ -72603,6 +72712,7 @@ creation_date: 2012-04-11T08:02:03Z
 id: HP:0011712
 name: Right bundle branch block
 def: "A conduction block of the right branch of the bundle of His. This manifests as a prolongation of the QRS complex (greater than 0.12 s) with delayed activation of the right ventricle and terminal delay on the EKG." [DDD:dbrown, HPO:probinson]
+synonym: "Right bundle-branch block" EXACT []
 xref: UMLS:C0085615 "Bundle branch block right"
 is_a: HP:0011710 ! Bundle branch block
 created_by: peter
@@ -74528,7 +74638,6 @@ id: HP:0011939
 name: 3-4 finger cutaneous syndactyly
 def: "A soft tissue continuity in the A/P axis between fingers 4 and 4." [HPO:probinson]
 is_a: HP:0010554 ! Cutaneous finger syndactyly
-is_a: HP:0010621 ! Cutaneous syndactyly of toes
 created_by: peter
 creation_date: 2012-06-10T05:13:51Z
 
@@ -75423,6 +75532,7 @@ creation_date: 2012-07-30T06:50:19Z
 id: HP:0012042
 name: Aspirin-induced asthma
 def: "A type of asthma in which aspirin and other nonsteroidal anti-inflammatory drugs (NSAIDs) that inhibit cyclooxygen-ase 1 (COX-1) exacerbate bronchoconstriction." [pmid:12743549]
+xref: MeSH:D055963 "Asthma, Aspirin-Induced"
 is_a: HP:0002099 ! Asthma
 created_by: peter
 creation_date: 2012-08-01T11:22:04Z
@@ -75743,7 +75853,7 @@ creation_date: 2012-08-11T02:38:39Z
 id: HP:0012078
 name: Motor conduction block
 def: "Blockade of impulses at a focal site along the course of a motor axon." [HPO:probinson]
-is_a: HP:0003134 ! Abnormality of peripheral nerve conduction
+is_a: HP:0000762 ! Decreased nerve conduction velocity
 created_by: peter
 creation_date: 2012-08-18T04:34:49Z
 
@@ -78567,7 +78677,7 @@ def: "An abnormal concentration of aldolase in the serum. Aldolase is an enzyme 
 comment: The reaction catalyzed by aldolase is a component of the glycolysis pathway.
 is_a: HP:0012379 ! Abnormal enzyme/coenzyme activity
 created_by: peter
-creation_date: 2013-11-09T15:35:35Z
+creation_date: 2013-11-09T03:35:35Z
 
 [Term]
 id: HP:0012401
@@ -78577,7 +78687,7 @@ comment: Note that alpha-ketoglutaric acid is also known as 2-ketoglutaric acid,
 synonym: "Abnormality of urine alpha ketoglutarate concentration" EXACT []
 is_a: HP:0003110 ! Abnormality of urine homeostasis
 created_by: peter
-creation_date: 2013-11-09T15:45:40Z
+creation_date: 2013-11-09T03:45:40Z
 
 [Term]
 id: HP:0012402
@@ -78586,7 +78696,7 @@ def: "A greater than normal concentration of  `2-oxoglutaric acid` (CHEBI:30915)
 comment: Note that alpha-ketoglutaric acid is also known as 2-ketoglutaric acid, alpha-ketoglutaric acid, 2-xxoglutaric acid, and oxoglutaric acid.
 is_a: HP:0012401 ! Abnormal urine alpha-ketoglutarate concentration
 created_by: peter
-creation_date: 2013-11-09T15:48:37Z
+creation_date: 2013-11-09T03:48:37Z
 
 [Term]
 id: HP:0012403
@@ -78595,7 +78705,7 @@ def: "A lower than normal concentration of  `2-oxoglutaric acid` (CHEBI:30915) i
 comment: Note that alpha-ketoglutaric acid is also known as 2-ketoglutaric acid, alpha-ketoglutaric acid, 2-xxoglutaric acid, and oxoglutaric acid.
 is_a: HP:0012401 ! Abnormal urine alpha-ketoglutarate concentration
 created_by: peter
-creation_date: 2013-11-09T15:49:45Z
+creation_date: 2013-11-09T03:49:45Z
 
 [Term]
 id: HP:0012404
@@ -78603,7 +78713,7 @@ name: Abnormal urine citrate concentration
 def: "A deviation from normal of the concentration of  `citrate(3-)` (CHEBI:16947) in the urine." [HPO:probinson]
 is_a: HP:0003110 ! Abnormality of urine homeostasis
 created_by: peter
-creation_date: 2013-11-09T15:51:30Z
+creation_date: 2013-11-09T03:51:30Z
 
 [Term]
 id: HP:0012405
@@ -78612,7 +78722,7 @@ def: "A lower than normal concentration of `citrate(3-)` (CHEBI:16947) in the ur
 synonym: "Decreased urine citrate concentration" EXACT []
 is_a: HP:0012404 ! Abnormal urine citrate concentration
 created_by: peter
-creation_date: 2013-11-09T15:54:41Z
+creation_date: 2013-11-09T03:54:41Z
 
 [Term]
 id: HP:0012406
@@ -78621,7 +78731,7 @@ def: "A greater than normal concentration of `citrate(3-)` (CHEBI:16947) in the 
 synonym: "Increased urine citrate concentration" EXACT []
 is_a: HP:0012404 ! Abnormal urine citrate concentration
 created_by: peter
-creation_date: 2013-11-09T15:56:26Z
+creation_date: 2013-11-09T03:56:26Z
 
 [Term]
 id: HP:0012407
@@ -78630,7 +78740,7 @@ def: "A form of gait abnormality characterized by hypertonia and flexion in the 
 comment: Scissor gait is a form of gait abnormality primarily associated with spastic cerebral palsy.
 is_a: HP:0001288 ! Gait disturbance
 created_by: peter
-creation_date: 2013-11-09T16:15:36Z
+creation_date: 2013-11-09T04:15:36Z
 
 [Term]
 id: HP:0012408
@@ -78699,7 +78809,7 @@ name: Abnormal blood gas level
 def: "An abnormality of the partial pressure of oxygen or carbon dioxide in the arterial blood." [HPO:probinson]
 is_a: HP:0002795 ! Functional respiratory abnormality
 created_by: peter
-creation_date: 2013-11-10T16:59:20Z
+creation_date: 2013-11-10T04:59:20Z
 
 [Term]
 id: HP:0012416
@@ -78709,7 +78819,7 @@ synonym: "Hypercarbia" EXACT []
 xref: MeSH:D006935 "Hypercapnia"
 is_a: HP:0012415 ! Abnormal blood gas level
 created_by: peter
-creation_date: 2013-11-10T17:04:49Z
+creation_date: 2013-11-10T05:04:49Z
 
 [Term]
 id: HP:0012417
@@ -78718,7 +78828,7 @@ def: "Abnormally reduced blood carbon dioxide (CO2) level." [HPO:probinson]
 xref: MeSH:D016857 "Hypocapnia"
 is_a: HP:0012415 ! Abnormal blood gas level
 created_by: peter
-creation_date: 2013-11-10T17:06:10Z
+creation_date: 2013-11-10T05:06:10Z
 
 [Term]
 id: HP:0012418
@@ -78727,7 +78837,7 @@ def: "An abnormally low level of blood oxygen." [HPO:probinson]
 comment: Note that hypoxemia is defined as a condition where arterial oxygen tension is below normal (80-100mmHg). Hypoxia is defined as the failure of oxygenation at the tissue level. Hypoxia is not measured directly by a standard laboratory value.
 is_a: HP:0012415 ! Abnormal blood gas level
 created_by: peter
-creation_date: 2013-11-10T17:07:07Z
+creation_date: 2013-11-10T05:07:07Z
 
 [Term]
 id: HP:0012419
@@ -78737,7 +78847,7 @@ comment: Note that hyperoxemia is defined as a condition where arterial oxygen t
 xref: MeSH:Hyperoxia "D018496"
 is_a: HP:0012415 ! Abnormal blood gas level
 created_by: peter
-creation_date: 2013-11-10T17:09:04Z
+creation_date: 2013-11-10T05:09:04Z
 
 [Term]
 id: HP:0012420
@@ -78748,7 +78858,7 @@ synonym: "Meconium staining of amniotic fluid" EXACT []
 synonym: "Meconium-stained amniotic fluid" EXACT []
 is_a: HP:0001560 ! Abnormality of the amniotic fluid
 created_by: peter
-creation_date: 2013-11-10T18:01:40Z
+creation_date: 2013-11-10T06:01:40Z
 
 [Term]
 id: HP:0012421
@@ -78756,7 +78866,7 @@ name: Congenital absence of foreskin
 def: "Congenital lack of the `skin of prepuce of penis` (FMA:27648), that is, of the double-layered fold of skin and mucous membrane that covers the glans penis." [HPO:probinson]
 is_a: HP:0100587 ! Abnormality of the preputium
 created_by: peter
-creation_date: 2013-11-10T18:17:21Z
+creation_date: 2013-11-10T06:17:21Z
 
 [Term]
 id: HP:0012422
@@ -78773,7 +78883,7 @@ creation_date: 2013-11-11T07:50:37Z
 id: HP:0012423
 name: Colonic inertia
 def: "The inability of the colon to modify stool to an acceptable consistency and move the stool from the cecum to the rectosigmoid area at least once every three days." [HPO:probinson, pmid:23449085]
-is_a: HP:0002250 ! Abnormality of the large intestine
+is_a: HP:0012700 ! Abnormal large intestine physiology
 created_by: peter
 creation_date: 2013-11-11T08:04:46Z
 
@@ -78794,7 +78904,7 @@ comment: Stercoral ulceration is the loss of bowel integrity from the pressure e
 synonym: "Recto-sigmoid colon stercoral ulcer" RELATED []
 is_a: HP:0002250 ! Abnormality of the large intestine
 created_by: peter
-creation_date: 2013-11-12T22:28:18Z
+creation_date: 2013-11-12T10:28:18Z
 
 [Term]
 id: HP:0012426
@@ -78804,7 +78914,7 @@ comment: Optic disc drusen can lead to an elevated disc and thus mimic disc swel
 xref: MeSH:D015594 "Optic Disk Drusen"
 is_a: HP:0000587 ! Abnormality of the optic nerve
 created_by: peter
-creation_date: 2013-11-12T22:36:06Z
+creation_date: 2013-11-12T10:36:06Z
 
 [Term]
 id: HP:0012427
@@ -78813,7 +78923,7 @@ def: "An increased degree of  femoral version, which is defined as the angular d
 comment: Excessive femoral anteversion is a common cause of in-toeing that first presents in early childhood.
 is_a: HP:0002823 ! Abnormality of the femur
 created_by: peter
-creation_date: 2013-11-12T22:51:07Z
+creation_date: 2013-11-12T10:51:07Z
 
 [Term]
 id: HP:0012428
@@ -78822,7 +78932,7 @@ def: "Protruding heel bone, or `calcaneus`(FMA:24496)." [ORCID:0000-0001-5208-34
 synonym: "Prominent heel bone" EXACT []
 is_a: HP:0008364 ! Abnormality of the calcaneus
 created_by: peter
-creation_date: 2013-11-12T23:04:49Z
+creation_date: 2013-11-12T11:04:49Z
 
 [Term]
 id: HP:0012429
@@ -78902,7 +79012,7 @@ name: Abnormal gallbladder morphology
 def: "A structural anomaly of the `gallbladder` (FMA:7202)." [HPO:probinson]
 is_a: HP:0005264 ! Abnormality of the gallbladder
 created_by: peter
-creation_date: 2013-11-23T13:13:40Z
+creation_date: 2013-11-23T01:13:40Z
 
 [Term]
 id: HP:0012438
@@ -78910,7 +79020,7 @@ name: Abnormal gallbladder physiology
 def: "A functional anomaly of the `gallbladder` (FMA:7202)." [HPO:probinson]
 is_a: HP:0005264 ! Abnormality of the gallbladder
 created_by: peter
-creation_date: 2013-11-23T13:17:00Z
+creation_date: 2013-11-23T01:17:00Z
 
 [Term]
 id: HP:0012439
@@ -78918,15 +79028,16 @@ name: Abnormal biliary tract physiology
 def: "A functional abnormality of the `biliary tree` (FMA:14665)." [HPO:probinson]
 is_a: HP:0001080 ! Biliary tract abnormality
 created_by: peter
-creation_date: 2013-11-23T14:14:51Z
+creation_date: 2013-11-23T02:14:51Z
 
 [Term]
 id: HP:0012440
 name: Abnormal biliary tract morphology
 def: "A structural abnormality of the `biliary tree` (FMA:14665)." [HPO:probinson]
+synonym: "Anomaly of the biliary tract" EXACT []
 is_a: HP:0001080 ! Biliary tract abnormality
 created_by: peter
-creation_date: 2013-11-23T14:15:33Z
+creation_date: 2013-11-23T02:15:33Z
 
 [Term]
 id: HP:0012441
@@ -78936,7 +79047,7 @@ comment: The sphincter of Oddi (also known as sphincter of ampulla) is a muscula
 synonym: "Sphincter of Oddi dysfunction" RELATED []
 is_a: HP:0012396 ! Biliary dyskinesia
 created_by: peter
-creation_date: 2013-11-23T14:21:59Z
+creation_date: 2013-11-23T02:21:59Z
 
 [Term]
 id: HP:0012442
@@ -78945,7 +79056,7 @@ def: "Reduced motility of the gallbladder with reduced emptying fraction." [HPO:
 comment: Patients with this gallbladder dyskinesia present with biliary-type pain but no evidence of gallstones in the gallbladder. The diagnosis is made by performing a radionuclide investigation of the gallbladder ejection fraction. An abnormal gallbladder ejection fraction has a value less than 40 percent.
 is_a: HP:0012396 ! Biliary dyskinesia
 created_by: peter
-creation_date: 2013-11-23T14:28:07Z
+creation_date: 2013-11-23T02:28:07Z
 
 [Term]
 id: HP:0012443
@@ -78953,7 +79064,7 @@ name: Abnormality of the brain
 def: "An abnormality of the `brain` (FMA:50801), which has as its parts the forebrain, midbrain, and hindbrain." [HPO:probinson]
 is_a: HP:0007319 ! Morphological abnormality of the central nervous system
 created_by: peter
-creation_date: 2013-11-23T14:38:00Z
+creation_date: 2013-11-23T02:38:00Z
 
 [Term]
 id: HP:0012444
@@ -78962,7 +79073,7 @@ def: "Partial or complete wasting (loss) of brain tissue that was once present."
 is_a: HP:0007367 ! Atrophy/Degeneration affecting the central nervous system
 is_a: HP:0012443 ! Abnormality of the brain
 created_by: peter
-creation_date: 2013-11-23T14:46:15Z
+creation_date: 2013-11-23T02:46:15Z
 
 [Term]
 id: HP:0012445
@@ -78971,7 +79082,7 @@ def: "Any structural abnormality of the `pyramidal tract` (FMA:72634)." [HPO:pro
 comment: The pyramidal tracts comprise both the corticospinal and corticobulbar tracts.
 is_a: HP:0002062 ! Abnormality of the pyramidal tracts
 created_by: peter
-creation_date: 2013-11-23T15:09:44Z
+creation_date: 2013-11-23T03:09:44Z
 
 [Term]
 id: HP:0012446
@@ -78981,7 +79092,7 @@ comment: A reduced concentration of `5-methyltetrahydrofolate(2-)`\n(CHEBI:18608
 synonym: "Cerebral folate deficiency" RELATED []
 is_a: HP:0002921 ! Abnormality of the cerebrospinal fluid
 created_by: peter
-creation_date: 2013-11-23T15:40:41Z
+creation_date: 2013-11-23T03:40:41Z
 
 [Term]
 id: HP:0012447
@@ -78990,7 +79101,7 @@ def: "Any anomaly in the process by which myelin sheaths are formed and maintain
 xref: UMLS:C1857704 "Abnormal myelination"
 is_a: HP:0007319 ! Morphological abnormality of the central nervous system
 created_by: peter
-creation_date: 2013-11-23T15:45:58Z
+creation_date: 2013-11-23T03:45:58Z
 
 [Term]
 id: HP:0012448
@@ -78999,7 +79110,7 @@ def: "`Delayed` (PATO:0000502) `myelination` (GO:0042552)." [ORCID:0000-0001-520
 xref: UMLS:C1277241 "Delayed myelination"
 is_a: HP:0012447 ! Abnormal myelination
 created_by: peter
-creation_date: 2013-11-23T15:47:56Z
+creation_date: 2013-11-23T03:47:56Z
 
 [Term]
 id: HP:0012449
@@ -79007,7 +79118,7 @@ name: Sacroiliac joint synovitis
 def: "Inflammation of the synovial membrane of the `sacroiliac joint` (FMA:21440)." [ORCID:0000-0001-5208-3432]
 is_a: HP:0100781 ! Abnormality of the sacroiliac joint
 created_by: peter
-creation_date: 2013-11-23T15:54:32Z
+creation_date: 2013-11-23T03:54:32Z
 
 [Term]
 id: HP:0012450
@@ -79015,7 +79126,7 @@ name: Chronic constipation
 def: "Constipation for longer than three months with fewer than 3 bowel movements per week, straining, lumpy or hard stools, and a sensation of anorectal obstruction or incomplete defecation." [ORCID:0000-0001-5208-3432]
 is_a: HP:0002019 ! Constipation
 created_by: peter
-creation_date: 2013-11-23T16:03:43Z
+creation_date: 2013-11-23T04:03:43Z
 
 [Term]
 id: HP:0012451
@@ -79023,7 +79134,7 @@ name: Acute constipation
 def: "Constipation of sudden onset and lasting for less than three months." [ORCID:0000-0001-5208-3432]
 is_a: HP:0002019 ! Constipation
 created_by: peter
-creation_date: 2013-11-23T16:06:37Z
+creation_date: 2013-11-23T04:06:37Z
 
 [Term]
 id: HP:0012452
@@ -79036,7 +79147,7 @@ synonym: "Wittmaack-Ekbom syndrome" RELATED []
 xref: MeSH:D012148 "Restless Legs Syndrome"
 is_a: HP:0002360 ! Sleep disturbance
 created_by: peter
-creation_date: 2013-11-23T19:42:59Z
+creation_date: 2013-11-23T07:42:59Z
 
 [Term]
 id: HP:0012453
@@ -79045,7 +79156,7 @@ def: "A chronic loss of wrist joint motion on the right and left sides." [HPO:pr
 synonym: "Bilateral wrist contracture" RELATED []
 is_a: HP:0001239 ! Wrist flexion contracture
 created_by: peter
-creation_date: 2013-11-23T19:58:50Z
+creation_date: 2013-11-23T07:58:50Z
 
 [Term]
 id: HP:0012454
@@ -79054,7 +79165,7 @@ def: "A chronic loss of wrist joint motion on one side only." [HPO:probinson]
 synonym: "Unilateral wrist contracture" RELATED []
 is_a: HP:0001239 ! Wrist flexion contracture
 created_by: peter
-creation_date: 2013-11-23T19:59:39Z
+creation_date: 2013-11-23T07:59:39Z
 
 [Term]
 id: HP:0012455
@@ -79162,7 +79273,7 @@ def: "Longstanding impairment in ventilation such that the partial pressure of c
 is_a: HP:0005972 ! Respiratory acidosis
 is_a: HP:0012468 ! Chronic acidosis
 created_by: peter
-creation_date: 2013-11-24T13:11:15Z
+creation_date: 2013-11-24T01:11:15Z
 
 [Term]
 id: HP:0012467
@@ -79170,7 +79281,7 @@ name: Acute respiratory acidosis
 def: "Sudden onset of impairment in ventilation such that the removal of carbon dioxide by the respiratory system is less than the production of carbon dioxide in the tissues, leading to an elevation of the partial pressure of carbon dioxide (PaCO2) above the normal limits (more than 45 mm Hg) with an accompanying acidemia (pH less than 7.35)." [HPO:probinson]
 is_a: HP:0005972 ! Respiratory acidosis
 created_by: peter
-creation_date: 2013-11-24T13:11:51Z
+creation_date: 2013-11-24T01:11:51Z
 
 [Term]
 id: HP:0012468
@@ -79178,7 +79289,7 @@ name: Chronic acidosis
 def: "Longstanding abnormal acid accumulation or depletion of base." [ORCID:0000-0001-5208-3432]
 is_a: HP:0001941 ! Acidosis
 created_by: peter
-creation_date: 2013-11-24T13:16:31Z
+creation_date: 2013-11-24T01:16:31Z
 
 [Term]
 id: HP:0012469
@@ -79186,7 +79297,7 @@ name: Infantile spasms
 def: "Infantile spasms represent a subset of \"epileptic spasms\". Infantile Spasms are epileptic spasms starting in the first year of life (infancy)." [HPO:ihelbig]
 is_a: HP:0011097 ! Epileptic spasms
 created_by: peter
-creation_date: 2013-11-26T17:36:45Z
+creation_date: 2013-11-26T05:36:45Z
 
 [Term]
 id: HP:0012470
@@ -79198,7 +79309,7 @@ synonym: "Sun setting eyes" EXACT []
 synonym: "Sunsetting eye" EXACT []
 is_a: HP:0000597 ! Ophthalmoparesis
 created_by: peter
-creation_date: 2013-11-26T17:40:01Z
+creation_date: 2013-11-26T05:40:01Z
 
 [Term]
 id: HP:0012471
@@ -79208,7 +79319,7 @@ synonym: "Full lips" EXACT []
 synonym: "Thick lips" EXACT []
 is_a: HP:0000159 ! Abnormality of the lip
 created_by: peter
-creation_date: 2013-11-26T21:07:51Z
+creation_date: 2013-11-26T09:07:51Z
 
 [Term]
 id: HP:0012472
@@ -79218,7 +79329,7 @@ synonym: "Eclabium" EXACT []
 xref: UMLS:C1848738 "Eclabion"
 is_a: HP:0000159 ! Abnormality of the lip
 created_by: peter
-creation_date: 2013-11-26T22:20:23Z
+creation_date: 2013-11-26T10:20:23Z
 
 [Term]
 id: HP:0012473
@@ -79227,7 +79338,7 @@ def: "Wasting of the `tongue` (FMA:54640)." [ORCID:0000-0001-5208-3432]
 synonym: "Atrophy of the tongue" EXACT []
 is_a: HP:0000157 ! Abnormality of the tongue
 created_by: peter
-creation_date: 2013-11-26T22:32:31Z
+creation_date: 2013-11-26T10:32:31Z
 
 [Term]
 id: HP:0012474
@@ -79236,7 +79347,7 @@ def: "Complete obstruction of a carotid artery." [ORCID:0000-0001-5208-3432]
 comment: Carotid artery occlusion is usually caused by caused by atherosclerosis.
 is_a: HP:0005344 ! Abnormality of the carotid arteries
 created_by: peter
-creation_date: 2013-11-27T22:11:40Z
+creation_date: 2013-11-27T10:11:40Z
 
 [Term]
 id: HP:0012475
@@ -79244,7 +79355,7 @@ name: Specific antibody deficiency
 def: "The presence of normal overall immunoglobulin levels with deficiency of specific immunoglobulins directed against a specific antigen or microorganism." [HPO:probinson, pmid:17100769]
 is_a: HP:0010701 ! Abnormal immunoglobulin level
 created_by: peter
-creation_date: 2013-11-27T22:21:15Z
+creation_date: 2013-11-27T10:21:15Z
 
 [Term]
 id: HP:0012476
@@ -79252,7 +79363,7 @@ name: Specific pneumococcal antibody deficiency
 def: "The presence of normal overall immunoglobulin levels with deficiency of specific immunoglobulins directed against pneumococci." [HPO:probinson]
 is_a: HP:0012475 ! Specific antibody deficiency
 created_by: peter
-creation_date: 2013-11-27T22:28:04Z
+creation_date: 2013-11-27T10:28:04Z
 
 [Term]
 id: HP:0012477
@@ -79346,7 +79457,7 @@ name: Cerebellopontine angle arachnoid cyst
 def: "An arachnoid cyst located at the margin of the cerebellum and pons." [ORCID:0000-0001-5208-3432]
 is_a: HP:0100702 ! Arachnoid cyst
 created_by: peter
-creation_date: 2013-11-29T21:03:39Z
+creation_date: 2013-11-29T09:03:39Z
 
 [Term]
 id: HP:0012488
@@ -79355,7 +79466,7 @@ def: "An arachnoid cyst located within the ventricular system." [HPO:probinson, 
 comment: Arachnoid cysts very rarely occur within the ventricular system, where no arachnoid tissue exists.
 is_a: HP:0100702 ! Arachnoid cyst
 created_by: peter
-creation_date: 2013-11-29T21:08:46Z
+creation_date: 2013-11-29T09:08:46Z
 
 [Term]
 id: HP:0012489
@@ -79364,7 +79475,7 @@ def: "An arachnoid cyst that progressively enlarges from an abnormality in the m
 comment: As the cyst increases in size it fills and occludes the third ventricle, and distorts and blocks the aqueduct, which finally results in hydrocephalus.
 is_a: HP:0100702 ! Arachnoid cyst
 created_by: peter
-creation_date: 2013-11-29T21:11:20Z
+creation_date: 2013-11-29T09:11:20Z
 
 [Term]
 id: HP:0012490
@@ -79374,7 +79485,7 @@ comment: Panniculitis most commonly affects the skin and characterized by redden
 xref: MeSH:D015434 "Panniculitis"
 is_a: HP:0009124 ! Abnormality of adipose tissue
 created_by: peter
-creation_date: 2013-11-29T21:28:11Z
+creation_date: 2013-11-29T09:28:11Z
 
 [Term]
 id: HP:0012491
@@ -79383,7 +79494,7 @@ def: "An anomaly of the intracellular membrane complexes known as the dense tubu
 comment: The dense tubular system (DTS) functions to regulate platelet activation by sequestering or releasing calcium, similar to the sarcotubules of skeletal muscle. In resting platelets, the DTS exists as thin elongated membranes. Within 10 seconds of the addition of thrombin, platelets show a major ultrastructural change in their DTS: from the thin elongated form to a rounded vesicular form.
 is_a: HP:0011875 ! Abnormal platelet morphology
 created_by: peter
-creation_date: 2013-11-29T21:35:44Z
+creation_date: 2013-11-29T09:35:44Z
 
 [Term]
 id: HP:0012492
@@ -79639,7 +79750,7 @@ def: "Congenital absence of the `optic nerve` (FMA:50863)." [HPO:probinson]
 synonym: "Aplastic optic nerve" EXACT []
 is_a: HP:0008058 ! Aplasia/Hypoplasia of the optic nerve
 created_by: peter
-creation_date: 2013-12-12T14:15:31Z
+creation_date: 2013-12-12T02:15:31Z
 
 [Term]
 id: HP:0012522
@@ -79719,7 +79830,7 @@ creation_date: 2013-12-15T09:12:55Z
 id: HP:0012531
 name: Pain
 def: "An unpleasant sensory and emotional experience associated with actual or potential tissue damage, or described in terms of such damage." [ORCID:0000-0001-5208-3432]
-is_a: HP:0001311 ! Neurophysiological abnormality
+is_a: HP:0012638 ! Abnormality of nervous system physiology
 created_by: peter
 creation_date: 2013-12-15T09:38:08Z
 
@@ -79756,7 +79867,7 @@ id: HP:0012535
 name: Abnormal synaptic transmission
 def: "An anomaly in the communication from a neuron to a target across a synapse. This is a four step process, comprising (i) synthesis and storage of neurotransmitters; (ii) neurotransmitter release; (iii) activation of postsynaptic receptors by the neurotransmitter; and (iv) inactivation of the neurotransmitter. Thus, this term is defined as an anomaly of `neurotransmitter metabolic process` (GO:0042133)." [HPO:probinson, MP:0003635]
 synonym: "Abnormality of neurotransmitter metabolism" EXACT []
-is_a: HP:0001311 ! Neurophysiological abnormality
+is_a: HP:0001311 ! Abnormal nervous system electrophysiology
 created_by: peter
 creation_date: 2013-12-15T10:12:31Z
 
@@ -79800,7 +79911,7 @@ name: Axillary epidermoid cyst
 def: "An epidermoid cyst in the armpit." [ORCID:0000-0001-5208-3432]
 is_a: HP:0200040 ! Epidermoid cyst
 created_by: peter
-creation_date: 2013-12-15T22:35:39Z
+creation_date: 2013-12-15T10:35:39Z
 
 [Term]
 id: HP:0012541
@@ -79810,7 +79921,7 @@ comment: Cephalohematoma is generally caused by trauma during labor.
 synonym: "Cephalohaematoma" EXACT []
 is_a: HP:0001787 ! Abnormal delivery
 created_by: peter
-creation_date: 2013-12-15T22:37:57Z
+creation_date: 2013-12-15T10:37:57Z
 
 [Term]
 id: HP:0012542
@@ -79818,7 +79929,7 @@ name: Onychauxis
 def: "Thickened nails without deformity." [HPO:probinson]
 is_a: HP:0001805 ! Thick nail
 created_by: peter
-creation_date: 2013-12-15T22:49:45Z
+creation_date: 2013-12-15T10:49:45Z
 
 [Term]
 id: HP:0012543
@@ -79871,7 +79982,7 @@ def: "Deposition of fat within muscles." [HPO:probinson]
 comment: Fatty infiltration of muscle tissue can be observed on muscle biopsy as well as through imaging by computed tomography and magnetic resonance tomography.
 is_a: HP:0011805 ! Abnormality of muscle morphology
 created_by: peter
-creation_date: 2014-01-01T15:03:05Z
+creation_date: 2014-01-01T03:03:05Z
 
 [Term]
 id: HP:0012549
@@ -79880,7 +79991,7 @@ def: "A lipoma (a benign tumor composed of adipose tissue) located in the conjun
 comment: Conjunctival lipoma displays yellowish-pink stromal mass, histologically with large lipid vacuoles surrounded by stellate cells.
 is_a: HP:0000502 ! Abnormality of the conjunctiva
 created_by: peter
-creation_date: 2014-01-01T15:13:56Z
+creation_date: 2014-01-01T03:13:56Z
 
 [Term]
 id: HP:0012550
@@ -79889,7 +80000,7 @@ def: "The presence of varices (enlarged and convoluted blood vessels) in the col
 comment: Colonic varices are a rare cause of lower gastrointestinal bleeding, most commonly associated with portal hypertension nd more rarely with congestive heart failure, mesenteric vein thrombosis, pancreatitis with splenic vein thrombosis and adhesions, and mesenteric vein compression. Colonic varices are usually located in the rectosigmoid region and the cecum.
 is_a: HP:0002250 ! Abnormality of the large intestine
 created_by: peter
-creation_date: 2014-01-01T15:54:41Z
+creation_date: 2014-01-01T03:54:41Z
 
 [Term]
 id: HP:0012551
@@ -79898,7 +80009,7 @@ def: "Lack of specific granules in neutrophils." [HPO:probinson, pmid:6155073]
 comment: Neutrophil polymorphonuclear leukocytes (PMNs) contain two principal types of granules. Azurophil granules appear early in neutrophil development and contain lysosomal enzymes, lysozyme, and myeloperoxidase (MPO). Specific granules are formed later, lack MPO and hydrolases, but contain lactoferrin and the remainder of the cell's complement of lysozyme. Consequently, specific granules may be conveniently detected at the electron-microscopic (EM) level by the cytochemical demonstration of their lack of MPO, while at the optical level their presence can be inferred from their positive immunocytochemical staining for lactoferrin with the use of specific antiserums.
 is_a: HP:0011992 ! Abnormality of neutrophil morphology
 created_by: peter
-creation_date: 2014-01-01T15:32:09Z
+creation_date: 2014-01-01T03:32:09Z
 
 [Term]
 id: HP:0012552
@@ -79906,7 +80017,7 @@ name: Increased neutrophil nuclear projections
 def: "Presence of an elevanted number of projections from nuclei of neutrophils. Ths projections can have the shape of hooks, tags, or clubs." [HPO:probinson]
 is_a: HP:0011992 ! Abnormality of neutrophil morphology
 created_by: peter
-creation_date: 2014-01-01T15:41:24Z
+creation_date: 2014-01-01T03:41:24Z
 
 [Term]
 id: HP:0012553
@@ -79922,7 +80033,7 @@ name: Absent thumbnail
 def: "Absence of `thumb nail` (FMA:54329)." [HPO:probinson]
 is_a: HP:0001817 ! Absent fingernail
 created_by: peter
-creation_date: 2014-01-04T13:05:52Z
+creation_date: 2014-01-04T01:05:52Z
 
 [Term]
 id: HP:0012555
@@ -79932,7 +80043,7 @@ synonym: "Absent big toe nail" EXACT []
 synonym: "Absent nail of big toe" EXACT []
 is_a: HP:0001802 ! Absent toenail
 created_by: peter
-creation_date: 2014-01-04T13:06:39Z
+creation_date: 2014-01-04T01:06:39Z
 
 [Term]
 id: HP:0012556
@@ -79941,7 +80052,7 @@ def: "Increased concentration of `beta-alanine` (CHEBI:16958) in the blood." [HP
 synonym: "Hyperbeta-alaninemia" EXACT []
 is_a: HP:0004337 ! Abnormality of amino acid metabolism
 created_by: peter
-creation_date: 2014-01-04T13:37:23Z
+creation_date: 2014-01-04T01:37:23Z
 
 [Term]
 id: HP:0012557
@@ -79949,7 +80060,7 @@ name: EEG with centrotemporal focal spike waves
 def: "EEG with focal sharp transient waves in the centrotemporal region of the brain (also known as the central sulcus), i.e., focal sharp waves of a duration less than 80 msec followed by a slow wave." [HPO:probinson]
 is_a: HP:0011197 ! EEG with focal spike waves
 created_by: peter
-creation_date: 2014-01-04T13:43:32Z
+creation_date: 2014-01-04T01:43:32Z
 
 [Term]
 id: HP:0012558
@@ -79957,7 +80068,7 @@ name: Abnormal T3/T4 ratio
 def: "A ratio of serum triiodothyronine (T3) to thyroxine (T4) in the blood that deviates from normal." [HPO:probinson, pmid:16982586]
 is_a: HP:0002926 ! Abnormality of thyroid physiology
 created_by: peter
-creation_date: 2014-01-04T13:50:30Z
+creation_date: 2014-01-04T01:50:30Z
 
 [Term]
 id: HP:0012559
@@ -79965,7 +80076,7 @@ name: Increased T3/T4 ratio
 def: "A ratio of serum triiodothyronine (T3) to thyroxine (T4) in the blood that is higher than normal." [HPO:probinson]
 is_a: HP:0012558 ! Abnormal T3/T4 ratio
 created_by: peter
-creation_date: 2014-01-04T13:52:59Z
+creation_date: 2014-01-04T01:52:59Z
 
 [Term]
 id: HP:0012560
@@ -79973,7 +80084,7 @@ name: Decreased T3/T4 ratio
 def: "A ratio of serum triiodothyronine (T3) to thyroxine (T4) in the blood that is lower than normal." [HPO:probinson]
 is_a: HP:0012558 ! Abnormal T3/T4 ratio
 created_by: peter
-creation_date: 2014-01-04T13:54:13Z
+creation_date: 2014-01-04T01:54:13Z
 
 [Term]
 id: HP:0012561
@@ -79991,7 +80102,7 @@ name: Premature epimetaphyseal fusion in hand
 def: "Stop of growth at the epiphyseal plate the hyaline cartilage plate in the metaphysis at one or more long bones in the hand, at an earlier than normal age, resulting in growth arrest and shortening of the involved bone." [HPO:probinson]
 is_a: HP:0010588 ! Premature epimetaphyseal fusion
 created_by: peter
-creation_date: 2014-01-04T14:02:35Z
+creation_date: 2014-01-04T02:02:35Z
 
 [Term]
 id: HP:0012563
@@ -79999,7 +80110,7 @@ name: Premature epimetaphyseal fusion in foot
 def: "Stop of growth at the epiphyseal plate the hyaline cartilage plate in the metaphysis at one or more long bones in the foot, at an earlier than normal age, resulting in growth arrest and shortening of the involved bone." [HPO:probinson]
 is_a: HP:0010588 ! Premature epimetaphyseal fusion
 created_by: peter
-creation_date: 2014-01-04T14:05:25Z
+creation_date: 2014-01-04T02:05:25Z
 
 [Term]
 id: HP:0012564
@@ -80007,7 +80118,7 @@ name: Premature epimetaphyseal fusion in tibia
 def: "Stop of growth at the epiphyseal plate the hyaline cartilage plate in the metaphysis at one or more long bones in the tibia, at an earlier than normal age, resulting in growth arrest and shortening of the involved bone." [HPO:probinson]
 is_a: HP:0010588 ! Premature epimetaphyseal fusion
 created_by: peter
-creation_date: 2014-01-04T14:07:34Z
+creation_date: 2014-01-04T02:07:34Z
 
 [Term]
 id: HP:0012565
@@ -80015,7 +80126,7 @@ name: Premature epimetaphyseal fusion in fibula
 def: "Stop of growth at the epiphyseal plate the hyaline cartilage plate in the metaphysis at one or more long bones in the fibula, at an earlier than normal age, resulting in growth arrest and shortening of the involved bone." [HPO:probinson]
 is_a: HP:0010588 ! Premature epimetaphyseal fusion
 created_by: peter
-creation_date: 2014-01-04T14:08:23Z
+creation_date: 2014-01-04T02:08:23Z
 
 [Term]
 id: HP:0012566
@@ -80023,7 +80134,7 @@ name: Premature epimetaphyseal fusion in radius
 def: "Stop of growth at the epiphyseal plate the hyaline cartilage plate in the metaphysis at one or more long bones in the radius, at an earlier than normal age, resulting in growth arrest and shortening of the involved bone." [HPO:probinson]
 is_a: HP:0010588 ! Premature epimetaphyseal fusion
 created_by: peter
-creation_date: 2014-01-04T14:09:50Z
+creation_date: 2014-01-04T02:09:50Z
 
 [Term]
 id: HP:0012567
@@ -80031,7 +80142,7 @@ name: Premature epimetaphyseal fusion in ulna
 def: "Stop of growth at the epiphyseal plate the hyaline cartilage plate in the metaphysis at one or more long bones in the ulna, at an earlier than normal age, resulting in growth arrest and shortening of the involved bone." [HPO:probinson]
 is_a: HP:0010588 ! Premature epimetaphyseal fusion
 created_by: peter
-creation_date: 2014-01-04T14:10:05Z
+creation_date: 2014-01-04T02:10:05Z
 
 [Term]
 id: HP:0012568
@@ -80039,7 +80150,7 @@ name: Lower eyelid edema
 def: "Edema in the region of the `Lower eyelid` (FMA:54442)." [ORCID:0000-0001-5208-3432]
 is_a: HP:0100540 ! Palpebral edema
 created_by: peter
-creation_date: 2014-01-04T14:25:56Z
+creation_date: 2014-01-04T02:25:56Z
 
 [Term]
 id: HP:0012569
@@ -80111,7 +80222,7 @@ name: C3 nephropathy
 def: "The presence of complement 3 deposits in the glomerulus." [Eurenomics:ewuehl]
 is_a: HP:0000095 ! Abnormality of the glomerulus
 created_by: peter
-creation_date: 2014-01-16T13:08:21Z
+creation_date: 2014-01-16T01:08:21Z
 
 [Term]
 id: HP:0012577
@@ -80120,7 +80231,7 @@ def: "Reduction in thickness of the basal lamina of the glomerulus of the kidney
 comment: This finding is demonstrated on renal biopsy.
 is_a: HP:0000095 ! Abnormality of the glomerulus
 created_by: peter
-creation_date: 2014-01-16T13:21:17Z
+creation_date: 2014-01-16T01:21:17Z
 
 [Term]
 id: HP:0012578
@@ -80130,7 +80241,7 @@ synonym: "Membranous glomerulonephritis" EXACT []
 xref: MeSH:D015433 "Glomerulonephritis, Membranous"
 is_a: HP:0000099 ! Glomerulonephritis
 created_by: peter
-creation_date: 2014-01-16T13:22:41Z
+creation_date: 2014-01-16T01:22:41Z
 
 [Term]
 id: HP:0012579
@@ -80140,7 +80251,7 @@ synonym: "Minimal change disease" EXACT []
 synonym: "Minimal change nephropathy" EXACT []
 is_a: HP:0000099 ! Glomerulonephritis
 created_by: peter
-creation_date: 2014-01-16T13:26:20Z
+creation_date: 2014-01-16T01:26:20Z
 
 [Term]
 id: HP:0012580
@@ -80149,7 +80260,7 @@ def: "The presence of calcium- and phosphate-containing calculi (stones) in the 
 synonym: "Calcium oxalate urolithiasis" RELATED []
 is_a: HP:0004724 ! Calcium nephrolithiasis
 created_by: peter
-creation_date: 2014-01-16T13:34:27Z
+creation_date: 2014-01-16T01:34:27Z
 
 [Term]
 id: HP:0012581
@@ -80157,7 +80268,7 @@ name: Solitary renal cyst
 def: "An isolated cyst of the kidney." [Eurenomics:ewuehl]
 is_a: HP:0000107 ! Renal cyst
 created_by: peter
-creation_date: 2014-01-16T15:06:37Z
+creation_date: 2014-01-16T03:06:37Z
 
 [Term]
 id: HP:0012582
@@ -80166,7 +80277,7 @@ def: "A bilateral form of `developmental dysplasia` (MPATH:64) of the `kidney` (
 xref: UMLS:C0431697 "Unilateral renal dysplasia"
 is_a: HP:0000110 ! Renal dysplasia
 created_by: peter
-creation_date: 2014-01-16T15:14:35Z
+creation_date: 2014-01-16T03:14:35Z
 
 [Term]
 id: HP:0012583
@@ -80174,7 +80285,7 @@ name: Unilateral renal hypoplasia
 def: "One sided `hypoplasia` (MPATH:133) of the `kidney` (FMA:7203)." [Eurenomics:fschaefer]
 is_a: HP:0000089 ! Renal hypoplasia
 created_by: peter
-creation_date: 2014-01-16T15:15:30Z
+creation_date: 2014-01-16T03:15:30Z
 
 [Term]
 id: HP:0012584
@@ -80182,7 +80293,7 @@ name: Bilateral renal hypoplasia
 def: "Two sided `hypoplasia` (MPATH:133) of the `kidney` (FMA:7203)." [Eurenomics:fschaefer]
 is_a: HP:0000089 ! Renal hypoplasia
 created_by: peter
-creation_date: 2014-01-16T15:16:03Z
+creation_date: 2014-01-16T03:16:03Z
 
 [Term]
 id: HP:0012585
@@ -80190,7 +80301,7 @@ name: Renal atrophy
 def: "`Atrophy` (MPATH:127) of the `kidney` (FMA:7203)." [HPO:probinson]
 is_a: HP:0012210 ! Abnormal renal morphology
 created_by: peter
-creation_date: 2014-01-16T15:21:19Z
+creation_date: 2014-01-16T03:21:19Z
 
 [Term]
 id: HP:0012586
@@ -80198,7 +80309,7 @@ name: Bilateral renal atrophy
 def: "A two-sided form of `atrophy` (MPATH:127) of the `kidney` (FMA:7203)." [HPO:probinson]
 is_a: HP:0012585 ! Renal atrophy
 created_by: peter
-creation_date: 2014-01-16T15:21:55Z
+creation_date: 2014-01-16T03:21:55Z
 
 [Term]
 id: HP:0012587
@@ -80206,7 +80317,7 @@ name: Macroscopic hematuria
 def: "Hematuria that is visible upon inspection of the urine." [HPO:sdoelken]
 is_a: HP:0000790 ! Hematuria
 created_by: peter
-creation_date: 2014-01-16T15:31:44Z
+creation_date: 2014-01-16T03:31:44Z
 
 [Term]
 id: HP:0012588
@@ -80214,7 +80325,7 @@ name: Steroid-resistant nephrotic syndrome
 def: "A form of nephrotic syndrome that does not respond to treatment with steroid medication." [Eurenomics:ewuehl]
 is_a: HP:0000100 ! Nephrotic syndrome
 created_by: peter
-creation_date: 2014-01-16T15:47:57Z
+creation_date: 2014-01-16T03:47:57Z
 
 [Term]
 id: HP:0012589
@@ -80222,7 +80333,7 @@ name: Multidrug-resistant nephrotic syndrome
 def: "A form of nephrotic syndrome that does not respond to any immunosuppresive treatment." [Eurenomics:ewuehl]
 is_a: HP:0000100 ! Nephrotic syndrome
 created_by: peter
-creation_date: 2014-01-16T15:48:49Z
+creation_date: 2014-01-16T03:48:49Z
 
 [Term]
 id: HP:0012590
@@ -80230,14 +80341,14 @@ name: Abnormal urine output
 def: "Ab abnormal amount of urine production." [Eurenomics:ewuehl]
 is_a: HP:0011036 ! Abnormality of renal excretion
 created_by: peter
-creation_date: 2014-01-16T15:59:33Z
+creation_date: 2014-01-16T03:59:33Z
 
 [Term]
 id: HP:0012591
 name: Abnormal urinary electrolyte concentration
 is_a: HP:0003110 ! Abnormality of urine homeostasis
 created_by: peter
-creation_date: 2014-01-16T17:44:11Z
+creation_date: 2014-01-16T05:44:11Z
 
 [Term]
 id: HP:0012592
@@ -80245,7 +80356,7 @@ name: Albuminuria
 def: "Increased concentration of albumin in the urine." [Eurenomics:fschaefer]
 is_a: HP:0000093 ! Proteinuria
 created_by: peter
-creation_date: 2014-01-16T17:49:16Z
+creation_date: 2014-01-16T05:49:16Z
 
 [Term]
 id: HP:0012593
@@ -80253,7 +80364,7 @@ name: Nephrotic range proteinuria
 def: "Severely increased amount of excretion of protein in the urine, defined as 3.5 grams per day or more in adults and 40 mg per meter-squared body surface area per hour in children." [Eurenomics:ewuehl]
 is_a: HP:0000093 ! Proteinuria
 created_by: peter
-creation_date: 2014-01-16T17:50:21Z
+creation_date: 2014-01-16T05:50:21Z
 
 [Term]
 id: HP:0012594
@@ -80261,7 +80372,7 @@ name: Microalbuminuria
 def: "The presence of mildly increased concentrations of albumin in the urine (in adults, 30-150 mg per day)." [Eurenomics:fschaefer]
 is_a: HP:0012592 ! Albuminuria
 created_by: peter
-creation_date: 2014-01-16T17:54:41Z
+creation_date: 2014-01-16T05:54:41Z
 
 [Term]
 id: HP:0012595
@@ -80269,7 +80380,7 @@ name: Mild proteinuria
 def: "Mildly increased levels of protein in the urine (150-500 mg per day in adults)." [Eurenomics:eweuehl]
 is_a: HP:0000093 ! Proteinuria
 created_by: peter
-creation_date: 2014-01-16T17:55:47Z
+creation_date: 2014-01-16T05:55:47Z
 
 [Term]
 id: HP:0012596
@@ -80277,7 +80388,7 @@ name: Moderate proteinuria
 def: "Moderately increased levels of protein in the urine (500-1000 mg per day in adults)." [Eurenomics:fschaefer]
 is_a: HP:0000093 ! Proteinuria
 created_by: peter
-creation_date: 2014-01-16T17:56:26Z
+creation_date: 2014-01-16T05:56:26Z
 
 [Term]
 id: HP:0012597
@@ -80285,7 +80396,7 @@ name: Heavy proteinuria
 def: "Severely increased levels of protein in the urine (1000-3000 mg per day in adults)." [Eurenomics:ewuehl]
 is_a: HP:0000093 ! Proteinuria
 created_by: peter
-creation_date: 2014-01-16T17:56:38Z
+creation_date: 2014-01-16T05:56:38Z
 
 [Term]
 id: HP:0012598
@@ -80293,7 +80404,7 @@ name: Abnormal urine potassium concentration
 def: "An abnormal concentration of `potassium(1+)` (CHEBI:29103) in the `urine` (FMA:12274)." [Eurenomics:fschaefer]
 is_a: HP:0012591 ! Abnormal urinary electrolyte concentration
 created_by: peter
-creation_date: 2014-01-16T18:11:59Z
+creation_date: 2014-01-16T06:11:59Z
 
 [Term]
 id: HP:0012599
@@ -80301,7 +80412,7 @@ name: Abnormal urine phosphate concentration
 def: "An abnormal `phosphate` (CHEBI:18367) concentration in the urine." [Eurenomics:ewuehl]
 is_a: HP:0012591 ! Abnormal urinary electrolyte concentration
 created_by: peter
-creation_date: 2014-01-16T18:14:49Z
+creation_date: 2014-01-16T06:14:49Z
 
 [Term]
 id: HP:0012600
@@ -80309,7 +80420,7 @@ name: Abnormal urine chloride concentration
 def: "An abnormal concentration of `chloride` (CHEBI:17996) in the `urine` (FMA:12274)." [Eurenomics:fschaefer]
 is_a: HP:0012591 ! Abnormal urinary electrolyte concentration
 created_by: peter
-creation_date: 2014-01-16T18:16:24Z
+creation_date: 2014-01-16T06:16:24Z
 
 [Term]
 id: HP:0012601
@@ -80318,7 +80429,7 @@ def: "An decreased concentration of `chloride` (CHEBI:17996) in the `urine` (FMA
 synonym: "Decreased urinary chloride" EXACT []
 is_a: HP:0012600 ! Abnormal urine chloride concentration
 created_by: peter
-creation_date: 2014-01-16T18:17:06Z
+creation_date: 2014-01-16T06:17:06Z
 
 [Term]
 id: HP:0012602
@@ -80326,7 +80437,7 @@ name: Renal chloride wasting
 def: "High urine chloride in the presence of hypochloridemia." [Eurenomics:ewuehl]
 is_a: HP:0012600 ! Abnormal urine chloride concentration
 created_by: peter
-creation_date: 2014-01-16T18:18:11Z
+creation_date: 2014-01-16T06:18:11Z
 
 [Term]
 id: HP:0012603
@@ -80334,7 +80445,7 @@ name: Abnormal urine sodium concentration
 def: "An abnormal concentration of sodium in the `urine` (FMA:12274)." [Eurenomics:fschaefer]
 is_a: HP:0012591 ! Abnormal urinary electrolyte concentration
 created_by: peter
-creation_date: 2014-01-16T18:19:27Z
+creation_date: 2014-01-16T06:19:27Z
 
 [Term]
 id: HP:0012604
@@ -80342,7 +80453,7 @@ name: Hyponatriuria
 def: "An abnormally decreased sodium concentration in the urine." [Eurenomics:ewuehl]
 is_a: HP:0012603 ! Abnormal urine sodium concentration
 created_by: peter
-creation_date: 2014-01-16T18:22:09Z
+creation_date: 2014-01-16T06:22:09Z
 
 [Term]
 id: HP:0012605
@@ -80353,7 +80464,7 @@ synonym: "Increased urinary sodium" EXACT []
 xref: UMLS:C0854101 "Increased urinary sodium"
 is_a: HP:0012603 ! Abnormal urine sodium concentration
 created_by: peter
-creation_date: 2014-01-16T18:22:44Z
+creation_date: 2014-01-16T06:22:44Z
 
 [Term]
 id: HP:0012606
@@ -80361,7 +80472,7 @@ name: Renal sodium wasting
 def: "An abnormally increased sodium concentration in the urine in the presence of hyponatremia." [Eurenomics:ewuehl]
 is_a: HP:0012603 ! Abnormal urine sodium concentration
 created_by: peter
-creation_date: 2014-01-16T18:23:16Z
+creation_date: 2014-01-16T06:23:16Z
 
 [Term]
 id: HP:0012607
@@ -80507,7 +80618,7 @@ synonym: "Renal insufficiency, progressive" RELATED []
 xref: UMLS:C0748318 "Progressive renal failure"
 is_a: HP:0000083 ! Renal insufficiency
 created_by: peter
-creation_date: 2014-01-17T13:14:52Z
+creation_date: 2014-01-17T01:14:52Z
 
 [Term]
 id: HP:0012623
@@ -80516,7 +80627,7 @@ def: "A type of chronic kidney disease with normal or increased glomerular filtr
 comment: Proteinuria is commonly seen in stage 1 chronic kidney disease.
 is_a: HP:0012622 ! Chronic kidney disease
 created_by: peter
-creation_date: 2014-01-17T13:20:48Z
+creation_date: 2014-01-17T01:20:48Z
 
 [Term]
 id: HP:0012624
@@ -80524,7 +80635,7 @@ name: Stage 2 chronic kidney disease
 def: "A type of chronic kidney disease with mildly reduced glomerular filtration rate (GFR 60-89 mL/min/1.73 m2)." [Eurenomics:fschaefer]
 is_a: HP:0012622 ! Chronic kidney disease
 created_by: peter
-creation_date: 2014-01-17T13:22:13Z
+creation_date: 2014-01-17T01:22:13Z
 
 [Term]
 id: HP:0012625
@@ -80532,7 +80643,7 @@ name: Stage 3 chronic kidney disease
 def: "A type of chronic kidney disease with moderately reduced glomerular filtration rate (GFR 30-59 mL/min/1.73 m2)." [Eurenomics:fschaefer]
 is_a: HP:0012622 ! Chronic kidney disease
 created_by: peter
-creation_date: 2014-01-17T13:22:43Z
+creation_date: 2014-01-17T01:22:43Z
 
 [Term]
 id: HP:0012626
@@ -80540,7 +80651,7 @@ name: Stage 4 chronic kidney disease
 def: "A type of chronic kidney disease with severely reduced glomerular filtration rate (GFR 15-29 mL/min/1.73 m2)." [Eurenomics:fschaefer]
 is_a: HP:0012622 ! Chronic kidney disease
 created_by: peter
-creation_date: 2014-01-17T13:23:43Z
+creation_date: 2014-01-17T01:23:43Z
 
 [Term]
 id: HP:0012627
@@ -80549,7 +80660,7 @@ def: "Deposition of fibrillar material that can be found on all anterior segment
 comment: In the eye, pseudoexfoliation syndrome is characterized by the deposition of fibrillar material that can be found on all anterior segment structures bathed by aqueous humor. PXM can be observed in vivo during slit lamp examination. It appears as 'dandruff-like' material in the anterior chamber or most characteristically on the anterior lens capsule deposited in a double concentric ring pattern. The rings are separated by a clear zone presumably created because of the movement of the iris on the anterior lens surface. The central ring is located at the area of the iris sphincter, while the peripheral ring is only visible after pupil dilation. PXM is also often observed by slit lamp examination at the pupillary margin, on the lens zonules and on the trabecular meshwork. The site of production of this material which is a complex of various glycoproteins is unclear, but PXM can potentially originate from the iris, lens epithelium, ciliary body, or the trabecular meshwork.
 is_a: HP:0004328 ! Abnormality of the anterior segment of the eye
 created_by: peter
-creation_date: 2014-01-17T22:50:32Z
+creation_date: 2014-01-17T10:50:32Z
 
 [Term]
 id: HP:0012628
@@ -80558,7 +80669,7 @@ def: "An anomaly of the `suspensory ligament of lens` (FMA:58838), also known as
 synonym: "Ciliary zonule abnormality" EXACT []
 is_a: HP:0012374 ! Abnormality of the globe
 created_by: peter
-creation_date: 2014-01-17T22:59:37Z
+creation_date: 2014-01-17T10:59:37Z
 
 [Term]
 id: HP:0012629
@@ -80567,7 +80678,7 @@ def: "Tremulousness (trembling) of the lens of the eye." [HPO:probinson]
 comment: Phacodonesis results from lesions of some or most of the zonular fibres are broken.
 is_a: HP:0000517 ! Abnormality of the lens
 created_by: peter
-creation_date: 2014-01-17T23:03:09Z
+creation_date: 2014-01-17T11:03:09Z
 
 [Term]
 id: HP:0012630
@@ -80575,7 +80686,7 @@ name: Abnormality of the trabecular meshwork
 def: "An anomaly of the trabecular meshwork, which is the porelike structure surrounding the entire circumference of the anterior chamber at the base of the cornea and near the ciliary body. The trabecular mesh work is responsible for draining the aqueous humor into the canal of Schlemm." [HPO:probinson]
 is_a: HP:0000593 ! Abnormality of the anterior chamber
 created_by: peter
-creation_date: 2014-01-17T23:12:27Z
+creation_date: 2014-01-17T11:12:27Z
 
 [Term]
 id: HP:0012631
@@ -80584,7 +80695,7 @@ def: "Accumulation of abnormal amounts of pigment within the trabecular meshwork
 comment: Gonioscopy can be used to reveal pigment deposition on the trabecular meshwork.
 is_a: HP:0012630 ! Abnormality of the trabecular meshwork
 created_by: peter
-creation_date: 2014-01-17T23:15:03Z
+creation_date: 2014-01-17T11:15:03Z
 
 [Term]
 id: HP:0012632
@@ -80593,7 +80704,7 @@ def: "An anomaly in the amount of force per unit area exerted by the intraocular
 xref: MP:0005257 "abnormal intraocular pressure"
 is_a: HP:0012373 ! Abnormal eye physiology
 created_by: peter
-creation_date: 2014-01-17T23:20:17Z
+creation_date: 2014-01-17T11:20:17Z
 
 [Term]
 id: HP:0012633
@@ -80601,7 +80712,7 @@ name: Asymmetry of intraocular pressure
 def: "A difference in the amount of intraocular pressure in the right and left eye." [HPO:probinson]
 is_a: HP:0012632 ! Abnormal intraocular pressure
 created_by: peter
-creation_date: 2014-01-17T23:21:18Z
+creation_date: 2014-01-17T11:21:18Z
 
 [Term]
 id: HP:0012634
@@ -80610,7 +80721,7 @@ def: "Shedding of the pigment granules that normally adhere to the back of the i
 comment: These pigment granules can accumulate in the trabucular meshwork and lead to increased intraocular pressure. That is coded separately as HP:001263.
 is_a: HP:0008034 ! Abnormal iris pigmentation
 created_by: peter
-creation_date: 2014-01-17T23:30:02Z
+creation_date: 2014-01-17T11:30:02Z
 
 [Term]
 id: HP:0012635
@@ -80619,7 +80730,7 @@ def: "Reduction in the amount of blood flow to the iris." [HPO:probinson]
 comment: This feature can be diagnosed by iris angiography.
 is_a: HP:0007905 ! Abnormal iris vasculature
 created_by: peter
-creation_date: 2014-01-17T23:41:07Z
+creation_date: 2014-01-17T11:41:07Z
 
 [Term]
 id: HP:0012636
@@ -80628,7 +80739,7 @@ def: "Blockage of the retinal vein." [HPO:probinson]
 comment: Retinal vein occlusion can lead to edema and ischemia of the retina.
 is_a: HP:0008046 ! Abnormality of the retinal vasculature
 created_by: peter
-creation_date: 2014-01-17T23:43:32Z
+creation_date: 2014-01-17T11:43:32Z
 
 [Term]
 id: HP:0012637
@@ -80637,7 +80748,7 @@ def: "High urine calcium in the presence of hypocalcemia." [HPO:probinson]
 is_a: HP:0004363 ! Abnormality of calcium homeostasis
 is_a: HP:0011280 ! Abnormality of urine calcium concentration
 created_by: peter
-creation_date: 2014-01-18T16:46:41Z
+creation_date: 2014-01-18T04:46:41Z
 
 [Term]
 id: HP:0012638
@@ -80645,7 +80756,7 @@ name: Abnormality of nervous system physiology
 def: "A functional anomaly of the `nervous system` (FMA:7157)." [HPO:probinson]
 is_a: HP:0000707 ! Abnormality of the nervous system
 created_by: peter
-creation_date: 2014-01-19T20:02:46Z
+creation_date: 2014-01-19T08:02:46Z
 
 [Term]
 id: HP:0012639
@@ -80653,7 +80764,7 @@ name: Abnormality of nervous system morphology
 def: "A structural anomaly of the `nervous system` (FMA:7157)." [HPO:probinson]
 is_a: HP:0000707 ! Abnormality of the nervous system
 created_by: peter
-creation_date: 2014-01-19T20:03:08Z
+creation_date: 2014-01-19T08:03:08Z
 
 [Term]
 id: HP:0012640
@@ -80662,7 +80773,7 @@ def: "A deviation from the norm of the intracranial pressure." [HPO:probinson]
 comment: Intracranial pressure (i.e., the pressure inside the skull) represents the pressue in the brain tissue and in the cerebrospinal fluid (CSF). Deviations from normal are generally identified by measuring the pressure of the CSF.
 is_a: HP:0012638 ! Abnormality of nervous system physiology
 created_by: peter
-creation_date: 2014-01-19T20:06:51Z
+creation_date: 2014-01-19T08:06:51Z
 
 [Term]
 id: HP:0012641
@@ -80672,7 +80783,7 @@ synonym: "Intracranial hypotension" EXACT []
 xref: MeSH:D019585 "Intracranial Hypotension"
 is_a: HP:0012640 ! Abnormality of intracranial pressure
 created_by: peter
-creation_date: 2014-01-19T20:15:01Z
+creation_date: 2014-01-19T08:15:01Z
 
 [Term]
 id: HP:0012642
@@ -80681,7 +80792,7 @@ def: "Lack of development of the cerebellum." [HPO:probinson, pmid:20305277]
 comment: Usually, small remnants of the cerebellum are present; therefore the term subtotal cerebellar agenesis is also used in the literature.
 is_a: HP:0007360 ! Aplasia/Hypoplasia of the cerebellum
 created_by: peter
-creation_date: 2014-01-22T20:14:57Z
+creation_date: 2014-01-22T08:14:57Z
 
 [Term]
 id: HP:0012643
@@ -80690,7 +80801,7 @@ def: "Decreased amount of pigmentation in the `fovea centralis` (FMA:58658)." [H
 is_a: HP:0000493 ! Abnormality of the fovea
 is_a: HP:0008002 ! Abnormality of macular pigmentation
 created_by: peter
-creation_date: 2014-01-22T21:25:34Z
+creation_date: 2014-01-22T09:25:34Z
 
 [Term]
 id: HP:0012644
@@ -80725,7 +80836,7 @@ name: Abnormal inflammatory response
 def: "Any anomaly of the `inflammatory response` (GO:0006954), a response to injury or infection characterized by local vasodilation, extravasation of plasma into intercellular spaces and accumulation of white blood cells and macrophages." [MONARCH:mhaendel]
 is_a: HP:0010978 ! Abnormality of immune system physiology
 created_by: peter
-creation_date: 2014-02-01T13:25:42Z
+creation_date: 2014-02-01T01:25:42Z
 
 [Term]
 id: HP:0012648
@@ -80733,7 +80844,7 @@ name: Decreased inflammatory response
 def: "An abnormal reduction in the `inflammatory response` (GO:0006954) to injury or infection." [MONARCH:mhaendel]
 is_a: HP:0012647 ! Abnormal inflammatory response
 created_by: peter
-creation_date: 2014-02-01T13:29:24Z
+creation_date: 2014-02-01T01:29:24Z
 
 [Term]
 id: HP:0012649
@@ -80741,7 +80852,7 @@ name: Increased inflammatory response
 def: "A abnormal increase in the `inflammatory response` (GO:0006954) to injury or infection." [MONARCH:mhaendel]
 is_a: HP:0012647 ! Abnormal inflammatory response
 created_by: peter
-creation_date: 2014-02-01T13:29:58Z
+creation_date: 2014-02-01T01:29:58Z
 
 [Term]
 id: HP:0012650
@@ -80749,7 +80860,7 @@ name: Perisylvian polymicrogyria
 def: "An excessive number of small gyri (convolutions) on the surface of the brain in the region surrounding the sylvian fissures." [HPO:probinson, pmid:15159468]
 is_a: HP:0002126 ! Polymicrogyria
 created_by: peter
-creation_date: 2014-02-06T19:47:51Z
+creation_date: 2014-02-06T07:47:51Z
 
 [Term]
 id: HP:0012651
@@ -80757,7 +80868,914 @@ name: Abasia
 def: "Ay severe form of gait ataxia such that an affected person cannot walk at all." [HPO:probinson]
 is_a: HP:0002066 ! Gait ataxia
 created_by: peter
-creation_date: 2014-02-06T19:52:50Z
+creation_date: 2014-02-06T07:52:50Z
+
+[Term]
+id: HP:0012652
+name: Exercise-induced asthma
+def: "Asthma attacks following exercise." [HPO:probinson]
+xref: MeSH:D001250 "Asthma, Exercise-Induced"
+is_a: HP:0002099 ! Asthma
+created_by: peter
+creation_date: 2014-02-12T10:42:14Z
+
+[Term]
+id: HP:0012653
+name: Status Asthmaticus
+def: "Severe asthma unresponsive to repeated courses of beta-agonist therapy such as inhaled albuterol, levalbuterol, or subcutaneous epinephrine." [HPO:probinson, pmid:22794687]
+synonym: "Acute severe asthma" EXACT []
+xref: MeSH:D013224 "Status Asthmaticus"
+is_a: HP:0002099 ! Asthma
+created_by: peter
+creation_date: 2014-02-12T10:43:34Z
+
+[Term]
+id: HP:0012654
+name: Abnormal CSF dopamine level
+def: "Abnormal concentration of `dopamine` (CHEBI:18243) in the cerebrospinal fluid (CSF)." [Monarch:mhaendel]
+is_a: HP:0002921 ! Abnormality of the cerebrospinal fluid
+created_by: peter
+creation_date: 2014-02-15T10:35:24Z
+
+[Term]
+id: HP:0012655
+name: Elevated CSF dopamine level
+def: "Increased concentration of `dopamine` (CHEBI:18243) in the cerebrospinal fluid (CSF)." [Monarch:mhaendel]
+is_a: HP:0012654 ! Abnormal CSF dopamine level
+created_by: peter
+creation_date: 2014-02-15T10:36:53Z
+
+[Term]
+id: HP:0012656
+name: Reduced CSF dopamine level
+def: "Decreased concentration of `dopamine` (CHEBI:18243) in the cerebrospinal fluid (CSF)." [Monarch:mhaendel]
+is_a: HP:0012654 ! Abnormal CSF dopamine level
+created_by: peter
+creation_date: 2014-02-15T10:37:27Z
+
+[Term]
+id: HP:0012657
+name: Abnormal brain positron emission tomography
+def: "A functional brain anomaly detectable by positron emission tomography (PET). PET scanning is a method for functional brain imaging, and its measurements reflect the amount of brain activity in the various regions of the brain." [HPO:probinson]
+comment: Note that while structural brain anomalies can cause abnormal brain PET scan results, structural abnormalities are detectable by multiple neuroimaging modalities and should be coded using terms from the hierarchy under 'Abnormality of nervous system morphology' (HP:0012639).
+is_a: HP:0012638 ! Abnormality of nervous system physiology
+created_by: peter
+creation_date: 2014-02-15T11:22:18Z
+
+[Term]
+id: HP:0012658
+name: Abnormal brain FDG positron emission tomography
+def: "An anomaly detectable in [18F]-fluorodeoxyglucose (FDG) positron emission tomography (PET) brain scans. Glucose uptake measured with FDG-PET is a marker of neuronal metabolic activity." [HPO:probinson]
+is_a: HP:0012657 ! Abnormal brain positron emission tomography
+created_by: peter
+creation_date: 2014-02-15T11:29:38Z
+
+[Term]
+id: HP:0012659
+name: Prefrontal hypometabolism in FDG PET
+def: "Reduced uptake of [18F]-fluorodeoxyglucose  (FDG) in the prefrontal cortex as measured by positron emission tomography (PET) brain scan." [HPO:probinson, pmid:23585882]
+comment: Glucose uptake measured with FDG-PET is a marker of neuronal metabolic activity, thus this sign indicates reduced metabolic activity in the prefrontal cortex.
+is_a: HP:0012658 ! Abnormal brain FDG positron emission tomography
+created_by: peter
+creation_date: 2014-02-15T11:33:12Z
+
+[Term]
+id: HP:0012660
+name: Thalamic hypometabolism in FDG PET
+def: "Reduced uptake of [18F]-fluorodeoxyglucose  (FDG) in the thalamus as measured by positron emission tomography (PET) brain scan." [HPO:probinson]
+comment: Glucose uptake measured with FDG-PET is a marker of neuronal metabolic activity, thus this sign indicates reduced metabolic activity in the thalamus.
+is_a: HP:0012658 ! Abnormal brain FDG positron emission tomography
+created_by: peter
+creation_date: 2014-02-15T11:35:25Z
+
+[Term]
+id: HP:0012661
+name: Hypothalamic hypometabolism in FDG PET
+def: "Reduced uptake of [18F]-fluorodeoxyglucose  (FDG) in the hypothalamus as measured by positron emission tomography (PET) brain scan." [HPO:probinson]
+comment: Glucose uptake measured with FDG-PET is a marker of neuronal metabolic activity, thus this sign indicates reduced metabolic activity in the hypothalamus.
+is_a: HP:0012658 ! Abnormal brain FDG positron emission tomography
+created_by: peter
+creation_date: 2014-02-15T11:37:59Z
+
+[Term]
+id: HP:0012662
+name: Parietal hypometabolism in FDG PET
+def: "Reduced uptake of [18F]-fluorodeoxyglucose  (FDG) in the parietal cortex as measured by positron emission tomography (PET) brain scan." [HPO:probinson, pmid:15073255]
+comment: Glucose uptake measured with FDG-PET is a marker of neuronal metabolic activity, thus this sign indicates reduced metabolic activity in the parietal cortex.
+is_a: HP:0012658 ! Abnormal brain FDG positron emission tomography
+created_by: peter
+creation_date: 2014-02-15T11:45:41Z
+
+[Term]
+id: HP:0012663
+name: Mildly reduced ejection fraction
+def: "A small reduction in the fraction of blood pumped from the left ventricle with each cardiac cycle. The normal range in adults is at least 55 percent, and a mild reduction is defined as 45-54 percent." [HPO:probinson, pmid:16376782]
+is_a: HP:0012664 ! Reduced ejection fraction
+created_by: peter
+creation_date: 2014-02-15T01:06:28Z
+
+[Term]
+id: HP:0012664
+name: Reduced ejection fraction
+def: "A diminution of the volumetric fraction of blood pumped out of the ventricle with each cardiac cycle." [HPO:probinson]
+comment: The normal range is at least 55 percent.
+is_a: HP:0003116 ! Abnormal echocardiogram
+created_by: peter
+creation_date: 2014-02-15T01:03:37Z
+
+[Term]
+id: HP:0012665
+name: Moderately reduced ejection fraction
+def: "A medium reduction in the fraction of blood pumped from the left ventricle with each cardiac cycle. The normal range in adults is at least 55 percent, and a moderate reduction is defined as 30-44 percent." [HPO:probinson, pmid:16376782]
+is_a: HP:0012664 ! Reduced ejection fraction
+created_by: peter
+creation_date: 2014-02-15T01:08:33Z
+
+[Term]
+id: HP:0012666
+name: Severely reduced ejection fraction
+def: "A large reduction in the fraction of blood pumped from the left ventricle with each cardiac cycle. The normal range in adults is at least 55 percent, and a moderate reduction is defined as less than 30 percent." [HPO:probinson, pmid:16376782]
+is_a: HP:0012664 ! Reduced ejection fraction
+created_by: peter
+creation_date: 2014-02-15T01:09:02Z
+
+[Term]
+id: HP:0012667
+name: Regional left ventricular wall motion abnormality
+def: "An abnormal motion of a segment of the left ventricle during the cardiac cycle." [HPO:probinson]
+comment: This feature can be appreciated using color kinesis, which tracks the motion of the endocardium in real time throughout systole and results in color-encoded images reflecting the magnitude and timing of endocardial motion.
+is_a: HP:0003116 ! Abnormal echocardiogram
+created_by: peter
+creation_date: 2014-02-15T01:12:48Z
+
+[Term]
+id: HP:0012668
+name: Vasovagal syncope
+def: "Loss of consciousness due to a reduction in blood pressure that is associated with an increase in vagal tone and peripheral vasodilation." [HPO:probinson, MeSH:D019462]
+synonym: "Neurocardiogenic syncope" EXACT []
+synonym: "Reflex syncope" EXACT []
+synonym: "Situational syncope" EXACT []
+xref: MeSH:D019462 "Syncope, Vasovagal"
+is_a: HP:0001279 ! Syncope
+created_by: peter
+creation_date: 2014-02-15T01:33:13Z
+
+[Term]
+id: HP:0012669
+name: Carotid sinus syncope
+def: "An exaggerated response to carotid sinus baroreceptor stimulation resulting in syncope from transient diminished cerebral perfusion." [HPO:probinson]
+comment: Carotid sinus syncope cam be elicited mechanical manipulation of the carotid sinuses (eg, taking pulses in the neck, shaving).
+is_a: HP:0001279 ! Syncope
+created_by: peter
+creation_date: 2014-02-15T01:39:14Z
+
+[Term]
+id: HP:0012670
+name: Orthostatic syncope
+def: "Syncope following a quick change in position from lying down to standing." [HPO:probinson]
+is_a: HP:0001279 ! Syncope
+created_by: peter
+creation_date: 2014-02-15T01:41:57Z
+
+[Term]
+id: HP:0012671
+name: Abulia
+def: "Poverty of behavior and speech output, lack of initiative, loss of emotional responses, psychomotor slowing, and prolonged speech latency." [HPO:probinson, pmid:16030444, UToronto:HTrang]
+comment: Abulia is less severe thana kinetic mutism, and more so than apathy.
+synonym: "Aboulia" EXACT []
+is_a: HP:0000745 ! Diminished motivation
+created_by: peter
+creation_date: 2014-02-27T10:48:32Z
+
+[Term]
+id: HP:0012672
+name: Akinetic mutism
+def: "Akinetic mutism is essentially characterized by a total absence of spontaneous behavior and speech occurring in the presence of preserved visual tracking." [HPO:probinson]
+is_a: HP:0000745 ! Diminished motivation
+created_by: peter
+creation_date: 2014-02-27T10:50:59Z
+
+[Term]
+id: HP:0012673
+name: Aplasia of the upper vagina
+def: "A failure to develop of the upper vagina." [HPO:probinson]
+comment: The female reproductive tract primarily develops from the Müllerian ducts (MD), which form as an invagination of the coelomic epithelium and further develop into the upper two-thirds of the vagina, the uterus and the Fallopian tubes. Complete aplasia of the uterus, cervix, and upper vagina is termed Mullerian aplasia. This term refers to the aplasia of the upper roughly two thirds of the vagina that is characteristic of Mullerian aplasia.
+is_a: HP:0003250 ! Aplasia of the vagina
+created_by: peter
+creation_date: 2014-02-27T11:00:26Z
+
+[Term]
+id: HP:0012674
+name: Aplasia of the lower vagina
+def: "A failure to develop of the lower part of the vagina." [HPO:probinson]
+synonym: "Agenesis of the lower vagina" EXACT []
+is_a: HP:0003250 ! Aplasia of the vagina
+created_by: peter
+creation_date: 2014-02-27T11:09:14Z
+
+[Term]
+id: HP:0012675
+name: Iron accumulation in brain
+def: "An abnormal build up of iron (Fe) in brain tissue." [HPO:probinson]
+synonym: "Brain iron deposition" EXACT []
+is_a: HP:0012443 ! Abnormality of the brain
+created_by: hecht
+creation_date: 2014-03-13T07:22:40Z
+
+[Term]
+id: HP:0012676
+name: Copper accumulation in brain
+def: "An anomalous build up of copper (Cu) in the `brain` (FMA:50801)." [HPO:probinson]
+is_a: HP:0012443 ! Abnormality of the brain
+created_by: hecht
+creation_date: 2014-03-13T07:28:03Z
+
+[Term]
+id: HP:0012677
+name: Iron accumulation in globus pallidus
+def: "An abnormal build up of iron (Fe) in the `globus pallidus` (FMA:61835)." [HPO:probinson]
+is_a: HP:0012675 ! Iron accumulation in brain
+created_by: hecht
+creation_date: 2014-03-13T07:29:37Z
+
+[Term]
+id: HP:0012678
+name: Iron accumulation in substantia nigra
+def: "An anomalous build up of iron (Fe) in the `substantia nigra` (FMA:67947)." [HPO:probinson]
+is_a: HP:0012675 ! Iron accumulation in brain
+created_by: hecht
+creation_date: 2014-03-13T07:29:54Z
+
+[Term]
+id: HP:0012679
+name: Widened interpedicular distance
+def: "An increase in the distance between vertebral pedicles, which are the two short, thick processes, which project backward, one on either side, from the upper part of the vertebral body, at the junction of its posterior and lateral surfaces." [UToronto:htrang]
+is_a: HP:0008438 ! Vertebral arch anomaly
+created_by: peter
+creation_date: 2014-03-22T12:41:17Z
+
+[Term]
+id: HP:0012680
+name: Abnormality of the pineal gland
+def: "An anomaly of the `pineal gland` (FMA:62033),a small endocrine gland in the brain that produces melatonin." [HPO:probinson]
+is_a: HP:0000818 ! Abnormality of the endocrine system
+created_by: peter
+creation_date: 2014-03-22T12:46:36Z
+
+[Term]
+id: HP:0012681
+name: Abnormality of pineal morphology
+def: "A structural abnormality of the `pineal gland` (FMA:62033)." [UToronto:htrang]
+comment: The pineal gland typically measures 7 x 6 x 3mm in size and is located in a groove between the laterally placed thalamic bodies.
+is_a: HP:0012680 ! Abnormality of the pineal gland
+created_by: peter
+creation_date: 2014-03-22T12:50:21Z
+
+[Term]
+id: HP:0012682
+name: Pineal gland calcification
+def: "Accumulation of calcium salts in the `pineal gland` (FMA:62033)." [HPO:probinson]
+comment: This feature can be appreciated on skull radiography.
+is_a: HP:0012681 ! Abnormality of pineal morphology
+created_by: peter
+creation_date: 2014-03-22T12:51:57Z
+
+[Term]
+id: HP:0012683
+name: Pineal cyst
+def: "A glial uniloculated or multiloculated fluid-filled sac that either reside within or completely replace the pineal gland." [HPO:probinson, pmid:21801982]
+comment: Pineal cysts are benign and often asymptomatic lesions. They are typically visualized by computed tomography or magnetic resonance imaging.
+is_a: HP:0012681 ! Abnormality of pineal morphology
+created_by: peter
+creation_date: 2014-03-22T13:01:45Z
+
+[Term]
+id: HP:0012684
+name: Abnormal pineal volume
+def: "An abnormal increase or decrease in the quantity of three-dimensional space taken up by the pineal gland." [UToronto:htrang]
+comment: This feature is typically assessed by magnetic resonance tomography of the brain.
+is_a: HP:0012681 ! Abnormality of pineal morphology
+created_by: peter
+creation_date: 2014-03-22T13:08:48Z
+
+[Term]
+id: HP:0012685
+name: Decreased pineal volume
+def: "An abnormal reduction in the quantity of three-dimensional space taken up by the pineal gland." [pmid:24456088, UToronto:htrang]
+is_a: HP:0012684 ! Abnormal pineal volume
+created_by: peter
+creation_date: 2014-03-22T13:10:12Z
+
+[Term]
+id: HP:0012686
+name: Increased pineal volume
+def: "An abnormal elevation in the quantity of three-dimensional space taken up by the pineal gland." [UToronto:htrang]
+is_a: HP:0012684 ! Abnormal pineal volume
+created_by: peter
+creation_date: 2014-03-22T13:11:33Z
+
+[Term]
+id: HP:0012687
+name: Agenesis of pineal gland
+def: "Failure to develop of the pineal gland, defined clinically as the absence of the pineal gland with no indication of the pineal gland even having been present." [UToronto:htrang]
+is_a: HP:0012681 ! Abnormality of pineal morphology
+created_by: peter
+creation_date: 2014-03-22T13:13:13Z
+
+[Term]
+id: HP:0012688
+name: Abnormality of pineal physiology
+def: "A functional abnormality of the `pineal gland` (FMA:62033)." [UToronto:htrang]
+is_a: HP:0012680 ! Abnormality of the pineal gland
+created_by: peter
+creation_date: 2014-03-22T13:15:36Z
+
+[Term]
+id: HP:0012689
+name: Abnormal pineal melatonin secretion
+def: "An anomaly in the amount or timing of melatonin secretion by the pineal gland. Note that melatonin is also synthesized by multiple tissues outside of the pineal gland." [pmid:22724080, UToronto:htrang]
+comment: The rhythm of melatonin synthesized in and released from the pineal gland is characterized by a prominent nocturnal peak, which also contains temporal information that had originated in the suprachiasmatic nucleus. Strong reductions of circulating melatonin are also observed in numerous disorders and diseases, including Alzheimer's disease, various other neurological and stressful conditions, pain, cardiovascular diseases, cases of cancer, endocrine and metabolic disorders, in particular diabetes type 2.
+is_a: HP:0012688 ! Abnormality of pineal physiology
+created_by: peter
+creation_date: 2014-03-22T13:16:40Z
+
+[Term]
+id: HP:0012690
+name: T2 hypointense thalamus
+def: "A darker than expected T2 signal on magnetic resonance imaging (MRI) of the thalamus. This term refers to a diffuse hypointensity affecting the entire thalamus." [HPO:probinson]
+is_a: HP:0012696 ! Abnormal thalamic MRI signal intensity
+created_by: peter
+creation_date: 2014-03-22T16:32:50Z
+
+[Term]
+id: HP:0012691
+name: Focal T2 hypointense thalamic lesion
+def: "A darker than expected T2 signal on magnetic resonance imaging (MRI) of the thalamus. This term refers to a localized hypointensity affecting a particular region of the thalamus." [HPO:probinson]
+is_a: HP:0012696 ! Abnormal thalamic MRI signal intensity
+created_by: peter
+creation_date: 2014-03-22T16:52:32Z
+
+[Term]
+id: HP:0012692
+name: Focal T2 hyperintense thalamic lesion
+def: "A lighter than expected T2 signal on magnetic resonance imaging (MRI) of the thalamus. This term refers to a localized hyperintensity affecting a particular region of the thalamus." [HPO:probinson]
+comment: The term "unidentified bright object" has been used to describe T2 hyperintense lesions in the thalamus and elsewhere in patients with neurofibromatosis.
+is_a: HP:0012696 ! Abnormal thalamic MRI signal intensity
+created_by: peter
+creation_date: 2014-03-22T16:54:03Z
+
+[Term]
+id: HP:0012693
+name: Abnormal thalamic size
+def: "Deviation from the normal range of size of the `thalamus` (FMA:62007)." [UToronto:htrang]
+is_a: HP:0010663 ! Abnormality of the thalamus
+created_by: peter
+creation_date: 2014-03-22T17:45:51Z
+
+[Term]
+id: HP:0012694
+name: Enlarged thalamic volume
+def: "An increase in the quantity of space occupied by the `thalamus` (FMA:62007)." [UToronto:htrang]
+is_a: HP:0012693 ! Abnormal thalamic size
+created_by: peter
+creation_date: 2014-03-22T17:47:14Z
+
+[Term]
+id: HP:0012695
+name: Decreased thalamic volume
+def: "A reduction in the quantity of space occupied by the `thalamus` (FMA:62007)." [UToronto:htrang]
+is_a: HP:0012693 ! Abnormal thalamic size
+created_by: peter
+creation_date: 2014-03-22T17:48:28Z
+
+[Term]
+id: HP:0012696
+name: Abnormal thalamic MRI signal intensity
+def: "A deviation from normal signal on magnetic resonance imaging (MRI) of the thalamus." [HPO:probinson]
+is_a: HP:0010663 ! Abnormality of the thalamus
+created_by: peter
+creation_date: 2014-03-22T17:49:08Z
+
+[Term]
+id: HP:0012697
+name: Small basal ganglia
+def: "Decreased size of the `basal ganglia` (FMA:84013)." [HPO:probinson]
+xref: UMLS:C1859470 "Large basal ganglia"
+is_a: HP:0002134 ! Abnormality of the basal ganglia
+created_by: peter
+creation_date: 2014-03-22T18:01:22Z
+
+[Term]
+id: HP:0012698
+name: Cerebellar gliosis
+def: "The presence of `gliosis` (MPATH:182) in the `cerebellum` (FMA:67944)." [UToronto:htrang]
+is_a: HP:0001317 ! Abnormality of the cerebellum
+is_a: HP:0002171 ! Gliosis
+created_by: peter
+creation_date: 2014-03-22T18:03:03Z
+
+[Term]
+id: HP:0012699
+name: Anomaly of lower limb diaphyses
+def: "A structural abnormality of a diaphysis of the leg." [UToronto:htrang]
+is_a: HP:0006504 ! Anomaly of the limb diaphyses
+created_by: peter
+creation_date: 2014-03-22T18:14:15Z
+
+[Term]
+id: HP:0012700
+name: Abnormal large intestine physiology
+def: "A functional anomaly of the large intestine." [HPO:probinson]
+is_a: HP:0002250 ! Abnormality of the large intestine
+created_by: peter
+creation_date: 2014-03-22T18:20:38Z
+
+[Term]
+id: HP:0012701
+name: Bowel urgency
+def: "A sudden, irresistible need to have a bowel movement." [UToronto:htrang]
+synonym: "Fecal urgency" EXACT []
+is_a: HP:0012700 ! Abnormal large intestine physiology
+created_by: peter
+creation_date: 2014-03-22T18:22:14Z
+
+[Term]
+id: HP:0012702
+name: Tenesmus
+def: "A repeated, painful urge to defecate without excreting stool." [HPO:probinson]
+is_a: HP:0012700 ! Abnormal large intestine physiology
+created_by: peter
+creation_date: 2014-03-22T18:23:05Z
+
+[Term]
+id: HP:0012703
+name: Abnormality of the subarachnoid space
+def: "Abnormality in the space in the meninges beneath the arachnoid membrane and above the pia mater that contains the cerebrospinal fluid." [UToronto:htrang]
+is_a: HP:0007319 ! Morphological abnormality of the central nervous system
+created_by: peter
+creation_date: 2014-03-22T19:45:24Z
+
+[Term]
+id: HP:0012704
+name: Widened subarachnoid space
+def: "An increase in size of the anatomic space between the arachnoid membrane and pia mater." [HPO:probinson]
+synonym: "Enlarged subarachnoid space" EXACT []
+is_a: HP:0012703 ! Abnormality of the subarachnoid space
+created_by: peter
+creation_date: 2014-03-22T19:59:21Z
+
+[Term]
+id: HP:0012705
+name: Abnormal metabolic brain imaging by MRS
+def: "An anomaly of metabolism in the brain identified by magnetic resonance spectroscopy (MRS)." [HPO:probinson]
+comment: MRS can only detect a few metabolites as least millimolar concentrations are necessary for the metabolites to be detected. The major brain metabolites detected are choline (Cho), creatine (Cr), N-acetyl aspartate (NAA), lactate, myo-inositol, glutamine and glutamate, lipids, and the amino acids leucine and alanine.
+is_a: HP:0012638 ! Abnormality of nervous system physiology
+created_by: peter
+creation_date: 2014-03-22T20:04:18Z
+
+[Term]
+id: HP:0012706
+name: Elevated brain choline level by MRS
+def: "An increase in the level of choline-containing compounds in the brain identified by magnetic resonance spectroscopy (MRS)." [UToronto:htrang]
+comment: The Choline (Cho) peak is a heterogeneous peak representing various choline-containing compounds such as acetylcholine, phosphocholine (lecithin), glycerophosphocholine, and various other intermediates of phospholipids metabolism. It is an indicator of cell density and cell wall turnover. Elevated levels are found in tumors, especially malignant ones, and in certain demyelinating diseases. Choline resonance presents at 3.22 ppm. Studies have shown there is also a direct association between Cho and levels of Ki-67, a protein expressed in all phases of the cell cycle except GO that serves as a good marker for cellular proliferation. This observation makes Cho a reliable predictor of cellular activity in tumor tissue.
+is_a: HP:0012705 ! Abnormal metabolic brain imaging by MRS
+created_by: peter
+creation_date: 2014-03-22T20:06:29Z
+
+[Term]
+id: HP:0012707
+name: Elevated brain lactate level by MRS
+def: "An increase in the level of lactate in the brain identified by magnetic resonance spectroscopy (MRS)." [UToronto:htrang]
+comment: Lactate (Lac) is absent in normal brain tissue and its presence is indicative of anerobic glycolysis at the cellular level. Elevated levels are associated with ischemic conditions or metabolic disorders (where anerobic glycolysis predominates) but is also noted at the edges of large brain tumours. The peak is very sensitive to the technique employed and unless the correct echo time is employed, it may be artifactually suppressed. The spectral peak lies at 1:33 ppm. The peak is often inverted or bifid.
+is_a: HP:0012705 ! Abnormal metabolic brain imaging by MRS
+created_by: peter
+creation_date: 2014-03-22T20:08:20Z
+
+[Term]
+id: HP:0012708
+name: Reduced brain N-acetyl aspartate level by MRS
+def: "A decrease in the level of N-acetyl aspartate in the brain identified by magnetic resonance spectroscopy (MRS)." [UToronto:htrang]
+comment: N-Acetyl Aspartate (NAA) is an amino acid found exclusively in neurons. It is regarded as a non-specific marker and is thought to be involved in Coenzyme A interactions and lipogenesis within the brain. It is a marker of neuronal viability. Normal NAA concentration is in the range of 8-9 mmol/kg in healthy adult brain. Concentrations are decreased in conditions leading to axonal injury or neuronal loss. NAA is also decreased in other conditions such as neoplasm, infarction, and inflammatory conditions such as multiple sclerosis. NAA peak is seen at 2.0 ppm (parts per million) on MR spectra.
+is_a: HP:0012705 ! Abnormal metabolic brain imaging by MRS
+created_by: peter
+creation_date: 2014-03-22T20:09:12Z
+
+[Term]
+id: HP:0012709
+name: Abnormal brain choline/creatine ratio by MRS
+def: "A deviation from normal in the ratio of choline to creatine in the brain identified by magnetic resonance spectroscopy (MRS)." [UToronto:htrang]
+comment: Creatine (Cr) is related to cell energy pathways, being both the substrate and product of creatine kinase. Creatine reflects the energy potential available in brain tissue. Its concentration in normal brain remains very high and stable due to high metabolic energy needs of brain cells. Its peak is noticed at 3.0 ppm. Creatine-Choline ratios are an important indicator of disease states such as demyelization.
+is_a: HP:0012705 ! Abnormal metabolic brain imaging by MRS
+created_by: peter
+creation_date: 2014-03-22T20:12:15Z
+
+[Term]
+id: HP:0012710
+name: Ingrown nail
+def: "Excessive growth of a nail laterally into the nail fold." [HPO:probinson]
+xref: MeSH:D009263 "Nails, Ingrown"
+is_a: HP:0001597 ! Abnormality of the nail
+created_by: peter
+creation_date: 2014-03-23T12:09:47Z
+
+[Term]
+id: HP:0012711
+name: Delayed ossification of vertebral epiphysis
+def: "A delay in the process of formation and maturation of the epiphysis of one or more vertebrae." [HPO:probinson]
+is_a: HP:0100569 ! Abnormal vertebral ossification
+created_by: peter
+creation_date: 2014-03-23T12:27:51Z
+
+[Term]
+id: HP:0012712
+name: Mild hearing impairment
+def: "The presence of a `mild` (PATO:0000394) form of `hearing impairment` (HP:0000365)." [HPO:probinson]
+is_a: HP:0000365 ! Hearing impairment
+created_by: peter
+creation_date: 2014-03-23T12:33:46Z
+
+[Term]
+id: HP:0012713
+name: Moderate hearing impairment
+def: "The presence of a `moderate` (PATO:0000395) form of `hearing impairment` (HP:0000365)." [HPO:probinson]
+is_a: HP:0000365 ! Hearing impairment
+created_by: peter
+creation_date: 2014-03-23T12:35:59Z
+
+[Term]
+id: HP:0012714
+name: Severe hearing impairment
+def: "A `severe` (PATO:0000396) form of `hearing impairment` (HP:0000365)." [HPO:probinson]
+is_a: HP:0000365 ! Hearing impairment
+created_by: peter
+creation_date: 2014-03-23T12:37:33Z
+
+[Term]
+id: HP:0012715
+name: Profound hearing impairment
+def: "A profound (essentially complete) form of `hearing impairment` (HP:0000365)." [HPO:probinson]
+is_a: HP:0000365 ! Hearing impairment
+created_by: peter
+creation_date: 2014-03-23T12:38:39Z
+
+[Term]
+id: HP:0012716
+name: Moderate conductive hearing impairment
+def: "The presence of a `moderate` (PATO:0000395) form of `conductive hearing impairment` (HP:0000405)." [HPO:probinson]
+comment: Conductive hearing impairment with 21-40 dB deficit.
+synonym: "Conductive hearing loss, moderate" EXACT []
+is_a: HP:0000405 ! Conductive hearing impairment
+is_a: HP:0012712 ! Mild hearing impairment
+is_a: HP:0012713 ! Moderate hearing impairment
+created_by: peter
+creation_date: 2014-03-23T12:40:05Z
+
+[Term]
+id: HP:0012717
+name: Severe conductive hearing impairment
+def: "A `severe` (PATO:0000396) form of `conductive hearing impairment` (HP:0000405)." [HPO:probinson]
+comment: Conductive hearing impairment with 21-40 dB deficit.
+synonym: "Conductive hearing loss, severe" EXACT []
+is_a: HP:0000405 ! Conductive hearing impairment
+is_a: HP:0012712 ! Mild hearing impairment
+is_a: HP:0012714 ! Severe hearing impairment
+created_by: peter
+creation_date: 2014-03-23T12:40:51Z
+
+[Term]
+id: HP:0012718
+name: Morphological abnormality of the gastrointestinal tract
+def: "Abnormal structure of the gastrointestinal tract." [HPO:probinson]
+synonym: "Morphological anomaly of the digestive system" EXACT []
+is_a: HP:0011024 ! Abnormality of the gastrointestinal tract
+created_by: peter
+creation_date: 2014-03-23T13:09:02Z
+
+[Term]
+id: HP:0012719
+name: Functional abnormality of the gastrointestinal tract
+def: "`Abnormal` (PATO:0000460) `functionality` (PATO:0001509) of the gastrointestinal tract." [HPO:probinson]
+is_a: HP:0011024 ! Abnormality of the gastrointestinal tract
+created_by: peter
+creation_date: 2014-03-23T13:10:47Z
+
+[Term]
+id: HP:0012720
+name: Neoplasm of the nose
+def: "Cancer of the nasal cavity." [HPO:probinson]
+synonym: "Nasal neoplasm" EXACT []
+synonym: "Nose cancer" EXACT []
+xref: MeSH:D009669 "Nose Neoplasms"
+is_a: HP:0000366 ! Abnormality of the nose
+created_by: peter
+creation_date: 2014-03-23T13:16:06Z
+
+[Term]
+id: HP:0012721
+name: Venous malformation
+def: "A vascular malformation resulting from a developmental error of venous tissue composed of dysmorphic channels lined by flattened endothelium and exhibiting slow turnover. A venous malformation may present as a blue patch on the skin ranging to a soft blue mass. Venous malformations are easily compressible and usually swell in thewhen venous pressure increases (e.g., when held in a dependent position or when a child cries). They may be relatively localized or quite extensive within an anatomic region." [HPO:probinson]
+comment: Venous malformations are always present at birth, and usually involve the skin of the face, limbs, or trunk.
+is_a: HP:0002624 ! Venous abnormality
+created_by: peter
+creation_date: 2014-03-23T13:20:33Z
+
+[Term]
+id: HP:0012722
+name: Heart block
+def: "Impaired conduction of cardiac impulse occurring anywhere along the conduction pathway." [HPO:probinson]
+xref: MeSH:D006327 "Heart Block"
+xref: UMLS:C0018794 "Heart Block"
+is_a: HP:0011675 ! Arrhythmia
+created_by: peter
+creation_date: 2014-03-23T13:32:14Z
+
+[Term]
+id: HP:0012723
+name: Sinoatrial block
+def: "Disturbance in the atrial activation that is caused by transient failure of impulse conduction from the sinoatrial node to the cardiac atria." [HPO:probinson]
+comment: Sinoatrial block is characterized by a delayed in heartbeat and pauses between P waves as demonstrated by electrocardiography.
+xref: MeSH:D012848 "Sinoatrial Block"
+is_a: HP:0011702 ! Abnormal electrophysiology of sinoatrial node origin
+is_a: HP:0012722 ! Heart block
+created_by: peter
+creation_date: 2014-03-23T13:34:01Z
+
+[Term]
+id: HP:0012724
+name: Upper eyelid edema
+def: "Edema in the region of the upper eyelid." [HPO:probinson]
+synonym: "Fullness of upper eyelid " EXACT []
+synonym: "Swelling of upper eyelid " EXACT []
+is_a: HP:0100540 ! Palpebral edema
+created_by: peter
+creation_date: 2014-03-23T13:38:57Z
+
+[Term]
+id: HP:0012725
+name: Cutaneous syndactyly
+def: "A soft tissue continuity in the A/P axis between two digits that extends distally to at least the level of the proximal interphalangeal joints, or a soft tissue continuity in the A/P axis between two digits that lies significantly distal to the flexion crease that overlies the metacarpophalangeal or metatarsophalangeal joint of the adjacent digits." [HPO:probinson]
+synonym: "Cutaneous syndactyly of digits" EXACT []
+synonym: "Syndactyly, cutaneous" EXACT []
+is_a: HP:0001159 ! Syndactyly
+created_by: peter
+creation_date: 2014-03-23T13:40:45Z
+
+[Term]
+id: HP:0012726
+name: Episodic hypokalemia
+def: "An abnormally decreased `potassium` (CHEBI:29103) concentration in the blood occurring periodically with a return to normal between the episodes." [HPO:probinson]
+is_a: HP:0002900 ! Hypokalemia
+created_by: peter
+creation_date: 2014-03-23T14:08:24Z
+
+[Term]
+id: HP:0012727
+name: Thoracic aortic aneurysm
+def: "A bulging, weakened area in the wall of the thoracic aorta." [HPO:probinson]
+is_a: HP:0004942 ! Aortic aneurysm
+is_a: HP:0005112 ! Dilatation of the abdominal aorta
+created_by: peter
+creation_date: 2014-03-23T14:22:20Z
+
+[Term]
+id: HP:0012728
+name: Fusiform descending thoracic aortic aneurysm
+def: "A type of descending thoracic aortic aneurysm that bulges or balloons out on all sides of the aorta." [HPO:probinson]
+is_a: HP:0004954 ! Descending aortic aneurysm
+created_by: peter
+creation_date: 2014-03-23T14:26:12Z
+
+[Term]
+id: HP:0012729
+name: Saccular descending thoracic aortic aneurysm
+def: "A type of descending thoracic aortic aneurysm that bulges or balloons out on only one side of the aorta." [HPO:probinson]
+is_a: HP:0004954 ! Descending aortic aneurysm
+created_by: peter
+creation_date: 2014-03-23T14:27:11Z
+
+[Term]
+id: HP:0012730
+name: Aglossia
+def: "Absence of the tongue owing to a developmental abnormality." [HPO:probinson]
+synonym: "Absence of tongue" EXACT []
+is_a: HP:0010295 ! Aplasia/Hypoplasia of the tongue
+created_by: peter
+creation_date: 2014-03-23T14:30:53Z
+
+[Term]
+id: HP:0012731
+name: Ectopic anterior pituitary gland
+def: "Abnormal anatomic location of the anterior pituitary gland." [HPO:probinson]
+is_a: HP:0011747 ! Abnormality of the anterior pituitary
+created_by: peter
+creation_date: 2014-03-23T14:41:41Z
+
+[Term]
+id: HP:0012732
+name: Anorectal anomaly
+def: "An abnormality of the anus or rectum." [HPO:probinson]
+xref: MeSH:C567938 "Anorectal Anomalies"
+is_a: HP:0012718 ! Morphological abnormality of the gastrointestinal tract
+created_by: peter
+creation_date: 2014-03-23T14:48:00Z
+
+[Term]
+id: HP:0012733
+name: Macule
+def: "A flat, distinct, discolored area of skin less than 1 cm wide that does not involve any change in the thickness or texture of the skin." [HPO:probinson]
+is_a: HP:0011355 ! Localized skin lesion
+created_by: peter
+creation_date: 2014-03-23T14:54:25Z
+
+[Term]
+id: HP:0012734
+name: Ketotic hypoglycemia
+def: "Low blood glucose is accompanied by elevated levels of ketone bodies in the body." [HPO:probinson]
+is_a: HP:0001943 ! Hypoglycemia
+created_by: peter
+creation_date: 2014-03-23T15:00:50Z
+
+[Term]
+id: HP:0012735
+name: Cough
+def: "A sudden, audible expulsion of air from the lungs through a partially closed glottis, preceded by inhalation." [HPO:probinson]
+synonym: "Coughing" EXACT []
+xref: MeSH:D003371 "Cough"
+is_a: HP:0002795 ! Functional respiratory abnormality
+created_by: peter
+creation_date: 2014-03-23T15:19:50Z
+
+[Term]
+id: HP:0012736
+name: Profound global developmental delay
+def: "A profound delay in the achievement of motor or mental milestones in the domains of development of a child." [DDD:hvfirth]
+synonym: "PSYCHOMOTOR RETARDATION, PROFOUND" RELATED [HPO:skoehler]
+is_a: HP:0001263 ! Global developmental delay
+created_by: peter
+creation_date: 2014-03-23T15:21:25Z
+
+[Term]
+id: HP:0012737
+name: Small intestinal polyp
+def: "A discrete abnormal tissue mass that protrudes into the lumen of the small intestine and is attached to the intestinal wall either by a stalk, pedunculus, or a broad base." [HPO:probinson]
+is_a: HP:0005266 ! Intestinal polyp
+is_a: HP:0100833 ! Neoplasm of the small intestine
+created_by: peter
+creation_date: 2014-03-23T15:50:25Z
+
+[Term]
+id: HP:0012738
+name: Agenesis of canine
+def: "`Agenesis` (MPATH:57) of `canine tooth` (FMA:55636)." [HPO:probinson]
+synonym: "Absent canines" EXACT []
+is_a: HP:0011078 ! Abnormality of canine
+created_by: peter
+creation_date: 2014-03-23T16:26:04Z
+
+[Term]
+id: HP:0012739
+name: Agenesis of the small intestine
+def: "Failure to develop of the small intestine." [HPO:probinson]
+synonym: "Small bowel agenesis" EXACT []
+is_a: HP:0002244 ! Abnormality of the small intestine
+created_by: peter
+creation_date: 2014-03-23T16:28:53Z
+
+[Term]
+id: HP:0012740
+name: Papilloma
+def: "A tumor of the skin or mucous membrane with finger-like projections." [HPO:probinson]
+comment: The vast majority of papillomas are benign. Papillomas on the skin (cutaneous papillomas) are commonly referred to as warts.
+is_a: HP:0008069 ! Neoplasm of the skin
+created_by: peter
+creation_date: 2014-03-23T16:36:41Z
+
+[Term]
+id: HP:0012741
+name: Unilateral cryptorchidism
+def: "Absence of a testis  from the scrotum on one side owing to failure of the testis or testes to descend through the inguinal canal to the testis." [HPO:probinson]
+synonym: "Cryptorchidism, unilateral" EXACT []
+is_a: HP:0000028 ! Cryptorchidism
+created_by: peter
+creation_date: 2014-03-23T16:41:57Z
+
+[Term]
+id: HP:0012742
+name: Thin fingernail
+def: "Nail that appears thin when viewed on end." [HPO:probinson, pmid:19125433]
+comment: No objective standard for nail thickness could be identified. An unsupported claim suggests that nails are 0.5 mm in females and 0.6 mm in males (http://www.emedicine.com/orthoped/topic421.htm). Thin nails are usually brittle, may easily fray, or break at the free edge. Thin nails usually grow slowly but this definition does not require slow growth of the nail. Note that the term koilonychia is an abnormal shape of the fingernail where the nail has raised ridges and is thin and concave. Since it include other characteristics besides thin nails, it should not be used to indicate this. The affected digits should be specified.
+is_a: HP:0001231 ! Abnormality of the fingernails
+created_by: peter
+creation_date: 2014-03-23T16:47:40Z
+
+[Term]
+id: HP:0012743
+name: Abdominal obesity
+def: "Excessive fat around the stomach and abdomen." [HPO:probinson]
+is_a: HP:0001513 ! Obesity
+created_by: peter
+creation_date: 2014-03-23T17:00:05Z
+
+[Term]
+id: HP:0012744
+name: Femoral aplasia
+def: "Failure of the femur to develop." [HPO:probinson]
+synonym: "Absent femur" EXACT []
+is_a: HP:0005613 ! Aplasia/hypoplasia of the femur
+created_by: peter
+creation_date: 2014-03-23T17:14:34Z
+
+[Term]
+id: HP:0012745
+name: Short palpebral fissure
+def: "Distance between the medial and lateral canthi is more than 2 SD below the mean for age (objective); or, apparently reduced length of the palpebral fissures." [pmid:19125427]
+subset: hposlim_core
+synonym: "Short palpebral fissures" EXACT [HPO:skoehler]
+is_a: HP:0200007 ! Abnormal size of the palpebral fissures
+created_by: peter
+creation_date: 2014-03-23T17:27:40Z
+
+[Term]
+id: HP:0012746
+name: Thin toenail
+def: "Toenail that appears thin when viewed on end." [HPO:probinson, pmid:19125433]
+comment: No objective standard for nail thickness could be identified. An unsupported claim suggests that nails are 0.5 mm in females and 0.6 mm in males (http://www.emedicine.com/orthoped/topic421.htm). Thin nails are usually brittle, may easily fray, or break at the free edge. Thin nails usually grow slowly but this definition does not require slow growth of the nail. Note that the term koilonychia is an abnormal shape of the fingernail where the nail has raised ridges and is thin and concave. Since it include other characteristics besides thin nails, it should not be used to indicate this. The affected digits should be specified.
+is_a: HP:0008388 ! Abnormality of the toenail
+created_by: peter
+creation_date: 2014-03-23T17:34:43Z
+
+[Term]
+id: HP:0012747
+name: Abnormal brainstem MRI signal intensity
+def: "A deviation from normal signal on magnetic resonance imaging (MIR) of the brainstem." [UToronto:htrang]
+is_a: HP:0002363 ! Abnormality of the brainstem
+created_by: peter
+creation_date: 2014-03-30T18:41:13Z
+
+[Term]
+id: HP:0012748
+name: Focal T2 hyperintense brainstem lesion
+def: "A lighter than expected T2 signal on magnetic resonance imaging (MIR) of the brainstem. This term refers to a localized hyperintensity affecting a particular region of the brainstem." [UToronto:htrang]
+is_a: HP:0012747 ! Abnormal brainstem MRI signal intensity
+created_by: peter
+creation_date: 2014-03-30T18:43:06Z
+
+[Term]
+id: HP:0012749
+name: Focal T2 hypointense brainstem lesion
+def: "A darker than expected T2 signal on magnetic resonance imaging (MIR) of the brainstem. This term refers to a localized hypointensity affecting a particular region of the brainstem." [UToronto:htrang]
+is_a: HP:0012747 ! Abnormal brainstem MRI signal intensity
+created_by: peter
+creation_date: 2014-03-30T18:43:56Z
+
+[Term]
+id: HP:0012750
+name: T2 hypointense brainstem
+def: "A darker than expected T2 signal on magnetic resonance imaging (MIR) of the brainstem. This term refers to a diffuse hypointensity affecting the entire brainstem." [UToronto:htrang]
+is_a: HP:0012747 ! Abnormal brainstem MRI signal intensity
+created_by: peter
+creation_date: 2014-03-30T18:44:29Z
+
+[Term]
+id: HP:0012751
+name: Abnormal basal ganglia MRI signal intensity
+def: "A deviation from normal signal on magnetic resonance imaging (MRI) of the basal ganglia." [UToronto:htrang]
+is_a: HP:0002134 ! Abnormality of the basal ganglia
+created_by: peter
+creation_date: 2014-03-30T18:47:28Z
+
+[Term]
+id: HP:0012752
+name: Focal T2 hypointense basal ganglia lesion
+def: "A darker than expected T2 signal on magnetic resonance imaging (MRI) of the basal ganglia. This term refers to a localized hypointensity affecting a particular region of the basal ganglia." [HPO:probinson]
+is_a: HP:0012751 ! Abnormal basal ganglia MRI signal intensity
+created_by: peter
+creation_date: 2014-03-30T18:52:14Z
+
+[Term]
+id: HP:0012753
+name: T2 hypointense basal ganglia
+def: "A darker than expected T2 signal on magnetic resonance imaging (MRI) of the basal ganglia. This term refers to a diffuse hypointensity affecting all of the basal ganglia." [HPO:probinson]
+is_a: HP:0012751 ! Abnormal basal ganglia MRI signal intensity
+created_by: peter
+creation_date: 2014-03-30T18:52:42Z
+
+[Term]
+id: HP:0012754
+name: CNS hypermyelination
+def: "Increased amount of myelin in the central nervous system." [UToronto:htrang]
+is_a: HP:0011400 ! Abnormal CNS myelination
+created_by: peter
+creation_date: 2014-03-30T19:15:56Z
+
+[Term]
+id: HP:0012755
+name: Enlarged brainstem
+def: "Abnormal increase in size of the brainstem." [UToronto:htrang]
+comment: An enlarged brainstem may be observed with diffuse infiltrating tumor, PNET (primitive neuroectodermal tumor), ganglionoma, hamartoma, vascular malformation, or inflammatory process.
+is_a: HP:0002363 ! Abnormality of the brainstem
+created_by: peter
+creation_date: 2014-03-30T19:23:06Z
 
 [Term]
 id: HP:0100000
@@ -85087,7 +86105,7 @@ def: "A `neoplasm` (MPATH:218) of the `heart` (FMA:7088)." [HPO:probinson]
 synonym: "Cardiac neoplasia" RELATED []
 synonym: "Cardiac neoplasm" EXACT []
 xref: MeSH:D006338 "Heart Neoplasms"
-is_a: HP:0001627 ! Abnormality of the heart
+is_a: HP:0001627 ! Abnormality of cardiac morphology
 is_a: HP:0011793 ! Neoplasm by anatomical site
 created_by: doelkens
 creation_date: 2010-12-20T07:00:31Z
@@ -85185,9 +86203,9 @@ alt_id: HP:0005091
 alt_id: HP:0200051
 def: "Undergrowth of the limbs that affects only one side." [DDD:hfirth]
 synonym: "Asymmetric limb shortening" EXACT []
-synonym: "Hemihypotrophy" EXACT []
+synonym: "Hemiatrophy of the body" EXACT []
 xref: UMLS:C1844844 "Asymmetric limb shortening"
-is_a: HP:0009826 ! Hypoplasia involving bones of the extremities
+is_a: HP:0009826 ! Limb undergrowth
 is_a: HP:0100555 ! Asymmetric growth
 created_by: doelkens
 creation_date: 2010-12-21T04:01:10Z
@@ -85610,6 +86628,7 @@ id: HP:0100604
 name: Neoplasm of the lip
 def: "A `neoplasm` (MPATH:218) of the `lips` (FMA:59815)." [HPO:probinson]
 synonym: "Neoplasia of the lip" RELATED []
+synonym: "Tumor of the lip" RELATED []
 is_a: HP:0000159 ! Abnormality of the lip
 is_a: HP:0011793 ! Neoplasm by anatomical site
 created_by: doelkens
@@ -86077,18 +87096,10 @@ created_by: doelkens
 creation_date: 2010-12-30T09:57:09Z
 
 [Term]
-id: HP:0100655
-name: Thoracic wall defect
-is_a: HP:0000765 ! Abnormality of the thorax
-is_a: HP:0100656 ! Thoracoabdominal wall defects
-created_by: doelkens
-creation_date: 2010-12-30T10:03:09Z
-
-[Term]
 id: HP:0100656
 name: Thoracoabdominal wall defects
 is_a: HP:0000765 ! Abnormality of the thorax
-is_a: HP:0001438 ! Abnormality of the abdomen
+is_a: HP:0010866 ! Abdominal wall defect
 created_by: doelkens
 creation_date: 2010-12-30T10:04:18Z
 
@@ -86638,8 +87649,9 @@ creation_date: 2011-06-06T04:33:09Z
 
 [Term]
 id: HP:0100727
-name: Histiocystosis
+name: Histiocytosis
 def: "An excessive number of histiocytes (tissue macrophages)." [HPO:sdoelken]
+xref: MeSH:D015614 "Histiocytosis"
 is_a: HP:0004311 ! Abnormality of macrophages
 created_by: doelkens
 creation_date: 2011-06-06T04:43:05Z
@@ -87184,7 +88196,7 @@ name: Toenail dysplasia
 def: "An abnormality of the development of the toenails." [HPO:probinson]
 synonym: "Dysplastic toenails" EXACT []
 is_a: HP:0002164 ! Nail dysplasia
-is_a: HP:0008388 ! Abnormality of the toenails
+is_a: HP:0008388 ! Abnormality of the toenail
 created_by: doelkens
 creation_date: 2011-06-08T04:23:37Z
 
@@ -87479,8 +88491,9 @@ creation_date: 2011-06-09T05:34:46Z
 
 [Term]
 id: HP:0100829
-name: Galactorrhoea
+name: Galactorrhea
 def: "Spontaneous flow of milk from the breast, unassociated with childbirth or nursing." [HPO:sdoelken]
+synonym: "Galactorrhoea" EXACT []
 is_a: HP:0000769 ! Abnormality of the breast
 created_by: doelkens
 creation_date: 2011-06-09T05:39:15Z
@@ -88572,7 +89585,7 @@ def: "The presence of multiple polyps in the intestine." [HPO:probinson]
 synonym: "GASTROINTESTINAL POLYPS" RELATED [HPO:skoehler]
 synonym: "Multiple intestinal polyps" EXACT []
 xref: MeSH:D044483 "Intestinal Polyposis"
-is_a: HP:0005266 ! Intestinal polyps
+is_a: HP:0005266 ! Intestinal polyp
 created_by: sebastiankohler
 creation_date: 2010-06-09T11:38:54Z
 
@@ -88833,10 +89846,10 @@ creation_date: 2010-06-18T02:17:00Z
 [Term]
 id: HP:0200043
 name: Verrucae
-def: "Warts, benign growths on the skin or mucous membranes that cause cosmetic problems as well as pain and discomfort. Warts most often occur on the hands, feet, and genital areas." [HPO:SKOEHLER]
+def: "Warts, benign growths on the skin or mucous membranes that cause cosmetic problems as well as pain and discomfort. Warts most often occur on the hands, feet, and genital areas." [HPO:skoehler]
 comment: Cause is a virus called HPV (human papilloma virus), which infects the skin and causes the abnormal growth. There are many different varieties of the virus, which usually depends on the location of the lesion.
 synonym: "Warts" EXACT [HPO:SKOEHLER]
-is_a: HP:0011371 ! Recurrent viral skin infections
+is_a: HP:0012740 ! Papilloma
 created_by: sebastiankohler
 creation_date: 2010-06-18T11:35:25Z
 
@@ -88981,6 +89994,7 @@ creation_date: 2013-05-31T01:31:04Z
 [Term]
 id: HP:0200067
 name: Recurrent spontaneous abortion
+def: "Repeated episodes of abortion (Expulsion of the product of fertilization before completing the term of gestation) without deliberate interference." [HPO:probinson]
 synonym: "SPONTANEOUS ABORTION, RECURRENT" RELATED [HPO:skoehler]
 is_a: HP:0005268 ! Spontaneous abortion
 created_by: sebastiankohler
@@ -89389,6 +90403,8 @@ creation_date: 2013-06-13T12:55:22Z
 [Term]
 id: HP:0200147
 name: Neuronal loss in basal ganglia
+def: "A reduction in the number of nerve cells in the `basal ganglia` (FMA:84013)." [HPO:probinson, pmid:13729575]
+comment: See Fig. 11 in pmid:13729575.
 is_a: HP:0002134 ! Abnormality of the basal ganglia
 created_by: sebastiankohler
 creation_date: 2013-06-13T12:59:06Z

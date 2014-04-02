@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 09:01:2014 16:37
+date: 13:01:2014 11:59
 saved-by: csmith
 auto-generated-by: OBO-Edit 2.2
 subsetdef: CvDC_Terms "NHLBI Cardiovascular Development Consortium (CvDC) Terms"
@@ -993,7 +993,7 @@ consider: MP:0000480
 [Term]
 id: MP:0000157
 name: abnormal sternum morphology
-def: "any structural anomaly of the long flat bone of the chest that articulates with clavicle and first seven rib pairs; from caudal to rostral positions, the sternum consists of three parts: manubrium, body, and xiphoid process" [ISBN:0-683-40008-8, PMID:7925010]
+def: "any structural anomaly of the long flat bone of the chest that articulates with clavicle and first seven rib pairs; from rostral to caudal positions, the sternum consists of three parts: manubrium, body, and xiphoid process" [ISBN:0-683-40008-8, PMID:7925010]
 synonym: "sternum defect" BROAD []
 synonym: "sternum dysplasia" EXACT []
 is_a: MP:0004508 ! abnormal pectoral girdle bone morphology
@@ -1008,7 +1008,7 @@ is_a: MP:0000157 ! abnormal sternum morphology
 [Term]
 id: MP:0000159
 name: abnormal xiphoid process morphology
-def: "any structural anomaly of the rostral tip of the sternum" [ISBN:0-683-40008-8]
+def: "any structural anomaly of the caudal tip of the sternum" [ISBN:0-683-40008-8]
 subset: IMPC
 subset: Sanger_Terms
 synonym: "abnormal xiphisternum morphology" EXACT []
@@ -11624,7 +11624,6 @@ is_a: MP:0002086 ! abnormal extraembryonic tissue morphology
 id: MP:0001727
 name: abnormal embryo implantation
 def: "anomaly in the process in which the blastocyst and/or the uterine environment to successfully synchronize allowing attachment of the blastocyst to the epithelial lining of the uterus, its penetration through the epithelium and any subsequent physiological interactions necessary to sustain embryonic development" [ISBN:0-683-40008-8, MGI:llw2, PMID:10882512]
-is_a: MP:0001672 ! abnormal embryogenesis/ development
 is_a: MP:0009661 ! abnormal pregnancy
 
 [Term]
@@ -27030,7 +27029,7 @@ is_a: MP:0001961 ! abnormal reflex
 [Term]
 id: MP:0003839
 name: abnormal insulin clearance
-def: "increase or decrease in the rate at which insulin is removed from the blood stream" [J:99786, MGI:smb]
+def: "increase or decrease in the rate at which insulin is removed from the blood stream" [MGI:smb]
 is_a: MP:0002078 ! abnormal glucose homeostasis
 
 [Term]
@@ -27176,7 +27175,7 @@ is_a: MP:0001516 ! abnormal motor coordination/ balance
 [Term]
 id: MP:0003859
 name: abnormal Harderian gland physiology
-def: "any functional anomaly of the sebaceous gland located behind the eyeball in the orbit that secretes lipids, porphyrins, and indoles such as melatonin" [J:44727, MGI:monikat]
+def: "any functional anomaly of the sebaceous gland located behind the eyeball that excretes fluid that facilitates movement of the nictitating membrane" [ISBN:0486631850, MGI:monikat]
 comment: The Harderian gland does not normally exist in some types of mammals (bats, cows and horses), terrestrial carnivores, and higher primates including human.
 is_a: MP:0002164 ! abnormal gland physiology
 
@@ -28402,6 +28401,7 @@ is_a: MP:0004028 ! chromosome breakage
 id: MP:0004031
 name: insulitis
 def: "a histological change in the islets of Langerhans characterized by edema and the infiltration of small numbers of white blood cells" [MGI:rbabiuk]
+synonym: "intra-insulitis" EXACT []
 is_a: MP:0001869 ! pancreas inflammation
 
 [Term]
@@ -33179,20 +33179,20 @@ is_a: MP:0000150 ! abnormal rib morphology
 [Term]
 id: MP:0004678
 name: split xiphoid process
-def: "the appearance of an abnormal division of the rostral tip of the sternum" [MGI:csmith]
+def: "the appearance of an abnormal division of the caudal tip of the sternum" [MGI:csmith]
 synonym: "bifid xiphoid process" EXACT []
 is_a: MP:0000159 ! abnormal xiphoid process morphology
 
 [Term]
 id: MP:0004679
 name: xiphoid process foramen
-def: "the appearance of a hole or holes in the rostral tip of the sternum" [ISBN:0-683-40008-8]
+def: "the appearance of a hole or holes in the caudal tip of the sternum" [ISBN:0-683-40008-8]
 is_a: MP:0000159 ! abnormal xiphoid process morphology
 
 [Term]
 id: MP:0004680
 name: small xiphoid process
-def: "reduced size of the rostral tip of the sternum" [ISBN:0-683-40008-8]
+def: "reduced size of the caudal tip of the sternum" [ISBN:0-683-40008-8]
 is_a: MP:0000159 ! abnormal xiphoid process morphology
 
 [Term]
@@ -39172,7 +39172,7 @@ is_a: MP:0000003 ! abnormal adipose tissue morphology
 [Term]
 id: MP:0005455
 name: increased susceptibility to weight gain
-def: "greater increase in body weight over time when compared to the average increase in weight on the same diet, with equal energy (calorie) intake" [J:42702, MGI:cwg]
+def: "greater increase in body weight over time when compared to the average increase in weight on the same diet, with equal energy (calorie) intake" [MGI:cwg]
 synonym: "increased weight gain" RELATED []
 is_a: MP:0011117 ! abnormal susceptibility to weight gain
 
@@ -40165,7 +40165,7 @@ is_a: MP:0002177 ! abnormal outer ear morphology
 [Term]
 id: MP:0005580
 name: periinsulitis
-def: "early pancreatic infiltration of mononuclear cells around pancreatic Langerhans islets" [J:11442, MGI:il]
+def: "an accumulation of macrophages, dendritic cells, and B and T lymphocytes in the periductal areas of the pancreas but outside the islet cell areas; often occurs prior to intra-insulitis of the islet cell areas" [http://www.diapedia.org]
 synonym: "peri-insulitis" EXACT []
 synonym: "periinsulinitis" EXACT []
 is_a: MP:0001869 ! pancreas inflammation
@@ -81061,7 +81061,7 @@ creation_date: 2012-12-21T03:29:59Z
 [Term]
 id: MP:0011872
 name: absent xiphoid process
-def: "absence of the rostral tip of the sternum" [MGI:Colin_McKerlie]
+def: "absence of the caudal tip of the sternum" [MGI:Colin_McKerlie]
 subset: IMPC
 is_a: MP:0000159 ! abnormal xiphoid process morphology
 created_by: csmith
