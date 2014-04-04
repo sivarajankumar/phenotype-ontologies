@@ -13,11 +13,13 @@ TRIGGERS = $(ONT)/mp.owl $(ONT)/hp.owl $(MM_G2P)
 
 USECAT = --catalog-xml $(ONT)/catalog-v001.xml 
 
+all: Mm-gene-to-Mm-gene-sim.out
+
 Dr-gene-to-Dr-gene-sim.out:
 	OWLTOOLS_MEMORY=12G owltools  $(USECAT) $(UPHENO)/vertebrate.owl  --load-labels $(DR_G2L) --load-instances $(DR_G2P) --fsim-basic -p sim.properties --set minimumMaxIC 3.0 --set minimumSimJ 0.25 --set compare "ZFIN,ZFIN" -o $@
 
 Mm-gene-to-Mm-gene-sim.out:
-	OWLTOOLS_MEMORY=12G owltools  $(USECAT) $(UPHENO)/vertebrate.owl  --load-labels $(MM_G2L) --load-instances $(MM_G2P) --fsim-basic -p sim.properties --set minimumMaxIC 3.0 --set minimumSimJ 0.25 --set compare "MGI,MGI" -o $@
+	OWLTOOLS_MEMORY=12G owltools  $(USECAT) $(UPHENO)/vertebrate.owl  --load-labels $(MM_G2L) --load-instances $(MM_G2P) --fsim-basic -p sim.properties --set minimumMaxIC 5.0 --set minimumSimJ 0.6 --set compare "MGI,MGI" -o $@
 
 Dr-gene-to-disease-sim.out:
 	owltools  $(USECAT) $(UPHENO)/vertebrate.owl  --load-labels $(DR_G2L) --load-instances $(DR_G2P) --fsim-basic -p sim.properties --set minimumMaxIC 3.0 --set minimumSimJ 0.6 --set compare "OMIM,ZFIN" -o $@
