@@ -9,7 +9,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/upheno/monarch.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/upheno/monarch-test.owl">
       <dc:title xml:lang="en">MONARCH top importer, alpha version</dc:title>
       <dc:description xml:lang="en">
       For testing purposes only
@@ -24,7 +24,7 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/upheno/doid/merged.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/upheno/data/human-genes.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/upheno/hp-mp/mp_hp-align-equiv.owl"/>
-<!-- BSPO punning issue needs resolves -->       
+        <!-- BSPO punning issue needs resolves -->       
      
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/uberon/ext.owl"/>
 
