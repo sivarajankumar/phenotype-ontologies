@@ -9,6 +9,11 @@ DR = $(DATA)/Danio_rerio
 DR_G2P = $(DR)/Dr-gene-to-phenotype-BF.txt
 DR_G2L = $(DR)/Dr-gene-labels.txt
 
+# TODO: genes
+DM = $(DATA)/Drosophila_melanogaster
+DM_G2P = $(DM)/Dm-genotype-phenotype-NOFILTER.txt
+DM_G2L = $(DM)/Dm-genotype-labels.txt
+
 HS = $(DATA)/Homo_sapiens
 HS_D2P = $(HS)/Hs-disease-to-phenotype-O.txt
 HS_D2L = $(HS)/Hs-disease-labels.txt
@@ -33,6 +38,8 @@ Mus_musculus-all.owl:  $(ONT)/mp/mp-importer.owl $(TRIGGERS)
 	owltools $(USECAT) $< --merge-imports-closure --load-instances $(MM_G2P) --load-labels $(MM_G2L) --merge-support-ontologies -o $@
 Homo_sapiens-all.owl:  $(ONT)/hp/hp-importer.owl $(TRIGGERS)
 	owltools $(USECAT) $< --merge-imports-closure --load-instances $(HS_D2P) --load-labels $(HS_D2L) --merge-support-ontologies -o $@
+Drosophila_melanogaster-all.owl:  $(ONT)/dpo/dpo-importer.owl $(TRIGGERS)
+	owltools $(USECAT) $< --merge-imports-closure --load-instances $(DM_G2P) --load-labels $(DM_G2L) --merge-support-ontologies -o $@
 
 
 #owlsim.cache: all.owl
