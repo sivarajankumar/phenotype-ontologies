@@ -39,7 +39,7 @@ Mus_musculus-all.owl:  $(ONT)/mp/mp-importer.owl $(TRIGGERS)
 Homo_sapiens-all.owl:  $(ONT)/hp/hp-importer.owl $(TRIGGERS)
 	owltools $(USECAT) $< --merge-imports-closure --load-instances $(HS_D2P) --load-labels $(HS_D2L) --merge-support-ontologies -o $@
 Drosophila_melanogaster-all.owl:  $(ONT)/dpo/dpo-importer.owl $(TRIGGERS)
-	owltools $(USECAT) $< --merge-imports-closure --load-instances $(DM_G2P) --load-labels $(DM_G2L) --merge-support-ontologies -o $@
+	owltools $(USECAT) $< --merge-imports-closure --load-instances $(DM_G2P) --load-labels $(DM_G2L) --merge-support-ontologies --remove-axioms -t DisjointClasses -o $@
 
 
 #owlsim.cache: all.owl
