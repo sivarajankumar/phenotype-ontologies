@@ -83,10 +83,11 @@ hp/hp-equivalence-axioms.obo: external/hpo/human-phenotype-ontology_xp.obo
 # ~~~
 # https://code.google.com/p/phenotype-ontologies/wiki/ZP
 
-zp.owl:
-	owltools http://compbio.charite.de/hudson/job/hpo.ontology.uberpheno/lastStableBuild/artifact/data/dataForUberpheno/not_subsettable_ontologies/zp.owl --set-ontology-id $(OBO)/upheno/$@ -o $@
-zp.obo: zp.owl
-	owltools $< -o -f obo --no-check $@
+## DO NOT UPDATE: https://code.google.com/p/bio-ontology-zp/issues/detail?id=4
+#zp.owl:
+#	owltools http://compbio.charite.de/hudson/job/hpo.ontology.uberpheno/lastStableBuild/artifact/data/dataForUberpheno/not_subsettable_ontologies/zp.owl --set-ontology-id $(OBO)/upheno/$@ -o $@
+#zp.obo: zp.owl
+#	owltools $< -o -f obo --no-check $@
 
 zp/zp-equivalence-axioms-subq.owl: zp.owl
 	cp $< $@
@@ -165,6 +166,9 @@ pato.owl: pato.obo
 
 %-simple.obo: %-simple.owl
 	owltools $< -o -f obo --no-check $@.tmp && grep -v ^owl-axioms $@.tmp > $@
+
+%-core.obo: %.owl
+	owltools $(USECAT) $<  --add-support-from-imports -o -f obo --no-check $@
 
 # ----------------------------------------
 # Subqualities model
@@ -272,6 +276,9 @@ mirror/pr.owl: mirror/pr.obo
 
 imports/ro_import.owl: mirror/ro.owl
 	owltools  $(USECAT) $< mp/mp-equivalence-axioms-edit.owl --extract-properties --set-ontology-id $(UPHENO)/upheno/$@ -o $@
+
+imports/so_import.owl:
+	owltools  $(USECAT) $< $(UPHENO)/data/human-genes.owl $(OBO)/so.owl --add-imports-from-supports --extract-module -s $(OBO)/so.owl -c --extract-mingraph --remove-annotation-assertions -l -d -s --make-subset-by-properties -f // --set-ontology-id $(UPHENO)/$@ -o $@
 
 imports/%_import.obo: imports/%_import.owl
 	owltools $< -o -f obo $@
