@@ -44,6 +44,7 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/uberon/bridge/cl-bridge-to-zfa.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/uberon/bridge/cl-bridge-to-ma.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/uberon/bridge/cl-bridge-to-fma.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/uberon/bridge/uberon-bridge-to-nifstd.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
 <!--
 
