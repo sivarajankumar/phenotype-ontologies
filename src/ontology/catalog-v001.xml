@@ -5,7 +5,15 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/metazoa.owl" uri="metazoa.owl"/>
 
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/doid/merged.owl" uri="doid/merged.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/doid/ctd_omim_mesh_bridge.owl=" uri="doid/ctd_omim_mesh_bridge.owl"/>
 
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/uberon_phenotype.owl" uri="imports/uberon_phenotype.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/go_phenotype.owl" uri="imports/go_phenotype.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/nbo_phenotype.owl" uri="imports/nbo_phenotype.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/mpath_phenotype.owl" uri="imports/mpath_phenotype.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/fbbt_phenotype.owl" uri="imports/fbbt_phenotype.owl"/>
+
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/fbbt_import.owl" uri="imports/fbbt_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/chebi_import.owl" uri="imports/chebi_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/wbbt_import.owl" uri="imports/wbbt_import.owl"/>
@@ -21,7 +29,9 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/mp/genes-as-phenotypes.owl" uri="mp/genes-as-phenotypes.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/hp-mp/mp_hp-align-equiv.owl" uri="hp-mp/mp_hp-align-equiv.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/uberon/uberon-simple-vertebrate-bridge.owl" uri="uberon-simple-vertebrate-bridge.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/dpo/dpo-importer.owl" uri="dpo/dpo-importer.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mp/mp-importer.owl" uri="mp/mp-importer.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mp/mp-edit.owl" uri="mp/mp-edit.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/hp/hp-importer.owl" uri="hp/hp-importer.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/zp/zp-importer.owl" uri="zp/zp-importer.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-importer.owl" uri="wbphenotype/wbphenotype-importer.owl"/>
@@ -42,9 +52,17 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/zp/zp-equivalence-axioms-subq-ubr.owl" uri="zp.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-equivalence-axioms-subq-ubr.owl" uri="wbphenotype/wbphenotype-equivalence-axioms-subq-ubr.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/zp.owl" uri="zp.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/dpo.owl" uri="dpo.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/hp.owl" uri="hp.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/pato.owl" uri="pato.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/fypo.owl" uri="fypo.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/go.owl" uri="external/go/go.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/go/extensions/go-plus.owl" uri="external/go/extensions/go-plus.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/go/extensions/go-plus-dev.owl" uri="external/go/extensions/go-plus-dev.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/go/extensions/x-anatomy.owl" uri="external/go/extensions/x-anatomy.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/go/extensions/chebi_import.owl" uri="external/go/extensions/chebi_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/go/extensions/ncbitaxon_import.owl" uri="external/go/extensions/ncbitaxon_import.owl"/>
+
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl" uri="external/ncbitaxon-subsets/taxslim.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim-disjoint-over-in-taxon.owl" uri="external/ncbitaxon-subsets/taxslim-disjoint-over-in-taxon.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/cl/cl-basic.owl" uri="external/cell/cl-basic.owl"/>
