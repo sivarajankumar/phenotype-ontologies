@@ -62,6 +62,9 @@ mp.owl: mp.obo
 mp/mp-axiom-view.obo: mp/mp-edit.owl
 	owltools --use-catalog $< -o -f obo $@
 
+mp/mp-inferred.owl: mp.owl
+	owltools --use-catalog --use-catalog mp/mp-importer.owl imports/grouping_phenotypes.owl --merge-support-ontologies --run-reasoner -r elk --assert-implied -o -f ofn $@.tmp && owltools $@.tmp -o -f ofn $@
+
 # ~~~
 # HP
 # ~~~
@@ -75,6 +78,9 @@ hp.owl: hp.obo
 # Mirror via svn:externals
 hp/hp-axiom-view.obo: hp/hp-equivalence-axioms-subq-ubr.owl
 	 owltools --use-catalog $< hp/hp-importer.owl -o -f obo $@
+
+hp/hp-inferred.owl: hp.owl
+	owltools --use-catalog --use-catalog hp/hp-importer.owl imports/grouping_phenotypes.owl --merge-support-ontologies --run-reasoner -r elk --assert-implied -o -f ofn $@.tmp && owltools $@.tmp -o -f ofn $@
 
 
 # ~~~
@@ -346,6 +352,8 @@ mp/mp-to-hp-match-best.tbl: mp.owl hp.owl
 mp/mp-to-hp-match-best.owl:  mp.owl hp.owl
 	$(BIGOWLTOOLS) $(USECAT) mammal.owl --make-default-abox --fsim-compare-atts -p mp/mp-to-hp-sim.properties --set bestOnly true --set scoringMetrics JACCARD --set outputFormat owl -o $@.tmp && mv $@.tmp $@
 
+
+
 wbphenotype/wbphenotype-to-%-match.tbl: wbphenotype.owl %.owl
 	$(BIGOWLTOOLS) $(USECAT) metazoa.owl --make-default-abox --fsim-compare-atts -p wbphenotype/wbphenotype-to-$*-sim.properties -o $@.tmp && mv $@.tmp $@
 wbphenotype/wbphenotype-to-%-match-best.tbl: wbphenotype.owl %.owl
@@ -421,11 +429,20 @@ hp-patterns.txt: hp/hp-equivalence-axioms.obo
 # ----------------------------------------
 # Monarch ontology inferences
 # ----------------------------------------
+
+# Note: currently monarch inferred contains all inferred direct links WITHIN the grouping ontology together with all inferred direct links
+# BETWEEN {hp,zp,mp} classes and grouping ontology classes.
+# Here the grouping phenotype ontology is the sum of imports/{uberon,go,cl}_phenotype
+INFERRED = zp/zp-inferred.owl mp/mp-inferred.owl hp/hp-inferred.owl
+imports/grouping_phenotype_inferences.owl: $(INFERRED)
+	owltools $(INFERRED) --merge-support-ontologies -o -f ofn $@
+
+
 # include hacky step for removing pseudo-anon classes for now - these should be removed from base ontology
-monarch-inferred-pre.owl: monarch.owl
-	owltools --use-catalog $< --remove-equivalent-to-nothing-axioms --remove-axioms -t DisjointClasses --remove-axioms -t ObjectPropertyDomain --remove-axioms -t ObjectPropertyRange --run-reasoner -r elk --assert-implied -o -f ofn $@
-monarch-inferred.owl: monarch-inferred-pre.owl
-	./util/hacky-filter-inferences.pl $< > $@
+#monarch-inferred-pre.owl: monarch.owl
+#	owltools --use-catalog $< --remove-equivalent-to-nothing-axioms --remove-axioms -t DisjointClasses --remove-axioms -t ObjectPropertyDomain --remove-axioms -t ObjectPropertyRange --run-reasoner -r elk --assert-implied -o -f ofn $@
+#monarch-inferred.owl: monarch-inferred-pre.owl
+#	./util/hacky-filter-inferences.pl $< > $@
 ##	owltools --use-catalog $< --remove-axioms -t EquivalentClasses -o -f ofn $@
 ##	owltools --use-catalog $< --run-reasoner -r elk --assert-implied -o -f ofn $@.tmp && grep -v '_#_' $@.tmp > $@ && owltools --use-catalog $@
 
