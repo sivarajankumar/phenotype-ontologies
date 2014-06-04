@@ -59,10 +59,8 @@ mp.owl: mp.obo
 #mp/mp-equivalence-axioms-subq-ubr.obo: mp/mp-equivalence-axioms-edit.owl
 #	owltools $(USECAT) $< --add-support-from-imports --remove-imports-declarations -o -f obo $@
 # TODO - required??
-mp/mp-equivalence-axioms-subq.obo: mp/mp-equivalence-axioms-subq-ubr.obo
-	owltools $< -o -f obo $@
-mp/mp-equivalence-axioms.obo: mp/mp-equivalence-axioms-subq-ubr.obo
-	grep -v ^logical-definition-view-relation $< > $@
+mp/mp-axiom-view.obo: mp/mp-edit.owl
+	owltools --use-catalog $< -o -f obo $@
 
 # ~~~
 # HP
@@ -75,8 +73,9 @@ hp.owl: hp.obo
 	owltools $< -o $@
 
 # Mirror via svn:externals
-hp/hp-equivalence-axioms.obo: external/hpo/human-phenotype-ontology_xp.obo
-	cp $< $@
+hp/hp-axiom-view.obo: hp/hp-equivalence-axioms-subq-ubr.owl
+	 owltools --use-catalog $< hp/hp-importer.owl -o -f obo $@
+
 
 # ~~~
 # ZP
@@ -89,11 +88,18 @@ hp/hp-equivalence-axioms.obo: external/hpo/human-phenotype-ontology_xp.obo
 #zp.obo: zp.owl
 #	owltools $< -o -f obo --no-check $@
 
+zp/zp-mapping.txt: zp.owl
+	owltools $< --extract-annotation-value --id-prefix ZP: -p http://zfin/definition/source_information -o $@
+
 zp/zp-equivalence-axioms-subq.owl: zp.owl
 	cp $< $@
 
 zp/zp-equivalence-axioms-subq-ubr.owl: zp.owl uberon-simple-vertebrate-bridge.obo
 	owltools $< uberon-simple-vertebrate-bridge.obo --add-imports-from-supports --merge-equivalent-classes -f ZFA  -t UBERON  --merge-equivalent-classes -f ZFA -t CL -o $@
+
+zp/zp-inferred.owl: zp.owl
+	owltools --use-catalog zp/zp-importer.owl imports/grouping_phenotypes.owl --merge-support-ontologies --run-reasoner -r elk --assert-implied -o -f ofn $@.tmp && owltools $@.tmp -o -f ofn $@
+
 
 # ~~~
 # FYPO
@@ -267,7 +273,7 @@ mirror/wbbt.owl:
 ###	owltools $(OBO)/uberon/ext.owl --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --set-ontology-id $(OBO)/uberon.owl -o $@
 ###	owltools  $(OBO)/wbls.owl $(OBO)/wbbt.owl --merge-support-ontologies --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS)  --set-ontology-id $(OBO)/wbbt.owl -o $@
 mirror/go.owl: 
-	owltools $(OBO)/go/extensions/go-plus.owl   --merge-imports-closure --merge-support-ontologies --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/go.owl -o $@
+	owltools $(OBO)/go/extensions/go-plus.owl $(OBO)/go/extensions/x-metazoan-anatomy.owl    --merge-imports-closure --merge-support-ontologies --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/go.owl -o $@
 mirror/pr.obo:
 	wget $(OBO)/pr.obo -O $@.tmp && obo-grep.pl -r 'id: PR:' $@.tmp > $@
 mirror/pr.owl: mirror/pr.obo
@@ -285,6 +291,9 @@ imports/%_import.obo: imports/%_import.owl
 
 external/uberon/%.owl:
 	echo $@
+
+external/mirror/%.owl:
+	wget $(OBO)/$*.owl -O $@
 
 # ----------------------------------------
 # Genes
@@ -413,8 +422,13 @@ hp-patterns.txt: hp/hp-equivalence-axioms.obo
 # Monarch ontology inferences
 # ----------------------------------------
 # include hacky step for removing pseudo-anon classes for now - these should be removed from base ontology
-monarch-inferred.owl: monarch.owl
-	owltools --use-catalog $< --run-reasoner -r elk --assert-implied -o -f ofn $@.tmp && grep -v '_#_' $@.tmp > $@ && owltools --use-catalog $@
+monarch-inferred-pre.owl: monarch.owl
+	owltools --use-catalog $< --remove-equivalent-to-nothing-axioms --remove-axioms -t DisjointClasses --remove-axioms -t ObjectPropertyDomain --remove-axioms -t ObjectPropertyRange --run-reasoner -r elk --assert-implied -o -f ofn $@
+monarch-inferred.owl: monarch-inferred-pre.owl
+	./util/hacky-filter-inferences.pl $< > $@
+##	owltools --use-catalog $< --remove-axioms -t EquivalentClasses -o -f ofn $@
+##	owltools --use-catalog $< --run-reasoner -r elk --assert-implied -o -f ofn $@.tmp && grep -v '_#_' $@.tmp > $@ && owltools --use-catalog $@
+
 
 
 #%-merged.owl: %.owl
