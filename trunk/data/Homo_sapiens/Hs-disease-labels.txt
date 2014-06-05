@@ -173,7 +173,6 @@ OMIM:107700	Appendicitis, Proneness To
 OMIM:107730	Apolipoprotein B
 OMIM:107741	Apolipoprotein E
 OMIM:107900	Arms, Malformation Of
-OMIM:107950	Moved To 138800
 OMIM:107970	Arrhythmogenic Right Ventricular Dysplasia, Familial, 1
 OMIM:108000	Arteries, Anomalies Of
 OMIM:108010	Arteriovenous Malformations Of The Brain
@@ -251,7 +250,6 @@ OMIM:112500	Brachydactyly, Type A1
 OMIM:112600	Brachydactyly, Type A2
 OMIM:112700	Brachydactyly, Type A3
 OMIM:112800	Brachydactyly, Type A4
-OMIM:112900	Moved To 112800
 OMIM:112910	Brachydactyly, Type A6
 OMIM:113000	Brachydactyly, Type B1
 OMIM:113100	Brachydactyly, Type C
@@ -320,7 +318,6 @@ OMIM:115700	Cataract 4, Multiple Types
 OMIM:115800	Cataract 29
 OMIM:115900	Cataract, Floriform
 OMIM:116100	Cataract 20, Multiple Types
-OMIM:116150	Moved To 116200 And 107250
 OMIM:116200	Cataract 1, Multiple Types
 OMIM:116300	Cataract 30
 OMIM:116400	Cataract 41
@@ -600,7 +597,6 @@ OMIM:131300	Camurati-Engelmann Disease
 OMIM:131400	Eosinophilia, Familial
 OMIM:131430	Eosinophilopenia
 OMIM:131440	Myeloproliferative Disorder, Chronic, With Eosinophilia
-OMIM:131445	Moved To 137800
 OMIM:131450	Epiblepharon Of Lower Lid
 OMIM:131460	Epiblepharon Of Upper Lid
 OMIM:131500	Epicanthus
@@ -722,7 +718,6 @@ OMIM:137700	Glaucoma With Elevated Episcleral Venous Pressure
 OMIM:137750	Glaucoma 1, Open Angle, A
 OMIM:137760	Glaucoma, Primary Open Angle
 OMIM:137763	Glaucoma And Sleep Apnea
-OMIM:137765	Moved To 608328
 OMIM:137800	Glioma Susceptibility 1
 OMIM:137900	Globulin Anomaly Involving Beta (2a)-Globulin
 OMIM:137920	Renal Cysts And Diabetes Syndrome
@@ -814,7 +809,6 @@ OMIM:143850	Orthostatic Hypotensive Disorder, Streeten Type
 OMIM:143860	Hyperchlorhidrosis, Isolated
 OMIM:143870	Hypercalciuria, Absorptive, 2
 OMIM:143880	Hypercalcemia, Infantile
-OMIM:143890	Hypercholesterolemia, Familial
 OMIM:144010	Hypercholesterolemia, Autosomal Dominant, Type B
 OMIM:144020	Hypercholesterolemia Suppressor
 OMIM:144050	Hyperheparinemia
@@ -1057,7 +1051,6 @@ OMIM:156520	Metatarsus Varus, Type I
 OMIM:156530	Metatropic Dysplasia
 OMIM:156550	Kniest Dysplasia
 OMIM:156580	Microcephaly, Autosomal Dominant
-OMIM:156590	Moved To 152950
 OMIM:156600	Microcoria, Congenital
 OMIM:156610	Skin Creases, Multiple Benign Ring-Shaped, Of Limbs
 OMIM:156620	Microcephaly-Deafness Syndrome
@@ -1182,7 +1175,6 @@ OMIM:163700	Nipples, Supernumerary
 OMIM:163800	Sick Sinus Syndrome 2, Autosomal Dominant
 OMIM:163850	Noduli Cutanei, Multiple, With Urinary Tract Abnormalities
 OMIM:163950	Noonan Syndrome 1
-OMIM:163955	Moved To 163950 And 610733
 OMIM:164000	Nose, Anomalous Shape Of
 OMIM:164100	Nystagmus 2, Congenital, Autosomal Dominant
 OMIM:164150	Nystagmus, Hereditary Vertical
@@ -1415,7 +1407,6 @@ OMIM:177400	Butyrylcholinesterase
 OMIM:177600	Pseudocholinesterase, Increase In Plasma Level Of
 OMIM:177650	Exfoliation Syndrome
 OMIM:177700	Glaucoma 1, Open Angle, P
-OMIM:177720	Moved To 194380
 OMIM:177735	Pseudohypoaldosteronism, Type I, Autosomal Dominant
 OMIM:177820	Pseudo-Von Willebrand Disease
 OMIM:177850	Pseudoxanthoma Elasticum, Forme Fruste
@@ -1455,8 +1446,6 @@ OMIM:179613	Recombinant Chromosome 8 Syndrome
 OMIM:179618	Recoverin
 OMIM:179650	Red Cell Permeability Defect
 OMIM:179700	Red Cell Phospholipid Defect With Hemolysis
-OMIM:179760	Moved To 144700
-OMIM:179770	Moved To 144700
 OMIM:179780	Dipeptidase 1
 OMIM:179800	Renal Tubular Acidosis, Distal, Autosomal Dominant
 OMIM:179820	Renin
@@ -1546,7 +1535,6 @@ OMIM:182960	Neuronopathy, Distal Hereditary Motor, Type I
 OMIM:182970	Spinal Muscular Atrophy, Facioscapulohumeral Type
 OMIM:182980	Spinal Muscular Atrophy, Late-Onset, Finkel Type
 OMIM:182990	Spinal Intradural Arachnoid Cysts
-OMIM:183000	Moved To 137440
 OMIM:183020	Spinal Muscular Atrophy, Segmental
 OMIM:183050	Spinocerebellar Ataxia With Rigidity And Peripheral Neuropathy
 OMIM:183086	Spinocerebellar Ataxia 6
@@ -1586,7 +1574,6 @@ OMIM:184840	Stickler Syndrome, Type Iii
 OMIM:184850	Stiff-Person Syndrome
 OMIM:184900	Stiff Skin Syndrome
 OMIM:185000	Overhydrated Hereditary Stomatocytosis
-OMIM:185010	Moved To 194380
 OMIM:185020	Pseudohyperkalemia Cardiff
 OMIM:185050	Storage Pool Platelet Disease
 OMIM:185069	Storm Syndrome
@@ -1656,7 +1643,6 @@ OMIM:188050	Thrombophilia Due To Thrombin Defect
 OMIM:188055	Thrombophilia Due To Activated Protein C Resistance
 OMIM:188100	Thumb Deformity
 OMIM:188150	Thumb Deformity And Alopecia
-OMIM:188200	Moved To 107000
 OMIM:188201	Thumbs, Stiff, With Brachydactyly Type A1 And Developmental Delay
 OMIM:188400	Digeorge Syndrome
 OMIM:188470	Thyroid Carcinoma, Follicular
@@ -1664,7 +1650,6 @@ OMIM:188550	Thyroid Carcinoma, Papillary
 OMIM:188560	Thyroid Hormone Plasma Membrane Transport Defect
 OMIM:188570	Thyroid Hormone Resistance, Generalized, Autosomal Dominant
 OMIM:188580	Thyrotoxic Periodic Paralysis, Susceptibility To, 1
-OMIM:188600	Moved To 314200
 OMIM:188700	Blount Disease, Infantile
 OMIM:188740	Tibia, Absence Of, With Polydactyly
 OMIM:188770	Tibia, Hypoplasia Of, With Polydactyly
@@ -1709,9 +1694,6 @@ OMIM:190800	Tristichiasis
 OMIM:190900	Tritanopia
 OMIM:190920	Trophoblast Glycoprotein
 OMIM:191000	Trochlea Of The Humerus, Aplasia Of
-OMIM:191020	Moved To 120920
-OMIM:191090	Moved To 191100
-OMIM:191091	Moved To 191100
 OMIM:191100	Tuberous Sclerosis 1
 OMIM:191150	Tuftsin Deficiency
 OMIM:191160	Tumor Necrosis Factor
@@ -1773,7 +1755,6 @@ OMIM:193510	Waardenburg Syndrome, Type 2a
 OMIM:193520	Watson Syndrome
 OMIM:193530	Weyers Acrofacial Dysostosis
 OMIM:193670	Whim Syndrome
-OMIM:193680	Moved To 128101
 OMIM:193700	Arthrogryposis, Distal, Type 2a
 OMIM:193900	White Sponge Nevus
 OMIM:194000	Widow'S Peak
@@ -1783,7 +1764,6 @@ OMIM:194071	Wilms Tumor 2
 OMIM:194072	Wilms Tumor, Aniridia, Genitourinary Anomalies, And Mental Retardation Syndrome
 OMIM:194080	Denys-Drash Syndrome
 OMIM:194090	Wilms Tumor 3
-OMIM:194100	Moved To 106600
 OMIM:194190	Wolf-Hirschhorn Syndrome
 OMIM:194200	Wolff-Parkinson-White Syndrome
 OMIM:194300	Woolly Hair, Autosomal Dominant
@@ -1823,7 +1803,6 @@ OMIM:201300	Neuropathy, Hereditary Sensory And Autonomic, Type Iia
 OMIM:201310	Acrorenal Syndrome, Autosomal Recessive
 OMIM:201400	Acth Deficiency, Isolated
 OMIM:201450	Acyl-Coa Dehydrogenase, Medium-Chain, Deficiency Of
-OMIM:201460	Moved To 201475
 OMIM:201470	Acyl-Coa Dehydrogenase, Short-Chain, Deficiency Of
 OMIM:201475	Acyl-Coa Dehydrogenase, Very Long-Chain, Deficiency Of
 OMIM:201550	Adducted Thumbs Syndrome
@@ -1946,7 +1925,6 @@ OMIM:208870	Ataxia-Microcephaly-Cataract Syndrome
 OMIM:208900	Ataxia-Telangiectasia
 OMIM:208910	Ataxia-Telangiectasia With Generalized Skin Pigmentation And Early Death
 OMIM:208920	Ataxia, Early-Onset, With Oculomotor Apraxia And Hypoalbuminemia
-OMIM:209000	Moved To 613179
 OMIM:209010	Atherosclerosis, Premature, With Deafness, Nephropathy, Diabetes Mellitus, Photomyoclonus, And Degenerative Neurologic Disease
 OMIM:209050	Athrombia, Essential
 OMIM:209100	Atonic-Astatic Syndrome Of Foerster
@@ -1972,7 +1950,6 @@ OMIM:210250	Sitosterolemia
 OMIM:210350	Biemond Syndrome Ii
 OMIM:210370	Bietti Crystalline Corneoretinal Dystrophy
 OMIM:210400	Bifid Nose, Autosomal Recessive
-OMIM:210450	Moved To 607765
 OMIM:210500	Biliary Atresia, Extrahepatic
 OMIM:210550	Biliary Malformation With Renal Tubular Insufficiency
 OMIM:210600	Seckel Syndrome 1
@@ -2021,9 +1998,7 @@ OMIM:212080	Cardiac Lipidosis, Familial
 OMIM:212090	Cardiac Septal Defects With Coarctation Of The Aorta
 OMIM:212093	Cardiac Valvular Defect, Developmental
 OMIM:212100	Cardioauditory Syndrome Of Sanchez Cascos
-OMIM:212110	Moved To 611880
 OMIM:212112	Cardiomyopathy, Dilated, With Hypergonadotropic Hypogonadism
-OMIM:212120	Moved To 212112
 OMIM:212130	Cardiomyopathy Associated With Myopathy And Sudden Death
 OMIM:212135	Cardioskeletal Syndrome, Kuwaiti Type
 OMIM:212138	Carnitine-Acylcarnitine Translocase Deficiency
@@ -2046,7 +2021,6 @@ OMIM:212835	Cerebellar Ataxia And Ectodermal Dysplasia
 OMIM:212840	Gordon Holmes Syndrome
 OMIM:212850	Cerebellar Ataxia And Neurosensory Deafness
 OMIM:212890	Cerebellar Ataxia, Benign, With Thermoanalgesia
-OMIM:212900	Moved To 258450
 OMIM:213000	Cerebellar Hypoplasia
 OMIM:213002	Cerebellar Hypoplasia With Endosteal Sclerosis
 OMIM:213010	Cerebellar Vermis Aplasia With Associated Features Suggesting Smith-Lemli-Opitz Syndrome And Meckel Syndrome
@@ -2145,7 +2119,6 @@ OMIM:218340	Temtamy Syndrome
 OMIM:218350	Craniofacial Dyssynostosis With Short Stature
 OMIM:218400	Craniometaphyseal Dysplasia, Autosomal Recessive
 OMIM:218450	Craniostenosis, Sagittal, With Congenital Heart Disease, Mental Deficiency, And Mandibular Ankylosis
-OMIM:218500	Moved To 123100 And 123150
 OMIM:218530	Craniosynostosis With Anomalies Of The Cranial Base And Digits
 OMIM:218550	Craniosynostosis With Fibular Aplasia
 OMIM:218600	Baller-Gerold Syndrome
@@ -2190,7 +2163,6 @@ OMIM:220300	Deafness, Congenital, And Familial Myoclonic Epilepsy
 OMIM:220400	Jervell And Lange-Nielsen Syndrome 1
 OMIM:220500	Deafness, Onychodystrophy, Osteodystrophy, Mental Retardation, And Seizures Syndrome
 OMIM:220600	Split-Hand/Foot Malformation 1 With Sensorineural Hearing Loss, Autosomal Recessive
-OMIM:220700	Moved To 220290
 OMIM:220900	Deafness, Congenital, With Total Albinism
 OMIM:221200	Deafness And Myopia
 OMIM:221300	Deafness, Conductive, With Malformed External Ear
@@ -2249,7 +2221,6 @@ OMIM:224000	Dysautonomia-Like Disorder
 OMIM:224050	Cerebellar Ataxia, Mental Retardation, And Dysequilibrium Syndrome 1
 OMIM:224100	Anemia, Congenital Dyserythropoietic, Type Ii
 OMIM:224120	Anemia, Congenital Dyserythropoietic, Type Ia
-OMIM:224200	Moved To 229200
 OMIM:224230	Dyskeratosis Congenita, Autosomal Recessive, 1
 OMIM:224250	Dysmyelination With Jaundice
 OMIM:224300	Dysosteosclerosis
@@ -2379,7 +2350,6 @@ OMIM:230450	Gamma-Glutamylcysteine Synthetase Deficiency, Hemolytic Anemia Due T
 OMIM:230500	Gm1-Gangliosidosis, Type I
 OMIM:230600	Gm1-Gangliosidosis, Type Ii
 OMIM:230650	Gm1-Gangliosidosis, Type Iii
-OMIM:230710	Moved To 272800
 OMIM:230740	Gapo Syndrome
 OMIM:230750	Gastroschisis
 OMIM:230800	Gaucher Disease, Type I
@@ -2455,7 +2425,6 @@ OMIM:235500	Hemosiderosis, Pulmonary, With Deficiency Of Gamma-A Globulin
 OMIM:235510	Hennekam Lymphangiectasia-Lymphedema Syndrome
 OMIM:235550	Hepatic Venoocclusive Disease With Immunodeficiency
 OMIM:235555	Bile Acid Synthesis Defect, Congenital, 2
-OMIM:235600	Moved To 400045
 OMIM:235700	Hemolytic Anemia, Nonspherocytic, Due To Hexokinase Deficiency
 OMIM:235730	Mowat-Wilson Syndrome
 OMIM:235740	Hirschsprung Disease With Polydactyly, Renal Agenesis, And Deafness
@@ -2760,7 +2729,6 @@ OMIM:252011	Mitochondrial Complex Ii Deficiency
 OMIM:252100	Mohr Syndrome
 OMIM:252150	Molybdenum Cofactor Deficiency, Complementation Group A
 OMIM:252160	Molybdenum Cofactor Deficiency, Complementation Group B
-OMIM:252200	Moved To 158000 And 607903
 OMIM:252250	Monocyte Chemotactic Disorder
 OMIM:252270	Monosomy 7 Of Bone Marrow
 OMIM:252300	Morquio Syndrome C
@@ -2779,7 +2747,6 @@ OMIM:253000	Mucopolysaccharidosis, Type Iva
 OMIM:253010	Mucopolysaccharidosis Type Ivb
 OMIM:253200	Mucopolysaccharidosis Type Vi
 OMIM:253220	Mucopolysaccharidosis, Type Vii
-OMIM:253230	Moved To 601492
 OMIM:253240	Mucus Inspissation Of Respiratory Tract
 OMIM:253250	Mulibrey Nanism
 OMIM:253260	Biotinidase Deficiency
@@ -2914,7 +2881,6 @@ OMIM:258860	Orofaciodigital Syndrome Iv
 OMIM:258865	Orofaciodigital Syndrome Ix
 OMIM:258870	Gyrate Atrophy Of Choroid And Retina
 OMIM:258900	Orotic Aciduria
-OMIM:258920	Moved To 258900
 OMIM:259050	Ossified Ear Cartilages With Mental Deficiency, Muscle Wasting, And Bony Changes
 OMIM:259100	Hypertrophic Osteoarthropathy, Primary, Autosomal Recessive, 1
 OMIM:259200	Blount Disease, Adolescent
@@ -2993,7 +2959,6 @@ OMIM:262000	Bjornstad Syndrome
 OMIM:262020	Pilodental Dysplasia With Refractive Errors
 OMIM:262190	Pineal Hyperplasia, Insulin-Resistant Diabetes Mellitus, And Somatic Abnormalities
 OMIM:262300	Achromatopsia 3
-OMIM:262350	Moved To 194190
 OMIM:262400	Isolated Growth Hormone Deficiency, Type Ia
 OMIM:262500	Laron Syndrome
 OMIM:262600	Pituitary Hormone Deficiency, Combined, 2
@@ -3012,12 +2977,9 @@ OMIM:263210	Polycystic Kidney Disease, Potter Type I, With Microbrachycephaly, H
 OMIM:263300	Polycythemia Vera
 OMIM:263400	Erythrocytosis, Familial, 2
 OMIM:263450	Polydactyly, Postaxial, Type A5
-OMIM:263510	Moved To 613091
 OMIM:263520	Short-Rib Thoracic Dysplasia 6 With Or Without Polydactyly
-OMIM:263530	Moved To 613091
 OMIM:263540	Polydactyly, Postaxial, With Dental And Vertebral Anomalies
 OMIM:263550	Polymyoclonus, Infantile
-OMIM:263560	Moved To 214400
 OMIM:263570	Polyglucosan Body Disease, Adult Form
 OMIM:263600	Polysaccharide, Storage Of Unusual
 OMIM:263610	Polyhydramnios, Chronic Idiopathic
@@ -3215,7 +3177,6 @@ OMIM:272430	Cold-Induced Sweating Syndrome 1
 OMIM:272440	Syndactyly, Type I, With Microcephaly And Mental Retardation
 OMIM:272450	Syndesmodysplasic Dwarfism
 OMIM:272460	Spondylocarpotarsal Synostosis Syndrome
-OMIM:272550	Moved To 138500
 OMIM:272600	Tapetoretinal Degeneration With Ataxia
 OMIM:272620	Tardive Dyskinesia
 OMIM:272650	Tatsumi Factor Deficiency
@@ -3339,7 +3300,6 @@ OMIM:278750	Xeroderma Pigmentosum, Variant Type
 OMIM:278760	Xeroderma Pigmentosum, Complementation Group F
 OMIM:278780	Xeroderma Pigmentosum, Complementation Group G
 OMIM:278800	De Sanctis-Cacchione Syndrome
-OMIM:278810	Moved To 278720
 OMIM:278850	46,Xx Sex Reversal 2
 OMIM:278900	Xylosidase Deficiency
 OMIM:279000	Young Syndrome
@@ -3393,11 +3353,9 @@ OMIM:300220	Mental Retardation, X-Linked, Syndromic 10
 OMIM:300228	Testicular Germ Cell Tumor 1
 OMIM:300232	Spondyloepimetaphyseal Dysplasia, X-Linked, With Mental Deterioration
 OMIM:300238	Mental Retardation, X-Linked, Syndromic 11
-OMIM:300240	Moved To 305000
 OMIM:300243	Mental Retardation, X-Linked, Syndromic, Christianson Type
 OMIM:300244	Terminal Osseous Dysplasia
 OMIM:300245	Ptosis, Hereditary Congenital 2
-OMIM:300250	Moved To 202200
 OMIM:300257	Danon Disease
 OMIM:300258	Roifman Syndrome
 OMIM:300260	Lubs X-Linked Mental Retardation Syndrome
@@ -3409,7 +3367,6 @@ OMIM:300270	Adrenomyodystrophy
 OMIM:300271	Mental Retardation, X-Linked 72
 OMIM:300273	Goiter, Multinodular 2
 OMIM:300280	Uruguay Faciocardiomusculoskeletal Syndrome
-OMIM:300290	Moved To 614732
 OMIM:300291	Ectodermal Dysplasia, Hypohidrotic, With Immune Deficiency
 OMIM:300299	Neutropenia, Severe Congenital, X-Linked
 OMIM:300301	Ectodermal Dysplasia, Anhidrotic, With Immunodeficiency, Osteopetrosis, And Lymphedema
@@ -3580,7 +3537,6 @@ OMIM:300915	Microphthalmia, Syndromic 13
 OMIM:301000	Wiskott-Aldrich Syndrome
 OMIM:301040	Alpha-Thalassemia/Mental Retardation Syndrome, X-Linked
 OMIM:301050	Alport Syndrome, X-Linked
-OMIM:301090	Moved To 273395
 OMIM:301200	Amelogenesis Imperfecta, Type Ie
 OMIM:301201	Amelogenesis Imperfecta, Hypoplastic/Hypomaturation, X-Linked 2
 OMIM:301220	Pigmentary Disorder, Reticulate, With Systemic Manifestations
@@ -3605,7 +3561,6 @@ OMIM:302030	Calvarial Hyperostosis
 OMIM:302045	Cardiomyopathy, Dilated, 3b
 OMIM:302060	Barth Syndrome
 OMIM:302200	Cataract 40
-OMIM:302300	Moved To 302200
 OMIM:302350	Nance-Horan Syndrome
 OMIM:302380	Catel-Manzke Syndrome
 OMIM:302400	Central Incisors, Absence Of
@@ -3630,7 +3585,6 @@ OMIM:303650	Colonic Atresia
 OMIM:303700	Blue Cone Monochromacy
 OMIM:303800	Colorblindness, Partial, Deutan Series
 OMIM:303900	Colorblindness, Partial, Protan Series
-OMIM:304000	Moved To 613522
 OMIM:304020	Cone-Rod Dystrophy, X-Linked, 1
 OMIM:304030	Cone Dystrophy, X-Linked, With Tapetal-Like Sheen
 OMIM:304050	Aicardi Syndrome
@@ -3643,7 +3597,6 @@ OMIM:304300	Cyanide, Inability To Smell
 OMIM:304340	Dandy-Walker Malformation With Mental Retardation, Basal Ganglia Disease, And Seizures
 OMIM:304400	Deafness, X-Linked 2
 OMIM:304500	Deafness, X-Linked 1
-OMIM:304590	Moved To 304500
 OMIM:304700	Mohr-Tranebjaerg Syndrome
 OMIM:304730	Dermoids Of Cornea
 OMIM:304790	Immunodysregulation, Polyendocrinopathy, And Enteropathy, X-Linked
@@ -3653,7 +3606,6 @@ OMIM:304950	Dyggve-Melchior-Clausen Syndrome, X-Linked
 OMIM:305000	Dyskeratosis Congenita, X-Linked
 OMIM:305100	Ectodermal Dysplasia 1, Hypohidrotic, X-Linked
 OMIM:305200	Ehlers-Danlos Syndrome, Type V
-OMIM:305300	Moved To 302060
 OMIM:305350	Epidermodysplasia Verruciformis, X-Linked
 OMIM:305390	Exudative Vitreoretinopathy 2, X-Linked
 OMIM:305400	Aarskog-Scott Syndrome
@@ -3668,7 +3620,6 @@ OMIM:305690	Genitourinary Tract Anomalies
 OMIM:305700	Spermatogenic Failure, X-Linked, 1
 OMIM:305800	Membranoproliferative Glomerulonephritis, X-Linked
 OMIM:306000	Glycogen Storage Disease Ixa1
-OMIM:306100	Moved To 400044
 OMIM:306300	Granulomas, Congenital Cerebral
 OMIM:306400	Granulomatous Disease, Chronic, X-Linked
 OMIM:306500	Gynecomastia, Familial
@@ -3679,7 +3630,6 @@ OMIM:306930	Hemopoietic Proliferation
 OMIM:306950	Hernia, Anterior Diaphragmatic
 OMIM:306955	Heterotaxy, Visceral, 1, X-Linked
 OMIM:306960	Hhhh Syndrome
-OMIM:306970	Moved To 426000
 OMIM:306980	Hirschsprung Disease With Type D Brachydactyly
 OMIM:306990	Holoprosencephaly With Fetal Akinesia/Hypokinesia Sequence
 OMIM:306995	Homosexuality 1
@@ -3744,7 +3694,6 @@ OMIM:309610	Prieto X-Linked Mental Retardation Syndrome
 OMIM:309620	Mental Retardation, Skeletal Dysplasia, And Abducens Palsy
 OMIM:309630	Metacarpal 4-5 Fusion
 OMIM:309640	Mental Retardation With Spastic Paraplegia
-OMIM:309700	Moved To 310600
 OMIM:309800	Microphthalmia, Syndromic 1
 OMIM:309801	Microphthalmia, Syndromic 7
 OMIM:309840	Modifier, X-Linked, For Neurofunctional Defects
@@ -3849,7 +3798,6 @@ OMIM:314580	Wieacker-Wolff Syndrome
 OMIM:314600	Wildervanck Syndrome
 OMIM:314900	Xm System
 OMIM:314980	Zinc Finger Protein, X-Linked
-OMIM:315000	Moved To 302200
 OMIM:400003	Deleted In Azoospermia
 OMIM:400043	Deafness, Y-Linked 1
 OMIM:400044	46,Xy Sex Reversal 1
@@ -3907,7 +3855,6 @@ OMIM:600084	Macrocytosis, Familial
 OMIM:600089	Pancreatic Beta Cell Agenesis With Neonatal Diabetes Mellitus
 OMIM:600092	Chondrodysplasia-Pseudohermaphroditism Syndrome
 OMIM:600093	Spondyloepiphyseal Dysplasia Tarda With Characteristic Facies
-OMIM:600095	Moved To 246560
 OMIM:600096	Puerto Rican Infant Hypotonia Syndrome
 OMIM:600101	Deafness, Autosomal Dominant 2a
 OMIM:600105	Retinitis Pigmentosa 12
@@ -3944,7 +3891,6 @@ OMIM:600224	Spinocerebellar Ataxia 5
 OMIM:600231	Palmoplantar Keratoderma, Bothnian Type
 OMIM:600251	Facial Clefting, Oblique, 1
 OMIM:600252	Lowry-Maclean Syndrome
-OMIM:600256	Moved To 123155
 OMIM:600257	Chromosome 8q12.1-Q21.2 Deletion Syndrome
 OMIM:600263	Helicobacter Pylori Infection, Susceptibility To
 OMIM:600268	Oculoectodermal Syndrome
@@ -4078,7 +4024,6 @@ OMIM:601071	Deafness, Autosomal Recessive 9
 OMIM:601072	Deafness, Autosomal Recessive 8
 OMIM:601075	Aplasia Cutis Congenita, High Myopia, And Cone-Rod Dysfunction
 OMIM:601076	Mullerian Duct Aplasia, Unilateral Renal Agenesis, And Cervicothoracic Somite Anomalies
-OMIM:601085	Moved To 245570
 OMIM:601086	Laterality Defects, Autosomal Dominant
 OMIM:601088	Cataracts, Congenital, With Sensorineural Deafness, Down Syndrome-Like Facial Appearance, Short Stature, And Mental Retardation
 OMIM:601095	Harrod Syndrome
@@ -4106,15 +4051,12 @@ OMIM:601214	Naxos Disease
 OMIM:601216	Platyspondyly With Amelogenesis Imperfecta
 OMIM:601217	Alopecia-Mental Retardation Syndrome With Convulsions And Hypergonadotropic Hypogonadism
 OMIM:601220	Osteoporosis And Oculocutaneous Hypopigmentation Syndrome
-OMIM:601222	Moved To 185900
 OMIM:601223	Neuronal Intestinal Dysplasia, Type B
 OMIM:601224	Potocki-Shaffer Syndrome
 OMIM:601228	Polyposis Syndrome, Hereditary Mixed, 1
 OMIM:601230	Dermatitis Herpetiformis, Familial
 OMIM:601238	Cerebellar Ataxia, Cayman Type
-OMIM:601251	Moved To 601777
 OMIM:601277	Ichthyosis, Congenital, Autosomal Recessive 4a
-OMIM:601286	Moved To 115700
 OMIM:601287	Muscular Dystrophy, Limb-Girdle, Type 2f
 OMIM:601316	Deafness, Autosomal Dominant 10
 OMIM:601317	Deafness, Autosomal Dominant 11
@@ -4138,7 +4080,6 @@ OMIM:601355	Microcephaly, Congenital Heart Disease, Unilateral Renal Agenesis, A
 OMIM:601356	Lethal Short-Limb Skeletal Dysplasia, Al Gazali Type
 OMIM:601357	Brachial Amelia, Cleft Lip, And Holoprosencephaly
 OMIM:601358	Nicolaides-Baraitser Syndrome
-OMIM:601359	Moved To 163200
 OMIM:601360	Amelia, Autosomal Recessive
 OMIM:601362	Digeorge Syndrome/Velocardiofacial Syndrome Complex 2
 OMIM:601363	Wilms Tumor 4
@@ -4166,7 +4107,6 @@ OMIM:601427	Anterior Chamber Cleavage Disorder, Cerebellar Hypoplasia, Hypothyro
 OMIM:601438	Rhizomelic Dysplasia, Patterson-Lowry Type
 OMIM:601449	Deafness, Progressive, With Stapes Fixation
 OMIM:601450	Dislocation Of Hip, Congenital, With Hyperextensibility Of Fingers And Facial Dysmorphism
-OMIM:601451	Moved To 225400
 OMIM:601453	Trichodental Dysplasia
 OMIM:601455	Charcot-Marie-Tooth Disease, Type 4d
 OMIM:601457	Severe Combined Immunodeficiency, Autosomal Recessive, T Cell-Negative, B Cell-Negative, Nk Cell-Positive
@@ -4256,7 +4196,6 @@ OMIM:601992	Friedreich Ataxia 2
 OMIM:602014	Hypomagnesemia 1, Intestinal
 OMIM:602025	Body Mass Index Quantitative Trait Locus 9
 OMIM:602032	Ectodermal Dysplasia 4, Hair/Nail Type
-OMIM:602036	Moved To 133200
 OMIM:602066	Convulsions, Familial Infantile, With Paroxysmal Choreoathetosis
 OMIM:602068	Leishmaniasis, Tegumentary, Susceptibility To
 OMIM:602071	Broad Terminal Phalanges, Familial
@@ -4266,7 +4205,6 @@ OMIM:602080	Paget Disease Of Bone
 OMIM:602081	Speech-Language Disorder 1
 OMIM:602082	Corneal Dystrophy Of Bowman Layer, Type Ii
 OMIM:602083	Usher Syndrome, Type If
-OMIM:602084	Moved To 601728
 OMIM:602085	Polydactyly, Postaxial, Type A2
 OMIM:602086	Arrhythmogenic Right Ventricular Dysplasia, Familial, 3
 OMIM:602087	Arrhythmogenic Right Ventricular Dysplasia, Familial, 4
@@ -4539,7 +4477,6 @@ OMIM:605814	Citrullinemia, Type Ii, Neonatal-Onset
 OMIM:605820	Nonaka Myopathy
 OMIM:605822	Spondyloocular Syndrome, Autosomal Recessive
 OMIM:605827	Basaloid Follicular Hamartoma Syndrome, Generalized, Autosomal Dominant
-OMIM:605839	Moved To 150800
 OMIM:605850	Dimethylglycine Dehydrogenase Deficiency
 OMIM:605899	Glycine Encephalopathy
 OMIM:605909	Parkinson Disease 6, Autosomal Recessive Early-Onset
@@ -4619,7 +4556,6 @@ OMIM:606842	Cardioneuromyopathy With Hyaline Masses And Nemaline Rods
 OMIM:606843	Immunodeficiency With Hyper-Igm, Type 3
 OMIM:606851	Cree Mental Retardation Syndrome
 OMIM:606854	Polymicrogyria, Bilateral Frontoparietal
-OMIM:606858	Moved To 251200
 OMIM:606864	Paraganglioma And Gastric Stromal Sarcoma
 OMIM:606889	Alzheimer Disease 4
 OMIM:606895	Symphalangism, Distal, With Microdontia, Dental Pulp Stones, And Narrowed Zygomatic Arch
@@ -4647,7 +4583,6 @@ OMIM:607101	Deafness, Autosomal Recessive 30
 OMIM:607107	Nasopharyngeal Carcinoma
 OMIM:607115	Cinca Syndrome
 OMIM:607131	Macrocephaly With Multiple Epiphyseal Dysplasia And Distinctive Facies
-OMIM:607133	Moved To 601547
 OMIM:607136	Spinocerebellar Ataxia 17
 OMIM:607143	Congenital Disorder Of Glycosylation, Type Ig
 OMIM:607152	Spastic Paraplegia 19, Autosomal Dominant
@@ -4665,7 +4600,6 @@ OMIM:607259	Spastic Paraplegia 7, Autosomal Recessive
 OMIM:607271	Caspase 8 Deficiency
 OMIM:607313	Gaze Palsy, Familial Horizontal, With Progressive Scoliosis
 OMIM:607317	Spinocerebellar Ataxia, Autosomal Recessive 4
-OMIM:607322	Moved To 143470
 OMIM:607323	Duane-Radial Ray Syndrome
 OMIM:607326	Smith-Mccort Dysplasia 1
 OMIM:607330	Lathosterolosis
@@ -4842,7 +4776,6 @@ OMIM:608415	Prolonged Electroretinal Response Suppression
 OMIM:608423	Muscular Dystrophy, Limb-Girdle, Type 1f
 OMIM:608432	Craniosynostosis, Calcification Of Basal Ganglia, And Facial Dysmorphism
 OMIM:608443	Mental Retardation, Autosomal Recessive 3
-OMIM:608454	Moved To 267750
 OMIM:608456	Familial Adenomatous Polyposis, 2
 OMIM:608470	Corneal Dystrophy Of Bowman Layer, Type I
 OMIM:608471	Corneal Dystrophy, Lattice Type Iiia
@@ -4924,7 +4857,6 @@ OMIM:608967	Loeys-Dietz Syndrome, Type 2a
 OMIM:608971	Severe Combined Immunodeficiency, Autosomal Recessive, T Cell-Negative, B Cell-Positive, Nk Cell-Positive
 OMIM:608978	Meacham Syndrome
 OMIM:608980	Bifid Nose With Or Without Anorectal And Renal Anomalies
-OMIM:608983	Moved To 115700
 OMIM:608984	Ataxia, Sensory, 1, Autosomal Dominant
 OMIM:608995	Dyslexia, Susceptibility To, 8
 OMIM:608996	Premature Ovarian Failure 3
@@ -5154,7 +5086,6 @@ OMIM:610419	Deafness, Autosomal Recessive 68
 OMIM:610420	Preauricular Tag, Isolated, Autosomal Dominant, 1
 OMIM:610422	Alopecia-Mental Retardation Syndrome 2
 OMIM:610425	Cataract 23
-OMIM:610426	Moved To 610425
 OMIM:610427	Night Blindness, Congenital Stationary, Type 2b
 OMIM:610441	Testicular Microlithiasis
 OMIM:610442	Spondyloepimetaphyseal Dysplasia, Genevieve Type
@@ -5189,7 +5120,6 @@ OMIM:610618	Angioedema, Hereditary, Type Iii
 OMIM:610623	Cataract 11, Multiple Types
 OMIM:610628	Hypogonadotropic Hypogonadism 4 With Or Without Anosmia
 OMIM:610629	Diamond-Blackfan Anemia 3
-OMIM:610634	Moved To 115650
 OMIM:610644	Palmoplantar Hyperkeratosis With Squamous Cell Carcinoma Of Skin And 46,Xx Sex Reversal
 OMIM:610651	Xeroderma Pigmentosum, Complementation Group B
 OMIM:610655	Telangiectasia, Hereditary Hemorrhagic, Type 4
@@ -5355,7 +5285,6 @@ OMIM:611938	Ventricular Tachycardia, Catecholaminergic Polymorphic, 2
 OMIM:611943	Riddle Syndrome
 OMIM:611944	Lymphedema, Hereditary, Ib
 OMIM:611945	Spastic Paraplegia 37, Autosomal Dominant
-OMIM:611948	Moved To 267750
 OMIM:611953	Macular Degeneration, Age-Related, 11
 OMIM:611961	Stevenson-Carey Syndrome
 OMIM:611962	Hunter-Macdonald Syndrome
@@ -5431,7 +5360,6 @@ OMIM:612376	Acute Promyelocytic Leukemia
 OMIM:612379	Congenital Disorder Of Glycosylation, Type Iq
 OMIM:612389	Pontocerebellar Hypoplasia, Type 2b
 OMIM:612390	Pontocerebellar Hypoplasia, Type 2c
-OMIM:612391	Moved To 602782
 OMIM:612394	Bone Fragility With Contractures, Arterial Rupture, And Deafness
 OMIM:612406	Dystonia 17, Torsion, Autosomal Recessive
 OMIM:612416	Factor Xi Deficiency
@@ -5439,7 +5367,6 @@ OMIM:612422	Cardiomyopathy, Familial Restrictive, 3
 OMIM:612423	Prekallikrein Deficiency
 OMIM:612437	Epilepsy, Progressive Myoclonic 1b
 OMIM:612438	Leukodystrophy, Hypomyelinating, 6
-OMIM:612443	Moved To 612319
 OMIM:612444	Ciliary Dyskinesia, Primary, 9
 OMIM:612446	Complement Component 6 Deficiency
 OMIM:612447	Skeletal Defects, Genital Hypoplasia, And Mental Retardation
@@ -5480,7 +5407,6 @@ OMIM:612645	Deafness, Autosomal Recessive 1b
 OMIM:612649	Ciliary Dyskinesia, Primary, 11
 OMIM:612650	Ciliary Dyskinesia, Primary, 12
 OMIM:612651	Endocrine-Cerebroosteodysplasia
-OMIM:612652	Moved To 219150
 OMIM:612653	Spherocytosis, Type 4
 OMIM:612656	Episodic Ataxia, Type 6
 OMIM:612657	Cone-Rod Dystrophy 12
@@ -5562,12 +5488,10 @@ OMIM:613002	Herpes Simplex Encephalitis, Susceptibility To, 2
 OMIM:613005	Santos Syndrome
 OMIM:613011	Lymphoproliferative Syndrome 1
 OMIM:613013	Neuroblastoma, Susceptibility To, 2
-OMIM:613020	Moved To 116600
 OMIM:613021	Bronchiectasis With Or Without Elevated Sweat Chloride 2
 OMIM:613024	Follicular Lymphoma, Susceptibility To, 1
 OMIM:613026	Chromosome 19q13.11 Deletion Syndrome
 OMIM:613027	Glycogen Storage Disease Ixc
-OMIM:613034	Moved To 612541
 OMIM:613038	Pituitary Hormone Deficiency, Combined, 1
 OMIM:613060	Epilepsy, Idiopathic Generalized, Susceptibility To, 10
 OMIM:613065	Leukemia, Acute Lymphoblastic
@@ -5923,7 +5847,6 @@ OMIM:613958	Spermatogenic Failure 9
 OMIM:613960	Granulomatous Disease, Chronic, Autosomal Recessive, Cytochrome B-Positive, Type Iii
 OMIM:613969	Myopia 19, Autosomal Dominant
 OMIM:613970	Mental Retardation, Autosomal Dominant 6
-OMIM:613971	Moved To 245570
 OMIM:613977	Cyanosis, Transient Neonatal
 OMIM:613978	Hemoglobin H Disease
 OMIM:613980	Atrial Fibrillation, Familial, 9
@@ -6116,7 +6039,6 @@ OMIM:614416	Radiohumeral Fusions With Other Skeletal And Craniofacial Anomalies
 OMIM:614417	Epilepsy, Familial Temporal Lobe, 5
 OMIM:614418	Febrile Seizures, Familial, 11
 OMIM:614420	Systemic Lupus Erythematosus 16
-OMIM:614421	Moved To 277590
 OMIM:614422	Cataract 37
 OMIM:614424	Joubert Syndrome 14
 OMIM:614429	Ventricular Septal Defect 1
@@ -6169,7 +6091,6 @@ OMIM:614521	Thrombocythemia 3
 OMIM:614524	Fibrochondrogenesis 2
 OMIM:614526	Chromosome 17q12 Duplication Syndrome
 OMIM:614527	Chromosome 17q12 Deletion Syndrome
-OMIM:614540	Moved To 213600
 OMIM:614541	Chromosome 16q22 Deletion Syndrome
 OMIM:614557	Ehlers-Danlos Syndrome With Progressive Kyphoscoliosis, Myopathy, And Hearing Loss
 OMIM:614558	Epileptic Encephalopathy, Early Infantile, 13
@@ -6381,7 +6302,6 @@ OMIM:615082	C3hex, Ability To Smell
 OMIM:615083	Colorectal Cancer, Susceptibility To, 12
 OMIM:615084	Mitochondrial Dna Depletion Syndrome 11
 OMIM:615085	Osteopetrosis, Autosomal Recessive 8
-OMIM:615087	Moved To 613091
 OMIM:615092	Left Ventricular Noncompaction 7
 OMIM:615095	Microcephaly 10, Primary, Autosomal Recessive
 OMIM:615102	Tyshchenko Syndrome
@@ -6394,7 +6314,6 @@ OMIM:615122	Lymphoproliferative Syndrome 2
 OMIM:615127	Epilepsy, Familial Adult Myoclonic, 4
 OMIM:615133	Udp-N-Acetyl-Alpha-D-Galactosamine:Polypeptide N-Acetylgalactosaminyltransferase-Like 5
 OMIM:615139	Facial Dysmorphism, Immunodeficiency, Livedo, And Short Stature
-OMIM:615141	Moved To 177700
 OMIM:615145	Microphthalmia, Isolated, With Coloboma 9
 OMIM:615147	Retinal Dystrophy, Iris Coloboma, And Comedogenic Acne Syndrome
 OMIM:615155	Steel Syndrome
