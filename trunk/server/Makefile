@@ -34,9 +34,13 @@ caches: owlsim.cache ic-cache.owl
 
 all-%: %-owlsim.cache %-ic-cache.owl
 
-all.owl:  $(ROOT) $(TRIGGERS)
-###	$(OWLTOOLS) $(USECAT) $< --merge-imports-closure --load-instances $(MM_G2P) --load-labels $(MM_G2L) --load-instances $(DR_G2P) --load-labels $(DR_G2L) --load-instances $(HS_D2P) --load-labels $(HS_D2L) --merge-support-ontologies -o $@
-	$(OWLTOOLS) $(USECAT) $< --merge-imports-closure --load-instances $(MM_G2P) --load-labels $(MM_G2L) --load-instances $(DR_G2P) --load-labels $(DR_G2L) --load-instances $(DM_G2P) --load-labels $(DM_G2L) --load-instances $(HS_D2P) --load-labels $(HS_D2L)  --merge-support-ontologies --remove-axioms -t DisjointClasses -o $@
+trigger:
+	touch $@
+
+# TODO: trigger rebuild
+all.owl:  $(ROOT)
+	$(OWLTOOLS) $(USECAT) $< --merge-imports-closure --load-instances $(MM_G2P) --load-labels $(MM_G2L) --load-instances $(DR_G2P) --load-labels $(DR_G2L) --load-instances $(HS_D2P) --load-labels $(HS_D2L) --merge-support-ontologies -o $@
+###	$(OWLTOOLS) $(USECAT) $< --merge-imports-closure --load-instances $(MM_G2P) --load-labels $(MM_G2L) --load-instances $(DR_G2P) --load-labels $(DR_G2L) --load-instances $(DM_G2P) --load-labels $(DM_G2L) --load-instances $(HS_D2P) --load-labels $(HS_D2L)  --merge-support-ontologies --remove-axioms -t DisjointClasses -o $@
 
 Mus_musculus-all.owl:  $(ONT)/mp/mp-importer.owl $(TRIGGERS)
 	owltools $(USECAT) $< --merge-imports-closure --load-instances $(MM_G2P) --load-labels $(MM_G2L) --merge-support-ontologies -o $@
@@ -44,6 +48,9 @@ Homo_sapiens-all.owl:  $(ONT)/hp/hp-importer.owl $(TRIGGERS)
 	owltools $(USECAT) $< --merge-imports-closure --load-instances $(HS_D2P) --load-labels $(HS_D2L) --merge-support-ontologies -o $@
 Drosophila_melanogaster-all.owl:  $(ONT)/dpo/dpo-importer.owl $(TRIGGERS)
 	owltools $(USECAT) $< --merge-imports-closure --load-instances $(DM_G2P) --load-labels $(DM_G2L) --merge-support-ontologies --remove-axioms -t DisjointClasses -o $@
+
+mammal-all.owl:  $(ONT)/mammal.owl $(TRIGGERS)
+	$(OWLTOOLS) $(USECAT) $< --merge-imports-closure --load-instances $(MM_G2P) --load-labels $(MM_G2L) --load-instances $(HS_D2P) --load-labels $(HS_D2L) --merge-support-ontologies -o $@
 
 #owlsim.cache: all.owl
 #	$(OWLTOOLS) $< --sim-save-ic-cache ic-cache-pre.owl --sim-save-lcs-cache -m 3.0 $@ --sim-save-ic-cache ic-cache-redundant.owl
