@@ -34,7 +34,7 @@ caches: owlsim.cache ic-cache.owl
 
 all-%: %-owlsim.cache %-ic-cache.owl
 
-trigger:
+trigger: $(TRIGGERS)
 	touch $@
 
 # TODO: trigger rebuild
