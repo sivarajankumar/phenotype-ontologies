@@ -73,7 +73,7 @@ all-phenodigm-cache.txt:
 hp-hp-phenodigm-cache.txt: Homo_sapiens-all.owl
 	$(OWLTOOLS) $<  --sim-save-phenodigm-class-scores -m 0.5 -x HP,HP -a $@
 
-hp-mp-phenodigm-cache.txt: 
+hp-mp-phenodigm-cache.txt: Mus_musculus-all.owl Homo_sapiens-all.owl
 	$(OWLTOOLS) Mus_musculus-all.owl Homo_sapiens-all.owl  $(ONT)/hp-mp/mp_hp-align-equiv.owl --merge-support-ontologies --sim-save-phenodigm-class-scores -m 0.5 -x HP,MP -a $@
 
 hp-zp-phenodigm-cache.txt: all.owl
