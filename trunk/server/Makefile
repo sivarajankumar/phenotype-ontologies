@@ -48,6 +48,8 @@ Homo_sapiens-all.owl:  $(ONT)/hp/hp-importer.owl $(TRIGGERS)
 	owltools $(USECAT) $< --merge-imports-closure --load-instances $(HS_D2P) --load-labels $(HS_D2L) --merge-support-ontologies -o $@
 Drosophila_melanogaster-all.owl:  $(ONT)/dpo/dpo-importer.owl $(TRIGGERS)
 	owltools $(USECAT) $< --merge-imports-closure --load-instances $(DM_G2P) --load-labels $(DM_G2L) --merge-support-ontologies --remove-axioms -t DisjointClasses -o $@
+Danio_rerio-all.owl:  $(ONT)/zp/zp-importer.owl $(TRIGGERS)
+	owltools $(USECAT) $< --merge-imports-closure --load-instances $(DR_G2P) --load-labels $(DR_G2L) --merge-support-ontologies --remove-axioms -t DisjointClasses -o $@
 
 mammal-all.owl:  $(ONT)/mammal.owl $(TRIGGERS)
 	$(OWLTOOLS) $(USECAT) $< --merge-imports-closure --load-instances $(MM_G2P) --load-labels $(MM_G2L) --load-instances $(HS_D2P) --load-labels $(HS_D2L) --merge-support-ontologies -o $@
@@ -66,14 +68,26 @@ ic-cache.owl: all.owl
 %-ic-cache.owl: %-all.owl
 	$(OWLTOOLS) $< --no-debug --sim-save-ic-cache $@
 
+all-phenodigm-cache.txt: 
+
+hp-hp-phenodigm-cache.txt: Homo_sapiens-all.owl
+	$(OWLTOOLS) $<  --sim-save-phenodigm-class-scores -m 0.5 -x HP,HP -a $@
+
 hp-mp-phenodigm-cache.txt: 
-	$(OWLTOOLS) Mus_musculus-all.owl Homo_sapiens-all.owl  $(ONT)/hp-mp/mp_hp-align-equiv.owl --merge-support-ontologies --sim-save-phenodigm-class-scores -m 0.5 -x MP,HP -a $@
+	$(OWLTOOLS) Mus_musculus-all.owl Homo_sapiens-all.owl  $(ONT)/hp-mp/mp_hp-align-equiv.owl --merge-support-ontologies --sim-save-phenodigm-class-scores -m 0.5 -x HP,MP -a $@
 
 hp-zp-phenodigm-cache.txt: all.owl
 	$(OWLTOOLS) $<  --sim-save-phenodigm-class-scores -m 0.5 -x HP,ZP -a $@
 
-hp-hp-phenodigm-cache.txt: Homo_sapiens-all.owl
-	$(OWLTOOLS) $<  --sim-save-phenodigm-class-scores -m 0.5 -x HP,HP -a $@
+mp-mp-phenodigm-cache.txt: Mus_musculus-all.owl
+	$(OWLTOOLS) $<  --sim-save-phenodigm-class-scores -m 0.5 -x MP,MP -a $@
+
+mp-zp-phenodigm-cache.txt: all.owl
+	$(OWLTOOLS) $<  --sim-save-phenodigm-class-scores -m 0.5 -x MP,ZP -a $@
+
+zp-zp-phenodigm-cache.txt: Danio_rerio-all.owl
+	$(OWLTOOLS) $<  --sim-save-phenodigm-class-scores -m 0.5 -x ZP,ZP -a $@
+
 
 all-phenodigm-cache.txt: all.owl
 	$(OWLTOOLS) $<  --sim-save-phenodigm-class-scores -m 0.5 -a $@
