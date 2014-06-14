@@ -68,7 +68,13 @@ ic-cache.owl: all.owl
 %-ic-cache.owl: %-all.owl
 	$(OWLTOOLS) $< --no-debug --sim-save-ic-cache $@
 
-all-phenodigm-cache.txt: 
+all-phenodigm-cache.txt: \
+ hp-hp-phenodigm-cache.txt\
+ hp-mp-phenodigm-cache.txt\
+ hp-zp-phenodigm-cache.txt\
+ mp-mp-phenodigm-cache.txt\
+ mp-zp-phenodigm-cache.txt\
+ zp-zp-phenodigm-cache.txt
 
 hp-hp-phenodigm-cache.txt: Homo_sapiens-all.owl
 	$(OWLTOOLS) $<  --sim-save-phenodigm-class-scores -m 0.5 -x HP,HP -a $@
