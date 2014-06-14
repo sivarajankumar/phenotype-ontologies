@@ -66,9 +66,15 @@ ic-cache.owl: all.owl
 %-ic-cache.owl: %-all.owl
 	$(OWLTOOLS) $< --no-debug --sim-save-ic-cache $@
 
+hp-mp-phenodigm-cache.txt: 
+	$(OWLTOOLS) Mus_musculus-all.owl Homo_sapiens-all.owl  $(ONT)/hp-mp/mp_hp-align-equiv.owl --merge-support-ontologies --sim-save-phenodigm-class-scores -m 0.5 -x MP,HP -a $@
+
 ## ENRICHMENT
 ph-x-ph-enrichment.txt: all.owl
 	$(OWLTOOLS) --no-debug  $<  --all-by-all-enrichment-analysis -p 0.25 Phenotype Phenotype   > $@.tmp && mv $@.tmp $@
+
+#mouse-ph-x-ph-enrichment.txt: Mus_musculus-all.owl
+#	$(OWLTOOLS)  --no-debug $< go.owl --load-instances $(MM_G2G)  --all-by-all-enrichment-analysis -p 0.25 'mammalian phenotype' 'mammalian phenotype'   > $@.tmp && mv $@.tmp $@
 
 mouse-ph-x-go-enrichment.txt: Mus_musculus-all.owl
 	$(OWLTOOLS)  --no-debug $< go.owl --load-instances $(MM_G2G)  --all-by-all-enrichment-analysis -p 0.25 'mammalian phenotype' biological_process   > $@.tmp && mv $@.tmp $@
