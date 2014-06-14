@@ -20,6 +20,8 @@ HS = $(DATA)/Homo_sapiens
 HS_D2P = $(HS)/Hs-disease-to-phenotype-O.txt
 HS_D2L = $(HS)/Hs-disease-labels.txt
 
+GRP = $(ONT)/imports/grouping_phenotypes.owl
+
 ##ROOT = $(ONT)/mammal.owl
 ##ROOT = $(ONT)/vertebrate.owl
 ROOT = $(ONT)/metazoa.owl
@@ -82,8 +84,8 @@ hp-hp-phenodigm-cache.txt: Homo_sapiens-all.owl
 hp-mp-phenodigm-cache.txt: Mus_musculus-all.owl Homo_sapiens-all.owl
 	$(OWLTOOLS) Mus_musculus-all.owl Homo_sapiens-all.owl  $(ONT)/hp-mp/mp_hp-align-equiv.owl --merge-support-ontologies --sim-save-phenodigm-class-scores -m 0.5 -x HP,MP -a $@
 
-hp-zp-phenodigm-cache.txt: all.owl
-	$(OWLTOOLS) $<  --sim-save-phenodigm-class-scores -m 0.5 -x HP,ZP -a $@
+hp-zp-phenodigm-cache.txt: Homo_sapiens-all.owl Danio_rerio-all.owl $(GRP)
+	$(OWLTOOLS) Homo_sapiens-all.owl Danio_rerio-all.owl $(GRP) --make-super-slim HP,ZP --sim-save-phenodigm-class-scores -m 0.5 -x HP,ZP -a $@
 
 mp-mp-phenodigm-cache.txt: Mus_musculus-all.owl
 	$(OWLTOOLS) $<  --sim-save-phenodigm-class-scores -m 0.5 -x MP,MP -a $@
