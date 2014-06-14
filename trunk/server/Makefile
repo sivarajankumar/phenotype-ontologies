@@ -69,6 +69,15 @@ ic-cache.owl: all.owl
 hp-mp-phenodigm-cache.txt: 
 	$(OWLTOOLS) Mus_musculus-all.owl Homo_sapiens-all.owl  $(ONT)/hp-mp/mp_hp-align-equiv.owl --merge-support-ontologies --sim-save-phenodigm-class-scores -m 0.5 -x MP,HP -a $@
 
+hp-zp-phenodigm-cache.txt: all.owl
+	$(OWLTOOLS) $<  --sim-save-phenodigm-class-scores -m 0.5 -x HP,ZP -a $@
+
+hp-hp-phenodigm-cache.txt: Homo_sapiens-all.owl
+	$(OWLTOOLS) $<  --sim-save-phenodigm-class-scores -m 0.5 -x HP,HP -a $@
+
+all-phenodigm-cache.txt: all.owl
+	$(OWLTOOLS) $<  --sim-save-phenodigm-class-scores -m 0.5 -a $@
+
 ## ENRICHMENT
 ph-x-ph-enrichment.txt: all.owl
 	$(OWLTOOLS) --no-debug  $<  --all-by-all-enrichment-analysis -p 0.25 Phenotype Phenotype   > $@.tmp && mv $@.tmp $@
