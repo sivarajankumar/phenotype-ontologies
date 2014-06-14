@@ -70,6 +70,9 @@ ic-cache.owl: all.owl
 %-ic-cache.owl: %-all.owl
 	$(OWLTOOLS) $< --no-debug --sim-save-ic-cache $@
 
+hp-zp-all.owl: Homo_sapiens-all.owl Danio_rerio-all.owl $(GRP)
+	$(OWLTOOLS) $(USECAT) Homo_sapiens-all.owl Danio_rerio-all.owl $(GRP) --merge-support-ontologies --merge-imports-closure --make-super-slim HP,ZP -o  $@
+
 all-phenodigm-cache.txt: \
  hp-hp-phenodigm-cache.txt\
  hp-mp-phenodigm-cache.txt\
@@ -84,8 +87,8 @@ hp-hp-phenodigm-cache.txt: Homo_sapiens-all.owl
 hp-mp-phenodigm-cache.txt: Mus_musculus-all.owl Homo_sapiens-all.owl
 	$(OWLTOOLS) Mus_musculus-all.owl Homo_sapiens-all.owl  $(ONT)/hp-mp/mp_hp-align-equiv.owl --merge-support-ontologies --sim-save-phenodigm-class-scores -m 0.5 -x HP,MP -a $@
 
-hp-zp-phenodigm-cache.txt: Homo_sapiens-all.owl Danio_rerio-all.owl $(GRP)
-	$(OWLTOOLS) Homo_sapiens-all.owl Danio_rerio-all.owl $(GRP) --make-super-slim HP,ZP --sim-save-phenodigm-class-scores -m 0.5 -x HP,ZP -a $@
+hp-zp-phenodigm-cache.txt: hp-zp-all.owl
+	$(OWLTOOLS) $< --sim-save-phenodigm-class-scores -m 0.5 -x HP,ZP -a $@
 
 mp-mp-phenodigm-cache.txt: Mus_musculus-all.owl
 	$(OWLTOOLS) $<  --sim-save-phenodigm-class-scores -m 0.5 -x MP,MP -a $@
