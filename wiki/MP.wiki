@@ -36,3 +36,8 @@ The edit file is currently:
 Edit this in protege.
 
 The file mp-equivalence-axioms.obo is DEPRECATED!
+
+= TermGenie =
+
+ * http://mp.termgenie.org/
+ * http://mp.termgenie.org/TermGenieFreeForm
