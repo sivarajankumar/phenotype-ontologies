@@ -186,6 +186,16 @@ pato.owl: pato.obo
 	owltools $(USECAT) $< --merge-imports-closure --extract-mingraph --add-obo-shorthand-to-properties --set-ontology-id $(OBO)/$@ -o -f obo --no-check $@.tmp && grep -v ^owl-axiom $@.tmp > $@
 
 # ----------------------------------------
+# Closures
+# ----------------------------------------
+
+%.closure: %.owl
+	owltools $(USECAT) $< --reasoner elk --save-superclass-closure $@
+
+%-reasoner-report.txt: %.owl
+	owltools $(USECAT) $< --run-reasoner -r elk -u > $@.tmp && mv $@.tmp $@
+
+# ----------------------------------------
 # Derived xp obo files
 # ----------------------------------------
 # note that as OWL is now primary, these files are derived
