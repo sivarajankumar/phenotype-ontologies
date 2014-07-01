@@ -182,6 +182,9 @@ pato.owl: pato.obo
 %-core.obo: %.owl
 	owltools $(USECAT) $<  --add-support-from-imports -o -f obo --no-check $@
 
+%-mingraph.obo: %.owl
+	owltools $(USECAT) $< --merge-imports-closure --extract-mingraph --add-obo-shorthand-to-properties --set-ontology-id $(OBO)/$@ -o -f obo --no-check $@.tmp && grep -v ^owl-axiom $@.tmp > $@
+
 # ----------------------------------------
 # Derived xp obo files
 # ----------------------------------------
