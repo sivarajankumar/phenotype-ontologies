@@ -91,13 +91,16 @@ hp/hp-inferred.owl: hp.owl
 ## DO NOT UPDATE: https://code.google.com/p/bio-ontology-zp/issues/detail?id=4
 #zp.owl:
 #	owltools http://compbio.charite.de/hudson/job/hpo.ontology.uberpheno/lastStableBuild/artifact/data/dataForUberpheno/not_subsettable_ontologies/zp.owl --set-ontology-id $(OBO)/upheno/$@ -o $@
-#zp.obo: zp.owl
-#	owltools $< -o -f obo --no-check $@
+zp.obo: zp.owl
+	owltools $< -o -f obo --no-check $@
 
-zp/zp-mapping.txt: zp.owl
+zp-check: zp.owl
+	(grep BFO_0000052 $< && exit 1) || echo ok
+
+zp/zp-mapping.txt: zp.owl zp-check
 	owltools $< --extract-annotation-value --id-prefix ZP: -p http://zfin/definition/source_information -o $@
 
-zp/zp-equivalence-axioms-subq.owl: zp.owl
+zp/zp-equivalence-axioms-subq.owl: zp.owl zp-check
 	cp $< $@
 
 zp/zp-equivalence-axioms-subq-ubr.owl: zp.owl uberon-simple-vertebrate-bridge.obo
@@ -177,13 +180,15 @@ pato.owl: pato.obo
 	owltools  $(USECAT) --use-reasoner elk $< --merge-imports-closure --assert-inferred-subclass-axioms --markIsInferred --removeRedundant --allowEquivalencies -o $@.tmp --make-subset-by-properties -f // --extract-module  -d HP:0000118 MP:0000001  WBPhenotype:0000886  --set-ontology-id $(OBO)/$@ -o $@
 
 %-simple.obo: %-simple.owl
-	owltools $< -o -f obo --no-check $@.tmp && grep -v ^owl-axioms $@.tmp > $@
+	owltools $< --remove-axiom-annotations -o -f obo --no-check $@.tmp && egrep -v '^(owl-axioms|property_value)' $@.tmp > $@
 
 %-core.obo: %.owl
 	owltools $(USECAT) $<  --add-support-from-imports -o -f obo --no-check $@
 
 %-mingraph.obo: %.owl
 	owltools $(USECAT) $< --merge-imports-closure --extract-mingraph --add-obo-shorthand-to-properties --set-ontology-id $(OBO)/$@ -o -f obo --no-check $@.tmp && grep -v ^owl-axiom $@.tmp > $@
+%-mingraph.owl: %.owl
+	owltools $(USECAT) $< --merge-imports-closure --extract-mingraph --add-obo-shorthand-to-properties --set-ontology-id $(OBO)/$@ -o $@
 
 # ----------------------------------------
 # Closures
@@ -295,6 +300,8 @@ mirror/uberon-ext.owl: external/uberon/ext.owl
 #	wget $(OBO)/fma.owl -O $@
 mirror/fma.owl:
 	owltools mirror/composite-fma.owl --set-ontology-id $(OBO)/fma.owl -o $@
+mirror/ro.owl:
+	wget $(OBO)/ro.owl -O $@
 mirror/uberon.owl: mirror/uberon-ext.owl
 	owltools $(USECAT) $<  --merge-support-ontologies --merge-imports-closure --make-subset-by-properties -n $(KEEPRELS)  --remove-annotation-assertions -l --remove-dangling-annotations   --extract-mingraph --set-ontology-id $(OBO)/uberon.owl -o $@
 ##### need to sort sync issue
@@ -313,7 +320,7 @@ mirror/pr.owl: mirror/pr.obo
 .PRECIOUS: mirror/%.owl
 
 imports/ro_import.owl: mirror/ro.owl
-	owltools  $(USECAT) $< mp/mp-equivalence-axioms-edit.owl --extract-properties --set-ontology-id $(UPHENO)/upheno/$@ -o $@
+	owltools  $(USECAT) $< mp/mp-edit.owl --extract-properties --set-ontology-id $(UPHENO)/upheno/$@ -o $@
 
 imports/so_import.owl:
 	owltools  $(USECAT) $< $(UPHENO)/data/human-genes.owl $(OBO)/so.owl --add-imports-from-supports --extract-module -s $(OBO)/so.owl -c --extract-mingraph --remove-annotation-assertions -l -d -s --make-subset-by-properties -f // --set-ontology-id $(UPHENO)/$@ -o $@
