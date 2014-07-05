@@ -197,7 +197,7 @@ OMIM:108720	Atelosteogenesis, Type I
 OMIM:108721	Atelosteogenesis, Type Iii
 OMIM:108725	Atherosclerosis Susceptibility
 OMIM:108760	Atresia Of External Auditory Canal And Conductive Deafness
-OMIM:108770	Atrial Standstill
+OMIM:108770	Atrial Standstill 1
 OMIM:108800	Atrial Septal Defect 1
 OMIM:108900	Atrial Septal Defect 7 With Or Without Atrioventricular Conduction Defects
 OMIM:108950	Atrial Tachyarrhythmia With Short Pr Interval
@@ -709,7 +709,7 @@ OMIM:137370	Genu Valgum, St. Helena Familial
 OMIM:137400	Geographic Tongue And Fissured Tongue
 OMIM:137440	Gerstmann-Straussler Disease
 OMIM:137500	Giant Neutrophil Leukocytes
-OMIM:137550	Giant Pigmented Hairy Nevus
+OMIM:137550	Melanocytic Nevus Syndrome, Congenital
 OMIM:137560	Giant Platelet Syndrome With Thrombocytopenia
 OMIM:137575	Gigantiform Cementoma, Familial
 OMIM:137580	Gilles De La Tourette Syndrome
@@ -953,7 +953,7 @@ OMIM:151000	Lentiginosis, Centrofacial Neurodysraphic
 OMIM:151001	Lentiginosis, Inherited Patterned
 OMIM:151050	Lenz-Majewski Hyperostotic Dwarfism
 OMIM:151100	Leopard Syndrome 1
-OMIM:151200	Leri Pleonosteosis
+OMIM:151200	Chromosome 8q22.1 Duplication Syndrome
 OMIM:151210	Platyspondylic Lethal Skeletal Dysplasia, Torrance Type
 OMIM:151380	Leukemia, Acute Monocytic
 OMIM:151400	Leukemia, Chronic Lymphocytic
@@ -1023,7 +1023,7 @@ OMIM:155150	Median-Ulnar Nerve Communications
 OMIM:155200	Mediosternal Depigmentation Line
 OMIM:155240	Thyroid Carcinoma, Familial Medullary
 OMIM:155255	Medulloblastoma
-OMIM:155310	Megaduodenum And/Or Megacystis
+OMIM:155310	Visceral Myopathy
 OMIM:155350	Megalencephaly, Autosomal Dominant
 OMIM:155500	Megalodactyly
 OMIM:155600	Melanoma, Cutaneous Malignant, Susceptibility To, 1
@@ -1541,7 +1541,7 @@ OMIM:183086	Spinocerebellar Ataxia 6
 OMIM:183090	Spinocerebellar Ataxia 2
 OMIM:183100	Spinocerebellar Atrophy With Pupillary Paralysis
 OMIM:183300	Splenogonadal Fusion With Limb Defects And Micrognathia
-OMIM:183350	Splenomegaly Syndrome With Splenic Germinal Center Hypoplasia And Reduced Circulating T-Helper Cells
+OMIM:183350	Splenomegaly Syndrome With Splenic Germinal Center Hypoplasia And Reduced Circulating T Helper Cells
 OMIM:183400	Split Lower Lip
 OMIM:183500	Split-Hand And Split-Foot With Hypodontia
 OMIM:183600	Split-Hand/Foot Malformation 1
@@ -1756,7 +1756,7 @@ OMIM:193520	Watson Syndrome
 OMIM:193530	Weyers Acrofacial Dysostosis
 OMIM:193670	Whim Syndrome
 OMIM:193700	Arthrogryposis, Distal, Type 2a
-OMIM:193900	White Sponge Nevus
+OMIM:193900	White Sponge Nevus 1
 OMIM:194000	Widow'S Peak
 OMIM:194050	Williams-Beuren Syndrome
 OMIM:194070	Wilms Tumor 1
@@ -2033,7 +2033,7 @@ OMIM:213600	Basal Ganglia Calcification, Idiopathic, 1
 OMIM:213700	Cerebrotendinous Xanthomatosis
 OMIM:213900	Cerebral Sclerosis Similar To Pelizaeus-Merzbacher Disease
 OMIM:213950	Cerebrocortical Degeneration Of Infancy
-OMIM:213980	Cerebrofaciothoracic Dysplasia
+OMIM:213980	Craniofacial Dysmorphism, Skeletal Anomalies, And Mental Retardation Syndrome
 OMIM:214100	Peroxisome Biogenesis Disorder 1a (Zellweger)
 OMIM:214110	Peroxisome Biogenesis Disorder 2a (Zellweger)
 OMIM:214150	Cerebrooculofacioskeletal Syndrome 1
@@ -2195,7 +2195,7 @@ OMIM:222600	Diastrophic Dysplasia
 OMIM:222690	Dibasic Amino Aciduria I
 OMIM:222700	Lysinuric Protein Intolerance
 OMIM:222730	Dicarboxylic Aminoaciduria
-OMIM:222745	2,4-Dienoyl-Coa Reductase 1
+OMIM:222745	2,4-Dienoyl-Coa Reductase 1, Mitochondrial
 OMIM:222748	Dihydropyrimidinase Deficiency
 OMIM:222765	Rhizomelic Chondrodysplasia Punctata, Type 2
 OMIM:222800	Bisphosphoglycerate Mutase Deficiency
@@ -2655,7 +2655,7 @@ OMIM:248910	Cutaneous Mastocytosis, Conductive Hearing Loss And Microtia
 OMIM:248950	Mcdonough Syndrome
 OMIM:249000	Meckel Syndrome, Type 1
 OMIM:249100	Familial Mediterranean Fever
-OMIM:249210	Megacystis-Microcolon-Intestinal Hypoperistalsis Syndrome
+OMIM:249210	Moved To 155310
 OMIM:249230	Megaepiphyseal Dwarfism
 OMIM:249240	Megalencephaly With Dysmyelination
 OMIM:249270	Thiamine-Responsive Megaloblastic Anemia Syndrome
@@ -2713,7 +2713,7 @@ OMIM:251280	Microcephaly With Spastic Quadriplegia
 OMIM:251290	Band-Like Calcification With Simplified Gyration And Polymicrogyria
 OMIM:251300	Microcephaly, Hiatal Hernia, And Nephrotic Syndrome
 OMIM:251400	Microcolon
-OMIM:251450	Desbuquois Dysplasia
+OMIM:251450	Desbuquois Dysplasia 1
 OMIM:251505	Microphthalmia, Isolated, With Coloboma 4
 OMIM:251600	Microphthalmia, Isolated 1
 OMIM:251700	Microphthalmia With Hyperopia, Retinal Degeneration, Macrophakia, And Dental Anomalies
@@ -2833,7 +2833,7 @@ OMIM:256731	Ceroid Lipofuscinosis, Neuronal, 5
 OMIM:256800	Insensitivity To Pain, Congenital, With Anhidrosis
 OMIM:256810	Mitochondrial Dna Depletion Syndrome 6 (Hepatocerebral Type)
 OMIM:256840	Neuropathy, Hereditary Sensory, With Spastic Paraplegia, Autosomal Recessive
-OMIM:256850	Giant Axonal Neuropathy 1
+OMIM:256850	Giant Axonal Neuropathy 1, Autosomal Recessive
 OMIM:256860	Neuropathy, Hereditary Sensory, Atypical
 OMIM:256870	Neuropathy, Painful
 OMIM:257000	Neurovisceral Storage Disease With Curvilinear Bodies
@@ -3384,7 +3384,7 @@ OMIM:300367	Thrombocytopenia, X-Linked, With Or Without Dyserythropoietic Anemia
 OMIM:300373	Osteopathia Striata With Cranial Sclerosis
 OMIM:300376	Muscular Dystrophy, Becker Type
 OMIM:300387	Mental Retardation, X-Linked 63
-OMIM:300388	Polymicrogyria, Bilateral Perisylvian
+OMIM:300388	Polymicrogyria, Bilateral Perisylvian, X-Linked
 OMIM:300400	Severe Combined Immunodeficiency, X-Linked
 OMIM:300419	Mental Retardation, X-Linked, With Or Without Seizures, Arx-Related
 OMIM:300421	Wittwer Syndrome
@@ -4033,7 +4033,7 @@ OMIM:601104	Supranuclear Palsy, Progressive, 1
 OMIM:601110	Congenital Disorder Of Glycosylation, Type Id
 OMIM:601127	Fallot Complex With Severe Mental And Growth Retardation
 OMIM:601144	Brugada Syndrome 1
-OMIM:601152	Hereditary Motor And Sensory Neuropathy Vi
+OMIM:601152	Neuropathy, Hereditary Motor And Sensory, Type Vi
 OMIM:601154	Cardiomyopathy, Dilated, 1e
 OMIM:601160	Lissencephaly Type Iii And Bone Dysplasia
 OMIM:601161	Trisomy 18-Like Syndrome
@@ -4126,7 +4126,7 @@ OMIM:601539	Peroxisome Biogenesis Disorder 1b
 OMIM:601543	Deafness, Autosomal Dominant 12
 OMIM:601544	Deafness, Autosomal Dominant 3a
 OMIM:601547	Cataract 3, Multiple Types
-OMIM:601549	Alacrima, Congenital
+OMIM:601549	Alacrima, Congenital, Autosomal Recessive
 OMIM:601552	Ectopia Lentis, Spontaneous Filtering Blebs, And Craniofacial Dysmorphism
 OMIM:601553	Hypotrichosis, Congenital, With Juvenile Macular Dystrophy
 OMIM:601559	Stuve-Wiedemann Syndrome
@@ -4489,7 +4489,7 @@ OMIM:606054	Propionic Acidemia
 OMIM:606056	Congenital Disorder Of Glycosylation, Type Iib
 OMIM:606068	Retinitis Pigmentosa 28
 OMIM:606069	Hemochromatosis, Type 4
-OMIM:606070	Myopathy, Distal, 2
+OMIM:606070	Amyotrophic Lateral Sclerosis 21
 OMIM:606071	Hereditary Motor And Sensory Neuropathy, Type Iic
 OMIM:606072	Rippling Muscle Disease
 OMIM:606155	Fryns-Aftimos Syndrome
@@ -4591,7 +4591,7 @@ OMIM:607161	Multiple Congenital Anomalies Syndrome With Cloverleaf Skull
 OMIM:607174	Meningioma, Familial, Susceptibility To
 OMIM:607196	Microcephaly, Amish Type
 OMIM:607200	Thyroid Dyshormonogenesis 6
-OMIM:607208	Dravet Syndrome
+OMIM:607208	Epileptic Encephalopathy, Early Infantile, 6
 OMIM:607214	Anonychia, Total, With Microcephaly
 OMIM:607225	Spastic Paralysis, Infantile-Onset Ascending
 OMIM:607236	Hypoprebetalipoproteinemia, Acanthocytosis, Retinitis Pigmentosa, And Pallidal Degeneration
@@ -4853,7 +4853,7 @@ OMIM:608930	Myasthenic Syndrome, Congenital, Fast-Channel
 OMIM:608931	Myasthenic Syndrome, Congenital, Associated With Acetylcholine Receptor Deficiency
 OMIM:608940	Spondylometaphyseal Dysplasia With Cone-Rod Dystrophy
 OMIM:608957	Cd8 Deficiency, Familial
-OMIM:608967	Loeys-Dietz Syndrome, Type 2a
+OMIM:608967	Moved To 609192
 OMIM:608971	Severe Combined Immunodeficiency, Autosomal Recessive, T Cell-Negative, B Cell-Positive, Nk Cell-Positive
 OMIM:608978	Meacham Syndrome
 OMIM:608980	Bifid Nose With Or Without Anorectal And Renal Anomalies
@@ -4893,7 +4893,7 @@ OMIM:609162	Czech Dysplasia
 OMIM:609165	Erythroderma, Ichthyosiform, Congenital Reticular
 OMIM:609166	Branchiogenic-Deafness Syndrome
 OMIM:609180	Congenital Disorder Of Glycosylation, Type If
-OMIM:609192	Loeys-Dietz Syndrome, Type 1a
+OMIM:609192	Loeys-Dietz Syndrome 1
 OMIM:609195	Spastic Paraplegia 26, Autosomal Recessive
 OMIM:609197	Glucocorticoid Deficiency 3
 OMIM:609200	Myopathy, Myofibrillar, 3
@@ -5023,7 +5023,7 @@ OMIM:610090	Pyridoxamine 5-Prime-Phosphate Oxidase Deficiency
 OMIM:610092	Microphthalmia, Isolated, With Coloboma 3
 OMIM:610093	Microphthalmia, Isolated 2
 OMIM:610099	Myopathy, Distal, 3
-OMIM:610100	Giant Axonal Neuropathy, Autosomal Dominant
+OMIM:610100	Giant Axonal Neuropathy 2, Autosomal Dominant
 OMIM:610102	Complement Component 7 Deficiency
 OMIM:610125	Microphthalmia, Syndromic 5
 OMIM:610127	Ceroid Lipofuscinosis, Neuronal, 10
@@ -5035,7 +5035,7 @@ OMIM:610154	Deafness, Autosomal Recessive 44
 OMIM:610156	Mental Retardation, Truncal Obesity, Retinal Dystrophy, And Micropenis
 OMIM:610158	Corneal Dystrophy, Fuchs Endothelial, 2
 OMIM:610163	Immunodeficiency Due To Defect In Cd3-Zeta
-OMIM:610168	Loeys-Dietz Syndrome, Type 1b
+OMIM:610168	Loeys-Dietz Syndrome 2
 OMIM:610181	Aicardi-Goutieres Syndrome 2
 OMIM:610185	Cerebellar Ataxia, Mental Retardation, And Dysequilibrium Syndrome 2
 OMIM:610187	Diaphragmatic Hernia 3
@@ -5079,7 +5079,7 @@ OMIM:610359	Retinitis Pigmentosa 33
 OMIM:610370	Diarrhea 4, Malabsorptive, Congenital
 OMIM:610374	Diabetes Mellitus, Transient Neonatal, 2
 OMIM:610377	Mevalonic Aciduria
-OMIM:610380	Loeys-Dietz Syndrome, Type 2b
+OMIM:610380	Moved To 610168
 OMIM:610381	Cone-Rod Dystrophy 11
 OMIM:610382	Prosopagnosia, Hereditary
 OMIM:610419	Deafness, Autosomal Recessive 68
@@ -5458,7 +5458,7 @@ OMIM:612925	Hemolytic Uremic Syndrome, Atypical, Susceptibility To, 5
 OMIM:612926	Hemolytic Uremic Syndrome, Atypical, Susceptibility To, 6
 OMIM:612932	Glycogen Storage Disease Xiii
 OMIM:612933	Glycogen Storage Disease Xi
-OMIM:612934	Glycogen Storage Disease Xiv
+OMIM:612934	Moved To 614921
 OMIM:612936	Spastic Paraplegia 50, Autosomal Recessive
 OMIM:612937	Congenital Disorder Of Glycosylation, Type Io
 OMIM:612938	Growth Retardation, Developmental Delay, Coarse Facies, And Early Death
@@ -5769,7 +5769,7 @@ OMIM:613789	Complement Component 8 Deficiency, Type Ii
 OMIM:613790	Complement Component 8 Deficiency, Type I
 OMIM:613792	Chromosome 3pter-P25 Deletion Syndrome
 OMIM:613794	Retinitis Pigmentosa 20
-OMIM:613795	Loeys-Dietz Syndrome, Type 3
+OMIM:613795	Loeys-Dietz Syndrome 3
 OMIM:613796	Mycobacterial And Viral Infections, Susceptibility To, Autosomal Recessive
 OMIM:613800	Meier-Gorlin Syndrome 2
 OMIM:613801	Retinitis Pigmentosa 40
@@ -5918,7 +5918,7 @@ OMIM:614116	Neuropathy, Hereditary Sensory, Type Ie
 OMIM:614120	Hydrolethalus Syndrome 2
 OMIM:614129	Perrault Syndrome 3
 OMIM:614131	Focal Segmental Glomerulosclerosis 6
-OMIM:614132	Craniofacial Dysmorphism, Skeletal Anomalies, And Mental Retardation Syndrome
+OMIM:614132	Moved To 213980
 OMIM:614134	Stickler Syndrome, Type Iv
 OMIM:614135	Epiphyseal Dysplasia, Multiple, 6
 OMIM:614149	Nail Disorder, Nonsyndromic Congenital, 9
@@ -6178,7 +6178,7 @@ OMIM:614809	Cfhr5 Deficiency
 OMIM:614813	Short Stature, Onychodysplasia, Facial Dysmorphism, And Hypotrichosis
 OMIM:614814	Adams-Oliver Syndrome 3
 OMIM:614815	Joubert Syndrome 18
-OMIM:614816	Loeys-Dietz Syndrome, Type 4
+OMIM:614816	Loeys-Dietz Syndrome 4
 OMIM:614817	Interstitial Nephritis, Karyomegalic
 OMIM:614819	Weill-Marchesani Syndrome 3
 OMIM:614820	Alternating Hemiplegia Of Childhood 2
@@ -6309,7 +6309,7 @@ OMIM:615112	Urofacial Syndrome 2
 OMIM:615113	Microphthalmia, Isolated 8
 OMIM:615118	Craniometadiaphyseal Dysplasia
 OMIM:615119	Cardioencephalomyopathy, Fatal Infantile, Due To Cytochrome C Oxidase Deficiency 2
-OMIM:615120	#615120 Myasthenic Syndrome, Congenital, With Pre- And Postsynaptic Defects;Cmsppd;;Myasthenic Syndrome, Congenital, Due To Agrin Deficiency
+OMIM:615120	Myasthenic Syndrome, Congenital, With Pre- And Postsynaptic Defects
 OMIM:615122	Lymphoproliferative Syndrome 2
 OMIM:615127	Epilepsy, Familial Adult Myoclonic, 4
 OMIM:615133	Udp-N-Acetyl-Alpha-D-Galactosamine:Polypeptide N-Acetylgalactosaminyltransferase-Like 5
@@ -6528,7 +6528,7 @@ OMIM:615704	Poikiloderma, Hereditary Fibrosing, With Tendon Contractures, Myopat
 OMIM:615705	Spinocerebellar Ataxia, Autosomal Recessive 15
 OMIM:615706	Auriculocondylar Syndrome 3
 OMIM:615707	Immunodeficiency 20
-OMIM:615709	#615709 Sacral Agenesis With Vertebral Anomalies; Sava
+OMIM:615709	Sacral Agenesis With Vertebral Anomalies
 OMIM:615710	Mitchell-Riley Syndrome
 OMIM:615715	Bone Marrow Failure Syndrome 2
 OMIM:615721	Renal Hypodysplasia/Aplasia 2
@@ -6538,7 +6538,7 @@ OMIM:615724	Premature Ovarian Failure 9
 OMIM:615725	Retinitis Pigmentosa 68
 OMIM:615731	Nemaline Myopathy 9
 OMIM:615735	Palmoplantar Keratoderma, Nonepidermolytic, Focal Or Diffuse
-OMIM:615774	#615774 Oocyte Maturation Defect; Oomd
+OMIM:615774	Oocyte Maturation Defect
 ORPHANET:100024	Mu Heavy-Chain Disease
 ORPHANET:100025	Alpha Heavy-Chain Disease
 ORPHANET:100026	Gamma Heavy-Chain Disease
