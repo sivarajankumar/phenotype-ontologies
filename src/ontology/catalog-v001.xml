@@ -34,6 +34,7 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/hp-mp/mp_hp-align-equiv.owl" uri="hp-mp/mp_hp-align-equiv.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/uberon/uberon-simple-vertebrate-bridge.owl" uri="uberon-simple-vertebrate-bridge.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/dpo/dpo-importer.owl" uri="dpo/dpo-importer.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/dpo/dpo-importer.owl" uri="dpo/dpo-importer.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mp/mp-importer.owl" uri="mp/mp-importer.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mp/mp-edit.owl" uri="mp/mp-edit.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/hp/hp-importer.owl" uri="hp/hp-importer.owl"/>
