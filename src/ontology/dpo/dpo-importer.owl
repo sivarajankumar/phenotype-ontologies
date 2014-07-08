@@ -26,6 +26,8 @@
         <owl:imports rdf:resource="&obo;upheno/imports/go_import.owl"/>
         <owl:imports rdf:resource="&obo;upheno/imports/pato_import.owl"/>
         <owl:imports rdf:resource="&obo;upheno/imports/fbbt_import.owl"/>
+        <owl:imports rdf:resource="&obo;upheno/imports/fbbt_phenotype.owl"/>
+        <owl:imports rdf:resource="&obo;upheno/imports/go_phenotype.owl"/>
     </owl:Ontology>
     
 
