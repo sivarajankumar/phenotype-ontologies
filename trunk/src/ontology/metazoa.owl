@@ -22,8 +22,11 @@
     <owl:Ontology rdf:about="&obo;upheno/metazoa.owl">
         <owl:imports rdf:resource="&obo;uberon/bridge/cl-bridge-to-wbbt.owl"/>
         <owl:imports rdf:resource="&obo;uberon/bridge/uberon-bridge-to-wbbt.owl"/>
+        <owl:imports rdf:resource="&obo;uberon/bridge/cl-bridge-to-fbbt.owl"/>
+        <owl:imports rdf:resource="&obo;uberon/bridge/uberon-bridge-to-fbbt.owl"/>
         <owl:imports rdf:resource="&obo;upheno/vertebrate.owl"/>
         <owl:imports rdf:resource="&obo;wbphenotype/wbphenotype-importer.owl"/>
+        <owl:imports rdf:resource="&obo;upheno/dpo/dpo-importer.owl"/>
     </owl:Ontology>
 </rdf:RDF>
 
