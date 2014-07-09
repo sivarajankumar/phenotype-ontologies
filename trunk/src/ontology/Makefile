@@ -177,7 +177,7 @@ pato.owl: pato.obo
 # ----------------------------------------
 
 %-simple.owl: %.owl
-	owltools  $(USECAT) --use-reasoner elk $< --merge-imports-closure --assert-inferred-subclass-axioms --markIsInferred --removeRedundant --allowEquivalencies -o $@.tmp --make-subset-by-properties -f // --extract-module  -d HP:0000118 MP:0000001  WBPhenotype:0000886  --set-ontology-id $(OBO)/$@ -o $@
+	owltools  $(USECAT) --use-reasoner elk $< --merge-imports-closure --assert-inferred-subclass-axioms --markIsInferred --removeRedundant --allowEquivalencies -o $@.tmp --make-subset-by-properties -f // --extract-module  -d HP:0000118 MP:0000001 WBPhenotype:0000886 UPHENO:0001001 --set-ontology-id $(OBO)/$@ -o $@
 
 %-simple.obo: %-simple.owl
 	owltools $< --remove-axiom-annotations -o -f obo --no-check $@.tmp && egrep -v '^(owl-axioms|property_value)' $@.tmp > $@
