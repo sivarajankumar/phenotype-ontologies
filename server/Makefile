@@ -41,7 +41,7 @@ trigger: $(TRIGGERS)
 
 # TODO: trigger rebuild
 all.owl:  $(ROOT)
-	$(OWLTOOLS) $(USECAT) $< --merge-imports-closure --load-instances $(MM_G2P) --load-labels $(MM_G2L) --load-instances $(DR_G2P) --load-labels $(DR_G2L) --load-instances $(HS_D2P) --load-labels $(HS_D2L) --merge-support-ontologies -o $@
+	$(OWLTOOLS) $(USECAT) $< --merge-imports-closure --load-instances $(MM_G2P) --load-labels $(MM_G2L) --load-instances $(DR_G2P) --load-labels $(DR_G2L) --load-instances $(HS_D2P) --load-labels $(HS_D2L) --merge-support-ontologies --remove-axioms -t ObjectPropertyDomain --remove-axioms -t ObjectPropertyRange --remove-axioms -t DisjointClasses -o $@
 ###	$(OWLTOOLS) $(USECAT) $< --merge-imports-closure --load-instances $(MM_G2P) --load-labels $(MM_G2L) --load-instances $(DR_G2P) --load-labels $(DR_G2L) --load-instances $(DM_G2P) --load-labels $(DM_G2L) --load-instances $(HS_D2P) --load-labels $(HS_D2L)  --merge-support-ontologies --remove-axioms -t DisjointClasses -o $@
 
 Mus_musculus-all.owl:  $(ONT)/mp/mp-importer.owl $(TRIGGERS)
@@ -108,11 +108,11 @@ ph-x-ph-enrichment.txt: all.owl
 	$(OWLTOOLS) --no-debug  $<  --all-by-all-enrichment-analysis -p 0.25 Phenotype Phenotype   > $@.tmp && mv $@.tmp $@
 
 #mouse-ph-x-ph-enrichment.txt: Mus_musculus-all.owl
-#	$(OWLTOOLS)  --no-debug $< go.owl --load-instances $(MM_G2G)  --all-by-all-enrichment-analysis -p 0.25 'mammalian phenotype' 'mammalian phenotype'   > $@.tmp && mv $@.tmp $@
+#	$(OWLTOOLS)  --no-debug $< go-sub.obo --load-instances $(MM_G2G)  --all-by-all-enrichment-analysis -p 0.25 'mammalian phenotype' 'mammalian phenotype'   > $@.tmp && mv $@.tmp $@
 
 mouse-ph-x-go-enrichment.txt: Mus_musculus-all.owl
-	$(OWLTOOLS)  --no-debug $< go.owl --load-instances $(MM_G2G)  --all-by-all-enrichment-analysis -p 0.25 'mammalian phenotype' biological_process   > $@.tmp && mv $@.tmp $@
+	$(OWLTOOLS)  --no-debug $< go-sub.obo --load-instances $(MM_G2G)  --all-by-all-enrichment-analysis -p 0.25 'mammalian phenotype' biological_process   > $@.tmp && mv $@.tmp $@
 
 mouse-ph-x-go-cp-enrichment.txt: Mus_musculus-all.owl
-	$(OWLTOOLS)  $< go.owl --load-instances $(MM_G2G)  --all-by-all-enrichment-analysis -p 0.25 'mammalian phenotype' 'cellular process'   > $@.tmp && mv $@.tmp $@
+	$(OWLTOOLS)  $< go-sub.obo --load-instances $(MM_G2G)  --all-by-all-enrichment-analysis -p 0.25 'mammalian phenotype' 'cellular process'   > $@.tmp && mv $@.tmp $@
 
