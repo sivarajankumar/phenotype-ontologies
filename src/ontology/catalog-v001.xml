@@ -62,12 +62,7 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/pato.owl" uri="pato.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/fypo.owl" uri="fypo.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/go/extensions/go-plus-dev.owl" uri="external/go/extensions/go-plus-dev.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/go/extensions/x-anatomy.owl" uri="external/go/extensions/x-anatomy.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/go/extensions/chebi_import.owl" uri="external/go/extensions/chebi_import.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/go/extensions/ncbitaxon_import.owl" uri="external/go/extensions/ncbitaxon_import.owl"/>
 
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl" uri="external/ncbitaxon-subsets/taxslim.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim-disjoint-over-in-taxon.owl" uri="external/ncbitaxon-subsets/taxslim-disjoint-over-in-taxon.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/cl/cl-basic.owl" uri="external/cell/cl-basic.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/cl.owl" uri="external/cell/cl.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/cl/imports/uberon_import.owl" uri="external/uberon/uberon.owl"/>
