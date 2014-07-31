@@ -20,8 +20,6 @@ HS = $(DATA)/Homo_sapiens
 HS_D2P = $(HS)/Hs-disease-to-phenotype-O.txt
 HS_D2L = $(HS)/Hs-disease-labels.txt
 
-GRP = $(ONT)/imports/grouping_phenotypes.owl
-
 ##ROOT = $(ONT)/mammal.owl
 ##ROOT = $(ONT)/vertebrate.owl
 ROOT = $(ONT)/metazoa.owl
@@ -70,8 +68,9 @@ ic-cache.owl: all.owl
 %-ic-cache.owl: %-all.owl
 	$(OWLTOOLS) $< --no-debug --sim-save-ic-cache $@
 
-hp-zp-all.owl: Homo_sapiens-all.owl Danio_rerio-all.owl $(GRP)
-	$(OWLTOOLS) $(USECAT) Homo_sapiens-all.owl Danio_rerio-all.owl $(GRP) --merge-support-ontologies --merge-imports-closure --make-super-slim HP,ZP -o  $@
+VERTEBRATE = ../src/ontology/vertebrate.owl
+hp-zp-all.owl: $(VERTEBRATE) $(TRIGGERS)
+	$(OWLTOOLS) $(USECAT) $<  --load-instances $(DR_G2P) --load-labels $(DR_G2L) --load-instances $(HS_D2P) --load-labels $(HS_D2L) --merge-support-ontologies --merge-imports-closure --run-reasoner -r elk --assert-implied --make-super-slim HP,ZP -o  $@
 
 all-phenodigm-cache.txt: \
  hp-hp-phenodigm-cache.txt\
