@@ -8507,12 +8507,6 @@ intersection_of: affects_quality PATO:0001509 ! functionality
 intersection_of: attribute_of UBERON:0001134 ! skeletal muscle tissue
 
 [Term]
-id: VT:0010099 ! egg physiology
-intersection_of: BATTO:0000001  ! biological attribute
-intersection_of: affects_quality PATO:0001509 ! functionality
-intersection_of: attribute_of CL:0000025 ! egg
-
-[Term]
 id: VT:0010110 ! heart muscle physiology
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: affects_quality PATO:0001509 ! functionality
@@ -13454,6 +13448,14 @@ intersection_of: attribute_of GO:0030183 ! B cell differentiation
 id: VT:0002145 ! T cell development trait
 intersection_of: BATTO:0000001  ! biological attribute
 intersection_of: attribute_of GO:0030217 ! T cell differentiation
+
+[Term]
+id: VT:0003065
+name: hepatic copper amount
+intersection_of: OBA:0000001 ! biological attribute
+intersection_of: affects_quality PATO:0000033 ! concentration of
+intersection_of: attribute_of CHEBI:30052 ! copper(0)
+intersection_of: occurs_in UBERON:0002107 ! liver
 
 [Typedef]
 id: attribute_of_part_of

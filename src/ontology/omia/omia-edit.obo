@@ -277,6 +277,7 @@ id: OMIA:000263
 name: degenerative myelopathy
 is_a: OMIA:000000 ! animal phenotype
 relationship: possible_homologous_phene MIM:105400 {source="omiaxml"} ! AMYOTROPHIC LATERAL SCLEROSIS 1
+relationship: affects UBERON:0002240 {source="cjm"} ! spinal cord
 equivalent_to: SCTID:70350007 {source="AUTO"} ! Degenerative myelopathy
 def: "This is an adult onset degeneration of the spinal cord that progresses to paraplegia and tetraparesis. There is no successful treatment. A genetic test is available." [OMIA:000263]
 
@@ -441,6 +442,7 @@ equivalent_to: SCTID:49762007 {status="AUTO2"} ! Hereditary factor XI deficiency
 id: OMIA:000369
 name: feather colour, albinism
 is_a: OMIA:000000 ! animal phenotype
+is_a: PATO:0000014 ! color
 is_a: HP:0001022 {notes="modified to isa by cjm"} ! Albinism
 relationship: affects UBERON:0000022 {status="AUTO"} ! feather
 relationship: possible_homologous_phene MIM:203100 {source="omiaxml"} ! ALBINISM, OCULOCUTANEOUS, TYPE IA
@@ -449,6 +451,7 @@ relationship: possible_homologous_phene MIM:203100 {source="omiaxml"} ! ALBINISM
 id: OMIA:000370
 name: feather colour, albinism, sex-linked, imperfect
 is_a: OMIA:000000 ! animal phenotype
+is_a: PATO:0000014 ! color
 is_a: HP:0001022 {status="AUTO"} ! Albinism
 relationship: affects UBERON:0000022 {status="AUTO"} ! feather
 
@@ -456,6 +459,7 @@ relationship: affects UBERON:0000022 {status="AUTO"} ! feather
 id: OMIA:000373
 name: feather colour, dominant white
 is_a: OMIA:000000 ! animal phenotype
+is_a: PATO:0000014 ! color
 relationship: affects UBERON:0000022 {status="AUTO"} ! feather
 def: "Kerje et al. (2004) showed that three alleles at the Dominant White locus in chickens (namely Dominant white, Dun, and Smoky) are all caused by mutations in the gene for the melanocyte-specific protein PMEL17, which is chickens is called PMEL." [OMIA:000373]
 
@@ -463,6 +467,7 @@ def: "Kerje et al. (2004) showed that three alleles at the Dominant White locus 
 id: OMIA:000374
 name: feather colour, extended black
 is_a: OMIA:000000 ! animal phenotype
+is_a: PATO:0000014 ! color
 relationship: affects UBERON:0000022 {status="AUTO"} ! feather
 relationship: possible_homologous_phene MIM:266300 {source="omiaxml"} ! SKIN/HAIR/EYE PIGMENTATION, VARIATION IN, 2
 def: "Kerje et al. (2003) provided convincing evidence that this locus is orthologous to the classic mammalian coat-colour E-locus (MC1R; extension). " [OMIA:000374]
@@ -471,6 +476,7 @@ def: "Kerje et al. (2003) provided convincing evidence that this locus is orthol
 id: OMIA:000375
 name: feather colour, panda/dotted white
 is_a: OMIA:000000 ! animal phenotype
+is_a: PATO:0000014 ! color
 relationship: affects UBERON:0000022 {status="AUTO"} ! feather
 
 [Term]
@@ -1193,6 +1199,7 @@ def: "X-linked severe combined immunodeficiency disease (XSCID) is an immune dis
 id: OMIA:000915
 name: feather colour, silver
 is_a: OMIA:000000 ! animal phenotype
+is_a: PATO:0000014 ! color
 relationship: affects UBERON:0000022 {status="AUTO"} ! feather
 
 [Term]
