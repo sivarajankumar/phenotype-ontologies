@@ -88,11 +88,14 @@ hp/hp-inferred.owl: hp.owl
 # ~~~
 # https://code.google.com/p/phenotype-ontologies/wiki/ZP
 
-## DO NOT UPDATE: https://code.google.com/p/bio-ontology-zp/issues/detail?id=4
-#zp.owl:
-#	owltools http://compbio.charite.de/hudson/job/hpo.ontology.uberpheno/lastStableBuild/artifact/data/dataForUberpheno/not_subsettable_ontologies/zp.owl --set-ontology-id $(OBO)/upheno/$@ -o $@
+## ALWAYS CHECK UPDATES: https://code.google.com/p/bio-ontology-zp/issues/detail?id=4
+zp-download.owl:
+	owltools http://compbio.charite.de/hudson/job/hpo.ontology.uberpheno/lastStableBuild/artifact/data/dataForUberpheno/not_subsettable_ontologies/zp.owl --set-ontology-id $(OBO)/upheno/$@ -o $@
+zp.owl: zp-download.owl
+	./util/fix-zp.pl $< > $@
+
 zp.obo: zp.owl
-	owltools $< -o -f obo --no-check $@
+	owltools $< -o -f obo --no-check $@.tmp && grep -v ^owl-axioms $@.tmp > $@
 
 zp-check: zp.owl
 	(grep BFO_0000052 $< && exit 1) || echo ok
