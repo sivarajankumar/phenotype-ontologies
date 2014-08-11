@@ -69,11 +69,11 @@ mp/mp-inferred.owl: mp.owl
 # HP
 # ~~~
 # https://code.google.com/p/phenotype-ontologies/wiki/HP
-hp.obo: external/hpo/human-phenotype-ontology.obo
-	echo remember to update external/hpo && \
-	cp $< $@
-hp.owl: hp.obo
-	owltools $< -o $@
+#hp.obo: external/hpo/human-phenotype-ontology.obo
+#	echo remember to update external/hpo && \
+#	cp $< $@
+#hp.owl: hp.obo
+#	owltools $< -o $@
 
 # Mirror via svn:externals
 hp/hp-axiom-view.obo: hp/hp-equivalence-axioms-subq-ubr.owl
@@ -288,9 +288,11 @@ KEEPRELS = BFO:0000050 BFO:0000051 RO:0002202 immediate_transformation_of
 #	owltools  $(USECAT) --map-ontology-iri $(UPHENO)/wbbt_import.owl mirror/wbbt.owl $< --merge-imports-closure mirror/$*.owl --add-imports-from-support  --extract-module -s $(OBO)/$*.owl -c --remove-axiom-annotations --make-subset-by-properties $(KEEPRELS) --set-ontology-id $(UPHENO)/$@ -o $@
 
 
+IMPORT_REQUESTS = imports/imports_requests.obo
+
 # GENERIC:
 ###imports/%_import.owl: metazoa.owl mirror/%.owl mp/mp-equivalence-axioms-edit.owl hp/hp-equivalence-axioms.obo zp.owl
-imports/%_import.owl: imports/upheno-preimporter.owl mirror/%.owl mp.owl hp.owl zp.owl mp/mp-edit.owl
+imports/%_import.owl: imports/upheno-preimporter.owl $(IMPORT_REQUESTS) mirror/%.owl mp.owl hp.owl zp.owl mp/mp-edit.owl
 	owltools  $(USECAT) --map-ontology-iri $(UPHENO)/$*_import.owl mirror/$*.owl $< --merge-imports-closure mirror/$*.owl --add-imports-from-support  --extract-module -s $(OBO)/$*.owl -c --remove-axiom-annotations --make-subset-by-properties -f $(KEEPRELS) -o $@.tmp && owltools $@.tmp --set-ontology-id $(UPHENO)/$@ -o $@
 
 # clone remote ontology locally, perfoming some excision of relations and annotations

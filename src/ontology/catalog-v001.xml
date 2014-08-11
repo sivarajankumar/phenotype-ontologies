@@ -29,6 +29,7 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/extra.owl" uri="imports/extra.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/mpath_import.owl" uri="imports/mpath_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/grouping_phenotypes.owl" uri="imports/grouping_phenotypes.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/imports_requests.obo" uri="imports/imports_requests.obo"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/monarch/grouping_phenotypes_inferences.owl" uri="monarch/grouping_phenotypes_inferences.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/mp/genes-as-phenotypes.owl" uri="mp/genes-as-phenotypes.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/hp-mp/mp_hp-align-equiv.owl" uri="hp-mp/mp_hp-align-equiv.owl"/>
