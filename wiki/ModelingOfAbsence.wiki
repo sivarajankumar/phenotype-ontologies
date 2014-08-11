@@ -77,6 +77,8 @@ SubClassOf: MP:0004349 ## absent femur
 
 i.e. if you're missing your entire hindlegs, you're *necessarily* missing your femurs. But it must be emphatisized that this is *not* how phenotype ontologies are classified. This goes for a wide range of structures and other relationship types. In MP, "absent limb buds" are *not* classified under "absent limbs", even though it is impossible for a mammal to have limbs without having had limb buds.
 
+=== Absence as part of a size-morphology spectrum ===
+
 The existing treatment of absence can be formally defended morphologically by conceiving of a morphological value space, with "large" at one end and "small" at the other. As we get continuously smaller, there may come an arbitrary point whereby we say "surely this is no longer a limb" (and of course, we are not talking about a pure geometrical size transformation here - as a limb reaches extreme edges of a size range various other morphological changes necessarily happen). But this cutoff is arguably arbitrary, and the resulting discontinuity causes problems. It is simpler to treat absence as being one end of a size scale.
 
 == Summary ==
