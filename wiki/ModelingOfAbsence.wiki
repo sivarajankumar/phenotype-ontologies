@@ -86,3 +86,7 @@ The existing treatment of absence can be formally defended morphologically by co
 This is barely touching the subject, and is intended to illustrate that things may be more subtle than naively treating words like "absent" as precisely equivalent to cardinality=0. An understanding of the medical, developmental and evolutionary contexts are absolutely required, together with an understanding of the entailments of different logical formulations.
 
 Even though existing phenotype ontologies may not be conceived of formally, it is implicit than they do not model absence as being equivalent to cardinality=0 / not(has_part), because the structure of these ontologies would look radically different.
+
+== TODO ==
+
+Link to Jim Balhoff's PhenoDay paper and discussion
