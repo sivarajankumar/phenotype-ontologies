@@ -90,3 +90,5 @@ Even though existing phenotype ontologies may not be conceived of formally, it i
 == TODO ==
 
 Link to Jim Balhoff's PhenoDay paper and discussion
+
+Here's the link: http://phenoday2014.bio-lark.org/pdf/11.pdf
