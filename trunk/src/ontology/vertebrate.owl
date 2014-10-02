@@ -24,9 +24,68 @@
         <owl:imports rdf:resource="&obo;uberon/bridge/uberon-bridge-to-zfa.owl"/>
         <owl:imports rdf:resource="&obo;upheno/mammal.owl"/>
         <owl:imports rdf:resource="&obo;upheno/vertebrate-curated.owl"/>
-		<owl:imports rdf:resource="&obo;upheno/imports/uberon_import.owl"/>
+        <owl:imports rdf:resource="&obo;upheno/imports/uberon_import.owl"/>
         <owl:imports rdf:resource="&obo;upheno/zp/zp-importer.owl"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UPHENO_0000501 -->
+
+    <owl:Class rdf:about="&obo;UPHENO_0000501">
+        <rdfs:label>accelerated feather growth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UPHENO_0000502 -->
+
+    <owl:Class rdf:about="&obo;UPHENO_0000502">
+        <rdfs:label>curved upper beak</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UPHENO_0000503 -->
+
+    <owl:Class rdf:about="&obo;UPHENO_0000503">
+        <rdfs:label>short upper beak</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UPHENO_0000504 -->
+
+    <owl:Class rdf:about="&obo;UPHENO_0000504">
+        <rdfs:label>absent feather barbule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UPHENO_0000505 -->
+
+    <owl:Class rdf:about="&obo;UPHENO_0000505">
+        <rdfs:label>decreased wing length</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UPHENO_0000506 -->
+
+    <owl:Class rdf:about="&obo;UPHENO_0000506">
+        <rdfs:label>increased filoplume feather length</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
