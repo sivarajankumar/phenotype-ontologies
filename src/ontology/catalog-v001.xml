@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Edited Redirect" name="http://purl.obolibrary.org/obo/upheno/vertebrate-curated.owl" uri="vertebrate-curated.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/mammal.owl" uri="mammal.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/vertebrate.owl" uri="vertebrate.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/metazoa.owl" uri="metazoa.owl"/>
-
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/doid/merged.owl" uri="doid/merged.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/doid/ctd_omim_mesh_bridge.owl=" uri="doid/ctd_omim_mesh_bridge.owl"/>
-
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/uberon_phenotype.owl" uri="imports/uberon_phenotype.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/go_phenotype.owl" uri="imports/go_phenotype.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/nbo_phenotype.owl" uri="imports/nbo_phenotype.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/mpath_phenotype.owl" uri="imports/mpath_phenotype.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/fbbt_phenotype.owl" uri="imports/fbbt_phenotype.owl"/>
-
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/fbbt_import.owl" uri="imports/fbbt_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/chebi_import.owl" uri="imports/chebi_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
@@ -63,7 +61,6 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/pato.owl" uri="pato.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/fypo.owl" uri="fypo.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/go/extensions/go-plus-dev.owl" uri="external/go/extensions/go-plus-dev.owl"/>
-
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/cl/cl-basic.owl" uri="external/cell/cl-basic.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/cl.owl" uri="external/cell/cl.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/cl/imports/uberon_import.owl" uri="external/uberon/uberon.owl"/>
@@ -73,6 +70,5 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/uberon/ext.owl" uri="external/uberon/ext.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/uberon/basic.owl" uri="external/uberon/basic.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/uberon.owl" uri="external/uberon/uberon.owl"/>
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
-    </group>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base=""/>
 </catalog>
