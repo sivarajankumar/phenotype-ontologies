@@ -292,7 +292,7 @@ IMPORT_REQUESTS = imports/imports_requests.obo
 
 # GENERIC:
 ###imports/%_import.owl: metazoa.owl mirror/%.owl mp/mp-equivalence-axioms-edit.owl hp/hp-equivalence-axioms.obo zp.owl
-imports/%_import.owl: imports/upheno-preimporter.owl $(IMPORT_REQUESTS) mirror/%.owl mp.owl hp.owl zp.owl mp/mp-edit.owl
+imports/%_import.owl: imports/upheno-preimporter.owl $(IMPORT_REQUESTS) mirror/%.owl mp.owl hp.owl zp.owl mp/mp-edit.owl hp/hp-edit.owl
 	owltools  $(USECAT) --map-ontology-iri $(UPHENO)/$*_import.owl mirror/$*.owl $< --merge-imports-closure mirror/$*.owl --add-imports-from-support  --extract-module -s $(OBO)/$*.owl -c --remove-axiom-annotations --make-subset-by-properties -f $(KEEPRELS) -o $@.tmp && owltools $@.tmp --set-ontology-id $(UPHENO)/$@ -o $@
 
 # clone remote ontology locally, perfoming some excision of relations and annotations
