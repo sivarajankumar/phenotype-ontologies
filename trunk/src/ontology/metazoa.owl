@@ -27,6 +27,7 @@
         <owl:imports rdf:resource="&obo;upheno/vertebrate.owl"/>
         <owl:imports rdf:resource="&obo;wbphenotype/wbphenotype-importer.owl"/>
         <owl:imports rdf:resource="&obo;upheno/dpo/dpo-importer.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/upheno/2014-12-17/metazoa.owl"/>
     </owl:Ontology>
 </rdf:RDF>
 
