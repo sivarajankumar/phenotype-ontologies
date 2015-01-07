@@ -22,6 +22,7 @@
       <rdfs:seeAlso rdf:datatype="http://build.berkeleybop.org/job/build-lamhdi/">http://genomebiology.com/2012/13/1/R5</rdfs:seeAlso>
       <dc:creator xml:lang="en">Chris Mungall</dc:creator>
 
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/upheno/metazoa.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/zfa.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/go/extensions/go-plus.owl"/>
