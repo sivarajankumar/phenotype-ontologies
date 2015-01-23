@@ -509,30 +509,30 @@ imports/grouping_phenotype_inferences.owl: $(INFERRED)
 #	owltools $< -o --merge-equivalence-sets -s HP 9 -s MP 8 -s ZP 1 -f obo --no-check $@
 
 # ----------------------------------------
-# UPHENO-CORE
+# CAUSAL PHENOTYPE NETWORKS
 # ----------------------------------------
-upheno/gen-%.obo: util/phenomaker.pro
-	blip-findall  -consult $< -r go -r pato -r pext -r cell -r chebi "wall($*)" > $@.tmp && owltools $@.tmp upheno/footer.obo --merge-support-ontologies -o -f obo $@ && grep -c ^id: $@
+cpn/gen-%.obo: util/phenomaker.pro
+	blip-findall  -consult $< -r go -r pato -r pext -r cell -r chebi "wall($*)" > $@.tmp && owltools $@.tmp cpn/footer.obo --merge-support-ontologies -o -f obo $@ && grep -c ^id: $@
 
 
 CORE_BUNDLE = uberon/ext go/extensions/go-plus pato
-CORE_IMPORT = $(OBO)/upheno/imports.owl
-upheno/imports.owl:
+CORE_IMPORT = $(OBO)/cpn/imports.owl
+cpn/imports.owl:
 	owltools --use-catalog $(patsubst %, $(OBO)/%.owl, $(CORE_BUNDLE)) --merge-support-ontologies --merge-imports-closure --make-subset-by-properties -f $(KEEPRELS) --remove-axiom-annotations --remove-annotation-assertions -l --remove-axioms -t DisjointClasses --set-ontology-id $(CORE_IMPORT) -o $@
 
-upheno/core.obo: util/phenomaker.pro
-	owltools upheno/gen-*.obo --merge-support-ontologies --set-ontology-id $(OBO)/upheno/core.owl -o -f obo $@
+cpn/core.obo: util/phenomaker.pro
+	owltools cpn/gen-*.obo --merge-support-ontologies --set-ontology-id $(OBO)/cpn/core.owl -o -f obo $@
 
-upheno/import_module.owl: upheno/core.obo upheno/imports.owl
+cpn/import_module.owl: cpn/core.obo cpn/imports.owl
 	owltools $^ --extract-module -s $(CORE_IMPORT) -c --set-ontology-id $(OBO)/$@ -o $@
 
-upheno/import_module.obo: upheno/import_module.owl
+cpn/import_module.obo: cpn/import_module.owl
 	owltools $< -o -f obo --no-check $@
 
-upheno/core-merged.owl: upheno/core.obo upheno/import_module.owl
+cpn/core-merged.owl: cpn/core.obo cpn/import_module.owl
 	owltools $^ --add-imports-from-supports -o $@
 
-upheno/core-inf.obo: upheno/core.obo upheno/import_module.owl
+cpn/core-inf.obo: cpn/core.obo cpn/import_module.owl
 	owltools $^ --add-imports-from-supports --assert-inferred-subclass-axioms -o -f obo --no-check $@
 
 
