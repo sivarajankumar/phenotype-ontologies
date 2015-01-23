@@ -211,8 +211,29 @@ pato.owl: pato.obo
 	obo-grep.pl -r 'intersection_of:.*PATO' $< | obo-filter-tags.pl -t intersection_of -t id - > $@.tmp && mv $@.tmp $@
 
 # ----------------------------------------
+# Reports
+# ----------------------------------------
+
+foo-%:
+	echo z-$*
+
+reports/%-xrefs.csv reports/%-basicReport.csv reports/%-ldefElements.csv: %-merged.owl 
+	arq --data $< --query sparql/$(subst reports/$*-,,$(basename $@)).sparql --results csv > $@.tmp && ./util/curiefy-purls.pl $@.tmp > $@ && rm $@.tmp
+
+#reports/hp-%.csv reports/mp-%.csv: foo-$(basename %)   sparql/%.sparql
+#	arq --data $< --query sparql/$*.sparql --results csv > $@.tmp && ./util/curiefy-purls.pl $@.tmp > $@ && rm $@.tmp
+
+reports/omim-%.csv: bridge/omim_merged.owl sparql/%.sparql
+	arq --data $< --query sparql/$*.sparql --results csv > $@.tmp && ./util/curiefy-purls.pl $@.tmp > $@ && rm $@.tmp
+
+reports/umls-%.csv: bridge/umls_merged.owl sparql/%.sparql
+	arq --data $< --query sparql/$*.sparql --results csv > $@.tmp && ./util/curiefy-purls.pl $@.tmp > $@ && rm $@.tmp
+
+# ----------------------------------------
 # Subqualities model
 # ----------------------------------------
+# this is for translating legacy obo files
+#
 # (generic transform)
 #
 # Phenotype as a bag of qualities
@@ -304,11 +325,11 @@ mirror/uberon-ext.owl: external/uberon/ext.owl
 #mirror/fma-orig.owl: 
 #	wget $(OBO)/fma.owl -O $@
 mirror/fma.owl:
-	owltools mirror/composite-fma.owl --set-ontology-id $(OBO)/fma.owl -o $@
+	owltools mirror/composite-fma.owl --extract-mingraph --set-ontology-id $(OBO)/fma.owl -o $@
 mirror/ro.owl:
 	wget $(OBO)/ro.owl -O $@
 mirror/uberon.owl: mirror/uberon-ext.owl
-	owltools $(USECAT) $<  --merge-support-ontologies --merge-imports-closure --make-subset-by-properties -n $(KEEPRELS)  --remove-annotation-assertions -l --remove-dangling-annotations   --extract-mingraph --set-ontology-id $(OBO)/uberon.owl -o $@
+	owltools $(USECAT) $<  --merge-support-ontologies --merge-imports-closure --make-subset-by-properties -n $(KEEPRELS)  --remove-annotation-assertions -l -s -d --remove-axiom-annotations --remove-dangling-annotations  --set-ontology-id $(OBO)/uberon.owl -o $@
 ##### need to sort sync issue
 #####	owltools $(OBO)/uberon/ext.owl $(OBO)/cl.owl --merge-support-ontologies --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --extract-mingraph --set-ontology-id $(OBO)/uberon.owl -o $@
 
@@ -324,8 +345,8 @@ mirror/pr.owl: mirror/pr.obo
 	owltools $< --remove-dangling --set-ontology-id $(OBO)/pr.owl -o $@
 .PRECIOUS: mirror/%.owl
 
-imports/ro_import.owl: mirror/ro.owl
-	owltools  $(USECAT) $< mp/mp-edit.owl --extract-properties --set-ontology-id $(UPHENO)/upheno/$@ -o $@
+imports/ro_import.owl: mirror/ro.owl mp/mp-edit.owl
+	owltools  $(USECAT) --map-ontology-iri $(UPHENO)/ro_import.owl mirror/ro.owl mp/mp-edit.owl --merge-imports-closure mirror/ro.owl  --add-imports-from-supports  --extract-module -s $(OBO)/ro.owl -c --extract-mingraph --set-ontology-id $(UPHENO)/$@ -o $@
 
 imports/so_import.owl:
 	owltools  $(USECAT) $< $(UPHENO)/data/human-genes.owl $(OBO)/so.owl --add-imports-from-supports --extract-module -s $(OBO)/so.owl -c --extract-mingraph --remove-annotation-assertions -l -d -s --make-subset-by-properties -f // --set-ontology-id $(UPHENO)/$@ -o $@
@@ -353,6 +374,11 @@ main/metazoa.owl: metazoa.owl hp.owl mp.owl
 %-reasoned.obo: %-reasoned.owl
 	owltools $< -o $@
 
+# ----------------------------------------
+# SUBSETS
+# ----------------------------------------
+mp/subsets/nervous-system.owl: mp/mp-edit.owl
+	owltools --use-catalog $< --use-reasoner elk --extract-module -n $(OBO)/$@ -d MP:0003632 -o -f ofn $@
 
 # ----------------------------------------
 # AUTO QC
@@ -444,10 +470,10 @@ mp/mp-map2go.tbl: mp/mp-equivalence-axioms-subq-ubr.obo
 # GROUPINGS
 # ----------------------------------------
 util/blacklist.js:
-	owljs -i util/make-blacklist.js
+	owljs -i ../tools/make-blacklist.js
 
-imports/%_phenotype.owl: imports/%_import.owl util/blacklist.js 
-	owljs -i util/make-grouping-classes.js
+imports/%_phenotype.owl: imports/%_import.owl ../tools/blacklist.js 
+	owljs -i ../tools/make-grouping-classes.js
 
 # ----------------------------------------
 # DEFINITION PATTERNS
@@ -481,6 +507,36 @@ imports/grouping_phenotype_inferences.owl: $(INFERRED)
 #	owltools --merge-imports-closure --use-catalog $< --run-reasoner -r elk --assert-implied --extract-mingraph --set-ontology-id $(UPHENO)/$@ -o -f omn $@
 #%-merged.obo: %-merged.owl
 #	owltools $< -o --merge-equivalence-sets -s HP 9 -s MP 8 -s ZP 1 -f obo --no-check $@
+
+# ----------------------------------------
+# UPHENO-CORE
+# ----------------------------------------
+upheno/gen-%.obo: util/phenomaker.pro
+	blip-findall  -consult $< -r go -r pato -r pext -r cell -r chebi "wall($*)" > $@.tmp && owltools $@.tmp upheno/footer.obo --merge-support-ontologies -o -f obo $@ && grep -c ^id: $@
+
+
+CORE_BUNDLE = uberon/ext go/extensions/go-plus pato
+CORE_IMPORT = $(OBO)/upheno/imports.owl
+upheno/imports.owl:
+	owltools --use-catalog $(patsubst %, $(OBO)/%.owl, $(CORE_BUNDLE)) --merge-support-ontologies --merge-imports-closure --make-subset-by-properties -f $(KEEPRELS) --remove-axiom-annotations --remove-annotation-assertions -l --remove-axioms -t DisjointClasses --set-ontology-id $(CORE_IMPORT) -o $@
+
+upheno/core.obo: util/phenomaker.pro
+	owltools upheno/gen-*.obo --merge-support-ontologies --set-ontology-id $(OBO)/upheno/core.owl -o -f obo $@
+
+upheno/import_module.owl: upheno/core.obo upheno/imports.owl
+	owltools $^ --extract-module -s $(CORE_IMPORT) -c --set-ontology-id $(OBO)/$@ -o $@
+
+upheno/import_module.obo: upheno/import_module.owl
+	owltools $< -o -f obo --no-check $@
+
+upheno/core-merged.owl: upheno/core.obo upheno/import_module.owl
+	owltools $^ --add-imports-from-supports -o $@
+
+upheno/core-inf.obo: upheno/core.obo upheno/import_module.owl
+	owltools $^ --add-imports-from-supports --assert-inferred-subclass-axioms -o -f obo --no-check $@
+
+
+
 
 # ----------------------------------------
 # ANALYSIS @Deprecated
