@@ -121,6 +121,9 @@ fypo.owl:
 	wget $(OBO)/fypo.owl
 fypo.obo: fypo.owl
 	owltools $< -o -f obo $@
+fypo/fypo-edit.owl: fypo.owl
+	owltools $< --rename-entity $(OBO)/fypo#qualifier $(OBO)/RO_0002180 -o -f ofn $@
+	wget $(OBO)/fypo.owl -O $@
 
 # ~~~
 # WBPhenotype
@@ -209,6 +212,17 @@ pato.owl: pato.obo
 # note that as OWL is now primary, these files are derived
 %-equivalence-axioms.obo: %-edit-merged.obo
 	obo-grep.pl -r 'intersection_of:.*PATO' $< | obo-filter-tags.pl -t intersection_of -t id - > $@.tmp && mv $@.tmp $@
+
+
+# ----------------------------------------
+# No-subClassOf files
+# ----------------------------------------
+# used to test recapitulation
+%-nsc.owl: %-edit.owl
+	owltools $(USECAT) $< --remove-axioms -t SubClassOf --remove-annotation-assertions -l -o $@
+
+%-nsc-inf.obo: %-nsc.owl
+	owltools $(USECAT) $<  --assert-inferred-subclass-axioms --allowEquivalencies -o -f obo --no-check $@.tmp && grep -v ^owl-axioms $@.tmp > $@
 
 # ----------------------------------------
 # Reports
@@ -508,32 +522,6 @@ imports/grouping_phenotype_inferences.owl: $(INFERRED)
 #%-merged.obo: %-merged.owl
 #	owltools $< -o --merge-equivalence-sets -s HP 9 -s MP 8 -s ZP 1 -f obo --no-check $@
 
-# ----------------------------------------
-# CAUSAL PHENOTYPE NETWORKS
-# ----------------------------------------
-cpn/gen-%.obo: util/phenomaker.pro
-	blip-findall  -consult $< -r go -r pato -r pext -r cell -r chebi "wall($*)" > $@.tmp && owltools $@.tmp cpn/footer.obo --merge-support-ontologies -o -f obo $@ && grep -c ^id: $@
-
-
-CORE_BUNDLE = uberon/ext go/extensions/go-plus pato
-CORE_IMPORT = $(OBO)/cpn/imports.owl
-cpn/imports.owl:
-	owltools --use-catalog $(patsubst %, $(OBO)/%.owl, $(CORE_BUNDLE)) --merge-support-ontologies --merge-imports-closure --make-subset-by-properties -f $(KEEPRELS) --remove-axiom-annotations --remove-annotation-assertions -l --remove-axioms -t DisjointClasses --set-ontology-id $(CORE_IMPORT) -o $@
-
-cpn/core.obo: util/phenomaker.pro
-	owltools cpn/gen-*.obo --merge-support-ontologies --set-ontology-id $(OBO)/cpn/core.owl -o -f obo $@
-
-cpn/import_module.owl: cpn/core.obo cpn/imports.owl
-	owltools $^ --extract-module -s $(CORE_IMPORT) -c --set-ontology-id $(OBO)/$@ -o $@
-
-cpn/import_module.obo: cpn/import_module.owl
-	owltools $< -o -f obo --no-check $@
-
-cpn/core-merged.owl: cpn/core.obo cpn/import_module.owl
-	owltools $^ --add-imports-from-supports -o $@
-
-cpn/core-inf.obo: cpn/core.obo cpn/import_module.owl
-	owltools $^ --add-imports-from-supports --assert-inferred-subclass-axioms -o -f obo --no-check $@
 
 
 
