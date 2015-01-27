@@ -1,5 +1,6 @@
 :- use_module(bio(bioprolog_util)).
 
+% TODO: use skeleton-of for morphology
 
 wall:-
         wall(_).
@@ -63,6 +64,9 @@ rule(go,occurs_in,quality,quality). % TODO
 
 rule(uberon,contributes_to_morphology_of,morphology,morphology).
 
+rule(uberon,skeleton_of,morphology,morphology).
+rule(uberon,skeleton_of,size,size).
+
 % e.g. gland functionality causes abnormal gland process; TODO - reverse?
 rule(uberon,capable_of,functionality,quality).  
 rule(uberon,capable_of,'decreased functionality','decreased rate'). % TODO - efficiency?
@@ -72,6 +76,13 @@ rule(uberon,capable_of,absent,abolished). % too strong?
 rule(uberon,capable_of_part_of,functionality,quality).  
 rule(uberon,capable_of_part_of,'decreased functionality','decreased rate'). % TODO - efficiency?
 rule(uberon,capable_of_part_of,'increased functionality','increased rate'). % TODO - efficiency?
+
+q(organ,mass).
+q(organ,size).
+
+
+assay(glycosaminoglycan,urine).
+
 
 mk(Ont,P,R,S) :-
         rule(Ont,R,PGN,SGN),
@@ -83,6 +94,7 @@ mk(Ont,P,R,S) :-
         mkclass(PQ,PQN,PG,inheres_in,P),
         mkrel(PQ,PQN,causes,SQ,SQN).
 
+% TODO - what about plain 'cholesterol import' - can we assume it removes it from blood?
 %transport(exports,has_target_end_location,'increased rate','present in greater numbers in organism').
 %transport(exports,has_target_end_location,'decreased rate','present in fewer numbers in organism').
 transport(exports,has_target_start_location,'increased rate','present in fewer numbers in organism').
@@ -123,6 +135,8 @@ mkclass(ID,_N,_G,_R,_Y) :-
 mkclass(ID,N,G,R,Y) :-
         class(G,GN),
         class(Y,YN),
+        \+ entity_partition(G,goantislim_grouping),
+        \+ entity_partition(Y,goantislim_grouping),
         format('[Term]~n'),
         format('id: ~w~n',[ID]),
         format('name: ~w~n',[N]),
