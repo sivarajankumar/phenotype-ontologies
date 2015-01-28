@@ -45,7 +45,8 @@ rule(go,results_in_division_of,quality,'fused with').  % TODO - implicit abnorma
 rule(go,results_in_aquisition_of_features_of,quality,morphology).  % TODO - new pato?
 
 % TODO - do something more sophisticated with these; e.g. quantity in
-rule(go,transports_or_maintains_localization_of,quality,position).
+%rule(go,transports_or_maintains_localization_of,quality,position).
+rule(go,transports_or_maintains_localization_of,quality,count).
 rule(go,results_in_movement_of,quality,position).
 
 rule(go,regulates_levels_of,quality,count).

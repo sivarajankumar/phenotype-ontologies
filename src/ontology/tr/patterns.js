@@ -27,11 +27,11 @@ function replace(x,y) {
         print("---");
     });
     print("Replacements: "+rmap.replacements.length);    
-    print("New axioms: "+rmap.newAxioms.length);    
+    print("New Axioms: "+rmap.newAxioms.length);    
     totalReplacements += rmap.replacements.length;
     totalNewAxioms += rmap.newAxioms.length;
     print("Total Replacements: "+totalReplacements);    
-    print("Total axioms: "+totalNewAxioms);    
+    print("Total New Axioms: "+totalNewAxioms);    
     var outfile = "tr/out.owl";
     owl.useFunctionalSyntax();
     owl.save(outfile);
@@ -52,6 +52,29 @@ function tr(x,y) {
         );
     print("New axioms: "+axioms.length);
     return axioms;
+}
+
+function test(c,x) {
+    owl.getReasoner().flush();
+    var ecs = owl.getInferredEquivalentClasses(x);
+    print("ECS="+ecs);
+    var ok = false;
+    ecs.forEach(function(ec) {
+        print("TESTING '"+ec+"' == '"+c+"'");
+        if(ec.equals(c)) { ok = true }
+    });
+    if (!ok) {
+        print("FAILED: "+c+" != "+x);
+        quit(1);
+    }
+    else {
+        print("Test passed");
+    }
+}
+
+function partOf(p,w) {
+    return owl.intersectionOf(p,
+                              owl.someValuesFrom(o.part_of, w));
 }
 
 function abnormal() {
