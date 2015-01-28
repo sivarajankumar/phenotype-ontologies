@@ -5,11 +5,14 @@ Existing phenotype ontologies are arranged as simple classification
 hierarchies, with broader phenotype terms subsuming more specific
 ones. One notable feature of this design is that the *classification*
 of the phenotype is conflated with *causal information* connecting
-phenotypes. This is not a problem when using a phenotype ontology for
-search or simple grouping, but this can be a problem when we try and
-use gene-phenotype associations in a more sophisticated way.
+phenotypes. For example, the abnormal *development* of a thyroid gland
+is classified as a type of thryoid gland *morphology*. This is not a
+problem when using a phenotype ontology for search or simple grouping,
+but can pose problems when we try and use automated techniques to
+build phenotype ontologies or connect genes to phenotypes.
 
-For example, this subset of the Mammalian Phenotype (MP) ontology:
+For example, as seen in this subset of the Mammalian Phenotype (MP)
+ontology:
 
 ```
   is_a MP:0005379 ! endocrine/exocrine gland phenotype
@@ -41,15 +44,17 @@ For this subset of the Human Phenotype (HP) ontology:
       is_a HP:0011814 ! Increased urinary hypoxanthine
 ```
 
-The highlighted term is a amount (object) term alongside and under a
+The highlighted terms are amount (object) terms alongside and under a
 process term. The relationship between purine levels and purine
-metabolism should be is-caused-by.
+metabolism is one of causation, with abnormalities in metabolism
+resulting in abnormalities in levels.
 
 Furthermore, this structure doesn't give us an easy means of answering
 the question as to the effects of mutating genes known to be involved
-in the GO biological process 'purine biosynthesis' (loss of this gene
-may lead to decreased levels, a gain of function mutation may lead to
-increased levels).
+in the GO biological process 'purine nucleotide biosynthesis' (loss of
+this gene may lead to decreased levels, a gain of function mutation
+may lead to increased levels), or 'purine nucleotide catabolism'
+(having the opposite effect).
 
 Furthermore, it can be argued that the generic structure of placing "X
 level" phenotypes under "X metabolism" is incorrect, because changes
@@ -57,19 +62,16 @@ in the *levels* of a substance are not necessarily due to changes in
 metabolism - the changes may be due to abnormalities in import of
 export of the substance.
 
-## Related Work
-
-CPO
-
 ## CPN
 
-We have created a phenotype ontology CPN that separates the
-classification of a phenotype from its causal effect. Specifically,
-phenotypes that are due to *processual* changes form a disjoint
-hierarchy from those that are due to changes in attributes of
-*physical objects* such as chemical concentrations, cellular and organ
-morphology. The ontology is constructed by an automatic process using
-knowledge encoded in ontologies such as GO and UBERON.
+We have created a phenotype ontology CPN (Causal Phenotype Network)
+that separates the classification of a phenotype from its causal
+effect. Specifically, phenotypes that are due to *processual* changes
+form a disjoint hierarchy from those that are due to changes in
+attributes of *physical objects* such as chemical concentrations,
+cellular and organ morphology. The ontology is constructed by an
+automatic process using knowledge encoded in ontologies such as GO and
+UBERON.
 
 CPN is species-neutral, and is intended to be used as a module by
 existing phenotype and trait ontologies. It can easily slot into
@@ -78,14 +80,22 @@ forms disjoint hierarchies, end-product ontologies automatically
 collapse these distinctions into a simple and familiar subsumption
 hierarchy.
 
+CPN is also extensible to creating sophisticated network models of
+disease...
+
+## Related Work
+
+CPO
+
 # Results
 
 ## Construction of Causal Phenotype Network Ontology
 
 The construction process makes use of knowledge encoded as logical
-axioms in existing ontologies.
+axioms in existing ontologies. 
 
-For example, go-plus entails an inter-ontology axiom
+For example, go-plus includes knowledge of how processes related to
+anatomical structures, and includes an inter-ontology axiom
 
 ```
 'thyroid gland morphogenesis' SubClassOf results_in_morphogenesis_of some 'thyroid gland'
@@ -97,9 +107,9 @@ We treat this as a shortcut relation that can be expanded to:
 'thyroid gland morphogenesis' SubClassOf regulates some (morphology and inheres_in some 'thyroid gland')
 ```
 
-We find all axioms of this form and generate two phenotype terms (one
-processual, one object quality) and create a causation relation
-between them:
+We define a pattern that finds all axioms of this form and generates
+two phenotype terms (one processual, one object quality) and
+additionally creates a causation relation between them:
 
 ```
 Class: 'thyroid gland morphology'
@@ -135,6 +145,34 @@ will *increase* the levels of X.
     * increased "X assembly" -> decreased X levels
     * decreased "X assembly" -> increased X levels
 
+## Developmental Biology Patterns
+
+The following GO biological processes can be used to create causal
+links as follows:
+
+ * "X morphogenesis" ==> X morphology
+ * "X growth" ==> X size
+ * ...
+
+We note that currently in MP "abnormal X development" is classified
+under "abnormal X morphology". Note that there may be developmental
+abnormalities that leave morphology unaffected. There is a case for
+interpreting the MP class as actually being "abnormal X morphogenesis". TBD
+
+## Metabolic Patterns Patterns
+
+ * "X biosynthesis" ==> X amount (positive correlation)
+ * "X catabolism" ==> X amount (negative correlation)
+ * "X transport" ==> X amount
+
+We can also use the GO axioms for the start and end location of a
+process to infer causation for location-specific amounts; e.g. levels
+of a substance in the blood.
+
+## Pathology
+
+## Behavior
+
 ## Classification and bridging with existing phenotype ontologies
 
 Automated reasoning over CPN yields subsumption hierarchies that are
@@ -162,6 +200,10 @@ structures.
 
 TODO: abnormal
 
+## Bridging the species gap
+
+TODO: analyze linking of FYPO with mammalian ontologies
+
 ## Propagation of genes
 
 Of of the goals of this method is to effectively unify gene
@@ -178,6 +220,26 @@ always be the case, e.g. if the gene is rescued by a functionally
 similar or identical gene in the genome). Furthermore, we can infer
 that mutations in the gene may also lead to 'abnormal purine levels'.
 
-
-
 # Methods
+
+See phenotype-ontologies/src/ontology/cpn/
+
+# Discussion
+
+## Causal Relations
+
+## Causal Networks
+
+```
+id: MP:0013466
+name: keratoconjunctivitis sicca
+def: "inflammation of the cornea and conjuctiva caused by eye dryness which, in turn, is caused by either decreased tear production or increased tear film evaporation" [MGI:Anna]
+```
+
+```
+IC <- ED <- {-TP, +TFP}
+```
+
+(TODO find better example)
+
+# Conclusions
