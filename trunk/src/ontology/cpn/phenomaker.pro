@@ -11,6 +11,11 @@ wall(Ont):-
         mk(Ont,P,R,S),
         fail.
 
+wall(Rule):-
+        write_header(Rule),
+        mk(Rule),
+        fail.
+
 
 
 % todo - increased rate should be same as positively regulates
@@ -124,9 +129,20 @@ mk(transport,P,R,S) :-
 
         mkrel(PQ,PQN,causes,SQ,SQN).
 
+mk(organ) :-
+        call_unique(class(Root,organ)),
+        call_unique(subclassRT(Y,Root)),
+        debug(pheno,'Organ: ~w',[Y]),
+        q(organ,QN),
+        class(Q,QN),
+        phname(Y,Q,SQ,SQN),
+        mkclass(SQ,SQN,Q,inheres_in,Y).
+
 :- dynamic done/1.
 :- dynamic done/2.
 
+%% mkclass(+ID,+N,+G,+R,+Y) is det
+%
 % Generates a class stanza, if one has not already been written for
 % this skolemized ID
 mkclass(ID,_N,_G,_R,_Y) :-
@@ -166,7 +182,7 @@ writerel(rel(R,Z,ZN)) :-
         format('relationship: ~w ~w ! ~w~n',[R,Z,ZN]).
 
 
-%% phname(+DiffClass, +G:genus, ?DefinedClassID, DefinedClassName)
+%% phname(+DiffClass, +G:genus, ?DefinedClassID, ?DefinedClassName)
 phname(C,G,ID,CN) :-
         phid(C,G,ID),
         class(C,N),

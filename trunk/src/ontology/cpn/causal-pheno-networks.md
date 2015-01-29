@@ -242,4 +242,6 @@ IC <- ED <- {-TP, +TFP}
 
 (TODO find better example)
 
+abn swim bladder dev -> abn swim bladder -> abn regulation of buoyancy-> abn buoyancy
+
 # Conclusions
