@@ -76,6 +76,10 @@ function partOf(p,w) {
     return owl.intersectionOf(p,
                               owl.someValuesFrom(o.part_of, w));
 }
+function occursIn(p,w) {
+    return owl.intersectionOf(p,
+                              owl.someValuesFrom(o.occurs_in, w));
+}
 
 function abnormal() {
     return owl.someValuesFrom(o.has_component, o.abnormal);
