@@ -395,6 +395,20 @@ mp/subsets/nervous-system.owl: mp/mp-edit.owl
 	owltools --use-catalog $< --use-reasoner elk --extract-module -n $(OBO)/$@ -d MP:0003632 -o -f ofn $@
 
 # ----------------------------------------
+# TR
+# ----------------------------------------
+
+# to run a translation individually:
+#   owljs-repl  -l tr/extraProcessParts.js mp/mp-edit.owl 
+# this creates a file tr/out.owl
+
+TR= concentration extraProcessParts numberOf
+TR_FILES= $(patsubst %, tr/%.js,$(TR))
+TR_OPTS= $(patsubst %, -l %,$(TR_FILES))
+%-tr.owl: %.owl $(TR_FILES)
+	owljs-repl $(TR_OPTS) $< && mv tr/out.owl $@
+
+# ----------------------------------------
 # AUTO QC
 # ----------------------------------------
 %-dv.txt: %.owl
