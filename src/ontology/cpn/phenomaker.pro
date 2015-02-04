@@ -62,6 +62,9 @@ rule(go,has_output,'increased rate','present in greater numbers in organism').
 rule(go,has_output,'decreased rate','present in fewer numbers in organism').
 % TODO: inverse for has_input
 
+drule(go,'catabolic process',has_input,'increased rate','present in fewer numbers in organism').
+drule(go,'catabolic process',has_input,'decreased rate','present in greater numbers in organism').
+
 rule(go,acts_on_population_of,rate,count).
 rule(go,acts_on_population_of,'increased rate','present in greater numbers in organism').
 rule(go,acts_on_population_of,'decreased rate','present in fewer numbers in organism').
@@ -83,19 +86,40 @@ rule(uberon,capable_of_part_of,functionality,quality).
 rule(uberon,capable_of_part_of,'decreased functionality','decreased rate'). % TODO - efficiency?
 rule(uberon,capable_of_part_of,'increased functionality','increased rate'). % TODO - efficiency?
 
+drule(cancer,'cell proliferation',acts_on_population_of,'increased rate',neoplastic).
+
+
+
 q(organ,mass).
 q(organ,size).
 
+% TODO: hypertrophic
 
 assay(glycosaminoglycan,urine).
 
 
+% a general pattern is process phenotype -> structure phenotype
 mk(Ont,P,R,S) :-
+        % rule(Ont,Relation,ProcessGenusName,StructureGenusName)
         rule(Ont,R,PGN,SGN),
         class(SG,SGN),
         class(PG,PGN),
-        phname(S,SG,SQ,SQN),
-        phname(P,PG,PQ,PQN),
+        dg2idname(S,SG,SQ,SQN),
+        dg2idname(P,PG,PQ,PQN),
+        mkclass(SQ,SQN,SG,inheres_in,S),
+        mkclass(PQ,PQN,PG,inheres_in,P),
+        mkrel(PQ,PQN,causes,SQ,SQN).
+
+% variant on above, constrained by domain
+mk(Ont,P,R,S) :-
+        % rule(Ont,Relation,ProcessGenusName,StructureGenusName)
+        drule(Ont,DomN,R,PGN,SGN),
+        class(Dom,DomN),
+        genus(P,Dom),
+        class(SG,SGN),
+        class(PG,PGN),
+        dg2idname(S,SG,SQ,SQN),
+        dg2idname(P,PG,PQ,PQN),
         mkclass(SQ,SQN,SG,inheres_in,S),
         mkclass(PQ,PQN,PG,inheres_in,P),
         mkrel(PQ,PQN,causes,SQ,SQN).
@@ -114,20 +138,48 @@ mk(transport,P,R,S) :-
         transport(R,LocRel,PGN,SGN),
         parent(P,LocRel,Loc),
 
+        % e.g. increased rate of X transport
         class(PG,PGN),
-        phname(P,PG,PQ,PQN),
+        dg2idname(P,PG,PQ,PQN),
         mkclass(PQ,PQN,PG,inheres_in,P),
 
+        % e.g. cholesterol in cell
         %class(S,SN),
-        phname(Loc,S,LocS,LocSN),
+        dg2idname(Loc,S,LocS,LocSN),
         mkclass(LocS,LocSN,S,part_of,Loc),
         
+        % e.g. amount of X in cell
         class(SG,SGN),
-        phid(LocS,SG,SQ),
+        dg2id(LocS,SG,SQ),
         concat_atom([LocSN,SGN],' ',SQN),
         mkclass(SQ,SQN,SG,inheres_in,S),
 
         mkrel(PQ,PQN,causes,SQ,SQN).
+
+
+% TODO
+mk(neoplasm,P,acts_on_population_of,S) :-
+        class(Genus,'cell proliferation'),
+        genus(P,Genus),
+
+        % e.g. inc X proliferation
+        class(PatoGenus,'increased rate'),
+        dg2idname(P,PatoGenus,ProcPhen,ProcPhenN),
+        mkclass(ProcPhen,ProcPhenN,PatoGenus,inheres_in,P),
+
+        % e.g. X neoplasm
+        class(Neop,neoplasm),
+        dg2idname(S,Neop,NeopS,NeopSN),
+        mkclass(NeopS,NeopSN,Neop,develops_from,S),
+
+        % e.g. presence of X neoplasm
+        class(Presence,present),
+        dg2id(NeopS,Presence,NeoplasmPresent),
+        concat_atom([NeopSN,present],' ',NeoplasmPresentN),
+        mkclass(NeoplasmPresent,NeoplasmPresentN,Presence,inheres_in,NeopS),
+
+        mkrel(ProcPhen,ProcPhenN,causes,NeoplasmPresent,NeoplasmPresentN).
+
 
 mk(organ) :-
         call_unique(class(Root,organ)),
@@ -135,7 +187,7 @@ mk(organ) :-
         debug(pheno,'Organ: ~w',[Y]),
         q(organ,QN),
         class(Q,QN),
-        phname(Y,Q,SQ,SQN),
+        dg2idname(Y,Q,SQ,SQN),
         mkclass(SQ,SQN,Q,inheres_in,Y).
 
 :- dynamic done/1.
@@ -150,8 +202,8 @@ mkclass(ID,_N,_G,_R,_Y) :-
         debug(pheno,'Done: ~w',[ID]),
         !.
 mkclass(ID,N,G,R,Y) :-
-        class(G,GN),
-        class(Y,YN),
+        getlabel(G,GN),
+        getlabel(Y,YN),
         \+ entity_partition(G,goantislim_grouping),
         \+ entity_partition(Y,goantislim_grouping),
         format('[Term]~n'),
@@ -163,6 +215,11 @@ mkclass(ID,N,G,R,Y) :-
         assert(done(ID)),
         nl,
         !.
+
+getlabel(C,CN) :- class(C,CN),!.
+getlabel(_,'-').
+
+
 
 % Generates a relationship/bridge stanza, if one has not already been
 % written for this skolemized pair of subject and object
@@ -182,14 +239,18 @@ writerel(rel(R,Z,ZN)) :-
         format('relationship: ~w ~w ! ~w~n',[R,Z,ZN]).
 
 
-%% phname(+DiffClass, +G:genus, ?DefinedClassID, ?DefinedClassName)
-phname(C,G,ID,CN) :-
-        phid(C,G,ID),
+%% dg2idname(+DiffClass, +G:genus, ?DefinedClassID, ?DefinedClassName)
+dg2idname(C,G,ID,CN) :-
+        dg2id(C,G,ID),
         class(C,N),
         class(G,GN),
         concat_atom([N,GN],' ',CN).
 
-phid(C,G,ID) :-
+
+%% dg2id(+DiffClass,+Genus,?ID)
+%
+% generates a skolemized ID 
+dg2id(C,G,ID) :-
         concat_atom([Ont,Local],':',C),
         concat_atom([OntG,LocalG],':',G),
         concat_atom(['UPHENO:',Ont,Local,'-',OntG,LocalG],ID).
