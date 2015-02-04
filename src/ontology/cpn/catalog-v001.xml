@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1422306778208" name="http://purl.obolibrary.org/obo/core.owl" uri="core.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1422306778208" name="http://purl.obolibrary.org/obo/cpn/imports.owl" uri="imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1422306778208" name="http://purl.obolibrary.org/obo/cpn/unreasoned.owl" uri="unreasoned.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1422306778208" name="http://purl.obolibrary.org/obo/import_module.owl" uri="import_module.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1422306778208" name="http://purl.obolibrary.org/obo/t-mp.owl" uri="z.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1422306778208" name="http://purl.obolibrary.org/obo/upheno/core.owl" uri="core-merged.owl"/>
+    </group>
+</catalog>
