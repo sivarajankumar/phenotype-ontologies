@@ -1,0 +1,10 @@
+
+[Typedef]
+id: inheres_in
+name: inheres in
+xref: RO:0000052
+
+[Typedef]
+id: causes
+name: causally upstream of or within
+xref: RO:0002418
