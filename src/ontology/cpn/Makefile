@@ -47,3 +47,7 @@ cpn.obo: core.obo import_module.owl
 
 all-inf.obo: ../mp/mp-nsc.owl ../hp/hp-nsc.owl ../fypo/fypo-nsc.owl 
 	owltools $(CAT) $^ --merge-support-ontologies unreasoned.owl --add-imports-from-supports --assert-inferred-subclass-axioms --allowEquivalencies -o -f obo --no-check $@.tmp && grep -v ^owl-axioms $@.tmp > $@
+
+ARTEFACTS= core.obo core.owl unreasoned.owl cpn.obo *-cpn-inf.obo
+deploy:
+	rsync -avz $(ARTEFACTS) yuri.lbl.gov:public_html/cpn/

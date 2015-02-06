@@ -244,4 +244,8 @@ IC <- ED <- {-TP, +TFP}
 
 abn swim bladder dev -> abn swim bladder -> abn regulation of buoyancy-> abn buoyancy
 
+aldosterone
+
+myocardial infarction
+
 # Conclusions

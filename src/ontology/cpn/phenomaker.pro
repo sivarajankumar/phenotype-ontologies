@@ -86,6 +86,7 @@ rule(uberon,capable_of_part_of,functionality,quality).
 rule(uberon,capable_of_part_of,'decreased functionality','decreased rate'). % TODO - efficiency?
 rule(uberon,capable_of_part_of,'increased functionality','increased rate'). % TODO - efficiency?
 
+% now more specific rule - see below
 drule(cancer,'cell proliferation',acts_on_population_of,'increased rate',neoplastic).
 
 
