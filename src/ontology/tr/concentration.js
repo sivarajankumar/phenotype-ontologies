@@ -1,5 +1,6 @@
 load("tr/patterns.js");
 
+needs(o.concentration_of, "concentration of")
 
 // abnormal X concentration
 replace(
