@@ -1,3 +1,4 @@
+var numFails = 0;
 var q = new DLMatch(owl);
 //q.config = { logLevel : 1 };
 
@@ -52,6 +53,16 @@ function tr(x,y) {
         );
     print("New axioms: "+axioms.length);
     return axioms;
+}
+
+function needs(c, label) {
+    if (c != null) {
+        print("Checking: "+owl.getLabel(c)+" -- "+c+" OK. got it");
+    }
+    else {
+        print("FAILED TO GET: "+label);
+        numFails ++;
+    }
 }
 
 function test(c,x) {
