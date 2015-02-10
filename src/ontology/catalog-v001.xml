@@ -44,6 +44,7 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/zp/zp-to-hp-match-best.owl" uri="zp/zp-to-hp-match-best.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/upheno/zp/zp-to-mp-match-best.owl" uri="zp/zp-to-mp-match-best.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/wbphenotype.owl" uri="wbphenotype.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/hp.owl" uri="hp.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mp.owl" uri="mp.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mp/mp-equivalence-axioms.owl" uri="mp/mp-equivalence-axioms.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mp/mp-equivalence-axioms-subq.owl" uri="mp/mp-equivalence-axioms-subq.owl"/>
@@ -65,10 +66,5 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/cl.owl" uri="external/cell/cl.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/cl/imports/uberon_import.owl" uri="external/uberon/uberon.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ro.owl" uri="external/obo-relations/ro.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/uberon/composite-metazoan.owl" uri="external/uberon/composite-metazoan.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/uberon/merged.owl" uri="external/uberon/merged.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/uberon/ext.owl" uri="external/uberon/ext.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/uberon/basic.owl" uri="external/uberon/basic.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/uberon.owl" uri="external/uberon/uberon.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base=""/>
 </catalog>
