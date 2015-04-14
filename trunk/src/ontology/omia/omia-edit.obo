@@ -286,6 +286,7 @@ id: OMIA:000272
 name: dermoid sinus
 def: "Dermoid sinus is a genetic, autosomal skin condition in dogs. It is also known (apparently incorrectly) as pilonidal sinus because it resembles pilonidal sinus in humans. However, unlike pilonidal sinus in humans, dermoid sinus in dogs is a neural tube defect. Dermoid sinus is sometimes also confused with dermoid cyst (a teratoma)." [http://en.wikipedia.org/wiki/Dermoid_sinus]
 is_a: OMIA:000000 ! animal phenotype
+relationship: affects UBERON:0001049 ! neural tube
 
 [Term]
 id: OMIA:000307
