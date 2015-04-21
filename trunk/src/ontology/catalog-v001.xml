@@ -60,10 +60,5 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/hp/hp-edit.owl" uri="hp/hp-edit.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/pato.owl" uri="pato.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/fypo.owl" uri="fypo.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/go/extensions/go-plus-dev.owl" uri="external/go/extensions/go-plus-dev.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/cl/cl-basic.owl" uri="external/cell/cl-basic.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/cl.owl" uri="external/cell/cl.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/cl/imports/uberon_import.owl" uri="external/uberon/uberon.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ro.owl" uri="external/obo-relations/ro.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base=""/>
 </catalog>
