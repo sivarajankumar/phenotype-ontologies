@@ -89,10 +89,14 @@ hp/hp-inferred.owl: hp.owl
 # https://code.google.com/p/phenotype-ontologies/wiki/ZP
 
 ## ALWAYS CHECK UPDATES: https://code.google.com/p/bio-ontology-zp/issues/detail?id=4
-zp-download.owl:
-	owltools http://compbio.charite.de/hudson/job/hpo.ontology.uberpheno/lastStableBuild/artifact/data/dataForUberpheno/not_subsettable_ontologies/zp.owl --set-ontology-id $(OBO)/upheno/$@ -o $@
-zp.owl: zp-download.owl
-	./util/fix-zp.pl $< > $@
+
+zp.owl: 
+	owltools http://compbio.charite.de/hudson/job/zp-owl/lastSuccessfulBuild/artifact/zp.owl --set-ontology-id $(OBO)/upheno/$@ -o $@
+
+#zp-download.owl:
+#	owltools http://compbio.charite.de/hudson/job/hpo.ontology.uberpheno/lastStableBuild/artifact/data/dataForUberpheno/not_subsettable_ontologies/zp.owl --set-ontology-id $(OBO)/upheno/$@ -o $@
+#zp.owl: zp-download.owl
+#	./util/fix-zp.pl $< > $@
 
 zp.obo: zp.owl
 	owltools $< -o -f obo --no-check $@.tmp && grep -v ^owl-axioms $@.tmp > $@
@@ -329,7 +333,7 @@ IMPORT_REQUESTS = imports/imports_requests.obo
 
 # GENERIC:
 ###imports/%_import.owl: metazoa.owl mirror/%.owl mp/mp-equivalence-axioms-edit.owl hp/hp-equivalence-axioms.obo zp.owl
-imports/%_import.owl: imports/upheno-preimporter.owl $(IMPORT_REQUESTS) mirror/%.owl mp.owl hp.owl zp.owl mp/mp-edit.owl hp/hp-edit.owl
+imports/%_import.owl: imports/upheno-preimporter.owl $(IMPORT_REQUESTS) mirror/%.owl mp/mp-edit.owl hp/hp-edit.owl
 	owltools  $(USECAT) --map-ontology-iri $(UPHENO)/$*_import.owl mirror/$*.owl $< --merge-imports-closure mirror/$*.owl --add-imports-from-support  --extract-module -s $(OBO)/$*.owl -c --remove-axiom-annotations --make-subset-by-properties -f $(KEEPRELS) -o $@.tmp && owltools $@.tmp --set-ontology-id $(UPHENO)/$@ -o $@
 
 imports/ro_import.owl: imports/upheno-preimporter.owl $(IMPORT_REQUESTS) mirror/ro.owl mp/mp-edit.owl hp/hp-edit.owl
@@ -412,11 +416,18 @@ mp/subsets/nervous-system.owl: mp/mp-edit.owl
 #   owljs-repl  -l tr/extraProcessParts.js mp/mp-edit.owl 
 # this creates a file tr/out.owl
 
-TR= concentration extraProcessParts numberOf
+TR= concentration processParts numberOf 
 TR_FILES= $(patsubst %, tr/%.js,$(TR))
 TR_OPTS= $(patsubst %, -l %,$(TR_FILES))
 %-tr.owl: %.owl $(TR_FILES)
-	owljs-repl $(TR_OPTS) $< && mv tr/out.owl $@
+	owljs-repl -l tr/wrap.js $< && cp tr/out.owl $@
+##	owljs-repl $(TR_OPTS) $< && mv tr/out.owl $@ && pandoc tr/rpt.md -o tr/rpt.html
+
+tr/rpt.html:
+	pandoc tr/rpt.md -o $@
+
+%-mn.obo: %.owl
+	owljs-repl -l tr/materialize_nested.js $< && owltools --use-catalog tr/out.owl --add-obo-shorthand-to-properties -o -f obo --no-check $@
 
 # ----------------------------------------
 # AUTO QC
@@ -547,7 +558,23 @@ imports/grouping_phenotype_inferences.owl: $(INFERRED)
 #	owltools $< -o --merge-equivalence-sets -s HP 9 -s MP 8 -s ZP 1 -f obo --no-check $@
 
 
+# ----------------------------------------
+# DISJOINTS
+# ----------------------------------------
+# experimental
 
+hp/hp-disjoints-labeled.tsv:
+	blip-findall -r HP -r human_phenotype_xp -r pato -consult util/disjoint_phen.pro dp/2 -label -no_pred > $@
+hp/hp-disjoints.tsv:
+	blip-findall -r HP -r human_phenotype_xp -r pato -consult util/disjoint_phen.pro valid_dp/2 -no_pred > $@
+hp/hp-disjoints.owl: hp/hp-disjoints.tsv
+	owltools --create-ontology $(OBO)/$@ --parse-tsv -a DisjointClasses $< -o -f ofn $@
+hp/hp-disjoints.obo: hp/hp-disjoints.owl
+	owltools $< -o -f obo $@
+
+
+hp/hp-disjoints-check.out: hp.owl hp/hp-disjoints.owl
+	owltools $^ --merge-support-ontologies --run-reasoner -r elk -u > $@
 
 
 # ----------------------------------------
