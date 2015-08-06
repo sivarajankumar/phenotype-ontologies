@@ -219,6 +219,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002014">
         <rdfs:label xml:lang="en">abnormal N-glycan levels</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002077"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of normal N-gycan structures present in the body, cell, or specific location therein.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -228,6 +229,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002015">
         <rdfs:label xml:lang="en">abnormal O-glycan levels</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002077"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of normal O-gycan structures present in the body, cell, or specific location therein.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -315,6 +317,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002025">
         <rdfs:label xml:lang="en">abnormal complex N-glycan levels</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002014"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of normal complex N-gycan structures present in the body, cell, or specific location therein.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -324,6 +327,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002026">
         <rdfs:label xml:lang="en">abnormal biantennary N-glycan levels</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002025"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of normal biantennary N-gycan structures present in the body, cell, or specific location therein.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -333,6 +337,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002027">
         <rdfs:label xml:lang="en">abnormal golgi biantennary N-glycan levels</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002026"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of normal biantennary N-gycan structures present in the golgi complex.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -388,6 +393,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002034">
         <rdfs:label xml:lang="en">abnormal glycosaminoglycan levels</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002077"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of normal glycosaminoglycan gycan structures present in the body, cell, or specific location therein.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -766,6 +772,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002075">
         <rdfs:label xml:lang="en">abnormal conjugated glycan levels</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002002"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of normal conjugated gycan structures present in the body, cell, or specific location therein.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -775,6 +782,8 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002076">
         <rdfs:label xml:lang="en">abnormal free glycan levels</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002002"/>
+        <rdfs:comment>&apos;Natively free&apos; glycans are those that are not conjugated to an aglycone target.  Many glycan assays measure glycans that have been experimentally cleaved from their aglycone target, but these are not &apos;natively&apos; free because they existed in a conjugated state in the body prior to the experiment.</rdfs:comment>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of normal, natively free glycan structures present in the body, cell, or specific location therein.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -784,6 +793,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002077">
         <rdfs:label xml:lang="en">abnormal glycoprotein glycan levels</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002075"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of normal glycoprotein gycan structures present in the body, cell, or specific location therein.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -793,6 +803,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002078">
         <rdfs:label xml:lang="en">abnormal glycopeptide glycan levels</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002075"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of normal glycopeptide gycan structures present in the body, cell, or specific location therein.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -802,6 +813,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002079">
         <rdfs:label xml:lang="en">abnormal glycolipid levels</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002075"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of normal glycolipid gycan structures present in the body, cell, or specific location therein.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -820,6 +832,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002082">
         <rdfs:label xml:lang="en">abnormal intracellular free glycan levels</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002076"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of normal free gycan structures present in the intracellular space.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -829,6 +842,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002083">
         <rdfs:label xml:lang="en">abnormal extracellular free glycan levels</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002076"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of normal, natively free gycan structures present in the extracellular space.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -838,6 +852,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002084">
         <rdfs:label xml:lang="en">abnormal free glycan levels in urine</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002083"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of normal, natively free gycan structures present in the urine..</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -847,6 +862,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002085">
         <rdfs:label xml:lang="en">abnormal free glycan levels in serum</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002083"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of normal, natively free gycan structures present in the blood serum..</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -856,6 +872,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002086">
         <rdfs:label xml:lang="en">abnormal free glycan levels in CSF</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002083"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of normal, natively free gycan structures present in the CSF fluid.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -865,6 +882,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002087">
         <rdfs:label xml:lang="en">abnormal GPI-anchor glycan levels</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002077"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of normal GPI-anchored gycan structures present in the body, cell, or specific location therein.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -874,6 +892,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002088">
         <rdfs:label xml:lang="en">abnormal glycosphingomyelin glycan levels</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002079"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of normal glycosphingomyelin gycan structures present in the body, cell, or specific location therein.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -883,6 +902,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002089">
         <rdfs:label xml:lang="en">abnormal glycoglycerolipid levels</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002079"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of normal glycoglycerolipid gycan structures present in the body, cell, or specific location therein.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -892,6 +912,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002090">
         <rdfs:label xml:lang="en">abnormal lipopolysaccharide glycan levels</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002075"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of normal lipopolysaccharide gycan structures present in the body, cell, or specific location therein.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -901,6 +922,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002091">
         <rdfs:label xml:lang="en">abnormal oligomannose N-glycan levels</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002014"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of normal oligomannose N-gycan structures present in the body, cell, or specific location therein.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -910,6 +932,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002092">
         <rdfs:label xml:lang="en">abnormal Man9GlcNAc2 glycan levels</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002091"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of Man9GlcNAc2 gycan structures present in the body, cell, or specific location therein.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -919,6 +942,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002093">
         <rdfs:label xml:lang="en">abnormal oligomannose N-glycan levels in golgi</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002091"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of normal oligomannose N-gycan structures present in the golgi complex.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -928,6 +952,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002094">
         <rdfs:label xml:lang="en">abnormal transferrin-linked oligomannose N-glycan levels</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002091"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of transferring-linked oligomannose N-gycan structures present in the body, cell, or specific location therein.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -937,6 +962,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002095">
         <rdfs:label xml:lang="en">abnormal Tn core O-glycan levels</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002015"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of Tn core O-gycan structures present in the body, cell, or specific location therein.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -946,6 +972,7 @@ This in turn will inform implementation of upstream modeling in orthogonal ontol
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0002096">
         <rdfs:label xml:lang="en">abnormal Tn core O-glycan levels in blood cell plasma membrane</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002095"/>
+        <obo:IAO_0000115>An increase or decrease in the amount or concentration of Tn core O-gycan structures present in the plasma membrane of blood cells.</obo:IAO_0000115>
     </owl:Class>
 </rdf:RDF>
 
